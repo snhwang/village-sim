@@ -373,7 +373,13 @@ class Diffuser:
                    from_afar=self._afar(fact.root, fact),
                    # What can come here stays so in every retelling.
                    tags=((CAN_COME,) if self.sim.config.short_warnings and CAN_COME in fact.tags
-                         else ()))
+                         else ()),
+                   # Word of danger abroad is as old as the telling it came
+                   # from: renewed when the storyteller brought it again,
+                   # otherwise from when it reached the village
+                   # (config.far_danger_dated, MemoryIndex.dated).
+                   refreshed=(fact.refreshed if self.sim.config.far_danger_dated
+                              and CAN_COME in fact.tags else None))
         self._commit(new, source="told")
         outcome = "unchanged" if text.strip() == fact.text.strip() else "stored"
         return self._log(Diffusion(receiver.id, teller.id, fact.id, outcome,

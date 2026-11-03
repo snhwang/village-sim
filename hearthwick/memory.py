@@ -217,12 +217,27 @@ class MemoryIndex:
 
     # -- writing ------------------------------------------------------------
 
+    def dated(self, fact: Fact) -> int:
+        """When a memory's clock starts: when it was learned, or last lived
+        again. With config.far_danger_dated, word of a danger abroad that can
+        come here starts from when it reached the village, its root's tick,
+        unless it was renewed since: lived again by its holder, or, for a
+        copy told on, renewed in the telling it came from (Diffuser.offer).
+        Counted from the hearing, a tale first told on day 46 was fresh again
+        for each villager who heard it, and on day 177 of a ten-year run it
+        still went out as a warning (SPECIFICATION-warnings.md section 14)."""
+        if fact.refreshed is not None:
+            return fact.refreshed
+        if self.sim.config.far_danger_dated and CAN_COME in fact.tags:
+            return min(fact.tick, root_parts(fact.root, fact.tick)[2])
+        return fact.tick
+
     def _item(self, fact: Fact):
         tags = [NEWS if not fact.is_experience else LIFE, f"kind:{fact.kind}", *fact.tags]
         return item(fact.text, fact.holder, id=fact.id, classes=[FACT_CLASS],
                     tags=tags, kind=fact.kind,
                     parents=[fact.parent] if fact.parent else [], root=fact.root,
-                    created=float(fact.refreshed if fact.refreshed is not None else fact.tick),
+                    created=float(self.dated(fact)),
                     half_life=self.half_life_of(fact.kind, fact.holder, fact.tags))
 
     def add(self, fact: Fact) -> None:
@@ -297,8 +312,7 @@ class MemoryIndex:
         span = self.half_life_of(fact.kind, fact.holder, fact.tags)
         if not span:
             return False
-        last = fact.refreshed if fact.refreshed is not None else fact.tick
-        return 0.5 ** ((now - last) / span) < FORGET_BELOW
+        return 0.5 ** ((now - self.dated(fact)) / span) < FORGET_BELOW
 
     def readd(self, fact: Fact) -> None:
         """A fact out of the live index, lived again: back in, its clock
@@ -489,6 +503,12 @@ class MemoryIndex:
         if not self.sim.config.false_alarms:
             return 0
         deadline = DEADLINE_DAYS * self.sim.clock.ticks_per_day
+        # With config.far_danger_dated, the week runs from when the word
+        # reached the village, and only an arrival within it bears the word
+        # out. Without it, any arrival after the word began did, however much
+        # later, so one raid kept every older tale of fighting alive
+        # (SPECIFICATION-warnings.md section 14).
+        dated = self.sim.config.far_danger_dated
         false = []
         for holder, store in self.sim.diffuser.stores.items():
             c = self.sim.characters.get(holder)
@@ -496,18 +516,25 @@ class MemoryIndex:
             if c is None or not c.alive or not facts:
                 continue
             due = [f for f in facts.values() if CAN_COME in f.tags and f.id not in self.judged
-                   and now - f.tick >= deadline]
+                   and now - (self.dated(f) if dated else f.tick) >= deadline]
             if not due:
                 continue
             latest: dict[str, int] = {}
+            seen: dict[str, list[int]] = {}
             for f in facts.values():
                 k, _, t = root_parts(f.root, f.tick)
                 if t > latest.get(k, -1):
                     latest[k] = t
+                seen.setdefault(k, []).append(t)
             for f in due:
                 self.judged.add(f.id)
                 _, _, born = root_parts(f.root, f.tick)
-                if not any(latest.get(k, -1) >= born for k in arrival_kinds(f.text)):
+                if dated:
+                    came = any(born <= t <= born + deadline
+                               for k in arrival_kinds(f.text) for t in seen.get(k, ()))
+                else:
+                    came = any(latest.get(k, -1) >= born for k in arrival_kinds(f.text))
+                if not came:
                     false.append(f.id)
         self.mark_down(false)
         return len(false)

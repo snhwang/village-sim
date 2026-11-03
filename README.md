@@ -78,9 +78,13 @@ them and taking them out would change what the village does.
 - The founders' designs (`data/structures/`) stay, since the 3D viewer draws
   the village's places from them.
 
-The trial of a later build, which the paper's limitations report, dates word
-of danger abroad by when it reached the village (`far_danger_dated`). It is
-this edition with that one change added.
+**This is the build of the paper's trial.** The paper's limitations report a
+trial of a later build, which dates word of danger abroad by when it reached
+the village, not by when each villager heard it (`far_danger_dated`,
+SPECIFICATION-warnings.md section 14). This is the paper's edition with that
+one change added, on in `--profile illustrative` and off in `--profile
+paper`. It is the build of the three ten-year trial runs
+(`results/dated_trial/runs.txt`). The paper's own runs were made without it.
 
 ## License
 
@@ -201,6 +205,11 @@ To keep the paper's embedder, run it on the CPU as
 point, and the retrieval ablation is how to choose one.
 
 ## Reproducing the paper
+
+In this trial build `--profile illustrative` has the trial's change, so the
+commands below make runs like the trial's. The paper's own runs need the
+paper's edition, without it. The trial's runs, their checks and their
+reports are in `results/dated_trial/`.
 
 [RUNNING_EXPERIMENTS.md](RUNNING_EXPERIMENTS.md) gives every step as the
 paper's runs were made, with the time each took. In short, with the paper's
@@ -366,8 +375,9 @@ Without `--checkpoint-every` it ends with the server.
 
 ### 5. The illustrative village
 
-`--profile illustrative` is the village of the paper's runs. It sets every
-switch, so a run does not depend on the command line's defaults. It has
+`--profile illustrative` is the village of the paper's runs, with the trial's
+change added. It sets every switch, so a run does not depend on the command
+line's defaults. It has
 28-day years, quick warnings that last days, told memory, memories as BEAR
 items with lessons that last years, elders who teach only while pupils need
 them and otherwise help in the fields, work through light rain, no idle tick
@@ -376,7 +386,8 @@ telling only what the listener has not had, ended or unfounded news marked
 down, routine memories that fade, the same talk at most once a day, lessons
 that rest once their goal is met until something rekindles them, each
 declaring as it is written what it answers, how often it recurs and how long
-it lasts, and warnings about only the fresh news that unlocked them. Each
+it lasts, warnings about only the fresh news that unlocked them, and in this
+trial build word of danger abroad dated by when it reached the village. Each
 switch is described where it is set (`hearthwick/config.py`) and in the
 specification it names. `$PY -m hearthwick run --help` lists every option,
 and `--profile paper` turns off everything added since the paper's first case

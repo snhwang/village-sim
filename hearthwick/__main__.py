@@ -33,7 +33,7 @@ PROFILES = {"paper": {"mortality": False, "land": False,
                        "news_ends": False, "false_alarms": False,
                        "routine_fades": False, "talk_once_a_day": False,
                        "lessons_satisfied": False, "declared_lessons": False,
-                       "fresh_warnings": False,
+                       "fresh_warnings": False, "far_danger_dated": False,
                        **{name: False for name in NEW_IN_TALK}}}
 
 # The village as the paper's runs made it (2026-10-17): the seventh long
@@ -56,7 +56,7 @@ PROFILES["illustrative"] = {
     "forget_the_dead": True, "forget_faded": True, "novel_telling": True,
     "news_ends": True, "false_alarms": True, "routine_fades": True,
     "talk_once_a_day": True, "lessons_satisfied": True, "declared_lessons": True,
-    "fresh_warnings": True, "memory_by_relevance": True,
+    "fresh_warnings": True, "far_danger_dated": True, "memory_by_relevance": True,
     "remember_conversations": True,
     # off
     "restore_below_threshold": False,
@@ -72,7 +72,7 @@ ADDABLE = ("mortality", "land", "materials", "money", "fertility",
            "elders_in_fields", "work_in_rain", "forget_the_dead", "forget_faded",
            "novel_telling", "news_ends", "false_alarms", "routine_fades",
            "talk_once_a_day", "lessons_satisfied", "declared_lessons", "fresh_warnings",
-           *NEW_IN_TALK)
+           "far_danger_dated", *NEW_IN_TALK)
 
 
 def _config(args: argparse.Namespace, lockstep: bool) -> SimConfig:
@@ -123,10 +123,11 @@ def _config_from(args: argparse.Namespace, lockstep: bool) -> SimConfig:
                      or args.short_warnings or args.lasting_lessons
                      or args.forget_the_dead or args.forget_faded
                      or args.news_ends or args.false_alarms or args.routine_fades
-                     or args.fresh_warnings),
-        short_warnings=args.short_warnings,
+                     or args.fresh_warnings or args.far_danger_dated),
+        short_warnings=args.short_warnings or args.far_danger_dated,
         quick_warnings=args.quick_warnings or args.fresh_warnings,
         fresh_warnings=args.fresh_warnings,
+        far_danger_dated=args.far_danger_dated,
         fading_lessons=args.fading_lessons or args.lasting_lessons,
         lasting_lessons=args.lasting_lessons,
         teachers_by_pupils=args.teachers_by_pupils,
@@ -413,6 +414,12 @@ def build_parser() -> argparse.ArgumentParser:
                             "on only that, and goes only to someone the warner has not "
                             "told it (SPECIFICATION-warnings.md section 13). Turns on "
                             "--told-memory, --quick-warnings and --bear-memory")
+        p.add_argument("--far-danger-dated", action="store_true",
+                       help="word of danger abroad fades from when it reached the "
+                            "village, not from when each villager heard it, and is a "
+                            "false alarm unless the danger came within the week "
+                            "(SPECIFICATION-warnings.md section 14). Turns on "
+                            "--short-warnings and --bear-memory")
         p.add_argument("--news-ends", action="store_true",
                        help="a danger that wears off or is cut out is news, and marks "
                             "down what was known of it (SPECIFICATION-memory.md section "

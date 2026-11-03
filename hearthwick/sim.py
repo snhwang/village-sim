@@ -138,6 +138,9 @@ class Simulation:
                              "remembers sharing")
         if config.short_warnings and not config.bear_memory:
             raise ValueError("short_warnings needs bear_memory: its spans are BEAR items' half-lives")
+        if config.far_danger_dated and not config.short_warnings:
+            raise ValueError("far_danger_dated needs short_warnings: it dates the word of "
+                             "danger abroad that short_warnings marks as able to come here")
         if config.fresh_warnings and not (config.told_memory and config.quick_warnings
                                           and config.bear_memory):
             raise ValueError("fresh_warnings needs told_memory, quick_warnings and "

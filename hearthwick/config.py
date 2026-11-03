@@ -193,6 +193,12 @@ class SimConfig:
     fresh_warnings: bool = False  # a warning is about the fresh news that
                                   # unlocked it, passes on only that, and goes
                                   # only to someone the warner has not told it
+    # SPECIFICATION-warnings.md section 14. Needs short_warnings. Off in the
+    # paper profile.
+    far_danger_dated: bool = False  # word of danger abroad fades from when it
+                                    # reached the village, not from when each
+                                    # villager heard it, and is a false alarm
+                                    # unless the danger came within the week
 
     # Knowledge
     memory_recall: int = 2        # entries from a villager's own store put into
