@@ -1,0 +1,14 @@
+# A cottage, as a design: every home is drawn from it, in its own shades of
+# plaster and roof tile. The glass is the windows' material, lit at night.
+design: cottage
+by: the founders
+default_for: home
+footprint: [3, 3]
+ground: yard
+parts:
+  - {id: walls, shape: box, size: [2.25, 1.1, 1.8], at: [0, 0.55, 0], material: plaster}
+  - {id: roof, shape: cone, size: [1.755, 0.9], sides: 4, at: [0, 1.55, 0], rotation: [0, 45, 0], scale: [1, 1, 0.8], material: roof_tile}
+  - {id: door, shape: box, size: [0.28, 0.55, 0.04], at: [0, 0.28, 0.92], material: dark_timber}
+  - {id: window_west, shape: box, size: [0.22, 0.22, 0.04], at: [-0.63, 0.65, 0.92], material: glass}
+  - {id: window_east, shape: box, size: [0.22, 0.22, 0.04], at: [0.63, 0.65, 0.92], material: glass}
+claims: [shelter]

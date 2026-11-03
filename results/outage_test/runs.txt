@@ -1,0 +1,27 @@
+20261018-071915-seed9
+# A live test of a run waiting out the embedding service (SimConfig.
+# server_wait_minutes, SPECIFICATION.md section 2.10), on 2026-10-18 at 07:19
+# EDT, on the paper-v3 build (Hearthwick 3207d90, run from main with no
+# change since, and BEAR 1ceebc7 from /mnt/c/tmp/bear-paper-v3). Not a paper
+# run. It also put model-server 69b9c29's embedder live: its process ends on
+# a lost GPU, so the container restarts itself, and Docker's healthcheck
+# embeds a word at /health/deep.
+#
+# Three days of --profile illustrative with no model, started from WSL in
+# the repository:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-paper-v3 setsid nohup env OMP_NUM_THREADS=1 \
+#     OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python \
+#     -m hearthwick run --profile illustrative --days 3 --seed 9 \
+#     --village greater > /tmp/outage_test.log 2>&1 < /dev/null &
+#
+# About 25 seconds in, the embedder's container was recreated on the new
+# image, from model-server in WSL:
+#
+#   docker compose --profile embed up -d embed
+#
+# The run logged "Embedding service at http://localhost:8360 cannot embed;
+# waiting up to 30 minutes", then "embeds again after 30 s", and finished all
+# 432 ticks. Its record shows the embedder with outages 1 and
+# outage_seconds 30.1. The new container answered /health/deep about 20
+# seconds after it was recreated.

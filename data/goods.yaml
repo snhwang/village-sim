@@ -1,0 +1,50 @@
+# Goods, and the market (SPECIFICATION-v0.2.md sections 4.2 and 4.3,
+# SPECIFICATION.md section 2.9i).
+#
+# What things are built of, where each comes from, and what it fetches at the
+# market. Quantities are in units, the unit in which a cottage takes 30 of
+# everything together. Prices are in coins and set here, as the spec decided
+# for v0.2. Villagers cannot invent goods. The registry is data so it can grow.
+#
+# Where a good comes from, one of:
+#   from: <place id>     gathered by work there, ``gather`` units a tick
+#   made: <place id>     made there from ``of``, ``rate`` units a tick
+#   road: true           only the road brings it. A merchant fetches it for
+#                        what the crafters build, ``fetch`` units a tick, and
+#                        a villager buys it from the merchant for a want.
+# Goods with only a price are what villagers' work yields for sale.
+
+goods:
+  timber: {from: forest_edge, gather: 0.5, price: 1.0}
+  stone:  {from: quarry, gather: 0.4, price: 1.2}
+  clay:   {from: clay_pit, gather: 0.5, price: 1.0}
+  ore:    {from: quarry, gather: 0.15, price: 3.0}
+  iron:   {made: forge, of: {ore: 1, timber: 1}, rate: 0.25, price: 6.0}
+  glass:  {road: true, fetch: 0.3, price: 5.0}
+  cloth:  {road: true, fetch: 0.5, price: 2.5}
+  grain:  {price: 1.0}
+  flour:  {price: 1.2}
+  herbs:  {price: 1.5}
+
+# What a tick of work at a place yields to sell, whoever does it: a merchant
+# who works the fields makes grain as a farmer does. The granary is untouched:
+# this is the share of a day's work a villager may sell for itself. A watch,
+# a tale or a lesson yields nothing to sell, and a merchant lives on its cut.
+yields:
+  fields: {grain: 0.1}
+  mill:   {flour: 0.08}
+  shrine: {herbs: 0.06}
+
+market:
+  place: market
+  road: east_road
+  cut: 0.1              # the merchants' share of every sale and purchase
+  starting_coins: 10    # what each villager has when money begins
+  sell_at: 3.0          # goods worth this much send a villager to the market
+
+# Places materials add to the map where a village lacks them, near a kind of
+# place already there, on new land if the village is full (hearthwick/land.py).
+places:
+  quarry:   {name: the quarry, near: forest, size: 3}
+  clay_pit: {name: the clay pit, near: fields, size: 3}
+  forge:    {name: the forge, near: mill, size: 3}

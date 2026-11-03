@@ -1,0 +1,60 @@
+# Responses to what the world decided. The world agent sends the rain; these
+# are how villagers answer it, retrieved like anything else.
+
+instructions:
+  - id: weather-shelter-from-storm
+    type: protocol
+    priority: 80
+    content: A storm is blowing hard enough to flatten the grain. Get indoors and wait it out. [!go(to=home)] [!rest(ticks=8)]
+    scope: {required_tags: [daytime, weather_storm]}
+
+  - id: weather-work-through-rain
+    type: directive
+    priority: 60
+    content: Rain never stopped work getting done. Carry on at your workplace, wet or not. [!work(site=own, ticks=8)]
+    scope: {required_tags: [temp_diligent, daytime, weather_rain]}
+    metadata: {gene_category: diligence}
+
+  - id: weather-wait-out-rain
+    type: directive
+    priority: 58
+    content: It is raining and there is no sense getting soaked. Step inside the inn until it passes. [!go(to=inn)] [!rest(ticks=4)]
+    scope: {required_tags: [daytime, weather_rain], tags: [temp_easygoing]}
+
+  - id: weather-frost-check-fields
+    type: directive
+    priority: 62
+    content: Frost overnight. Go out to the fields and see what it took. [!work(site=fields, ticks=6)]
+    scope: {required_tags: [role_farmer, daytime, weather_frost]}
+
+  - id: festival-gather
+    type: directive
+    priority: 72
+    content: The whole village is gathering tonight. Go where the crowd is and stay a while. [!go(to=inn)] [!rest(ticks=6)]
+    scope: {required_tags: [daytime, festival], tags: [time_evening]}
+
+  # One per kind of weather. Required tags must all hold, so a single
+  # instruction gated on rain, storm and frost together could never apply.
+  - id: weather-speech-rain
+    type: persona
+    priority: 40
+    content: The weather is on everyone's mind today, and it is the natural thing to mention first.
+    scope: {required_tags: [talking, weather_rain]}
+
+  - id: weather-speech-storm
+    type: persona
+    priority: 40
+    content: The weather is on everyone's mind today, and it is the natural thing to mention first.
+    scope: {required_tags: [talking, weather_storm]}
+
+  - id: weather-speech-frost
+    type: persona
+    priority: 40
+    content: The weather is on everyone's mind today, and it is the natural thing to mention first.
+    scope: {required_tags: [talking, weather_frost]}
+
+  - id: weather-speech-drought
+    type: persona
+    priority: 40
+    content: The weather is on everyone's mind today, and it is the natural thing to mention first.
+    scope: {required_tags: [talking, weather_drought]}

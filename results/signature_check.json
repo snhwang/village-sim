@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "run": "20261003-093714-seed1",
+    "sample": 30,
+    "seed": 0,
+    "model": "Qwen3.8-27B",
+    "markers": [
+      "go",
+      "wander",
+      "rest",
+      "work",
+      "clear",
+      "talk",
+      "avoid",
+      "warn",
+      "follow",
+      "play",
+      "depart",
+      "apprentice",
+      "have_child",
+      "propose",
+      "accept_proposal",
+      "decline_proposal",
+      "fell",
+      "build"
+    ],
+    "code": {
+      "hearthwick": "dae4771-dirty",
+      "bear": "5334e1e",
+      "bear_version": "0.2.0"
+    },
+    "date": "2026-10-09"
+  },
+  "bare names": {
+    "counts": {
+      "accepted": 22,
+      "refused": 56
+    },
+    "reasons": [
+      [
+        "[!avoid] was given ['site'], which it does not read (it reads ['place', 'ticks'])",
+        18
+      ],
+      [
+        "[!warn] has no target, so it cannot act",
+        11
+      ],
+      [
+        "[!avoid] was given ['target'], which it does not read (it reads ['place', 'ticks'])",
+        4
+      ],
+      [
+        "[!warn] names 'neighbors', who is not anyone in this village",
+        3
+      ],
+      [
+        "[!rest] was given ['site'], which it does not read (it reads ['ticks', 'until'])",
+        3
+      ],
+      [
+        "[!avoid] has no place, so it cannot act",
+        3
+      ],
+      [
+        "[!warn] names 'village', who is not anyone in this village",
+        2
+      ],
+      [
+        "[!go] was given ['site'], which it does not read (it reads ['to'])",
+        2
+      ]
+    ]
+  },
+  "signatures": {
+    "counts": {
+      "accepted": 78
+    },
+    "reasons": []
+  }
+}

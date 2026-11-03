@@ -1,0 +1,28 @@
+# Materials a design's parts are made of (SPECIFICATION-v0.2.md section 4.2).
+#
+# How each looks. A material with several colours is drawn in one of them,
+# chosen by the place, so the village's cottages do not all look alike. glass
+# is drawn with the windows' material, which glows at night.
+#
+# ``density`` (kilograms a cubic unit) and ``good`` (what it is made of, in
+# data/goods.yaml) were read for a villager's own drawing: its weight on the
+# physics bench, and the goods it took to build. Drawings are left out of this
+# edition (README), so only the viewer reads this file, for the colours.
+
+materials:
+  timber:      {colour: 0x6b4a2e, density: 500, good: timber}
+  dark_timber: {colour: 0x4a3524, density: 700, good: timber}
+  plaster:     {colours: [0xe8dcc2, 0xd9c7a3, 0xefe6d3, 0xcdb99a], density: 1600, good: clay}
+  roof_tile:   {colours: [0x9c4a32, 0x7a5a3a, 0x8a3f2c, 0x6d6a5e], density: 1900, good: clay}
+  shingle:     {colour: 0x7a4b2e, density: 600, good: timber}
+  stone:       {colour: 0x8f8b83, density: 2400, good: stone}
+  pale_stone:  {colour: 0xd8cbb0, density: 2300, good: stone}
+  iron:        {colour: 0x4b4f55, roughness: 0.5, density: 7800, good: iron}
+  sailcloth:   {colour: 0xefe6d0, density: 300, good: cloth}
+  cloth:       {colour: 0x6e5a8a, roughness: 0.9, density: 300, good: cloth}   # woven, for what is worn
+  water:       {colour: 0x3d74a8, roughness: 0.3, density: 1000}
+  glass:       {colour: 0x3a3a3a, density: 2500, good: glass}
+  # Ground a structure stands on.
+  yard:        {colour: 0xbda27a, density: 1500}
+  gravel:      {colour: 0xc2b08f, density: 1700}
+  flagstone:   {colour: 0xb9b3a2, density: 2400}

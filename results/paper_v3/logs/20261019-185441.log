@@ -1,0 +1,261 @@
+runs: 20261019-043725-seed1 20261019-050836-seed2 20261019-055041-seed3 20261019-062341-seed4 20261019-070216-seed5 20261019-073525-seed6
+=== 2. knowledge flow (sections 5 and 6, Figure 1) ===
+  longest chain          10 tellings
+  offers                 97932  (87.4% already known, 25.7% of the rest refused)
+  knowledge-only actions 61336 of 196136 (31.27%)
+  reclassified          5738/10282 (55.8%), 85.7% of those toward trouble
+
+  drift by telling:
+    hop 0:  median 0.0000  (n=1117)
+    hop 1:  median 0.1968  (n=2215)
+    hop 2:  median 0.3110  (n=2447)
+    hop 3:  median 0.3591  (n=2020)
+    hop 4:  median 0.3856  (n=1330)
+    hop 5:  median 0.4087  (n=650)
+    hop 6:  median 0.4295  (n=306)
+    hop 7:  median 0.4524  (n=133)
+    hop 8:  median 0.4965  (n=44)
+    hop 9:  median 0.5387  (n=16)
+    hop 10:  median 0.5447  (n=4)
+  wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/results/figures/fig6_drift.png
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/results/knowledge_flow.json and .md
+=== 3. world balance (sections 4 and 7) ===
+
+repertoire
+  events                      {'weather': 192, 'traveler': 56, 'sicken': 73, 'visitor': 22, 'harvest': 6, 'festival': 13, 'raid': 4}
+  most common event           52.5%
+  most common, weather aside  42.0% of 174
+  distinct sequences          6 of 6 seeds
+  instructions chosen         18/18  (retrieved 18)
+  quiet days                  66/234
+
+vocabulary
+  distinct sentences          60
+  effective sentences         15.84
+  effective (seed, event)     308.62
+  reframed (seed, event)      315 of 12185 reframings, effective 278.8
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/results/world_balance.json and .md
+=== 4. memory carryover (section 5) ===
+9165 told facts with the teller's version stored
+
+kind: listener files it as trouble
+  all listeners          teller said trouble     ->  91.8%  (n=4826)
+  all listeners          teller said not trouble ->  25.2%  (n=4339)
+  wary listeners         teller said trouble     ->  93.8%  (n=2321)
+  wary listeners         teller said not trouble ->  30.4%  (n=2113)
+  bold listeners         teller said trouble     ->  89.9%  (n=2505)
+  bold listeners         teller said not trouble ->  20.3%  (n=2226)
+
+hedging: listener's version is hedged
+  all listeners          teller hedged     ->  79.3%  (n=5431)
+  all listeners          teller not hedged ->  51.6%  (n=3734)
+  suspicious listeners   teller hedged     ->  83.3%  (n=2646)
+  suspicious listeners   teller not hedged ->  56.4%  (n=1808)
+  trusting listeners     teller hedged     ->  75.6%  (n=2785)
+  trusting listeners     teller not hedged ->  47.1%  (n=1926)
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/results/memory_carryover.json and .md
+=== 5. figures (Figures 2 and 3) ===
+figures from 20261019-043725-seed1
+  fig1_provenance.png: 35 holders, 9 hops, following Osric, Thea
+  fig2_spread.png: 4 events tracked
+  fig3_usage.png: 22 instructions shown, 10 unlocked by knowledge
+  memories.md: 35 villagers
+=== 6. action counterfactual (section 7), every run, a random donor per decision ===
+  whole temperament      185/2400    7.7% of decisions would have changed
+  sociability             53/2400    2.2% of decisions would have changed
+  caution                150/2400    6.2% of decisions would have changed
+  curiosity               42/2400    1.8% of decisions would have changed
+  trust                   55/2400    2.3% of decisions would have changed
+  diligence              179/2400    7.5% of decisions would have changed
+  candor                  51/2400    2.1% of decisions would have changed
+  wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/results/figures/fig4_counterfactual.png
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/results/counterfactual.json and .md
+=== 7. absorption counterfactual (section 7) ===
+
+  same prompt (floor)          9/382    2.4% flipped | lens moved   0.0% | flipped when it moved      -
+  whole temperament           45/381   11.8% flipped | lens moved  96.3% | flipped when it moved  12.3%  p=0.0000  *
+  sociability (no lens)       21/371    5.7% flipped | lens moved   0.0% | flipped when it moved      -  p=0.0158  *
+  caution                     40/377   10.6% flipped | lens moved  99.2% | flipped when it moved  10.7%  p=0.0000  *
+  curiosity                   26/376    6.9% flipped | lens moved  97.9% | flipped when it moved   7.1%  p=0.0021  *
+  trust                       46/371   12.4% flipped | lens moved  97.8% | flipped when it moved  12.7%  p=0.0000  *
+  diligence (no lens)         19/379    5.0% flipped | lens moved   0.0% | flipped when it moved      -  p=0.0389  *
+  candor                      58/374   15.5% flipped | lens moved  97.9% | flipped when it moved  15.8%  p=0.0000  *
+  wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/results/figures/fig5_lens.png
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/results/diffusion_counterfactual.json and .md
+=== 8. rewording (section 7) ===
+same prompt             290      0.0   0.0222       22.1          
+whole temperament       277   0.0943   0.1165       82.3    0.0000 *
+sociability             275   0.0113    0.055       55.3          
+caution                 271   0.0518   0.0846       70.5    0.0001 *
+curiosity               280   0.1141   0.1287       86.1    0.0000 *
+trust                   264   0.1345   0.1457       90.9    0.0000 *
+diligence               283   0.0296   0.0616       63.6          
+candor                  265   0.1418   0.1513       94.3    0.0000 *
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/results/lens_divergence.json and .md
+=== 9. two-step counterfactual (section 7) ===
+6731 chains, replayed through Qwen3.8-27B at temperature 0
+
+6731 chains from 304 events, 262.23 effective
+floors: decoder 8.9%, inert tag 18.5%
+  same prompt        C's memory changed   8.9% (554/6191), kind 4.8%, B's lens moved 0.0%, p=None, rewording 0.0 p=None
+  whole temperament  C's memory changed  27.7% (1707/6160), kind 10.9%, B's lens moved 90.4%, p=0.0, rewording 0.13 p=0.0
+  sociability        C's memory changed  17.4% (1049/6016), kind 8.6%, B's lens moved 0.0%, p=None, rewording 0.062 p=None
+  caution            C's memory changed  25.5% (1561/6110), kind 9.9%, B's lens moved 99.7%, p=0.0, rewording 0.107 p=0.0
+  curiosity          C's memory changed  26.0% (1582/6085), kind 11.6%, B's lens moved 99.8%, p=0.0, rewording 0.156 p=0.0
+  trust              C's memory changed  29.2% (1757/6011), kind 13.0%, B's lens moved 99.6%, p=0.0, rewording 0.166 p=0.0
+  diligence          C's memory changed  19.6% (1175/5983), kind 9.5%, B's lens moved 0.0%, p=None, rewording 0.082 p=None
+  candor             C's memory changed  34.3% (2073/6050), kind 13.2%, B's lens moved 99.8%, p=0.0, rewording 0.163 p=0.0
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/results/two_step_counterfactual.json and .md
+=== 10. retrieval ablation (section 8) ===
+Selection 'char_freya' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_thea' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_rosa' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_osric' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_edek' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+  65.1% similarity, 46 instructions, 30/30 asleep
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/results/retrieval_ablation.json and .md
+=== 11. food, storytellers, school and trades (spec 2.4a, 2.7a, 2.8b) ===
+## 20261019-043725-seed1
+- harvest on day 21: 895.61 brought in, 114% of a year's need, called good
+- fields grew 0 time(s)
+- hungry days: none
+- food instructions chosen: {'food-farmer-blight': 151, 'food-farmer-tend': 82, 'food-harvest-hands': 71, 'food-help-tend': 67, 'food-apprentice-harvest': 54, 'food-farmer-harvest': 45, 'food-harvest-hungry': 6}
+## 20261019-050836-seed2
+- harvest on day 21: 937.34 brought in, 120% of a year's need, called good
+- fields grew 0 time(s)
+- hungry days: none
+- food instructions chosen: {'food-farmer-tend': 116, 'food-harvest-hands': 97, 'food-help-tend': 77, 'food-farmer-blight': 76, 'food-farmer-harvest': 55, 'food-apprentice-harvest': 25, 'food-harvest-hungry': 6, 'food-child-glean': 4}
+## 20261019-055041-seed3
+- harvest on day 21: 851.91 brought in, 108% of a year's need, called good
+- fields grew 0 time(s)
+- hungry days: none
+- food instructions chosen: {'food-farmer-tend': 116, 'food-harvest-hands': 69, 'food-farmer-blight': 59, 'food-help-tend': 53, 'food-farmer-harvest': 51, 'food-apprentice-harvest': 41, 'food-harvest-hungry': 3}
+## 20261019-062341-seed4
+- harvest on day 21: 851.38 brought in, 108% of a year's need, called good
+- fields grew 0 time(s)
+- hungry days: none
+- food instructions chosen: {'food-farmer-tend': 105, 'food-help-tend': 84, 'food-harvest-hands': 61, 'food-farmer-harvest': 60, 'food-apprentice-harvest': 42, 'food-farmer-blight': 13, 'food-harvest-hungry': 3}
+## 20261019-070216-seed5
+- harvest on day 21: 895.84 brought in, 114% of a year's need, called good
+- fields grew 0 time(s)
+- hungry days: none
+- food instructions chosen: {'food-farmer-tend': 134, 'food-farmer-blight': 82, 'food-harvest-hands': 71, 'food-help-tend': 68, 'food-farmer-harvest': 54, 'food-apprentice-harvest': 34, 'food-harvest-hungry': 8, 'food-child-glean': 7}
+## 20261019-073525-seed6
+- harvest on day 21: 855.7 brought in, 109% of a year's need, called good
+- fields grew 0 time(s)
+- hungry days: none
+- food instructions chosen: {'food-farmer-tend': 135, 'food-help-tend': 82, 'food-farmer-harvest': 62, 'food-harvest-hands': 62, 'food-apprentice-harvest': 27, 'food-farmer-blight': 15, 'food-harvest-hungry': 5, 'food-child-glean': 2}
+## 20261019-043725-seed1
+**Rowena** came on day 22 and left day 24. 41 conversations with 26 of 35 villagers. It took away 21 pieces of this village's news.
+**Tamsin** came on day 13 and left day 15. 37 conversations with 24 of 35 villagers. It took away 17 pieces of this village's news.
+**Wystan** came on day 4 and left day 6. 59 conversations with 29 of 35 villagers. It took away 6 pieces of this village's news.
+## 20261019-050836-seed2
+**Cadell** came on day 25 and left day 27. 67 conversations with 33 of 37 villagers. It took away 24 pieces of this village's news.
+**Doran** came on day 31 and left day 33. 39 conversations with 28 of 37 villagers. It took away 29 pieces of this village's news.
+**Elspeth** came on day 10 and left day 12. 56 conversations with 30 of 37 villagers. It took away 11 pieces of this village's news.
+**Rowena** came on day 1 and left day 3. 34 conversations with 23 of 37 villagers. It took away 2 pieces of this village's news.
+**Tamsin** came on day 19 and left day 21. 47 conversations with 28 of 37 villagers. It took away 23 pieces of this village's news.
+## 20261019-055041-seed3
+**Rowena** came on day 25 and left day 27. 53 conversations with 30 of 35 villagers. It took away 24 pieces of this village's news.
+**Tamsin** came on day 16 and left day 18. 57 conversations with 30 of 35 villagers. It took away 15 pieces of this village's news.
+## 20261019-062341-seed4
+**Elspeth** came on day 28 and left day 30. 48 conversations with 28 of 35 villagers. It took away 32 pieces of this village's news.
+**Isolde** came on day 19 and left day 21. 50 conversations with 29 of 35 villagers. It took away 26 pieces of this village's news.
+## 20261019-070216-seed5
+**Doran** came on day 38 and left still here at the end. 32 conversations with 23 of 34 villagers. It holds 31 pieces of this village's news.
+**Elspeth** came on day 16 and left day 18. 39 conversations with 23 of 34 villagers. It took away 16 pieces of this village's news.
+**Rowena** came on day 31 and left day 33. 48 conversations with 27 of 34 villagers. It took away 30 pieces of this village's news.
+**Wystan** came on day 1 and left day 3. 47 conversations with 23 of 34 villagers. It took away 3 pieces of this village's news.
+## 20261019-073525-seed6
+**Brannoc** came on day 13 and left day 15. 31 conversations with 19 of 36 villagers. It took away 17 pieces of this village's news.
+**Cadell** came on day 31 and left day 33. 59 conversations with 30 of 36 villagers. It took away 34 pieces of this village's news.
+**Doran** came on day 25 and left day 27. 59 conversations with 29 of 36 villagers. It took away 25 pieces of this village's news.
+**Elspeth** came on day 7 and left day 9. 32 conversations with 20 of 36 villagers. It took away 9 pieces of this village's news.
+**Maudie** came on day 37 and left day 39. 25 conversations with 19 of 36 villagers. It took away 40 pieces of this village's news.
+**Tamsin** came on day 1 and left day 4. 59 conversations with 29 of 36 villagers. It took away 4 pieces of this village's news.
+## 20261019-043725-seed1
+- hilde28 graduated on day 3
+- ilsa graduated on day 3
+- gisla qualified as a crafter on day 29, under edda
+- peder qualified as a guard on day 29, under lise
+- orla qualified as a storyteller on day 33, under rosa
+## 20261019-050836-seed2
+- hilde28 graduated on day 3
+- ilsa graduated on day 3
+- gisla qualified as a crafter on day 29, under edda
+- peder qualified as a guard on day 29, under lise
+## 20261019-055041-seed3
+- hilde28 graduated on day 3
+- ilsa graduated on day 3
+- corin qualified as a healer on day 29, under ada
+- gisla qualified as a crafter on day 29, under edda
+- peder qualified as a guard on day 31, under lise
+- orla qualified as a storyteller on day 35, under rosa
+## 20261019-062341-seed4
+- ilsa graduated on day 3
+- hilde28 graduated on day 4
+- gisla qualified as a crafter on day 29, under edda
+- peder qualified as a guard on day 29, under lise
+- corin qualified as a healer on day 30, under ada
+## 20261019-070216-seed5
+- hilde28 graduated on day 2
+- ilsa graduated on day 3
+- gisla qualified as a crafter on day 29, under edda
+- peder qualified as a guard on day 29, under lise
+## 20261019-073525-seed6
+- hilde28 graduated on day 3
+- ilsa graduated on day 3
+- peder qualified as a guard on day 29, under lise
+- gisla qualified as a crafter on day 31, under edda
+=== 11a. knowledge by day, couples and families (sections 5.3 and 5.7) ===
+| 20261019-073525-seed6 | 10.4% | 36.1% | yes |
+
+It rose in 5 of 6 runs.
+
+| crafter-fell-timber | 0 | 0 |
+| crafter-start-house | 0 | 0 |
+| crafter-build-house | 0 | 0 |
+
+| 25 | frode | thea | hal | home_10 | plainspoken, bold, inquisitive, diligent, reserved, trusting |
+| 34 | dagny | ada | wynn | home_5 | embellishing, wary, inquisitive, diligent, reserved, trusting |
+| 37 | nils | rosa | osric | home_3 | embellishing, wary, inquisitive, easygoing, reserved, suspicious |
+
+=== 12. spread across the runs, and choices the threshold restored (sections 3 and 5) ===
+| measure | mean | SD | min | max |
+|---|---|---|---|---|
+| events that spread | 52.0 | 8.0 | 39 | 59 |
+| median holders of an event | 31.0 | 0.6 | 30 | 32 |
+| median wordings of an event | 24.2 | 0.8 | 23 | 25 |
+| longest chain | 8.7 | 0.8 | 8 | 10 |
+| offers already known (%) | 87.4 | 0.5 | 86.6 | 88.1 |
+| new news refused (%) | 25.6 | 1.8 | 22.8 | 27.8 |
+| facts reclassified (%) | 55.9 | 1.9 | 53.7 | 58 |
+| reclassified toward trouble (%) | 85.8 | 3.8 | 80.4 | 90.1 |
+| knowledge-only decisions (%) | 31.1 | 4.6 | 24.7 | 37 |
+=== 13. check the paper against these results ===
+Traceback (most recent call last):
+  File "/mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/paper/check_numbers.py", line 469, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/paper/check_numbers.py", line 365, in main
+    return max(check(PAPERS[n][0], PAPERS[n][1], meta, args.run) for n in names)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/paper/check_numbers.py", line 365, in <genexpr>
+    return max(check(PAPERS[n][0], PAPERS[n][1], meta, args.run) for n in names)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/paper/check_numbers.py", line 445, in check
+    claims.update(fn(data))
+                  ^^^^^^^^
+  File "/mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3-analysis/paper/check_numbers.py", line 275, in spread_claims
+    out["spread: events per run"] = (f"between {WORDS[int(events['min'])]} and "
+                                                ~~~~~^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+=== done ===

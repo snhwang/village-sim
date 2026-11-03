@@ -1,0 +1,30 @@
+{
+  "run": "20261022-083715-seed4",
+  "read_to_day": null,
+  "percent_of_facts_by_instruction": {
+    "coming-pass-the-word": {
+      "facts": 1358,
+      "event over 7 days old": 7.7,
+      "event over 28 days old": 0.0,
+      "held over 7 days": 0.0
+    },
+    "knows-warn-about-well": {
+      "facts": 1355,
+      "event over 7 days old": 10.8,
+      "event over 28 days old": 0.0,
+      "held over 7 days": 1.0
+    },
+    "knows-warn-about-blight": {
+      "facts": 271,
+      "event over 7 days old": 5.5,
+      "event over 28 days old": 0.0,
+      "held over 7 days": 0.0
+    },
+    "learned lessons": {
+      "facts": 4,
+      "event over 7 days old": 100.0,
+      "event over 28 days old": 50.0,
+      "held over 7 days": 75.0
+    }
+  }
+}

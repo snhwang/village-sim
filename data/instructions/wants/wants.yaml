@@ -1,0 +1,32 @@
+# Wants are left out of this edition (README), and this folder is never loaded
+# into the corpus (hearthwick/corpus.py, SWITCHED_DIRS: wants). What stays
+# here are the instructions that belong to a temperament gene, as the paper's
+# runs had them. The gene library reads every such instruction wherever it
+# lives (hearthwick/genome.py), and the order in which alleles first appear
+# there, and the instructions that carry each one, decide the genes a visitor
+# draws and a child is bred with.
+
+instructions:
+  - id: want-make-easier
+    type: directive
+    priority: 49
+    content: Your work would go better with the right thing made for it. Decide what you would have made, if you could.
+      [!want(kind=make)]
+    scope: {required_tags: [daytime, temp_diligent], tags: [time_evening, at_work]}
+    metadata: {gene_category: diligence}
+
+  - id: want-make-new
+    type: directive
+    priority: 49
+    content: The village has never had some things, and you do not see why it should not. Decide what you would have made that nobody here has seen.
+      [!want(kind=make)]
+    scope: {required_tags: [daytime, temp_bold], tags: [time_evening, festival]}
+    metadata: {gene_category: caution}
+
+  - id: want-know
+    type: directive
+    priority: 49
+    content: There is something you keep wondering about and nobody here has told you. Decide what it is you want to know.
+      [!want(kind=know)]
+    scope: {required_tags: [daytime, temp_inquisitive], tags: [time_evening]}
+    metadata: {gene_category: curiosity, dominance: 2.0}

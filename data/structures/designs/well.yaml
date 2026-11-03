@@ -1,0 +1,21 @@
+# The well, as a design, with a windlass that turns while someone draws water.
+design: well
+by: the founders
+default_for: well
+footprint: [3, 3]
+ground: flagstone
+parts:
+  - {id: ring, shape: cylinder, size: [0.55, 0.6, 0.5], sides: 10, open: true, at: [0, 0.25, 0], material: stone}
+  - {id: water, shape: cylinder, size: [0.5, 0.02], sides: 10, at: [0, 0.3, 0], material: water}
+  - {id: post_west, shape: box, size: [0.08, 1.2, 0.08], at: [-0.5, 0.6, 0], material: timber}
+  - {id: post_east, shape: box, size: [0.08, 1.2, 0.08], at: [0.5, 0.6, 0], material: timber}
+  - {id: roof, shape: cone, size: [0.8, 0.45], sides: 4, at: [0, 1.4, 0], rotation: [0, 45, 0], material: shingle}
+  # Laid along x by its rotation, so it turns about its own y. Set low enough
+  # that its crank clears the roof, which the bench found it struck at 1.0.
+  - {id: windlass, shape: cylinder, size: [0.05, 1.0], at: [0, 0.9, 0], rotation: [0, 0, 90], material: timber}
+  - {id: crank, shape: box, size: [0.04, 0.04, 0.25], at: [0, 0.55, 0.12], parent: windlass, material: dark_timber}
+joints:
+  - {part: windlass, kind: hinge, axis: y}
+movements:
+  - {joint: windlass, spin: 20, when: occupied}
+claims: [pump]

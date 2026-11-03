@@ -1,0 +1,16 @@
+# A family (hearthwick/family.py). An adult of age whose partner is home with
+# it may choose to have a child. The handler refuses unless the couple can
+# support one: the granary is not low, the house has room for another infant or
+# child, and their last child is at least a year old. There is no pregnancy.
+#   fertile        an adult aged 11 to 20
+#   partner_home   this adult and its partner are both at home
+
+instructions:
+  - id: family-have-child
+    type: directive
+    priority: 60
+    content: You and your partner are home together, with food enough and room in the house. If you both want it, welcome a child into the family. [!have_child]
+    # fertile carries the stage: an adult, or an elder too with the wider
+    # window (SPECIFICATION.md section 2.9j). Gated on stage_adult as well, no
+    # elder could ever have a child, whatever the window said.
+    scope: {required_tags: [daytime, fertile, partner_home], tags: [time_evening, near_partner, temp_gregarious]}

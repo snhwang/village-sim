@@ -1,0 +1,1328 @@
+{
+  "meta": {
+    "days": 8.0,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "villagers": 30,
+    "village": "greater",
+    "date": "2026-09-20"
+  },
+  "conditions": {
+    "full": [
+      {
+        "run_id": "20260920-054647-seed1",
+        "decisions": 3413,
+        "peer_comparisons": 321,
+        "diverged": 93,
+        "diverged_pct": 29.0,
+        "peer_profile_overlap": 0.544,
+        "examples": [
+          {
+            "situation": [
+              "at_home",
+              "at_home_13",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_partner",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Edek",
+            "a_chose": "adult-chat",
+            "b": "Mabel",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "farmer"
+          },
+          {
+            "situation": [
+              "at_home",
+              "at_home_10",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Orla",
+            "a_chose": "apprentice-midday",
+            "b": "Peder",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "apprentice",
+            "role": null
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Bryn",
+            "a_chose": "child-play",
+            "b": "Hilde28",
+            "b_chose": "temp-easygoing-break",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Hilde28",
+            "a_chose": "child-follow-parent",
+            "b": "Ilsa",
+            "b_chose": "child-ask-adult",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_well",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Hilde28",
+            "a_chose": "child-tired",
+            "b": "Nell",
+            "b_chose": "temp-easygoing-break",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_fields",
+              "at_work",
+              "near_adult",
+              "near_partner",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Edek",
+            "a_chose": "adult-morning-work",
+            "b": "Mabel",
+            "b_chose": "temp-easygoing-break",
+            "stage": "adult",
+            "role": "farmer"
+          }
+        ],
+        "seed": 1
+      },
+      {
+        "run_id": "20260920-054732-seed2",
+        "decisions": 3082,
+        "peer_comparisons": 244,
+        "diverged": 113,
+        "diverged_pct": 46.3,
+        "peer_profile_overlap": 0.484,
+        "examples": [
+          {
+            "situation": [
+              "at_home",
+              "at_home_10",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Orla",
+            "a_chose": "apprentice-midday",
+            "b": "Peder",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "apprentice",
+            "role": null
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Bryn",
+            "a_chose": "child-ask-adult",
+            "b": "Hilde28",
+            "b_chose": "child-follow-parent",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Bryn",
+            "a_chose": "child-ask-adult",
+            "b": "Ilsa",
+            "b_chose": "child-play",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Hilde28",
+            "a_chose": "child-follow-parent",
+            "b": "Ilsa",
+            "b_chose": "child-play",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_well",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Corin",
+            "a_chose": "apprentice-morning-work",
+            "b": "Orla",
+            "b_chose": "temp-easygoing-break",
+            "stage": "apprentice",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_someone",
+              "time_afternoon"
+            ],
+            "a": "Edda",
+            "a_chose": "adult-tired",
+            "b": "Wynn",
+            "b_chose": "temp-diligent-back-to-work",
+            "stage": "adult",
+            "role": "crafter"
+          }
+        ],
+        "seed": 2
+      },
+      {
+        "run_id": "20260920-054814-seed3",
+        "decisions": 3010,
+        "peer_comparisons": 229,
+        "diverged": 114,
+        "diverged_pct": 49.8,
+        "peer_profile_overlap": 0.519,
+        "examples": [
+          {
+            "situation": [
+              "at_home",
+              "at_home_13",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_partner",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Edek",
+            "a_chose": "adult-tired",
+            "b": "Mabel",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "adult",
+            "role": "farmer"
+          },
+          {
+            "situation": [
+              "at_home",
+              "at_home_10",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Orla",
+            "a_chose": "apprentice-midday",
+            "b": "Peder",
+            "b_chose": "apprentice-chat",
+            "stage": "apprentice",
+            "role": null
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Hilde28",
+            "a_chose": "child-follow-parent",
+            "b": "Ilsa",
+            "b_chose": "child-home-evening",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Bryn",
+            "a_chose": "child-schoolyard",
+            "b": "Nell",
+            "b_chose": "child-follow-parent",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Garrick",
+            "a_chose": "adult-morning-work",
+            "b": "Gorm",
+            "b_chose": "temp-easygoing-break",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Gorm",
+            "a_chose": "temp-easygoing-break",
+            "b": "Wynn",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "crafter"
+          }
+        ],
+        "seed": 3
+      }
+    ],
+    "deterministic": [
+      {
+        "run_id": "20260920-054852-seed1",
+        "decisions": 3149,
+        "peer_comparisons": 176,
+        "diverged": 55,
+        "diverged_pct": 31.2,
+        "peer_profile_overlap": 0.464,
+        "examples": [
+          {
+            "situation": [
+              "at_home",
+              "at_home_10",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Orla",
+            "a_chose": "apprentice-morning-work",
+            "b": "Peder",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "apprentice",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_forest_edge",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Maren",
+            "a_chose": "temp-bold-roam",
+            "b": "Sten",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "adult",
+            "role": "merchant"
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Dunn",
+            "a_chose": "adult-morning-work",
+            "b": "Edda",
+            "b_chose": "adult-tired",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Edda",
+            "a_chose": "adult-tired",
+            "b": "Garrick",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Edda",
+            "a_chose": "adult-tired",
+            "b": "Gorm",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Garrick",
+            "a_chose": "temp-easygoing-break",
+            "b": "Gorm",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "crafter"
+          }
+        ],
+        "seed": 1
+      },
+      {
+        "run_id": "20260920-054929-seed2",
+        "decisions": 3285,
+        "peer_comparisons": 177,
+        "diverged": 47,
+        "diverged_pct": 26.6,
+        "peer_profile_overlap": 0.462,
+        "examples": [
+          {
+            "situation": [
+              "at_home",
+              "at_home_10",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Orla",
+            "a_chose": "apprentice-morning-work",
+            "b": "Peder",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "apprentice",
+            "role": null
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Hilde28",
+            "a_chose": "child-follow-parent",
+            "b": "Ilsa",
+            "b_chose": "child-ask-adult",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Edda",
+            "a_chose": "adult-morning-work",
+            "b": "Gorm",
+            "b_chose": "temp-easygoing-break",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_fields",
+              "at_work",
+              "near_adult",
+              "near_partner",
+              "near_someone",
+              "time_afternoon"
+            ],
+            "a": "Edek",
+            "a_chose": "adult-afternoon-work",
+            "b": "Mabel",
+            "b_chose": "temp-easygoing-break",
+            "stage": "adult",
+            "role": "farmer"
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_afternoon"
+            ],
+            "a": "Edda",
+            "a_chose": "adult-tired",
+            "b": "Wynn",
+            "b_chose": "adult-afternoon-work",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_someone",
+              "time_evening"
+            ],
+            "a": "Dunn",
+            "a_chose": "temp-gregarious-seek-company",
+            "b": "Wynn",
+            "b_chose": "temp-wary-home-before-dark",
+            "stage": "adult",
+            "role": "crafter"
+          }
+        ],
+        "seed": 2
+      },
+      {
+        "run_id": "20260920-055008-seed3",
+        "decisions": 3517,
+        "peer_comparisons": 339,
+        "diverged": 46,
+        "diverged_pct": 13.6,
+        "peer_profile_overlap": 0.548,
+        "examples": [
+          {
+            "situation": [
+              "at_home",
+              "at_home_10",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Orla",
+            "a_chose": "apprentice-morning-work",
+            "b": "Peder",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "apprentice",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Dunn",
+            "a_chose": "temp-easygoing-break",
+            "b": "Wynn",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Gorm",
+            "a_chose": "temp-easygoing-break",
+            "b": "Wynn",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Bryn",
+            "a_chose": "child-home-evening",
+            "b": "Ilsa",
+            "b_chose": "child-ask-adult",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Hilde28",
+            "a_chose": "child-home-evening",
+            "b": "Ilsa",
+            "b_chose": "child-ask-adult",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Edda",
+            "a_chose": "adult-tired",
+            "b": "Wynn",
+            "b_chose": "adult-afternoon-work",
+            "stage": "adult",
+            "role": "crafter"
+          }
+        ],
+        "seed": 3
+      }
+    ],
+    "impersonal query": [
+      {
+        "run_id": "20260920-055053-seed1",
+        "decisions": 4018,
+        "peer_comparisons": 219,
+        "diverged": 27,
+        "diverged_pct": 12.3,
+        "peer_profile_overlap": 0.493,
+        "examples": [
+          {
+            "situation": [
+              "at_home",
+              "at_home_10",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Orla",
+            "a_chose": "apprentice-chat",
+            "b": "Peder",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "apprentice",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_home",
+              "at_home_10",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Orla",
+            "a_chose": "apprentice-morning-work",
+            "b": "Peder",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "apprentice",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_afternoon"
+            ],
+            "a": "Edda",
+            "a_chose": "adult-afternoon-work",
+            "b": "Garrick",
+            "b_chose": "temp-easygoing-break",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_afternoon"
+            ],
+            "a": "Garrick",
+            "a_chose": "temp-easygoing-break",
+            "b": "Wynn",
+            "b_chose": "adult-afternoon-work",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_fields",
+              "at_work",
+              "time_midday"
+            ],
+            "a": "Fen",
+            "a_chose": "temp-bold-roam",
+            "b": "Sena",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "farmer"
+          },
+          {
+            "situation": [
+              "at_fields",
+              "at_work",
+              "time_midday"
+            ],
+            "a": "Fen",
+            "a_chose": "temp-bold-roam",
+            "b": "Thea",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "farmer"
+          }
+        ],
+        "seed": 1
+      },
+      {
+        "run_id": "20260920-055126-seed2",
+        "decisions": 4230,
+        "peer_comparisons": 316,
+        "diverged": 20,
+        "diverged_pct": 6.3,
+        "peer_profile_overlap": 0.52,
+        "examples": [
+          {
+            "situation": [
+              "at_home",
+              "at_home_10",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Orla",
+            "a_chose": "apprentice-chat",
+            "b": "Peder",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "apprentice",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_home",
+              "at_home_13",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_partner",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Edek",
+            "a_chose": "adult-chat",
+            "b": "Mabel",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "farmer"
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Edda",
+            "a_chose": "temp-gregarious-seek-company",
+            "b": "Garrick",
+            "b_chose": "temp-easygoing-break",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Hilde28",
+            "a_chose": "child-follow-parent",
+            "b": "Ilsa",
+            "b_chose": "child-ask-adult",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Hilde28",
+            "a_chose": "child-follow-parent",
+            "b": "Nell",
+            "b_chose": "child-ask-adult",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Edda",
+            "a_chose": "temp-gregarious-seek-company",
+            "b": "Garrick",
+            "b_chose": "temp-easygoing-break",
+            "stage": "adult",
+            "role": "crafter"
+          }
+        ],
+        "seed": 2
+      },
+      {
+        "run_id": "20260920-055202-seed3",
+        "decisions": 4115,
+        "peer_comparisons": 279,
+        "diverged": 11,
+        "diverged_pct": 3.9,
+        "peer_profile_overlap": 0.583,
+        "examples": [
+          {
+            "situation": [
+              "at_home",
+              "at_home_10",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Orla",
+            "a_chose": "apprentice-chat",
+            "b": "Peder",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "apprentice",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_home",
+              "at_home_13",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_partner",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Edek",
+            "a_chose": "adult-chat",
+            "b": "Mabel",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "farmer"
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Bryn",
+            "a_chose": "child-play",
+            "b": "Ilsa",
+            "b_chose": "child-ask-adult",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_home",
+              "at_home_10",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Orla",
+            "a_chose": "apprentice-chat",
+            "b": "Peder",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "apprentice",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_home",
+              "at_home_10",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_afternoon"
+            ],
+            "a": "Orla",
+            "a_chose": "apprentice-chat",
+            "b": "Peder",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "apprentice",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_home",
+              "at_home_10",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_evening"
+            ],
+            "a": "Orla",
+            "a_chose": "apprentice-chat",
+            "b": "Peder",
+            "b_chose": "temp-gregarious-seek-company",
+            "stage": "apprentice",
+            "role": null
+          }
+        ],
+        "seed": 3
+      }
+    ],
+    "impersonal, no temperament": [
+      {
+        "run_id": "20260920-055236-seed1",
+        "decisions": 3408,
+        "peer_comparisons": 336,
+        "diverged": 51,
+        "diverged_pct": 15.2,
+        "peer_profile_overlap": 0.684,
+        "examples": [
+          {
+            "situation": [
+              "near_adult",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Bryn",
+            "a_chose": "child-follow-parent",
+            "b": "Ilsa",
+            "b_chose": "child-ask-adult",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Bryn",
+            "a_chose": "child-follow-parent",
+            "b": "Nell",
+            "b_chose": "child-ask-adult",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Dunn",
+            "a_chose": "adult-afternoon-work",
+            "b": "Edda",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Dunn",
+            "a_chose": "adult-afternoon-work",
+            "b": "Garrick",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Dunn",
+            "a_chose": "adult-afternoon-work",
+            "b": "Gorm",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_midday"
+            ],
+            "a": "Dunn",
+            "a_chose": "adult-afternoon-work",
+            "b": "Wynn",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "crafter"
+          }
+        ],
+        "seed": 1
+      },
+      {
+        "run_id": "20260920-055308-seed2",
+        "decisions": 3512,
+        "peer_comparisons": 313,
+        "diverged": 37,
+        "diverged_pct": 11.8,
+        "peer_profile_overlap": 0.676,
+        "examples": [
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_afternoon"
+            ],
+            "a": "Garrick",
+            "a_chose": "adult-afternoon-work",
+            "b": "Gorm",
+            "b_chose": "adult-chat",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_fields",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_evening"
+            ],
+            "a": "Edek",
+            "a_chose": "adult-morning-work",
+            "b": "Osric",
+            "b_chose": "adult-afternoon-work",
+            "stage": "adult",
+            "role": "farmer"
+          },
+          {
+            "situation": [
+              "at_fields",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_evening"
+            ],
+            "a": "Edek",
+            "a_chose": "adult-morning-work",
+            "b": "Sena",
+            "b_chose": "adult-afternoon-work",
+            "stage": "adult",
+            "role": "farmer"
+          },
+          {
+            "situation": [
+              "at_fields",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_evening"
+            ],
+            "a": "Fen",
+            "a_chose": "adult-afternoon-work",
+            "b": "Sena",
+            "b_chose": "adult-chat",
+            "stage": "adult",
+            "role": "farmer"
+          },
+          {
+            "situation": [
+              "at_fields",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_someone",
+              "time_evening"
+            ],
+            "a": "Osric",
+            "a_chose": "adult-afternoon-work",
+            "b": "Sena",
+            "b_chose": "adult-chat",
+            "stage": "adult",
+            "role": "farmer"
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_evening"
+            ],
+            "a": "Garrick",
+            "a_chose": "adult-evening-inn",
+            "b": "Gorm",
+            "b_chose": "adult-chat",
+            "stage": "adult",
+            "role": "crafter"
+          }
+        ],
+        "seed": 2
+      },
+      {
+        "run_id": "20260920-055338-seed3",
+        "decisions": 3786,
+        "peer_comparisons": 371,
+        "diverged": 30,
+        "diverged_pct": 8.1,
+        "peer_profile_overlap": 0.833,
+        "examples": [
+          {
+            "situation": [
+              "at_home",
+              "at_home_13",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_partner",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Edek",
+            "a_chose": "adult-chat",
+            "b": "Mabel",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "farmer"
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Bryn",
+            "a_chose": "child-follow-parent",
+            "b": "Hilde28",
+            "b_chose": "child-schoolyard",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Bryn",
+            "a_chose": "child-follow-parent",
+            "b": "Ilsa",
+            "b_chose": "child-ask-adult",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "near_adult",
+              "near_crowd",
+              "near_parent",
+              "near_someone",
+              "time_morning"
+            ],
+            "a": "Hilde28",
+            "a_chose": "child-schoolyard",
+            "b": "Ilsa",
+            "b_chose": "child-ask-adult",
+            "stage": "child",
+            "role": null
+          },
+          {
+            "situation": [
+              "at_mill",
+              "at_work",
+              "near_adult",
+              "near_child",
+              "near_crowd",
+              "near_someone",
+              "time_evening"
+            ],
+            "a": "Garrick",
+            "a_chose": "adult-evening-inn",
+            "b": "Gorm",
+            "b_chose": "adult-chat",
+            "stage": "adult",
+            "role": "crafter"
+          },
+          {
+            "situation": [
+              "at_fields",
+              "at_work",
+              "near_adult",
+              "near_crowd",
+              "near_partner",
+              "near_someone",
+              "time_evening"
+            ],
+            "a": "Edek",
+            "a_chose": "adult-evening-inn",
+            "b": "Mabel",
+            "b_chose": "adult-morning-work",
+            "stage": "adult",
+            "role": "farmer"
+          }
+        ],
+        "seed": 3
+      }
+    ]
+  }
+}

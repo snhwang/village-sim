@@ -1,0 +1,73 @@
+=== 1. runs of the greater village (--days 40 --days-per-year 28 --profile illustrative --threshold 0.15 --llm-url http://localhost:8355/v1 --model Qwen3.8-27B) ===
+run 20261019-043725-seed1: finished tick 5760 of 5760 in 1958.3s -> /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3/runs/20261019-043725-seed1
+run 20261019-050836-seed2: finished tick 5760 of 5760 in 2660.5s -> /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3/runs/20261019-050836-seed2
+run 20261019-055041-seed3: finished tick 5760 of 5760 in 2085.7s -> /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3/runs/20261019-055041-seed3
+run 20261019-062341-seed4: finished tick 5760 of 5760 in 2445.1s -> /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3/runs/20261019-062341-seed4
+run 20261019-070216-seed5: finished tick 5760 of 5760 in 2102.6s -> /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3/runs/20261019-070216-seed5
+run 20261019-073525-seed6: finished tick 5760 of 5760 in 2318.7s -> /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3/runs/20261019-073525-seed6
+runs: 20261019-043725-seed1 20261019-050836-seed2 20261019-055041-seed3 20261019-062341-seed4 20261019-070216-seed5 20261019-073525-seed6
+=== 2. knowledge flow (sections 5 and 6, Figure 1) ===
+  longest chain          10 tellings
+  offers                 97932  (87.4% already known, 25.7% of the rest refused)
+  knowledge-only actions 61336 of 196136 (31.27%)
+  reclassified          5738/10282 (55.8%), 85.7% of those toward trouble
+
+  drift by telling:
+    hop 0:  median 0.0000  (n=1117)
+    hop 1:  median 0.1968  (n=2215)
+    hop 2:  median 0.3110  (n=2447)
+    hop 3:  median 0.3591  (n=2020)
+    hop 4:  median 0.3856  (n=1330)
+    hop 5:  median 0.4087  (n=650)
+    hop 6:  median 0.4295  (n=306)
+    hop 7:  median 0.4524  (n=133)
+    hop 8:  median 0.4965  (n=44)
+    hop 9:  median 0.5387  (n=16)
+    hop 10:  median 0.5447  (n=4)
+  wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3/results/figures/fig6_drift.png
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3/results/knowledge_flow.json and .md
+=== 3. world balance (sections 4 and 7) ===
+
+repertoire
+  events                      {'weather': 192, 'traveler': 56, 'sicken': 73, 'visitor': 22, 'harvest': 6, 'festival': 13, 'raid': 4}
+  most common event           52.5%
+  most common, weather aside  42.0% of 174
+  distinct sequences          6 of 6 seeds
+  instructions chosen         18/18  (retrieved 18)
+  quiet days                  66/234
+
+vocabulary
+  distinct sentences          60
+  effective sentences         15.84
+  effective (seed, event)     308.62
+  reframed (seed, event)      315 of 12185 reframings, effective 278.8
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3/results/world_balance.json and .md
+=== 4. memory carryover (section 5) ===
+9165 told facts with the teller's version stored
+
+kind: listener files it as trouble
+  all listeners          teller said trouble     ->  91.8%  (n=4826)
+  all listeners          teller said not trouble ->  25.2%  (n=4339)
+  wary listeners         teller said trouble     ->  93.8%  (n=2321)
+  wary listeners         teller said not trouble ->  30.4%  (n=2113)
+  bold listeners         teller said trouble     ->  89.9%  (n=2505)
+  bold listeners         teller said not trouble ->  20.3%  (n=2226)
+
+hedging: listener's version is hedged
+  all listeners          teller hedged     ->  79.3%  (n=5431)
+  all listeners          teller not hedged ->  51.6%  (n=3734)
+  suspicious listeners   teller hedged     ->  83.3%  (n=2646)
+  suspicious listeners   teller not hedged ->  56.4%  (n=1808)
+  trusting listeners     teller hedged     ->  75.6%  (n=2785)
+  trusting listeners     teller not hedged ->  47.1%  (n=1926)
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3/results/memory_carryover.json and .md
+=== 5. figures (Figures 2 and 3) ===
+  File "/mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3/experiments/figures.py", line 389, in main
+    fig_provenance(run, root, out / "fig1_provenance.png", args.follow)
+  File "/mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v3/experiments/figures.py", line 215, in fig_provenance
+    color=STAGE_COLOR[run.stage(f["holder"])], edgecolors=SURFACE, linewidths=1)
+          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'infant'

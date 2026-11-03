@@ -1,0 +1,39 @@
+# Hearthwick village map. Grid coordinates: x to the right, y down.
+# rect: [x, y, width, height]
+
+width: 40
+height: 30
+
+# Impassable terrain. The stream runs north to south, crossed by the bridge
+# on the east road and by a ford in the south.
+blocked:
+  - {kind: stream, rect: [26, 0, 2, 14]}
+  - {kind: stream, rect: [26, 16, 2, 9]}
+  - {kind: stream, rect: [26, 26, 2, 4]}
+
+places:
+  - {id: well,        name: "the well",        kind: well,       rect: [16, 13, 3, 3]}
+  - {id: market,      name: "the market",      kind: market,     rect: [10, 8, 6, 4]}
+  - {id: inn,         name: "the Wick & Kettle inn", kind: inn,  rect: [19, 8, 5, 4]}
+  - {id: shrine,      name: "the shrine",      kind: shrine,     rect: [5, 3, 4, 4]}
+  - {id: schoolyard,  name: "the schoolyard",  kind: schoolyard, rect: [19, 18, 5, 4]}
+  - {id: mill,        name: "the mill",        kind: mill,       rect: [23, 23, 3, 4]}
+  - {id: fields,      name: "the fields",      kind: fields,     rect: [2, 20, 11, 9]}
+  - {id: watchpost,   name: "the watchpost",   kind: watchpost,  rect: [28, 11, 3, 2]}
+  - {id: east_road,   name: "the east road",   kind: road,       rect: [28, 14, 12, 2]}
+  - {id: forest_edge, name: "the forest edge", kind: forest,     rect: [29, 0, 11, 9]}
+  - {id: home_bram,    name: "Bram's house",    kind: home, rect: [2, 10, 3, 3]}
+  - {id: home_hilde,   name: "Hilde's house",   kind: home, rect: [11, 3, 3, 3]}
+  - {id: home_garrick, name: "Garrick's house", kind: home, rect: [22, 3, 3, 3]}
+  - {id: home_wynn,    name: "Wynn and Ada's house", kind: home, rect: [13, 17, 3, 3]}
+  - {id: home_rosa,    name: "Rosa and Tobin's house", kind: home, rect: [6, 15, 3, 3]}
+  - {id: home_empty,   name: "the empty cottage", kind: home, rect: [17, 24, 3, 3]}
+
+# Work site for each role. Apprentices work at their mentor's site.
+role_sites:
+  farmer: fields
+  merchant: market
+  healer: shrine
+  guard: watchpost
+  crafter: mill
+  storyteller: inn

@@ -1,0 +1,78 @@
+# Building (hearthwick/building.py). A couple who marry and have no house of
+# their own wait in a family home, and the crafters put up a house for them.
+# Crafters do all of it for now: they fell the timber and build. Only a
+# crafter, apprentices included, sees these tags:
+#   house_needed    a couple is waiting for a house
+#   building_site   a house has been started
+#   timber_short    there is not yet timber enough to finish it
+#   timber_ready    there is timber to build with
+# Handlers refuse the rest: felling when there is timber enough, and building
+# with no timber or no room for a house.
+
+instructions:
+  - id: crafter-fell-timber
+    type: directive
+    priority: 67
+    content: A couple is waiting for a house of their own, and there is not timber enough to build it. Take an axe to the forest edge and fell some. [!fell(ticks=12)]
+    scope: {required_tags: [daytime, house_needed, timber_short], tags: [temp_diligent, temp_bold]}
+
+  - id: crafter-start-house
+    type: directive
+    priority: 66
+    content: A couple is waiting for a house of their own, and there is timber to start one. Mark out a plot near the other houses and set the first posts. [!build(ticks=12)]
+    scope: {required_tags: [daytime, house_needed, timber_ready], tags: [temp_diligent, temp_inquisitive]}
+
+  - id: crafter-build-house
+    type: directive
+    priority: 68
+    content: The new house is going up and there is timber for it. Go to the site and keep building. [!build(ticks=12)]
+    scope: {required_tags: [daytime, house_needed, building_site, timber_ready], tags: [temp_diligent]}
+
+  # Materials (SPECIFICATION.md section 2.9i). What goes up needs goods in
+  # proportion to what it is made of, and the crafters see what is short:
+  #   stone_short, clay_short   cut stone at the quarry, or dig clay at the pit
+  #   ore_short                 iron is short and there is no ore to smelt
+  #   ore_ready                 iron is short, and there is ore and timber
+  # Glass and cloth only come by road, so it is the merchants who see
+  # glass_short and cloth_short, and fetch them from the carts on the east road.
+  - id: crafter-cut-stone
+    type: directive
+    priority: 67
+    content: What the crafters are building needs stone, and there is not enough. Go to the quarry and cut some. [!gather(what=stone, for=building, ticks=12)]
+    scope: {required_tags: [daytime, stone_short], tags: [temp_diligent, temp_bold]}
+    metadata: {switch: materials}
+
+  - id: crafter-dig-clay
+    type: directive
+    priority: 67
+    content: What the crafters are building needs clay, and there is not enough. Go to the clay pit and dig some. [!gather(what=clay, for=building, ticks=12)]
+    scope: {required_tags: [daytime, clay_short], tags: [temp_diligent, temp_bold]}
+    metadata: {switch: materials}
+
+  - id: crafter-dig-ore
+    type: directive
+    priority: 65
+    content: What the crafters are building needs iron, and there is no ore to smelt. Go to the quarry and dig ore. [!gather(what=ore, for=building, ticks=12)]
+    scope: {required_tags: [daytime, ore_short], tags: [temp_diligent]}
+    metadata: {switch: materials}
+
+  - id: crafter-smelt-iron
+    type: directive
+    priority: 66
+    content: What the crafters are building needs iron, and there is ore and timber for it. Go to the forge and smelt iron. [!smelt(ticks=12)]
+    scope: {required_tags: [daytime, ore_ready], tags: [temp_diligent, temp_inquisitive]}
+    metadata: {switch: materials}
+
+  - id: merchant-fetch-glass
+    type: directive
+    priority: 64
+    content: The crafters need glass for what they are building, and only the road brings it. Walk out along the east road to the carts and bring some back. [!fetch(what=glass, ticks=12)]
+    scope: {required_tags: [daytime, glass_short], tags: [temp_gregarious, temp_bold]}
+    metadata: {switch: materials}
+
+  - id: merchant-fetch-cloth
+    type: directive
+    priority: 64
+    content: The crafters need cloth for what they are building, and only the road brings it. Walk out along the east road to the carts and bring some back. [!fetch(what=cloth, ticks=12)]
+    scope: {required_tags: [daytime, cloth_short], tags: [temp_gregarious, temp_bold]}
+    metadata: {switch: materials}

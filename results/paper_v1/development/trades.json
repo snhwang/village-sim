@@ -1,0 +1,667 @@
+[
+  {
+    "run": "20260928-170529-seed1",
+    "growth": true,
+    "graduated": [
+      {
+        "who": "hilde28",
+        "day": 3
+      },
+      {
+        "who": "ilsa",
+        "day": 4
+      },
+      {
+        "who": "bryn",
+        "day": 17
+      },
+      {
+        "who": "nell",
+        "day": 17
+      },
+      {
+        "who": "maja",
+        "day": 33
+      },
+      {
+        "who": "inga",
+        "day": 34
+      },
+      {
+        "who": "frode",
+        "day": 34
+      },
+      {
+        "who": "jory",
+        "day": 37
+      }
+    ],
+    "choices": [
+      {
+        "who": "hilde28",
+        "day": 3,
+        "chosen": "learned-hilde28-family-knowledge",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "settled",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4085
+          ],
+          [
+            "trade-merchant",
+            0.3998
+          ],
+          [
+            "trade-guard",
+            0.3988
+          ],
+          [
+            "trade-healer",
+            0.3967
+          ],
+          [
+            "trade-crafter",
+            0.3887
+          ],
+          [
+            "trade-storyteller",
+            0.371
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "hilde28",
+        "day": 3,
+        "chosen": "trade-farmer",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "settled",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4326
+          ],
+          [
+            "trade-healer",
+            0.4275
+          ],
+          [
+            "trade-merchant",
+            0.4264
+          ],
+          [
+            "trade-guard",
+            0.4257
+          ],
+          [
+            "trade-crafter",
+            0.3931
+          ],
+          [
+            "trade-storyteller",
+            0.3909
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "ilsa",
+        "day": 4,
+        "chosen": "temp-inquisitive-explore",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4067
+          ],
+          [
+            "trade-merchant",
+            0.387
+          ],
+          [
+            "trade-crafter",
+            0.382
+          ],
+          [
+            "trade-guard",
+            0.3778
+          ],
+          [
+            "trade-healer",
+            0.3677
+          ],
+          [
+            "trade-storyteller",
+            0.3633
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "ilsa",
+        "day": 4,
+        "chosen": "trade-crafter",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4216
+          ],
+          [
+            "trade-healer",
+            0.4191
+          ],
+          [
+            "trade-merchant",
+            0.4073
+          ],
+          [
+            "trade-crafter",
+            0.3999
+          ],
+          [
+            "trade-guard",
+            0.3951
+          ],
+          [
+            "trade-storyteller",
+            0.3899
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "bryn",
+        "day": 17,
+        "chosen": "trade-crafter",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "settled",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "embellishing"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer",
+          "parent_storyteller"
+        ],
+        "ranked": [
+          [
+            "trade-guard",
+            0.4289
+          ],
+          [
+            "trade-farmer",
+            0.4222
+          ],
+          [
+            "trade-healer",
+            0.4133
+          ],
+          [
+            "trade-crafter",
+            0.4119
+          ],
+          [
+            "trade-merchant",
+            0.4068
+          ],
+          [
+            "trade-storyteller",
+            0.4063
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "nell",
+        "day": 17,
+        "chosen": "trade-merchant",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "bold",
+          "curiosity": "settled",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer",
+          "parent_healer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4214
+          ],
+          [
+            "trade-merchant",
+            0.4031
+          ],
+          [
+            "trade-crafter",
+            0.3964
+          ],
+          [
+            "trade-healer",
+            0.3963
+          ],
+          [
+            "trade-guard",
+            0.3932
+          ],
+          [
+            "trade-storyteller",
+            0.3835
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "maja",
+        "day": 33,
+        "chosen": "trade-farmer",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "embellishing"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer",
+          "parent_storyteller"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4316
+          ],
+          [
+            "trade-healer",
+            0.431
+          ],
+          [
+            "trade-guard",
+            0.4295
+          ],
+          [
+            "trade-merchant",
+            0.4135
+          ],
+          [
+            "trade-crafter",
+            0.4099
+          ],
+          [
+            "trade-storyteller",
+            0.4052
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "inga",
+        "day": 34,
+        "chosen": "learned-inga-secure-inn-perimeter",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer",
+          "parent_healer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4175
+          ],
+          [
+            "trade-guard",
+            0.4037
+          ],
+          [
+            "trade-healer",
+            0.4032
+          ],
+          [
+            "trade-merchant",
+            0.3868
+          ],
+          [
+            "trade-crafter",
+            0.3854
+          ],
+          [
+            "trade-storyteller",
+            0.3708
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "frode",
+        "day": 34,
+        "chosen": "trade-merchant",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "diligent",
+          "candor": "embellishing"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4281
+          ],
+          [
+            "trade-merchant",
+            0.4246
+          ],
+          [
+            "trade-guard",
+            0.4179
+          ],
+          [
+            "trade-crafter",
+            0.4138
+          ],
+          [
+            "trade-healer",
+            0.404
+          ],
+          [
+            "trade-storyteller",
+            0.3876
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "inga",
+        "day": 34,
+        "chosen": "trade-crafter",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer",
+          "parent_healer"
+        ],
+        "ranked": [
+          [
+            "trade-crafter",
+            0.4266
+          ],
+          [
+            "trade-guard",
+            0.4237
+          ],
+          [
+            "trade-farmer",
+            0.4218
+          ],
+          [
+            "trade-healer",
+            0.4134
+          ],
+          [
+            "trade-merchant",
+            0.4008
+          ],
+          [
+            "trade-storyteller",
+            0.384
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "jory",
+        "day": 37,
+        "chosen": "trade-healer",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_healer"
+        ],
+        "ranked": [
+          [
+            "trade-healer",
+            0.4343
+          ],
+          [
+            "trade-guard",
+            0.4327
+          ],
+          [
+            "trade-farmer",
+            0.4179
+          ],
+          [
+            "trade-crafter",
+            0.4031
+          ],
+          [
+            "trade-merchant",
+            0.3988
+          ],
+          [
+            "trade-storyteller",
+            0.3914
+          ]
+        ],
+        "refused": []
+      }
+    ],
+    "apprenticed": [
+      {
+        "who": "hilde28",
+        "trade": "farmer",
+        "master": "merrick",
+        "day": 3,
+        "fondness": 7.18,
+        "master_is_parent": false
+      },
+      {
+        "who": "ilsa",
+        "trade": "crafter",
+        "master": "dunn",
+        "day": 4,
+        "fondness": 5.45,
+        "master_is_parent": false
+      },
+      {
+        "who": "bryn",
+        "trade": "crafter",
+        "master": "wynn",
+        "day": 17,
+        "fondness": 10.28,
+        "master_is_parent": false
+      },
+      {
+        "who": "nell",
+        "trade": "merchant",
+        "master": "sten",
+        "day": 17,
+        "fondness": 2.27,
+        "master_is_parent": false
+      },
+      {
+        "who": "maja",
+        "trade": "farmer",
+        "master": "katrin",
+        "day": 33,
+        "fondness": 20.61,
+        "master_is_parent": false
+      },
+      {
+        "who": "frode",
+        "trade": "merchant",
+        "master": "maren",
+        "day": 34,
+        "fondness": 4.64,
+        "master_is_parent": false
+      },
+      {
+        "who": "inga",
+        "trade": "crafter",
+        "master": "garrick",
+        "day": 34,
+        "fondness": 9.86,
+        "master_is_parent": false
+      },
+      {
+        "who": "jory",
+        "trade": "healer",
+        "master": "hal",
+        "day": 37,
+        "fondness": 3.69,
+        "master_is_parent": false
+      }
+    ],
+    "qualified": [
+      {
+        "who": "corin",
+        "trade": "healer",
+        "master": "ada",
+        "day": 13
+      },
+      {
+        "who": "gisla",
+        "trade": "crafter",
+        "master": "edda",
+        "day": 13
+      },
+      {
+        "who": "orla",
+        "trade": "storyteller",
+        "master": "rosa",
+        "day": 13
+      },
+      {
+        "who": "peder",
+        "trade": "guard",
+        "master": "lise",
+        "day": 14
+      },
+      {
+        "who": "hilde28",
+        "trade": "farmer",
+        "master": "merrick",
+        "day": 25
+      },
+      {
+        "who": "ilsa",
+        "trade": "crafter",
+        "master": "dunn",
+        "day": 25
+      }
+    ],
+    "school": {
+      "child-school": 408,
+      "elder-teach": 682
+    },
+    "held_back": {
+      "adult: experience": 824,
+      "adult: age": 600,
+      "adult: knowledge": 344,
+      "apprentice: age": 141,
+      "child: age": 92,
+      "infant: age": 67,
+      "apprentice: experience": 66,
+      "apprentice: skill": 59,
+      "apprentice: knowledge": 34,
+      "child: school": 14,
+      "child: knowledge": 11,
+      "child: experience": 7
+    }
+  }
+]

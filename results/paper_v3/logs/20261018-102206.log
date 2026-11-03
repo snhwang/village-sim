@@ -1,0 +1,83 @@
+running hard gates, BM25 ...
+Hash embeddings selected. Similarity scores are based on character n-gram overlap and carry no semantic signal — retrieval ranking is effectively arbitrary. Use a sentence-transformers model (e.g. 'BAAI/bge-base-en-v1.5') for meaningful semantic retrieval.
+Corpus is empty, nothing to index.
+Selection 'news' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_hilde28' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+  48.3% similarity, 47 instructions, 30/30 asleep
+running hard gates, service ...
+Corpus is empty, nothing to index.
+Selection 'news' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_hilde28' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_ilsa' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_nell' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_bryn' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_hilde' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_rosa' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_fen' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_osric' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+  41.9% similarity, 49 instructions, 30/30 asleep
+running soft tags, BM25 ...
+Hash embeddings selected. Similarity scores are based on character n-gram overlap and carry no semantic signal — retrieval ranking is effectively arbitrary. Use a sentence-transformers model (e.g. 'BAAI/bge-base-en-v1.5') for meaningful semantic retrieval.
+Corpus is empty, nothing to index.
+Selection 'news' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_hilde28' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+  87.6% similarity, 46 instructions, 30/30 asleep
+running soft tags, service, t=0 ...
+Corpus is empty, nothing to index.
+Selection 'news' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_gisla' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_lise' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_hilde28' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_orla' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_osric' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_rosa' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_hilde' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_freya' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_fen' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_garrick' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_thea' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_maren' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+  75.0% similarity, 51 instructions, 30/30 asleep
+running soft tags, service, t=0, restored ...
+Corpus is empty, nothing to index.
+Selection 'news' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_gisla' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_lise' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_hilde28' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_orla' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_osric' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_rosa' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_hilde' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_freya' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_fen' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_garrick' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_thea' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_maren' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+  75.0% similarity, 51 instructions, 30/30 asleep
+running soft tags, service, t=0.15 ...
+Corpus is empty, nothing to index.
+Selection 'news' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_gisla' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_lise' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_hilde28' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_orla' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_osric' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_rosa' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_hilde' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_freya' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_fen' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_garrick' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_thea' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_maren' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+  72.7% similarity, 51 instructions, 30/30 asleep
+running soft tags, service, t=0.40 ...
+Corpus is empty, nothing to index.
+Selection 'news' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_hilde28' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_hilde' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_freya' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_tobin' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_rosa' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+  58.6% similarity, 51 instructions, 30/30 asleep
+
+wrote results/threshold_ablation_v3/seed5/retrieval_ablation.json and .md

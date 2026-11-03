@@ -1,0 +1,57 @@
+# Apprentice stage protocols. Gated on stage_apprentice.
+# Apprentices work at their mentor's site until they choose a role as adults.
+
+instructions:
+  - id: apprentice-night
+    type: protocol
+    priority: 90
+    content: When night falls, go home and sleep until morning. [!go(to=home)] [!rest(until=morning)]
+    scope: {required_tags: [stage_apprentice, time_night]}
+
+  - id: apprentice-tired
+    type: protocol
+    priority: 70
+    content: You are worn out. Go home and rest a while. [!go(to=home)] [!rest(ticks=6)]
+    scope: {required_tags: [stage_apprentice, energy_low]}
+
+  - id: apprentice-morning-work
+    type: directive
+    priority: 65
+    content: In the morning, go to your mentor's workplace and help with the work. Watch closely how it is done. [!work(site=mentor, ticks=12)]
+    scope: {required_tags: [stage_apprentice, daytime], tags: [time_morning]}
+
+  - id: apprentice-afternoon-work
+    type: directive
+    priority: 60
+    content: In the afternoon, go back to your mentor's workplace and practice what you were shown. [!work(site=mentor, ticks=12)]
+    scope: {required_tags: [stage_apprentice, daytime], tags: [time_afternoon]}
+
+  - id: apprentice-midday
+    type: directive
+    priority: 55
+    content: At midday, take a break by the well, where young people meet and swap news. [!go(to=well)] [!rest(ticks=3)]
+    scope: {required_tags: [stage_apprentice, daytime], tags: [time_midday]}
+
+  - id: apprentice-chat
+    type: directive
+    priority: 45
+    content: Someone is nearby. Go and talk with them about what happened today. [!talk(target=nearby, topic=what happened today)]
+    scope: {required_tags: [stage_apprentice, daytime], tags: [near_someone, wants_company]}
+
+  - id: apprentice-evening
+    type: directive
+    priority: 50
+    content: In the evening, slip into the inn to listen to the grown-ups talk. [!go(to=inn)]
+    scope: {required_tags: [stage_apprentice, daytime], tags: [time_evening]}
+
+  - id: apprentice-wander
+    type: fallback
+    priority: 20
+    content: Walk around the village and see what is going on. [!wander]
+    scope: {required_tags: [stage_apprentice, daytime]}
+
+  - id: apprentice-speech
+    type: directive
+    priority: 60
+    content: You are an apprentice, no longer a child but not yet grown. You like to show what you have learned and sometimes get the details wrong.
+    scope: {required_tags: [stage_apprentice, talking]}

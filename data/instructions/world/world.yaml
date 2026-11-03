@@ -1,0 +1,182 @@
+# The world is an entity too (DESIGN.md §2.1). Its context is the village's
+# history — season, how long since rain, the last harvest, whether the road is
+# watched, what happened recently — and its markers are events. The deciding is
+# BEAR; the raining is physics.
+#
+# Gated on `world` so nothing here can be retrieved by a villager, and on the
+# season, which is absolute. Everything else is soft: the world's situation
+# decides which of its instructions the query surfaces.
+
+instructions:
+  # --- weather ---
+  - id: world-rain-after-dry-spell
+    type: directive
+    priority: 70
+    content: >-
+      Two weeks with no rain and the grain standing thirsty in the fields. Send
+      rain before the crop is lost. [!weather(rain)]
+    scope: {required_tags: [world, sky, dry_spell], tags: [season_summer, harvest_near]}
+
+  - id: world-storm
+    type: directive
+    priority: 60
+    content: >-
+      The air has been heavy for days. Break it with a storm: wind off the
+      forest, rain hard enough to keep everyone indoors. [!weather(storm)]
+    scope: {required_tags: [world, sky, dry_spell], tags: [unsettled, season_summer]}
+
+  - id: world-frost
+    type: directive
+    priority: 65
+    content: >-
+      The cold is early this year. Put a frost on the fields overnight and see
+      what survives it. [!weather(frost)]
+    scope: {required_tags: [world, sky, season_winter]}
+
+  - id: world-spring-rain
+    type: directive
+    priority: 55
+    content: >-
+      Spring weather, and the ground wants watering before anything will grow.
+      A day of steady rain. [!weather(rain)]
+    scope: {required_tags: [world, sky, season_spring]}
+
+  - id: world-clear
+    type: fallback
+    priority: 30
+    content: A settled, ordinary day. Clear skies over the village. [!weather(clear)]
+    scope: {required_tags: [world, sky]}
+
+  # --- the year ---
+  # No harvest here. How good the harvest is was the world's to decide, and
+  # it is now what the villagers bring in (hearthwick/food.py). The world
+  # still perceives it, as harvest_good or harvest_poor.
+
+  # --- people from outside ---
+  - id: world-traveling-storyteller
+    type: directive
+    priority: 56
+    content: >-
+      A traveling storyteller comes up the east road, with tales from other
+      villages and news from the roads between, and will stay a night or two
+      at the inn. [!visitor(storyteller)]
+    scope: {required_tags: [world, happening, news_stale], tags: [season_winter, road_quiet, harvest_good]}
+
+  - id: world-raiders-after-lean-year
+    type: directive
+    priority: 68
+    content: >-
+      A lean year here means a leaner one beyond the forest, and nobody has
+      walked the east road in days. Raiders try their luck on the road.
+      [!raid(east_road)]
+    scope: {required_tags: [world, happening, road_untended], tags: [harvest_poor, season_winter, dry_spell, road_unwatched]}
+
+  - id: world-traveler-with-news
+    type: directive
+    priority: 50
+    content: >-
+      A trader comes up the east road with news from beyond the village: what
+      the harvest was like elsewhere, who is fighting whom, what the roads are
+      like. [!traveler(news from beyond the village)]
+    scope: {required_tags: [world, happening, news_stale], tags: [road_quiet, season_summer, season_autumn]}
+
+  - id: world-traveler-with-rumor
+    type: directive
+    priority: 48
+    content: >-
+      A pedlar arrives with a story too good to be true, and tells it at the
+      inn. [!traveler(a tall tale from the road)]
+    scope: {required_tags: [world, happening, news_stale], tags: [road_quiet, festival_recent]}
+
+  # --- trouble at home ---
+  - id: world-well-sickens
+    type: directive
+    priority: 66
+    content: >-
+      The well has been drawn low and warm all season. Something in the water
+      turns, and those who drink it will sicken. [!sicken(well)]
+    scope: {required_tags: [world, happening, dry_spell, well_busy], tags: [season_summer]}
+
+  # --- the village together ---
+  - id: world-harvest-festival
+    type: directive
+    priority: 64
+    content: >-
+      The harvest is in and the village wants an evening of it. Call everyone
+      together: this is when news travels furthest. [!festival]
+    scope: {required_tags: [world, happening, season_winter, harvest_good]}
+
+  # --- more of what a traveler can be carrying -------------------------------
+  # The traveler's topic is a marker argument and reaches the village as the
+  # sentence its witnesses hold, so each of these is a distinct piece of news.
+  # With one traveler instruction the whole simulation had four things it could
+  # ever say, and every measurement of what villagers keep was really a
+  # measurement of one sentence about a man on a road.
+
+  - id: world-traveler-with-fair-news
+    type: directive
+    priority: 50
+    content: >-
+      A carter comes through with word of a fair beyond the forest: stock sold,
+      prices got, and who is buying before winter.
+      [!traveler(word of a fair beyond the forest)]
+    scope: {required_tags: [world, happening, news_stale], tags: [road_quiet, season_summer, harvest_near]}
+
+  - id: world-traveler-with-sickness-elsewhere
+    type: directive
+    priority: 52
+    content: >-
+      A traveler will not come near anyone. There is sickness two valleys over,
+      he says, and he has walked through it.
+      [!traveler(word of sickness two valleys over)]
+    scope: {required_tags: [world, happening, news_stale], tags: [road_quiet, dry_spell, sickness_about]}
+
+  - id: world-traveler-with-bad-road
+    type: directive
+    priority: 49
+    content: >-
+      A drover arrives late and out of temper: the low road is under water and
+      the ford is gone. [!traveler(word that the low road is washed out)]
+    scope: {required_tags: [world, happening, news_stale], tags: [well_watered, road_quiet]}
+
+  - id: world-traveler-with-unrest
+    type: directive
+    priority: 53
+    content: >-
+      A man on the road says there is fighting beyond the forest, and that men
+      are taking what they want on the way home.
+      [!traveler(word of fighting beyond the forest)]
+    scope: {required_tags: [world, happening, news_stale], tags: [harvest_poor, season_winter, road_unwatched]}
+
+  # --- more that can go wrong at home ---------------------------------------
+  # sicken takes a place, and the sentence its witnesses hold depends on which,
+  # so these are not the same event twice.
+
+  - id: world-blight-in-the-fields
+    type: directive
+    priority: 64
+    content: >-
+      The crop has stood wet and warm too long and something has got into it.
+      A blight takes the field. [!sicken(fields)]
+    # Summer is required, as the words say (SPECIFICATION.md section 2.9j).
+    # Gated on rain alone it struck every six or seven days in any season, and
+    # a village of fourteen could not bring a crop in against it.
+    scope: {required_tags: [world, happening, well_watered, season_summer], tags: [well_worked]}
+
+  - id: world-grain-spoils-at-the-mill
+    type: directive
+    priority: 58
+    content: >-
+      Sacks left against a damp wall through a wet week. The grain at the mill
+      has gone over. [!sicken(mill)]
+    scope: {required_tags: [world, happening, well_watered], tags: [season_autumn, harvest_good]}
+
+  # --- the village together --------------------------------------------------
+
+  - id: world-midwinter-gathering
+    type: directive
+    priority: 60
+    content: >-
+      The dark end of the year, and the village wants light and company. They
+      gather and stay late. [!festival]
+    scope: {required_tags: [world, happening, season_winter], tags: [harvest_good]}

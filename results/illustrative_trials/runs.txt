@@ -1,0 +1,65 @@
+20261017-043036-seed1
+20261017-043130-seed2
+20261017-043226-seed3
+# Three trial runs of --profile illustrative (README section 6), seeds 1 to 3,
+# 280 in-game days (ten 28-day years) each, started on 2026-10-17 at 04:30,
+# 04:31 and 04:32 EDT, a minute apart, on Scott's go-ahead ("We need to fix
+# the sim, collect data, and write the paper"). They check that the village
+# the paper would now describe has no obvious bugs, by
+# experiments/health_check.py on each, before the build is frozen. Seed 1
+# compares with the seventh long run, which had the same rules but the four
+# newest switches (news that ends, false alarms, routine memories that fade,
+# talk once a day). Seeds 2 and 3 show how much runs vary.
+#
+# The build. Hearthwick 14ca04d with BEAR 8e26162 from the WSL clone
+# /mnt/c/tmp/bear-dev-main. The model is Qwen3.8-27B on 8355 (SGLang), which
+# they share, and the embedder is 8360. The seventh long run was stopped to
+# give them the server.
+#
+# From the repository in WSL, for each seed N:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup env OMP_NUM_THREADS=1 \
+#     OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python \
+#     -m hearthwick run --profile illustrative --days 280 --seed N \
+#     --village greater --checkpoint-every 1 \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     > runs/illustrative_seedN.log 2>&1 < /dev/null &
+#
+# In their first minutes, none of their model calls failed and their logs had
+# no errors.
+#
+# To resume one after a stop, with the same environment:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup env OMP_NUM_THREADS=1 \
+#     OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python \
+#     -m hearthwick run --resume <run_id> \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     >> runs/illustrative_seedN.log 2>&1 < /dev/null &
+#
+# The checks, once each has finished:
+#
+#   python experiments/health_check.py <run_id> --log runs/illustrative_seedN.log \
+#     --out results/illustrative_trials/health/seedN
+#   python experiments/long_run_report.py <run_id> --to-day 280 \
+#     --out results/illustrative_trials/report/seedN
+#
+# All three finished their 280 days (seed 1 at 16:23:56, seed 2 at 15:34:21,
+# seed 3 at 15:23:41 EDT), with no model call unanswered (6 to 13 empty
+# replies each in 38,676 to 47,076 calls). Their health checks and reports are
+# in health/ and report/. Each flagged one thing:
+#   - seed 1: an apprentice caught in its own warning lesson for a day
+#   - seed 2: an elder caught following whoever sat at the inn, by its lesson
+#   - seed 3: the live index growing, which per villager it was not
+# The first two are the fault lessons_satisfied fixes. A one-shot lesson now
+# rests once carried out, until something rekindles it. The third the health
+# check now judges per villager (SPECIFICATION-memory.md section 11). A first
+# fix, lessons_once_a_day (a49aa10), capped each lesson at once a day. Scott
+# asked for the urge to end with its goal instead, and lessons_satisfied
+# replaced it. The paper's runs are made on the frozen build with the fix, and
+# are checked the same way.
+#
+# The health checks in health/ were made again on 2026-10-17 at about 22:00,
+# with the same commands, once the health check could count a villager acting
+# on one of its one-shot lessons again and again in a day. All three flag it
+# (93, 227 and 58 villager-days over 12), so the two cases above were the
+# worst of many. Seed 3 no longer flags the live index, judged per villager.

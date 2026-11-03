@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "runs": [
+      "20261022-070414-seed1",
+      "20261022-073709-seed2",
+      "20261022-080916-seed3",
+      "20261022-083715-seed4",
+      "20261022-090533-seed5",
+      "20261022-093732-seed6"
+    ],
+    "village": "greater",
+    "villagers": 51,
+    "reframings_replayed": 400,
+    "model": "Qwen3.8-27B",
+    "calls": 3600,
+    "failures": 0,
+    "errors": 0,
+    "date": "2026-10-22"
+  },
+  "no_lens_loci": [
+    "sociability",
+    "diligence"
+  ],
+  "rows": [
+    {
+      "what": "same prompt",
+      "n": 305,
+      "median": 0.0,
+      "mean": 0.0207,
+      "changed_at_all_pct": 23.3,
+      "p_vs_no_lens": null,
+      "no_lens": false,
+      "null": true
+    },
+    {
+      "what": "whole temperament",
+      "n": 298,
+      "median": 0.0976,
+      "mean": 0.1101,
+      "changed_at_all_pct": 77.2,
+      "p_vs_no_lens": 0.0,
+      "no_lens": false,
+      "null": false
+    },
+    {
+      "what": "sociability",
+      "n": 294,
+      "median": 0.0065,
+      "mean": 0.0547,
+      "changed_at_all_pct": 52.0,
+      "p_vs_no_lens": null,
+      "no_lens": true,
+      "null": false
+    },
+    {
+      "what": "caution",
+      "n": 293,
+      "median": 0.0296,
+      "mean": 0.073,
+      "changed_at_all_pct": 59.4,
+      "p_vs_no_lens": 0.0343,
+      "no_lens": false,
+      "null": false
+    },
+    {
+      "what": "curiosity",
+      "n": 297,
+      "median": 0.1202,
+      "mean": 0.1316,
+      "changed_at_all_pct": 86.9,
+      "p_vs_no_lens": 0.0,
+      "no_lens": false,
+      "null": false
+    },
+    {
+      "what": "trust",
+      "n": 293,
+      "median": 0.1292,
+      "mean": 0.1417,
+      "changed_at_all_pct": 89.1,
+      "p_vs_no_lens": 0.0,
+      "no_lens": false,
+      "null": false
+    },
+    {
+      "what": "diligence",
+      "n": 297,
+      "median": 0.0156,
+      "mean": 0.0523,
+      "changed_at_all_pct": 57.6,
+      "p_vs_no_lens": null,
+      "no_lens": true,
+      "null": false
+    },
+    {
+      "what": "candor",
+      "n": 286,
+      "median": 0.1457,
+      "mean": 0.1542,
+      "changed_at_all_pct": 94.4,
+      "p_vs_no_lens": 0.0,
+      "no_lens": false,
+      "null": false
+    }
+  ]
+}

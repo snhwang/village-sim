@@ -1,0 +1,84 @@
+20261003-093714-seed1
+# The long run: the greater village, seed 1, on the current build, with speech
+# from Qwen3.8-27B, left running to see how far it gets. It plans 8,000 in-game
+# days (a thousand years) only so it never stops by itself, and is stopped by
+# hand. Seed 1 starts it as the development run started (results/development).
+# It asks whether a village lasts once villagers die of old age, under the same
+# rules as the "now" variant of experiments/survival.py, which runs without the
+# model (results/survival.md). Without the model, those rules grew to 171 and
+# 203 by year 50. Whether a village lasts with the model speaking is not yet
+# known.
+#
+# The model. Every measured run in the paper used unsloth/Qwen3.8-27B-NVFP4
+# on 8355 (vLLM 0.27.1). That server is busy with the knowledge-flow paper's
+# batches, so this run uses the same checkpoint on a DGX Spark, reached
+# through the fleet gateway as "Qwen3.8-27B-Spark-unsloth". As its agent read
+# it from the running server on 2026-10-03:
+#   - SGLang 0.0.0.dev1+gdb272201a (lmsysorg/sglang:dev
+#     sha256:e11ff021ced5531875cc31921590685721ee6b2872e6d3b157a0aaf05bd4a1c6),
+#     one DGX Spark (GB10), TP 1
+#   - unsloth/Qwen3.8-27B-NVFP4 at f0b7c9e722f5565102fff8481c99e4d86ae099c7,
+#     the checkpoint's own chat template, tokenizer truncation off
+#   - fp8_e4m3 KV cache, --random-seed 1, reasoning parser qwen3, tool parser
+#     qwen3_coder, context 262,144, --max-running-requests 8
+#   - speculative decoding DFlash2 (z-lab/Qwen3.8-27B-DFlash2 at
+#     50307d4c4cde6860d4eee73e2547cd786fe8e8a4, 8 draft tokens), which is
+#     lossless, where 8355 uses MTP with 3 tokens
+# The weights and settings match 8355. The engine and hardware do not, so
+# replies differ numerically, as they already do between two runs on 8355 at
+# temperature 0.8 with requests in parallel. Checked from Hearthwick on
+# 2026-10-03: short replies with thinking off, a 4,440-token prompt answered
+# from its last line, and 8 replies four at a time in 3.1 s.
+#
+# Off: designs, wants, web search, vehicles, assessing, looking at drawings
+# and placing. Creation is outside the paper, and search reads a web that
+# changes daily, so a run with it could not be repeated. Everything else is on.
+#
+# From the repository in WSL, with the embedder up on 8360. The gateway's key
+# is THEMINDFOLD_API_KEY in .env, read by --llm-key-env and never put on the
+# command line or in the run's record. It saves every in-game day.
+#
+#   nohup .venv/bin/python -m hearthwick run --days 8000 --seed 1 --village greater \
+#     --checkpoint-every 1 --no-designs --no-wants --no-search --no-vehicles \
+#     --no-assessing --no-looking --no-placing \
+#     --llm-url http://192.168.1.176:9010/v1 --model Qwen3.8-27B-Spark-unsloth \
+#     --llm-key-env THEMINDFOLD_API_KEY > runs/long_run.log 2>&1 &
+#
+# If it stops, carry on from its last save. The model, URL and key are
+# connection settings, so they are given again:
+#
+#   nohup .venv/bin/python -m hearthwick run --resume <run_id> \
+#     --llm-url http://192.168.1.176:9010/v1 --model Qwen3.8-27B-Spark-unsloth \
+#     --llm-key-env THEMINDFOLD_API_KEY >> runs/long_run.log 2>&1 &
+#
+# The Spark's agent holds that model lane for this run, so its switcher refuses
+# to stop or swap it. Tell it (the "dual-spark-serve" / "Close Code and run
+# from terminal" session) when the run is stopped, so it can release the hold.
+#
+# To stop it, send SIGINT to its pid (kill -INT), which saves and exits
+# cleanly. Never start a resume while the old pid is still alive.
+#
+# Its report:
+#
+#   python experiments/population.py <run_id> --out results/long_run
+#
+# and in more detail, for REPORT.md, read to the size the log has when it
+# starts, so it can run while the village does (about five minutes):
+#
+#   python experiments/long_run_report.py <run_id>
+#
+# The run id goes on the first line of this file once it starts.
+#
+# History.
+#   On 2026-10-05 it was stopped by SIGINT at tick 34899 (day 242, year 30) and resumed
+#   on main at 1a3aff8, which fixes a KeyError in the embedding client's cache
+#   (hearthwick/embedder.py). The same bug stopped a 28-day survival run's
+#   seed 0 at year 14, when a visitor joined and the corpus was embedded again
+#   with the cache full. The resume runs the talk and leisure build with every
+#   new switch off, since a resumed run keeps the switches it began with, and
+#   its index holds the same 221 instructions as before.
+#   On 2026-10-09 at 10:03 a reboot ended it, four seconds after its save at
+#   tick 80496 (day 559, year 69). It was not resumed. The 90 events logged
+#   after that save, all at tick 80496, are its last moments and stay in the
+#   log. REPORT.md covers it to day 552. It is followed by results/long_run_v2,
+#   the same village on the build with this week's fixes, at 28-day years.

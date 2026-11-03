@@ -1,0 +1,770 @@
+[
+ {
+  "villager": "ada",
+  "name": "Ada",
+  "stage": "adult",
+  "role": "healer",
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "why the shrine stones hum at night",
+  "reply": "Why the shrine stones hum at night."
+ },
+ {
+  "villager": "corin",
+  "name": "Corin",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "want-make-new",
+  "kind": "make",
+  "want": "a bell to call the neighbors",
+  "reply": "A bell to call the neighbors.",
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "Hearthwick Call Bell",
+  "accepted": false,
+  "reasons": [
+   "the bell_body would strike the handle and post_l and post_r as it moved",
+   "it would not lift: nothing in it raises a load"
+  ],
+  "parts": 7,
+  "moves": [],
+  "claims": {
+   "lift": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "bell_body"
+  ],
+  "struck": {
+   "bell_body": [
+    "handle",
+    "post_l",
+    "post_r"
+   ]
+  },
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\n\"design\": \"Hearthwick Call Bell\",\n\"footprint\": [2, 2],\n\"ground\": \"flagstone\",\n\"parts\": [\n{\"id\": \"base\", \"shape\": \"box\", \"size\": [1.2, 0.2, 1.2], \"at\": [0, 0.1, 0], \"material\": \"stone\"},\n{\"id\": \"post_l\", \"shape\": \"box\", \"size\": [0.12, 2.2, 0.12], \"at\": [-0.6, 1.3, 0], \"material\": \"timber\"},\n{\"id\": \"post_r\", \"shape\": \"box\", \"size\": [0.12, 2.2, 0.12], \"at\": [0.6, 1.3, 0], \"material\": \"timber\"},\n{\"id\": \"beam\", \"shape\": \"box\", \"size\": [1.4, 0.12, 0.12], \"at\": [0, 2.4, 0], \"material\": \"dark_timber\"},\n{\"id\": \"bell_body\", \"shape\": \"cylinder\", \"size\": [0.35, 0.6, 0.25], \"sides\": 16, \"open\": true, \"at\": [0, 1.9, 0], \"material\": \"iron\"},\n{\"id\": \"clapper\", \"shape\": \"sphere\", \"size\": [0.12], \"at\": [0, 1.85, 0], \"parent\": \"bell_body\", \"material\": \"iron\"},\n{\"id\": \"handle\", \"shape\": \"box\", \"size\": [0.08, 0.5, 0.08], \"at\": [0, 2.1, 0], \"material\": \"dark_timber\"}\n],\n\"joints\": [\n{\"part\": \"bell_body\", \"kind\": \"hinge\", \"axis\": \"z\", \"pivot\": [0, 0.3, 0]}\n],\n\"movements\": [\n{\"joint\": \"bell_body\", \"swing\": [15, -15], \"period\": 1.2, \"when\": \"worked\"}\n],\n\"claims\": [\"lift\"],\n\"by\": \"garrick\",\n\"purpose\": \"want\"\n}"
+ },
+ {
+  "villager": "dunn",
+  "name": "Dunn",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "want-make-new",
+  "kind": "make",
+  "want": "a waterwheel to grind the grain without me",
+  "reply": "A waterwheel to grind the grain without me.",
+  "attempts": 2,
+  "crafter": "gorm",
+  "drawn": "Dunn's Mill Wheel",
+  "accepted": true,
+  "reasons": [],
+  "parts": 8,
+  "moves": [
+   "spin hub"
+  ],
+  "claims": {
+   "grind": true
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": true,
+  "cost": 2.84,
+  "design": {
+   "design": "Dunn's Mill Wheel",
+   "footprint": [
+    5,
+    5
+   ],
+   "ground": "gravel",
+   "parts": [
+    {
+     "id": "base",
+     "shape": "box",
+     "size": [
+      4.5,
+      0.6,
+      4.5
+     ],
+     "at": [
+      0,
+      0.3,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "post_w",
+     "shape": "box",
+     "size": [
+      0.4,
+      2.0,
+      0.4
+     ],
+     "at": [
+      -1.5,
+      1.6,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "post_e",
+     "shape": "box",
+     "size": [
+      0.4,
+      2.0,
+      0.4
+     ],
+     "at": [
+      1.5,
+      1.6,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "axle",
+     "shape": "cylinder",
+     "size": [
+      0.1,
+      3.5
+     ],
+     "at": [
+      0,
+      2.5,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "hub",
+     "shape": "cylinder",
+     "size": [
+      0.3,
+      0.4
+     ],
+     "at": [
+      0,
+      2.5,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "spoke",
+     "shape": "box",
+     "size": [
+      0.1,
+      1.8,
+      0.1
+     ],
+     "at": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "parent": "hub",
+     "rotation": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "material": "timber",
+     "repeat": 8
+    },
+    {
+     "id": "blade",
+     "shape": "box",
+     "size": [
+      0.8,
+      0.2,
+      0.05
+     ],
+     "at": [
+      1.3,
+      0.0,
+      0.0
+     ],
+     "parent": "hub",
+     "rotation": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "material": "timber",
+     "repeat": 8
+    },
+    {
+     "id": "water",
+     "shape": "cylinder",
+     "size": [
+      2.2,
+      0.4
+     ],
+     "at": [
+      0,
+      0.2,
+      0
+     ],
+     "material": "water"
+    }
+   ],
+   "joints": [
+    {
+     "part": "hub",
+     "kind": "hinge",
+     "axis": "x"
+    }
+   ],
+   "movements": [
+    {
+     "joint": "hub",
+     "spin": 15,
+     "when": "always"
+    }
+   ],
+   "claims": [
+    "grind"
+   ],
+   "by": "gorm",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "edda",
+  "name": "Edda",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "why the old bridge creaks",
+  "reply": "why the old bridge creaks"
+ },
+ {
+  "villager": "edek",
+  "name": "Edek",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "why the soil went cold",
+  "reply": "why the soil went cold"
+ },
+ {
+  "villager": "fen",
+  "name": "Fen",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "why the miller left",
+  "reply": "why the miller left."
+ },
+ {
+  "villager": "freya",
+  "name": "Freya",
+  "stage": "elder",
+  "role": "farmer",
+  "instruction": "want-make-new",
+  "kind": "make",
+  "want": "a spring to pull the water up",
+  "reply": "a spring to pull the water up.",
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "Spring Draw",
+  "accepted": false,
+  "reasons": [
+   "the axle would strike the base and post_east and roof and water as it moved",
+   "it would not pump: nothing in it turns against a load"
+  ],
+  "parts": 11,
+  "moves": [],
+  "claims": {
+   "pump": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "axle"
+  ],
+  "struck": {
+   "axle": [
+    "base",
+    "post_east",
+    "roof",
+    "water"
+   ]
+  },
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"Spring Draw\",\"footprint\":[3,3],\"ground\":\"stone\",\"parts\":[{\"id\":\"base\",\"shape\":\"cylinder\",\"size\":[0.6,0.5,0.6],\"sides\":12,\"open\":true,\"at\":[0,0.25,0],\"material\":\"stone\"},{\"id\":\"water\",\"shape\":\"cylinder\",\"size\":[0.55,0.02],\"sides\":12,\"at\":[0,0.35,0],\"material\":\"water\"},{\"id\":\"post_west\",\"shape\":\"box\",\"size\":[0.1,1.5,0.1],\"at\":[-0.6,0.75,0],\"material\":\"timber\"},{\"id\":\"post_east\",\"shape\":\"box\",\"size\":[0.1,1.5,0.1],\"at\":[0.6,0.75,0],\"material\":\"timber\"},{\"id\":\"beam\",\"shape\":\"box\",\"size\":[1.3,0.1,0.1],\"at\":[0,1.5,0],\"material\":\"timber\"},{\"id\":\"axle\",\"shape\":\"cylinder\",\"size\":[0.05,1.2],\"at\":[0,1.5,0],\"rotation\":[0,0,90],\"material\":\"iron\"},{\"id\":\"drum\",\"shape\":\"cylinder\",\"size\":[0.15,0.4],\"at\":[0,1.5,0],\"rotation\":[0,0,90],\"material\":\"timber\",\"parent\":\"axle\"},{\"id\":\"rope\",\"shape\":\"cylinder\",\"size\":[0.02,1.2],\"at\":[0,0.9,0],\"material\":\"sailcloth\",\"parent\":\"drum\"},{\"id\":\"bucket\",\"shape\":\"cylinder\",\"size\":[0.15,0.2],\"at\":[0,0.3,0],\"material\":\"timber\",\"parent\":\"rope\"},{\"id\":\"crank\",\"shape\":\"box\",\"size\":[0.05,0.05,0.3],\"at\":[0.6,1.5,0.15],\"material\":\"dark_timber\",\"parent\":\"axle\"},{\"id\":\"roof\",\"shape\":\"cone\",\"size\":[0.9,0.5],\"sides\":4,\"at\":[0,1.8,0],\"rotation\":[0,45,0],\"material\":\"shingle\"}],\"joints\":[{\"part\":\"axle\",\"kind\":\"hinge\",\"axis\":\"y\"}],\"movements\":[{\"joint\":\"axle\",\"spin\":15,\"when\":\"occupied\"}],\"claims\":[\"pump\"],\"by\":\"garrick\",\"purpose\":\"want\"}"
+ },
+ {
+  "villager": "garrick",
+  "name": "Garrick",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "want-make-at-work",
+  "kind": "make",
+  "want": "a lever to lift the heavy millstones",
+  "reply": "A lever to lift the heavy millstones.",
+  "attempts": 3,
+  "crafter": "wynn",
+  "drawn": "Millstone Lever",
+  "accepted": false,
+  "reasons": [
+   "it would not stand: the base and fulcrum would fall"
+  ],
+  "parts": 6,
+  "moves": [],
+  "claims": {},
+  "stands": false,
+  "fell": [
+   "base",
+   "fulcrum"
+  ],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\n\"design\":\"Millstone Lever\",\n\"footprint\":[4,3],\n\"ground\":\"gravel\",\n\"parts\":[\n{\"id\":\"base\",\"shape\":\"box\",\"size\":[2.0,0.2,2.0],\"at\":[0,0.1,0],\"material\":\"stone\"},\n{\"id\":\"fulcrum\",\"shape\":\"cone\",\"size\":[0.4,0.8],\"at\":[0,0.6,0],\"material\":\"stone\"},\n{\"id\":\"beam\",\"shape\":\"box\",\"size\":[4.0,0.3,0.4],\"at\":[0,0.85,0],\"material\":\"dark_timber\"},\n{\"id\":\"stone_crade\",\"shape\":\"box\",\"size\":[0.8,0.4,0.8],\"at\":[-1.5,0.9,0],\"parent\":\"beam\",\"material\":\"iron\"},\n{\"id\":\"handle\",\"shape\":\"box\",\"size\":[0.2,0.2,0.2],\"at\":[1.8,0.85,0],\"parent\":\"beam\",\"material\":\"timber\"},\n{\"id\":\"stone\",\"shape\":\"cylinder\",\"size\":[0.6,0.2],\"at\":[-1.5,1.1,0],\"parent\":\"beam\",\"material\":\"stone\"}\n],\n\"joints\":[\n{\"part\":\"beam\",\"kind\":\"hinge\",\"axis\":\"z\",\"pivot\":[0,0,0]}\n],\n\"movements\":[\n{\"joint\":\"beam\",\"swing\":[0,15],\"period\":5,\"when\":\"worked\"}\n],\n\"claims\":[\"lift\"],\n\"by\":\"wynn\",\n\"purpose\":\"want\"\n}"
+ },
+ {
+  "villager": "gisla",
+  "name": "Gisla",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "want-make-easier",
+  "kind": "make",
+  "want": "a brass key to open the stubborn lock",
+  "reply": "a brass key to open the stubborn lock",
+  "attempts": 3,
+  "crafter": "dunn",
+  "drawn": "brass key",
+  "accepted": false,
+  "reasons": [
+   "it would not carry: it did not move"
+  ],
+  "parts": 3,
+  "moves": [],
+  "claims": {
+   "carry": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"brass key\",\"footprint\":[1,1],\"ground\":\"gravel\",\"parts\":[{\"id\":\"bow\",\"shape\":\"cylinder\",\"size\":[0.06,0.02],\"sides\":16,\"at\":[0.25,0.02,0],\"rotation\":[0,0,90],\"material\":\"iron\"},{\"id\":\"shaft\",\"shape\":\"cylinder\",\"size\":[0.015,0.3],\"at\":[0.1,0.02,0],\"rotation\":[0,0,90],\"material\":\"iron\"},{\"id\":\"bit\",\"shape\":\"box\",\"size\":[0.05,0.08,0.03],\"at\":[-0.05,0.02,0],\"material\":\"iron\"}],\"joints\":[{\"part\":\"bow\",\"kind\":\"hinge\",\"axis\":\"y\"}],\"movements\":[{\"joint\":\"bow\",\"spin\":15,\"when\":\"worked\"}],\"claims\":[\"carry\"]}"
+ },
+ {
+  "villager": "gorm",
+  "name": "Gorm",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "why the miller\u2019s wife left",
+  "reply": "Why the miller\u2019s wife left."
+ },
+ {
+  "villager": "hal",
+  "name": "Hal",
+  "stage": "adult",
+  "role": "healer",
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "why the shrine bells stopped",
+  "reply": "why the shrine bells stopped"
+ },
+ {
+  "villager": "hilde",
+  "name": "Hilde",
+  "stage": "elder",
+  "role": "guard",
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "why the miller left",
+  "reply": "Why the miller left."
+ },
+ {
+  "villager": "katrin",
+  "name": "Katrin",
+  "stage": "elder",
+  "role": "farmer",
+  "instruction": "want-make-at-work",
+  "kind": "make",
+  "want": "a wide basket to haul the cabbages",
+  "reply": "a wide basket to haul the cabbages.",
+  "attempts": 3,
+  "crafter": "wynn",
+  "drawn": "Cabbage Hauler",
+  "accepted": false,
+  "reasons": [
+   "the axle would strike the base and end_b and handle_b and post_f_l and post_f_r and side_l and side_r as it moved",
+   "it would not carry: nothing turns to move it"
+  ],
+  "parts": 11,
+  "moves": [],
+  "claims": {
+   "carry": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "axle"
+  ],
+  "struck": {
+   "axle": [
+    "base",
+    "end_b",
+    "handle_b",
+    "post_f_l",
+    "post_f_r",
+    "side_l",
+    "side_r"
+   ]
+  },
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"Cabbage Hauler\",\"footprint\":[2,1.5],\"ground\":\"gravel\",\"parts\":[{\"id\":\"axle\",\"shape\":\"cylinder\",\"size\":[0.05,1.8],\"rotation\":[0,0,90],\"at\":[0,0.3,0],\"material\":\"iron\"},{\"id\":\"wheel_l\",\"shape\":\"wheel\",\"size\":[0.3,0.1],\"at\":[-0.85,0.3,0],\"parent\":\"axle\",\"material\":\"timber\"},{\"id\":\"wheel_r\",\"shape\":\"wheel\",\"size\":[0.3,0.1],\"at\":[0.85,0.3,0],\"parent\":\"axle\",\"material\":\"timber\"},{\"id\":\"base\",\"shape\":\"box\",\"size\":[1.6,0.1,1.2],\"at\":[0,0.4,0],\"material\":\"timber\"},{\"id\":\"side_l\",\"shape\":\"box\",\"size\":[1.6,0.5,0.1],\"at\":[0,0.75,-0.55],\"material\":\"timber\"},{\"id\":\"side_r\",\"shape\":\"box\",\"size\":[1.6,0.5,0.1],\"at\":[0,0.75,0.55],\"material\":\"timber\"},{\"id\":\"end_b\",\"shape\":\"box\",\"size\":[0.1,0.5,1.0],\"at\":[-0.75,0.75,0],\"material\":\"timber\"},{\"id\":\"post_f_l\",\"shape\":\"box\",\"size\":[0.1,0.4,0.1],\"at\":[0.75,0.6,-0.4],\"material\":\"dark_timber\"},{\"id\":\"post_f_r\",\"shape\":\"box\",\"size\":[0.1,0.4,0.1],\"at\":[0.75,0.6,0.4],\"material\":\"dark_timber\"},{\"id\":\"handle_f\",\"shape\":\"box\",\"size\":[0.1,0.1,0.8],\"at\":[0.8,0.8,0],\"material\":\"dark_timber\"},{\"id\":\"handle_b\",\"shape\":\"box\",\"size\":[0.15,0.4,0.15],\"at\":[-0.85,0.6,0],\"material\":\"dark_timber\"}],\"joints\":[{\"part\":\"axle\",\"kind\":\"hinge\",\"axis\":\"x\"}],\"movements\":[{\"joint\":\"axle\",\"spin\":30,\"when\":\"worked\"}],\"claims\":[\"carry\"]}"
+ },
+ {
+  "villager": "lise",
+  "name": "Lise",
+  "stage": "elder",
+  "role": "guard",
+  "instruction": "want-make-at-work",
+  "kind": "make",
+  "want": "a lantern to light the east road",
+  "reply": "A lantern to light the east road.",
+  "attempts": 3,
+  "crafter": "dunn",
+  "drawn": "east road lantern",
+  "accepted": false,
+  "reasons": [
+   "it would not stand: the arm, base, frame and more would fall"
+  ],
+  "parts": 5,
+  "moves": [],
+  "claims": {},
+  "stands": false,
+  "fell": [
+   "arm",
+   "base",
+   "frame",
+   "glass",
+   "pole"
+  ],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"east road lantern\",\"footprint\":[1,1],\"ground\":\"flagstone\",\"parts\":[{\"id\":\"base\",\"shape\":\"cylinder\",\"size\":[0.35,0.15],\"sides\":8,\"at\":[0,0.075,0],\"material\":\"stone\"},{\"id\":\"pole\",\"shape\":\"cylinder\",\"size\":[0.06,2.2],\"sides\":8,\"at\":[0,1.25,0],\"material\":\"dark_timber\"},{\"id\":\"arm\",\"shape\":\"box\",\"size\":[0.08,0.08,0.4],\"at\":[0.2,2.1,0],\"rotation\":[0,0,90],\"material\":\"dark_timber\"},{\"id\":\"frame\",\"shape\":\"box\",\"size\":[0.2,0.3,0.2],\"at\":[0.4,2.0,0],\"material\":\"iron\"},{\"id\":\"glass\",\"shape\":\"box\",\"size\":[0.16,0.2,0.16],\"at\":[0.4,2.0,0],\"material\":\"glass\"}],\"claims\":[\"carry\"],\"by\":\"wynn\",\"purpose\":\"want\"}"
+ },
+ {
+  "villager": "mabel",
+  "name": "Mabel",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "want-make-at-work",
+  "kind": "make",
+  "want": "a wide cart to haul the hay",
+  "reply": "a wide cart to haul the hay",
+  "attempts": 3,
+  "crafter": "edda",
+  "drawn": "wide hay cart",
+  "accepted": false,
+  "reasons": [
+   "it would not stand: the tongue and tongue_brace would fall"
+  ],
+  "parts": 14,
+  "moves": [],
+  "claims": {},
+  "stands": false,
+  "fell": [
+   "tongue",
+   "tongue_brace"
+  ],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\n\"design\": \"wide hay cart\",\n\"footprint\": [4, 3],\n\"ground\": \"gravel\",\n\"parts\": [\n{\"id\": \"axle\", \"shape\": \"cylinder\", \"size\": [0.05, 3.0], \"rotation\": [0, 0, 90], \"at\": [0, 0.5, 0], \"material\": \"timber\"},\n{\"id\": \"wheel_l\", \"shape\": \"wheel\", \"size\": [0.5, 0.15], \"at\": [-1.5, 0.5, 0], \"parent\": \"axle\", \"material\": \"dark_timber\"},\n{\"id\": \"wheel_r\", \"shape\": \"wheel\", \"size\": [0.5, 0.15], \"at\": [1.5, 0.5, 0], \"parent\": \"axle\", \"material\": \"dark_timber\"},\n{\"id\": \"floor\", \"shape\": \"box\", \"size\": [3.6, 0.1, 2.4], \"at\": [0, 0.6, 0], \"material\": \"timber\"},\n{\"id\": \"post_fl\", \"shape\": \"box\", \"size\": [0.1, 0.6, 0.1], \"at\": [-1.7, 0.9, -1.1], \"material\": \"timber\"},\n{\"id\": \"post_fr\", \"shape\": \"box\", \"size\": [0.1, 0.6, 0.1], \"at\": [1.7, 0.9, -1.1], \"material\": \"timber\"},\n{\"id\": \"post_bl\", \"shape\": \"box\", \"size\": [0.1, 0.6, 0.1], \"at\": [-1.7, 0.9, 1.1], \"material\": \"timber\"},\n{\"id\": \"post_br\", \"shape\": \"box\", \"size\": [0.1, 0.6, 0.1], \"at\": [1.7, 0.9, 1.1], \"material\": \"timber\"},\n{\"id\": \"rail_l\", \"shape\": \"box\", \"size\": [3.5, 0.08, 0.08], \"at\": [0, 1.2, -1.1], \"material\": \"timber\"},\n{\"id\": \"rail_r\", \"shape\": \"box\", \"size\": [3.5, 0.08, 0.08], \"at\": [0, 1.2, 1.1], \"material\": \"timber\"},\n{\"id\": \"rail_f\", \"shape\": \"box\", \"size\": [0.08, 0.08, 2.3], \"at\": [-1.7, 1.2, 0], \"material\": \"timber\"},\n{\"id\": \"rail_b\", \"shape\": \"box\", \"size\": [0.08, 0.08, 2.3], \"at\": [1.7, 1.2, 0], \"material\": \"timber\"},\n{\"id\": \"tongue\", \"shape\": \"box\", \"size\": [1.2, 0.1, 0.1], \"at\": [2.2, 0.4, 0], \"material\": \"timber\"},\n{\"id\": \"tongue_brace\", \"shape\": \"box\", \"size\": [0.1, 0.2, 0.1], \"at\": [1.7, 0.4, 0], \"material\": \"timber\"}\n],\n\"joints\": [\n{\"part\": \"axle\", \"kind\": \"hinge\", \"axis\": \"x\"}\n],\n\"movements\": [\n{\"joint\": \"axle\", \"spin\": 15, \"when\": \"worked\"}\n],\n\"claims\": [\"carry\"],\n\"by\": \"edda\",\n\"purpose\": \"want\"\n}"
+ },
+ {
+  "villager": "maren",
+  "name": "Maren",
+  "stage": "adult",
+  "role": "merchant",
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "why the old miller left so suddenly",
+  "reply": "why the old miller left so suddenly."
+ },
+ {
+  "villager": "merrick",
+  "name": "Merrick",
+  "stage": "elder",
+  "role": "farmer",
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "who sealed the old gate",
+  "reply": "who sealed the old gate?"
+ },
+ {
+  "villager": "orla",
+  "name": "Orla",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "why Rosa\u2019s hands shake",
+  "reply": "why Rosa\u2019s hands shake."
+ },
+ {
+  "villager": "osric",
+  "name": "Osric",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "why the north field soil turned grey",
+  "reply": "why the north field soil turned grey."
+ },
+ {
+  "villager": "peder",
+  "name": "Peder",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "want-make-new",
+  "kind": "make",
+  "want": "a big lantern for the market square",
+  "reply": "A big lantern for the market square.",
+  "attempts": 1,
+  "crafter": "wynn",
+  "drawn": "Market Beacon",
+  "accepted": true,
+  "reasons": [],
+  "parts": 6,
+  "moves": [],
+  "claims": {},
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": 0.5,
+  "design": {
+   "design": "Market Beacon",
+   "footprint": [
+    3,
+    3
+   ],
+   "ground": "flagstone",
+   "parts": [
+    {
+     "id": "base",
+     "shape": "cylinder",
+     "size": [
+      1.2,
+      0.4
+     ],
+     "sides": 8,
+     "at": [
+      0,
+      0.2,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "shaft",
+     "shape": "cylinder",
+     "size": [
+      0.15,
+      3.5
+     ],
+     "sides": 8,
+     "at": [
+      0,
+      2.15,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "arm",
+     "shape": "box",
+     "size": [
+      0.1,
+      0.1,
+      2.8
+     ],
+     "at": [
+      0,
+      3.8,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "ring",
+     "shape": "cylinder",
+     "size": [
+      1.1,
+      0.08
+     ],
+     "sides": 16,
+     "at": [
+      0,
+      3.8,
+      0
+     ],
+     "rotation": [
+      90,
+      0,
+      0
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "lantern",
+     "shape": "box",
+     "size": [
+      0.5,
+      0.6,
+      0.5
+     ],
+     "at": [
+      0,
+      4.4,
+      0
+     ],
+     "material": "glass"
+    },
+    {
+     "id": "cap",
+     "shape": "cone",
+     "size": [
+      0.4,
+      0.3
+     ],
+     "sides": 4,
+     "at": [
+      0,
+      4.85,
+      0
+     ],
+     "rotation": [
+      0,
+      45,
+      0
+     ],
+     "material": "roof_tile"
+    }
+   ],
+   "joints": [],
+   "movements": [],
+   "claims": [],
+   "by": "wynn",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "rosa",
+  "name": "Rosa",
+  "stage": "adult",
+  "role": "storyteller",
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "who left the stone",
+  "reply": "who left the stone?"
+ },
+ {
+  "villager": "sena",
+  "name": "Sena",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "want-make-new",
+  "kind": "make",
+  "want": "a ladder to reach the high branches",
+  "reply": "a ladder to reach the high branches.",
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "Sena's Branch Ladder",
+  "accepted": false,
+  "reasons": [
+   "the ladder_frame would strike the counterweight and pulley and rail_left and rail_right and rope as it moved",
+   "it would not lift: nothing in it raises a load"
+  ],
+  "parts": 11,
+  "moves": [],
+  "claims": {
+   "lift": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "ladder_frame"
+  ],
+  "struck": {
+   "ladder_frame": [
+    "counterweight",
+    "pulley",
+    "rail_left",
+    "rail_right",
+    "rope"
+   ]
+  },
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"Sena's Branch Ladder\",\"footprint\":[2,2],\"ground\":\"gravel\",\"parts\":[{\"id\":\"base\",\"shape\":\"box\",\"size\":[1.0,0.1,1.0],\"at\":[0,0.05,0],\"material\":\"stone\"},{\"id\":\"rail_left\",\"shape\":\"box\",\"size\":[0.1,4.0,0.1],\"at\":[-0.3,2.05,0],\"material\":\"timber\"},{\"id\":\"rail_right\",\"shape\":\"box\",\"size\":[0.1,4.0,0.1],\"at\":[0.3,2.05,0],\"material\":\"timber\"},{\"id\":\"rungs\",\"shape\":\"box\",\"size\":[0.5,0.08,0.08],\"at\":[0,0.5,0],\"material\":\"dark_timber\",\"repeat\":8,\"parent\":\"ladder_frame\"},{\"id\":\"ladder_frame\",\"shape\":\"box\",\"size\":[0.01,0.01,0.01],\"at\":[0,0.1,0],\"material\":\"timber\"},{\"id\":\"top_left\",\"shape\":\"box\",\"size\":[0.1,0.5,0.1],\"at\":[-0.3,4.3,0],\"material\":\"timber\",\"parent\":\"ladder_frame\"},{\"id\":\"top_right\",\"shape\":\"box\",\"size\":[0.1,0.5,0.1],\"at\":[0.3,4.3,0],\"material\":\"timber\",\"parent\":\"ladder_frame\"},{\"id\":\"crossbar\",\"shape\":\"box\",\"size\":[0.7,0.1,0.1],\"at\":[0,4.0,0],\"material\":\"timber\",\"parent\":\"ladder_frame\"},{\"id\":\"pulley\",\"shape\":\"cylinder\",\"size\":[0.05,0.1],\"at\":[0,4.5,0],\"rotation\":[90,0,0],\"material\":\"iron\"},{\"id\":\"rope\",\"shape\":\"cylinder\",\"size\":[0.02,4.4],\"at\":[0,2.3,0],\"material\":\"sailcloth\"},{\"id\":\"counterweight\",\"shape\":\"box\",\"size\":[0.3,0.3,0.3],\"at\":[0,0.25,0],\"material\":\"stone\"}],\"joints\":[{\"part\":\"ladder_frame\",\"kind\":\"slider\",\"axis\":\"y\"},{\"part\":\"rope\",\"kind\":\"fixed\",\"axis\":\"y\"}],\"movements\":[{\"joint\":\"ladder_frame\",\"slide\":[0,0.5],\"period\":5,\"when\":\"occupied\"}],\"claims\":[\"lift\"],\"by\":\"garrick\",\"purpose\":\"want\"}"
+ },
+ {
+  "villager": "sten",
+  "name": "Sten",
+  "stage": "adult",
+  "role": "merchant",
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "who actually sold the millstone",
+  "reply": "Who actually sold the millstone?"
+ },
+ {
+  "villager": "thea",
+  "name": "Thea",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "want-know",
+  "kind": "know",
+  "want": "why the river changed course",
+  "reply": "why the river changed course"
+ }
+]

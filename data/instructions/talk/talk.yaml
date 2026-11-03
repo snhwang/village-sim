@@ -1,0 +1,17 @@
+# Natural talk and its small talk are left out of this edition (README), and
+# this folder is never loaded into the corpus (hearthwick/corpus.py,
+# SWITCHED_DIRS: natural_talk). What stays here are the instructions that
+# belong to a temperament gene, as the paper's runs had them. The gene library
+# reads every such instruction wherever it lives (hearthwick/genome.py), and
+# the order in which alleles first appear there, and the instructions that
+# carry each one, decide the genes a visitor draws and a child is bred with.
+
+instructions:
+  # The reserved allele has small talk too, brief and practical, about the
+  # speaker's own day.
+  - id: temp-reserved-small-talk
+    type: directive
+    priority: 52
+    content: Someone you know is nearby and you have a moment. Say a few plain words to them about your day. [!talk(target=nearby, topic=your_day)]
+    scope: {required_tags: [temp_reserved, daytime, natural_talk], tags: [near_someone, free_time]}
+    metadata: {gene_category: sociability}

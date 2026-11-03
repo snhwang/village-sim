@@ -1,0 +1,38 @@
+20261023-012700-seed1
+20261023-012700-seed2
+20261023-012700-seed3
+# The paper-v4 long runs (RUNNING_EXPERIMENTS.md step 4): seeds 1 to 3 of
+# --profile illustrative, 280 days each, started together by Scott on
+# 2026-10-23 at 01:26 EDT in the run checkout, on paper-v4 (0313244) with
+# BEAR 1ceebc7, t 0.15, model 8355 and embedder 8360. Logs in
+# runs/paper_v4_long_seed<N>.log. At 04:15 EDT they were on days 88, 89 and
+# 91, with 42, 39 and 35 people, and no errors.
+#
+# They finished at 12:56, 12:25 and 11:33 EDT (seeds 1, 2, 3) with exit
+# status 0, no model call unanswered, the embedding service throughout, and
+# 59, 56 and 46 people at the end.
+#
+# The flag, with its reason. Each health check flags one thing, "the same
+# warning to the same listener again and again in a day". One warner warned
+# one listener of the same topic up to 5, 5 and 4 times in a day, on 24, 6
+# and 2 listener-days over the ten years, out of 44,673, 34,363 and 27,948
+# warnings. Every other check is clean, and warnings that carried nothing
+# stay under 0.5% a year. The cases are nearly all coming-pass-the-word,
+# each warning carrying different events, none told to that listener before
+# by that warner. They are storytellers' tales of danger abroad, some months
+# old: on day 177 of seed 1, nils passed on a tale first told on day 46. A
+# villager holds news as fresh for a week from when it heard it
+# (short_warnings), not from when the event began, so an old tale lives on
+# while anyone has not yet heard it, and the village keeps growing. The rule
+# that marks down far-off danger that never came also counts any later raid
+# or sickness, however late, as its coming. Of the facts coming-pass-the-word
+# passed on, 21.6%, 20.0% and 15.7% were events over a week old (12.1%,
+# 10.2% and 6.2% over four weeks), while 99.5%, 99.9% and 99.5% had been
+# learned by their warner within the week (experiments/warning_ages.py on
+# main, from 2026-10-23).
+#
+# Scott, 2026-10-23: "consider it a defect but we will fix it later. We can
+# even report it in the paper as future work." So it is a known defect,
+# recorded in SPECIFICATION-warnings.md section 13 and DESIGN.md, fixed after
+# the paper, and named in the paper as future work. These runs are used as
+# they are.

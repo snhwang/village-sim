@@ -1,0 +1,29 @@
+# Web searches are left out of this edition (README), and this folder is never
+# loaded into the corpus (hearthwick/corpus.py, SWITCHED_DIRS: search). What
+# stays here are the instructions that belong to a temperament gene, as the
+# paper's runs had them. The gene library reads every such instruction
+# wherever it lives (hearthwick/genome.py), and the order in which alleles
+# first appear there, and the instructions that carry each one, decide the
+# genes a visitor draws and a child is bred with.
+
+instructions:
+  - id: search-to-know
+    type: directive
+    priority: 62
+    content: There is something you want to know that nobody here can tell you. Look it up. [!search(about=want)]
+    scope: {required_tags: [daytime, wants_know, temp_inquisitive], tags: [time_evening]}
+    metadata: {gene_category: curiosity, dominance: 2.0}
+
+  - id: search-check-what-you-were-told
+    type: directive
+    priority: 50
+    content: You have been told things you are not sure are true. Check what you were told. [!search(about=news)]
+    scope: {required_tags: [daytime, temp_suspicious], tags: [knows_rumor, knows_news, knows_hazard]}
+    metadata: {gene_category: trust}
+
+  - id: search-find-out-more
+    type: directive
+    priority: 46
+    content: Something you heard has made you curious. Find out more about it. [!search(about=news)]
+    scope: {required_tags: [daytime, temp_inquisitive], tags: [knows_news, knows_rumor]}
+    metadata: {gene_category: curiosity, dominance: 2.0}

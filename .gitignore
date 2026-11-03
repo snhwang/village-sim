@@ -1,0 +1,33 @@
+# Run outputs (event logs, frames, snapshots)
+runs/
+!results/
+*.sqlite3
+*.jsonl
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.venv/
+venv/
+.claude/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# MuJoCo writes its warnings here when a drawing blows up on the bench.
+MUJOCO_LOG.TXT
+
+# The three paper-v3 long runs, started in one second, shared this console
+# copy before logged.sh named outputs by process. Each run's own log is
+# runs/paper_v3_long_seedN.log.
+results/paper_v3/logs/20261021-003610.log
+.capture_profile/

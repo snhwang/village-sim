@@ -1,0 +1,24 @@
+# The forge, where ore and timber make iron (data/goods.yaml): a stone hearth
+# under a tiled roof on posts, a chimney, and an anvil. The bellows work while
+# someone smelts there.
+design: forge
+by: the founders
+default_for: forge
+footprint: [3, 3]
+ground: flagstone
+parts:
+  - {id: hearth, shape: box, size: [1.0, 0.7, 0.9], at: [-0.5, 0.35, -0.5], material: stone}
+  - {id: chimney, shape: box, size: [0.5, 1.8, 0.5], at: [-0.5, 1.6, -0.6], material: stone}
+  - {id: post_ne, shape: box, size: [0.12, 1.8, 0.12], at: [1.0, 0.9, 1.0], material: dark_timber}
+  - {id: post_nw, shape: box, size: [0.12, 1.8, 0.12], at: [-1.0, 0.9, 1.0], material: dark_timber}
+  - {id: post_se, shape: box, size: [0.12, 1.8, 0.12], at: [1.0, 0.9, -1.0], material: dark_timber}
+  - {id: roof, shape: box, size: [2.4, 0.12, 2.4], at: [0, 1.86, 0], material: roof_tile}
+  - {id: anvil_foot, shape: box, size: [0.3, 0.45, 0.3], at: [0.5, 0.225, 0.3], material: stone}
+  - {id: anvil, shape: box, size: [0.6, 0.15, 0.25], at: [0.5, 0.525, 0.3], material: iron}
+  - {id: bellows_frame, shape: box, size: [0.1, 0.5, 0.1], at: [-0.5, 0.95, -0.15], material: timber}
+  - {id: bellows, shape: box, size: [0.35, 0.1, 0.5], at: [-0.5, 1.25, 0.05], material: dark_timber}
+joints:
+  - {part: bellows, kind: hinge, axis: x, pivot: [0, 0, -0.25]}
+movements:
+  - {joint: bellows, swing: [0, 20], period: 1.5, when: worked}
+claims: [shelter]

@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "runs": [
+      "20260927-190041-seed1",
+      "20260927-191014-seed2",
+      "20260927-192146-seed3",
+      "20260927-193347-seed4",
+      "20260927-194732-seed5",
+      "20260927-195852-seed6"
+    ],
+    "villagers": 30,
+    "date": "2026-09-27"
+  },
+  "reach": {
+    "events_that_spread": 36,
+    "median_holders": 25.0,
+    "median_share_pct": 83.3,
+    "max_holders": 30,
+    "median_wordings": 18.0,
+    "deepest_chain": 8,
+    "per_event": [
+      {
+        "run": "20260927-190041-seed1",
+        "root": "sicken:fields:353",
+        "holders": 30,
+        "villagers": 30,
+        "visitor_holders": 0,
+        "first_hand": 5,
+        "max_hop": 3,
+        "wordings": 19
+      },
+      {
+        "run": "20260927-190041-seed1",
+        "root": "traveler:east_road:191",
+        "holders": 30,
+        "villagers": 30,
+        "visitor_holders": 0,
+        "first_hand": 5,
+        "max_hop": 5,
+        "wordings": 19
+      },
+      {
+        "run": "20260927-190041-seed1",
+        "root": "sicken:well:1050",
+        "holders": 30,
+        "villagers": 30,
+        "visitor_holders": 0,
+        "first_hand": 5,
+        "max_hop": 3,
+        "wordings": 20
+      },
+      {
+        "run": "20260927-191014-seed2",
+        "root": "sicken:fields:157",
+        "holders": 30,
+        "villagers": 30,
+        "visitor_holders": 0,
+        "first_hand": 5,
+        "max_hop": 3,
+        "wordings": 18
+      },
+      {
+        "run": "20260927-191014-seed2",
+        "root": "traveler:east_road:342",
+        "holders": 30,
+        "villagers": 30,
+        "visitor_holders": 0,
+        "first_hand": 5,
+        "max_hop": 5,
+        "wordings": 20
+      },
+      {
+        "run": "20260927-191014-seed2",
+        "root": "sicken:well:589",
+        "holders": 30,
+        "villagers": 30,
+        "visitor_holders": 0,
+        "first_hand": 5,
+        "max_hop": 4,
+        "wordings": 22
+      },
+      {
+        "run": "20260927-192146-seed3",
+        "root": "sicken:fields:331",
+        "holders": 30,
+        "villagers": 30,
+        "visitor_holders": 1,
+        "first_hand": 5,
+        "max_hop": 3,
+        "wordings": 21
+      },
+      {
+        "run": "20260927-192146-seed3",
+        "root": "tale:east_road:189-2",
+        "holders": 30,
+        "villagers": 30,
+        "visitor_holders": 1,
+        "first_hand": 1,
+        "max_hop": 5,
+        "wordings": 20
+      },
+      {
+        "run": "20260927-192146-seed3",
+        "root": "sicken:well:1072",
+        "holders": 30,
+        "villagers": 30,
+        "visitor_holders": 0,
+        "first_hand": 5,
+        "max_hop": 4,
+        "wordings": 20
+      },
+      {
+        "run": "20260927-193347-seed4",
+        "root": "tale:east_road:188-0",
+        "holders": 30,
+        "villagers": 30,
+        "visitor_holders": 1,
+        "first_hand": 1,
+        "max_hop": 6,
+        "wordings": 26
+      },
+      {
+        "run": "20260927-193347-seed4",
+        "root": "sicken:fields:309",
+        "holders": 30,
+        "villagers": 30,
+        "visitor_holders": 1,
+        "first_hand": 5,
+        "max_hop": 3,
+        "wordings": 23
+      },
+      {
+        "run": "20260927-193347-seed4",
+        "root": "raid:east_road:793",
+        "holders": 30,
+        "villagers": 30,
+        "visitor_holders": 0,
+        "first_hand": 5,
+        "max_hop": 4,
+        "wordings": 22
+      }
+    ],
+    "by_kind": {
+      "harvest": {
+        "events": 1,
+        "median_holders": 25,
+        "fewest": 25,
+        "most": 25
+      },
+      "raid": {
+        "events": 2,
+        "median_holders": 19.0,
+        "fewest": 8,
+        "most": 30
+      },
+      "sicken": {
+        "events": 18,
+        "median_holders": 30.0,
+        "fewest": 5,
+        "most": 30
+      },
+      "tale": {
+        "events": 9,
+        "median_holders": 11,
+        "fewest": 3,
+        "most": 30
+      },
+      "traveler": {
+        "events": 4,
+        "median_holders": 18.5,
+        "fewest": 7,
+        "most": 30
+      },
+      "visitor": {
+        "events": 2,
+        "median_holders": 12.0,
+        "fewest": 10,
+        "most": 14
+      }
+    }
+  },
+  "drift": [
+    {
+      "hop": 0,
+      "n": 138,
+      "median": 0.0,
+      "mean": -0.0
+    },
+    {
+      "hop": 1,
+      "n": 257,
+      "median": 0.1887,
+      "mean": 0.1764
+    },
+    {
+      "hop": 2,
+      "n": 185,
+      "median": 0.2687,
+      "mean": 0.2596
+    },
+    {
+      "hop": 3,
+      "n": 103,
+      "median": 0.3176,
+      "mean": 0.3037
+    },
+    {
+      "hop": 4,
+      "n": 32,
+      "median": 0.3119,
+      "mean": 0.3257
+    },
+    {
+      "hop": 5,
+      "n": 14,
+      "median": 0.4072,
+      "mean": 0.3812
+    },
+    {
+      "hop": 6,
+      "n": 4,
+      "median": 0.4454,
+      "mean": 0.4338
+    },
+    {
+      "hop": 7,
+      "n": 2,
+      "median": 0.5001,
+      "mean": 0.5001
+    },
+    {
+      "hop": 8,
+      "n": 1,
+      "median": 0.4849,
+      "mean": 0.4849
+    }
+  ],
+  "reclassified": {
+    "facts": 736,
+    "changed": 393,
+    "pct": 53.4,
+    "moves": {
+      "sickness -> hazard": 228,
+      "news -> hazard": 100,
+      "news -> sickness": 25,
+      "news -> rumor": 22,
+      "news -> opportunity": 14,
+      "sickness -> rumor": 3,
+      "hazard -> rumor": 1
+    },
+    "toward_trouble_pct": 89.8
+  },
+  "attrition": {
+    "offers": 5987,
+    "duplicate": 5276,
+    "refused": 113,
+    "stored": 442,
+    "unchanged": 156,
+    "already_known_pct": 88.1,
+    "refused_of_new_pct": 15.9,
+    "duplicate_by_root": 5252,
+    "duplicate_by_vector": 24,
+    "vector_similarity_range": [
+      0.853,
+      0.89
+    ]
+  },
+  "unlocked": {
+    "decisions": 20947,
+    "by_instruction": {
+      "knows-warn-about-blight": 726,
+      "food-farmer-blight": 568,
+      "knows-warn-about-well": 558,
+      "knows-warn-about-road": 462,
+      "knows-avoid-blighted-field": 391,
+      "knows-avoid-raided-road": 316,
+      "knows-avoid-sick-well": 301,
+      "knows-crafter-checks-the-grain": 85,
+      "knows-healer-tends-the-sick": 84,
+      "knows-guard-investigates": 57
+    },
+    "total": 3548,
+    "share_pct": 16.94
+  },
+  "fact_kinds": {
+    "hazard": 365,
+    "news": 588,
+    "sickness": 219,
+    "rumor": 26,
+    "opportunity": 14
+  }
+}

@@ -1,0 +1,80 @@
+20261012-053443-seed1
+# The third long run: the second's village, seed and switches, at 28-day
+# years, with this week's changes to warnings and memory on. Started on
+# 2026-10-12 at 05:34 after the second was stopped, on Scott's go-ahead, to see
+# whether warnings that fade and cost little let the village feed itself.
+#
+# Against the second long run (results/long_run_v2), five switches differ:
+#   - told_memory: villagers remember which news they shared with whom, and pass
+#     on only what the listener has not had from them
+#   - quick_warnings: a warning is a word to someone within reach, in one tick,
+#     with no walk and no conversation
+#   - bear_memory: memories are BEAR items, faded by the half-life of their kind
+#   - fading_lessons: a lesson fades with the news it came from
+#   - news_fades: the authored warnings fade with their news too, through BEAR
+# The memory gene is off, so a difference from the second run is not also a
+# difference in how long villagers remember.
+#
+# The build. Hearthwick d9c0f31 with BEAR 8e26162 from the WSL clone
+# /mnt/c/tmp/bear-dev-main, which has items, the importance floor and the
+# speed fix. The paper's frozen BEAR (5334e1e) predates items.
+#
+# The model is the first two runs': Qwen3.8-27B on the DGX Spark lane through
+# the fleet gateway. The Spark's agent confirmed on 2026-10-12 that the server
+# had not restarted, so all three runs used the same server, settings and seed.
+# The embedder is 8360.
+#
+# From the repository in WSL:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup .venv/bin/python \
+#     -m hearthwick run --days 8000 --days-per-year 28 --seed 1 --village greater \
+#     --checkpoint-every 1 --no-designs --no-wants --no-search --no-vehicles \
+#     --no-assessing --no-looking --no-placing --no-afar-news --no-bynames \
+#     --no-leisure --no-living-memory --no-natural-talk --no-time-off \
+#     --quick-warnings --told-memory --fading-lessons \
+#     --llm-url http://192.168.1.176:9010/v1 --model Qwen3.8-27B-Spark-unsloth \
+#     --llm-key-env THEMINDFOLD_API_KEY > runs/long_run_v3.log 2>&1 < /dev/null & sleep 45
+#
+# To resume after a stop, with the same PYTHONPATH and connection settings:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup .venv/bin/python \
+#     -m hearthwick run --resume 20261012-053443-seed1 \
+#     --llm-url http://192.168.1.176:9010/v1 --model Qwen3.8-27B-Spark-unsloth \
+#     --llm-key-env THEMINDFOLD_API_KEY >> runs/long_run_v3.log 2>&1 < /dev/null & sleep 45
+#
+# To stop it, send SIGINT to its pid, which saves and exits cleanly. Then tell
+# the Spark's agent, so it can release the model lane.
+#
+# Its report, read to a fixed day so it can run while the village does:
+#
+#   python experiments/long_run_report.py 20261012-053443-seed1 --to-day <N> --out results/long_run_v3
+#
+# 2026-10-13: dgx2's lane went down at 06:16:56 EDT. Scott's KVM was attached
+# to dgx2 over USB, and its GPU firmware (GSP) crashed (Xid 119, then 120), so
+# SGLang shut down (bear-dev-16, from dgx2's kernel log). The run kept going,
+# and from then on every model call failed with a 502 from the gateway. This
+# build predates the count of unanswered calls (5775fa2), so the run's
+# meta.json will not show them. They are the "Speech generation failed" and
+# "consolidation failed" lines in runs/long_run_v3.log from line 82616 on.
+# Before that, in about 25 hours, no model call had failed.
+#
+# Its last checkpoint before the outage (06:14:29, tick 54000, day 375) was
+# copied aside at 06:36 so the next daily checkpoint could not overwrite it:
+#
+#   cd runs/20261012-053443-seed1
+#   cp -p checkpoint.json checkpoint.before-dgx2-outage.tick54000.json
+#
+# To roll the run back to it once the lane is serving again, stop the run
+# (SIGINT), copy that file over checkpoint.json, and resume as above. A
+# resume cuts events.jsonl and frames.jsonl back to the checkpoint's sizes,
+# which drops everything logged during the outage.
+#
+# Stopped on Scott's say-so at 15:32:32 EDT with SIGINT to pid 26374
+# (`kill -INT 26374`). It saved at tick 56266 (day 390) and exited at
+# 15:33:13. So days 375 to 390 ran with every model call failing, and the
+# checkpoint.json it wrote is from inside the outage. Resume from the copy
+# above, never from that one. The Spark's agent was told.
+#
+# Its report to day 375, the last day before the outage:
+#
+#   python experiments/long_run_report.py 20261012-053443-seed1 --to-day 375 --out results/long_run_v3/day375

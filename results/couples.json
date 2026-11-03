@@ -1,0 +1,334 @@
+[
+  {
+    "run": "20261022-070414-seed1",
+    "proposals": [
+      {
+        "day": 32,
+        "t": 4639,
+        "asker": "katrin",
+        "asked": "merrick",
+        "affinity": 10.61,
+        "answer": "no"
+      },
+      {
+        "day": 33,
+        "t": 4786,
+        "asker": "merrick",
+        "asked": "katrin",
+        "affinity": 12.75,
+        "answer": "yes",
+        "home": "home_2",
+        "waited": true
+      },
+      {
+        "day": 35,
+        "t": 5061,
+        "asker": "garrick",
+        "asked": "gisla",
+        "affinity": 10.7,
+        "answer": "yes",
+        "home": "home_6",
+        "waited": false
+      }
+    ],
+    "marriages": 2,
+    "sites_started": [
+      {
+        "day": 33,
+        "by": "gisla"
+      }
+    ],
+    "houses": [
+      {
+        "day": 33,
+        "place": "home_14",
+        "couple": [
+          "katrin",
+          "merrick"
+        ]
+      }
+    ],
+    "building_at_last_dawn": null,
+    "fondest_at_last_dawn": {
+      "day": 39,
+      "pair": [
+        "fen",
+        "maren",
+        3.0
+      ]
+    },
+    "propose_rank_with_sweetheart_near": {
+      "1": 2,
+      "2": 5,
+      "3": 5,
+      "5": 1,
+      "not retrieved": 50
+    },
+    "chosen": {
+      "family-seek-sweetheart": 13,
+      "family-propose": 3,
+      "family-decline-not-ready": 1,
+      "family-accept-proposal": 2,
+      "crafter-fell-timber": 6,
+      "crafter-start-house": 10,
+      "crafter-build-house": 2
+    },
+    "refused": {
+      "family-seek-sweetheart": 149,
+      "family-propose": 7
+    }
+  },
+  {
+    "run": "20261022-073709-seed2",
+    "proposals": [
+      {
+        "day": 38,
+        "t": 5499,
+        "asker": "garrick",
+        "asked": "gisla",
+        "affinity": 10.5,
+        "answer": "no"
+      },
+      {
+        "day": 38,
+        "t": 5521,
+        "asker": "gisla",
+        "asked": "garrick",
+        "affinity": 10.5,
+        "answer": "yes",
+        "home": "home_6",
+        "waited": true
+      }
+    ],
+    "marriages": 1,
+    "sites_started": [
+      {
+        "day": 38,
+        "by": "hilde28"
+      }
+    ],
+    "houses": [
+      {
+        "day": 39,
+        "place": "home_14",
+        "couple": [
+          "garrick",
+          "gisla"
+        ]
+      }
+    ],
+    "building_at_last_dawn": {
+      "day": 39,
+      "timber": 26.1,
+      "progress": 26.4,
+      "waiting": [
+        [
+          "garrick",
+          "gisla"
+        ]
+      ]
+    },
+    "fondest_at_last_dawn": {
+      "day": 39,
+      "pair": [
+        "fen",
+        "maren",
+        4.37
+      ]
+    },
+    "propose_rank_with_sweetheart_near": {
+      "1": 4,
+      "2": 1,
+      "3": 3,
+      "not retrieved": 14
+    },
+    "chosen": {
+      "family-seek-sweetheart": 6,
+      "family-propose": 2,
+      "family-decline-not-ready": 1,
+      "family-accept-proposal": 1,
+      "crafter-fell-timber": 7,
+      "crafter-start-house": 11,
+      "crafter-build-house": 5
+    },
+    "refused": {
+      "family-seek-sweetheart": 145,
+      "family-propose": 5
+    }
+  },
+  {
+    "run": "20261022-080916-seed3",
+    "proposals": [
+      {
+        "day": 16,
+        "t": 2362,
+        "asker": "fen",
+        "asked": "katrin",
+        "affinity": 10.21,
+        "answer": "yes",
+        "home": "home_9",
+        "waited": false
+      }
+    ],
+    "marriages": 1,
+    "sites_started": [],
+    "houses": [],
+    "building_at_last_dawn": null,
+    "fondest_at_last_dawn": {
+      "day": 39,
+      "pair": [
+        "hilde",
+        "merrick",
+        3.92
+      ]
+    },
+    "propose_rank_with_sweetheart_near": {
+      "1": 2,
+      "7": 1,
+      "not retrieved": 13
+    },
+    "chosen": {
+      "family-seek-sweetheart": 2,
+      "family-propose": 1,
+      "family-accept-proposal": 1
+    },
+    "refused": {
+      "family-seek-sweetheart": 13,
+      "family-propose": 1
+    }
+  },
+  {
+    "run": "20261022-083715-seed4",
+    "proposals": [
+      {
+        "day": 17,
+        "t": 2493,
+        "asker": "fen",
+        "asked": "katrin",
+        "affinity": 10.76,
+        "answer": "yes",
+        "home": "home_9",
+        "waited": false
+      }
+    ],
+    "marriages": 1,
+    "sites_started": [],
+    "houses": [],
+    "building_at_last_dawn": null,
+    "fondest_at_last_dawn": {
+      "day": 39,
+      "pair": [
+        "freya",
+        "merrick",
+        5.56
+      ]
+    },
+    "propose_rank_with_sweetheart_near": {
+      "5": 4,
+      "7": 1,
+      "not retrieved": 22
+    },
+    "chosen": {
+      "family-seek-sweetheart": 2,
+      "family-propose": 1,
+      "family-accept-proposal": 1
+    },
+    "refused": {
+      "family-seek-sweetheart": 19,
+      "family-propose": 2
+    }
+  },
+  {
+    "run": "20261022-090533-seed5",
+    "proposals": [
+      {
+        "day": 19,
+        "t": 2780,
+        "asker": "katrin",
+        "asked": "fen",
+        "affinity": 10.06,
+        "answer": "yes",
+        "home": "home_9",
+        "waited": false
+      },
+      {
+        "day": 34,
+        "t": 4933,
+        "asker": "gisla",
+        "asked": "dunn",
+        "affinity": 10.77,
+        "answer": "yes",
+        "home": "home_2",
+        "waited": false
+      },
+      {
+        "day": 34,
+        "t": 4959,
+        "asker": "dunn",
+        "asked": "gisla",
+        "affinity": 10.77,
+        "answer": "no"
+      },
+      {
+        "day": 38,
+        "t": 5499,
+        "asker": "gisla",
+        "asked": "dunn",
+        "affinity": 13.85,
+        "answer": "yes",
+        "home": "home_2",
+        "waited": false
+      }
+    ],
+    "marriages": 2,
+    "sites_started": [],
+    "houses": [],
+    "building_at_last_dawn": null,
+    "fondest_at_last_dawn": {
+      "day": 39,
+      "pair": [
+        "hilde",
+        "merrick",
+        3.84
+      ]
+    },
+    "propose_rank_with_sweetheart_near": {
+      "1": 20,
+      "2": 11,
+      "3": 2,
+      "4": 6,
+      "5": 5,
+      "6": 6,
+      "not retrieved": 53
+    },
+    "chosen": {
+      "family-seek-sweetheart": 18,
+      "family-propose": 4,
+      "family-accept-proposal": 2,
+      "family-decline-not-ready": 2
+    },
+    "refused": {
+      "family-seek-sweetheart": 180,
+      "family-propose": 29
+    }
+  },
+  {
+    "run": "20261022-093732-seed6",
+    "proposals": [],
+    "marriages": 0,
+    "sites_started": [],
+    "houses": [],
+    "building_at_last_dawn": null,
+    "fondest_at_last_dawn": {
+      "day": 39,
+      "pair": [
+        "lise",
+        "merrick",
+        3.52
+      ]
+    },
+    "propose_rank_with_sweetheart_near": {},
+    "chosen": {},
+    "refused": {}
+  }
+]

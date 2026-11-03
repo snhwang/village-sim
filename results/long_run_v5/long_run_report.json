@@ -1,0 +1,981 @@
+{
+  "run": "20261013-213929-seed1",
+  "date": "2026-10-14",
+  "generated_with": {
+    "hearthwick": "ed9cf10",
+    "bear": "31aceab",
+    "bear_version": "0.2.0"
+  },
+  "read_to": {
+    "tick": 67929,
+    "day": 471,
+    "year": 16,
+    "full_years": 16,
+    "events": 1045296
+  },
+  "started": "2026-10-13T21:39:29",
+  "code": {
+    "hearthwick": "1b3139b",
+    "bear": "8e26162",
+    "bear_version": "0.2.0"
+  },
+  "resumptions": [],
+  "model": "Qwen3.8-27B",
+  "days_per_year": 28,
+  "switches_on": [
+    "afar_news",
+    "bear_memory",
+    "blight_fighting",
+    "chat_turns",
+    "consolidate",
+    "fading_lessons",
+    "fertility",
+    "grown_personas",
+    "growth",
+    "land",
+    "lasting_lessons",
+    "lockstep",
+    "materials",
+    "memory_by_relevance",
+    "money",
+    "mortality",
+    "news_fades",
+    "quick_warnings",
+    "remember_conversations",
+    "richer_fields",
+    "short_warnings",
+    "temperament",
+    "told_memory"
+  ],
+  "switches_off": [
+    "assessing",
+    "bynames",
+    "designs",
+    "fishing",
+    "impersonal_query",
+    "leisure",
+    "living_memory",
+    "looking",
+    "memory_gene",
+    "natural_talk",
+    "placing",
+    "practices",
+    "restore_below_threshold",
+    "search",
+    "time_off",
+    "vehicles",
+    "wants"
+  ],
+  "events": {
+    "decision": 417373,
+    "diffusion": 261774,
+    "warned": 100300,
+    "utterance": 72760,
+    "knowledge_duplicate": 50982,
+    "knowledge_stored": 30734,
+    "lens": 27289,
+    "conversation_start": 24181,
+    "conversation_end": 24181,
+    "growth_held_back": 16801,
+    "avoid": 14345,
+    "world_event": 736,
+    "sold": 721,
+    "tried_for_child": 670,
+    "day_start": 471,
+    "checkpoint": 471,
+    "food": 471,
+    "courtship": 218,
+    "persona": 153,
+    "stage_change": 131,
+    "roster": 93,
+    "consolidated": 83,
+    "visitor_arrived": 48,
+    "visitor_departed": 47,
+    "born": 44,
+    "apprenticed": 38,
+    "took_up_trade": 32,
+    "place_added": 28,
+    "proposed": 25,
+    "blight_ended": 25,
+    "married": 17,
+    "place_removed": 12,
+    "house_built": 12,
+    "declined": 8,
+    "building": 5,
+    "place_grown": 5,
+    "inherited": 4,
+    "died": 4,
+    "new_master": 2,
+    "purses_opened": 1,
+    "land_grown": 1
+  },
+  "village": {
+    "start": 30,
+    "end": 70,
+    "born": 44,
+    "died": 4,
+    "married": 17,
+    "fewest": 30,
+    "founders_alive": 26,
+    "generations": {
+      "1": 43,
+      "2": 1
+    }
+  },
+  "years": [
+    {
+      "year": 0,
+      "people": 30,
+      "young": 4,
+      "couples": 6,
+      "born": 6,
+      "died": 0,
+      "married": 1,
+      "granary": 857.5
+    },
+    {
+      "year": 1,
+      "people": 36,
+      "young": 8,
+      "couples": 7,
+      "born": 0,
+      "died": 0,
+      "married": 1,
+      "granary": 832.4
+    },
+    {
+      "year": 2,
+      "people": 36,
+      "young": 8,
+      "couples": 8,
+      "born": 4,
+      "died": 0,
+      "married": 2,
+      "granary": 737.0
+    },
+    {
+      "year": 3,
+      "people": 40,
+      "young": 10,
+      "couples": 10,
+      "born": 3,
+      "died": 0,
+      "married": 1,
+      "granary": 614.6
+    },
+    {
+      "year": 4,
+      "people": 43,
+      "young": 13,
+      "couples": 11,
+      "born": 1,
+      "died": 0,
+      "married": 0,
+      "granary": 395.5
+    },
+    {
+      "year": 5,
+      "people": 44,
+      "young": 8,
+      "couples": 11,
+      "born": 5,
+      "died": 0,
+      "married": 0,
+      "granary": 382.6
+    },
+    {
+      "year": 6,
+      "people": 49,
+      "young": 13,
+      "couples": 11,
+      "born": 3,
+      "died": 1,
+      "married": 1,
+      "granary": 587.0
+    },
+    {
+      "year": 7,
+      "people": 51,
+      "young": 12,
+      "couples": 11,
+      "born": 3,
+      "died": 1,
+      "married": 1,
+      "granary": 215.6
+    },
+    {
+      "year": 8,
+      "people": 53,
+      "young": 12,
+      "couples": 12,
+      "born": 0,
+      "died": 0,
+      "married": 1,
+      "granary": 0.0
+    },
+    {
+      "year": 9,
+      "people": 53,
+      "young": 11,
+      "couples": 13,
+      "born": 5,
+      "died": 0,
+      "married": 1,
+      "granary": 221.4
+    },
+    {
+      "year": 10,
+      "people": 58,
+      "young": 11,
+      "couples": 14,
+      "born": 1,
+      "died": 1,
+      "married": 0,
+      "granary": 139.8
+    },
+    {
+      "year": 11,
+      "people": 58,
+      "young": 9,
+      "couples": 14,
+      "born": 2,
+      "died": 0,
+      "married": 1,
+      "granary": 428.2
+    },
+    {
+      "year": 12,
+      "people": 60,
+      "young": 8,
+      "couples": 15,
+      "born": 1,
+      "died": 1,
+      "married": 0,
+      "granary": 294.5
+    },
+    {
+      "year": 13,
+      "people": 60,
+      "young": 9,
+      "couples": 15,
+      "born": 1,
+      "died": 0,
+      "married": 1,
+      "granary": 172.6
+    },
+    {
+      "year": 14,
+      "people": 61,
+      "young": 5,
+      "couples": 16,
+      "born": 3,
+      "died": 0,
+      "married": 1,
+      "granary": 351.5
+    },
+    {
+      "year": 15,
+      "people": 64,
+      "young": 7,
+      "couples": 17,
+      "born": 3,
+      "died": 0,
+      "married": 3,
+      "granary": 645.3
+    },
+    {
+      "year": 16,
+      "people": 67,
+      "young": 8,
+      "couples": 20,
+      "born": 3,
+      "died": 0,
+      "married": 2,
+      "granary": 641.7
+    }
+  ],
+  "steady": null,
+  "age_at_death": {
+    "n": 4,
+    "mean": 38.8,
+    "q1": 37.0,
+    "median": 37.8,
+    "q3": 41.4
+  },
+  "children": {
+    "funnel": [
+      {
+        "decade": "0-9",
+        "couples": 10.0,
+        "could choose a child": 8146,
+        "a candidate": 8146,
+        "chose a child": 703,
+        "tried": 420,
+        "conceived": 30,
+        "born": 30,
+        "could, as adult": 4988,
+        "chose, as adult": 438,
+        "could, as elder": 3158,
+        "chose, as elder": 265,
+        "chosen instead": [
+          [
+            "elder-teach",
+            1520
+          ],
+          [
+            "weather-shelter-from-storm",
+            1486
+          ],
+          [
+            "coming-pass-the-word",
+            726
+          ],
+          [
+            "weather-wait-out-rain",
+            368
+          ],
+          [
+            "knows-warn-about-road",
+            334
+          ]
+        ]
+      },
+      {
+        "decade": "10-19",
+        "couples": 15.2,
+        "could choose a child": 6331,
+        "a candidate": 6331,
+        "chose a child": 414,
+        "tried": 250,
+        "conceived": 14,
+        "born": 14,
+        "could, as adult": 2610,
+        "chose, as adult": 135,
+        "could, as elder": 3721,
+        "chose, as elder": 279,
+        "chosen instead": [
+          [
+            "elder-teach",
+            1859
+          ],
+          [
+            "weather-shelter-from-storm",
+            1245
+          ],
+          [
+            "coming-pass-the-word",
+            263
+          ],
+          [
+            "elder-tell-children",
+            242
+          ],
+          [
+            "learned-ilsa-child-birth-record",
+            212
+          ]
+        ]
+      }
+    ],
+    "conception": {
+      "hits": 44,
+      "of": 670,
+      "share": 0.066,
+      "low": 0.043,
+      "high": 0.094,
+      "clusters": 17
+    },
+    "per_family": {
+      "1": 3,
+      "2": 1,
+      "3": 4,
+      "4": 2,
+      "5": 2,
+      "9": 1
+    },
+    "families": 13,
+    "proposals": {
+      "proposed": 25,
+      "declined": 8
+    },
+    "houses_built": 12,
+    "waited_for_a_house": {
+      "n": 12,
+      "mean": 0.0,
+      "q1": 0.0,
+      "median": 0.0,
+      "q3": 0.0
+    },
+    "still_waiting": 0
+  },
+  "trades": {
+    "apprenticeships": 38,
+    "born_here": 34,
+    "parent_trade": {
+      "hits": 9,
+      "of": 34,
+      "share": 0.265,
+      "low": 0.083,
+      "high": 0.472,
+      "clusters": 12
+    },
+    "under_parent": {
+      "hits": 6,
+      "of": 34,
+      "share": 0.176,
+      "low": 0.042,
+      "high": 0.281,
+      "clusters": 12
+    },
+    "chosen": {
+      "farmer": 13,
+      "guard": 8,
+      "merchant": 6,
+      "healer": 4,
+      "crafter": 2,
+      "storyteller": 1
+    },
+    "master_deaths": {
+      "masters": 1,
+      "apprentices": 2,
+      "reassigned": 2
+    },
+    "new_master_events": 2
+  },
+  "by_year": [
+    {
+      "year": 0,
+      "decisions": 15390,
+      "warn": 0.231,
+      "lesson": 0.002,
+      "field work": 0.049,
+      "worked fields": 7.9,
+      "need": 29.6,
+      "largest crop": 1040
+    },
+    {
+      "year": 1,
+      "decisions": 17075,
+      "warn": 0.213,
+      "lesson": 0.004,
+      "field work": 0.025,
+      "worked fields": 5.9,
+      "need": 30.6,
+      "largest crop": 832
+    },
+    {
+      "year": 2,
+      "decisions": 19475,
+      "warn": 0.24,
+      "lesson": 0.009,
+      "field work": 0.023,
+      "worked fields": 5.4,
+      "need": 32.8,
+      "largest crop": 824
+    },
+    {
+      "year": 3,
+      "decisions": 18756,
+      "warn": 0.238,
+      "lesson": 0.049,
+      "field work": 0.024,
+      "worked fields": 6.3,
+      "need": 34.5,
+      "largest crop": 844
+    },
+    {
+      "year": 4,
+      "decisions": 20732,
+      "warn": 0.284,
+      "lesson": 0.06,
+      "field work": 0.02,
+      "worked fields": 5.7,
+      "need": 36.7,
+      "largest crop": 807
+    },
+    {
+      "year": 5,
+      "decisions": 19772,
+      "warn": 0.174,
+      "lesson": 0.061,
+      "field work": 0.022,
+      "worked fields": 6.1,
+      "need": 39.9,
+      "largest crop": 914
+    },
+    {
+      "year": 6,
+      "decisions": 22912,
+      "warn": 0.277,
+      "lesson": 0.103,
+      "field work": 0.026,
+      "worked fields": 7.1,
+      "need": 42.0,
+      "largest crop": 1144
+    },
+    {
+      "year": 7,
+      "decisions": 26723,
+      "warn": 0.329,
+      "lesson": 0.117,
+      "field work": 0.016,
+      "worked fields": 5.4,
+      "need": 43.7,
+      "largest crop": 802
+    },
+    {
+      "year": 8,
+      "decisions": 27791,
+      "warn": 0.339,
+      "lesson": 0.171,
+      "field work": 0.011,
+      "worked fields": 4.5,
+      "need": 46.3,
+      "largest crop": 501
+    },
+    {
+      "year": 9,
+      "decisions": 25919,
+      "warn": 0.269,
+      "lesson": 0.167,
+      "field work": 0.018,
+      "worked fields": 6.1,
+      "need": 48.6,
+      "largest crop": 876
+    },
+    {
+      "year": 10,
+      "decisions": 29082,
+      "warn": 0.309,
+      "lesson": 0.175,
+      "field work": 0.016,
+      "worked fields": 5.6,
+      "need": 51.3,
+      "largest crop": 815
+    },
+    {
+      "year": 11,
+      "decisions": 28136,
+      "warn": 0.256,
+      "lesson": 0.169,
+      "field work": 0.022,
+      "worked fields": 8.9,
+      "need": 53.2,
+      "largest crop": 1135
+    },
+    {
+      "year": 12,
+      "decisions": 31645,
+      "warn": 0.328,
+      "lesson": 0.188,
+      "field work": 0.017,
+      "worked fields": 6.8,
+      "need": 55.4,
+      "largest crop": 1013
+    },
+    {
+      "year": 13,
+      "decisions": 29687,
+      "warn": 0.297,
+      "lesson": 0.179,
+      "field work": 0.019,
+      "worked fields": 7.1,
+      "need": 56.0,
+      "largest crop": 990
+    },
+    {
+      "year": 14,
+      "decisions": 29791,
+      "warn": 0.288,
+      "lesson": 0.173,
+      "field work": 0.021,
+      "worked fields": 8.6,
+      "need": 58.9,
+      "largest crop": 1124
+    },
+    {
+      "year": 15,
+      "decisions": 26602,
+      "warn": 0.201,
+      "lesson": 0.184,
+      "field work": 0.025,
+      "worked fields": 9.7,
+      "need": 60.5,
+      "largest crop": 1442
+    },
+    {
+      "year": 16,
+      "decisions": 27885,
+      "warn": 0.305,
+      "lesson": 0.16,
+      "field work": 0.019,
+      "worked fields": 9.2,
+      "need": 62.3,
+      "largest crop": 1211
+    }
+  ],
+  "warnings": {
+    "decisions": 115049,
+    "by_instruction": [
+      [
+        "lessons villagers wrote",
+        32841
+      ],
+      [
+        "coming-pass-the-word",
+        32355
+      ],
+      [
+        "knows-warn-about-road",
+        18745
+      ],
+      [
+        "knows-warn-about-well",
+        18123
+      ],
+      [
+        "knows-warn-about-blight",
+        12985
+      ]
+    ],
+    "passed_on": [
+      [
+        "sicken",
+        48903
+      ],
+      [
+        "tale",
+        36506
+      ],
+      [
+        "festival",
+        17447
+      ],
+      [
+        "visitor",
+        15916
+      ],
+      [
+        "traveler",
+        11838
+      ],
+      [
+        "birth",
+        11694
+      ],
+      [
+        "weather",
+        11660
+      ],
+      [
+        "blight_cleared",
+        11591
+      ],
+      [
+        "harvest",
+        11160
+      ],
+      [
+        "raid",
+        10769
+      ],
+      [
+        "wedding",
+        6337
+      ],
+      [
+        "death",
+        1511
+      ]
+    ]
+  },
+  "world": {
+    "sales": 721,
+    "coins": 13511.6,
+    "world_events": {
+      "weather": 386,
+      "sicken": 136,
+      "traveler": 104,
+      "visitor": 48,
+      "festival": 34,
+      "harvest": 17,
+      "raid": 11
+    }
+  },
+  "lessons": {
+    "stage_changes": 131,
+    "consolidations": {
+      "accepted some": 83,
+      "all refused": 0
+    },
+    "written": 249,
+    "accepted": 248,
+    "refused": 1,
+    "refused_share": 0.004,
+    "why_refused": [
+      {
+        "kind": "no action marker",
+        "n": 1,
+        "share": 1.0,
+        "most_common": [
+          [
+            "(none)",
+            1
+          ]
+        ]
+      }
+    ],
+    "by_stage": {
+      "adult": {
+        "accepted": 87,
+        "refused": 0
+      },
+      "apprentice": {
+        "accepted": 101,
+        "refused": 1
+      },
+      "elder": {
+        "accepted": 60,
+        "refused": 0
+      }
+    },
+    "by_decade": [
+      {
+        "decade": "0-9",
+        "accepted": 143,
+        "refused": 1
+      },
+      {
+        "decade": "10-19",
+        "accepted": 105,
+        "refused": 0
+      }
+    ],
+    "markers": [
+      {
+        "marker": "warn",
+        "accepted": 93,
+        "refused": 1,
+        "in this run": "on",
+        "required": "target"
+      },
+      {
+        "marker": "go",
+        "accepted": 82,
+        "refused": 0,
+        "in this run": "on",
+        "required": "to"
+      },
+      {
+        "marker": "avoid",
+        "accepted": 78,
+        "refused": 0,
+        "in this run": "on",
+        "required": "place"
+      },
+      {
+        "marker": "rest",
+        "accepted": 55,
+        "refused": 0,
+        "in this run": "on",
+        "required": null
+      },
+      {
+        "marker": "talk",
+        "accepted": 26,
+        "refused": 0,
+        "in this run": "on",
+        "required": "target"
+      },
+      {
+        "marker": "work",
+        "accepted": 15,
+        "refused": 0,
+        "in this run": "on",
+        "required": "site"
+      },
+      {
+        "marker": "fight_blight",
+        "accepted": 7,
+        "refused": 0,
+        "in this run": "on",
+        "required": null
+      },
+      {
+        "marker": "save",
+        "accepted": 3,
+        "refused": 0,
+        "in this run": "on",
+        "required": null
+      },
+      {
+        "marker": "gather",
+        "accepted": 2,
+        "refused": 0,
+        "in this run": "on",
+        "required": "what"
+      },
+      {
+        "marker": "clear",
+        "accepted": 1,
+        "refused": 0,
+        "in this run": "on",
+        "required": "place"
+      },
+      {
+        "marker": "buy",
+        "accepted": 1,
+        "refused": 0,
+        "in this run": "on",
+        "required": null
+      }
+    ],
+    "needs_an_argument": {
+      "needs an argument": {
+        "accepted": 219,
+        "refused": 1
+      },
+      "needs none": {
+        "accepted": 29,
+        "refused": 0
+      }
+    },
+    "switched_off_marker": {
+      "written": 0,
+      "accepted": 0,
+      "markers": {},
+      "accepted_examples": []
+    },
+    "refused_examples": {
+      "no action marker": [
+        {
+          "content": "It is night and the village has gathered at the well where the water is black and spreading sickness. Do not approach the water; instead, warn those nearby about the danger and then rest until morning. [!warn(target=nearby, topic=the sick water at the well), !rest(until=morning, ticks=12)]",
+          "why": "no action marker",
+          "author": "runa",
+          "became": "apprentice"
+        }
+      ]
+    }
+  },
+  "use": {
+    "accepted": 248,
+    "ever_a_candidate": 243,
+    "ever_chosen": 206,
+    "choices": 53819,
+    "decisions": 417373,
+    "unknown_ids_chosen": 0,
+    "by_decade": [
+      {
+        "decade": "0-9",
+        "decisions": 214545,
+        "chose a lesson": 18213
+      },
+      {
+        "decade": "10-19",
+        "decisions": 202828,
+        "chose a lesson": 35606
+      }
+    ],
+    "markers_chosen": {
+      "warn": 33426,
+      "talk": 15170,
+      "go": 11735,
+      "avoid": 7126,
+      "rest": 2287,
+      "work": 1872,
+      "gather": 17,
+      "fight_blight": 8,
+      "save": 2
+    },
+    "most_chosen": [
+      {
+        "id": "learned-frida-warn-raider-proximity",
+        "n": 8710,
+        "candidate": 13781,
+        "author": "frida",
+        "became": "apprentice",
+        "content": "Sten swears the raiders are less than a day's ride away and the village is packed tight at the well. Warn those nearby that we are helpless in the open. [!warn(target=nearby, topic=raiders less than a day away)]"
+      },
+      {
+        "id": "learned-maja-2",
+        "n": 8085,
+        "candidate": 11188,
+        "author": "maja",
+        "became": "adult",
+        "content": "The black sludge is seeping under Osric's doorstep where Maja was born, proving the danger is at the heart of the village. Warn the nearby villagers that the blight has reached the homes and is no longer just a field problem. [!warn(target=nearby, topic=blight seeping under doorsteps)]"
+      },
+      {
+        "id": "learned-hilde28-02",
+        "n": 6785,
+        "candidate": 10197,
+        "author": "hilde28",
+        "became": "adult",
+        "content": "You know that Frode, the child of Mabel and Edek, was born at house 13. If you are near the house, acknowledge this fact to those nearby. [!talk(target=nearby, topic=Frode's birth at house 13)]"
+      },
+      {
+        "id": "learned-dagny-warn-children",
+        "n": 4803,
+        "candidate": 7997,
+        "author": "dagny",
+        "became": "adult",
+        "content": "The danger is closing in on the edges of the village where the children live. Warn the nearby children about the wolves and the fighting at the treeline so they stay safe. [!warn(target=nearby, topic=wolves and fighting at the treeline)]"
+      },
+      {
+        "id": "learned-bryn-inn-storyteller",
+        "n": 2923,
+        "candidate": 5169,
+        "author": "bryn",
+        "became": "adult",
+        "content": "A traveling storyteller has arrived via the east road and is lodging at the inn. They may carry word of the trouble mentioned by Wynn. Go to the inn and listen to what they have to say. [!go(to=inn)] [!talk(target=nearby, topic=word of the trouble from the east road)]"
+      },
+      {
+        "id": "learned-corin-storyteller-east-road",
+        "n": 1873,
+        "candidate": 7509,
+        "author": "corin",
+        "became": "adult",
+        "content": "A traveling storyteller has set up camp at the inn on the east road, the same direction the sickness came from. Be cautious when passing the inn and keep an eye out for anything suspicious. [!avoid(place=inn, ticks=5)] [!warn(target=nearby, topic=storyteller at the inn on the east road)]"
+      },
+      {
+        "id": "learned-lorne-raider-road-warning",
+        "n": 1772,
+        "candidate": 5363,
+        "author": "lorne",
+        "became": "adult",
+        "content": "Word has come that raiders are on the east road. Warn whoever is near you about the danger on the east road, and avoid that stretch of path. [!warn(target=nearby, topic=raiders on the east road)] [!avoid(place=east_road, ticks=12)]"
+      },
+      {
+        "id": "learned-ilsa-child-birth-record",
+        "n": 1392,
+        "candidate": 5955,
+        "author": "ilsa",
+        "became": "adult",
+        "content": "Remember that Wynn's child, Dagny, was born at house five near the treeline. If asked about the child's origin, state this fact clearly. [!talk(target=nearby, topic=Dagny's birth at house five)]"
+      }
+    ],
+    "never_chosen_examples": [
+      {
+        "id": "learned-tobin-blight-fields",
+        "author": "tobin",
+        "became": "elder",
+        "candidate": 56,
+        "content": "The blight on the south bank rots everything it touches. Stay clear of the fields on that side until you can assess the damage. [!avoid(place=fields, ticks=45)]"
+      },
+      {
+        "id": "learned-hilde28-night-rest",
+        "author": "hilde28",
+        "became": "elder",
+        "candidate": 30,
+        "content": "It is night and dark, time to sleep. Go to your home and rest until morning. [!go(to=home)] [!rest(until=morning)]"
+      },
+      {
+        "id": "learned-osric-well-water-check",
+        "author": "osric",
+        "became": "elder",
+        "candidate": 1,
+        "content": "You have heard that the well water is turning and sickening those who drink it. Before using it for yourself or the beasts, go to the well to verify the condition of the water. [!go(to=well)]"
+      }
+    ]
+  },
+  "to_day": 472
+}

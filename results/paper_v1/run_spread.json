@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "runs": [
+      "20260927-190041-seed1",
+      "20260927-191014-seed2",
+      "20260927-192146-seed3",
+      "20260927-193347-seed4",
+      "20260927-194732-seed5",
+      "20260927-195852-seed6"
+    ],
+    "date": "2026-10-06",
+    "checked_against": "results/knowledge_flow.json"
+  },
+  "per_run": [
+    {
+      "run": "20260927-190041-seed1",
+      "events that spread": 5,
+      "median holders of an event": 30,
+      "median wordings of an event": 19,
+      "longest chain": 5,
+      "offers already known (%)": 84.9,
+      "new news refused (%)": 3.2,
+      "facts reclassified (%)": 65.2,
+      "reclassified toward trouble (%)": 94.5,
+      "knowledge-only decisions (%)": 11.4
+    },
+    {
+      "run": "20260927-191014-seed2",
+      "events that spread": 3,
+      "median holders of an event": 30,
+      "median wordings of an event": 20,
+      "longest chain": 5,
+      "offers already known (%)": 92.0,
+      "new news refused (%)": 1.3,
+      "facts reclassified (%)": 60.0,
+      "reclassified toward trouble (%)": 98.1,
+      "knowledge-only decisions (%)": 20.3
+    },
+    {
+      "run": "20260927-192146-seed3",
+      "events that spread": 8,
+      "median holders of an event": 18.5,
+      "median wordings of an event": 10.0,
+      "longest chain": 5,
+      "offers already known (%)": 82.4,
+      "new news refused (%)": 25.9,
+      "facts reclassified (%)": 44.4,
+      "reclassified toward trouble (%)": 75.0,
+      "knowledge-only decisions (%)": 10.6
+    },
+    {
+      "run": "20260927-193347-seed4",
+      "events that spread": 7,
+      "median holders of an event": 25,
+      "median wordings of an event": 19,
+      "longest chain": 6,
+      "offers already known (%)": 90.8,
+      "new news refused (%)": 22.2,
+      "facts reclassified (%)": 51.7,
+      "reclassified toward trouble (%)": 80.5,
+      "knowledge-only decisions (%)": 24.7
+    },
+    {
+      "run": "20260927-194732-seed5",
+      "events that spread": 9,
+      "median holders of an event": 12,
+      "median wordings of an event": 9,
+      "longest chain": 8,
+      "offers already known (%)": 86.7,
+      "new news refused (%)": 17.1,
+      "facts reclassified (%)": 57.3,
+      "reclassified toward trouble (%)": 96.7,
+      "knowledge-only decisions (%)": 21.5
+    },
+    {
+      "run": "20260927-195852-seed6",
+      "events that spread": 4,
+      "median holders of an event": 19.0,
+      "median wordings of an event": 10.5,
+      "longest chain": 3,
+      "offers already known (%)": 89.2,
+      "new news refused (%)": 5.2,
+      "facts reclassified (%)": 41.3,
+      "reclassified toward trouble (%)": 100.0,
+      "knowledge-only decisions (%)": 11.5
+    }
+  ],
+  "spread": {
+    "events that spread": {
+      "mean": 6.0,
+      "sd": 2.4,
+      "min": 3,
+      "max": 9
+    },
+    "median holders of an event": {
+      "mean": 22.4,
+      "sd": 7.2,
+      "min": 12,
+      "max": 30
+    },
+    "median wordings of an event": {
+      "mean": 14.6,
+      "sd": 5.2,
+      "min": 9,
+      "max": 20
+    },
+    "longest chain": {
+      "mean": 5.3,
+      "sd": 1.6,
+      "min": 3,
+      "max": 8
+    },
+    "offers already known (%)": {
+      "mean": 87.7,
+      "sd": 3.7,
+      "min": 82.4,
+      "max": 92.0
+    },
+    "new news refused (%)": {
+      "mean": 12.5,
+      "sd": 10.6,
+      "min": 1.3,
+      "max": 25.9
+    },
+    "facts reclassified (%)": {
+      "mean": 53.3,
+      "sd": 9.3,
+      "min": 41.3,
+      "max": 65.2
+    },
+    "reclassified toward trouble (%)": {
+      "mean": 90.8,
+      "sd": 10.4,
+      "min": 75.0,
+      "max": 100.0
+    },
+    "knowledge-only decisions (%)": {
+      "mean": 16.7,
+      "sd": 6.2,
+      "min": 10.6,
+      "max": 24.7
+    }
+  },
+  "action_intervals": {
+    "run": "20260927-190041-seed1",
+    "rows": [
+      {
+        "what": "whole temperament",
+        "changed": 56,
+        "compared": 400,
+        "pct": 14.0,
+        "wilson95": [
+          10.9,
+          17.7
+        ]
+      },
+      {
+        "what": "sociability",
+        "changed": 24,
+        "compared": 400,
+        "pct": 6.0,
+        "wilson95": [
+          4.1,
+          8.8
+        ]
+      },
+      {
+        "what": "caution",
+        "changed": 38,
+        "compared": 400,
+        "pct": 9.5,
+        "wilson95": [
+          7.0,
+          12.8
+        ]
+      },
+      {
+        "what": "curiosity",
+        "changed": 29,
+        "compared": 400,
+        "pct": 7.2,
+        "wilson95": [
+          5.1,
+          10.2
+        ]
+      },
+      {
+        "what": "trust",
+        "changed": 27,
+        "compared": 400,
+        "pct": 6.8,
+        "wilson95": [
+          4.7,
+          9.6
+        ]
+      },
+      {
+        "what": "diligence",
+        "changed": 26,
+        "compared": 400,
+        "pct": 6.5,
+        "wilson95": [
+          4.5,
+          9.4
+        ]
+      },
+      {
+        "what": "candor",
+        "changed": 11,
+        "compared": 400,
+        "pct": 2.8,
+        "wilson95": [
+          1.5,
+          4.9
+        ]
+      }
+    ]
+  },
+  "restored": {
+    "decisions": 20947,
+    "chose_restored": 2415,
+    "over_knowledge": 1274,
+    "by_instruction": {
+      "adult-evening-home": 768,
+      "adult-morning-work": 655,
+      "child-home-evening": 314,
+      "adult-afternoon-work": 309,
+      "apprentice-morning-work": 130,
+      "apprentice-afternoon-work": 127,
+      "temp-reserved-avoid-crowd": 33,
+      "temp-diligent-back-to-work": 22,
+      "temp-settled-routine": 15,
+      "elder-afternoon-work": 15,
+      "temp-wary-home-before-dark": 15,
+      "elder-morning-work": 6,
+      "temp-inquisitive-explore": 4,
+      "child-follow-parent": 1,
+      "elder-morning-shrine": 1
+    },
+    "pct": 11.5,
+    "per_run": [
+      {
+        "run": "20260927-190041-seed1",
+        "decisions": 3181,
+        "chose_restored": 469,
+        "over_knowledge": 222
+      },
+      {
+        "run": "20260927-191014-seed2",
+        "decisions": 3719,
+        "chose_restored": 404,
+        "over_knowledge": 226
+      },
+      {
+        "run": "20260927-192146-seed3",
+        "decisions": 3344,
+        "chose_restored": 464,
+        "over_knowledge": 204
+      },
+      {
+        "run": "20260927-193347-seed4",
+        "decisions": 3748,
+        "chose_restored": 300,
+        "over_knowledge": 246
+      },
+      {
+        "run": "20260927-194732-seed5",
+        "decisions": 3510,
+        "chose_restored": 444,
+        "over_knowledge": 227
+      },
+      {
+        "run": "20260927-195852-seed6",
+        "decisions": 3445,
+        "chose_restored": 334,
+        "over_knowledge": 149
+      }
+    ]
+  }
+}

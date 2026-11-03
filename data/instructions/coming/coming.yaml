@@ -1,0 +1,19 @@
+# Danger from beyond the village that could come here (config.short_warnings,
+# SPECIFICATION-warnings.md section 10). Loaded only with that switch
+# (corpus.SWITCHED_DIRS).
+#
+# Far-off news is held as from afar (config.afar_news) and warns nobody, unless
+# it is about something that can come here: raiders, a sickness going round,
+# wolves. Such news sets knows_danger_coming, which fades in about a week like
+# any danger, and admits this one instruction. It sits below the trades' work
+# (58 to 62), so it is a word in passing to whoever is near, never a reason to
+# leave the fields. A danger that does arrive is witnessed here, and the
+# ordinary warnings take over.
+#   knows_danger_coming   word of a danger beyond the village that can come here
+
+instructions:
+  - id: coming-pass-the-word
+    type: directive
+    priority: 50
+    content: Word has come of danger beyond the village that could come this way. Mention it to whoever is near you, and go on with your day. [!warn(target=nearby, topic=danger abroad that could come this way)]
+    scope: {required_tags: [daytime, knows_danger_coming, near_someone], tags: [at_east_road, at_forest_edge]}

@@ -1,0 +1,28 @@
+# The market (hearthwick/economy.py, SPECIFICATION.md section 2.9i). The
+# merchant buys and sells at set prices (data/goods.yaml). A villager sees:
+#   carrying_goods   it carries goods worth the walk to market
+# Handlers refuse the rest, such as selling nothing.
+#
+# want-buy and want-save are for a wanted thing, which this edition leaves
+# out (README). Nobody ever has want_unpaid, so they are never retrieved, and
+# [!buy] and [!save] always refuse. They stay so that the corpus is the one
+# the paper's runs loaded, instruction for instruction.
+
+instructions:
+  - id: want-buy
+    type: directive
+    priority: 60
+    content: What you wanted has been drawn, and you have enough to pay for what it is to be made of. Go to the market and buy it, so the crafters can build it. [!buy(what=want)]
+    scope: {required_tags: [daytime, want_unpaid, can_pay], tags: [time_morning]}
+
+  - id: want-save
+    type: directive
+    priority: 52
+    content: What you wanted has been drawn, but you cannot yet pay for what it is to be made of. Go and gather some of it yourself. [!save(ticks=12)]
+    scope: {required_tags: [daytime, want_unpaid, saving], tags: [temp_diligent, temp_bold]}
+
+  - id: go-sell
+    type: directive
+    priority: 50
+    content: You have goods to sell. Take them to the market. [!sell]
+    scope: {required_tags: [daytime, carrying_goods], tags: [time_afternoon, at_work]}

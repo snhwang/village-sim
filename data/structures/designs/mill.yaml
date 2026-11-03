@@ -1,0 +1,21 @@
+# The windmill, as a design. It was drawn by code in the 3D viewer, with
+# sails that always turned. Now they turn while someone works at the mill.
+# The hub stands out from the tower on an axle. The bench found that with the
+# hub against the tower, as the code drew it, the sails passed through the
+# tower at the bottom of every turn.
+design: windmill
+by: the founders
+default_for: mill
+footprint: [3, 3]
+ground: gravel
+parts:
+  - {id: tower, shape: cylinder, size: [0.7, 1.0, 3.0], sides: 8, at: [0, 1.5, 0], material: pale_stone}
+  - {id: cap, shape: cone, size: [0.85, 0.9], sides: 8, at: [0, 3.45, 0], material: dark_timber}
+  - {id: axle, shape: cylinder, size: [0.06, 0.6], at: [0, 2.7, 0.75], rotation: [90, 0, 0], material: dark_timber}
+  - {id: hub, shape: sphere, size: [0.14], at: [0, 2.7, 1.05], material: dark_timber}
+  - {id: sail, shape: box, size: [0.25, 2.2, 0.05], at: [0, 1.1, 0], parent: hub, repeat: 4, material: sailcloth}
+joints:
+  - {part: hub, kind: hinge, axis: z}
+movements:
+  - {joint: hub, spin: 6, when: worked}
+claims: [grind]

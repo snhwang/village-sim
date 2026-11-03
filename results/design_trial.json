@@ -1,0 +1,740 @@
+[
+ {
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "covered": null,
+  "young": null,
+  "crafter": "dunn",
+  "name": "The Miller's Rest",
+  "accepted": false,
+  "reasons": [
+   "slide needs two values and a period"
+  ],
+  "parts": 18,
+  "movements": [],
+  "cost": null,
+  "footprint": null,
+  "plot": null,
+  "design": null,
+  "reply": "{\n\"design\": \"The Miller's Rest\",\n\"footprint\": [5, 5],\n\"ground\": \"stone\",\n\"parts\": [\n{\"id\": \"foundation\", \"shape\": \"box\", \"size\": [4.8, 0.4, 4.8], \"at\": [0, 0.2, 0], \"material\": \"stone\"},\n{\"id\": \"walls_main\", \"shape\": \"box\", \"size\": [4.5, 2.2, 4.5], \"at\": [0, 1.5, 0], \"material\": \"plaster\"},\n{\"id\": \"roof_base\", \"shape\": \"cone\", \"size\": [3.4, 1.8], \"sides\": 4, \"at\": [0, 3.6, 0], \"rotation\": [0, 45, "
+ },
+ {
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "covered": 12.8,
+  "young": 6,
+  "crafter": "edda",
+  "name": "Dunn and Maren's House",
+  "accepted": true,
+  "reasons": [],
+  "parts": 8,
+  "movements": [
+   {
+    "joint": "door",
+    "open": 90,
+    "seconds": 1.2,
+    "when": "occupied"
+   }
+  ],
+  "cost": 2.81,
+  "footprint": [
+   4,
+   3
+  ],
+  "plot": true,
+  "design": {
+   "design": "Dunn and Maren's House",
+   "footprint": [
+    4,
+    3
+   ],
+   "ground": "stone",
+   "parts": [
+    {
+     "id": "floor",
+     "shape": "box",
+     "size": [
+      3.8,
+      0.1,
+      2.8
+     ],
+     "at": [
+      0,
+      0.05,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "walls",
+     "shape": "box",
+     "size": [
+      3.5,
+      1.2,
+      2.5
+     ],
+     "at": [
+      0,
+      0.7,
+      0
+     ],
+     "material": "plaster"
+    },
+    {
+     "id": "roof",
+     "shape": "cone",
+     "size": [
+      2.6,
+      1.1
+     ],
+     "sides": 4,
+     "at": [
+      0,
+      1.8,
+      0
+     ],
+     "rotation": [
+      0,
+      45,
+      0
+     ],
+     "scale": [
+      1.05,
+      1,
+      0.9
+     ],
+     "material": "roof_tile"
+    },
+    {
+     "id": "door",
+     "shape": "box",
+     "size": [
+      0.5,
+      0.9,
+      0.06
+     ],
+     "at": [
+      0.5,
+      0.55,
+      1.28
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "window_front",
+     "shape": "box",
+     "size": [
+      0.6,
+      0.5,
+      0.06
+     ],
+     "at": [
+      -0.6,
+      0.8,
+      1.28
+     ],
+     "material": "glass"
+    },
+    {
+     "id": "window_side",
+     "shape": "box",
+     "size": [
+      0.06,
+      0.5,
+      0.6
+     ],
+     "at": [
+      1.78,
+      0.8,
+      0
+     ],
+     "material": "glass"
+    },
+    {
+     "id": "chimney",
+     "shape": "box",
+     "size": [
+      0.4,
+      0.6,
+      0.4
+     ],
+     "at": [
+      0.8,
+      2.2,
+      0.5
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "shelf",
+     "shape": "box",
+     "size": [
+      0.6,
+      0.05,
+      0.3
+     ],
+     "at": [
+      -1.2,
+      0.9,
+      1.1
+     ],
+     "material": "timber"
+    }
+   ],
+   "joints": [
+    {
+     "part": "door",
+     "kind": "hinge",
+     "axis": "y",
+     "pivot": [
+      0.25,
+      0,
+      0
+     ]
+    }
+   ],
+   "movements": [
+    {
+     "joint": "door",
+     "open": 90,
+     "seconds": 1.2,
+     "when": "occupied"
+    }
+   ],
+   "claims": [
+    "shelter",
+    "store"
+   ],
+   "by": "edda",
+   "purpose": "home"
+  },
+  "reply": null
+ },
+ {
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "door"
+  ],
+  "covered": 10.64,
+  "young": 6,
+  "crafter": "garrick",
+  "name": "Dunn's Steady House",
+  "accepted": true,
+  "reasons": [],
+  "parts": 6,
+  "movements": [
+   {
+    "joint": "door",
+    "open": 90,
+    "seconds": 1,
+    "when": "occupied"
+   }
+  ],
+  "cost": 1.92,
+  "footprint": [
+   4,
+   3
+  ],
+  "plot": true,
+  "design": {
+   "design": "Dunn's Steady House",
+   "footprint": [
+    4,
+    3
+   ],
+   "ground": "flagstone",
+   "parts": [
+    {
+     "id": "floor",
+     "shape": "box",
+     "size": [
+      3.8,
+      0.1,
+      2.8
+     ],
+     "at": [
+      0,
+      0.05,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "walls",
+     "shape": "box",
+     "size": [
+      3.4,
+      1.2,
+      2.4
+     ],
+     "at": [
+      0,
+      0.7,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "roof",
+     "shape": "box",
+     "size": [
+      3.8,
+      0.2,
+      2.8
+     ],
+     "at": [
+      0,
+      1.4,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      8
+     ],
+     "material": "shingle"
+    },
+    {
+     "id": "door",
+     "shape": "box",
+     "size": [
+      0.5,
+      0.9,
+      0.05
+     ],
+     "at": [
+      0.8,
+      0.5,
+      1.21
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "window_front",
+     "shape": "box",
+     "size": [
+      0.6,
+      0.4,
+      0.05
+     ],
+     "at": [
+      -0.6,
+      0.8,
+      1.21
+     ],
+     "material": "glass"
+    },
+    {
+     "id": "window_side",
+     "shape": "box",
+     "size": [
+      0.4,
+      0.4,
+      0.05
+     ],
+     "at": [
+      1.71,
+      0.8,
+      0
+     ],
+     "material": "glass"
+    }
+   ],
+   "joints": [
+    {
+     "part": "door",
+     "kind": "hinge",
+     "axis": "y",
+     "pivot": [
+      -0.25,
+      0,
+      0
+     ]
+    }
+   ],
+   "movements": [
+    {
+     "joint": "door",
+     "open": 90,
+     "seconds": 1,
+     "when": "occupied"
+    }
+   ],
+   "claims": [
+    "shelter",
+    "store"
+   ],
+   "by": "garrick",
+   "purpose": "home"
+  },
+  "reply": null
+ },
+ {
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "covered": 12.69,
+  "young": 6,
+  "crafter": "gorm",
+  "name": "Dunn and Maren's Home",
+  "accepted": true,
+  "reasons": [],
+  "parts": 7,
+  "movements": [
+   {
+    "joint": "door",
+    "open": 90,
+    "seconds": 1.0,
+    "when": "occupied"
+   }
+  ],
+  "cost": 3.0,
+  "footprint": [
+   4,
+   3
+  ],
+  "plot": true,
+  "design": {
+   "design": "Dunn and Maren's Home",
+   "footprint": [
+    4,
+    3
+   ],
+   "ground": "flagstone",
+   "parts": [
+    {
+     "id": "floor",
+     "shape": "box",
+     "size": [
+      3.9,
+      0.1,
+      2.9
+     ],
+     "at": [
+      0,
+      0.05,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "walls",
+     "shape": "box",
+     "size": [
+      3.8,
+      2.2,
+      2.8
+     ],
+     "at": [
+      0,
+      1.2,
+      0
+     ],
+     "material": "plaster"
+    },
+    {
+     "id": "roof",
+     "shape": "cone",
+     "size": [
+      2.6,
+      1.4
+     ],
+     "sides": 4,
+     "at": [
+      0,
+      2.7,
+      0
+     ],
+     "rotation": [
+      0,
+      45,
+      0
+     ],
+     "scale": [
+      1,
+      1,
+      0.85
+     ],
+     "material": "shingle"
+    },
+    {
+     "id": "door",
+     "shape": "box",
+     "size": [
+      0.35,
+      0.8,
+      0.06
+     ],
+     "at": [
+      0.5,
+      0.5,
+      1.42
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "window_front",
+     "shape": "box",
+     "size": [
+      0.4,
+      0.4,
+      0.06
+     ],
+     "at": [
+      -0.8,
+      1.2,
+      1.42
+     ],
+     "material": "glass"
+    },
+    {
+     "id": "window_back",
+     "shape": "box",
+     "size": [
+      0.4,
+      0.4,
+      0.06
+     ],
+     "at": [
+      0.8,
+      1.2,
+      -1.42
+     ],
+     "material": "glass"
+    },
+    {
+     "id": "chimney",
+     "shape": "box",
+     "size": [
+      0.3,
+      1.2,
+      0.3
+     ],
+     "at": [
+      1.2,
+      3.0,
+      -0.8
+     ],
+     "material": "stone"
+    }
+   ],
+   "joints": [
+    {
+     "part": "door",
+     "kind": "hinge",
+     "axis": "y",
+     "pivot": [
+      0.175,
+      0,
+      0
+     ]
+    }
+   ],
+   "movements": [
+    {
+     "joint": "door",
+     "open": 90,
+     "seconds": 1.0,
+     "when": "occupied"
+    }
+   ],
+   "claims": [
+    "shelter"
+   ],
+   "by": "gorm",
+   "purpose": "home"
+  },
+  "reply": null
+ },
+ {
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "covered": 13.44,
+  "young": 6,
+  "crafter": "wynn",
+  "name": "Dunn & Maren's",
+  "accepted": true,
+  "reasons": [],
+  "parts": 8,
+  "movements": [
+   {
+    "joint": "door",
+    "open": 90,
+    "seconds": 2.0,
+    "when": "occupied"
+   }
+  ],
+  "cost": 2.87,
+  "footprint": [
+   4,
+   3
+  ],
+  "plot": true,
+  "design": {
+   "design": "Dunn & Maren's",
+   "footprint": [
+    4,
+    3
+   ],
+   "ground": "flagstone",
+   "parts": [
+    {
+     "id": "base",
+     "shape": "box",
+     "size": [
+      3.8,
+      0.2,
+      2.8
+     ],
+     "at": [
+      0,
+      0.1,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "walls",
+     "shape": "box",
+     "size": [
+      3.6,
+      1.4,
+      2.6
+     ],
+     "at": [
+      0,
+      0.9,
+      0
+     ],
+     "material": "plaster"
+    },
+    {
+     "id": "roof",
+     "shape": "box",
+     "size": [
+      4.2,
+      0.3,
+      3.2
+     ],
+     "at": [
+      0,
+      1.75,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      0
+     ],
+     "material": "shingle"
+    },
+    {
+     "id": "chimney",
+     "shape": "box",
+     "size": [
+      0.4,
+      0.8,
+      0.4
+     ],
+     "at": [
+      1.2,
+      2.3,
+      0.8
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "door",
+     "shape": "box",
+     "size": [
+      0.5,
+      1.0,
+      0.05
+     ],
+     "at": [
+      0,
+      0.7,
+      1.32
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "window_left",
+     "shape": "box",
+     "size": [
+      0.5,
+      0.5,
+      0.05
+     ],
+     "at": [
+      -1.2,
+      1.0,
+      1.32
+     ],
+     "material": "glass"
+    },
+    {
+     "id": "window_right",
+     "shape": "box",
+     "size": [
+      0.5,
+      0.5,
+      0.05
+     ],
+     "at": [
+      1.2,
+      1.0,
+      1.32
+     ],
+     "material": "glass"
+    },
+    {
+     "id": "window_back",
+     "shape": "box",
+     "size": [
+      0.5,
+      0.5,
+      0.05
+     ],
+     "at": [
+      0,
+      1.0,
+      -1.32
+     ],
+     "material": "glass"
+    }
+   ],
+   "joints": [
+    {
+     "part": "door",
+     "kind": "hinge",
+     "axis": "y",
+     "pivot": [
+      0.25,
+      0,
+      0
+     ]
+    }
+   ],
+   "movements": [
+    {
+     "joint": "door",
+     "open": 90,
+     "seconds": 2.0,
+     "when": "occupied"
+    }
+   ],
+   "claims": [
+    "shelter",
+    "store"
+   ],
+   "by": "wynn",
+   "purpose": "home"
+  },
+  "reply": null
+ }
+]

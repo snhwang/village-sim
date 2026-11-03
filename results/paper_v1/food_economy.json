@@ -1,0 +1,1360 @@
+[
+  {
+    "run": "20260927-190041-seed1",
+    "villagers": 30,
+    "need_per_day": 28.0,
+    "need_per_year": 224.0,
+    "dawns": [
+      {
+        "day": 1,
+        "season": "spring",
+        "store": 168.0,
+        "need": 28.0,
+        "crop": 60.42,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 12,
+        "gathered": 0.0
+      },
+      {
+        "day": 2,
+        "season": "summer",
+        "store": 140.0,
+        "need": 28.0,
+        "crop": 75.67,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 4,
+        "gathered": 0.0
+      },
+      {
+        "day": 3,
+        "season": "summer",
+        "store": 112.0,
+        "need": 28.0,
+        "crop": 113.89,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 6,
+        "gathered": 0.0
+      },
+      {
+        "day": 4,
+        "season": "autumn",
+        "store": 84.0,
+        "need": 28.0,
+        "crop": 168.29,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 10,
+        "gathered": 0.0
+      },
+      {
+        "day": 5,
+        "season": "autumn",
+        "store": 224.29,
+        "need": 28.0,
+        "crop": 0.0,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 21,
+        "gathered": 168.29
+      },
+      {
+        "day": 6,
+        "season": "winter",
+        "store": 196.29,
+        "need": 28.0,
+        "crop": 0.0,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 7,
+        "gathered": 0.0
+      },
+      {
+        "day": 7,
+        "season": "winter",
+        "store": 167.29,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 264.0,
+        "tiles": 132,
+        "worked_fields": 11,
+        "gathered": 0.0
+      },
+      {
+        "day": 8,
+        "season": "spring",
+        "store": 138.29,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 264.0,
+        "tiles": 132,
+        "worked_fields": 7,
+        "gathered": 0.0
+      },
+      {
+        "day": 9,
+        "season": "spring",
+        "store": 109.29,
+        "need": 29.0,
+        "crop": 74.94,
+        "capacity": 264.0,
+        "tiles": 132,
+        "worked_fields": 12,
+        "gathered": 0.0
+      }
+    ],
+    "harvests": [
+      {
+        "day": 6,
+        "yield": "poor",
+        "brought_in": 168.29
+      }
+    ],
+    "fields_grown": [
+      {
+        "day": 6,
+        "by": "ada",
+        "tiles": 110
+      },
+      {
+        "day": 6,
+        "by": "garrick",
+        "tiles": 121
+      },
+      {
+        "day": 6,
+        "by": "fen",
+        "tiles": 132
+      }
+    ],
+    "hungry_days": [],
+    "wet_days": [
+      1,
+      4,
+      7,
+      9
+    ],
+    "food_instructions_chosen": {
+      "food-farmer-blight": 91,
+      "food-help-tend": 17,
+      "food-harvest-hands": 15,
+      "food-farmer-tend": 14,
+      "food-farmer-harvest": 13,
+      "food-clear-ground": 12,
+      "food-apprentice-harvest": 8,
+      "food-child-glean": 2
+    },
+    "working_hours_dry": {
+      "work": 0.463,
+      "go": 0.283,
+      "idle": 0.104,
+      "rest": 0.074,
+      "talk": 0.05,
+      "clear": 0.023,
+      "warn": 0.003
+    },
+    "working_hours_dry_decisions": 535,
+    "working_hours_dry_chosen": {
+      "elder-teach": 81,
+      "adult-morning-work": 72,
+      "adult-evening-home": 71,
+      "role-healer-rounds": 41,
+      "temp-easygoing-break": 32,
+      "role-merchant-road": 32,
+      "adult-afternoon-work": 27,
+      "food-farmer-blight": 18,
+      "elder-tell-children": 17,
+      "temp-bold-roam": 17,
+      "adult-midday-market": 17,
+      "weather-frost-check-fields": 17,
+      "adult-chat": 16,
+      "role-guard-rounds": 16,
+      "temp-gregarious-seek-company": 9
+    },
+    "adults_and_elders": 22,
+    "tired_chosen": 0,
+    "tired_chosen_while_rested": 0,
+    "working_hours_dry_by_role": {
+      "crafter": {
+        "work": 0.382,
+        "go": 0.306,
+        "idle": 0.108,
+        "rest": 0.101,
+        "talk": 0.063,
+        "clear": 0.033,
+        "warn": 0.008
+      },
+      "farmer": {
+        "work": 0.577,
+        "go": 0.217,
+        "idle": 0.086,
+        "talk": 0.061,
+        "rest": 0.044,
+        "clear": 0.014,
+        "warn": 0.002
+      },
+      "guard": {
+        "work": 0.569,
+        "go": 0.311,
+        "idle": 0.09,
+        "talk": 0.03
+      },
+      "healer": {
+        "go": 0.413,
+        "work": 0.297,
+        "idle": 0.137,
+        "rest": 0.073,
+        "clear": 0.059,
+        "talk": 0.02,
+        "warn": 0.001
+      },
+      "merchant": {
+        "work": 0.337,
+        "go": 0.328,
+        "rest": 0.156,
+        "idle": 0.13,
+        "talk": 0.04,
+        "clear": 0.009
+      },
+      "storyteller": {
+        "work": 0.389,
+        "go": 0.219,
+        "rest": 0.194,
+        "idle": 0.115,
+        "talk": 0.038,
+        "clear": 0.031,
+        "warn": 0.014
+      }
+    }
+  },
+  {
+    "run": "20260927-191014-seed2",
+    "villagers": 30,
+    "need_per_day": 28.0,
+    "need_per_year": 224.0,
+    "dawns": [
+      {
+        "day": 1,
+        "season": "spring",
+        "store": 168.0,
+        "need": 28.0,
+        "crop": 57.8,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 11,
+        "gathered": 0.0
+      },
+      {
+        "day": 2,
+        "season": "summer",
+        "store": 140.0,
+        "need": 28.0,
+        "crop": 79.94,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 4,
+        "gathered": 0.0
+      },
+      {
+        "day": 3,
+        "season": "summer",
+        "store": 112.0,
+        "need": 28.0,
+        "crop": 140.26,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 12,
+        "gathered": 0.0
+      },
+      {
+        "day": 4,
+        "season": "autumn",
+        "store": 84.0,
+        "need": 28.0,
+        "crop": 168.3,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 8,
+        "gathered": 0.0
+      },
+      {
+        "day": 5,
+        "season": "autumn",
+        "store": 223.8,
+        "need": 28.5,
+        "crop": 0.0,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 20,
+        "gathered": 168.3
+      },
+      {
+        "day": 6,
+        "season": "winter",
+        "store": 194.8,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 9,
+        "gathered": 0.0
+      },
+      {
+        "day": 7,
+        "season": "winter",
+        "store": 165.8,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 242.0,
+        "tiles": 121,
+        "worked_fields": 10,
+        "gathered": 0.0
+      },
+      {
+        "day": 8,
+        "season": "spring",
+        "store": 136.8,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 242.0,
+        "tiles": 121,
+        "worked_fields": 6,
+        "gathered": 0.0
+      },
+      {
+        "day": 9,
+        "season": "spring",
+        "store": 107.8,
+        "need": 29.0,
+        "crop": 84.78,
+        "capacity": 242.0,
+        "tiles": 121,
+        "worked_fields": 13,
+        "gathered": 0.0
+      }
+    ],
+    "harvests": [
+      {
+        "day": 6,
+        "yield": "poor",
+        "brought_in": 168.3
+      }
+    ],
+    "fields_grown": [
+      {
+        "day": 6,
+        "by": "garrick",
+        "tiles": 110
+      },
+      {
+        "day": 6,
+        "by": "garrick",
+        "tiles": 121
+      }
+    ],
+    "hungry_days": [],
+    "wet_days": [
+      1,
+      4,
+      7,
+      9
+    ],
+    "food_instructions_chosen": {
+      "food-farmer-blight": 120,
+      "food-harvest-hands": 27,
+      "food-help-tend": 22,
+      "food-farmer-harvest": 19,
+      "food-farmer-tend": 9,
+      "food-clear-ground": 9,
+      "food-apprentice-harvest": 7,
+      "food-child-glean": 1
+    },
+    "working_hours_dry": {
+      "work": 0.385,
+      "go": 0.309,
+      "idle": 0.11,
+      "rest": 0.108,
+      "talk": 0.072,
+      "clear": 0.013,
+      "warn": 0.003
+    },
+    "working_hours_dry_decisions": 585,
+    "working_hours_dry_chosen": {
+      "adult-evening-home": 72,
+      "adult-morning-work": 58,
+      "temp-easygoing-break": 55,
+      "elder-teach": 46,
+      "role-merchant-road": 46,
+      "role-healer-rounds": 42,
+      "food-farmer-blight": 41,
+      "adult-midday-market": 35,
+      "adult-chat": 19,
+      "role-guard-rounds": 19,
+      "temp-bold-roam": 18,
+      "adult-afternoon-work": 18,
+      "weather-frost-check-fields": 18,
+      "knows-warn-about-well": 14,
+      "knows-avoid-raided-road": 12
+    },
+    "adults_and_elders": 22,
+    "tired_chosen": 0,
+    "tired_chosen_while_rested": 0,
+    "working_hours_dry_by_role": {
+      "crafter": {
+        "go": 0.334,
+        "work": 0.303,
+        "rest": 0.129,
+        "idle": 0.118,
+        "talk": 0.081,
+        "clear": 0.033,
+        "warn": 0.001
+      },
+      "farmer": {
+        "work": 0.547,
+        "go": 0.233,
+        "idle": 0.085,
+        "talk": 0.068,
+        "rest": 0.064,
+        "clear": 0.003,
+        "warn": 0.0
+      },
+      "guard": {
+        "go": 0.411,
+        "work": 0.304,
+        "idle": 0.097,
+        "rest": 0.083,
+        "talk": 0.075,
+        "warn": 0.03
+      },
+      "healer": {
+        "go": 0.472,
+        "work": 0.178,
+        "idle": 0.145,
+        "rest": 0.101,
+        "talk": 0.074,
+        "clear": 0.03
+      },
+      "merchant": {
+        "go": 0.293,
+        "rest": 0.24,
+        "work": 0.222,
+        "idle": 0.16,
+        "talk": 0.083,
+        "warn": 0.002
+      },
+      "storyteller": {
+        "work": 0.444,
+        "go": 0.212,
+        "rest": 0.208,
+        "idle": 0.118,
+        "talk": 0.017
+      }
+    }
+  },
+  {
+    "run": "20260927-192146-seed3",
+    "villagers": 30,
+    "need_per_day": 28.0,
+    "need_per_year": 224.0,
+    "dawns": [
+      {
+        "day": 1,
+        "season": "spring",
+        "store": 168.0,
+        "need": 28.0,
+        "crop": 55.6,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 13,
+        "gathered": 0.0
+      },
+      {
+        "day": 2,
+        "season": "summer",
+        "store": 138.5,
+        "need": 29.5,
+        "crop": 76.7,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 3,
+        "gathered": 0.0
+      },
+      {
+        "day": 3,
+        "season": "summer",
+        "store": 108.5,
+        "need": 30.0,
+        "crop": 110.84,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 13,
+        "gathered": 0.0
+      },
+      {
+        "day": 4,
+        "season": "autumn",
+        "store": 79.88,
+        "need": 29.0,
+        "crop": 159.91,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 12,
+        "gathered": 0.38
+      },
+      {
+        "day": 5,
+        "season": "autumn",
+        "store": 210.79,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 20,
+        "gathered": 160.29
+      },
+      {
+        "day": 6,
+        "season": "winter",
+        "store": 181.79,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 6,
+        "gathered": 0.0
+      },
+      {
+        "day": 7,
+        "season": "winter",
+        "store": 152.79,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 242.0,
+        "tiles": 121,
+        "worked_fields": 9,
+        "gathered": 0.0
+      },
+      {
+        "day": 8,
+        "season": "spring",
+        "store": 123.79,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 242.0,
+        "tiles": 121,
+        "worked_fields": 7,
+        "gathered": 0.0
+      },
+      {
+        "day": 9,
+        "season": "spring",
+        "store": 94.79,
+        "need": 29.0,
+        "crop": 58.93,
+        "capacity": 242.0,
+        "tiles": 121,
+        "worked_fields": 13,
+        "gathered": 0.0
+      }
+    ],
+    "harvests": [
+      {
+        "day": 6,
+        "yield": "poor",
+        "brought_in": 160.29
+      }
+    ],
+    "fields_grown": [
+      {
+        "day": 6,
+        "by": "dunn",
+        "tiles": 110
+      },
+      {
+        "day": 6,
+        "by": "garrick",
+        "tiles": 121
+      }
+    ],
+    "hungry_days": [],
+    "wet_days": [
+      1,
+      4,
+      7,
+      9
+    ],
+    "food_instructions_chosen": {
+      "food-help-tend": 29,
+      "food-farmer-blight": 23,
+      "food-harvest-hands": 20,
+      "food-apprentice-harvest": 16,
+      "food-farmer-harvest": 16,
+      "food-farmer-tend": 13,
+      "food-clear-ground": 9
+    },
+    "working_hours_dry": {
+      "work": 0.382,
+      "go": 0.282,
+      "idle": 0.113,
+      "rest": 0.108,
+      "talk": 0.097,
+      "clear": 0.015,
+      "warn": 0.003
+    },
+    "working_hours_dry_decisions": 637,
+    "working_hours_dry_chosen": {
+      "role-merchant-road": 83,
+      "elder-teach": 83,
+      "adult-evening-home": 57,
+      "adult-morning-work": 56,
+      "role-healer-rounds": 55,
+      "temp-easygoing-break": 53,
+      "adult-midday-market": 33,
+      "knows-warn-about-blight": 24,
+      "adult-afternoon-work": 23,
+      "adult-chat": 21,
+      "weather-frost-check-fields": 17,
+      "temp-bold-roam": 16,
+      "knows-avoid-blighted-field": 16,
+      "temp-gregarious-seek-company": 12,
+      "elder-tell-children": 10
+    },
+    "adults_and_elders": 23,
+    "tired_chosen": 0,
+    "tired_chosen_while_rested": 0,
+    "working_hours_dry_by_role": {
+      "crafter": {
+        "go": 0.295,
+        "work": 0.294,
+        "rest": 0.161,
+        "idle": 0.115,
+        "talk": 0.108,
+        "clear": 0.024,
+        "warn": 0.002
+      },
+      "farmer": {
+        "work": 0.499,
+        "go": 0.233,
+        "talk": 0.116,
+        "idle": 0.089,
+        "rest": 0.056,
+        "warn": 0.003,
+        "clear": 0.003
+      },
+      "guard": {
+        "work": 0.517,
+        "go": 0.312,
+        "idle": 0.085,
+        "talk": 0.059,
+        "rest": 0.024,
+        "warn": 0.002
+      },
+      "healer": {
+        "go": 0.483,
+        "work": 0.204,
+        "idle": 0.153,
+        "rest": 0.086,
+        "clear": 0.045,
+        "talk": 0.03
+      },
+      "merchant": {
+        "rest": 0.314,
+        "go": 0.231,
+        "work": 0.207,
+        "idle": 0.196,
+        "talk": 0.052
+      },
+      "storyteller": {
+        "work": 0.388,
+        "talk": 0.201,
+        "go": 0.133,
+        "rest": 0.12,
+        "idle": 0.094,
+        "clear": 0.047,
+        "warn": 0.018
+      }
+    }
+  },
+  {
+    "run": "20260927-193347-seed4",
+    "villagers": 30,
+    "need_per_day": 28.0,
+    "need_per_year": 224.0,
+    "dawns": [
+      {
+        "day": 1,
+        "season": "spring",
+        "store": 168.0,
+        "need": 28.0,
+        "crop": 36.6,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 11,
+        "gathered": 0.0
+      },
+      {
+        "day": 2,
+        "season": "summer",
+        "store": 139.0,
+        "need": 29.0,
+        "crop": 74.73,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 8,
+        "gathered": 0.0
+      },
+      {
+        "day": 3,
+        "season": "summer",
+        "store": 110.0,
+        "need": 29.0,
+        "crop": 115.15,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 10,
+        "gathered": 0.0
+      },
+      {
+        "day": 4,
+        "season": "autumn",
+        "store": 81.5,
+        "need": 28.5,
+        "crop": 168.3,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 11,
+        "gathered": 0.0
+      },
+      {
+        "day": 5,
+        "season": "autumn",
+        "store": 114.75,
+        "need": 29.0,
+        "crop": 90.14,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 7,
+        "gathered": 62.25
+      },
+      {
+        "day": 6,
+        "season": "winter",
+        "store": 175.89,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 18,
+        "gathered": 0.0
+      },
+      {
+        "day": 7,
+        "season": "winter",
+        "store": 146.89,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 242.0,
+        "tiles": 121,
+        "worked_fields": 9,
+        "gathered": 0.0
+      },
+      {
+        "day": 8,
+        "season": "spring",
+        "store": 117.89,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 242.0,
+        "tiles": 121,
+        "worked_fields": 6,
+        "gathered": 0.0
+      },
+      {
+        "day": 9,
+        "season": "spring",
+        "store": 88.89,
+        "need": 29.0,
+        "crop": 64.25,
+        "capacity": 242.0,
+        "tiles": 121,
+        "worked_fields": 12,
+        "gathered": 0.0
+      }
+    ],
+    "harvests": [
+      {
+        "day": 6,
+        "yield": "poor",
+        "brought_in": 152.39
+      }
+    ],
+    "fields_grown": [
+      {
+        "day": 6,
+        "by": "tobin",
+        "tiles": 110
+      },
+      {
+        "day": 6,
+        "by": "thea",
+        "tiles": 121
+      }
+    ],
+    "hungry_days": [],
+    "wet_days": [
+      1,
+      4,
+      7,
+      9
+    ],
+    "food_instructions_chosen": {
+      "food-farmer-blight": 68,
+      "food-help-tend": 37,
+      "food-farmer-tend": 17,
+      "food-farmer-harvest": 13,
+      "food-apprentice-harvest": 11,
+      "food-harvest-hands": 10,
+      "food-clear-ground": 9
+    },
+    "working_hours_dry": {
+      "work": 0.419,
+      "go": 0.249,
+      "idle": 0.107,
+      "rest": 0.101,
+      "talk": 0.097,
+      "clear": 0.016,
+      "warn": 0.012
+    },
+    "working_hours_dry_decisions": 679,
+    "working_hours_dry_chosen": {
+      "knows-warn-about-road": 81,
+      "elder-teach": 71,
+      "role-merchant-road": 59,
+      "adult-morning-work": 58,
+      "temp-easygoing-break": 52,
+      "adult-evening-home": 46,
+      "role-healer-rounds": 37,
+      "knows-warn-about-blight": 36,
+      "knows-avoid-raided-road": 27,
+      "weather-frost-check-fields": 27,
+      "food-farmer-blight": 23,
+      "temp-bold-roam": 17,
+      "knows-guard-investigates": 15,
+      "food-help-tend": 14,
+      "adult-midday-market": 14
+    },
+    "adults_and_elders": 23,
+    "tired_chosen": 0,
+    "tired_chosen_while_rested": 0,
+    "working_hours_dry_by_role": {
+      "crafter": {
+        "work": 0.356,
+        "go": 0.217,
+        "rest": 0.142,
+        "talk": 0.131,
+        "idle": 0.112,
+        "clear": 0.023,
+        "warn": 0.02
+      },
+      "farmer": {
+        "work": 0.55,
+        "go": 0.208,
+        "talk": 0.102,
+        "idle": 0.084,
+        "rest": 0.046,
+        "clear": 0.007,
+        "warn": 0.004
+      },
+      "guard": {
+        "work": 0.465,
+        "go": 0.248,
+        "rest": 0.122,
+        "idle": 0.094,
+        "talk": 0.071
+      },
+      "healer": {
+        "go": 0.418,
+        "work": 0.238,
+        "idle": 0.141,
+        "rest": 0.086,
+        "talk": 0.074,
+        "clear": 0.035,
+        "warn": 0.008
+      },
+      "merchant": {
+        "go": 0.281,
+        "rest": 0.273,
+        "work": 0.191,
+        "idle": 0.177,
+        "clear": 0.036,
+        "talk": 0.03,
+        "warn": 0.012
+      },
+      "storyteller": {
+        "work": 0.441,
+        "go": 0.224,
+        "talk": 0.129,
+        "idle": 0.084,
+        "warn": 0.063,
+        "rest": 0.058
+      }
+    }
+  },
+  {
+    "run": "20260927-194732-seed5",
+    "villagers": 30,
+    "need_per_day": 28.0,
+    "need_per_year": 224.0,
+    "dawns": [
+      {
+        "day": 1,
+        "season": "spring",
+        "store": 168.0,
+        "need": 28.0,
+        "crop": 72.52,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 15,
+        "gathered": 0.0
+      },
+      {
+        "day": 2,
+        "season": "summer",
+        "store": 140.0,
+        "need": 28.0,
+        "crop": 84.16,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 5,
+        "gathered": 0.0
+      },
+      {
+        "day": 3,
+        "season": "summer",
+        "store": 112.0,
+        "need": 28.0,
+        "crop": 147.69,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 10,
+        "gathered": 0.0
+      },
+      {
+        "day": 4,
+        "season": "autumn",
+        "store": 84.0,
+        "need": 28.0,
+        "crop": 168.3,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 7,
+        "gathered": 0.0
+      },
+      {
+        "day": 5,
+        "season": "autumn",
+        "store": 224.3,
+        "need": 28.0,
+        "crop": 0.0,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 21,
+        "gathered": 168.3
+      },
+      {
+        "day": 6,
+        "season": "winter",
+        "store": 195.8,
+        "need": 28.5,
+        "crop": 0.0,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 9,
+        "gathered": 0.0
+      },
+      {
+        "day": 7,
+        "season": "winter",
+        "store": 166.8,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 286.0,
+        "tiles": 143,
+        "worked_fields": 11,
+        "gathered": 0.0
+      },
+      {
+        "day": 8,
+        "season": "spring",
+        "store": 137.8,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 286.0,
+        "tiles": 143,
+        "worked_fields": 7,
+        "gathered": 0.0
+      },
+      {
+        "day": 9,
+        "season": "spring",
+        "store": 108.8,
+        "need": 29.0,
+        "crop": 76.77,
+        "capacity": 286.0,
+        "tiles": 143,
+        "worked_fields": 12,
+        "gathered": 0.0
+      }
+    ],
+    "harvests": [
+      {
+        "day": 6,
+        "yield": "poor",
+        "brought_in": 168.3
+      }
+    ],
+    "fields_grown": [
+      {
+        "day": 6,
+        "by": "dunn",
+        "tiles": 110
+      },
+      {
+        "day": 6,
+        "by": "tobin",
+        "tiles": 121
+      },
+      {
+        "day": 6,
+        "by": "gorm",
+        "tiles": 132
+      },
+      {
+        "day": 6,
+        "by": "tobin",
+        "tiles": 143
+      }
+    ],
+    "hungry_days": [],
+    "wet_days": [
+      1,
+      4,
+      7,
+      9
+    ],
+    "food_instructions_chosen": {
+      "food-farmer-blight": 169,
+      "food-harvest-hands": 26,
+      "food-help-tend": 19,
+      "food-farmer-harvest": 16,
+      "food-clear-ground": 9,
+      "food-farmer-tend": 5,
+      "food-apprentice-harvest": 4
+    },
+    "working_hours_dry": {
+      "work": 0.44,
+      "go": 0.253,
+      "idle": 0.107,
+      "rest": 0.093,
+      "talk": 0.086,
+      "clear": 0.014,
+      "warn": 0.007
+    },
+    "working_hours_dry_decisions": 594,
+    "working_hours_dry_chosen": {
+      "elder-teach": 82,
+      "adult-evening-home": 79,
+      "adult-morning-work": 60,
+      "food-farmer-blight": 47,
+      "role-merchant-road": 45,
+      "knows-warn-about-blight": 42,
+      "role-healer-rounds": 37,
+      "temp-easygoing-break": 37,
+      "adult-afternoon-work": 25,
+      "knows-warn-about-well": 19,
+      "adult-midday-market": 14,
+      "weather-frost-check-fields": 14,
+      "temp-gregarious-seek-company": 13,
+      "adult-chat": 10,
+      "knows-avoid-sick-well": 10
+    },
+    "adults_and_elders": 23,
+    "tired_chosen": 0,
+    "tired_chosen_while_rested": 0,
+    "working_hours_dry_by_role": {
+      "crafter": {
+        "work": 0.355,
+        "go": 0.242,
+        "rest": 0.15,
+        "talk": 0.11,
+        "idle": 0.102,
+        "clear": 0.037,
+        "warn": 0.003
+      },
+      "farmer": {
+        "work": 0.57,
+        "go": 0.208,
+        "talk": 0.089,
+        "idle": 0.085,
+        "rest": 0.04,
+        "warn": 0.008
+      },
+      "guard": {
+        "work": 0.66,
+        "go": 0.175,
+        "idle": 0.101,
+        "talk": 0.059,
+        "warn": 0.005
+      },
+      "healer": {
+        "go": 0.422,
+        "work": 0.216,
+        "idle": 0.142,
+        "rest": 0.105,
+        "talk": 0.096,
+        "clear": 0.017
+      },
+      "merchant": {
+        "go": 0.288,
+        "work": 0.236,
+        "rest": 0.219,
+        "idle": 0.158,
+        "talk": 0.043,
+        "clear": 0.038,
+        "warn": 0.017
+      },
+      "storyteller": {
+        "work": 0.33,
+        "go": 0.285,
+        "rest": 0.194,
+        "idle": 0.132,
+        "talk": 0.049,
+        "warn": 0.01
+      }
+    }
+  },
+  {
+    "run": "20260927-195852-seed6",
+    "villagers": 30,
+    "need_per_day": 28.0,
+    "need_per_year": 224.0,
+    "dawns": [
+      {
+        "day": 1,
+        "season": "spring",
+        "store": 168.0,
+        "need": 28.0,
+        "crop": 50.35,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 12,
+        "gathered": 0.0
+      },
+      {
+        "day": 2,
+        "season": "summer",
+        "store": 140.0,
+        "need": 28.0,
+        "crop": 81.93,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 7,
+        "gathered": 0.0
+      },
+      {
+        "day": 3,
+        "season": "summer",
+        "store": 112.0,
+        "need": 28.0,
+        "crop": 137.89,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 12,
+        "gathered": 0.0
+      },
+      {
+        "day": 4,
+        "season": "autumn",
+        "store": 84.38,
+        "need": 28.0,
+        "crop": 167.98,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 8,
+        "gathered": 0.38
+      },
+      {
+        "day": 5,
+        "season": "autumn",
+        "store": 224.36,
+        "need": 28.0,
+        "crop": 0.0,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 20,
+        "gathered": 168.36
+      },
+      {
+        "day": 6,
+        "season": "winter",
+        "store": 195.86,
+        "need": 28.5,
+        "crop": 0.0,
+        "capacity": 198.0,
+        "tiles": 99,
+        "worked_fields": 7,
+        "gathered": 0.0
+      },
+      {
+        "day": 7,
+        "season": "winter",
+        "store": 166.86,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 242.0,
+        "tiles": 121,
+        "worked_fields": 9,
+        "gathered": 0.0
+      },
+      {
+        "day": 8,
+        "season": "spring",
+        "store": 137.86,
+        "need": 29.0,
+        "crop": 0.0,
+        "capacity": 242.0,
+        "tiles": 121,
+        "worked_fields": 9,
+        "gathered": 0.0
+      },
+      {
+        "day": 9,
+        "season": "spring",
+        "store": 108.86,
+        "need": 29.0,
+        "crop": 15.5,
+        "capacity": 242.0,
+        "tiles": 121,
+        "worked_fields": 5,
+        "gathered": 0.0
+      }
+    ],
+    "harvests": [
+      {
+        "day": 6,
+        "yield": "poor",
+        "brought_in": 168.36
+      }
+    ],
+    "fields_grown": [
+      {
+        "day": 6,
+        "by": "gorm",
+        "tiles": 110
+      },
+      {
+        "day": 6,
+        "by": "tobin",
+        "tiles": 121
+      }
+    ],
+    "hungry_days": [],
+    "wet_days": [
+      1,
+      4,
+      8,
+      9
+    ],
+    "food_instructions_chosen": {
+      "food-farmer-blight": 97,
+      "food-help-tend": 33,
+      "food-farmer-tend": 19,
+      "food-farmer-harvest": 19,
+      "food-harvest-hands": 14,
+      "food-apprentice-harvest": 10,
+      "food-clear-ground": 8
+    },
+    "working_hours_dry": {
+      "work": 0.456,
+      "go": 0.273,
+      "rest": 0.105,
+      "idle": 0.103,
+      "talk": 0.049,
+      "clear": 0.01,
+      "warn": 0.003
+    },
+    "working_hours_dry_decisions": 553,
+    "working_hours_dry_chosen": {
+      "elder-teach": 79,
+      "temp-easygoing-break": 78,
+      "adult-evening-home": 64,
+      "adult-morning-work": 62,
+      "food-farmer-blight": 38,
+      "role-healer-rounds": 31,
+      "adult-afternoon-work": 30,
+      "adult-midday-market": 22,
+      "temp-bold-roam": 21,
+      "adult-chat": 15,
+      "weather-frost-check-fields": 15,
+      "role-merchant-road": 14,
+      "role-guard-rounds": 13,
+      "temp-gregarious-seek-company": 12,
+      "knows-warn-about-well": 11
+    },
+    "adults_and_elders": 22,
+    "tired_chosen": 0,
+    "tired_chosen_while_rested": 0,
+    "working_hours_dry_by_role": {
+      "crafter": {
+        "work": 0.34,
+        "go": 0.25,
+        "rest": 0.207,
+        "idle": 0.108,
+        "talk": 0.077,
+        "warn": 0.011,
+        "clear": 0.006
+      },
+      "farmer": {
+        "work": 0.58,
+        "go": 0.211,
+        "idle": 0.09,
+        "rest": 0.065,
+        "talk": 0.043,
+        "clear": 0.011
+      },
+      "guard": {
+        "work": 0.575,
+        "go": 0.281,
+        "idle": 0.089,
+        "talk": 0.028,
+        "rest": 0.024,
+        "warn": 0.003
+      },
+      "healer": {
+        "go": 0.381,
+        "work": 0.363,
+        "idle": 0.122,
+        "rest": 0.069,
+        "talk": 0.039,
+        "clear": 0.025
+      },
+      "merchant": {
+        "go": 0.427,
+        "work": 0.236,
+        "rest": 0.139,
+        "idle": 0.132,
+        "talk": 0.054,
+        "clear": 0.012
+      },
+      "storyteller": {
+        "work": 0.406,
+        "go": 0.292,
+        "rest": 0.163,
+        "idle": 0.115,
+        "talk": 0.024
+      }
+    }
+  }
+]

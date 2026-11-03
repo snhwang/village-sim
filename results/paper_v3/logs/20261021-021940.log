@@ -1,0 +1,12 @@
+replayed 2400 decisions from 6 run(s)
+
+  whole temperament      185/2400    7.7% of decisions would have changed
+  sociability             53/2400    2.2% of decisions would have changed
+  caution                150/2400    6.2% of decisions would have changed
+  curiosity               42/2400    1.8% of decisions would have changed
+  trust                   55/2400    2.3% of decisions would have changed
+  diligence              179/2400    7.5% of decisions would have changed
+  candor                  51/2400    2.1% of decisions would have changed
+  wrote /tmp/cf_redraw/figures/fig4_counterfactual.png
+
+wrote /tmp/cf_redraw/counterfactual.json and .md

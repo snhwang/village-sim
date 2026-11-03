@@ -1,0 +1,133 @@
+# The two models Village Sim uses, on your own NVIDIA GPU. Nothing starts by
+# default. Each model is a profile:
+#
+#   docker compose --profile llm up -d               # Qwen3.8-27B on SGLang -> 8355
+#   docker compose --profile embed up -d             # Nemotron embedder -> 8360
+#   docker compose --profile llm --profile embed up -d
+#   docker compose ps
+#   docker compose --profile llm --profile embed down
+#
+# Copy .env.example to .env and set HF_CACHE first, then run
+# `python prepare_models.py` once. README.md in this folder has the details,
+# and how to run the embedder on a CPU without Docker. Both ports bind to
+# 127.0.0.1. Set LLM_BIND and an API key before exposing either.
+
+name: village-sim-serving
+
+x-gpu: &gpu
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - driver: nvidia
+            count: all
+            capabilities: [gpu]
+
+services:
+  # Qwen3.8-27B in NVFP4, which needs a Blackwell-class GPU, with DFlash
+  # speculative decoding. The paper's runs used these arguments on a 96 GB
+  # RTX PRO 6000. The default image is SGLang v0.5.21. The paper's runs were
+  # served by the 2026-09-09 nightly,
+  #   SGLANG_IMAGE=lmsysorg/sglang@sha256:64e4914593690fbba806f19ac8b2237f78815e9046dd2fc874f630129f281607
+  # which has SGLang issue 37817 (results/paper_v4/SERVING.md). Set that to
+  # serve them exactly as they were served.
+  llm:
+    profiles: [llm]
+    image: ${SGLANG_IMAGE:-lmsysorg/sglang@sha256:b1259f3ea3275f66237c498ea388919729018bc9f01c3d638391e06e2cf3f469}
+    container_name: village_sim_llm
+    entrypoint: ["python3"]
+    command:
+      - -m
+      - sglang.launch_server
+      - --trust-remote-code
+      - --model-path=unsloth/Qwen3.8-27B-NVFP4
+      - --revision=f0b7c9e722f5565102fff8481c99e4d86ae099c7
+      - --tp-size=1
+      - --served-model-name=Qwen3.8-27B
+      - --random-seed=1
+      - --sampling-defaults=model
+      - --kv-cache-dtype=fp8_e4m3
+      - --mem-fraction-static=${SGLANG_MEM_FRACTION:-0.60}
+      - --attention-backend=flashinfer
+      - --chunked-prefill-size=2048
+      - --disable-prefill-cuda-graph
+      - --cuda-graph-max-bs-decode=8
+      - --disable-flashinfer-autotune
+      - --speculative-algorithm=DFLASH
+      - --speculative-draft-model-path=z-lab/Qwen3.8-27B-DFlash2
+      - --speculative-draft-model-revision=50307d4c4cde6860d4eee73e2547cd786fe8e8a4
+      - --speculative-num-draft-tokens=8
+      - --speculative-draft-model-quantization=unquant
+      - --mamba-radix-cache-strategy=extra_buffer
+      - --mamba-ssm-dtype=bfloat16
+      - --max-mamba-cache-size=96
+      - --max-running-requests=8
+      - --enable-torch-compile
+      - --torch-compile-max-bs=4
+      - --num-continuous-decode-steps=2
+      - --reasoning-parser=qwen3
+      - --tool-call-parser=qwen3_coder
+      - --sleep-on-idle
+      - --host=0.0.0.0
+      - --port=8000
+    ports:
+      - "${LLM_BIND:-127.0.0.1}:${LLM_PORT:-8355}:8000"
+    environment:
+      # prepare_models.py has put both models in the cache at these revisions,
+      # so nothing touches the network at startup.
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      TORCHINDUCTOR_CACHE_DIR: /cache/inductor
+    volumes:
+      - ${HF_CACHE:?set HF_CACHE in .env}:/root/.cache/huggingface
+      - sglang-cache:/cache
+    ipc: host
+    restart: unless-stopped
+    stop_grace_period: 60s
+    healthcheck:
+      test: ["CMD", "python3", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      start_period: 1200s  # weights, draft, torch.compile and CUDA graphs
+      retries: 3
+    <<: *gpu
+
+  # nvidia/llama-nemotron-embed-vl-1b-v2, 2048 dimensions. Built on the vLLM
+  # image, which already carries a matching torch, CUDA and transformers.
+  embed:
+    profiles: [embed]
+    build:
+      context: ./embed
+      args:
+        BASE_IMAGE: ${VLLM_IMAGE:-vllm/vllm-openai:v0.27.1-ubuntu2404}
+    image: village-sim/nemotron-embed:latest
+    container_name: village_sim_embed
+    ports:
+      - "127.0.0.1:${EMBED_PORT:-8360}:8000"
+    environment:
+      HF_TOKEN: ${HF_TOKEN:-}
+      HUGGING_FACE_HUB_TOKEN: ${HF_TOKEN:-}
+      EMBED_MODEL_ID: ${EMBED_MODEL_ID:-nvidia/llama-nemotron-embed-vl-1b-v2}
+      EMBED_SERVED_NAME: ${EMBED_SERVED_NAME:-nemotron-embed-vl}
+      EMBED_API_KEY: ${EMBED_API_KEY:-}
+      EMBED_MAX_BATCH: ${EMBED_MAX_BATCH:-256}
+      EMBED_PRELOAD: ${EMBED_PRELOAD:-1}
+    volumes:
+      - ${HF_CACHE:?set HF_CACHE in .env}:/root/.cache/huggingface
+    ipc: host
+    restart: unless-stopped
+    # /health/deep embeds a word, so a GPU reset that loses the CUDA context
+    # shows as unhealthy and the container is restarted with a fresh one.
+    healthcheck:
+      test: ["CMD", "python3", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8000/health/deep')"]
+      interval: 30s
+      timeout: 20s
+      start_period: 300s
+      retries: 3
+    <<: *gpu
+
+volumes:
+  # SGLang's torch.compile and inductor cache, so a restart skips recompiling.
+  sglang-cache:

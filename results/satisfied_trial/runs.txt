@@ -1,0 +1,48 @@
+20261017-213553-seed1
+# A trial of lessons_satisfied (SPECIFICATION-memory.md section 11): seed 1 of
+# --profile illustrative for 56 in-game days (two 28-day years), started on
+# 2026-10-17 at 21:35 EDT on Scott's go-ahead ("do the trial"). It checks that
+# with the model a one-shot lesson rests once carried out, so no villager acts
+# on one again and again in a day. The illustrative trials (results/
+# illustrative_trials) had one villager choose its warning lesson 121 times in
+# a day, and another follow whoever sat at the inn all afternoon.
+#
+# The build. Hearthwick 5195365 with BEAR 8e26162 from the WSL clone
+# /mnt/c/tmp/bear-dev-main, the same BEAR as the illustrative trials. The model
+# is Qwen3.8-27B on 8355 (SGLang), and the embedder is 8360.
+#
+# From the repository in WSL:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup env OMP_NUM_THREADS=1 \
+#     OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python \
+#     -m hearthwick run --profile illustrative --days 56 --seed 1 \
+#     --village greater --checkpoint-every 1 \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     > runs/satisfied_seed1.log 2>&1 < /dev/null &
+#
+# The loops in the illustrative trials came late (year 6 of seed 1, year 9 of
+# seed 2), past these two years. So the trial is judged on every one-shot
+# lesson, by the health check's "a one-shot lesson acted on again and again in
+# a day": the most times a villager chose one of its own one-shot lessons in a
+# day. It is compared with the first 56 days of the illustrative trial of seed
+# 1, which had the same rules but no lessons_satisfied:
+#
+#   python experiments/health_check.py 20261017-043036-seed1 --to-day 56 \
+#     --out results/satisfied_trial/before_seed1_day56
+#   python experiments/health_check.py 20261017-213553-seed1 \
+#     --log runs/satisfied_seed1.log --out results/satisfied_trial/health
+#
+# And each one-shot lesson's use, in lesson_use.md beside each health check:
+#
+#   python experiments/lesson_use.py 20261017-213553-seed1 \
+#     --out results/satisfied_trial/lesson_use.md
+#   python experiments/lesson_use.py 20261017-043036-seed1 --to-day 56 \
+#     --out results/satisfied_trial/before_seed1_day56/lesson_use.md
+#
+# It finished its 56 days at 22:16:57 EDT, in 42 minutes, with none of its
+# 4,918 model calls unanswered. Its health check flags nothing. No villager
+# chose one of its own one-shot lessons more than twice in a day, against 29
+# in the same days before (3 villager-days over 12 before, none now). The
+# lessons were still used, about once on each day: 13 written, 10 chosen, one
+# on 18 days. Before, one villager chose its wolf lesson 29 times in a day,
+# another its sickness warning 21 times in its only day.

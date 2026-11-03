@@ -1,0 +1,255 @@
+{
+  "run": "20261021-151653-seed1",
+  "read_to_day": null,
+  "checks": [
+    {
+      "check": "model calls never answered",
+      "flag": false,
+      "figures": {
+        "speech_errors": 0,
+        "from": "record"
+      }
+    },
+    {
+      "check": "the run without the embedder it asked for",
+      "flag": false,
+      "figures": {
+        "asked": "service",
+        "used": "service"
+      }
+    },
+    {
+      "check": "servers that stopped answering, waited out",
+      "flag": false,
+      "figures": {
+        "model": {
+          "outages": 0,
+          "seconds": 0.0
+        },
+        "embedder": {
+          "outages": 0,
+          "seconds": 0.0
+        }
+      }
+    },
+    {
+      "check": "errors in the console log",
+      "flag": false,
+      "figures": {
+        "Replacing duplicate instruction": 883
+      }
+    },
+    {
+      "check": "the granary empty for long",
+      "flag": false,
+      "figures": {
+        "longest empty streak by year": {
+          "0": 0,
+          "1": 0
+        },
+        "empty days by year": {
+          "0": 0,
+          "1": 0
+        }
+      }
+    },
+    {
+      "check": "news told to someone who had it",
+      "flag": false,
+      "figures": {
+        "share of tellings by year": {
+          "0": 0.832,
+          "1": 0.843
+        }
+      }
+    },
+    {
+      "check": "the same talk again and again",
+      "flag": false,
+      "figures": {
+        "most repeated talk a year": {
+          "0": 14,
+          "1": 12
+        },
+        "which": {
+          "0": [
+            "merrick",
+            "nell",
+            "a story from the old days"
+          ],
+          "1": [
+            "merrick",
+            "bryn",
+            "a story from the old days"
+          ]
+        }
+      }
+    },
+    {
+      "check": "decisions with a refused action",
+      "flag": false,
+      "figures": {
+        "share by year": {
+          "0": 0.646,
+          "1": 0.69
+        }
+      }
+    },
+    {
+      "check": "a one-shot lesson acted on again and again in a day",
+      "flag": false,
+      "figures": {
+        "most times in a day, by year": {
+          "0": 1,
+          "1": 2
+        },
+        "which (villager, lesson, day)": {
+          "0": [
+            "hilde28",
+            "learned-hilde28-mill-grain-check",
+            3
+          ],
+          "1": [
+            "peder",
+            "learned-peder-report-east-road-sickness",
+            29
+          ]
+        },
+        "villager-days over 12, by year": {
+          "0": 0,
+          "1": 0
+        },
+        "one-shot lessons written": 18
+      }
+    },
+    {
+      "check": "what lessons declared as they were written",
+      "flag": false,
+      "figures": {
+        "lessons": 18,
+        "recurs": {
+          "each_time": 15,
+          "each_day": 3
+        },
+        "lasts": {
+          "news": 15,
+          "life": 2,
+          "season": 1
+        },
+        "answering no news": 1
+      }
+    },
+    {
+      "check": "the same warning to the same listener again and again in a day",
+      "flag": true,
+      "figures": {
+        "most times in a day, by year": {
+          "0": 4,
+          "1": 4
+        },
+        "which (day, warner, listener, topic)": {
+          "0": [
+            8,
+            "inga",
+            "garrick",
+            "danger abroad that could come this way"
+          ],
+          "1": [
+            47,
+            "osric",
+            "fen",
+            "danger abroad that could come this way"
+          ]
+        },
+        "listener-days over 3, by year": {
+          "0": 1,
+          "1": 3
+        }
+      }
+    },
+    {
+      "check": "a villager warning again and again in a day",
+      "flag": true,
+      "figures": {
+        "most warnings by one villager in a day, by year": {
+          "0": 59,
+          "1": 43
+        },
+        "which (day, warner)": {
+          "0": [
+            16,
+            "gisla"
+          ],
+          "1": [
+            54,
+            "wynn"
+          ]
+        },
+        "villager-days over 40, by year": {
+          "0": 1,
+          "1": 1
+        },
+        "warnings that carried nothing, by year": {
+          "0": 586,
+          "1": 565
+        }
+      }
+    },
+    {
+      "check": "the live memory index growing without end",
+      "flag": false,
+      "figures": {
+        "live index at a year's last trim": {
+          "0": 931,
+          "1": 1464
+        },
+        "per villager": {
+          "0": 31.0,
+          "1": 44.4
+        }
+      }
+    },
+    {
+      "check": "grown villagers standing idle",
+      "flag": false,
+      "figures": {
+        "idle share of waking frames by year": {
+          "0": 0.034,
+          "1": 0.037
+        }
+      }
+    },
+    {
+      "check": "grown villagers stuck in one place and activity",
+      "flag": false,
+      "figures": {
+        "still for 48+ waking ticks, by year": {},
+        "first cases": []
+      }
+    },
+    {
+      "check": "years without a birth",
+      "flag": false,
+      "figures": {
+        "births by year": {
+          "0": 3,
+          "1": 1
+        },
+        "longest run of years without": 0,
+        "people at a year's start": {
+          "0": 30,
+          "1": 33
+        }
+      }
+    },
+    {
+      "check": "deaths before old age",
+      "flag": false,
+      "figures": {
+        "deaths": 0,
+        "young": []
+      }
+    }
+  ],
+  "flags": 2
+}

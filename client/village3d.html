@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hearthwick 3D</title>
+  <style>
+    :root {
+      --bg: #f4f1ea; --panel: #fffdf8; --ink: #2b2a27; --muted: #6d6a62;
+      --line: #e2ddd1; --accent: #2a78d6; --live: #1baf7a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #16171a; --panel: #1f2126; --ink: #ecebe6; --muted: #a3a19a;
+              --line: #33363d; --accent: #6aa7ef; --live: #3fcf98; }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink);
+                 font: 14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    header { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px;
+             padding: 8px 16px; border-bottom: 1px solid var(--line); background: var(--panel); }
+    header h1 { font-size: 16px; margin: 0; }
+    header select, header button { font: inherit; color: var(--ink); background: var(--bg);
+             border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; }
+    header button.on { border-color: var(--accent); color: var(--accent); }
+    .clock { font-variant-numeric: tabular-nums; }
+    .food.short { color: #b3261e; font-weight: 600; }
+    .status { color: var(--muted); }
+    .status .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+                   background: var(--muted); margin-right: 6px; vertical-align: middle; }
+    .status.live .dot { background: var(--live); }
+    label.inline { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); }
+    main { position: relative; display: grid; grid-template-columns: 1fr 320px;
+           height: calc(100% - 50px); }
+    #scene { position: relative; min-width: 0; }
+    #scene canvas { display: block; width: 100%; height: 100%; }
+    aside { border-left: 1px solid var(--line); background: var(--panel);
+            overflow: auto; padding: 12px 14px; }
+    aside h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em;
+               color: var(--muted); margin: 16px 0 6px; }
+    .detail .name { font-size: 18px; font-weight: 600; }
+    .detail .sub { color: var(--muted); margin-bottom: 8px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0; }
+    .chips span { border: 1px solid var(--line); border-radius: 10px; padding: 1px 8px; font-size: 12px; }
+    .kv { margin: 4px 0; }
+    .kv b { color: var(--muted); font-weight: 500; }
+    .retrieved { margin: 4px 0 0 0; padding-left: 18px; color: var(--muted); font-size: 12px; }
+    .retrieved .chosen { color: var(--ink); font-weight: 600; }
+    .hint { color: var(--muted); }
+    .chat button { font: inherit; color: var(--ink); background: var(--bg);
+                   border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; }
+    .chat form { display: flex; gap: 6px; margin: 6px 0; }
+    .chat form#name-form { flex-wrap: wrap; }
+    .chat form#name-form label { flex-basis: 100%; }
+    .chat input { flex: 1; font: inherit; color: var(--ink); background: var(--bg);
+                  border: 1px solid var(--line); border-radius: 6px; padding: 4px 6px; }
+    .chatlines { margin: 4px 0; padding-left: 14px; font-size: 13px; }
+    .talk ul { margin: 2px 0 8px 0; padding-left: 14px; font-size: 12px; }
+    .talk li { margin: 1px 0; }
+    ol.feed { list-style: none; margin: 0; padding: 0; font-size: 13px; }
+    ol.feed li { padding: 4px 0; border-bottom: 1px solid var(--line); }
+    ol.feed .when { color: var(--muted); font-variant-numeric: tabular-nums; margin-right: 6px; }
+    ol.feed .who { color: var(--accent); cursor: pointer; }
+    ol.feed .world { color: #b0612e; }
+    /* Notices over the scene: what the village has just done, fading after a while. */
+    .notices { position: absolute; left: 12px; top: 12px; display: flex; flex-direction: column;
+               gap: 6px; max-width: min(420px, 70%); pointer-events: none; }
+    .notice { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid #9a6a3a;
+              border-radius: 6px; padding: 6px 10px; font-size: 13px; pointer-events: auto;
+              box-shadow: 0 2px 8px rgba(0,0,0,.18); transition: opacity .8s; }
+    .notice.fade { opacity: 0; }
+    .notice .kind { font-size: 11px; text-transform: uppercase; letter-spacing: .04em;
+                    color: var(--muted); margin-right: 6px; }
+    .notice .who { color: var(--accent); cursor: pointer; }
+    /* What is being built, with its timber and work as bars. */
+    .building { font-size: 13px; }
+    .building .bar { height: 6px; background: var(--line); border-radius: 3px; margin: 2px 0 6px; }
+    .building .bar span { display: block; height: 100%; background: #9a6a3a; border-radius: 3px; }
+    .building .who { color: var(--accent); cursor: pointer; }
+    .overlay { position: absolute; left: 12px; bottom: 12px; color: #fff; font-size: 12px;
+               text-shadow: 0 1px 2px rgba(0,0,0,.6); pointer-events: none; }
+    /* Shown while the village is opened, so nobody refreshes a page that is
+       still loading: the first visit after a restart takes minutes. */
+    .loading { position: absolute; inset: 0; z-index: 5; display: flex; align-items: center;
+               justify-content: center; padding: 16px;
+               background: color-mix(in srgb, var(--bg) 75%, transparent); }
+    .loading[hidden] { display: none; }
+    .loading-card { width: 100%; max-width: 420px; background: var(--panel); color: var(--ink);
+                    border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px;
+                    box-shadow: 0 6px 24px rgba(0,0,0,.18); }
+    .loading-title { font-weight: 600; margin-bottom: 10px; }
+    .loading-bar { height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
+    .loading-bar span { display: block; height: 100%; width: 0; background: var(--accent);
+                        border-radius: 3px; transition: width .5s; }
+    .loading-bar.unknown span { width: 30%; animation: loading-slide 1.4s ease-in-out infinite; }
+    @keyframes loading-slide { from { transform: translateX(-100%); } to { transform: translateX(340%); } }
+    @media (prefers-reduced-motion: reduce) {
+      .loading-bar.unknown span { animation: none; width: 100%; opacity: .4; }
+    }
+    .loading-card p { margin: 10px 0 0; font-size: 13px; }
+    @media (max-width: 800px) {
+      main { grid-template-columns: 1fr; grid-template-rows: 60% 40%; }
+      aside { border-left: none; border-top: 1px solid var(--line); }
+    }
+    /* A still for the paper (?paper=1): the clock alone in the header. */
+    body.paper header > :not(#clock) { display: none; }
+    body.paper .paper-hide { display: none; }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Hearthwick</h1>
+    <select id="run" aria-label="Run"></select>
+    <button id="live" type="button">Live</button>
+    <button id="begin" type="button">From start</button>
+    <label class="inline">Replay <input id="rate" type="range" min="1" max="60" step="1" value="6">
+      <span id="rate-value">6</span>/s</label>
+    <label class="inline"><input id="follow" type="checkbox"> Follow selected</label>
+    <label class="inline"><input id="names" type="checkbox"> All names</label>
+    <span id="clock" class="clock">…</span>
+    <span id="food" class="clock food" title="Days of food in the granary, and the crop standing in the fields"></span>
+    <span id="status" class="status"><span class="dot"></span><span id="status-text">connecting</span></span>
+  </header>
+  <main>
+    <section id="scene">
+      <div class="overlay" id="overlay"></div>
+      <div class="loading" id="loading" role="status" aria-live="polite">
+        <div class="loading-card">
+          <div class="loading-title" id="loading-title">Opening the village…</div>
+          <div class="loading-bar unknown" id="loading-bar"><span id="loading-fill"></span></div>
+          <p id="loading-text">Connecting.</p>
+          <p class="hint">The first visit after the village restarts can take two or three
+            minutes while its history is read. There's no need to refresh. This page
+            connects by itself.</p>
+        </div>
+      </div>
+      <div class="notices" id="notices" aria-live="polite"></div>
+    </section>
+    <aside>
+      <div id="detail" class="detail"><p class="hint">Click a villager to see who they are and what BEAR retrieved for their last decision. Drag to orbit, scroll to zoom.</p></div>
+      <div id="chat" class="chat"></div>
+      <h2 class="paper-hide">Building</h2>
+      <div id="building" class="building paper-hide"><p class="hint">Nothing reported yet.</p></div>
+      <h2 class="paper-hide">Village talk</h2>
+      <ol id="feed" class="feed paper-hide"></ol>
+    </aside>
+  </main>
+  <script type="module" src="/static/village3d.js"></script>
+</body>
+</html>

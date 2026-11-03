@@ -1,0 +1,582 @@
+{
+  "run": "20261024-003205-seed3",
+  "read_to_day": null,
+  "checks": [
+    {
+      "check": "model calls never answered",
+      "flag": false,
+      "figures": {
+        "speech_errors": 0,
+        "from": "record"
+      }
+    },
+    {
+      "check": "the run without the embedder it asked for",
+      "flag": false,
+      "figures": {
+        "asked": "service",
+        "used": "service"
+      }
+    },
+    {
+      "check": "servers that stopped answering, waited out",
+      "flag": false,
+      "figures": {
+        "model": {
+          "outages": 0,
+          "seconds": 0.0
+        },
+        "embedder": {
+          "outages": 0,
+          "seconds": 0.0
+        }
+      }
+    },
+    {
+      "check": "errors in the console log",
+      "flag": false,
+      "figures": {
+        "Replacing duplicate instruction": 6957
+      }
+    },
+    {
+      "check": "the granary empty for long",
+      "flag": false,
+      "figures": {
+        "longest empty streak by year": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 6,
+          "8": 0,
+          "9": 0
+        },
+        "empty days by year": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 6,
+          "8": 0,
+          "9": 0
+        }
+      }
+    },
+    {
+      "check": "news told to someone who had it",
+      "flag": false,
+      "figures": {
+        "share of tellings by year": {
+          "0": 0.754,
+          "1": 0.847,
+          "2": 0.835,
+          "3": 0.846,
+          "4": 0.821,
+          "5": 0.857,
+          "6": 0.873,
+          "7": 0.87,
+          "8": 0.852,
+          "9": 0.82
+        }
+      }
+    },
+    {
+      "check": "the same talk again and again",
+      "flag": false,
+      "figures": {
+        "most repeated talk a year": {
+          "0": 10,
+          "1": 13,
+          "2": 14,
+          "3": 18,
+          "4": 23,
+          "5": 15,
+          "6": 24,
+          "7": 19,
+          "8": 23,
+          "9": 18
+        },
+        "which": {
+          "0": [
+            "hilde28",
+            "hilde",
+            "story from the old days"
+          ],
+          "1": [
+            "hilde28",
+            "hilde",
+            "story from the old days"
+          ],
+          "2": [
+            "hilde28",
+            "hilde",
+            "story from the old days"
+          ],
+          "3": [
+            "osric",
+            "ivar",
+            "a story from the old days"
+          ],
+          "4": [
+            "rosa",
+            "runa",
+            "a story from the old days"
+          ],
+          "5": [
+            "freya",
+            "aldo",
+            "a story from the old days"
+          ],
+          "6": [
+            "osric",
+            "maja",
+            "a story from the old days"
+          ],
+          "7": [
+            "osric",
+            "maja",
+            "a story from the old days"
+          ],
+          "8": [
+            "edek",
+            "dag",
+            "a story from the old days"
+          ],
+          "9": [
+            "thea",
+            "col",
+            "a story from the old days"
+          ]
+        }
+      }
+    },
+    {
+      "check": "decisions with a refused action",
+      "flag": false,
+      "figures": {
+        "share by year": {
+          "0": 0.537,
+          "1": 0.609,
+          "2": 0.644,
+          "3": 0.74,
+          "4": 0.534,
+          "5": 0.614,
+          "6": 0.687,
+          "7": 0.6,
+          "8": 0.619,
+          "9": 0.482
+        }
+      }
+    },
+    {
+      "check": "a one-shot lesson acted on again and again in a day",
+      "flag": false,
+      "figures": {
+        "most times in a day, by year": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 2
+        },
+        "which (villager, lesson, day)": {
+          "0": [
+            "ilsa",
+            "learned-ilsa-share-birth-news",
+            3
+          ],
+          "1": [
+            "gisla",
+            "learned-gisla-night-watch",
+            28
+          ],
+          "2": [
+            "hilde28",
+            "learned-hilde28-schoolyard-story",
+            56
+          ],
+          "3": [
+            "bryn",
+            "learned-bryn-east-road-danger",
+            89
+          ],
+          "4": [
+            "ilsa",
+            "learned-ilsa-secure-goods",
+            126
+          ],
+          "5": [
+            "bryn",
+            "learned-bryn-avoid-frozen-well",
+            141
+          ],
+          "6": [
+            "hilde28",
+            "learned-hilde28-schoolyard-story",
+            169
+          ],
+          "7": [
+            "ilsa",
+            "learned-ilsa-secure-goods",
+            216
+          ],
+          "8": [
+            "dunn",
+            "learned-dunn-east-road-threat-assess",
+            240
+          ],
+          "9": [
+            "bryn",
+            "learned-bryn-east-road-danger",
+            257
+          ]
+        },
+        "villager-days over 12, by year": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        },
+        "one-shot lessons written": 138
+      }
+    },
+    {
+      "check": "what lessons declared as they were written",
+      "flag": false,
+      "figures": {
+        "lessons": 139,
+        "recurs": {
+          "each_time": 111,
+          "each_day": 25,
+          "None": 3
+        },
+        "lasts": {
+          "news": 112,
+          "life": 10,
+          "season": 14,
+          "None": 3
+        },
+        "answering no news": 10
+      }
+    },
+    {
+      "check": "the same warning to the same listener again and again in a day",
+      "flag": false,
+      "figures": {
+        "most times in a day, by year": {
+          "0": 2,
+          "1": 2,
+          "2": 3,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "6": 3,
+          "7": 2,
+          "8": 2,
+          "9": 2
+        },
+        "which (day, warner, listener, topic)": {
+          "0": [
+            14,
+            "thea",
+            "sena",
+            "the water at the well has turned"
+          ],
+          "1": [
+            32,
+            "edda",
+            "fen",
+            "danger abroad that could come this way"
+          ],
+          "2": [
+            57,
+            "ivar",
+            "edda",
+            "raiders on the east road"
+          ],
+          "3": [
+            87,
+            "aldo",
+            "mabel",
+            "raiders on the east road"
+          ],
+          "4": [
+            116,
+            "dunn",
+            "osric",
+            "danger abroad that could come this way"
+          ],
+          "5": [
+            167,
+            "wynn",
+            "thea",
+            "raiders on the east road"
+          ],
+          "6": [
+            171,
+            "maja",
+            "edda",
+            "raiders on the east road"
+          ],
+          "7": [
+            197,
+            "col",
+            "frida",
+            "raiders on the east road"
+          ],
+          "8": [
+            231,
+            "dag",
+            "dunn",
+            "raiders on the east road"
+          ],
+          "9": [
+            252,
+            "jory",
+            "lorne",
+            "danger abroad that could come this way"
+          ]
+        },
+        "listener-days over 3, by year": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        }
+      }
+    },
+    {
+      "check": "warnings that carried nothing",
+      "flag": false,
+      "figures": {
+        "share by year": {
+          "0": 0.001,
+          "1": 0.002,
+          "2": 0.002,
+          "3": 0.003,
+          "4": 0.004,
+          "5": 0.005,
+          "6": 0.002,
+          "7": 0.002,
+          "8": 0.002,
+          "9": 0.004
+        },
+        "count by year": {
+          "0": 2,
+          "1": 5,
+          "2": 6,
+          "3": 11,
+          "4": 8,
+          "5": 12,
+          "6": 5,
+          "7": 6,
+          "8": 7,
+          "9": 7
+        },
+        "warnings by year": {
+          "0": 1591,
+          "1": 2156,
+          "2": 2884,
+          "3": 4057,
+          "4": 2132,
+          "5": 2320,
+          "6": 2783,
+          "7": 2481,
+          "8": 3387,
+          "9": 1794
+        }
+      }
+    },
+    {
+      "check": "warnings by one villager in a day",
+      "flag": false,
+      "figures": {
+        "most in a day, by year": {
+          "0": 24,
+          "1": 25,
+          "2": 29,
+          "3": 27,
+          "4": 27,
+          "5": 26,
+          "6": 24,
+          "7": 29,
+          "8": 44,
+          "9": 27
+        },
+        "which (day, warner)": {
+          "0": [
+            9,
+            "ilsa"
+          ],
+          "1": [
+            42,
+            "gorm"
+          ],
+          "2": [
+            72,
+            "gisla"
+          ],
+          "3": [
+            100,
+            "elin"
+          ],
+          "4": [
+            119,
+            "maja"
+          ],
+          "5": [
+            149,
+            "lorne"
+          ],
+          "6": [
+            185,
+            "frode"
+          ],
+          "7": [
+            196,
+            "elin"
+          ],
+          "8": [
+            243,
+            "wynn"
+          ],
+          "9": [
+            268,
+            "edda"
+          ]
+        },
+        "villager-days over 40, by year": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 1,
+          "9": 0
+        }
+      }
+    },
+    {
+      "check": "the live memory index growing without end",
+      "flag": false,
+      "figures": {
+        "live index at a year's last trim": {
+          "0": 1029,
+          "1": 1301,
+          "2": 1631,
+          "3": 2211,
+          "4": 2146,
+          "5": 2075,
+          "6": 2203,
+          "7": 2006,
+          "8": 2095,
+          "9": 2107
+        },
+        "per villager": {
+          "0": 33.2,
+          "1": 39.4,
+          "2": 45.3,
+          "3": 61.4,
+          "4": 52.3,
+          "5": 50.6,
+          "6": 53.7,
+          "7": 46.7,
+          "8": 51.1,
+          "9": 49.0
+        }
+      }
+    },
+    {
+      "check": "grown villagers standing idle",
+      "flag": false,
+      "figures": {
+        "idle share of waking frames by year": {
+          "0": 0.018,
+          "1": 0.024,
+          "2": 0.027,
+          "3": 0.036,
+          "4": 0.015,
+          "5": 0.019,
+          "6": 0.023,
+          "7": 0.02,
+          "8": 0.026,
+          "9": 0.012
+        }
+      }
+    },
+    {
+      "check": "grown villagers stuck in one place and activity",
+      "flag": false,
+      "figures": {
+        "still for 48+ waking ticks, by year": {},
+        "first cases": []
+      }
+    },
+    {
+      "check": "years without a birth",
+      "flag": false,
+      "figures": {
+        "births by year": {
+          "0": 3,
+          "1": 2,
+          "2": 1,
+          "3": 5,
+          "5": 1,
+          "6": 1,
+          "7": 2,
+          "8": 1,
+          "9": 5
+        },
+        "longest run of years without": 1,
+        "people at a year's start": {
+          "0": 31,
+          "1": 33,
+          "2": 36,
+          "3": 36,
+          "4": 41,
+          "5": 41,
+          "6": 41,
+          "7": 43,
+          "8": 41,
+          "9": 43
+        }
+      }
+    },
+    {
+      "check": "deaths before old age",
+      "flag": false,
+      "figures": {
+        "deaths": 4,
+        "young": []
+      }
+    }
+  ],
+  "flags": 0
+}

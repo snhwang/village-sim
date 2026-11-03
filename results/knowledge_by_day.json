@@ -1,0 +1,345 @@
+{
+  "runs": [
+    "20261022-070414-seed1",
+    "20261022-073709-seed2",
+    "20261022-080916-seed3",
+    "20261022-083715-seed4",
+    "20261022-090533-seed5",
+    "20261022-093732-seed6"
+  ],
+  "by_day": [
+    {
+      "day": 1,
+      "share_pct": 3.4,
+      "knowledge_only": 114,
+      "decisions": 3361
+    },
+    {
+      "day": 2,
+      "share_pct": 16.3,
+      "knowledge_only": 602,
+      "decisions": 3690
+    },
+    {
+      "day": 3,
+      "share_pct": 13.1,
+      "knowledge_only": 501,
+      "decisions": 3829
+    },
+    {
+      "day": 4,
+      "share_pct": 13.4,
+      "knowledge_only": 491,
+      "decisions": 3654
+    },
+    {
+      "day": 5,
+      "share_pct": 11.3,
+      "knowledge_only": 436,
+      "decisions": 3844
+    },
+    {
+      "day": 6,
+      "share_pct": 11.6,
+      "knowledge_only": 443,
+      "decisions": 3822
+    },
+    {
+      "day": 7,
+      "share_pct": 9.7,
+      "knowledge_only": 373,
+      "decisions": 3853
+    },
+    {
+      "day": 8,
+      "share_pct": 11.4,
+      "knowledge_only": 428,
+      "decisions": 3768
+    },
+    {
+      "day": 9,
+      "share_pct": 30.4,
+      "knowledge_only": 1418,
+      "decisions": 4658
+    },
+    {
+      "day": 10,
+      "share_pct": 33.9,
+      "knowledge_only": 1663,
+      "decisions": 4909
+    },
+    {
+      "day": 11,
+      "share_pct": 20.2,
+      "knowledge_only": 850,
+      "decisions": 4215
+    },
+    {
+      "day": 12,
+      "share_pct": 28.8,
+      "knowledge_only": 1331,
+      "decisions": 4628
+    },
+    {
+      "day": 13,
+      "share_pct": 31.0,
+      "knowledge_only": 1357,
+      "decisions": 4377
+    },
+    {
+      "day": 14,
+      "share_pct": 26.2,
+      "knowledge_only": 926,
+      "decisions": 3533
+    },
+    {
+      "day": 15,
+      "share_pct": 32.5,
+      "knowledge_only": 1208,
+      "decisions": 3719
+    },
+    {
+      "day": 16,
+      "share_pct": 34.6,
+      "knowledge_only": 1714,
+      "decisions": 4952
+    },
+    {
+      "day": 17,
+      "share_pct": 23.0,
+      "knowledge_only": 1047,
+      "decisions": 4551
+    },
+    {
+      "day": 18,
+      "share_pct": 26.5,
+      "knowledge_only": 1218,
+      "decisions": 4604
+    },
+    {
+      "day": 19,
+      "share_pct": 26.1,
+      "knowledge_only": 1215,
+      "decisions": 4655
+    },
+    {
+      "day": 20,
+      "share_pct": 24.0,
+      "knowledge_only": 1178,
+      "decisions": 4911
+    },
+    {
+      "day": 21,
+      "share_pct": 24.0,
+      "knowledge_only": 1104,
+      "decisions": 4599
+    },
+    {
+      "day": 22,
+      "share_pct": 21.8,
+      "knowledge_only": 974,
+      "decisions": 4461
+    },
+    {
+      "day": 23,
+      "share_pct": 23.1,
+      "knowledge_only": 1159,
+      "decisions": 5016
+    },
+    {
+      "day": 24,
+      "share_pct": 23.1,
+      "knowledge_only": 1102,
+      "decisions": 4779
+    },
+    {
+      "day": 25,
+      "share_pct": 15.7,
+      "knowledge_only": 645,
+      "decisions": 4118
+    },
+    {
+      "day": 26,
+      "share_pct": 18.8,
+      "knowledge_only": 921,
+      "decisions": 4890
+    },
+    {
+      "day": 27,
+      "share_pct": 17.3,
+      "knowledge_only": 767,
+      "decisions": 4440
+    },
+    {
+      "day": 28,
+      "share_pct": 16.4,
+      "knowledge_only": 783,
+      "decisions": 4774
+    },
+    {
+      "day": 29,
+      "share_pct": 20.2,
+      "knowledge_only": 940,
+      "decisions": 4648
+    },
+    {
+      "day": 30,
+      "share_pct": 15.1,
+      "knowledge_only": 648,
+      "decisions": 4281
+    },
+    {
+      "day": 31,
+      "share_pct": 17.5,
+      "knowledge_only": 753,
+      "decisions": 4303
+    },
+    {
+      "day": 32,
+      "share_pct": 15.6,
+      "knowledge_only": 685,
+      "decisions": 4405
+    },
+    {
+      "day": 33,
+      "share_pct": 19.8,
+      "knowledge_only": 855,
+      "decisions": 4320
+    },
+    {
+      "day": 34,
+      "share_pct": 14.7,
+      "knowledge_only": 640,
+      "decisions": 4353
+    },
+    {
+      "day": 35,
+      "share_pct": 21.6,
+      "knowledge_only": 930,
+      "decisions": 4312
+    },
+    {
+      "day": 36,
+      "share_pct": 20.0,
+      "knowledge_only": 868,
+      "decisions": 4337
+    },
+    {
+      "day": 37,
+      "share_pct": 21.3,
+      "knowledge_only": 935,
+      "decisions": 4396
+    },
+    {
+      "day": 38,
+      "share_pct": 26.5,
+      "knowledge_only": 1197,
+      "decisions": 4520
+    },
+    {
+      "day": 39,
+      "share_pct": 24.8,
+      "knowledge_only": 1123,
+      "decisions": 4535
+    }
+  ],
+  "by_run": [
+    {
+      "run": "20261022-070414-seed1",
+      "first_days": [
+        1,
+        2,
+        3
+      ],
+      "last_days": [
+        37,
+        38,
+        39
+      ],
+      "first_days_pct": 15.4,
+      "last_days_pct": 27.6,
+      "rose": true
+    },
+    {
+      "run": "20261022-073709-seed2",
+      "first_days": [
+        1,
+        2,
+        3
+      ],
+      "last_days": [
+        37,
+        38,
+        39
+      ],
+      "first_days_pct": 18.1,
+      "last_days_pct": 27.3,
+      "rose": true
+    },
+    {
+      "run": "20261022-080916-seed3",
+      "first_days": [
+        1,
+        2,
+        3
+      ],
+      "last_days": [
+        37,
+        38,
+        39
+      ],
+      "first_days_pct": 1.3,
+      "last_days_pct": 15.8,
+      "rose": true
+    },
+    {
+      "run": "20261022-083715-seed4",
+      "first_days": [
+        1,
+        2,
+        3
+      ],
+      "last_days": [
+        37,
+        38,
+        39
+      ],
+      "first_days_pct": 6.4,
+      "last_days_pct": 23.4,
+      "rose": true
+    },
+    {
+      "run": "20261022-090533-seed5",
+      "first_days": [
+        1,
+        2,
+        3
+      ],
+      "last_days": [
+        37,
+        38,
+        39
+      ],
+      "first_days_pct": 13.4,
+      "last_days_pct": 19.2,
+      "rose": true
+    },
+    {
+      "run": "20261022-093732-seed6",
+      "first_days": [
+        1,
+        2,
+        3
+      ],
+      "last_days": [
+        37,
+        38,
+        39
+      ],
+      "first_days_pct": 11.9,
+      "last_days_pct": 31.3,
+      "rose": true
+    }
+  ],
+  "runs_that_rose": 6
+}

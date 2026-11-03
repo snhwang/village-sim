@@ -1,0 +1,967 @@
+[
+ {
+  "run": "20260929-142728-seed0",
+  "made": [
+   {
+    "day": 79,
+    "by": "dunn",
+    "id": "dunn-ilsa_s_rain_loft-1",
+    "name": "Ilsa's Rain-Loft",
+    "purpose": "home",
+    "cost": 3.0,
+    "parts": 15,
+    "moves": 2,
+    "benched": false,
+    "jammed": 0,
+    "claims": {},
+    "parent": "cottage",
+    "want": null
+   },
+   {
+    "day": 79,
+    "by": "gorm",
+    "id": "gorm-alda_s_rain_step-2",
+    "name": "Alda's Rain-Step",
+    "purpose": "home",
+    "cost": 3.0,
+    "parts": 8,
+    "moves": 1,
+    "benched": false,
+    "jammed": 0,
+    "claims": {},
+    "parent": "cottage",
+    "want": null
+   },
+   {
+    "day": 213,
+    "by": "edda",
+    "id": "edda-grain_screen_frame-3",
+    "name": "grain screen frame",
+    "purpose": "want",
+    "cost": 0.5,
+    "parts": 12,
+    "moves": 0,
+    "benched": true,
+    "jammed": 0,
+    "claims": {
+     "shelter": false
+    },
+    "parent": "well",
+    "want": "w9"
+   },
+   {
+    "day": 214,
+    "by": "wynn",
+    "id": "wynn-chaff_catcher-4",
+    "name": "chaff catcher",
+    "purpose": "want",
+    "cost": 1.26,
+    "parts": 14,
+    "moves": 0,
+    "benched": true,
+    "jammed": 1,
+    "claims": {
+     "carry": false,
+     "grind": false
+    },
+    "parent": "well",
+    "want": "w7"
+   },
+   {
+    "day": 224,
+    "by": "bryn",
+    "id": "bryn-stone_flour_slide-5",
+    "name": "Stone Flour Slide",
+    "purpose": "want",
+    "cost": 0.5,
+    "parts": 7,
+    "moves": 0,
+    "benched": true,
+    "jammed": 0,
+    "claims": {
+     "carry": false,
+     "store": true
+    },
+    "parent": "well",
+    "want": "w16"
+   },
+   {
+    "day": 229,
+    "by": "edda",
+    "id": "edda-grain_screen-6",
+    "name": "grain screen",
+    "purpose": "want",
+    "cost": 0.5,
+    "parts": 7,
+    "moves": 0,
+    "benched": true,
+    "jammed": 0,
+    "claims": {
+     "store": true
+    },
+    "parent": "well",
+    "want": "w24"
+   },
+   {
+    "day": 235,
+    "by": "gisla",
+    "id": "gisla-river_tamer-7",
+    "name": "River Tamer",
+    "purpose": "want",
+    "cost": 3.0,
+    "parts": 18,
+    "moves": 0,
+    "benched": true,
+    "jammed": 2,
+    "claims": {
+     "grind": false,
+     "pump": false
+    },
+    "parent": "well",
+    "want": "w18"
+   },
+   {
+    "day": 236,
+    "by": "bryn",
+    "id": "bryn-stone_flour_chute-8",
+    "name": "stone flour chute",
+    "purpose": "want",
+    "cost": 0.5,
+    "parts": 7,
+    "moves": 0,
+    "benched": true,
+    "jammed": 0,
+    "claims": {
+     "carry": false
+    },
+    "parent": "well",
+    "want": "w28"
+   },
+   {
+    "day": 240,
+    "by": "ivar",
+    "id": "ivar-mill_wheel-9",
+    "name": "Mill Wheel",
+    "purpose": "want",
+    "cost": 1.14,
+    "parts": 18,
+    "moves": 0,
+    "benched": true,
+    "jammed": 1,
+    "claims": {
+     "grind": false
+    },
+    "parent": "well",
+    "want": "w22"
+   },
+   {
+    "day": 253,
+    "by": "gisla",
+    "id": "gisla-the_hearthwick_millstone-10",
+    "name": "The Hearthwick Millstone",
+    "purpose": "want",
+    "cost": 3.0,
+    "parts": 8,
+    "moves": 0,
+    "benched": true,
+    "jammed": 2,
+    "claims": {
+     "grind": false,
+     "store": true
+    },
+    "parent": "well",
+    "want": "w36"
+   },
+   {
+    "day": 262,
+    "by": "edda",
+    "id": "edda-grain_screen-11",
+    "name": "Grain Screen",
+    "purpose": "want",
+    "cost": 0.76,
+    "parts": 9,
+    "moves": 0,
+    "benched": true,
+    "jammed": 1,
+    "claims": {
+     "store": true,
+     "grind": false
+    },
+    "parent": "well",
+    "want": "w39"
+   },
+   {
+    "day": 282,
+    "by": "gisla",
+    "id": "gisla-hearthwick_sluice_gate-12",
+    "name": "Hearthwick Sluice Gate",
+    "purpose": "want",
+    "cost": 3.0,
+    "parts": 11,
+    "moves": 0,
+    "benched": true,
+    "jammed": 1,
+    "claims": {
+     "pump": false,
+     "carry": false
+    },
+    "parent": "well",
+    "want": "w47"
+   },
+   {
+    "day": 293,
+    "by": "gisla",
+    "id": "gisla-low_road_stone_bridge-13",
+    "name": "Low Road Stone Bridge",
+    "purpose": "want",
+    "cost": 3.0,
+    "parts": 5,
+    "moves": 0,
+    "benched": true,
+    "jammed": 0,
+    "claims": {
+     "carry": false
+    },
+    "parent": "well",
+    "want": "w51"
+   }
+  ],
+  "refused": [
+   {
+    "day": 217,
+    "by": "bryn",
+    "purpose": "want",
+    "why": "no room for it",
+    "want": "w16"
+   },
+   {
+    "day": 218,
+    "by": "bryn",
+    "purpose": "want",
+    "why": "would not stand",
+    "want": "w16"
+   },
+   {
+    "day": 221,
+    "by": "bryn",
+    "purpose": "want",
+    "why": "no room for it",
+    "want": "w16"
+   },
+   {
+    "day": 223,
+    "by": "ivar",
+    "purpose": "want",
+    "why": "no room for it",
+    "want": "w22"
+   },
+   {
+    "day": 225,
+    "by": "ivar",
+    "purpose": "want",
+    "why": "no room for it",
+    "want": "w22"
+   },
+   {
+    "day": 225,
+    "by": "gisla",
+    "purpose": "want",
+    "why": "no room for it",
+    "want": "w18"
+   },
+   {
+    "day": 227,
+    "by": "ivar",
+    "purpose": "want",
+    "why": "would not stand",
+    "want": "w22"
+   },
+   {
+    "day": 229,
+    "by": "ivar",
+    "purpose": "want",
+    "why": "a shape not in the vocabulary",
+    "want": "w22"
+   },
+   {
+    "day": 233,
+    "by": "wynn",
+    "purpose": "want",
+    "why": "would not stand",
+    "want": "w20"
+   },
+   {
+    "day": 251,
+    "by": "gisla",
+    "purpose": "want",
+    "why": "a part sized wrongly",
+    "want": "w36"
+   },
+   {
+    "day": 290,
+    "by": "gisla",
+    "purpose": "want",
+    "why": "would not stand",
+    "want": "w51"
+   },
+   {
+    "day": 291,
+    "by": "gisla",
+    "purpose": "want",
+    "why": "would not stand",
+    "want": "w51"
+   },
+   {
+    "day": 292,
+    "by": "gisla",
+    "purpose": "want",
+    "why": "would not stand",
+    "want": "w51"
+   }
+  ],
+  "houses": [
+   {
+    "day": 13,
+    "place": "home_14"
+   },
+   {
+    "day": 28,
+    "place": "home_15"
+   },
+   {
+    "day": 79,
+    "place": "home_16"
+   },
+   {
+    "day": 80,
+    "place": "home_17"
+   }
+  ],
+  "things": [
+   {
+    "day": 213,
+    "name": "grain screen frame",
+    "holder": "edda",
+    "want": "w9",
+    "design": "edda-grain_screen_frame-3"
+   },
+   {
+    "day": 215,
+    "name": "chaff catcher",
+    "holder": "wynn",
+    "want": "w7",
+    "design": "wynn-chaff_catcher-4"
+   },
+   {
+    "day": 225,
+    "name": "Stone Flour Slide",
+    "holder": "bryn",
+    "want": "w16",
+    "design": "bryn-stone_flour_slide-5"
+   },
+   {
+    "day": 230,
+    "name": "grain screen",
+    "holder": "edda",
+    "want": "w24",
+    "design": "edda-grain_screen-6"
+   },
+   {
+    "day": 238,
+    "name": "River Tamer",
+    "holder": "gisla",
+    "want": "w18",
+    "design": "gisla-river_tamer-7"
+   },
+   {
+    "day": 239,
+    "name": "stone flour chute",
+    "holder": "bryn",
+    "want": "w28",
+    "design": "bryn-stone_flour_chute-8"
+   },
+   {
+    "day": 242,
+    "name": "Mill Wheel",
+    "holder": "ivar",
+    "want": "w22",
+    "design": "ivar-mill_wheel-9"
+   },
+   {
+    "day": 257,
+    "name": "The Hearthwick Millstone",
+    "holder": "gisla",
+    "want": "w36",
+    "design": "gisla-the_hearthwick_millstone-10"
+   },
+   {
+    "day": 263,
+    "name": "Grain Screen",
+    "holder": "edda",
+    "want": "w39",
+    "design": "edda-grain_screen-11"
+   },
+   {
+    "day": 288,
+    "name": "Hearthwick Sluice Gate",
+    "holder": "gisla",
+    "want": "w47",
+    "design": "gisla-hearthwick_sluice_gate-12"
+   },
+   {
+    "day": 299,
+    "name": "Low Road Stone Bridge",
+    "holder": "gisla",
+    "want": "w51",
+    "design": "gisla-low_road_stone_bridge-13"
+   }
+  ],
+  "built_designs": [
+   "bryn-stone_flour_chute-8",
+   "bryn-stone_flour_slide-5",
+   "edda-grain_screen-11",
+   "edda-grain_screen-6",
+   "edda-grain_screen_frame-3",
+   "gisla-hearthwick_sluice_gate-12",
+   "gisla-low_road_stone_bridge-13",
+   "gisla-river_tamer-7",
+   "gisla-the_hearthwick_millstone-10",
+   "ivar-mill_wheel-9",
+   "wynn-chaff_catcher-4"
+  ],
+  "wants": [
+   {
+    "id": "w1",
+    "holder": "ada",
+    "kind": "make",
+    "text": "a filtration rig to cleanse the well",
+    "instruction": "want-make-easier",
+    "formed": 210,
+    "ended": 218,
+    "how": "gave up"
+   },
+   {
+    "id": "w2",
+    "holder": "corin",
+    "kind": "make",
+    "text": "a cistern to hold clean water",
+    "instruction": "want-make-easier",
+    "formed": 210,
+    "ended": 328,
+    "how": "died"
+   },
+   {
+    "id": "w3",
+    "holder": "ilsa",
+    "kind": "make",
+    "text": "a bell to warn of the storm",
+    "instruction": "want-make-new",
+    "formed": 210,
+    "ended": 252,
+    "how": "died"
+   },
+   {
+    "id": "w4",
+    "holder": "aldo",
+    "kind": "make",
+    "text": "a mortar for grinding the herbs",
+    "instruction": "want-make-easier",
+    "formed": 210,
+    "ended": null,
+    "how": null
+   },
+   {
+    "id": "w5",
+    "holder": "odd",
+    "kind": "make",
+    "text": "a clear filter for the well water",
+    "instruction": "want-make-easier",
+    "formed": 210,
+    "ended": 218,
+    "how": "gave up"
+   },
+   {
+    "id": "w6",
+    "holder": "hal",
+    "kind": "make",
+    "text": "a poultice to stop the winter cough",
+    "instruction": "want-make-new",
+    "formed": 210,
+    "ended": 251,
+    "how": "died"
+   },
+   {
+    "id": "w7",
+    "holder": "wynn",
+    "kind": "make",
+    "text": "a better sieve to catch the chaff",
+    "instruction": "want-make-easier",
+    "formed": 211,
+    "ended": 215,
+    "how": "built"
+   },
+   {
+    "id": "w8",
+    "holder": "peder",
+    "kind": "make",
+    "text": "a lantern to spot trouble on the road",
+    "instruction": "want-make-easier",
+    "formed": 211,
+    "ended": 332,
+    "how": "died"
+   },
+   {
+    "id": "w9",
+    "holder": "edda",
+    "kind": "make",
+    "text": "a screen to keep the grain clean",
+    "instruction": "want-make-easier",
+    "formed": 212,
+    "ended": 213,
+    "how": "built"
+   },
+   {
+    "id": "w10",
+    "holder": "mabel",
+    "kind": "make",
+    "text": "a bridge to fix the ford",
+    "instruction": "want-make-at-work",
+    "formed": 212,
+    "ended": 262,
+    "how": "died"
+   },
+   {
+    "id": "w11",
+    "holder": "per",
+    "kind": "make",
+    "text": "a pump to draw clean water from the well",
+    "instruction": "want-make-at-work",
+    "formed": 212,
+    "ended": null,
+    "how": null
+   },
+   {
+    "id": "w12",
+    "holder": "nell",
+    "kind": "make",
+    "text": "a lantern to light the market at night",
+    "instruction": "want-make-new",
+    "formed": 213,
+    "ended": null,
+    "how": null
+   },
+   {
+    "id": "w13",
+    "holder": "alda",
+    "kind": "make",
+    "text": "a broad hoe to break the clay",
+    "instruction": "want-make-easier",
+    "formed": 213,
+    "ended": null,
+    "how": null
+   },
+   {
+    "id": "w14",
+    "holder": "ilsa",
+    "kind": "know",
+    "text": "a bell for the storm",
+    "instruction": "want-know",
+    "formed": 213,
+    "ended": 252,
+    "how": "died"
+   },
+   {
+    "id": "w15",
+    "holder": "thea",
+    "kind": "make",
+    "text": "a stronger plowshare for the wet clay",
+    "instruction": "want-make-easier",
+    "formed": 214,
+    "ended": 222,
+    "how": "gave up"
+   },
+   {
+    "id": "w16",
+    "holder": "bryn",
+    "kind": "make",
+    "text": "a stone chute to slide the flour down",
+    "instruction": "want-make-easier",
+    "formed": 217,
+    "ended": 225,
+    "how": "built"
+   },
+   {
+    "id": "w17",
+    "holder": "hilde28",
+    "kind": "make",
+    "text": "a higher cart to cross the mud",
+    "instruction": "want-make-at-work",
+    "formed": 217,
+    "ended": 276,
+    "how": "died"
+   },
+   {
+    "id": "w18",
+    "holder": "gisla",
+    "kind": "make",
+    "text": "a sturdier dam to tame the river",
+    "instruction": "want-make-easier",
+    "formed": 217,
+    "ended": 238,
+    "how": "built"
+   },
+   {
+    "id": "w19",
+    "holder": "ada",
+    "kind": "make",
+    "text": "a filtration rig for the well",
+    "instruction": "want-make-easier",
+    "formed": 218,
+    "ended": 226,
+    "how": "gave up"
+   },
+   {
+    "id": "w20",
+    "holder": "wynn",
+    "kind": "make",
+    "text": "a sieve to catch the chaff",
+    "instruction": "want-make-easier",
+    "formed": 222,
+    "ended": 239,
+    "how": "died"
+   },
+   {
+    "id": "w21",
+    "holder": "odd",
+    "kind": "make",
+    "text": "a filter for the well water",
+    "instruction": "want-make-easier",
+    "formed": 223,
+    "ended": 231,
+    "how": "gave up"
+   },
+   {
+    "id": "w22",
+    "holder": "ivar",
+    "kind": "make",
+    "text": "a water-wheel to grind the corn",
+    "instruction": "want-make-new",
+    "formed": 223,
+    "ended": 242,
+    "how": "built"
+   },
+   {
+    "id": "w23",
+    "holder": "odd",
+    "kind": "know",
+    "text": "who told you the well is safe",
+    "instruction": "want-know",
+    "formed": 224,
+    "ended": 233,
+    "how": "gave up"
+   },
+   {
+    "id": "w24",
+    "holder": "edda",
+    "kind": "make",
+    "text": "a screen to keep the grain clean",
+    "instruction": "want-make-easier",
+    "formed": 225,
+    "ended": 230,
+    "how": "built"
+   },
+   {
+    "id": "w25",
+    "holder": "ada",
+    "kind": "make",
+    "text": "a filtration rig to cleanse the well",
+    "instruction": "want-make-easier",
+    "formed": 227,
+    "ended": 237,
+    "how": "gave up"
+   },
+   {
+    "id": "w26",
+    "holder": "gorm",
+    "kind": "know",
+    "text": "who said the fighting",
+    "instruction": "want-know",
+    "formed": 230,
+    "ended": 236,
+    "how": "died"
+   },
+   {
+    "id": "w27",
+    "holder": "edda",
+    "kind": "make",
+    "text": "a screen to keep the grain clean",
+    "instruction": "want-make-easier",
+    "formed": 231,
+    "ended": 239,
+    "how": "gave up"
+   },
+   {
+    "id": "w28",
+    "holder": "bryn",
+    "kind": "make",
+    "text": "a stone chute to slide the flour down",
+    "instruction": "want-make-easier",
+    "formed": 234,
+    "ended": 239,
+    "how": "built"
+   },
+   {
+    "id": "w29",
+    "holder": "maja",
+    "kind": "make",
+    "text": "a pump to draw clean water from the well",
+    "instruction": "want-make-at-work",
+    "formed": 236,
+    "ended": null,
+    "how": null
+   },
+   {
+    "id": "w30",
+    "holder": "ada",
+    "kind": "make",
+    "text": "a rig to cleanse the well",
+    "instruction": "want-make-easier",
+    "formed": 237,
+    "ended": 245,
+    "how": "gave up"
+   },
+   {
+    "id": "w31",
+    "holder": "thea",
+    "kind": "make",
+    "text": "a sharper plowshare for the wet clay",
+    "instruction": "want-make-easier",
+    "formed": 237,
+    "ended": 246,
+    "how": "gave up"
+   },
+   {
+    "id": "w32",
+    "holder": "odd",
+    "kind": "make",
+    "text": "a clear filter for the well water",
+    "instruction": "want-make-easier",
+    "formed": 240,
+    "ended": 248,
+    "how": "gave up"
+   },
+   {
+    "id": "w33",
+    "holder": "edda",
+    "kind": "make",
+    "text": "a screen to keep the grain clean",
+    "instruction": "want-make-easier",
+    "formed": 245,
+    "ended": 253,
+    "how": "gave up"
+   },
+   {
+    "id": "w34",
+    "holder": "ada",
+    "kind": "make",
+    "text": "a filtration rig to cleanse the well",
+    "instruction": "want-make-easier",
+    "formed": 247,
+    "ended": 257,
+    "how": "gave up"
+   },
+   {
+    "id": "w35",
+    "holder": "odd",
+    "kind": "make",
+    "text": "a filter for the well water",
+    "instruction": "want-make-easier",
+    "formed": 251,
+    "ended": 259,
+    "how": "gave up"
+   },
+   {
+    "id": "w36",
+    "holder": "gisla",
+    "kind": "make",
+    "text": "a stone to grind the flour",
+    "instruction": "want-make-easier",
+    "formed": 251,
+    "ended": 257,
+    "how": "built"
+   },
+   {
+    "id": "w37",
+    "holder": "ada",
+    "kind": "make",
+    "text": "a filtration rig to cleanse the well",
+    "instruction": "want-make-easier",
+    "formed": 257,
+    "ended": 265,
+    "how": "gave up"
+   },
+   {
+    "id": "w38",
+    "holder": "odd",
+    "kind": "make",
+    "text": "a filter to clean the well water",
+    "instruction": "want-make-easier",
+    "formed": 259,
+    "ended": 267,
+    "how": "gave up"
+   },
+   {
+    "id": "w39",
+    "holder": "edda",
+    "kind": "make",
+    "text": "a screen to keep the grain clean",
+    "instruction": "want-make-easier",
+    "formed": 259,
+    "ended": 263,
+    "how": "built"
+   },
+   {
+    "id": "w40",
+    "holder": "frida",
+    "kind": "know",
+    "text": "why the lord's men count so fast",
+    "instruction": "want-know",
+    "formed": 259,
+    "ended": 300,
+    "how": "gave up"
+   },
+   {
+    "id": "w41",
+    "holder": "ada",
+    "kind": "make",
+    "text": "a filtration rig to cleanse the well",
+    "instruction": "want-make-easier",
+    "formed": 266,
+    "ended": 274,
+    "how": "gave up"
+   },
+   {
+    "id": "w42",
+    "holder": "edda",
+    "kind": "make",
+    "text": "a screen to keep the grain clean",
+    "instruction": "want-make-easier",
+    "formed": 267,
+    "ended": 275,
+    "how": "gave up"
+   },
+   {
+    "id": "w43",
+    "holder": "odd",
+    "kind": "make",
+    "text": "a filter for the well water",
+    "instruction": "want-make-easier",
+    "formed": 270,
+    "ended": 278,
+    "how": "gave up"
+   },
+   {
+    "id": "w44",
+    "holder": "ada",
+    "kind": "know",
+    "text": "why the frost came so early",
+    "instruction": "want-know",
+    "formed": 270,
+    "ended": 280,
+    "how": "gave up"
+   },
+   {
+    "id": "w45",
+    "holder": "edda",
+    "kind": "make",
+    "text": "a screen to keep the grain clean",
+    "instruction": "want-make-easier",
+    "formed": 275,
+    "ended": 277,
+    "how": "died"
+   },
+   {
+    "id": "w46",
+    "holder": "ada",
+    "kind": "make",
+    "text": "a filtration rig to cleanse the well",
+    "instruction": "want-make-easier",
+    "formed": 275,
+    "ended": 281,
+    "how": "died"
+   },
+   {
+    "id": "w47",
+    "holder": "gisla",
+    "kind": "make",
+    "text": "a sluice to tame the river's current",
+    "instruction": "want-make-easier",
+    "formed": 280,
+    "ended": 288,
+    "how": "built"
+   },
+   {
+    "id": "w48",
+    "holder": "odd",
+    "kind": "make",
+    "text": "a stone filter to purify the well water",
+    "instruction": "want-make-easier",
+    "formed": 281,
+    "ended": 289,
+    "how": "gave up"
+   },
+   {
+    "id": "w49",
+    "holder": "thea",
+    "kind": "make",
+    "text": "a stronger plowshare for the wet clay",
+    "instruction": "want-make-easier",
+    "formed": 281,
+    "ended": 289,
+    "how": "gave up"
+   },
+   {
+    "id": "w50",
+    "holder": "odd",
+    "kind": "know",
+    "text": "who told you the well is safe",
+    "instruction": "want-know",
+    "formed": 285,
+    "ended": 293,
+    "how": "gave up"
+   },
+   {
+    "id": "w51",
+    "holder": "gisla",
+    "kind": "make",
+    "text": "a stone bridge to cross the low road",
+    "instruction": "want-make-easier",
+    "formed": 290,
+    "ended": 299,
+    "how": "built"
+   },
+   {
+    "id": "w52",
+    "holder": "odd",
+    "kind": "make",
+    "text": "a bell to warn the village of the sickness",
+    "instruction": "want-make-easier",
+    "formed": 290,
+    "ended": 298,
+    "how": "gave up"
+   },
+   {
+    "id": "w53",
+    "holder": "thea",
+    "kind": "make",
+    "text": "a rain-catch basin for the low fields",
+    "instruction": "want-make-easier",
+    "formed": 293,
+    "ended": 294,
+    "how": "died"
+   }
+  ],
+  "repeated": 0,
+  "set_aside": {}
+ }
+]

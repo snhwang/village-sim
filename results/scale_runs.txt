@@ -1,0 +1,18 @@
+20261024-005651-seed1
+# The 300-villager run of the paper-v4 set (RUNNING_EXPERIMENTS.md step 5).
+# Ten in-game days, seed 1, with speech, started by Scott on 2026-10-24 at
+# 00:56 EDT in the run checkout and finished at 02:14 EDT, 1,440 ticks in
+# 5,104 seconds, with exit status 0.
+#
+# Build: Hearthwick paper-v4 (0313244), BEAR 1ceebc7 from the frozen clone
+# /mnt/c/tmp/bear-paper-v3, both clean in meta.json. --profile illustrative,
+# --threshold 0.15, --llm-concurrency 8, the model on 8355 (Qwen3.8-27B) and
+# the embedding service on 8360 throughout.
+#
+# 11,480 model calls, 5 failed and were retried, none unanswered. Its health
+# check flags nothing.
+#
+# Village: data/villages/town300, the committed village made by
+# experiments/make_village.py --villagers 300 --name town300 (seed 7), as for
+# the September run 20260928-081531-seed1, which used build 19611f5 and is
+# not part of the paper-v4 set.

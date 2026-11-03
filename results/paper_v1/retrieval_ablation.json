@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "days": 2.4,
+    "seed": 0,
+    "villagers": 30,
+    "date": "2026-09-27"
+  },
+  "results": [
+    {
+      "label": "hard gates, BM25",
+      "gating": "hard",
+      "embedder": "bm25",
+      "threshold": 0.0,
+      "fell_back_to_bm25": false,
+      "run_id": "20260927-202256-seed0",
+      "decisions": 1035,
+      "similarity_decided_pct": 48.7,
+      "instructions_used": 44,
+      "actionable_instructions": 101,
+      "never_chosen": 57,
+      "asleep_at_2am": 30,
+      "villagers": 30,
+      "morning_day": 2,
+      "morning_weather": "clear",
+      "activities_at_9am": {
+        "go": 1,
+        "play": 3,
+        "work": 22,
+        "talk": 3,
+        "follow": 1
+      }
+    },
+    {
+      "label": "hard gates, service",
+      "gating": "hard",
+      "embedder": "service",
+      "threshold": 0.0,
+      "fell_back_to_bm25": false,
+      "run_id": "20260927-202302-seed0",
+      "decisions": 891,
+      "similarity_decided_pct": 41.0,
+      "instructions_used": 45,
+      "actionable_instructions": 101,
+      "never_chosen": 56,
+      "asleep_at_2am": 30,
+      "villagers": 30,
+      "morning_day": 2,
+      "morning_weather": "clear",
+      "activities_at_9am": {
+        "work": 30
+      }
+    },
+    {
+      "label": "soft tags, BM25",
+      "gating": "soft",
+      "embedder": "bm25",
+      "threshold": 0.0,
+      "fell_back_to_bm25": false,
+      "run_id": "20260927-202339-seed0",
+      "decisions": 1246,
+      "similarity_decided_pct": 95.0,
+      "instructions_used": 23,
+      "actionable_instructions": 101,
+      "never_chosen": 78,
+      "asleep_at_2am": 30,
+      "villagers": 30,
+      "morning_day": 2,
+      "morning_weather": "clear",
+      "activities_at_9am": {
+        "talk": 25,
+        "idle": 1,
+        "follow": 1,
+        "rest": 1,
+        "work": 2
+      }
+    },
+    {
+      "label": "soft tags, service, t=0",
+      "gating": "soft",
+      "embedder": "service",
+      "threshold": 0.0,
+      "fell_back_to_bm25": false,
+      "run_id": "20260927-202348-seed0",
+      "decisions": 1052,
+      "similarity_decided_pct": 75.2,
+      "instructions_used": 34,
+      "actionable_instructions": 101,
+      "never_chosen": 67,
+      "asleep_at_2am": 30,
+      "villagers": 30,
+      "morning_day": 2,
+      "morning_weather": "clear",
+      "activities_at_9am": {
+        "work": 14,
+        "go": 7,
+        "talk": 2,
+        "rest": 4,
+        "idle": 3
+      }
+    },
+    {
+      "label": "soft tags, service, t=0.15",
+      "gating": "soft",
+      "embedder": "service",
+      "threshold": 0.15,
+      "fell_back_to_bm25": false,
+      "run_id": "20260927-202428-seed0",
+      "decisions": 982,
+      "similarity_decided_pct": 74.0,
+      "instructions_used": 38,
+      "actionable_instructions": 101,
+      "never_chosen": 63,
+      "asleep_at_2am": 30,
+      "villagers": 30,
+      "morning_day": 2,
+      "morning_weather": "clear",
+      "activities_at_9am": {
+        "go": 5,
+        "work": 14,
+        "talk": 6,
+        "rest": 3,
+        "idle": 2
+      }
+    },
+    {
+      "label": "soft tags, service, t=0.40",
+      "gating": "soft",
+      "embedder": "service",
+      "threshold": 0.4,
+      "fell_back_to_bm25": false,
+      "run_id": "20260927-202505-seed0",
+      "decisions": 633,
+      "similarity_decided_pct": 42.5,
+      "instructions_used": 30,
+      "actionable_instructions": 101,
+      "never_chosen": 71,
+      "asleep_at_2am": 30,
+      "villagers": 30,
+      "morning_day": 2,
+      "morning_weather": "clear",
+      "activities_at_9am": {
+        "go": 9,
+        "work": 16,
+        "idle": 5
+      }
+    }
+  ]
+}

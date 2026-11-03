@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "runs": [
+      "20261022-070414-seed1",
+      "20261022-073709-seed2",
+      "20261022-080916-seed3",
+      "20261022-083715-seed4",
+      "20261022-090533-seed5",
+      "20261022-093732-seed6"
+    ],
+    "date": "2026-10-22"
+  },
+  "repertoire": {
+    "events": {
+      "weather": 192,
+      "traveler": 55,
+      "sicken": 73,
+      "visitor": 23,
+      "harvest": 6,
+      "festival": 14,
+      "raid": 4
+    },
+    "total": 367,
+    "top_share_pct": 52.3,
+    "top_happening_share_pct": 41.7,
+    "happenings": 175,
+    "effective_event_kinds": 2.93,
+    "distinct_sequences": 6,
+    "seeds": 6,
+    "world_decisions": 234,
+    "quiet_days": 65,
+    "instructions_chosen": 18,
+    "instructions_retrieved": 18,
+    "instructions_available": 18,
+    "never_chosen": [],
+    "never_retrieved": []
+  },
+  "vocabulary": {
+    "distinct_sentences": 62,
+    "effective_sentences": 15.63,
+    "top_sentence_share_pct": 14.9,
+    "distinct_stimuli": 320,
+    "effective_stimuli": 234.82,
+    "reframings": 6969,
+    "reframed_events": 289,
+    "effective_reframed": 208.06,
+    "sentences": [
+      {
+        "text": "A hard frost came early and took what was in the fields.",
+        "n": 181
+      },
+      {
+        "text": "The whole village gathered at the well tonight.",
+        "n": 143
+      },
+      {
+        "text": "A storm broke over the village and kept everyone indoors.",
+        "n": 92
+      },
+      {
+        "text": "A traveler came up the east road with news from beyond the village.",
+        "n": 76
+      },
+      {
+        "text": "A traveling storyteller came up the east road and is staying at the inn.",
+        "n": 69
+      },
+      {
+        "text": "The water at the well has turned. It is making people ill.",
+        "n": 62
+      },
+      {
+        "text": "The blight has been cut out of the fields.",
+        "n": 62
+      },
+      {
+        "text": "The water at the well is good again.",
+        "n": 59
+      },
+      {
+        "text": "The grain at the mill has gone bad in the sacks.",
+        "n": 56
+      },
+      {
+        "text": "A blight is on the crop at the fields. What it touches rots.",
+        "n": 48
+      },
+      {
+        "text": "The bad grain at the mill has been cleared out.",
+        "n": 35
+      },
+      {
+        "text": "The harvest is in at the fields, and it is a good one.",
+        "n": 30
+      },
+      {
+        "text": "A traveler came up the east road with word of sickness two valleys over.",
+        "n": 25
+      },
+      {
+        "text": "A traveler came up the east road with word that the low road is washed out.",
+        "n": 18
+      },
+      {
+        "text": "Raiders came to the east road. I saw it myself.",
+        "n": 18
+      },
+      {
+        "text": "The trouble at the east road has passed, and people use it again.",
+        "n": 16
+      },
+      {
+        "text": "A traveler came up the east road with word of a fair beyond the forest.",
+        "n": 15
+      },
+      {
+        "text": "On the road here I heard that wolves have been seen at the edge of the high pastures.",
+        "n": 13
+      },
+      {
+        "text": "The crafters have finished a new house, house 14.",
+        "n": 10
+      },
+      {
+        "text": "Fen and Katrin are to be married.",
+        "n": 10
+      },
+      {
+        "text": "On the road here I heard that there has been fighting beyond the forest.",
+        "n": 9
+      },
+      {
+        "text": "On the road here I heard that the low road is washed out at the ford.",
+        "n": 9
+      },
+      {
+        "text": "On the road here I heard that the miller at Ashby found a hoard of old coins in his wall.",
+        "n": 9
+      },
+      {
+        "text": "On the road here I heard that there is to be a fair beyond the forest.",
+        "n": 9
+      },
+      {
+        "text": "On the road here I heard that grain is dear in the market towns this year.",
+        "n": 8
+      },
+      {
+        "text": "A traveler came up the east road with word of fighting beyond the forest.",
+        "n": 7
+      },
+      {
+        "text": "On the road here I heard that a sickness is going round two valleys over.",
+        "n": 7
+      },
+      {
+        "text": "Frode, the child of Mabel and Edek, was born at house 13.",
+        "n": 6
+      },
+      {
+        "text": "Merrick and Katrin are to be married.",
+        "n": 5
+      },
+      {
+        "text": "Garrick and Gisla are to be married.",
+        "n": 5
+      },
+      {
+        "text": "Ivar, the child of Thea and Hal, was born at house 10.",
+        "n": 5
+      },
+      {
+        "text": "Gisla and Garrick are to be married.",
+        "n": 5
+      },
+      {
+        "text": "Aldo, the child of Thea and Hal, was born at house 10.",
+        "n": 5
+      },
+      {
+        "text": "Frode, the child of Thea and Hal, was born at house 10.",
+        "n": 5
+      },
+      {
+        "text": "Per, the child of Thea and Hal, was born at house 10.",
+        "n": 5
+      },
+      {
+        "text": "Katrin and Fen are to be married.",
+        "n": 5
+      },
+      {
+        "text": "Gisla and Dunn are to be married.",
+        "n": 5
+      },
+      {
+        "text": "Cilla, the child of Mabel and Edek, was born at house 13.",
+        "n": 4
+      },
+      {
+        "text": "On the road here I heard that the lord's men are counting heads for a new tax.",
+        "n": 4
+      },
+      {
+        "text": "Bertil, the child of Rosa and Osric, was born at house 3.",
+        "n": 4
+      },
+      {
+        "text": "Maja, the child of Mabel and Edek, was born at house 13.",
+        "n": 3
+      },
+      {
+        "text": "A traveler came up the east road with a tall tale from the road.",
+        "n": 3
+      },
+      {
+        "text": "Kell, the child of Sena and Gorm, was born at house 8.",
+        "n": 3
+      },
+      {
+        "text": "Elin, the child of Edda and Tobin, was born at house 1.",
+        "n": 3
+      },
+      {
+        "text": "Odd, the child of Edda and Tobin, was born at house 1.",
+        "n": 3
+      },
+      {
+        "text": "Elin, the child of Mabel and Edek, was born at house 13.",
+        "n": 3
+      },
+      {
+        "text": "Inga, the child of Edda and Tobin, was born at house 1.",
+        "n": 3
+      },
+      {
+        "text": "Col, the child of Rosa and Osric, was born at house 3.",
+        "n": 3
+      },
+      {
+        "text": "Frida, the child of Edda and Tobin, was born at house 1.",
+        "n": 3
+      },
+      {
+        "text": "Inga, the child of Rosa and Osric, was born at house 3.",
+        "n": 2
+      },
+      {
+        "text": "Frode, the child of Ada and Wynn, was born at house 5.",
+        "n": 2
+      },
+      {
+        "text": "Mads, the child of Ada and Wynn, was born at house 5.",
+        "n": 2
+      },
+      {
+        "text": "Nils, the child of Rosa and Osric, was born at house 3.",
+        "n": 2
+      },
+      {
+        "text": "Ivar, the child of Rosa and Osric, was born at house 3.",
+        "n": 2
+      },
+      {
+        "text": "Runa, the child of Katrin and Fen, was born at house 9.",
+        "n": 2
+      },
+      {
+        "text": "Lorne, the child of Ada and Wynn, was born at house 5.",
+        "n": 2
+      },
+      {
+        "text": "Eilif, the child of Sena and Gorm, was born at house 8.",
+        "n": 2
+      },
+      {
+        "text": "Aldo, the child of Katrin and Fen, was born at house 9.",
+        "n": 2
+      },
+      {
+        "text": "Frode, the child of Katrin and Fen, was born at house 9.",
+        "n": 2
+      },
+      {
+        "text": "Hedda, the child of Rosa and Osric, was born at house 3.",
+        "n": 2
+      },
+      {
+        "text": "Kell, the child of Ada and Wynn, was born at house 5.",
+        "n": 2
+      },
+      {
+        "text": "Dagny, the child of Ada and Wynn, was born at house 5.",
+        "n": 2
+      }
+    ]
+  },
+  "per_run": [
+    {
+      "run": "20261022-070414-seed1",
+      "events": {
+        "weather": 32,
+        "traveler": 10,
+        "sicken": 12,
+        "visitor": 3,
+        "harvest": 1,
+        "festival": 2
+      }
+    },
+    {
+      "run": "20261022-073709-seed2",
+      "events": {
+        "weather": 32,
+        "visitor": 6,
+        "sicken": 13,
+        "traveler": 7,
+        "harvest": 1,
+        "festival": 2
+      }
+    },
+    {
+      "run": "20261022-080916-seed3",
+      "events": {
+        "weather": 32,
+        "traveler": 11,
+        "sicken": 12,
+        "raid": 1,
+        "visitor": 2,
+        "harvest": 1,
+        "festival": 2
+      }
+    },
+    {
+      "run": "20261022-083715-seed4",
+      "events": {
+        "weather": 32,
+        "traveler": 11,
+        "sicken": 12,
+        "visitor": 2,
+        "harvest": 1,
+        "festival": 2
+      }
+    },
+    {
+      "run": "20261022-090533-seed5",
+      "events": {
+        "weather": 32,
+        "visitor": 4,
+        "sicken": 12,
+        "traveler": 9,
+        "raid": 2,
+        "harvest": 1,
+        "festival": 3
+      }
+    },
+    {
+      "run": "20261022-093732-seed6",
+      "events": {
+        "weather": 32,
+        "visitor": 6,
+        "sicken": 12,
+        "traveler": 7,
+        "raid": 1,
+        "harvest": 1,
+        "festival": 3
+      }
+    }
+  ]
+}

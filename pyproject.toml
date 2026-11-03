@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hearthwick"
+version = "0.1.0"
+description = "An evolving village of BEAR-driven characters who share knowledge, grow up, and pass it on"
+requires-python = ">=3.11"
+# As requirements.txt, with BEAR at the release the paper's runs recorded.
+dependencies = [
+    "bear @ git+https://github.com/snhwang/bear.git@v0.3.0",
+    "pyyaml>=6.0",
+    "numpy>=1.24",
+    "pydantic>=2.0",
+    "python-dotenv>=1.0",
+    "openai>=1.0",
+    "anthropic>=0.30",
+    "google-genai>=1.0",
+    "fastapi>=0.110",
+    "uvicorn>=0.27",
+    "websockets>=12.0",
+]
+
+[project.optional-dependencies]
+# Ollama's native API is the only way to disable thinking on that server.
+ollama = ["ollama>=0.6"]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.21", "ollama>=0.6"]
+
+[tool.setuptools]
+packages = ["hearthwick"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

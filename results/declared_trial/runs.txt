@@ -1,0 +1,73 @@
+20261018-014501-seed1
+20261018-061550-seed2
+# A trial of declared_lessons (SPECIFICATION-memory.md section 12): seed 1 of
+# --profile illustrative for 56 in-game days (two 28-day years), started on
+# 2026-10-18 at 01:45 EDT on Scott's request ("When a lesson is written we
+# should make sure it's clear what event it is linked to and how often it
+# should recur and persist"). It checks that with the model each lesson cites
+# the news it answers and declares how it recurs and how long it lasts, that
+# no lesson about news is left unlinked to wake every day, and that the loops
+# lessons_satisfied ended stay ended.
+#
+# The build. Hearthwick 5ddb729 with BEAR 1ceebc7 (bear-dev's declared
+# instructions) from the WSL clone /mnt/c/tmp/bear-dev-main. The model is
+# Qwen3.8-27B on 8355 (SGLang), and the embedder is 8360, restarted with
+# Scott's go-ahead at about 01:30 EDT after the model server's crash at 22:29
+# EDT left it failing every call with a CUDA error.
+#
+# From the repository in WSL:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup env OMP_NUM_THREADS=1 \
+#     OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python \
+#     -m hearthwick run --profile illustrative --days 56 --seed 1 \
+#     --village greater --checkpoint-every 1 \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     > runs/declared_seed1.log 2>&1 < /dev/null &
+#
+# The checks, compared with the trial of lessons_satisfied alone
+# (results/satisfied_trial/, the same seed and days):
+#
+#   python experiments/health_check.py 20261018-014501-seed1 \
+#     --log runs/declared_seed1.log --out results/declared_trial/health
+#   python experiments/lesson_use.py 20261018-014501-seed1 \
+#     --out results/declared_trial/lesson_use.md
+#
+# It finished its 56 days at 02:28:09 EDT, in 45 minutes, with none of its
+# 5,248 model calls unanswered. Its health check flags nothing. Every one of
+# the 21 lessons declared all three things. 17 recur each time their event
+# happens and 4 each day, and none always. 18 last as their news, 1 a season
+# and 2 for life. Only 2 answer no news, and both are general rules (going
+# home to rest at night, resting rather than gathering at the well after
+# dark). Every lesson about news cites it. No villager chose one of its own
+# lessons more than twice in a day. The most-used lesson is a daily routine
+# declared as one (ilsa, share news at the inn or schoolyard, 20 days). In the
+# trial of lessons_satisfied alone, Peder's misattributed grain warning,
+# answering no news, woke on 18 of 28 days.
+#
+# Seed 2, the same 56 days, on Hearthwick fb48f88 (the same village rules,
+# with server outages waited out and the last clean checkpoint kept on a
+# failure) and BEAR 1ceebc7, started on 2026-10-18 at 06:15 EDT on Scott's
+# go-ahead. In its first 56 days the illustrative trial of seed 2 had the
+# worst loop seen: fen chose one lesson 391 times over 16 days, up to 59 in a
+# day, and peder another 147 times over 26 days (before_seed2_day56/, made
+# with the same two scripts and --to-day 56). From the repository in WSL:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup env OMP_NUM_THREADS=1 \
+#     OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python \
+#     -m hearthwick run --profile illustrative --days 56 --seed 2 \
+#     --village greater --checkpoint-every 1 \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     > runs/declared_seed2.log 2>&1 < /dev/null &
+#
+#   python experiments/health_check.py 20261018-061550-seed2 \
+#     --log runs/declared_seed2.log --out results/declared_trial/health_seed2
+#   python experiments/lesson_use.py 20261018-061550-seed2 \
+#     --out results/declared_trial/lesson_use_seed2.md
+#
+# It finished at 07:09:27 EDT, in 57 minutes, with none of its 6,210 model
+# calls unanswered and no outage to wait out. Its health check flags nothing.
+# No villager chose one of its own lessons more than twice in a day, against
+# 59 before, and no villager-day went over 12, against 14. All 24 lessons
+# declared all three things, 23 recurring each time their event happens and
+# lasting as their news, and none answers no news. Fen's lessons were chosen
+# 0 to 3 times each, where before one was chosen 391 times.

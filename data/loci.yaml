@@ -1,0 +1,49 @@
+# Hearthwick's temperament genes, in BEAR's LocusRegistry format. Load with
+#   LocusRegistry.from_yaml(Path("data/loci.yaml").read_text())
+# and breed with
+#   bear.genetics.breeding_config(recombination="locus", registry=..., seed=...)
+#
+# A gene's alleles are not listed here. As in BEAR, an allele is whatever
+# instructions carry metadata gene_category: <locus>, and each is named by the
+# temp_<allele> tag that gates it. The library in data/instructions/temperament
+# holds two per gene. Lens and weather instructions gated on an allele join that
+# allele's gene. A new allele is a new set of instructions, not an edit here.
+#
+# Each gene is diploid, and every founder carries two copies (genotype in
+# founders.yaml). Which of a heterozygote's two alleles is expressed follows
+# each allele's metadata.dominance score (default 1.0). The dominant allele of
+# each gene carries 2.0 on every one of its instructions. Tied scores would
+# express both, which hearthwick.genome.phenotype refuses.
+#
+# The order below is the order villagers draw their alleles in
+# experiments/make_village.py, so changing it changes a regenerated village.
+
+loci:
+  - name: sociability
+    position: 0
+    dominance: dominant
+    description: How much a villager seeks company and conversation.
+  - name: caution
+    position: 1
+    dominance: dominant
+    description: Whether a villager ventures out or keeps to safety. It also
+      shapes what it keeps of what it hears (absorb-wary).
+  - name: curiosity
+    position: 2
+    dominance: dominant
+    description: Whether a villager explores, and whether it keeps the checkable
+      details of news (absorb-inquisitive).
+  - name: trust
+    position: 3
+    dominance: dominant
+    description: Whether a villager believes what it is told. Carries a lens on
+      both alleles (absorb-trusting, absorb-suspicious).
+  - name: diligence
+    position: 4
+    dominance: dominant
+    description: Whether a villager keeps working, including through rain.
+  - name: candor
+    position: 5
+    dominance: dominant
+    description: How a villager speaks and retells. Carries a lens on both
+      alleles (absorb-plainspoken, absorb-embellishing) and no action markers.

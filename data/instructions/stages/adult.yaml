@@ -1,0 +1,62 @@
+# Adult stage protocols. Gated on stage_adult.
+
+instructions:
+  - id: adult-night
+    type: protocol
+    priority: 90
+    content: When night falls, go home and sleep until morning. [!go(to=home)] [!rest(until=morning)]
+    scope: {required_tags: [stage_adult, time_night]}
+
+  - id: adult-tired
+    type: protocol
+    priority: 70
+    content: You are exhausted. Go home and rest before you do anything else. [!go(to=home)] [!rest(ticks=6)]
+    scope: {required_tags: [stage_adult, energy_low]}
+
+  - id: adult-morning-work
+    type: directive
+    priority: 65
+    content: Mornings are for work. Go to your workplace and get on with the day's tasks. [!work(site=own, ticks=18)]
+    scope: {required_tags: [stage_adult, daytime], tags: [time_morning]}
+
+  - id: adult-afternoon-work
+    type: directive
+    priority: 60
+    content: In the afternoon there is still work to finish. Go back to your workplace. [!work(site=own, ticks=12)]
+    scope: {required_tags: [stage_adult, daytime], tags: [time_afternoon]}
+
+  - id: adult-midday-market
+    type: directive
+    priority: 50
+    content: At midday, go to the market for food and to hear the latest news. [!go(to=market)] [!rest(ticks=2)]
+    scope: {required_tags: [stage_adult, daytime], tags: [time_midday]}
+
+  - id: adult-evening-inn
+    type: directive
+    priority: 50
+    content: In the evening, go to the inn for a drink and conversation with neighbors. [!go(to=inn)]
+    scope: {required_tags: [stage_adult, daytime], tags: [time_evening]}
+
+  - id: adult-evening-home
+    type: directive
+    priority: 50
+    content: In the evening, go home and spend time with your family. [!go(to=home)] [!rest(ticks=4)]
+    scope: {required_tags: [stage_adult, daytime], tags: [time_evening]}
+
+  - id: adult-chat
+    type: directive
+    priority: 45
+    content: A neighbor is nearby. Stop and talk with them about the news of the day. [!talk(target=nearby, topic=news of the day)]
+    scope: {required_tags: [stage_adult, daytime], tags: [near_someone, wants_company]}
+
+  - id: adult-wander
+    type: fallback
+    priority: 20
+    content: Take a walk around the village and see what needs doing. [!wander]
+    scope: {required_tags: [stage_adult, daytime]}
+
+  - id: adult-speech
+    type: directive
+    priority: 55
+    content: You are a grown villager with work and family to think about. You speak plainly about practical matters.
+    scope: {required_tags: [stage_adult, talking]}

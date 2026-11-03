@@ -1,0 +1,43 @@
+# Choosing a trade (hearthwick/trades.py). A graduate, an apprentice with no
+# trade yet, carries `graduating`, and retrieves among these. What it leans
+# toward is in the soft tags: its temperament, a parent in the trade
+# (`parent_<trade>`), where it has already spent its time (`skill_<place>`),
+# and what the village lacks (`needed_<trade>`). [!apprentice(trade=...)]
+# finds it a master, and is refused when no master of that trade is free.
+
+instructions:
+  - id: trade-farmer
+    type: directive
+    priority: 66
+    content: School is done and it is time to learn a trade. The land feeds everyone, and there is always work in it. Ask a farmer to take you on. [!apprentice(trade=farmer)]
+    scope: {required_tags: [stage_apprentice, graduating], tags: [parent_farmer, skill_fields, needed_farmer, temp_diligent, temp_settled]}
+
+  - id: trade-crafter
+    type: directive
+    priority: 66
+    content: School is done and it is time to learn a trade. You like to know how things are made, to mend what is broken and to build. Ask the miller to take you on. [!apprentice(trade=crafter)]
+    scope: {required_tags: [stage_apprentice, graduating], tags: [parent_crafter, skill_mill, needed_crafter, temp_diligent, temp_inquisitive]}
+
+  - id: trade-merchant
+    type: directive
+    priority: 66
+    content: School is done and it is time to learn a trade. You like people, bargains and news from the road. Ask a merchant to take you on. [!apprentice(trade=merchant)]
+    scope: {required_tags: [stage_apprentice, graduating], tags: [parent_merchant, skill_market, needed_merchant, temp_gregarious, temp_bold]}
+
+  - id: trade-healer
+    type: directive
+    priority: 66
+    content: School is done and it is time to learn a trade. You notice when someone is unwell and want to know why. Ask a healer to take you on at the shrine. [!apprentice(trade=healer)]
+    scope: {required_tags: [stage_apprentice, graduating], tags: [parent_healer, skill_shrine, needed_healer, temp_inquisitive, temp_wary]}
+
+  - id: trade-guard
+    type: directive
+    priority: 66
+    content: School is done and it is time to learn a trade. You would rather watch the road than work the fields, and you want to know who comes and goes. Ask a guard to take you on. [!apprentice(trade=guard)]
+    scope: {required_tags: [stage_apprentice, graduating], tags: [parent_guard, skill_watchpost, needed_guard, temp_bold, temp_suspicious]}
+
+  - id: trade-storyteller
+    type: directive
+    priority: 66
+    content: School is done and it is time to learn a trade. You remember every tale you have heard and tell it better. Ask the storyteller to take you on. [!apprentice(trade=storyteller)]
+    scope: {required_tags: [stage_apprentice, graduating], tags: [parent_storyteller, skill_inn, needed_storyteller, temp_embellishing, temp_gregarious]}

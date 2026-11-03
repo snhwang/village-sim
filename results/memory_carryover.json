@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "runs": [
+      "20261022-070414-seed1",
+      "20261022-073709-seed2",
+      "20261022-080916-seed3",
+      "20261022-083715-seed4",
+      "20261022-090533-seed5",
+      "20261022-093732-seed6"
+    ],
+    "date": "2026-10-22"
+  },
+  "pairs": 5638,
+  "kind": [
+    {
+      "listeners": "all listeners",
+      "teller_said_trouble": true,
+      "n": 3403,
+      "count": 3136,
+      "pct": 92.2
+    },
+    {
+      "listeners": "all listeners",
+      "teller_said_trouble": false,
+      "n": 2235,
+      "count": 661,
+      "pct": 29.6
+    },
+    {
+      "listeners": "wary listeners",
+      "teller_said_trouble": true,
+      "n": 1657,
+      "count": 1561,
+      "pct": 94.2
+    },
+    {
+      "listeners": "wary listeners",
+      "teller_said_trouble": false,
+      "n": 1071,
+      "count": 373,
+      "pct": 34.8
+    },
+    {
+      "listeners": "bold listeners",
+      "teller_said_trouble": true,
+      "n": 1746,
+      "count": 1575,
+      "pct": 90.2
+    },
+    {
+      "listeners": "bold listeners",
+      "teller_said_trouble": false,
+      "n": 1164,
+      "count": 288,
+      "pct": 24.7
+    }
+  ],
+  "hedging": [
+    {
+      "listeners": "all listeners",
+      "teller_hedged": true,
+      "n": 3693,
+      "count": 3037,
+      "pct": 82.2
+    },
+    {
+      "listeners": "all listeners",
+      "teller_hedged": false,
+      "n": 1945,
+      "count": 1094,
+      "pct": 56.2
+    },
+    {
+      "listeners": "suspicious listeners",
+      "teller_hedged": true,
+      "n": 1820,
+      "count": 1594,
+      "pct": 87.6
+    },
+    {
+      "listeners": "suspicious listeners",
+      "teller_hedged": false,
+      "n": 966,
+      "count": 612,
+      "pct": 63.4
+    },
+    {
+      "listeners": "trusting listeners",
+      "teller_hedged": true,
+      "n": 1873,
+      "count": 1443,
+      "pct": 77.0
+    },
+    {
+      "listeners": "trusting listeners",
+      "teller_hedged": false,
+      "n": 979,
+      "count": 482,
+      "pct": 49.2
+    }
+  ]
+}

@@ -1,0 +1,1197 @@
+[
+  {
+    "run": "20260927-190041-seed1",
+    "growth": true,
+    "graduated": [
+      {
+        "who": "hilde28",
+        "day": 7
+      },
+      {
+        "who": "ilsa",
+        "day": 7
+      }
+    ],
+    "choices": [
+      {
+        "who": "hilde28",
+        "day": 7,
+        "chosen": "trade-farmer",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "settled",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4237
+          ],
+          [
+            "trade-merchant",
+            0.4217
+          ],
+          [
+            "trade-healer",
+            0.4119
+          ],
+          [
+            "trade-guard",
+            0.4118
+          ],
+          [
+            "trade-crafter",
+            0.4114
+          ],
+          [
+            "trade-storyteller",
+            0.3894
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "ilsa",
+        "day": 7,
+        "chosen": "learned-ilsa-1",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4357
+          ],
+          [
+            "trade-crafter",
+            0.4252
+          ],
+          [
+            "trade-merchant",
+            0.4247
+          ],
+          [
+            "trade-guard",
+            0.4133
+          ],
+          [
+            "trade-healer",
+            0.4119
+          ],
+          [
+            "trade-storyteller",
+            0.3948
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "ilsa",
+        "day": 7,
+        "chosen": "learned-ilsa-1",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-merchant",
+            0.4353
+          ],
+          [
+            "trade-crafter",
+            0.426
+          ],
+          [
+            "trade-farmer",
+            0.424
+          ],
+          [
+            "trade-guard",
+            0.4212
+          ],
+          [
+            "trade-healer",
+            0.4194
+          ],
+          [
+            "trade-storyteller",
+            0.4071
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "ilsa",
+        "day": 7,
+        "chosen": "learned-ilsa-1",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-merchant",
+            0.4201
+          ],
+          [
+            "trade-crafter",
+            0.415
+          ],
+          [
+            "trade-farmer",
+            0.4143
+          ],
+          [
+            "trade-healer",
+            0.4119
+          ],
+          [
+            "trade-guard",
+            0.4115
+          ],
+          [
+            "trade-storyteller",
+            0.3986
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "ilsa",
+        "day": 7,
+        "chosen": "learned-ilsa-1",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-merchant",
+            0.4283
+          ],
+          [
+            "trade-crafter",
+            0.4254
+          ],
+          [
+            "trade-farmer",
+            0.4244
+          ],
+          [
+            "trade-healer",
+            0.4174
+          ],
+          [
+            "trade-guard",
+            0.4157
+          ],
+          [
+            "trade-storyteller",
+            0.404
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "ilsa",
+        "day": 7,
+        "chosen": "learned-ilsa-1",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-merchant",
+            0.4201
+          ],
+          [
+            "trade-healer",
+            0.4194
+          ],
+          [
+            "trade-guard",
+            0.4173
+          ],
+          [
+            "trade-farmer",
+            0.4165
+          ],
+          [
+            "trade-crafter",
+            0.4128
+          ],
+          [
+            "trade-storyteller",
+            0.3981
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "ilsa",
+        "day": 7,
+        "chosen": "learned-ilsa-1",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-merchant",
+            0.4265
+          ],
+          [
+            "trade-healer",
+            0.4258
+          ],
+          [
+            "trade-farmer",
+            0.4242
+          ],
+          [
+            "trade-crafter",
+            0.4213
+          ],
+          [
+            "trade-guard",
+            0.4208
+          ],
+          [
+            "trade-storyteller",
+            0.412
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "ilsa",
+        "day": 7,
+        "chosen": "trade-merchant",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-guard",
+            0.4307
+          ],
+          [
+            "trade-healer",
+            0.4234
+          ],
+          [
+            "trade-merchant",
+            0.4224
+          ],
+          [
+            "trade-farmer",
+            0.4175
+          ],
+          [
+            "trade-crafter",
+            0.4119
+          ],
+          [
+            "trade-storyteller",
+            0.4087
+          ]
+        ],
+        "refused": []
+      }
+    ],
+    "apprenticed": [
+      {
+        "who": "hilde28",
+        "trade": "farmer",
+        "master": "edek",
+        "day": 7,
+        "master_is_parent": true
+      },
+      {
+        "who": "ilsa",
+        "trade": "merchant",
+        "master": "maren",
+        "day": 7,
+        "master_is_parent": false
+      }
+    ],
+    "qualified": [
+      {
+        "who": "gisla",
+        "trade": "crafter",
+        "master": "edda",
+        "day": 10
+      }
+    ],
+    "school": {
+      "child-school": 134,
+      "elder-teach": 215
+    },
+    "held_back": {
+      "adult: knowledge": 170,
+      "adult: experience": 170,
+      "adult: age": 140,
+      "apprentice: experience": 44,
+      "apprentice: knowledge": 39,
+      "apprentice: age": 38,
+      "apprentice: skill": 30,
+      "child: knowledge": 22,
+      "child: age": 20,
+      "child: experience": 8,
+      "child: school": 2
+    }
+  },
+  {
+    "run": "20260927-191014-seed2",
+    "growth": true,
+    "graduated": [
+      {
+        "who": "ilsa",
+        "day": 5
+      },
+      {
+        "who": "hilde28",
+        "day": 6
+      }
+    ],
+    "choices": [
+      {
+        "who": "ilsa",
+        "day": 5,
+        "chosen": "trade-merchant",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4407
+          ],
+          [
+            "trade-healer",
+            0.4262
+          ],
+          [
+            "trade-merchant",
+            0.419
+          ],
+          [
+            "trade-crafter",
+            0.418
+          ],
+          [
+            "trade-guard",
+            0.4071
+          ],
+          [
+            "trade-storyteller",
+            0.3808
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "hilde28",
+        "day": 6,
+        "chosen": "trade-merchant",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "settled",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4323
+          ],
+          [
+            "trade-merchant",
+            0.4228
+          ],
+          [
+            "trade-healer",
+            0.4157
+          ],
+          [
+            "trade-guard",
+            0.4133
+          ],
+          [
+            "trade-crafter",
+            0.4011
+          ],
+          [
+            "trade-storyteller",
+            0.3852
+          ]
+        ],
+        "refused": []
+      }
+    ],
+    "apprenticed": [
+      {
+        "who": "ilsa",
+        "trade": "merchant",
+        "master": "maren",
+        "day": 5,
+        "master_is_parent": false
+      },
+      {
+        "who": "hilde28",
+        "trade": "merchant",
+        "master": "sten",
+        "day": 6,
+        "master_is_parent": false
+      }
+    ],
+    "qualified": [],
+    "school": {
+      "elder-teach": 154,
+      "child-school": 105
+    },
+    "held_back": {
+      "adult: knowledge": 170,
+      "adult: experience": 170,
+      "adult: age": 140,
+      "apprentice: skill": 49,
+      "apprentice: experience": 47,
+      "apprentice: knowledge": 45,
+      "apprentice: age": 41,
+      "child: age": 20,
+      "child: knowledge": 17,
+      "child: school": 5,
+      "child: experience": 4
+    }
+  },
+  {
+    "run": "20260927-192146-seed3",
+    "growth": true,
+    "graduated": [
+      {
+        "who": "hilde28",
+        "day": 2
+      },
+      {
+        "who": "ilsa",
+        "day": 3
+      }
+    ],
+    "choices": [
+      {
+        "who": "hilde28",
+        "day": 2,
+        "chosen": "trade-crafter",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "settled",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-crafter",
+            0.4376
+          ],
+          [
+            "trade-merchant",
+            0.4337
+          ],
+          [
+            "trade-storyteller",
+            0.4319
+          ],
+          [
+            "trade-farmer",
+            0.4176
+          ],
+          [
+            "trade-guard",
+            0.4154
+          ],
+          [
+            "trade-healer",
+            0.4109
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "ilsa",
+        "day": 3,
+        "chosen": "trade-guard",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.427
+          ],
+          [
+            "trade-storyteller",
+            0.4196
+          ],
+          [
+            "trade-merchant",
+            0.4176
+          ],
+          [
+            "trade-guard",
+            0.4063
+          ],
+          [
+            "trade-crafter",
+            0.4051
+          ],
+          [
+            "trade-healer",
+            0.402
+          ]
+        ],
+        "refused": []
+      }
+    ],
+    "apprenticed": [
+      {
+        "who": "hilde28",
+        "trade": "crafter",
+        "master": "dunn",
+        "day": 2,
+        "master_is_parent": false
+      },
+      {
+        "who": "ilsa",
+        "trade": "guard",
+        "master": "hilde",
+        "day": 3,
+        "master_is_parent": false
+      }
+    ],
+    "qualified": [
+      {
+        "who": "corin",
+        "trade": "healer",
+        "master": "ada",
+        "day": 9
+      },
+      {
+        "who": "gisla",
+        "trade": "crafter",
+        "master": "edda",
+        "day": 9
+      }
+    ],
+    "school": {
+      "elder-teach": 194,
+      "child-school": 81
+    },
+    "held_back": {
+      "adult: knowledge": 174,
+      "adult: experience": 174,
+      "adult: age": 144,
+      "apprentice: age": 47,
+      "apprentice: experience": 45,
+      "apprentice: skill": 42,
+      "apprentice: knowledge": 31,
+      "child: age": 20,
+      "child: knowledge": 8,
+      "child: experience": 8,
+      "child: school": 4
+    }
+  },
+  {
+    "run": "20260927-193347-seed4",
+    "growth": true,
+    "graduated": [
+      {
+        "who": "ilsa",
+        "day": 4
+      },
+      {
+        "who": "hilde28",
+        "day": 5
+      }
+    ],
+    "choices": [
+      {
+        "who": "ilsa",
+        "day": 4,
+        "chosen": "weather-shelter-from-storm",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4242
+          ],
+          [
+            "trade-guard",
+            0.4106
+          ],
+          [
+            "trade-merchant",
+            0.4093
+          ],
+          [
+            "trade-healer",
+            0.4018
+          ],
+          [
+            "trade-crafter",
+            0.3975
+          ],
+          [
+            "trade-storyteller",
+            0.3914
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "ilsa",
+        "day": 4,
+        "chosen": "trade-farmer",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4242
+          ],
+          [
+            "trade-guard",
+            0.4106
+          ],
+          [
+            "trade-merchant",
+            0.4093
+          ],
+          [
+            "trade-healer",
+            0.4018
+          ],
+          [
+            "trade-crafter",
+            0.3975
+          ],
+          [
+            "trade-storyteller",
+            0.3914
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "hilde28",
+        "day": 5,
+        "chosen": "trade-merchant",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "settled",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4452
+          ],
+          [
+            "trade-merchant",
+            0.4312
+          ],
+          [
+            "trade-healer",
+            0.4268
+          ],
+          [
+            "trade-guard",
+            0.4174
+          ],
+          [
+            "trade-crafter",
+            0.4108
+          ],
+          [
+            "trade-storyteller",
+            0.3974
+          ]
+        ],
+        "refused": []
+      }
+    ],
+    "apprenticed": [
+      {
+        "who": "ilsa",
+        "trade": "farmer",
+        "master": "sena",
+        "day": 4,
+        "master_is_parent": true
+      },
+      {
+        "who": "hilde28",
+        "trade": "merchant",
+        "master": "maren",
+        "day": 5,
+        "master_is_parent": false
+      }
+    ],
+    "qualified": [],
+    "school": {
+      "elder-teach": 187,
+      "child-school": 89
+    },
+    "held_back": {
+      "adult: knowledge": 172,
+      "adult: experience": 172,
+      "adult: age": 142,
+      "apprentice: skill": 51,
+      "apprentice: age": 43,
+      "apprentice: experience": 32,
+      "apprentice: knowledge": 30,
+      "child: age": 20,
+      "child: knowledge": 12,
+      "child: experience": 8,
+      "child: school": 3
+    }
+  },
+  {
+    "run": "20260927-194732-seed5",
+    "growth": true,
+    "graduated": [
+      {
+        "who": "hilde28",
+        "day": 6
+      },
+      {
+        "who": "ilsa",
+        "day": 7
+      }
+    ],
+    "choices": [
+      {
+        "who": "hilde28",
+        "day": 6,
+        "chosen": "trade-healer",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "settled",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.436
+          ],
+          [
+            "trade-merchant",
+            0.4271
+          ],
+          [
+            "trade-healer",
+            0.4194
+          ],
+          [
+            "trade-crafter",
+            0.409
+          ],
+          [
+            "trade-guard",
+            0.4079
+          ],
+          [
+            "trade-storyteller",
+            0.3909
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "ilsa",
+        "day": 7,
+        "chosen": "trade-farmer",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4442
+          ],
+          [
+            "trade-merchant",
+            0.4311
+          ],
+          [
+            "trade-healer",
+            0.4243
+          ],
+          [
+            "trade-crafter",
+            0.4229
+          ],
+          [
+            "trade-guard",
+            0.4102
+          ],
+          [
+            "trade-storyteller",
+            0.3905
+          ]
+        ],
+        "refused": []
+      }
+    ],
+    "apprenticed": [
+      {
+        "who": "hilde28",
+        "trade": "healer",
+        "master": "hal",
+        "day": 6,
+        "master_is_parent": false
+      },
+      {
+        "who": "ilsa",
+        "trade": "farmer",
+        "master": "sena",
+        "day": 7,
+        "master_is_parent": true
+      }
+    ],
+    "qualified": [
+      {
+        "who": "gisla",
+        "trade": "crafter",
+        "master": "edda",
+        "day": 9
+      }
+    ],
+    "school": {
+      "elder-teach": 220,
+      "child-school": 112
+    },
+    "held_back": {
+      "adult: knowledge": 172,
+      "adult: experience": 172,
+      "adult: age": 142,
+      "apprentice: age": 39,
+      "apprentice: experience": 39,
+      "apprentice: skill": 37,
+      "apprentice: knowledge": 36,
+      "child: knowledge": 23,
+      "child: age": 20,
+      "child: school": 7,
+      "child: experience": 4
+    }
+  },
+  {
+    "run": "20260927-195852-seed6",
+    "growth": true,
+    "graduated": [
+      {
+        "who": "hilde28",
+        "day": 6
+      },
+      {
+        "who": "ilsa",
+        "day": 7
+      }
+    ],
+    "choices": [
+      {
+        "who": "hilde28",
+        "day": 6,
+        "chosen": "trade-merchant",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "settled",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-farmer",
+            0.4318
+          ],
+          [
+            "trade-merchant",
+            0.4282
+          ],
+          [
+            "trade-healer",
+            0.4173
+          ],
+          [
+            "trade-guard",
+            0.4098
+          ],
+          [
+            "trade-crafter",
+            0.4077
+          ],
+          [
+            "trade-storyteller",
+            0.3884
+          ]
+        ],
+        "refused": []
+      },
+      {
+        "who": "ilsa",
+        "day": 7,
+        "chosen": "trade-healer",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        },
+        "leanings": [
+          "needed_farmer",
+          "needed_merchant",
+          "parent_crafter",
+          "parent_farmer"
+        ],
+        "ranked": [
+          [
+            "trade-healer",
+            0.4337
+          ],
+          [
+            "trade-farmer",
+            0.4324
+          ],
+          [
+            "trade-merchant",
+            0.4257
+          ],
+          [
+            "trade-crafter",
+            0.4118
+          ],
+          [
+            "trade-guard",
+            0.4038
+          ],
+          [
+            "trade-storyteller",
+            0.3971
+          ]
+        ],
+        "refused": []
+      }
+    ],
+    "apprenticed": [
+      {
+        "who": "hilde28",
+        "trade": "merchant",
+        "master": "maren",
+        "day": 6,
+        "master_is_parent": false
+      },
+      {
+        "who": "ilsa",
+        "trade": "healer",
+        "master": "hal",
+        "day": 7,
+        "master_is_parent": false
+      }
+    ],
+    "qualified": [],
+    "school": {
+      "child-school": 115,
+      "elder-teach": 200
+    },
+    "held_back": {
+      "adult: knowledge": 170,
+      "adult: experience": 170,
+      "adult: age": 140,
+      "apprentice: experience": 47,
+      "apprentice: skill": 43,
+      "apprentice: knowledge": 42,
+      "apprentice: age": 39,
+      "child: knowledge": 21,
+      "child: age": 20,
+      "child: experience": 5,
+      "child: school": 3
+    }
+  }
+]

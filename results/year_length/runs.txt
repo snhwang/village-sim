@@ -1,0 +1,52 @@
+# Does the year's length change what the village does? The greater village
+# run without the model (experiments/survival.py) at eight days a year, as
+# the paper's runs were, and at 28, one week a season, with the per-day rates
+# scaled to the year (fea09f4): the opening granary, what a field holds, and
+# the daily chance of a child. If population, births and survival match, the
+# eight-day year does not drive the paper's results.
+#
+# Not scaled, so expected to differ per year of age: conversations, school
+# lessons and work shifts, of which a villager has 3.5 times as many in a
+# 28-day year.
+#
+# Two sets of rules:
+#   now          the paper's switches. Its eight-day runs are already in
+#                results/survival/now-*.json (fifty years, seeds 0 and 1)
+#   dev_growing  the talk and leisure switches, with time off
+#                and farmers working the whole growing year
+#
+# From the repository in WSL, with the embedder up on 8360:
+#
+#   cd /mnt/c/Users/Scott/Documents/Work/hearthwick-evolving-village
+#   P=.venv/bin/python
+#   export OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4
+#
+# The thread cap keeps each run to about 4 cores. Uncapped, one run used
+# about 15 of the machine's 28, and four would crowd out the trial and the
+# long run.
+#
+# Eight days a year, about an hour or two:
+#
+#   $P experiments/survival.py --years 30 --seeds 0 1 --variants now dev_growing --workers 2 \
+#     --name survival_year_length
+#
+# --name keeps its report apart. Run without it on 2026-10-05, this wrote over
+# the paper's results/survival.md, which was restored from git. Its runs are in
+# results/survival/dev_growing-*.json, and the paper's own now-*.json are
+# reused unchanged.
+#
+# 28 days a year, about a day. The unscaled 28-day runs of 2026-10-04, from
+# before fea09f4, are kept apart in results/survival_y28_unscaled (seed 0 to
+# year 14, where it stopped on the embedder cache bug fixed in 1a3aff8, and
+# seed 1 to year 26):
+#
+#   $P experiments/survival.py --years 30 --seeds 0 1 --variants now dev_growing \
+#     --days-per-year 28 --workers 4 --fresh
+#
+# Started by Scott on 2026-10-05. The eight-day half is done. Over thirty
+# years, the paper's rules reach 134 and 110 villagers for seeds 0 and 1, and
+# the talk and leisure switches with farmers working the growing year reach
+# 153 and 116.
+#
+# Reports: results/survival.md and results/survival_y28.md, from every saved
+# run of each length.

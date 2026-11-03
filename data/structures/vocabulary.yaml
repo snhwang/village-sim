@@ -1,0 +1,51 @@
+# What a design may be made of (SPECIFICATION-v0.2.md section 1.1).
+#
+# A design is parts, joints and movements. The validator in
+# hearthwick/designs.py refuses anything not listed here, and the 3D viewer
+# draws and runs whatever is. New shapes, joints, movements or triggers are
+# added here, with the code that draws or tests them, and nowhere else.
+#
+# Units: one tile is one unit, heights are in the same units, angles are in
+# degrees, spin is in turns a minute, and periods and times in seconds.
+
+shapes:
+  # Sizes a shape takes, by how many numbers are given.
+  box: [[width, height, depth]]
+  cylinder: [[radius, height], [top_radius, bottom_radius, height]]
+  cone: [[radius, height]]
+  sphere: [[radius]]
+  wheel: [[radius, width]]        # a cylinder on its side, its axle along x
+
+# How a part moves against its parent. The axis is in the part's own frame,
+# after its rotation, so an axle laid along x by its rotation spins about its
+# own y. A joint may name a pivot, the point in the part's own frame it turns
+# about or slides from, so a door can turn on its edge. Without one it turns
+# about the part's middle.
+joints: [hinge, slider, fixed]
+axes: [x, y, z]
+
+# What a joint does, and which joint does it.
+movements:
+  spin: hinge       # turns a minute, easing up and down
+  swing: hinge      # between two angles, over a period
+  slide: slider     # between two positions, over a period
+  open: [hinge, slider]   # to an angle or a distance over some seconds, and back
+
+# When a movement runs. The world's own: always, day, night, rain, storm.
+# A place's, reported by the simulation in each frame: worked (someone works
+# there) and occupied (someone awake is there).
+triggers:
+  world: [always, day, night, rain, storm]
+  place: [worked, occupied]
+
+# What a designer may say a structure does. The physics bench tests claims.
+claims: [shelter, store, pump, grind, carry, lift, fly]
+
+limits:
+  parts: 40          # counting every copy a repeat makes
+  footprint: 5       # tiles on a side
+  height: 12
+  repeat: 12
+  sides: 32
+  spin: 120          # turns a minute
+  slide: 5           # units either way

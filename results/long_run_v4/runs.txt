@@ -1,0 +1,70 @@
+20261013-171655-seed1
+# The fourth long run: the third's village, seed and switches, at 28-day
+# years, with warnings that last days and far-off news that warns only of
+# what can come here. Started on 2026-10-13 at 17:16 EDT on Scott's go-ahead,
+# after the third was stopped by dgx2's outage, to see whether the time the
+# third run's warnings took goes back to the fields.
+#
+# Against the third long run (results/long_run_v3), two switches differ:
+#   - short_warnings: what news makes a villager do fades in days (a danger in
+#     a week, a rumor in three days), not years, and far-off news warns only
+#     of a danger that can come here, such as raiders, a sickness or wolves
+#     (SPECIFICATION-warnings.md section 10)
+#   - afar_news: far-off news is held as news from afar, not as news of the
+#     east road. It was off in the third run, so storytellers' tales of
+#     distant places became east-road hazards there.
+# The memory gene is still off.
+#
+# The build. Hearthwick ba31fab with BEAR 8e26162 from the WSL clone
+# /mnt/c/tmp/bear-dev-main, the third run's BEAR. Since the third run's build
+# (d9c0f31), Hearthwick also sends top-p 0.95 and top-k 20 with every call,
+# which the server filled in for the third run anyway, and counts the calls
+# the server never answers (speech_errors in meta.json).
+#
+# The model. Qwen3.8-27B on 8355, which has served SGLang since 15:56 on
+# 2026-10-13 with dgx2's build and settings: the same model at the same
+# revision (unsloth NVFP4 at f0b7c9e) and DFlash speculative decoding. The
+# first three runs used dgx2's lane itself, which was down after its outage,
+# so the GPU differs from theirs. SGLang is not reproducible from run to run,
+# so the runs compare statistically either way. The run stays on 8355 for
+# its whole length, so it sees one server. The embedder is 8360.
+#
+# From the repository in WSL:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup .venv/bin/python \
+#     -m hearthwick run --days 8000 --days-per-year 28 --seed 1 --village greater \
+#     --checkpoint-every 1 --no-designs --no-wants --no-search --no-vehicles \
+#     --no-assessing --no-looking --no-placing --no-bynames \
+#     --no-leisure --no-living-memory --no-natural-talk --no-time-off \
+#     --quick-warnings --told-memory --fading-lessons --short-warnings \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     > runs/long_run_v4.log 2>&1 < /dev/null & sleep 45
+#
+# Before it started, the same flags were checked without the model for two
+# in-game days in a scratch folder: the switches were the third run's plus
+# these two, and short warnings fired. Its first 45 seconds made 92 model
+# calls, all answered.
+#
+# To resume after a stop, with the same PYTHONPATH:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup .venv/bin/python \
+#     -m hearthwick run --resume 20261013-171655-seed1 \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     >> runs/long_run_v4.log 2>&1 < /dev/null & sleep 45
+#
+# To stop it, send SIGINT to its pid, which saves and exits cleanly. Then tell
+# bear-dev-16, who coordinates 8355.
+#
+# Its report, read to a fixed day so it can run while the village does:
+#
+#   python experiments/long_run_report.py 20261013-171655-seed1 --to-day <N> --out results/long_run_v4
+#
+# Stopped on Scott's go-ahead at the end of year 7 (day 224), the point where
+# the second run had run out of food, to start the fifth run with lasting
+# lessons. A watcher sent SIGINT to pid 23202 at 21:38:59 EDT on 2026-10-13,
+# once the checkpoint reached tick 32256. It saved at tick 32290 and exited at
+# 21:39:04. No model call failed in the whole run (speech_errors 0).
+#
+# Its report, to day 224:
+#
+#   python experiments/long_run_report.py 20261013-171655-seed1 --to-day 224 --out results/long_run_v4

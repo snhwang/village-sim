@@ -1,0 +1,56 @@
+20261013-213929-seed1
+# The fifth long run: the fourth's village, seed, switches and server, with
+# lessons that last years. Started on 2026-10-13 at 21:39 EDT on Scott's
+# go-ahead, straight after the fourth was stopped at the end of year 7.
+#
+# Against the fourth long run (results/long_run_v4), one switch differs:
+#   - lasting_lessons: a lesson fades over the years its news once took, one
+#     for a rumour or a sickness and two for a danger, however short the news
+#     itself, and still strengthens when its news recurs
+#     (SPECIFICATION-memory.md section 6). In the fourth run lessons faded
+#     with their news, in days, and were chosen in 0.6% of decisions by day
+#     131 against 2.2% in the third run (Scott, 2026-10-13: "For this sim we
+#     should at least make them persist longer. Years.").
+#
+# The build. Hearthwick 1b3139b with BEAR 8e26162 from the WSL clone
+# /mnt/c/tmp/bear-dev-main, as the third and fourth runs.
+#
+# The model. Qwen3.8-27B on 8355 (SGLang, dgx2's build), as the fourth run.
+# The embedder is 8360.
+#
+# From the repository in WSL:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup .venv/bin/python \
+#     -m hearthwick run --days 8000 --days-per-year 28 --seed 1 --village greater \
+#     --checkpoint-every 1 --no-designs --no-wants --no-search --no-vehicles \
+#     --no-assessing --no-looking --no-placing --no-bynames \
+#     --no-leisure --no-living-memory --no-natural-talk --no-time-off \
+#     --quick-warnings --told-memory --fading-lessons --short-warnings \
+#     --lasting-lessons \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     > runs/long_run_v5.log 2>&1 < /dev/null & sleep 45
+#
+# Its first 45 seconds made 87 model calls, all answered.
+#
+# To resume after a stop, with the same PYTHONPATH:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup .venv/bin/python \
+#     -m hearthwick run --resume 20261013-213929-seed1 \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     >> runs/long_run_v5.log 2>&1 < /dev/null & sleep 45
+#
+# To stop it, send SIGINT to its pid, which saves and exits cleanly. Then tell
+# bear-dev-16, who coordinates 8355.
+#
+# Its report, read to a fixed day so it can run while the village does:
+#
+#   python experiments/long_run_report.py 20261013-213929-seed1 --to-day <N> --out results/long_run_v5
+#
+# Stopped on Scott's say-so at 14:36:17 EDT on 2026-10-14 with SIGINT to pid
+# 37045, to start the sixth run with the four time-in-the-day switches. It
+# saved at tick 67999 (day 472, year 16) and exited at 14:36:29. No model call
+# went unanswered (speech_errors 0 in 100,185 calls).
+#
+# Its report, to day 472:
+#
+#   python experiments/long_run_report.py 20261013-213929-seed1 --to-day 472 --out results/long_run_v5

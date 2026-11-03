@@ -1,0 +1,65 @@
+# A trial of fresh_warnings (SPECIFICATION-warnings.md section 13): seeds 1
+# to 3 of --profile illustrative for 56 in-game days (two 28-day years), all
+# three at once on 8355. Scott, 2026-10-21, on the warning loop found in the
+# paper-v3 runs: "fix and rerun. stop the 300 run." It checks that no warner
+# tells one listener the same warning again and again, that no villager warns
+# all day, and that the rest of the health check stays clean.
+#
+# Before. The paper-v3 ten-year runs of the same seeds, read to day 56 with
+# the new health check (before_seed{1,2,3}_day56/):
+#
+#   python3 experiments/health_check.py 20261021-003622-seed<N> --to-day 56 \
+#     --out results/fresh_trial/before_seed<N>_day56
+#
+# Both warning checks flag in all three. One warner told one listener the
+# same warning up to 12, 12 and 12 times a day in the first year and 25, 14
+# and 13 in the second, and listener-days over 3 numbered 217 and 122, 118
+# and 257, 41 and 225. One villager warned up to 61, 60 and 55 times in a
+# day.
+#
+# First trial, on 79cc1d4: 20261021-151653-seed1, -seed2 and -seed3, started
+# by Scott at 15:16 EDT (RUN_LOG.md here). By day 14 no villager-day had over
+# 50 warnings, and the most one warner warned one listener in a day was 4, 4
+# and 2. But in both cases of 4, the warner gave the same warning twice in one
+# tick: its quick warning ended partway through the tick, it decided again
+# (decide_again), and the listener did not yet look told, since the telling
+# was remembered only once the offers ran. The second warning carried
+# nothing. In the first 14 days 263 of 1,345, 146 of 818 and 71 of 427
+# warnings carried nothing, and the same pair came twice in one tick 208,
+# 130 and 65 times. The next commit remembers the telling as the warning is
+# given, and the trial is redone on it.
+#
+# The kill was not sent, so the three ran to day 56 and finished at 16:52 EDT
+# with no model call unanswered. Their health checks are in first_trial/,
+# made with:
+#
+#   python3 experiments/health_check.py 20261021-151653-seed<N> \
+#     --log runs/fresh_trial_seed<N>.log --out <dir>
+#
+# Against the paper-v3 runs to day 56 (above), the most times one warner
+# warned one listener of one thing in a day fell to 4, 5 and 3, and
+# listener-days over 3 to 1 and 3, 8 and 2, 0 and 0. Seed 3 flags nothing.
+# Seeds 1 and 2 flag both warning checks, and 586 and 565, 562 and 653
+# warnings by year carried nothing, the second warning in a tick. The
+# busiest villager-day, gisla's on day 16 of seed 1, was 59 warnings to 21
+# listeners about the blight, the well and danger abroad, 14 of them that
+# second warning.
+#
+# Second trial, on a81ec0f (87769d5's fix, with notes after it):
+# 20261021-191648-seed1, -seed2 and -seed3, started by Scott at 19:16 EDT
+# and finished at 20:44 EDT, with no model call unanswered. Their records
+# say a81ec0f-dirty. The only modified file was this directory's RUN_LOG.md,
+# which is tracked since bc933be and which logged.sh appends to before each
+# command starts. The code is a81ec0f as committed.
+#
+# The most times one warner warned one listener of one thing in a day was 2
+# and 2, 3 and 2, 3 and 2, with no listener-day over 3. Warnings that carried
+# nothing were 0.1 to 0.4% of a year's. Nobody was stuck, no lesson was
+# chosen more than twice in a day, and idle shares were 1.9 to 3.3%. The
+# busiest villager-day, edda's on day 23 of seed 1, was 42 warnings to 23
+# listeners about 5 events at most 4.2 days old, none told to the same
+# listener twice and none carrying nothing. That is the rule as meant, so
+# the health check now reports one villager's warnings in a day without
+# flagging them, and flags instead a year with over 5% of warnings carrying
+# nothing. With it, all three runs flag nothing, the first trial's flag 1 or
+# 2 checks each, and the paper-v3 runs to day 56 the same.

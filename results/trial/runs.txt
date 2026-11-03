@@ -1,0 +1,68 @@
+(run id goes on this line once it starts)
+# The trial: the talk and leisure build (from 9f5f107) run beside the
+# open-ended long run (results/long_run/runs.txt) and
+# compared with it. Same village, seed and model, so the differences are the
+# build's:
+#   - natural talk: a setting, three speech instructions as tendencies, lines
+#     up to 45 words over 4 to 6 turns, and small talk from a villager's day
+#   - living memory: personas describe character only, and marriages, births,
+#     deaths and apprenticeships are tagged memories asked for by tag
+#   - news from afar, held as from afar and never a local hazard
+#   - fading news: rumours and sickness stop driving behaviour after a year,
+#     hazards after two, unless lived again
+#   - natural names: a pool of eighty a sex, kin's names, bynames, no digits
+#   - time off: weekends, midsummer and midwinter, and vacations, with no
+#     work from a villager who is off
+#   - leisure: free time, swimming at the ford, and storytelling gatherings
+# Fishing stays off (decision 2 of SPECIFICATION-leisure.md is open).
+#
+# Off as in the long run: designs, wants, web search, vehicles, assessing,
+# looking at drawings and placing.
+#
+# The model is Qwen3.8-27B (unsloth/Qwen3.8-27B-NVFP4) on 8355, the server
+# every measured run in the paper used. The long run reaches the same weights
+# on a DGX Spark through the gateway, so the engines differ (see its notes).
+#
+# From the repository in WSL, with the embedder up on 8360. The new
+# switches are on by default from the command line, so nothing names them.
+# It saves every in-game day:
+#
+#   cd /mnt/c/Users/Scott/Documents/Work/hearthwick-evolving-village
+#   nohup .venv/bin/python -m hearthwick run \
+#     --days 8000 --seed 1 --village greater --checkpoint-every 1 \
+#     --no-designs --no-wants --no-search --no-vehicles \
+#     --no-assessing --no-looking --no-placing \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     > runs/trial.log 2>&1 &
+#
+# The same at 28 days a year, one week a season, so weekends, holidays and
+# seasons fit together. Time off needs farmers working the whole growing
+# year, or the fields go untended (results/survival/dev*-0.json):
+#
+#   nohup .venv/bin/python -m hearthwick run \
+#     --days 8000 --seed 1 --village greater --checkpoint-every 1 \
+#     --days-per-year 28 --farm-time-off growing \
+#     --no-designs --no-wants --no-search --no-vehicles \
+#     --no-assessing --no-looking --no-placing \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     > runs/trial28.log 2>&1 &
+#
+# A trial at eight days without --farm-time-off growing should add
+# --no-time-off, since farmers working only at harvest starved the village
+# by its fourth year.
+#
+# To watch it, a view-only server on its own port, bound to 127.0.0.1:
+#
+#   .venv/bin/python -m hearthwick view --port 8030
+#
+# To stop it, send SIGINT to its pid (kill -INT), which saves and exits
+# cleanly. To carry on from its last save:
+#
+#   nohup .venv/bin/python -m hearthwick run \
+#     --resume <run_id> --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     >> runs/trial.log 2>&1 &
+#
+# Its report, beside the long run's:
+#
+#   .venv/bin/python experiments/population.py \
+#     <run_id> --out results/trial

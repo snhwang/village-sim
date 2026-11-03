@@ -1,0 +1,30 @@
+# Elders' share of the food work (config.elders_in_fields,
+# SPECIFICATION-warnings.md section 12). Loaded only with that switch
+# (corpus.SWITCHED_DIRS).
+#
+# Without these an elder had no food work at all: the harvest hands, the help
+# with tending and the clearing of ground are for adults, the gleaning for
+# children, and an elder's only work was teaching. With teaching limited to
+# what the school's pupils need (config.teachers_by_pupils), the elders it
+# freed walked and sat instead. These give them the same food work as an
+# adult in lighter spells, at the same priorities, so an elder lends a hand
+# when the crop is behind or ripe, and rests sooner.
+
+instructions:
+  - id: elder-harvest-hands
+    type: directive
+    priority: 63
+    content: The harvest is ripe and every pair of hands helps, old ones too. Go and bring in what you can at your own pace. [!work(site=fields, ticks=6)]
+    scope: {required_tags: [stage_elder, daytime, harvest_ripe], tags: [food_low, fields_small]}
+
+  - id: elder-harvest-hungry
+    type: directive
+    priority: 71
+    content: The granary will not last the year and the crop is still standing. Your back is not what it was, but the village needs it now. Go to the fields and help bring the harvest in. [!work(site=fields, ticks=8)]
+    scope: {required_tags: [stage_elder, daytime, harvest_ripe, food_low]}
+
+  - id: elder-help-tend
+    type: directive
+    priority: 61
+    content: The crop is behind and the farmers cannot tend it all. You know these fields better than anyone. Give them an hour or two of weeding and watching. [!work(site=fields, ticks=6)]
+    scope: {required_tags: [stage_elder, daytime, crop_behind], tags: [food_low, fields_small]}

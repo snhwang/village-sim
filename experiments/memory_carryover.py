@@ -1,0 +1,174 @@
+#!/usr/bin/env python3
+"""Does what one villager remembers shape what the next one remembers?
+
+Every other measurement treats a listener as if its memory depended on itself
+alone. This one looks at pairs. For each fact a villager was told, it compares
+the teller's stored version with the listener's, and asks two things.
+
+  kind      does the listener file the news as trouble (hazard or sickness)
+            when the teller did, and not when the teller did not? The kind sets
+            the knows_<kind>_<place> tag, so it decides what the listener can
+            now do
+  hedging   does a hedged telling ("Ilsa says...", "I only heard...") produce a
+            hedged memory?
+
+Each is split by the listener's own allele at the locus that should matter
+(caution for kind, trust for hedging), so the teller's contribution and the
+listener's can be seen side by side.
+
+This is descriptive. A teller who filed something as trouble may have heard a
+more alarming event to begin with. The causal version, which swaps the
+teller's temperament and replays both steps, is
+experiments/two_step_counterfactual.py.
+
+    python experiments/memory_carryover.py <run_id> [<run_id> ...]
+    python experiments/memory_carryover.py --latest 6
+
+Writes results/memory_carryover.{json,md}. Needs no model or embedder.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+from datetime import datetime
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from hearthwick.config import ROOT  # noqa: E402
+from hearthwick.knowledge import EXPERIENCE_KINDS  # noqa: E402
+
+TROUBLE = {"hazard", "sickness"}
+
+# Attribution and doubt. Kept deliberately literal, so what counts as a hedge
+# can be read off this line rather than inferred from a model.
+HEDGE = re.compile(r"\b(says|said|claims|claimed|told me|I heard|I only|swears|"
+                   r"according to|rumou?r|apparently|supposedly)\b", re.I)
+
+
+def pairs(run_dir: Path) -> list[dict]:
+    """Every (teller's version, listener's version) the run stored."""
+    knowledge = json.loads((run_dir / "knowledge.json").read_text(encoding="utf-8"))
+    roster = None
+    with open(run_dir / "events.jsonl", encoding="utf-8") as events:
+        for line in events:
+            event = json.loads(line)
+            if event["type"] == "roster":
+                # every roster line, since a visitor adds itself on arrival
+                roster = roster or {}
+                roster.update({c["id"]: c["temperament"] for c in event["characters"]})
+    if roster is None:
+        raise SystemExit(f"{run_dir.name} has no roster event")
+
+    facts = {f["id"]: f for held in knowledge.values() for f in held
+             if f["kind"] not in EXPERIENCE_KINDS}
+    out = []
+    for fact in facts.values():
+        parent = facts.get(fact.get("parent"))
+        if fact["hop"] == 0 or parent is None:
+            continue
+        out.append({
+            "run": run_dir.name,
+            "teller_kind": parent["kind"], "listener_kind": fact["kind"],
+            "teller_hedged": bool(HEDGE.search(parent["text"])),
+            "listener_hedged": bool(HEDGE.search(fact["text"])),
+            "listener": roster.get(fact["holder"], {}),
+        })
+    return out
+
+
+def share(rows: list[dict], key: str) -> dict:
+    n = len(rows)
+    hits = sum(1 for r in rows if key == "trouble" and r["listener_kind"] in TROUBLE
+               or key == "hedged" and r["listener_hedged"])
+    return {"n": n, "count": hits, "pct": round(100 * hits / n, 1) if n else None}
+
+
+def analyse(rows: list[dict]) -> dict:
+    kind, hedge = [], []
+    for group, locus, allele in (("all listeners", None, None),
+                                 ("wary listeners", "caution", "wary"),
+                                 ("bold listeners", "caution", "bold")):
+        sub = [r for r in rows if locus is None or r["listener"].get(locus) == allele]
+        for told in (True, False):
+            chosen = [r for r in sub if (r["teller_kind"] in TROUBLE) == told]
+            kind.append({"listeners": group, "teller_said_trouble": told,
+                         **share(chosen, "trouble")})
+    for group, locus, allele in (("all listeners", None, None),
+                                 ("suspicious listeners", "trust", "suspicious"),
+                                 ("trusting listeners", "trust", "trusting")):
+        sub = [r for r in rows if locus is None or r["listener"].get(locus) == allele]
+        for told in (True, False):
+            chosen = [r for r in sub if r["teller_hedged"] == told]
+            hedge.append({"listeners": group, "teller_hedged": told,
+                          **share(chosen, "hedged")})
+    return {"pairs": len(rows), "kind": kind, "hedging": hedge}
+
+
+def to_markdown(data: dict) -> str:
+    m = data["meta"]
+    lines = [
+        "# Memory carryover", "",
+        f"{len(m['runs'])} run(s), {data['pairs']} told facts whose teller's version "
+        f"is also stored. Generated by `experiments/memory_carryover.py` on {m['date']}.",
+        "",
+        "Descriptive, not causal. See `experiments/two_step_counterfactual.py`.", "",
+        "## Kind: listener files it as trouble", "",
+        "| Listeners | Teller said trouble | Listener said trouble | n |",
+        "|---|---|---|---|",
+    ]
+    for r in data["kind"]:
+        lines.append(f"| {r['listeners']} | {'yes' if r['teller_said_trouble'] else 'no'} "
+                     f"| {r['pct']}% | {r['n']} |")
+    lines += ["", "## Hedging: listener's version is hedged", "",
+              "| Listeners | Teller hedged | Listener hedged | n |", "|---|---|---|---|"]
+    for r in data["hedging"]:
+        lines.append(f"| {r['listeners']} | {'yes' if r['teller_hedged'] else 'no'} "
+                     f"| {r['pct']}% | {r['n']} |")
+    return "\n".join(lines) + "\n"
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("runs", nargs="*")
+    parser.add_argument("--latest", type=int, default=0)
+    parser.add_argument("--out", default=str(ROOT / "results"))
+    args = parser.parse_args()
+
+    runs_dir = ROOT / "runs"
+    if args.latest:
+        dirs = sorted(d for d in runs_dir.iterdir()
+                      if (d / "knowledge.json").exists())[-args.latest:]
+    else:
+        dirs = [runs_dir / r for r in args.runs]
+    if not dirs:
+        raise SystemExit("name some runs, or pass --latest N")
+
+    rows = [row for d in dirs for row in pairs(d)]
+    data = {"meta": {"runs": [d.name for d in dirs],
+                     "date": datetime.now().strftime("%Y-%m-%d")},
+            **analyse(rows)}
+
+    print(f"{data['pairs']} told facts with the teller's version stored\n")
+    print("kind: listener files it as trouble")
+    for r in data["kind"]:
+        said = "trouble    " if r["teller_said_trouble"] else "not trouble"
+        print(f"  {r['listeners']:22} teller said {said} -> {r['pct']:5}%  (n={r['n']})")
+    print("\nhedging: listener's version is hedged")
+    for r in data["hedging"]:
+        said = "hedged    " if r["teller_hedged"] else "not hedged"
+        print(f"  {r['listeners']:22} teller {said} -> {r['pct']:5}%  (n={r['n']})")
+
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "memory_carryover.json").write_text(json.dumps(data, indent=2), encoding="utf-8")
+    (out / "memory_carryover.md").write_text(to_markdown(data), encoding="utf-8")
+    print(f"\nwrote {out / 'memory_carryover.json'} and .md")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,0 +1,20 @@
+# School, a child's placement (hearthwick/trades.py, hearthwick/school.py).
+#
+# Children spend the morning at the schoolyard. An elder teaches there. The
+# hours count toward graduating (GATES["child"].school). Each child is taught a
+# piece of news a day, and writes it through its own lens.
+
+instructions:
+  - id: child-school
+    type: directive
+    priority: 68
+    content: Mornings are for school. Go to the schoolyard, sit with the other children and listen to what the teacher has to say. [!work(site=schoolyard, ticks=12)]
+    scope: {required_tags: [stage_child, daytime], tags: [time_morning]}
+    metadata: {culture: school}
+
+  - id: elder-teach
+    type: directive
+    priority: 64
+    content: In the morning the children gather at the schoolyard. Go and teach them what you know of how things are done here. [!work(site=schoolyard, ticks=12)]
+    scope: {required_tags: [stage_elder, daytime], tags: [time_morning]}
+    metadata: {culture: school}

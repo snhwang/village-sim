@@ -1,0 +1,15 @@
+20260928-170529-seed1
+# The development run: the greater village for 40 in-game days (five years),
+# seed 1, with speech, on 2026-09-28 from 17:05 to 18:11. It is the case
+# study's source for careers chosen with a master, courtship and marriage, a
+# house built, and births, which the six measured runs predate.
+#
+# Build: Hearthwick 5a25290 and bear-dev 9c76dcd, both recorded clean in its
+# meta.json. Choosing a master by fondness (896646f) is in this build. The
+# shared foundation for speech (e52a23a) came after it, so its villagers
+# spoke from their speech instructions alone.
+#
+# Its reports go here, not over the paper's results:
+#   python experiments/trades.py 20260928-170529-seed1 --out results/development
+#   python experiments/couples.py 20260928-170529-seed1 --out results/development
+#   python experiments/family.py 20260928-170529-seed1 --out results/development

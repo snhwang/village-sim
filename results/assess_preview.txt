@@ -1,0 +1,17 @@
+32 passed in 175.04s (0:02:55)
+15 built things to judge, by Alda114
+Hearthwick Hour Bell (plot, at structure_3): keep - The bell serves a real purpose by marking the hours for the village, and its cost is modest enough to justify keeping it despite the food shortage.
+Grain Sifter (plot, at structure_4): keep - The village is short of food, and this sifter serves a real purpose for Gisla by separating grain from chaff, making the food supply more usable.
+mill floor (mill, at mill): keep - The mill floor shelters the grinding stones, which is essential for the mill to function and produce the flour the village desperately needs to address its food shortage.
+plow-turner (fields_3, at fields_3): keep - The plow-turner serves a vital purpose for the far fields by allowing the oxen to continue working without the labor-intensive process of unhitching and re-hitching, which is essential for the village to overcome its current food shortage.
+sick-bath (plot, at structure_7): keep - The sick-bath serves a real and necessary purpose for Hal by easing his aches, and its modest material cost is justified by the health it provides, even while the village is short of food.
+Mill Stone Hauler (mill, at mill): keep - The village is short of food, and this hoist is essential for maintaining the mill's operation by allowing the heavy grinding stones to be replaced, which directly supports the production of flour.
+self-turning mill wheel (mill, at mill): keep - The village is short of food, and this wheel is essential for Bertil to mill grain into flour, making its cost of 17.1 stone and 18.6 timber a worthwhile investment for the community's survival.
+Coggate (mill, at mill): keep - The Coggate is essential to the mill's operation, boosting yield by 2.0 times and directly addressing the village's food shortage with a reasonable material cost.
+Sturdy Mill Wheel (mill, at mill): keep - The Sturdy Mill Wheel serves a vital purpose by doubling the mill's yield, which is essential for the village's food supply, and its cost is justified by the significant increase in production.
+Gear Shelter (home, at home_36): keep - The shelter serves a real purpose for Runa134 by protecting their gear from the rain, and the 15.0 timber cost is a reasonable investment compared to the village's food shortage.
+Storm Bell (watchpost, at watchpost): keep - A storm warning at the watchpost is a vital safety measure for the village, and its modest cost in stone and iron is a worthwhile trade-off even while food is scarce.
+River Crossing Rope Bridge (east_road, at east_road): keep - The bridge serves a clear and practical purpose for Hedda96 and the village by providing a safe crossing over the river, and its cost is reasonable compared to the utility it provides.
+Plow Mender's Forge (plot, at structure_10): keep - The forge serves a vital purpose for the village by maintaining the plows needed for food production, and its modest cost of 21.8 stone and 8.5 timber is a worthwhile investment to ensure the fields can be worked once the rain stops.
+wide mill door with roofed lintel (mill, at mill): keep - The mill is the village's primary source of food, and keeping the grinding stones clean and functional is essential to meeting the village's urgent need for grain.
+wheel plow (fields, at fields): keep - The village is short of food, and this plow serves a real purpose by cutting soil to plant crops, which directly addresses that need.

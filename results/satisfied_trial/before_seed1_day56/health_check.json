@@ -1,0 +1,153 @@
+{
+  "run": "20261017-043036-seed1",
+  "read_to_day": 56,
+  "checks": [
+    {
+      "check": "model calls never answered",
+      "flag": false,
+      "figures": {
+        "speech_errors": 0,
+        "from": "record"
+      }
+    },
+    {
+      "check": "the granary empty for long",
+      "flag": false,
+      "figures": {
+        "longest empty streak by year": {
+          "0": 0,
+          "1": 0
+        },
+        "empty days by year": {
+          "0": 0,
+          "1": 0
+        }
+      }
+    },
+    {
+      "check": "news told to someone who had it",
+      "flag": false,
+      "figures": {
+        "share of tellings by year": {
+          "0": 0.859,
+          "1": 0.891
+        }
+      }
+    },
+    {
+      "check": "the same talk again and again",
+      "flag": false,
+      "figures": {
+        "most repeated talk a year": {
+          "0": 9,
+          "1": 14
+        },
+        "which": {
+          "0": [
+            "freya",
+            "bryn",
+            "a story from the old days"
+          ],
+          "1": [
+            "merrick",
+            "bryn",
+            "a story from the old days"
+          ]
+        }
+      }
+    },
+    {
+      "check": "decisions with a refused action",
+      "flag": false,
+      "figures": {
+        "share by year": {
+          "0": 0.555,
+          "1": 0.605
+        }
+      }
+    },
+    {
+      "check": "a one-shot lesson acted on again and again in a day",
+      "flag": true,
+      "figures": {
+        "most times in a day, by year": {
+          "0": 21,
+          "1": 29
+        },
+        "which (villager, lesson, day)": {
+          "0": [
+            "ilsa",
+            "learned-ilsa-sickness-warning",
+            4
+          ],
+          "1": [
+            "gisla",
+            "learned-gisla-wolf-threat",
+            29
+          ]
+        },
+        "villager-days over 12, by year": {
+          "0": 2,
+          "1": 1
+        },
+        "one-shot lessons written": 14
+      }
+    },
+    {
+      "check": "the live memory index growing without end",
+      "flag": false,
+      "figures": {
+        "live index at a year's last trim": {
+          "0": 1235,
+          "1": 2045
+        },
+        "per villager": {
+          "0": 41.2,
+          "1": 58.4
+        }
+      }
+    },
+    {
+      "check": "grown villagers standing idle",
+      "flag": false,
+      "figures": {
+        "idle share of waking frames by year": {
+          "0": 0.046,
+          "1": 0.054
+        }
+      }
+    },
+    {
+      "check": "grown villagers stuck in one place and activity",
+      "flag": false,
+      "figures": {
+        "still for 48+ waking ticks, by year": {},
+        "first cases": []
+      }
+    },
+    {
+      "check": "years without a birth",
+      "flag": false,
+      "figures": {
+        "births by year": {
+          "0": 4,
+          "1": 4
+        },
+        "longest run of years without": 0,
+        "people at a year's start": {
+          "0": 30,
+          "1": 35
+        }
+      }
+    },
+    {
+      "check": "deaths before old age",
+      "flag": false,
+      "figures": {
+        "deaths": 0,
+        "young": []
+      }
+    }
+  ],
+  "flags": 1
+}

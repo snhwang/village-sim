@@ -1,0 +1,255 @@
+{
+  "run": "20261021-151653-seed3",
+  "read_to_day": null,
+  "checks": [
+    {
+      "check": "model calls never answered",
+      "flag": false,
+      "figures": {
+        "speech_errors": 0,
+        "from": "record"
+      }
+    },
+    {
+      "check": "the run without the embedder it asked for",
+      "flag": false,
+      "figures": {
+        "asked": "service",
+        "used": "service"
+      }
+    },
+    {
+      "check": "servers that stopped answering, waited out",
+      "flag": false,
+      "figures": {
+        "model": {
+          "outages": 0,
+          "seconds": 0.0
+        },
+        "embedder": {
+          "outages": 0,
+          "seconds": 0.0
+        }
+      }
+    },
+    {
+      "check": "errors in the console log",
+      "flag": false,
+      "figures": {
+        "Replacing duplicate instruction": 718
+      }
+    },
+    {
+      "check": "the granary empty for long",
+      "flag": false,
+      "figures": {
+        "longest empty streak by year": {
+          "0": 0,
+          "1": 0
+        },
+        "empty days by year": {
+          "0": 0,
+          "1": 0
+        }
+      }
+    },
+    {
+      "check": "news told to someone who had it",
+      "flag": false,
+      "figures": {
+        "share of tellings by year": {
+          "0": 0.738,
+          "1": 0.829
+        }
+      }
+    },
+    {
+      "check": "the same talk again and again",
+      "flag": false,
+      "figures": {
+        "most repeated talk a year": {
+          "0": 11,
+          "1": 11
+        },
+        "which": {
+          "0": [
+            "bryn",
+            "freya",
+            "a question about the village"
+          ],
+          "1": [
+            "bryn",
+            "freya",
+            "a question about the village"
+          ]
+        }
+      }
+    },
+    {
+      "check": "decisions with a refused action",
+      "flag": false,
+      "figures": {
+        "share by year": {
+          "0": 0.514,
+          "1": 0.558
+        }
+      }
+    },
+    {
+      "check": "a one-shot lesson acted on again and again in a day",
+      "flag": false,
+      "figures": {
+        "most times in a day, by year": {
+          "0": 2,
+          "1": 1
+        },
+        "which (villager, lesson, day)": {
+          "0": [
+            "ilsa",
+            "learned-ilsa-ask-village-questions",
+            16
+          ],
+          "1": [
+            "ilsa",
+            "learned-ilsa-ask-village-questions",
+            29
+          ]
+        },
+        "villager-days over 12, by year": {
+          "0": 0,
+          "1": 0
+        },
+        "one-shot lessons written": 15
+      }
+    },
+    {
+      "check": "what lessons declared as they were written",
+      "flag": false,
+      "figures": {
+        "lessons": 15,
+        "recurs": {
+          "each_day": 2,
+          "each_time": 13
+        },
+        "lasts": {
+          "life": 3,
+          "news": 11,
+          "season": 1
+        },
+        "answering no news": 2
+      }
+    },
+    {
+      "check": "the same warning to the same listener again and again in a day",
+      "flag": false,
+      "figures": {
+        "most times in a day, by year": {
+          "0": 3,
+          "1": 2
+        },
+        "which (day, warner, listener, topic)": {
+          "0": [
+            14,
+            "hilde28",
+            "hal",
+            "the water at the well has turned"
+          ],
+          "1": [
+            28,
+            "freya",
+            "nell",
+            "danger abroad that could come this way"
+          ]
+        },
+        "listener-days over 3, by year": {
+          "0": 0,
+          "1": 0
+        }
+      }
+    },
+    {
+      "check": "a villager warning again and again in a day",
+      "flag": false,
+      "figures": {
+        "most warnings by one villager in a day, by year": {
+          "0": 27,
+          "1": 28
+        },
+        "which (day, warner)": {
+          "0": [
+            14,
+            "gisla"
+          ],
+          "1": [
+            44,
+            "gorm"
+          ]
+        },
+        "villager-days over 40, by year": {
+          "0": 0,
+          "1": 0
+        },
+        "warnings that carried nothing, by year": {
+          "0": 285,
+          "1": 323
+        }
+      }
+    },
+    {
+      "check": "the live memory index growing without end",
+      "flag": false,
+      "figures": {
+        "live index at a year's last trim": {
+          "0": 997,
+          "1": 1291
+        },
+        "per villager": {
+          "0": 32.2,
+          "1": 36.9
+        }
+      }
+    },
+    {
+      "check": "grown villagers standing idle",
+      "flag": false,
+      "figures": {
+        "idle share of waking frames by year": {
+          "0": 0.019,
+          "1": 0.026
+        }
+      }
+    },
+    {
+      "check": "grown villagers stuck in one place and activity",
+      "flag": false,
+      "figures": {
+        "still for 48+ waking ticks, by year": {},
+        "first cases": []
+      }
+    },
+    {
+      "check": "years without a birth",
+      "flag": false,
+      "figures": {
+        "births by year": {
+          "0": 4,
+          "1": 3
+        },
+        "longest run of years without": 0,
+        "people at a year's start": {
+          "0": 31,
+          "1": 35
+        }
+      }
+    },
+    {
+      "check": "deaths before old age",
+      "flag": false,
+      "figures": {
+        "deaths": 0,
+        "young": []
+      }
+    }
+  ],
+  "flags": 0
+}

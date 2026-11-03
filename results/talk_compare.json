@@ -1,0 +1,5061 @@
+{
+ "run": "20261003-093714-seed1",
+ "checkpoint_tick": 26640,
+ "model": "Qwen3.8-27B",
+ "seed": 0,
+ "summary": {
+  "A": {
+   "conversations": 50,
+   "lines": 156,
+   "lines a conversation": 3.1,
+   "words a line": 17.7,
+   "lines asking who told": 9,
+   "lines on the weather": 92,
+   "lines opening aye, good or morning": 27,
+   "later lines still on the opening topic": "34 of 106"
+  },
+  "B": {
+   "conversations": 50,
+   "lines": 242,
+   "lines a conversation": 4.8,
+   "words a line": 29.4,
+   "lines asking who told": 5,
+   "lines on the weather": 83,
+   "lines opening aye, good or morning": 49,
+   "later lines still on the opening topic": "50 of 192"
+  }
+ },
+ "pairs": [
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "shrine",
+   "who": [
+    "Brit",
+    "Cilla50"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Brit",
+      "text": "Morning, Cilla. I saw you walking past the fields earlier. How is the blight holding up today?",
+      "instructions": [
+       "persona-brit",
+       "adult-speech",
+       "role-healer-speech"
+      ]
+     },
+     {
+      "speaker": "Cilla50",
+      "text": "Worse, Brit. The water's all tainted now. I saw a leaf curl black before the sun was even up.",
+      "instructions": [
+       "persona-cilla50",
+       "apprentice-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Brit",
+      "text": "Morning, Cilla. You look a bit pale, have you eaten your fill? I was just checking the shrine herbs, but I couldn't help wondering how the blight is creeping through the fields.",
+      "instructions": [
+       "persona-brit",
+       "role-healer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Cilla50",
+      "text": "Barely touched my porridge. Elin says the blight is moving fast, blackening the stalks near the stream so fast it looks like a shadow spreading. I worry it will reach the well water.",
+      "instructions": [
+       "persona-cilla50",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Brit",
+      "text": "Elin is likely right to worry, though I\u2019d want to see it myself to be sure. If the stalks near the stream are blackening, we must watch the well closely. I\u2019ll check the water before noon to ensure it\u2019s still safe.",
+      "instructions": [
+       "persona-brit",
+       "role-healer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Cilla50",
+      "text": "Good, I was hoping you'd do that. If the water turns bad, we're stuck with nothing but what's in the clay pit. I heard Corin says the fighting is on the high track now, which makes me think the danger is closer than we'd like.",
+      "instructions": [
+       "persona-cilla50",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Brit",
+      "text": "Corin is a sharp observer, but I haven't seen any smoke or heard boots on the high track myself. I\u2019d rather not guess at danger I can\u2019t see. Let\u2019s just keep an eye on the water and the fields for now.",
+      "instructions": [
+       "persona-brit",
+       "role-healer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Cilla50",
+      "text": "Fair enough, I don't like guessing either. But if the water goes bad, we\u2019re stuck with nothing but what\u2019s in the clay pit. I heard Corin says the fighting is on the high track now, which makes me think the danger is closer than we\u2019d like.",
+      "instructions": [
+       "persona-cilla50",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 185,
+   "place": null,
+   "who": [
+    "Maja",
+    "Cilla"
+   ],
+   "A": {
+    "topic": "the water at the well has turned",
+    "lines": [
+     {
+      "speaker": "Maja",
+      "text": "This rain won't wash the sickness from the well. I need to know if you've seen the water clear yet, Cilla.",
+      "instructions": [
+       "persona-maja",
+       "adult-speech",
+       "role-farmer-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Cilla",
+      "text": "No, I have not seen it clear. The rain is still falling, and I have not gone to the well yet this morning.",
+      "instructions": [
+       "persona-cilla",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Maja",
+      "text": "Then we are still drinking poison. Keep the bucket away from Elin\u2019s lips until I check the bottom.",
+      "instructions": [
+       "persona-maja",
+       "adult-speech",
+       "role-farmer-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the water at the well has turned",
+    "lines": [
+     {
+      "speaker": "Maja",
+      "text": "The well water is no good. I've seen the color, and it\u2019s sickening the livestock too. I\u2019m not going to risk drawing from it until the source is found.",
+      "instructions": [
+       "persona-maja",
+       "role-farmer-speech",
+       "temp-reserved-speech"
+      ]
+     },
+     {
+      "speaker": "Cilla",
+      "text": "That water looked like bile when I dipped my pail this morning. I've stopped trusting it for the goats too, but who's you saying put their hand to the source?",
+      "instructions": [
+       "persona-cilla",
+       "role-farmer-speech",
+       "temp-suspicious-speech"
+      ]
+     },
+     {
+      "speaker": "Maja",
+      "text": "No one has found the source yet. The water is bad, and that\u2019s the only thing I know for certain.",
+      "instructions": [
+       "persona-maja",
+       "role-farmer-speech",
+       "temp-reserved-speech"
+      ]
+     },
+     {
+      "speaker": "Cilla",
+      "text": "Well, that\u2019s a fact I can stand by. But with the blight talk and the river trouble, I\u2019m not about to drink from a well that\u2019s gone strange. Who told you it was safe to leave it alone?",
+      "instructions": [
+       "persona-cilla",
+       "role-farmer-speech",
+       "temp-suspicious-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "inn",
+   "who": [
+    "Liv34",
+    "Dag48"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Liv34",
+      "text": "Good morning, Dag. Saw the blight cut back yesterday. Hope the soil isn't already spoiled for the rest of the plot.",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "adult-speech"
+      ]
+     },
+     {
+      "speaker": "Dag48",
+      "text": "Sena always said the earth holds a grudge. Rain washes it clean by evening, but that grain at the mill? That\u2019s gone.",
+      "instructions": [
+       "persona-dag48",
+       "adult-speech",
+       "role-farmer-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-embellishing-speech",
+       "temp-bold-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Liv34",
+      "text": "Morning, Dag. Heard the blight\u2019s been cut out of the fields, but I still can\u2019t stop worrying about the rest. How\u2019s your soil looking this morning?",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Dag48",
+      "text": "My soil\u2019s holding steady, though the worms\u2019ve been quiet lately. It\u2019s dry enough to crack your boots if you walk the furrows wrong, and the barley\u2019s thinning out where the frost lingered too long.",
+      "instructions": [
+       "persona-dag48",
+       "role-farmer-speech",
+       "temp-embellishing-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Liv34",
+      "text": "Quiet worms and cracking boots, eh? That frost sure left its mark on the barley. I\u2019m hoping the rain turns soon, or we\u2019ll be scraping by this season.",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Dag48",
+      "text": "Rain\u2019s a gamble, but I\u2019d rather bet on a drizzle than another hard snap. The barley\u2019s thin, but it\u2019s got roots, and if the soil stays damp enough, it\u2019ll stretch a bit before the summer heat really sets in.",
+      "instructions": [
+       "persona-dag48",
+       "role-farmer-speech",
+       "temp-embellishing-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Liv34",
+      "text": "A drizzle would be a blessing, not a gamble. I\u2019ll be watching the sky like a hawk.",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "home_16",
+   "who": [
+    "Jory",
+    "Maja74"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Jory",
+      "text": "You're up early, Maja. Did you hear the talk about raiders on the east road?",
+      "instructions": [
+       "persona-jory",
+       "adult-speech",
+       "role-guard-speech"
+      ]
+     },
+     {
+      "speaker": "Maja74",
+      "text": "Yes, Brit51 said he saw them. Is it true? I hope not, I like the road.",
+      "instructions": [
+       "persona-maja74",
+       "child-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech",
+       "temp-plainspoken-speech",
+       "food-talk",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Jory",
+      "text": "It is true. I saw them myself on the east road. The low road is washed out, so they come the high way.",
+      "instructions": [
+       "persona-jory",
+       "adult-speech",
+       "role-guard-speech"
+      ]
+     },
+     {
+      "speaker": "Maja74",
+      "text": "The rain washed it out. That makes sense. I\u2019m glad you saw them, so we know for sure.",
+      "instructions": [
+       "persona-maja74",
+       "child-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech",
+       "temp-plainspoken-speech",
+       "food-talk",
+       "temp-inquisitive-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Jory",
+      "text": "Did you see the dust on the east road this morning? I saw riders moving fast toward the valley.",
+      "instructions": [
+       "persona-jory",
+       "role-guard-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Maja74",
+      "text": "I was at the well, so I missed it. Did you hear who they were? It makes me nervous thinking about Brit51\u2019s raiders.",
+      "instructions": [
+       "persona-maja74",
+       "temp-gregarious-speech",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Jory",
+      "text": "I didn\u2019t catch their names, just the number of them. They\u2019re heading toward the forest edge, so we\u2019ll likely hear more soon.",
+      "instructions": [
+       "persona-jory",
+       "role-guard-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Maja74",
+      "text": "That sounds like a lot of people. I hope Dagny is awake to watch the road. Do you think they\u2019ll stop at the bridge or keep going?",
+      "instructions": [
+       "persona-maja74",
+       "temp-gregarious-speech",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Jory",
+      "text": "Dagny is already at the post. I reckon they\u2019ll push past the bridge and head for the far fields, but I\u2019m watching the road myself too.",
+      "instructions": [
+       "persona-jory",
+       "role-guard-speech",
+       "temp-inquisitive-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "inn",
+   "who": [
+    "Eilif",
+    "Oda59"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Eilif",
+      "text": "Hedda saw raiders on the east road herself. That path is too dangerous for trade now.",
+      "instructions": [
+       "persona-eilif",
+       "adult-speech",
+       "role-farmer-speech"
+      ]
+     },
+     {
+      "speaker": "Oda59",
+      "text": "Rain\u2019s coming down hard. Osric says the fighting\u2019s past the forest edge now. That path\u2019s likely to get worse before it gets better.",
+      "instructions": [
+       "persona-oda59",
+       "apprentice-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Eilif",
+      "text": "Morning, Oda. You look pale. Did you hear the news about the raiders on the east road? I saw Hedda talking to her mother, and the grain prices are going to climb right up before we can save a thing for winter.",
+      "instructions": [
+       "persona-eilif",
+       "role-farmer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Oda59",
+      "text": "Yes. I heard it. The prices are going to double before we can store a single bushel for winter. With the new tax, our baskets are already stripped.",
+      "instructions": [
+       "persona-oda59",
+       "temp-reserved-speech",
+       "temp-plainspoken-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Eilif",
+      "text": "That\u2019s what I feared. With the lord\u2019s men counting heads, we\u2019re squeezed from both sides. I\u2019m going to the fields to check the soil before the rain comes; if the harvest fails, we\u2019re done.",
+      "instructions": [
+       "persona-eilif",
+       "role-farmer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Oda59",
+      "text": "The rain is due by noon. I'll be at the forge, helping Corin. Don't worry about the fields; the clay pit is dry enough.",
+      "instructions": [
+       "persona-oda59",
+       "temp-reserved-speech",
+       "temp-plainspoken-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Eilif",
+      "text": "The clay pit is dry, but the fields aren't. I need to know if the soil holds water or dries out fast. If I can't get the seeds down before noon, we lose the whole crop to this rain.",
+      "instructions": [
+       "persona-eilif",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "schoolyard",
+   "who": [
+    "Liv67",
+    "Lorne76"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Liv67",
+      "text": "Rain again. Did you hear Cilla saw raiders on the east road? Are they coming for us?",
+      "instructions": [
+       "persona-liv67",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-plainspoken-speech",
+       "temp-gregarious-speech",
+       "temp-trusting-speech",
+       "temp-wary-speech",
+       "temp-settled-speech",
+       "temp-easygoing-speech"
+      ]
+     },
+     {
+      "speaker": "Lorne76",
+      "text": "Rain\u2019s bad for soup. Who told Cilla? I only heard they\u2019re camped there. Is it true?",
+      "instructions": [
+       "persona-lorne76",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-gregarious-speech",
+       "temp-plainspoken-speech",
+       "temp-inquisitive-speech",
+       "temp-suspicious-speech"
+      ]
+     },
+     {
+      "speaker": "Liv67",
+      "text": "I don't know who told Cilla? I didn't. You just said it. Are they really camped there?",
+      "instructions": [
+       "persona-liv67",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-plainspoken-speech",
+       "temp-gregarious-speech",
+       "temp-trusting-speech",
+       "temp-wary-speech",
+       "temp-settled-speech",
+       "temp-easygoing-speech"
+      ]
+     },
+     {
+      "speaker": "Lorne76",
+      "text": "I was told so. Maybe for a meal? I don't see them. Who said it for sure?",
+      "instructions": [
+       "persona-lorne76",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-gregarious-speech",
+       "temp-plainspoken-speech",
+       "temp-inquisitive-speech",
+       "temp-suspicious-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Liv67",
+      "text": "Morning, Lorne. Did you hear the fuss about the raiders on the east road? My dad says they are closer than we thought, so I am not in a hurry to go out there today.",
+      "instructions": [
+       "persona-liv67",
+       "temp-plainspoken-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Lorne76",
+      "text": "Yeah, I heard it too. My dad says the lord's men are counting people on the road, so it is close. I am not in a hurry either, and I am not going anywhere near that road today.",
+      "instructions": [
+       "persona-lorne76",
+       "temp-gregarious-speech",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Liv67",
+      "text": "That is what my dad said too. It sounds like the fighting is getting closer. I am glad we are just here at school today, counting apples or something.",
+      "instructions": [
+       "persona-liv67",
+       "temp-plainspoken-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Lorne76",
+      "text": "Yeah, counting apples is good. I heard the smoke is reaching our fields, which is not good. But we are safe here in the valley for now.",
+      "instructions": [
+       "persona-lorne76",
+       "temp-gregarious-speech",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Liv67",
+      "text": "My dad says the smoke is coming from the high track, not the fields. I am glad we are safe here in the valley.",
+      "instructions": [
+       "persona-liv67",
+       "temp-plainspoken-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": null,
+   "who": [
+    "Runa65",
+    "Frida75"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Runa65",
+      "text": "Frida, is it going to rain? Liv said raiders are on the east road. Did you hear that too?",
+      "instructions": [
+       "persona-runa65",
+       "child-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech",
+       "temp-inquisitive-speech",
+       "food-talk",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "It\u2019s raining hard. I heard it. Were they big?",
+      "instructions": [
+       "persona-frida75",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-reserved-speech",
+       "temp-embellishing-speech"
+      ]
+     },
+     {
+      "speaker": "Runa65",
+      "text": "I don\u2019t know how big. Liv just said Frode saw them. My tummy hurts, I want porridge.",
+      "instructions": [
+       "persona-runa65",
+       "child-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech",
+       "temp-inquisitive-speech",
+       "food-talk",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "Frode? I don\u2019t know him. Porridge is gone, only cold bread.",
+      "instructions": [
+       "persona-frida75",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-reserved-speech",
+       "temp-embellishing-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Runa65",
+      "text": "Morning, Frida. Did you hear the news about the raiders on the east road? I\u2019m worried it\u2019ll make our grain prices go up even more before winter.",
+      "instructions": [
+       "persona-runa65",
+       "temp-gregarious-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "I heard Brit51 saw them. But I don't know what the grain costs do, it's too far away. My stomach is already growling for breakfast. Did you eat anything?",
+      "instructions": [
+       "persona-frida75",
+       "temp-inquisitive-speech",
+       "temp-reserved-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Runa65",
+      "text": "Brit? I thought it was Frode, but maybe they saw the same thing. I had some thin porridge earlier, but it didn't fill me up. Do you think Edda has any more of that stale bread left for us?",
+      "instructions": [
+       "persona-runa65",
+       "temp-gregarious-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "I don't know about Edda, I didn't ask. My mother had a bit of porridge, but it was mostly water. I'd rather keep my coins for the market if you want bread.",
+      "instructions": [
+       "persona-frida75",
+       "temp-inquisitive-speech",
+       "temp-reserved-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "inn",
+   "who": [
+    "Dunn",
+    "Frida75"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Dunn",
+      "text": "Morning, little one. That rain's coming in sideways. You hear the word about raiders on the east road yet?",
+      "instructions": [
+       "persona-dunn",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "It's pouring in. Yes. Brit51 saw them. Did he run?",
+      "instructions": [
+       "persona-frida75",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-reserved-speech",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "I don't know a Brit51. But if the road is washed out, they're stuck up there. I'm fixing the mill door first.",
+      "instructions": [
+       "persona-dunn",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "Why fix door? Raiders near? My stomach hurts.",
+      "instructions": [
+       "persona-frida75",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-reserved-speech",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Dunn",
+      "text": "Morning, little one. You look like you've been up with the lark. I've got flour all over my hands and a story about a stubborn gear that just won't quit, but I'd rather listen to you if you've got something on your mind.",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "Did you see the men at the crossroads? They\u2019re counting every soul. Word is it\u2019s for a new tax that will eat up the whole harvest. Where did you hear that from?",
+      "instructions": [
+       "persona-frida75",
+       "temp-reserved-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "I didn\u2019t see them myself, but Stranger16 swears he saw them at the crossroads pushing that list into men\u2019s hands before the sun was up. It\u2019s enough to make a man\u2019s stomach turn when he\u2019s already watching the grain stores. What do you make of it?",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "I don't know for sure, but if they're counting heads, the tax is real. My father says the harvest might be gone.",
+      "instructions": [
+       "persona-frida75",
+       "temp-reserved-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "I\u2019m sorry to hear that, but I\u2019ve seen plenty of storms pass through. I\u2019ll keep the mill running smooth and the best I can, and if we all stick together, we might just get through it.",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": null,
+   "who": [
+    "Mads81",
+    "Kell73"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Mads81",
+      "text": "Is it true raiders came? My tummy is empty.",
+      "instructions": [
+       "persona-mads81",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-gregarious-speech",
+       "temp-embellishing-speech",
+       "temp-trusting-speech",
+       "temp-wary-speech",
+       "temp-inquisitive-speech",
+       "temp-diligent-speech"
+      ]
+     },
+     {
+      "speaker": "Kell73",
+      "text": "Rain is bad for raiders. I don't know if they are here. Eat.",
+      "instructions": [
+       "persona-kell73",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech",
+       "temp-suspicious-speech",
+       "temp-wary-speech",
+       "temp-settled-speech",
+       "temp-easygoing-speech"
+      ]
+     },
+     {
+      "speaker": "Mads81",
+      "text": "Dagny says stay near the inn. I\u2019m hungry, but I don\u2019t know where to find food.",
+      "instructions": [
+       "persona-mads81",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-gregarious-speech",
+       "temp-embellishing-speech",
+       "temp-trusting-speech",
+       "temp-wary-speech",
+       "temp-inquisitive-speech",
+       "temp-diligent-speech"
+      ]
+     },
+     {
+      "speaker": "Kell73",
+      "text": "Dagny is right. Stay near. Mabel has soup. Go ask her.",
+      "instructions": [
+       "persona-kell73",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech",
+       "temp-suspicious-speech",
+       "temp-wary-speech",
+       "temp-settled-speech",
+       "temp-easygoing-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Mads81",
+      "text": "Mama says the big scary men are gone, but the road is quiet now. Did you see them run away into the forest?",
+      "instructions": [
+       "persona-mads81",
+       "temp-gregarious-speech",
+       "temp-embellishing-speech"
+      ]
+     },
+     {
+      "speaker": "Kell73",
+      "text": "I did not. Mama says they are gone, so I believe her. The quiet feels wrong, though.",
+      "instructions": [
+       "persona-kell73",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech"
+      ]
+     },
+     {
+      "speaker": "Mads81",
+      "text": "The quiet feels like a held breath. I saw a wolf\u2019s shadow stretch long over the grass, making the air feel heavy and still.",
+      "instructions": [
+       "persona-mads81",
+       "temp-gregarious-speech",
+       "temp-embellishing-speech"
+      ]
+     },
+     {
+      "speaker": "Kell73",
+      "text": "Cilla says the wolves are already in the high pastures. That shadow was likely one of them.",
+      "instructions": [
+       "persona-kell73",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": null,
+   "who": [
+    "Hedda70",
+    "Kell79"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Hedda70",
+      "text": "Is it still raining? I saw the raiders on the east road. Did you?",
+      "instructions": [
+       "persona-hedda70",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Kell79",
+      "text": "Yes. I saw them too. Cilla said it is a whole band.",
+      "instructions": [
+       "persona-kell79",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech",
+       "temp-trusting-speech",
+       "temp-wary-speech",
+       "temp-settled-speech"
+      ]
+     },
+     {
+      "speaker": "Hedda70",
+      "text": "Did Cilla see them, or did she hear? I only saw a few.",
+      "instructions": [
+       "persona-hedda70",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Kell79",
+      "text": "Cilla saw them. She said a whole band.",
+      "instructions": [
+       "persona-kell79",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech",
+       "temp-trusting-speech",
+       "temp-wary-speech",
+       "temp-settled-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Hedda70",
+      "text": "I saw the raiders on the east road this morning. They were moving fast, and the horses were scared. Did you see them too, or did you just hear the dogs barking?",
+      "instructions": [
+       "persona-hedda70",
+       "temp-inquisitive-speech",
+       "temp-suspicious-speech"
+      ]
+     },
+     {
+      "speaker": "Kell79",
+      "text": "I didn't see them. I was at the schoolyard. Cilla said she saw a band, but I don't know if that's true. The dogs are stillness on the east road worries me more than the noise.",
+      "instructions": [
+       "persona-kell79",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech"
+      ]
+     },
+     {
+      "speaker": "Hedda70",
+      "text": "Cilla was at the forge, not the road. She wouldn\u2019t know. I saw dust and a lone rider, but the quiet now is worse. Who told Cilla she saw a band?",
+      "instructions": [
+       "persona-hedda70",
+       "temp-inquisitive-speech",
+       "temp-suspicious-speech"
+      ]
+     },
+     {
+      "speaker": "Kell79",
+      "text": "I don't know who told Cilla. She just says she saw them. If it was just a lone rider, that\u2019s better, but the quiet is strange.",
+      "instructions": [
+       "persona-kell79",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech"
+      ]
+     },
+     {
+      "speaker": "Hedda70",
+      "text": "Cilla\u2019s word is thin. I saw the dust myself. That lone rider vanished toward the forest edge, leaving the road too quiet. Do you think they\u2019re hiding?",
+      "instructions": [
+       "persona-hedda70",
+       "temp-inquisitive-speech",
+       "temp-suspicious-speech"
+      ]
+     },
+     {
+      "speaker": "Kell79",
+      "text": "I don't know. They could be anywhere. I'm not hiding in the forest, so I can't say for sure.",
+      "instructions": [
+       "persona-kell79",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "inn",
+   "who": [
+    "Liv34",
+    "Dag48"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Liv34",
+      "text": "Word is the blight's still eating the soil. You go out with me to look?",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "adult-speech"
+      ]
+     },
+     {
+      "speaker": "Dag48",
+      "text": "Rain\u2019ll wash it clean. I\u2019ve got seeds to save before that rot spreads to the new fields.",
+      "instructions": [
+       "persona-dag48",
+       "adult-speech",
+       "role-farmer-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-embellishing-speech",
+       "temp-bold-speech"
+      ]
+     },
+     {
+      "speaker": "Liv34",
+      "text": "Water won't wash rot out of the earth. Watch the new fields, Dag, they're next.",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "adult-speech"
+      ]
+     },
+     {
+      "speaker": "Dag48",
+      "text": "Aye, I'll be there. The rain's heavy enough to drown the blight.",
+      "instructions": [
+       "persona-dag48",
+       "adult-speech",
+       "role-farmer-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-embellishing-speech",
+       "temp-bold-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Liv34",
+      "text": "Morning, Dag. You look like you haven't slept since the frost broke. How's your back holding up after cutting out that rot?",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Dag48",
+      "text": "Sky\u2019s clearing finally, good for the seed. Back\u2019s stiff, but it\u2019s nothing compared to the cold that bit my hands in the dark.",
+      "instructions": [
+       "persona-dag48",
+       "role-farmer-speech",
+       "temp-embellishing-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Liv34",
+      "text": "Good, good. That cold bites deep. You\u2019ll want to wrap those hands before you head out. How did the seed turn out?",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Dag48",
+      "text": "Most of it\u2019s still good, though the frost chewed through the top layer. I\u2019ll spread what\u2019s left thin and hope for a miracle.",
+      "instructions": [
+       "persona-dag48",
+       "role-farmer-speech",
+       "temp-embellishing-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Liv34",
+      "text": "A miracle\u2019s a fine word for it, but I\u2019dag. I\u2019m spreading mine thin too, praying the soil holds. You got enough to cover the new fields, or are we rationing?",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": null,
+   "who": [
+    "Garrick",
+    "Bryn"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Garrick",
+      "text": "Morning, Bryn. Rain\u2019s coming down hard on the mill roof again. Did you hear the talk about raiders on the east road?",
+      "instructions": [
+       "persona-garrick",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Bryn",
+      "text": "Aye, I saw them myself. The rain won\u2019t stop at the forest edge, so keep your wits about you.",
+      "instructions": [
+       "persona-bryn",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-reserved-speech"
+      ]
+     },
+     {
+      "speaker": "Garrick",
+      "text": "Keep your wits? I\u2019m already mending the mill gate in this downpour. If they come, they\u2019ll find more than just rain waiting.",
+      "instructions": [
+       "persona-garrick",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Garrick",
+      "text": "Morning, Bryn. The flour\u2019s running low, and I could use a hand checking the grindstone before it jams. What\u2019s keeping you up so early?",
+      "instructions": [
+       "persona-garrick",
+       "role-crafter-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Bryn",
+      "text": "The millstone is a matter for you, not me. I was up because the lord\u2019s men were at the crossroads before dawn, marking every soul. Keep your coin hidden and stay low today.",
+      "instructions": [
+       "persona-bryn",
+       "role-healer-speech",
+       "temp-reserved-speech"
+      ]
+     },
+     {
+      "speaker": "Garrick",
+      "text": "Hush now, keep your voice down. I heard the same from Jorun, and it sounds grim for the harvest. I\u2019m mending a door frame for the east road, so I\u2019ll keep my head down. You\u2019ve a busy day?",
+      "instructions": [
+       "persona-garrick",
+       "role-crafter-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Bryn",
+      "text": "The shrine is full of aches and fevers, and the bread is thin. I have no time for door frames, so mind your own.",
+      "instructions": [
+       "persona-bryn",
+       "role-healer-speech",
+       "temp-reserved-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "home_12",
+   "who": [
+    "Jorun",
+    "Gunne36"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Jorun",
+      "text": "Rain's coming in heavy. Did you check the east rows? That blight won't wait for us.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "No, Jorun. I've only seen the rot spread. With that rain, the whole east rows will rot before we can work them.",
+      "instructions": [
+       "persona-gunne36",
+       "adult-speech",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Jorun",
+      "text": "Then we lose the east rows. The rain\u2019s coming, and that rot spreads fast. Let\u2019s hope the rest holds.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "Aye, the rest must hold. I\u2019ll check the soil later, but right now it\u2019s just rain and waiting.",
+      "instructions": [
+       "persona-gunne36",
+       "adult-speech",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Jorun",
+      "text": "The soil is still cold, but the blight cuts deep. I saw the rot spread past the ford this morning.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "Cold soil and rot? That's a bad mix, Jorun. I thought it was only touching the edge, not cutting deep like that. Do you think we'll lose the whole row, or just the patch by the stream?",
+      "instructions": [
+       "persona-gunne36",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Jorun",
+      "text": "It\u2019s not just the edge anymore; the rot is moving faster than the cold can stop it. I fear we\u2019ll lose the whole row, not just the patch by the stream.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "If it\u2019s moving that fast, we can\u2019t just hope the cold stops it. We need to dig it up before it jumps to the healthy rows. I\u2019ll grab my tools and meet you at the fields in a half hour.",
+      "instructions": [
+       "persona-gunne36",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Jorun",
+      "text": "Meet me at the east end before the sun gets high. We need to dig deep to be sure we catch the roots, not just the leaves.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "fields",
+   "who": [
+    "Odd39",
+    "Bertil"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Odd39",
+      "text": "I heard Hedda saw raiders on the east road. Did you see them too, Bertil?",
+      "instructions": [
+       "persona-odd39",
+       "adult-speech",
+       "role-healer-speech"
+      ]
+     },
+     {
+      "speaker": "Bertil",
+      "text": "Rain's coming down, but I've not seen a soul on the east road. How's Hedda certain it was raiders?",
+      "instructions": [
+       "persona-bertil",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Odd39",
+      "text": "She says she saw them, so I take her word for it. We must be wary.",
+      "instructions": [
+       "persona-odd39",
+       "adult-speech",
+       "role-healer-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Odd39",
+      "text": "Morning, Bertil. You look tense. What\u2019s on your mind out here in the fields?",
+      "instructions": [
+       "persona-odd39",
+       "role-healer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Bertil",
+      "text": "Word says raiders on the east road, and I\u2019m not sleeping well with my seedlings still wet. If trade slows, there\u2019s no bread for winter, and that worries me more than any thief.",
+      "instructions": [
+       "persona-bertil",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Odd39",
+      "text": "Cold air this morning. You\u2019re right to worry about the roads; if the low ford stays washed out, goods will be scarce until it\u2019s fixed. Raiders are a problem, but empty shelves are a harder one to heal.",
+      "instructions": [
+       "persona-odd39",
+       "role-healer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Bertil",
+      "text": "The cold bites deep, but I\u2019d rather freeze than watch the market empty. I\u2019ve heard the ford is washed out, but I haven\u2019t seen it with my own eyes.",
+      "instructions": [
+       "persona-bertil",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Odd39",
+      "text": "The frost is sharp this morning. You\u2019re right to worry; the low road is washed out at the ford, so goods coming in that way are going to be delayed and scarce until it's fixed.",
+      "instructions": [
+       "persona-odd39",
+       "role-healer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Bertil",
+      "text": "The frost is sharp enough to crack stone, but that washed-out ford is the real chill. If goods don\u2019t come in, we\u2019re stuck with what we\u2019ve got, and that\u2019s not enough for winter.",
+      "instructions": [
+       "persona-bertil",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "mill",
+   "who": [
+    "Gisla",
+    "Garrick"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Gisla",
+      "text": "Rain's soaking the grain again, and Tobin says raiders are right on the east road. We must bar the eastern door now.",
+      "instructions": [
+       "persona-gisla",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Garrick",
+      "text": "This rain is killing the grain, and Tobin says raiders are on the east road. We must bar that eastern door now.",
+      "instructions": [
+       "persona-garrick",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Gisla",
+      "text": "Garrick, the grain sacks need mending before the sun gets high, and I can't work with Dagny fussing. Did you see the dust on the road?",
+      "instructions": [
+       "persona-gisla",
+       "role-crafter-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Garrick",
+      "text": "That dust is just the dry wind off the east road, but it's a sign of a dry spell. Leave Dagny with me for a spell so you can get those sacks mended.",
+      "instructions": [
+       "persona-garrick",
+       "role-crafter-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gisla",
+      "text": "You\u2019re right, the air is cracking the clay pits dry. I\u2019ll leave Dagny with you; keep her from the millstones. I need to fix those leaks before the rain comes, if it ever does.",
+      "instructions": [
+       "persona-gisla",
+       "role-crafter-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Garrick",
+      "text": "I\u2019ll keep her safe from the stones, don\u2019t worry. You\u2019d better watch the sky, though. If that dry spell holds, we\u2019re in for a rough summer with the low road washed out.",
+      "instructions": [
+       "persona-garrick",
+       "role-crafter-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gisla",
+      "text": "The low road\u2019s already mud, so we\u2019re stuck with the long route either way. I\u2019ll watch the sky, but right now I\u2019m watching the thread. If the dry spell holds, the grain shrivels before we can grind it.",
+      "instructions": [
+       "persona-gisla",
+       "role-crafter-speech",
+       "temp-gregarious-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "inn",
+   "who": [
+    "Liv34",
+    "Aldo"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Liv34",
+      "text": "Rain's still soaking the soil, ain't it? I hope the blight cuts stop biting into the rest of the crop.",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "adult-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Aldo",
+      "text": "Aye, it\u2019s still raining. But we\u2019ve already cut the blight out, so it shouldn\u2019t spread further into the rest of the crop.",
+      "instructions": [
+       "persona-aldo",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Liv34",
+      "text": "Morning, Aldo. You see the cuttings from the blight? I hope the rain holds off so the soil dries out, else we lose the whole crop to rot.",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Aldo",
+      "text": "Aye, I saw the cuttings piled by the stream. Rain\u2019s thick in the air, though, and I don\u2019t trust it to hold. If it soaks the ground, that rot spreads fast.",
+      "instructions": [
+       "persona-aldo",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Liv34",
+      "text": "Yeah, that thick air is a bad sign. I\u2019d rather deal with dry mud than rot. How\u2019s the weather over at your place?",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Aldo",
+      "text": "Over at my place, the soil is already slick and cold. The fog sits heavy on the new fields, and I can smell the damp rot coming off the earth. It\u2019s not looking good for drying out.",
+      "instructions": [
+       "persona-aldo",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 185,
+   "place": "schoolyard",
+   "who": [
+    "Alda84",
+    "Alda78"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Alda84",
+      "text": "Ugh, this rain is so loud! Did you hear the commotion on the east road?",
+      "instructions": [
+       "persona-alda84",
+       "temp-gregarious-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-trusting-speech",
+       "temp-embellishing-speech",
+       "temp-wary-speech",
+       "temp-inquisitive-speech",
+       "temp-diligent-speech"
+      ]
+     },
+     {
+      "speaker": "Alda78",
+      "text": "Rain is loud. I saw raiders on the east road. My dad Per is a guard there.",
+      "instructions": [
+       "persona-alda78",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-reserved-speech",
+       "temp-bold-speech",
+       "temp-plainspoken-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Alda84",
+      "text": "Did you see them? I saw the raiders on the road!",
+      "instructions": [
+       "persona-alda84",
+       "temp-gregarious-speech",
+       "temp-trusting-speech"
+      ]
+     },
+     {
+      "speaker": "Alda78",
+      "text": "Yes. I saw them too. Don\u2019t shout about it.",
+      "instructions": [
+       "persona-alda78",
+       "temp-reserved-speech",
+       "temp-bold-speech"
+      ]
+     },
+     {
+      "speaker": "Alda84",
+      "text": "Oh! Shh. I\u2019ll be quiet.",
+      "instructions": [
+       "persona-alda84",
+       "temp-gregarious-speech",
+       "temp-trusting-speech"
+      ]
+     },
+     {
+      "speaker": "Alda78",
+      "text": "Good. Keep it low. The raiders are gone, but the road is still watched.",
+      "instructions": [
+       "persona-alda78",
+       "temp-reserved-speech",
+       "temp-bold-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "home_27",
+   "who": [
+    "Gunne",
+    "Col64"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Gunne",
+      "text": "Morning, Col. The blight is cut out of the fields. Soil is safe now, so go play.",
+      "instructions": [
+       "persona-gunne",
+       "adult-speech",
+       "role-farmer-speech"
+      ]
+     },
+     {
+      "speaker": "Col64",
+      "text": "Morning, Dad! Really safe? But the rain makes the mud slippery. Careful with your boots. Is there any bread?",
+      "instructions": [
+       "persona-col64",
+       "child-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech",
+       "temp-trusting-speech",
+       "temp-wary-speech"
+      ]
+     },
+     {
+      "speaker": "Gunne",
+      "text": "Safe for us, yes. Watch that mud, don't slip. Liv34 baked bread, it's on the shelf.",
+      "instructions": [
+       "persona-gunne",
+       "adult-speech",
+       "role-farmer-speech"
+      ]
+     },
+     {
+      "speaker": "Col64",
+      "text": "I will watch the mud. Liv made bread? I will eat it. Thank you",
+      "instructions": [
+       "persona-col64",
+       "child-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech",
+       "temp-trusting-speech",
+       "temp-wary-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Gunne",
+      "text": "Morning, Col. How\u2019s the baby sleeping? You know how the fields are looking after that blight we cut out.",
+      "instructions": [
+       "persona-gunne",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Col64",
+      "text": "Aldo's finally quiet, just snoring on Frida's chest. The fields look bad, Dad, like grey patches on the ground. If that rot gets here, we'll be eating bitter roots before the snow even comes.",
+      "instructions": [
+       "persona-col64",
+       "temp-gregarious-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Gunne",
+      "text": "Bitter roots would be a mercy, not a solution. I am already digging new rows, just in case. You keep watching that stream, the water is moving faster than it should.",
+      "instructions": [
+       "persona-gunne",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Col64",
+      "text": "Faster? I thought the water was just cold. If the sickness is coming down with it, then we're in real trouble. I'll keep my eyes on the ford, but I'm hungry. Did you save me a heel of bread?",
+      "instructions": [
+       "persona-col64",
+       "temp-gregarious-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Gunne",
+      "text": "I saved a heel, but it\u2019s going to the forge. Jory needs his strength, and we need eyes on that bridge. You eat what you can, but don\u2019t waste it.",
+      "instructions": [
+       "persona-gunne",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Col64",
+      "text": "Jory gets it? Fine, he's strong enough to carry the load anyway. I'll gnaw on a crust while I watch the ford. If the water speeds up, I'll be back here before you know it.",
+      "instructions": [
+       "persona-col64",
+       "temp-gregarious-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 185,
+   "place": "home_2",
+   "who": [
+    "Dunn",
+    "Sena"
+   ],
+   "A": {
+    "topic": "the water at the well has turned",
+    "lines": [
+     {
+      "speaker": "Dunn",
+      "text": "Rain's been falling since dawn, Sena. And that well water... you feel the change in it, don't you?",
+      "instructions": [
+       "persona-dunn",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Sena",
+      "text": "Aye, the rain won't stop. I've seen this rot before, and it makes the stomach turn quick.",
+      "instructions": [
+       "persona-sena",
+       "role-farmer-speech",
+       "elder-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "Likewise, Sena. This rain just makes the mud thicker. We need to fix that leak before it ruins more grain.",
+      "instructions": [
+       "persona-dunn",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the water at the well has turned",
+    "lines": [
+     {
+      "speaker": "Dunn",
+      "text": "Morning, Sena. You see the color in that water this morning? I've been trying to patch the leak in my roof since dawn, but with the whole village sick, I reckon we're in for a rough spring.",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Sena",
+      "text": "Aye, I saw it when I filled my pail this morn. It looks foul. I hope it passes quick, for my crops are just waking up and I need the soil to stay clean.",
+      "instructions": [
+       "persona-sena",
+       "role-farmer-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "Aye, the soil\u2019s the worry, isn\u2019t it? If the well stays foul, the fields go with it. I\u2019ll keep an eye on the stream near the mill; if the water\u2019s clear there, maybe we can fix the pump before the crops turn yellow.",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Sena",
+      "text": "That\u2019s a sensible plan, Dunn. I\u2019ll keep my eyes on the furrows and see if the roots start to blacken. If the stream is clear, we\u2019ve a fighting chance, though I still worry about the grain we\u2019ve already harvested.",
+      "instructions": [
+       "persona-sena",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "I\u2019ll check the stream after I finish patching that east wall. As for the grain, we\u2019ll have to pray it stays dry, or we\u2019re all eating thin porridge come winter.",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": null,
+   "who": [
+    "Col64",
+    "Frida75"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Col64",
+      "text": "Rain keeps coming down. Did you hear the raider noise on the east road?",
+      "instructions": [
+       "persona-col64",
+       "child-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech",
+       "temp-trusting-speech",
+       "temp-wary-speech"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "Rain's wet. I heard the smoke was worse. Who told you about the noise?",
+      "instructions": [
+       "persona-frida75",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-reserved-speech",
+       "temp-embellishing-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Col64",
+      "text": "Frida, did you hear Gunne tell us about the raiders on the east road? I saw them myself, they looked so scary. Did you see any of them too?",
+      "instructions": [
+       "persona-col64",
+       "temp-gregarious-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "I did not see them. Gunne said Brit51 saw them on the east road. Why are they coming here if they are just passing through?",
+      "instructions": [
+       "persona-frida75",
+       "temp-inquisitive-speech",
+       "temp-reserved-speech"
+      ]
+     },
+     {
+      "speaker": "Col64",
+      "text": "I don't know why they are coming here, but I hope they are not going to hurt us. Did Brit51 say if they were carrying any weapons?",
+      "instructions": [
+       "persona-col64",
+       "temp-gregarious-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "No, he didn't say that. I only know he saw them on the road. Why would you need to know about their weapons?",
+      "instructions": [
+       "persona-frida75",
+       "temp-inquisitive-speech",
+       "temp-reserved-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "inn",
+   "who": [
+    "Brit89",
+    "Alda78"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Brit89",
+      "text": "Rain keeps falling on the roof. Cilla saw raiders on the east road. Who told her that?",
+      "instructions": [
+       "persona-brit89",
+       "weather-speech-rain",
+       "temp-gregarious-speech",
+       "food-talk",
+       "temp-plainspoken-speech",
+       "temp-inquisitive-speech",
+       "temp-suspicious-speech",
+       "temp-wary-speech",
+       "temp-easygoing-speech"
+      ]
+     },
+     {
+      "speaker": "Alda78",
+      "text": "Rain is wet. I saw the raiders on the east road myself. I do not know who told Cilla.",
+      "instructions": [
+       "persona-alda78",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-bold-speech",
+       "temp-reserved-speech",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Brit89",
+      "text": "Rain makes everything slippery. If you saw them, why are you inside? Be careful walking the east road now.",
+      "instructions": [
+       "persona-brit89",
+       "weather-speech-rain",
+       "temp-gregarious-speech",
+       "food-talk",
+       "temp-plainspoken-speech",
+       "temp-inquisitive-speech",
+       "temp-suspicious-speech",
+       "temp-wary-speech",
+       "temp-easygoing-speech"
+      ]
+     },
+     {
+      "speaker": "Alda78",
+      "text": "I am not afraid. I am safe here. The rain is loud.",
+      "instructions": [
+       "persona-alda78",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-bold-speech",
+       "temp-reserved-speech",
+       "temp-plainspoken-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Brit89",
+      "text": "Alda, are you alright? Elin said the raiders were on the east road, but that's a long way off. What are you doing at the inn so early?",
+      "instructions": [
+       "persona-brit89",
+       "temp-gregarious-speech",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Alda78",
+      "text": "I am fine. I saw them myself, so I know it is true. Elin is right that it is far, but I am not in a hurry to be wrong.",
+      "instructions": [
+       "persona-alda78",
+       "temp-bold-speech",
+       "temp-reserved-speech"
+      ]
+     },
+     {
+      "speaker": "Brit89",
+      "text": "You saw them? That is a scary thing to see. Did they look like the ones in the old stories? I hope the lord\u2019s men at the crossroads can keep us safe.",
+      "instructions": [
+       "persona-brit89",
+       "temp-gregarious-speech",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Alda78",
+      "text": "I don't know about old stories. I saw men with clubs and knives. The lord's men are just counting heads and pushing tax lists, not fighting.",
+      "instructions": [
+       "persona-alda78",
+       "temp-bold-speech",
+       "temp-reserved-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 185,
+   "place": null,
+   "who": [
+    "Osric",
+    "Hedda42"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Osric",
+      "text": "Morning, Hedda. I'd rather not look at the fields today. The blight's cut out, but it still makes my stomach turn.",
+      "instructions": [
+       "persona-osric",
+       "role-farmer-speech",
+       "adult-speech"
+      ]
+     },
+     {
+      "speaker": "Hedda42",
+      "text": "Then don't look. Pull your boots on and dig it out.",
+      "instructions": [
+       "persona-hedda42",
+       "adult-speech",
+       "role-farmer-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Osric",
+      "text": "Hedda, you see the new growth on the south turnip patch? It\u2019s green and thick, a sight to make a man\u2019s mouth water, though the belly says otherwise.",
+      "instructions": [
+       "persona-osric",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Hedda42",
+      "text": "Green is a good sign for the soil, but thin crops won't fill a belly. Did you see the blight creep past the ridge line this morning?",
+      "instructions": [
+       "persona-hedda42",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Osric",
+      "text": "I saw the brown spots on the leaves, yes. It moves fast, like wet snow. I\u2019m digging out the bad roots now, hoping it doesn\u2019t touch the rest before we can harvest what\u2019s left.",
+      "instructions": [
+       "persona-osric",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Hedda42",
+      "text": "Dig deep and burn what you pull; don\u2019t let it sit in the soil. I\u2019ll bring my spade over shortly to help clear the south patch before the rain comes in.",
+      "instructions": [
+       "persona-hedda42",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 185,
+   "place": "home_24",
+   "who": [
+    "Hakon",
+    "Nora"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Hakon",
+      "text": "I saw the rot spread past the river line this morning. It is moving fast, Nora.",
+      "instructions": [
+       "persona-hakon",
+       "role-farmer-speech",
+       "adult-speech"
+      ]
+     },
+     {
+      "speaker": "Nora",
+      "text": "Then we are done for. The rain will help it spread, and I have no cure for rotting grain.",
+      "instructions": [
+       "persona-nora",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Hakon",
+      "text": "Morning. I saw the black spread on the west rows before the sun was up. We need to dig a trench around it before it takes the rest.",
+      "instructions": [
+       "persona-hakon",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Nora",
+      "text": "Good morning, Hakon. That black mold spreads faster than a rumor in the square. I\u2019ll fetch the spade and water while you mark the lines. We have to keep it contained or the whole harvest is lost.",
+      "instructions": [
+       "persona-nora",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Hakon",
+      "text": "Aye, keep Brit close while you fetch water. If this blight wins, we\u2019ll have little left for the children, let alone the market.",
+      "instructions": [
+       "persona-hakon",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Nora",
+      "text": "I keep Brit swaddled tight, he only fusses when the sun hits his face. We\u2019ll dig deep, Hakon, to stop that rot from reaching the good soil. It\u2019s the only way to save what\u2019s left for the children.",
+      "instructions": [
+       "persona-nora",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Hakon",
+      "text": "Let him sleep; the sun\u2019s gentle enough this morning. I\u2019ll dig the trench deep while you fetch the spade. We can\u2019t afford to lose the west field.",
+      "instructions": [
+       "persona-hakon",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Nora",
+      "text": "I\u2019ll keep him swaddled in the shadow, he\u2019s too small to understand the trouble. The west field is our lifeline, so we\u2019ll dig deep and fast. I\u2019m heading for the tool shed now to grab the spade.",
+      "instructions": [
+       "persona-nora",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "home_17",
+   "who": [
+    "Inga",
+    "Mads"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Inga",
+      "text": "Good. We cut the blight out clean. Now we wait and see if the rest holds.",
+      "instructions": [
+       "persona-inga",
+       "role-farmer-speech",
+       "adult-speech"
+      ]
+     },
+     {
+      "speaker": "Mads",
+      "text": "Hope it holds. Thea and Frida keep their eyes on the rest.",
+      "instructions": [
+       "persona-mads",
+       "role-farmer-speech",
+       "adult-speech"
+      ]
+     },
+     {
+      "speaker": "Inga",
+      "text": "Good. Keep them there. The grain price is doubled, so we can\u2019t afford to lose more to that rot.",
+      "instructions": [
+       "persona-inga",
+       "role-farmer-speech",
+       "adult-speech"
+      ]
+     },
+     {
+      "speaker": "Mads",
+      "text": "Aye, I'll keep watch. Can't afford to lose more to that rot.",
+      "instructions": [
+       "persona-mads",
+       "role-farmer-speech",
+       "adult-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Inga",
+      "text": "Good to see the blight cut clean. But the soil still smells wrong, and we cannot eat the smell. What do the neighbors say?",
+      "instructions": [
+       "persona-inga",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Mads",
+      "text": "Wynn says the grain in the mill's sacks is bad, and Bryn claims the rot comes from the high country. That leaves us with very little to feed Maja and Dag.",
+      "instructions": [
+       "persona-mads",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Inga",
+      "text": "Then we keep the pantry locked tight. If Bryn is right, the water from the stream is tainted, so we boil every drop. I don't trust that wind.",
+      "instructions": [
+       "persona-inga",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Mads",
+      "text": "We'll keep the well water boiled, though I'd worry about the stream if Bryn's right. The blight isn't the only thing we're watching.",
+      "instructions": [
+       "persona-mads",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Inga",
+      "text": "Watching is all we can do. If the grain is gone, we are down to what we can dig up. Do you see Elspeth\u2019s shadow near the road?",
+      "instructions": [
+       "persona-inga",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Mads",
+      "text": "No, I don't see her. I was just thinking about the soil, how it's turned to dust.",
+      "instructions": [
+       "persona-mads",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "fields",
+   "who": [
+    "Thea",
+    "Hedda42"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Thea",
+      "text": "The rain is heavy, and the blight spreads in the wet. We cut it out, but the soil is still sick.",
+      "instructions": [
+       "persona-thea",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Hedda42",
+      "text": "Keep cutting. The frost took the roots, so the wet just rots what\u2019s left.",
+      "instructions": [
+       "persona-hedda42",
+       "adult-speech",
+       "role-farmer-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Thea",
+      "text": "Aye, the frost bit deep. Now this rain turns the rest to mush. We work while the sun is up.",
+      "instructions": [
+       "persona-thea",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Thea",
+      "text": "The soil's damp, but I've got a bad feeling in my gut about the blight. Did you see how the rot spread last night?",
+      "instructions": [
+       "persona-thea",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Hedda42",
+      "text": "I did. It jumped the furrow line overnight, and the smell is thick in the air. I\u2019m pulling the infected stalks now before it takes the good grain, but I don't know if it\u2019s enough to save the lot.",
+      "instructions": [
+       "persona-hedda42",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Thea",
+      "text": "It\u2019s worse than we feared, and with grain prices doubling in the market towns, losing even a stalk hurts. Keep pulling, but save your strength; we\u2019ll need to work together to clear this field before the sun gets high.",
+      "instructions": [
+       "persona-thea",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": null,
+   "who": [
+    "Runa",
+    "Ada"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Runa",
+      "text": "Rain\u2019s got the east road looking like mud. Did Tobin\u2019s warning about raiders reach you, or is it just me seeing shadows in the wet?",
+      "instructions": [
+       "persona-runa",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Ada",
+      "text": "More than shadows. Tobin, Hedda, and Mads all saw them. The road is unsafe now.",
+      "instructions": [
+       "persona-ada",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Runa",
+      "text": "Mads? I know Dag, but not Mads. If three saw them, the east road is shut. I\u2019m not crossing the fields until the watchpost says otherwise.",
+      "instructions": [
+       "persona-runa",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Ada",
+      "text": "Correct. The watchpost confirms it. Stay clear of the east road and the fields until the danger passes.",
+      "instructions": [
+       "persona-ada",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Runa",
+      "text": "Wynn would have liked to see this place stand strong against those raiders. I am checking the mill wheel this morning to make sure it holds.",
+      "instructions": [
+       "persona-runa",
+       "role-crafter-speech",
+       "temp-reserved-speech"
+      ]
+     },
+     {
+      "speaker": "Ada",
+      "text": "It is good the wheel holds, though I fear the grain within is spoiled beyond saving. Wynn would have worried more about the rot than the raiders, knowing our stomachs are full of worry already.",
+      "instructions": [
+       "persona-ada",
+       "role-healer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Runa",
+      "text": "You are right to fear the rot. I keep the wheel turning, but I cannot fix what is already bad in the sacks. We must be careful not to eat any of it.",
+      "instructions": [
+       "persona-runa",
+       "role-crafter-speech",
+       "temp-reserved-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Ada",
+      "text": "I have already barred the mill door and ordered the sacks sealed. We will not eat from those stores. The well water is also troubling me; if you see anyone with a fever or a cramp, send them to the shrine at once.",
+      "instructions": [
+       "persona-ada",
+       "role-healer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Runa",
+      "text": "I will watch for the signs and send them to you. The well water is a different matter, but I\u2019ll keep my eyes open for anyone looking unwell.",
+      "instructions": [
+       "persona-runa",
+       "role-crafter-speech",
+       "temp-reserved-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 185,
+   "place": "home_27",
+   "who": [
+    "Gunne",
+    "Col64"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Gunne",
+      "text": "Did you see the raiders on the east road? Dag49 and Mads told me, but I want to hear it from you.",
+      "instructions": [
+       "persona-gunne",
+       "adult-speech",
+       "role-farmer-speech"
+      ]
+     },
+     {
+      "speaker": "Col64",
+      "text": "Yes, I saw them! They came fast and kicked up so much dust the sky turned grey. Are you eating porridge?",
+      "instructions": [
+       "persona-col64",
+       "child-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech",
+       "temp-trusting-speech",
+       "temp-wary-speech"
+      ]
+     },
+     {
+      "speaker": "Gunne",
+      "text": "Yes, eating my porridge. That dust sounds like a bad sign. I hope it was just a small band, not the whole wolf pack.",
+      "instructions": [
+       "persona-gunne",
+       "adult-speech",
+       "role-farmer-speech"
+      ]
+     },
+     {
+      "speaker": "Col64",
+      "text": "It wasn't wolves, Dad. Just men. But Cilla says the wolves are close now. Eat fast, it\u2019s getting thick.",
+      "instructions": [
+       "persona-col64",
+       "child-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech",
+       "temp-trusting-speech",
+       "temp-wary-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Gunne",
+      "text": "Morning, Col64. You look like you\u2019ve been up since the sun. What\u2019s on your mind?",
+      "instructions": [
+       "persona-gunne",
+       "role-farmer-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Col64",
+      "text": "Morning, Dad. It\u2019s still damp from last night, makes everything smell like wet mud. I was thinking about the raiders on the east road.",
+      "instructions": [
+       "persona-col64",
+       "temp-gregarious-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gunne",
+      "text": "Aye, the mud\u2019s deep this morning. You saw them, didn\u2019t you? That\u2019s why I\u2019m keeping an eye on the east road. Stay close to the house today.",
+      "instructions": [
+       "persona-gunne",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Col64",
+      "text": "I saw them, yes. I thought maybe you\u2019d go check the ford with the others? I\u2019m not in a hurry to go anywhere else, just waiting on you.",
+      "instructions": [
+       "persona-col64",
+       "temp-gregarious-speech",
+       "temp-inquisitive-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "home_13",
+   "who": [
+    "Edek",
+    "Alda58"
+   ],
+   "A": {
+    "topic": "a story from the old days",
+    "lines": [
+     {
+      "speaker": "Edek",
+      "text": "Alda, did you hear the tale the storyteller told at the Wick & Kettle?",
+      "instructions": [
+       "persona-edek",
+       "role-farmer-speech",
+       "elder-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Alda58",
+      "text": "Which storyteller? We had a storm that kept everyone indoors, so I don't know what tale you mean.",
+      "instructions": [
+       "persona-alda58",
+       "apprentice-speech",
+       "temp-inquisitive-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "a story from the old days",
+    "lines": [
+     {
+      "speaker": "Edek",
+      "text": "Good morning, Alda. The soil is finally warm enough for the first turn of the plough. Did you hear what that storyteller down at the inn was telling the room last night?",
+      "instructions": [
+       "persona-edek",
+       "role-farmer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Alda58",
+      "text": "I heard Nils say the lord's men are counting heads at the crossroads, and prices are set to quadruple! It sounds like we'll be stripped bare before winter even touches the fields, though I'd love to know who told him that.",
+      "instructions": [
+       "persona-alda58",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech"
+      ]
+     },
+     {
+      "speaker": "Edek",
+      "text": "I heard the same from a few different mouths, though none of us have seen the men ourselves. It is a bad omen for the grain, and I do not know where Nils got his word from.",
+      "instructions": [
+       "persona-edek",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Alda58",
+      "text": "Well, Stranger15 says grain is dear in the market towns now, so if they\u2019re counting heads, our barley won\u2019t fetch a penny. I wonder if the storyteller knew more than he let on?",
+      "instructions": [
+       "persona-alda58",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Edek",
+      "text": "That Stranger15 is a new one, and I have not heard him speak yet. If the grain is truly dear, we may get a better price for what we save, but those counts at the crossroads keep me from sleeping easy.",
+      "instructions": [
+       "persona-edek",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Alda58",
+      "text": "Heard Ivar got that news from another traveller, so it\u2019s just word on the wind. I hope they\u2019re not counting us for tax, because I\u2019d rather spend my days at the forge than watching men tally heads.",
+      "instructions": [
+       "persona-alda58",
+       "temp-inquisitive-speech",
+       "temp-embellishing-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 185,
+   "place": "home_27",
+   "who": [
+    "Liv34",
+    "Frida75"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Liv34",
+      "text": "Rain's coming, and that blight in the fields is rotting the crops. Did you see your mother cutting it out this morning?",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "Mm-hmm. It was worse than you think, like black fingers. And the bread is getting thin. Did you see?",
+      "instructions": [
+       "persona-frida75",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-reserved-speech",
+       "temp-embellishing-speech"
+      ]
+     },
+     {
+      "speaker": "Liv34",
+      "text": "Aye, I saw the black fingers. Bread is thin, but we\u2019ll pull through. Gunne\u2019s got the new fields ready.",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "But the rain will rot those too, won't it?",
+      "instructions": [
+       "persona-frida75",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-reserved-speech",
+       "temp-embellishing-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Liv34",
+      "text": "Morning, Frida. Did you sleep right? I\u2019ve been out in the fields all night cutting out that rot. We need to keep it away from the rest of the crop if we want enough bread for the winter.",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "Mm. I slept. It\u2019s worse than what they said, isn\u2019t it? The bread better hold out.",
+      "instructions": [
+       "persona-frida75",
+       "temp-inquisitive-speech",
+       "temp-reserved-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Liv34",
+      "text": "It is, and I won\u2019t lie to you. The rot is spreading faster than I liked. We\u2019ll have to be careful with what\u2019s left in the storehouse. Did you eat your porridge?",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Frida75",
+      "text": "Yes. I ate.",
+      "instructions": [
+       "persona-frida75",
+       "temp-inquisitive-speech",
+       "temp-reserved-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Liv34",
+      "text": "Good. A full belly helps when the ground is bad. I need to get back to the fields before the sun gets high. You keep the little ones busy, won't you?",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "well",
+   "who": [
+    "Per",
+    "Elin"
+   ],
+   "A": {
+    "topic": "the water at the well has turned",
+    "lines": [
+     {
+      "speaker": "Per",
+      "text": "Morning's damp, Elin. You smell that? The water's gone thick again, and I've seen enough sick faces today to last a year.",
+      "instructions": [
+       "persona-per",
+       "adult-speech",
+       "weather-speech-rain",
+       "role-guard-speech"
+      ]
+     },
+     {
+      "speaker": "Elin",
+      "text": "That smell brings back bad memories. Who told you the high country grain is carrying the rot to our doors?",
+      "instructions": [
+       "persona-elin",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Per",
+      "text": "Bryn claims it travels on the high country water and grain. I haven\u2019t checked the mill sacks myself, but the smell here is bad enough to worry.",
+      "instructions": [
+       "persona-per",
+       "adult-speech",
+       "weather-speech-rain",
+       "role-guard-speech"
+      ]
+     },
+     {
+      "speaker": "Elin",
+      "text": "Bryn says three valleys away, but the smell here says otherwise. I\u2019m checking the mill sacks today; keep Brit\u2019s baby away from the well.",
+      "instructions": [
+       "persona-elin",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain",
+       "temp-inquisitive-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the water at the well has turned",
+    "lines": [
+     {
+      "speaker": "Per",
+      "text": "Elin, come here. The water's still thick and grey. Did you see how many folks were huddled here last night, waiting for it to clear?",
+      "instructions": [
+       "persona-per",
+       "role-guard-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Elin",
+      "text": "I did, and it is worrying. Thick water in spring means the runoff is carrying something heavy from the fields. I\u2019ll check the wellhead this morning, but you should tell the others to boil it first.",
+      "instructions": [
+       "persona-elin",
+       "role-healer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Per",
+      "text": "Boiling it won\u2019t help if the grain is spoiled too, but I\u2019ll spread the word. You go check that wellhead, I\u2019ll keep an eye on the bridge. Just make sure you eat something first.",
+      "instructions": [
+       "persona-per",
+       "role-guard-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Elin",
+      "text": "I have a heel of bread in my pouch, though it is stale. I will check the head now. If the grain is spoiled, we are in for a hard spring. Keep an eye on the bridge, and tell the miller to slow the water if it runs high.",
+      "instructions": [
+       "persona-elin",
+       "role-healer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Per",
+      "text": "I\u2019ll tell Wynn to ease the flow. That stale heel won\u2019t fill you, but it\u2019ll hold. Check the head carefully, and if you see anything odd, come straight to the watchpost.",
+      "instructions": [
+       "persona-per",
+       "role-guard-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "home_14",
+   "who": [
+    "Elin45",
+    "Elin"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Elin45",
+      "text": "Rain\u2019s driving hard against the glass, isn\u2019t it? Did you hear the news about raiders on the east road?",
+      "instructions": [
+       "persona-elin45",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Elin",
+      "text": "Yes, the rain is fierce. Frode claims he saw raiders on the east road, but I want to know who else has seen them.",
+      "instructions": [
+       "persona-elin",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Elin45",
+      "text": "I haven\u2019t seen them myself. Tobin warned me to watch the east road, but keep your door shut for now.",
+      "instructions": [
+       "persona-elin45",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Elin45",
+      "text": "Morning, Elin. I was just thinking about those raiders on the east road. Do you think they are coming through our valley?",
+      "instructions": [
+       "persona-elin45",
+       "role-healer-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Elin",
+      "text": "Frode\u2019s word puts a blade at our throat, so I\u2019m not taking chances. Keep your eyes on the road, and if you see any stragglers, come straight to the shrine.",
+      "instructions": [
+       "persona-elin",
+       "role-healer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Elin45",
+      "text": "I am already there, so I will keep watch. I trust Frode\u2019s word, but I want to know if you are feeling steady yourself?",
+      "instructions": [
+       "persona-elin45",
+       "role-healer-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Elin",
+      "text": "<think>",
+      "instructions": [
+       "persona-elin",
+       "role-healer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Elin45",
+      "text": "You sound tense, Elin. Are you eating and sleeping, or is the worry keeping you up?",
+      "instructions": [
+       "persona-elin45",
+       "role-healer-speech",
+       "temp-gregarious-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": null,
+   "who": [
+    "Dagny55",
+    "Kell73"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Dagny55",
+      "text": "Rain\u2019s in my hair again. Did you hear the east road is blocked by raiders?",
+      "instructions": [
+       "persona-dagny55",
+       "weather-speech-rain",
+       "apprentice-speech",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-plainspoken-speech",
+       "temp-gregarious-speech",
+       "temp-wary-speech"
+      ]
+     },
+     {
+      "speaker": "Kell73",
+      "text": "Rain\u2019s bad. I heard Frode saw them. Who told you?",
+      "instructions": [
+       "persona-kell73",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech",
+       "temp-suspicious-speech",
+       "temp-wary-speech",
+       "temp-settled-speech",
+       "temp-easygoing-speech"
+      ]
+     },
+     {
+      "speaker": "Dagny55",
+      "text": "Jorun told me. Be careful walking the east road, the grain price is doubling.",
+      "instructions": [
+       "persona-dagny55",
+       "weather-speech-rain",
+       "apprentice-speech",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-plainspoken-speech",
+       "temp-gregarious-speech",
+       "temp-wary-speech"
+      ]
+     },
+     {
+      "speaker": "Kell73",
+      "text": "Jorun\u2019s word again. I stay off that road. Grain\u2019s thin anyway.",
+      "instructions": [
+       "persona-kell73",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech",
+       "temp-suspicious-speech",
+       "temp-wary-speech",
+       "temp-settled-speech",
+       "temp-easygoing-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Dagny55",
+      "text": "Morning, Kell. I heard you were asking about the raiders on the east road. I'm heading to the mill to check on the grain sacks, but I've got a moment if you want to talk.",
+      "instructions": [
+       "persona-dagny55",
+       "temp-inquisitive-speech",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Kell73",
+      "text": "Frode says he saw them. I don't know who else does. The grain at the mill better stay where it is, with the food short as it is.",
+      "instructions": [
+       "persona-kell73",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Dagny55",
+      "text": "I don't know Frode, so I can't say for sure. But you're right, we can't afford to lose any grain. I'll check on the sacks at the mill and make sure they're secured.",
+      "instructions": [
+       "persona-dagny55",
+       "temp-inquisitive-speech",
+       "temp-plainspoken-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Kell73",
+      "text": "Frode keeps watch. If he says it, it is so. Keep the sacks dry, the rain is coming.",
+      "instructions": [
+       "persona-kell73",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Dagny55",
+      "text": "If Frode says it, I\u2019ll trust his word. I\u2019ll make sure the sacks are covered before that rain breaks.",
+      "instructions": [
+       "persona-dagny55",
+       "temp-inquisitive-speech",
+       "temp-plainspoken-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Kell73",
+      "text": "Good. The rain is coming down hard. Keep your head down.",
+      "instructions": [
+       "persona-kell73",
+       "temp-plainspoken-speech",
+       "temp-reserved-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "home_12",
+   "who": [
+    "Jorun",
+    "Gunne36"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Jorun",
+      "text": "Rain's heavy again, Gunne. Did you see that patch of rot by the south fence before I went in?",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "Aye, saw it before the rain started. That blight moves fast, Jorun. We must dig it out before it spreads to the rest.",
+      "instructions": [
+       "persona-gunne36",
+       "adult-speech",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Jorun",
+      "text": "It\u2019s already cut out. But this sickness moving through the valleys worries me more than that blight.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "Cilla says the blight crossed the river into the valley. The high country water is tainted now. We must shun it.",
+      "instructions": [
+       "persona-gunne36",
+       "adult-speech",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Jorun",
+      "text": "Did you see the blight on the south plot this morning? The soil looks wet, but I worry the rot will spread before we can cut it all out.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "Aye, I saw it, and the wet soil isn't helping a bit. It's creeping fast, and I'm worried we'll lose more than just that patch if we don't move quick.",
+      "instructions": [
+       "persona-gunne36",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Jorun",
+      "text": "We need to clear it before the rain sets in again, or the whole crop is gone. I\u2019ll bring the spade over in a bit, you take the sickle?",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "I\u2019ll grab the sickle now. That rain is hanging low, and if this rot touches the good earth, we\u2019re done for. Better to dig deep than watch it spread.",
+      "instructions": [
+       "persona-gunne36",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Jorun",
+      "text": "I'll meet you at the fields then. Let's hope the ground is dry enough to work before that rain breaks.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": null,
+   "who": [
+    "Kari35",
+    "Alda80"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Kari35",
+      "text": "Morning, Alda. Heard the raiders are camped on the east road. Did Dag tell you what he plans to do?",
+      "instructions": [
+       "persona-kari35",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Alda80",
+      "text": "Rain is bad for raiders. I don't know. Who told you? I bet Dag just heals.",
+      "instructions": [
+       "persona-alda80",
+       "child-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech",
+       "temp-bold-speech",
+       "food-talk",
+       "temp-inquisitive-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Kari35",
+      "text": "Alda, get your coat on. Dag says there\u2019s a whole band of raiders on the east road, and they\u2019ll strike before the lord\u2019s men even wake. I need you to stay by the well, not the fields.",
+      "instructions": [
+       "persona-kari35",
+       "role-farmer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Alda80",
+      "text": "The well? That\u2019s a long way to walk for a child, Mama. And if they come, I\u2019d rather be by the forge where Dag can keep watch, wouldn\u2019t you? Also, are we eating bread for breakfast or just roots today?",
+      "instructions": [
+       "persona-alda80",
+       "temp-gregarious-speech",
+       "temp-bold-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Kari35",
+      "text": "The forge is too close to the road, stay by the well where the stone keeps us safe. We have half a loaf and some turnips, but you\u2019re not eating until you\u2019re safe.",
+      "instructions": [
+       "persona-kari35",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Alda80",
+      "text": "Well, I suppose the stone is better than getting hit by a sword, but that doesn\u2019t sound like much fun. I\u2019ll go, but you better save me the biggest slice of that half loaf, or I\u2019m telling Inga you\u2019re being mean.",
+      "instructions": [
+       "persona-alda80",
+       "temp-gregarious-speech",
+       "temp-bold-speech"
+      ]
+     },
+     {
+      "speaker": "Kari35",
+      "text": "Go on, don\u2019t dawdle. And yes, I\u2019ll save you the biggest slice, but only if you stay out of trouble. Inga\u2019s too young to understand what\u2019s happening, so keep your voice down.",
+      "instructions": [
+       "persona-kari35",
+       "role-farmer-speech",
+       "temp-inquisitive-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "well",
+   "who": [
+    "Cilla",
+    "Brit51"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Cilla",
+      "text": "Rain won't stop till the bell rings. You see the blight on the east road, or you just heard Maja's talk?",
+      "instructions": [
+       "persona-cilla",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Brit51",
+      "text": "I saw it myself at the forest edge. Maja talks too much. Did you see the leaves turn black before the rain hit?",
+      "instructions": [
+       "persona-brit51",
+       "apprentice-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-suspicious-speech",
+       "temp-reserved-speech"
+      ]
+     },
+     {
+      "speaker": "Cilla",
+      "text": "I saw the leaves curl black before the rain started. Maja\u2019s mouth is loose, but the blight is real enough.",
+      "instructions": [
+       "persona-cilla",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Brit51",
+      "text": "Rain washes the rot deeper into the soil. Who says the east road is still passable?",
+      "instructions": [
+       "persona-brit51",
+       "apprentice-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-inquisitive-speech",
+       "temp-suspicious-speech",
+       "temp-reserved-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Cilla",
+      "text": "Morning, Brit51. You\u2019re down early. Saw the blight in the east field this morning; Osric says it\u2019s cut out, but I still don\u2019t trust that soil.",
+      "instructions": [
+       "persona-cilla",
+       "role-farmer-speech",
+       "temp-suspicious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Brit51",
+      "text": "Osric? Who told him? And cut out doesn\u2019t mean clean. If the blight\u2019s in the roots, you just moved it. Plus, with the frost taking the rest, we need every inch of that ground to work.",
+      "instructions": [
+       "persona-brit51",
+       "temp-inquisitive-speech",
+       "temp-suspicious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Cilla",
+      "text": "Rosa brought it home this dawn, though I wonder what she left out. You\u2019re right, roots hold secrets. I\u2019m just glad the frost\u2019s off the ground so I can dig, even if my back complains.",
+      "instructions": [
+       "persona-cilla",
+       "role-farmer-speech",
+       "temp-suspicious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Brit51",
+      "text": "Rosa? She\u2019s not even a farmer here. I want to know exactly what she saw and why she\u2019s whispering about it now. At least the frost\u2019s gone, but if the soil\u2019s bad, digging just spreads the rot.",
+      "instructions": [
+       "persona-brit51",
+       "temp-inquisitive-speech",
+       "temp-suspicious-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "inn",
+   "who": [
+    "Dunn",
+    "Alda78"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Dunn",
+      "text": "Rain's bad today, eh? Saw Jory mention raiders on the east road. Are you sure the road's safe?",
+      "instructions": [
+       "persona-dunn",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Alda78",
+      "text": "I saw them on the east road. Rain is wet. I know.",
+      "instructions": [
+       "persona-alda78",
+       "child-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-reserved-speech",
+       "temp-bold-speech",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "Well, if you saw them, keep your eyes peeled. Rain makes the road slick for any wheels, let alone raiders.",
+      "instructions": [
+       "persona-dunn",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Dunn",
+      "text": "Aye, Alda, come sit. You're looking a bit pale. What's troubling you?",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-bold-speech"
+      ]
+     },
+     {
+      "speaker": "Alda78",
+      "text": "Not pale. Just thinking. Who said the raiders were actually here? Just because people say it doesn't mean it's true.",
+      "instructions": [
+       "persona-alda78",
+       "temp-reserved-speech",
+       "temp-bold-speech"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "You\u2019re right, it\u2019s just talk for now. But Jory swears he saw them, and that\u2019s close enough to make me nervous. I\u2019m not rushing out, just keeping an eye on things.",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-bold-speech"
+      ]
+     },
+     {
+      "speaker": "Alda78",
+      "text": "Jory talks too much. If they\u2019re really there, they\u2019d have taken the bridge by now. I\u2019m not worried.",
+      "instructions": [
+       "persona-alda78",
+       "temp-reserved-speech",
+       "temp-bold-speech"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "You\u2019re right, if they were here, we\u2019d know. But Jory\u2019s not the only one seeing them, and I\u2019d rather be safe than sorry.",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-bold-speech"
+      ]
+     },
+     {
+      "speaker": "Alda78",
+      "text": "Safe is boring. If they want the bridge, they\u2019ll take it. I\u2019d rather know who\u2019s counting heads than guess about shadows.",
+      "instructions": [
+       "persona-alda78",
+       "temp-reserved-speech",
+       "temp-bold-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 185,
+   "place": "home_31",
+   "who": [
+    "Jory41",
+    "Jorun44"
+   ],
+   "A": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Jory41",
+      "text": "Rain\u2019s in my boots again. And the raiders on the east road are closer than I like.",
+      "instructions": [
+       "persona-jory41",
+       "adult-speech",
+       "role-guard-speech",
+       "weather-speech-rain",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Jorun44",
+      "text": "Closer, and it\u2019s raining. That means grain costs more before winter.",
+      "instructions": [
+       "persona-jorun44",
+       "adult-speech",
+       "role-merchant-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Jory41",
+      "text": "Aye, the price jumped when the lord\u2019s men started counting heads. We\u2019ll have to eat thin to survive.",
+      "instructions": [
+       "persona-jory41",
+       "adult-speech",
+       "role-guard-speech",
+       "weather-speech-rain",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Jorun44",
+      "text": "Thin indeed. The lord's men are at the crossroads, and grain is set to double.",
+      "instructions": [
+       "persona-jorun44",
+       "adult-speech",
+       "role-merchant-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-plainspoken-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "raiders on the east road",
+    "lines": [
+     {
+      "speaker": "Jory41",
+      "text": "Word\u2019s got around the road\u2019s not safe, so keep the shutters drawn until I give the word. Did you see anything strange when you went out for the morning?",
+      "instructions": [
+       "persona-jory41",
+       "role-guard-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Jorun44",
+      "text": "Nothing but frost on the window ledge. I heard Cilla say wolves are circling the lower meadows now, not the high pastures, so I locked the sheep early.",
+      "instructions": [
+       "persona-jorun44",
+       "role-merchant-speech",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Jory41",
+      "text": "Cilla\u2019s got a sharp eye, but wolves don\u2019t usually stick to the lower meadows. Did she see tracks or just hear it from someone else?",
+      "instructions": [
+       "persona-jory41",
+       "role-guard-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Jorun44",
+      "text": "She heard it from a traveler on the road. I don't know if she saw tracks or just took the word for it. I just know the grain needs moving before the danger gets closer.",
+      "instructions": [
+       "persona-jorun44",
+       "role-merchant-speech",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Jory41",
+      "text": "Travelers talk too fast, but we can\u2019t afford to be wrong. I\u2019ll keep the watchpost clear and ask Frode to check the ford. If those wolves are real, they\u2019ll be hungry, and so will we if the grain doesn\u2019t move.",
+      "instructions": [
+       "persona-jory41",
+       "role-guard-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 185,
+   "place": null,
+   "who": [
+    "Brit",
+    "Jory37"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Brit",
+      "text": "Morning. The blight is spreading in the fields. Who has seen it first?",
+      "instructions": [
+       "persona-brit",
+       "adult-speech",
+       "role-healer-speech"
+      ]
+     },
+     {
+      "speaker": "Jory37",
+      "text": "Rain's been heavy, and I saw the first spots on the eastern rows myself.",
+      "instructions": [
+       "persona-jory37",
+       "adult-speech",
+       "role-healer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Brit",
+      "text": "Come in, love. I\u2019ve been staring at the soil since dawn. The blight is taking hold faster than I thought. Did you see the eastern rows when you went out this morning?",
+      "instructions": [
+       "persona-brit",
+       "role-healer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Jory37",
+      "text": "I saw them, and the leaves look black and wet. It\u2019s a shame, given the frost already took so much. We\u2019ll need to be careful with what little we have left.",
+      "instructions": [
+       "persona-jory37",
+       "role-healer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Brit",
+      "text": "Aye, the frost took enough, and now this. We\u2019ll have to watch the grain stores closely, especially if those rumours about the price hike are true. I\u2019ll check the larder with you later.",
+      "instructions": [
+       "persona-brit",
+       "role-healer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Jory37",
+      "text": "I saw the eastern rows and they\u2019re black and wet. We\u2019ll need to be careful with what little we have left.",
+      "instructions": [
+       "persona-jory37",
+       "role-healer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "home_12",
+   "who": [
+    "Jorun",
+    "Gunne36"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Jorun",
+      "text": "Rain on the roof again. Did you see the crop where we cut it back this morning?",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "Aye, the rain is thick. I saw it. The blight spread through the new cut, and half of it has already turned to rot.",
+      "instructions": [
+       "persona-gunne36",
+       "adult-speech",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Jorun",
+      "text": "Did you see the black spots on the barley this morning? It looks worse than when we first found it, and the soil feels dry underfoot.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "Aye, the black spots are spreading fast and the dry earth won't help. If this blight takes the barley, we'll have little left to trade before winter. Have you seen Sena?",
+      "instructions": [
+       "persona-gunne36",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Jorun",
+      "text": "No, I haven't seen Sena since the dawn light came up. I was too busy checking the north row to look for anyone else.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "Sena\u2019s been up since the cows woke, likely checking the soil. I\u2019ll head over after I finish this row. If the blight takes the north field, we\u2019re in real trouble for winter.",
+      "instructions": [
+       "persona-gunne36",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Jorun",
+      "text": "I hope she finds what she\u2019s looking for, but I worry the blight has already taken root deeper than we see. We\u2019d better keep the south rows clean if we want any grain left for the pot.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "You\u2019re right, keep the south rows clean. I\u2019ll dig around the roots of the north field to see if the blight\u2019s gone deeper. If we lose the barley, there won\u2019t be enough grain for the winter, and that\u2019s a hard thought.",
+      "instructions": [
+       "persona-gunne36",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "as logged",
+   "day": 184,
+   "place": "inn",
+   "who": [
+    "Liv34",
+    "Alda52"
+   ],
+   "A": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Liv34",
+      "text": "Rain won't quit, Alda. Saw the blight spreading by the fields before I came in. Did you hear from Sena?",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Alda52",
+      "text": "Rain is bad, but Sena said the blight is worse. I don't know who told her, but I hope it's true.",
+      "instructions": [
+       "persona-alda52",
+       "apprentice-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech",
+       "temp-bold-speech",
+       "temp-plainspoken-speech",
+       "food-talk",
+       "temp-suspicious-speech",
+       "temp-settled-speech",
+       "temp-easygoing-speech"
+      ]
+     },
+     {
+      "speaker": "Liv34",
+      "text": "We cut the rot out, but it\u2019s stubborn. Rain\u2019s bad, but that black mold eats faster. Did you see the damage near the mill?",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the blight in the fields",
+    "lines": [
+     {
+      "speaker": "Liv34",
+      "text": "Morning, Alda. Saw you heading up to the fields before the sun was properly up. Did you manage to pull that last patch of blight clean, or is it still rotting the roots?",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Alda52",
+      "text": "Cold fingers this morning, though the air's finally thawing. I got most of it, but the roots still look bad, so don't plant deep there yet. What about your crops, Liv?",
+      "instructions": [
+       "persona-alda52",
+       "temp-gregarious-speech",
+       "temp-bold-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Liv34",
+      "text": "I\u2019m holding back on sowing until the soil warms up properly; that early frost nearly killed what we had left. Thanks for the warning on the roots, I\u2019d hate to waste good seed on dead earth.",
+      "instructions": [
+       "persona-liv34",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Alda52",
+      "text": "Wise to wait. That frost was cruel, took half the early yield. I\u2019ve seen worse rot, but this is nasty. You\u2019ve got your hands in the dirt most of the day, don\u2019t you?",
+      "instructions": [
+       "persona-alda52",
+       "temp-gregarious-speech",
+       "temp-bold-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "small talk",
+   "day": 184,
+   "place": "home_15",
+   "who": [
+    "Brit",
+    "Corin"
+   ],
+   "A": {
+    "topic": "whatever is on your mind",
+    "lines": [
+     {
+      "speaker": "Brit",
+      "text": "Corin, the crop rot is spreading fast. Do you think the blight is tied to the new tax?",
+      "instructions": [
+       "persona-brit",
+       "adult-speech",
+       "role-healer-speech"
+      ]
+     },
+     {
+      "speaker": "Corin",
+      "text": "I cannot say the rot is tied to the tax. But the fields are failing, and the lord's men are already counting heads.",
+      "instructions": [
+       "persona-corin",
+       "adult-speech",
+       "role-healer-speech"
+      ]
+     },
+     {
+      "speaker": "Brit",
+      "text": "If the fields fail and the men count heads, we are done for. What are we to do?",
+      "instructions": [
+       "persona-brit",
+       "adult-speech",
+       "role-healer-speech"
+      ]
+     },
+     {
+      "speaker": "Corin",
+      "text": "We mend what we can. I\u2019ll check the sick, you watch the blight. We hold on.",
+      "instructions": [
+       "persona-corin",
+       "adult-speech",
+       "role-healer-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "how your day's work has gone, as an adult, the healer",
+    "lines": [
+     {
+      "speaker": "Brit",
+      "text": "Jory37 is sleeping with the little one this morning, so I have a quiet hour before the shrine. How is your own day going, Corin?",
+      "instructions": [
+       "persona-brit",
+       "role-healer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Corin",
+      "text": "Good. Quiet mornings are a blessing. I just finished checking on Mabel\u2019s knee and sorted my tinctures. I am heading to the shrine now to prepare the poultices.",
+      "instructions": [
+       "persona-corin",
+       "role-healer-speech",
+       "temp-bold-speech"
+      ]
+     },
+     {
+      "speaker": "Brit",
+      "text": "I\u2019ll be at the shrine soon after I check on a few others. It\u2019s good to have you there; the morning light is just right for drying the herbs.",
+      "instructions": [
+       "persona-brit",
+       "role-healer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Corin",
+      "text": "Aye, the light is good. I\u2019ll have the comfrey ready when you get there. Don\u2019t rush, though; the herbs don\u2019t care if we\u2019re a minute late.",
+      "instructions": [
+       "persona-corin",
+       "role-healer-speech",
+       "temp-bold-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "small talk",
+   "day": 184,
+   "place": "mill",
+   "who": [
+    "Dunn",
+    "Edda"
+   ],
+   "A": {
+    "topic": "whatever is on your mind",
+    "lines": [
+     {
+      "speaker": "Dunn",
+      "text": "Rain\u2019s slicking the mill race again. You mind if I ask how your hands are holding up?",
+      "instructions": [
+       "persona-dunn",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Edda",
+      "text": "Hold up fine. Just keep the leather gloves dry. Rain makes the grain tricky to measure, so watch your footing on the race.",
+      "instructions": [
+       "persona-edda",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "Rain makes the grain slippery, but I know these stones. Watch your step, too, or we\u2019ll both end up in the water.",
+      "instructions": [
+       "persona-dunn",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "something you heard: Per40 and Gerd46 are to be married.",
+    "lines": [
+     {
+      "speaker": "Dunn",
+      "text": "Per40 and Gerd46 are to be married. I heard the news at the well, but who exactly set it in motion?",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-suspicious-speech"
+      ]
+     },
+     {
+      "speaker": "Edda",
+      "text": "I did not see it set in motion. I only heard the name at the well this morning. The millstones are heavy, and I have work to do.",
+      "instructions": [
+       "persona-edda",
+       "role-crafter-speech",
+       "temp-plainspoken-speech"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "Well, heavy stones don\u2019t care about weddings. I\u2019m not sure who started the rumor, but it\u2019s moving faster than flour through the hopper. I\u2019ve got a cracked wheel to mend before noon.",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-suspicious-speech"
+      ]
+     },
+     {
+      "speaker": "Edda",
+      "text": "Flour doesn't move that fast, but talk does. Bring that cracked wheel over here when you're done; I've got the chisels ready and time to spare before the next sack comes down.",
+      "instructions": [
+       "persona-edda",
+       "role-crafter-speech",
+       "temp-plainspoken-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "small talk",
+   "day": 185,
+   "place": "home_2",
+   "who": [
+    "Dunn",
+    "Sena"
+   ],
+   "A": {
+    "topic": "whatever is on your mind",
+    "lines": [
+     {
+      "speaker": "Dunn",
+      "text": "Morning, Sena. Rain's been on my back since I woke up. How's the old house holding up against the damp?",
+      "instructions": [
+       "persona-dunn",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Sena",
+      "text": "The stones hold, but the cold seeps in just like forty years ago. I hope it stops before the soil turns to soup.",
+      "instructions": [
+       "persona-sena",
+       "role-farmer-speech",
+       "elder-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "Forty years, eh? Time flies when you\u2019re waiting for the rain to stop. I hope it does, too.",
+      "instructions": [
+       "persona-dunn",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "home, and Orla",
+    "lines": [
+     {
+      "speaker": "Dunn",
+      "text": "Morning, Sena. The grain looks good this year, doesn't it? I was just thinking about that new roof on your place; the wind's been picking up, so I'll check the shingles later to make sure they're still tight.",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Sena",
+      "text": "You're a good man, Dunn. The soil is dark and ready for the spring, and I'm grateful for the extra hands. The weather is kind to us this morning, at least.",
+      "instructions": [
+       "persona-sena",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "Aye, the sun\u2019s out and the air feels light. Good for the crops and good for the spirits. I\u2019ll bring over that new latch for the gate today, so you don\u2019t have to worry about it rattling in the wind. How\u2019s the rest of the family holding up?",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Sena",
+      "text": "The family is holding steady, thank you for asking. It\u2019s a lot of voices in the house, but they keep the days busy. I\u2019d appreciate that latch; the wind has been picking up lately, and it rattles all night.",
+      "instructions": [
+       "persona-sena",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "I\u2019ll have it ready by noon. It\u2019s a solid piece of oak, so it should stop that rattle for good. With all that noise in the house, I hope you\u2019re getting some rest before the fields call you out.",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "small talk",
+   "day": 184,
+   "place": "inn",
+   "who": [
+    "Cilla",
+    "Eilif"
+   ],
+   "A": {
+    "topic": "whatever is on your mind",
+    "lines": [
+     {
+      "speaker": "Cilla",
+      "text": "Rain again. The blight's already eating the east fields, and the raiders are close.",
+      "instructions": [
+       "persona-cilla",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Eilif",
+      "text": "Rain washes the mud, but it won't stop the raiders. I'll check the east road myself after breakfast.",
+      "instructions": [
+       "persona-eilif",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the spring and what it means for the village",
+    "lines": [
+     {
+      "speaker": "Cilla",
+      "text": "Morning, Eilif. The soil's finally warm enough to work, though I'll not promise the frost has left us. What word have you from the fields?",
+      "instructions": [
+       "persona-cilla",
+       "role-farmer-speech",
+       "temp-suspicious-speech"
+      ]
+     },
+     {
+      "speaker": "Eilif",
+      "text": "Good to see you. The soil is waking up, but I've had my eye on that frost all week. I'm keeping the seedlings covered until the sun really bites through. You want a cup of something warm while you watch the sky?",
+      "instructions": [
+       "persona-eilif",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Cilla",
+      "text": "I\u2019ll take the cup, thanks. You\u2019re right to be cautious; that early frost took more than we\u2019d like to admit. I\u2019m watching the sky too, hoping it holds off another nip.",
+      "instructions": [
+       "persona-cilla",
+       "role-farmer-speech",
+       "temp-suspicious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Eilif",
+      "text": "It took the late plantings for sure, and my father would have cursed the sky if he were here. I\u2019m glad you\u2019re watching it, too. We need this spring to hold if we\u2019re to feed the family by winter.",
+      "instructions": [
+       "persona-eilif",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "small talk",
+   "day": 184,
+   "place": "inn",
+   "who": [
+    "Tobin",
+    "Edda"
+   ],
+   "A": {
+    "topic": "whatever is on your mind",
+    "lines": [
+     {
+      "speaker": "Tobin",
+      "text": "Rain\u2019s already soaking the thatch, and the bread\u2019s thin. How are the babies holding up this morning?",
+      "instructions": [
+       "persona-tobin",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Edda",
+      "text": "Runa\u2019s screaming and Alda\u2019s wet. I\u2019ll wrap them in dry wool. The rain won't stop, so we stay put.",
+      "instructions": [
+       "persona-edda",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "how Gerd102 is getting on",
+    "lines": [
+     {
+      "speaker": "Tobin",
+      "text": "Gerd slept through the night, so I am well rested. How is your crafting going this morning?",
+      "instructions": [
+       "persona-tobin",
+       "role-healer-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Edda",
+      "text": "I don't do crafting, Tobin. I'm at the mill. But I heard the new house is finished, so there's less broken to mend. Good sleep is a blessing.",
+      "instructions": [
+       "persona-edda",
+       "role-crafter-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Tobin",
+      "text": "My mistake, Edda. I was thinking of Gisla. It\u2019s good the house is finished, and less mending for you at the mill is a mercy.",
+      "instructions": [
+       "persona-tobin",
+       "role-healer-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Edda",
+      "text": "Gisla\u2019s hands are steady, indeed. Good to have it done. I\u2019m heading to the mill now to check the grain. You\u2019re staying for breakfast, I hope?",
+      "instructions": [
+       "persona-edda",
+       "role-crafter-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Tobin",
+      "text": "I will stay for a moment, but I must return to the shrine to check on the others. The grain at the mill has gone bad, so be careful what you handle.",
+      "instructions": [
+       "persona-tobin",
+       "role-healer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Edda",
+      "text": "I know, Wynn told me. I\u2019m keeping my hands off it until I can sort the good from the bad. Be careful with those others.",
+      "instructions": [
+       "persona-edda",
+       "role-crafter-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "small talk",
+   "day": 185,
+   "place": "home_2",
+   "who": [
+    "Dunn",
+    "Sena"
+   ],
+   "A": {
+    "topic": "whatever is on your mind",
+    "lines": [
+     {
+      "speaker": "Dunn",
+      "text": "Morning, Sena. That rain\u2019s soaking the grain again. Did you manage to get your barn roof sealed before the way it needs to be?",
+      "instructions": [
+       "persona-dunn",
+       "adult-speech",
+       "role-crafter-speech",
+       "weather-speech-rain",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Sena",
+      "text": "Morning, Dunn. The rain\u2019s heavy. I patched the roof, but it\u2019ll leak. I\u2019ve seen worse, but not since Fen passed.",
+      "instructions": [
+       "persona-sena",
+       "role-farmer-speech",
+       "elder-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "how your day's work has gone, as an adult, the miller",
+    "lines": [
+     {
+      "speaker": "Dunn",
+      "text": "Morning, Sena. The grain\u2019s gone bad in the sacks again, and I\u2019m just mending the millstone as we speak. How is the new field holding up for you this spring?",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Sena",
+      "text": "Aye, the new field is holding up well enough, soil\u2019s warm and the roots are taking. But I\u2019ll tell you, with the grain spoiling and prices up, I\u2019m worried we won\u2019t have enough seed for the planting.",
+      "instructions": [
+       "persona-sena",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Dunn",
+      "text": "That is a heavy worry to carry, and it makes my gut ache. I\u2019ve heard the prices are doubling out east, so every last good kernel is precious. Did you manage to save any seed before the rot set in?",
+      "instructions": [
+       "persona-dunn",
+       "role-crafter-speech",
+       "temp-gregarious-speech",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Sena",
+      "text": "I saved a little, but not much. The rot got to the best of it. I\u2019m not sure if we\u2019ll have enough to plant, but I\u2019ll make do with what I\u2019ve got.",
+      "instructions": [
+       "persona-sena",
+       "role-farmer-speech",
+       "temp-gregarious-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "small talk",
+   "day": 183,
+   "place": null,
+   "who": [
+    "Elin45",
+    "Odd39"
+   ],
+   "A": {
+    "topic": "whatever is on your mind",
+    "lines": [
+     {
+      "speaker": "Elin45",
+      "text": "Rain's already on the roof. You look thin, Odd. Have you eaten a proper meal this morning?",
+      "instructions": [
+       "persona-elin45",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Odd39",
+      "text": "Barely. The porridge ran thin, but the rain's a worse worry than hunger. Did you see the lord's men at the gate?",
+      "instructions": [
+       "persona-odd39",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain",
+       "food-talk"
+      ]
+     },
+     {
+      "speaker": "Elin45",
+      "text": "Aldo says they are counting heads at the crossroads. It is a bad sign, and the grain prices will triple soon.",
+      "instructions": [
+       "persona-elin45",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain",
+       "food-talk",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Odd39",
+      "text": "Aldo? Not Alda? If they count heads, the harvest is gone. Keep your eyes on the crossroads.",
+      "instructions": [
+       "persona-odd39",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain",
+       "food-talk"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "how your day's work has gone, as an adult, the healer",
+    "lines": [
+     {
+      "speaker": "Elin45",
+      "text": "Morning, Odd. I just finished checking the children at the schoolyard, and two of them are nursing headaches from that early frost. How has your morning been treating you?",
+      "instructions": [
+       "persona-elin45",
+       "role-healer-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Odd39",
+      "text": "The frost bites deeper than I expected, and these headaches will linger. I\u2019ve been at the shrine grinding tinctures all morning, trying to keep up with the complaints.",
+      "instructions": [
+       "persona-odd39",
+       "role-healer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Elin45",
+      "text": "Grinding tinctures is hard work, and I hope you\u2019ve at least had a cup of tea to warm up. I heard the frost was bad, but I didn\u2019t think it would cause such headaches.",
+      "instructions": [
+       "persona-elin45",
+       "role-healer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Odd39",
+      "text": "The cold settles in the bones and stays there. I had tea, but it did little good against the chill in the air. It\u2019s a wonder the fields didn\u2019t freeze solid with it.",
+      "instructions": [
+       "persona-odd39",
+       "role-healer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Elin45",
+      "text": "<think>",
+      "instructions": [
+       "persona-elin45",
+       "role-healer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Odd39",
+      "text": "I have taken a few moments to breathe, but the cold is still in my hands. Did you find anything else at the schoolyard that gave you pause?",
+      "instructions": [
+       "persona-odd39",
+       "role-healer-speech",
+       "temp-inquisitive-speech"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "small talk",
+   "day": 184,
+   "place": "home_12",
+   "who": [
+    "Jorun",
+    "Gunne36"
+   ],
+   "A": {
+    "topic": "whatever is on your mind",
+    "lines": [
+     {
+      "speaker": "Jorun",
+      "text": "This rain\u2019s got the blight crawling faster through the far fields. I need your hands with me at dawn, or we lose the rest.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "You\u2019ve got my hands. I\u2019ll be there before the sun clears the trees.",
+      "instructions": [
+       "persona-gunne36",
+       "role-farmer-speech",
+       "adult-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Jorun",
+      "text": "Good. The mud will be knee-deep by then. Bring the heavy boots and check the clay pit for extra sacks before you come.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "I\u2019ll grab the boots and the sacks. Better wet and safe than dry and starved.",
+      "instructions": [
+       "persona-gunne36",
+       "role-farmer-speech",
+       "adult-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "something you heard: Sten died in the night.",
+    "lines": [
+     {
+      "speaker": "Jorun",
+      "text": "The fire is low and the cold crept in while we slept. Did the light leave him all at once, or was there a moment of struggle?",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "I was not there, Jorun. Maren was. I only know he was gone by dawn. The frost took him as it took the fields, quick and cold.",
+      "instructions": [
+       "persona-gunne36",
+       "role-farmer-speech",
+       "temp-plainspoken-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Jorun",
+      "text": "Maren\u2019s face will carry the weight of it until the thaw. I hope the frost spared our barley, but with the wolves crossing the pastures, we must keep the sheep double-tethered tonight.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "The frost did spare the barley, the soil is warm enough. As for the wolves, Maren says they're at the high pastures, so yes, we tether tight. I'll check the fences before dark.",
+      "instructions": [
+       "persona-gunne36",
+       "role-farmer-speech",
+       "temp-plainspoken-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Jorun",
+      "text": "Good, the barley is safe. But don\u2019t trust the fences alone; wolves are clever and Maren is right to be wary. I\u2019ll be at the fields checking the soil before you head out to the high pastures.",
+      "instructions": [
+       "persona-jorun",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Gunne36",
+      "text": "Aye, I\u2019ll keep the sheep tethered tight. The soil\u2019s waking up, but the wolves are a worse worry. I\u2019ll have the fences checked before I head out.",
+      "instructions": [
+       "persona-gunne36",
+       "role-farmer-speech",
+       "temp-plainspoken-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "small talk",
+   "day": 184,
+   "place": "fields_2",
+   "who": [
+    "Corin",
+    "Maja"
+   ],
+   "A": {
+    "topic": "whatever is on your mind",
+    "lines": [
+     {
+      "speaker": "Corin",
+      "text": "This rain is soaking the soil. How are you holding up, Maja?",
+      "instructions": [
+       "persona-corin",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Maja",
+      "text": "Soaked is good. The wheat needed it. Just keep Hedda dry and we'll manage.",
+      "instructions": [
+       "persona-maja",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Corin",
+      "text": "Hedda? I know no Hedda. But the rain is bad for the shrine. I must go tend to it.",
+      "instructions": [
+       "persona-corin",
+       "adult-speech",
+       "role-healer-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Maja",
+      "text": "Hedda's my child. The shrine can wait for the sun. You know the water's tainted, not the rain.",
+      "instructions": [
+       "persona-maja",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the spring and what it means for the village",
+    "lines": [
+     {
+      "speaker": "Corin",
+      "text": "Morning, Maja. The frost is finally off the ground, which is a blessing for the soil and my aching joints. How\u2019s the seedbed looking this year?",
+      "instructions": [
+       "persona-corin",
+       "role-healer-speech",
+       "temp-gregarious-speech"
+      ]
+     },
+     {
+      "speaker": "Maja",
+      "text": "The frost took a lot, but the soil is ready now. I am sowing today, hoping for a good turn.",
+      "instructions": [
+       "persona-maja",
+       "role-farmer-speech",
+       "temp-reserved-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Corin",
+      "text": "That\u2019s the spirit. Keep your fingers crossed, and if the blight shows its nose again, come straight to the shrine. I\u2019d rather catch it early than lose another patch.",
+      "instructions": [
+       "persona-corin",
+       "role-healer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Maja",
+      "text": "I will keep an eye on it, but the blight was cut out. I am watching the water from the high country more than the soil, given the rumors.",
+      "instructions": [
+       "persona-maja",
+       "role-farmer-speech",
+       "temp-reserved-speech",
+       "food-talk"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "small talk",
+   "day": 185,
+   "place": "home_17",
+   "who": [
+    "Inga",
+    "Mads"
+   ],
+   "A": {
+    "topic": "whatever is on your mind",
+    "lines": [
+     {
+      "speaker": "Inga",
+      "text": "This rain is going to drown the blight. Mads, if the crop rots, we starve.",
+      "instructions": [
+       "persona-inga",
+       "role-farmer-speech",
+       "adult-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Mads",
+      "text": "That rain might wash the rot out, or it might spread it. We won't know until the ground dries.",
+      "instructions": [
+       "persona-mads",
+       "role-farmer-speech",
+       "adult-speech"
+      ]
+     }
+    ]
+   },
+   "B": {
+    "topic": "the spring and what it means for the village",
+    "lines": [
+     {
+      "speaker": "Inga",
+      "text": "Mads, the frost finally let go of the lower fields this morning. I went out early and the soil feels right for sowing. Did you sleep well, or was the baby fussing?",
+      "instructions": [
+       "persona-inga",
+       "role-farmer-speech",
+       "temp-inquisitive-speech"
+      ]
+     },
+     {
+      "speaker": "Mads",
+      "text": "Glad to hear the frost broke. I slept fine, but Dag88 woke twice, so I'm already up. The soil does look promising.",
+      "instructions": [
+       "persona-mads",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Inga",
+      "text": "Two wakes is enough to wake the whole house. I\u2019ll go check the seed sacks after you\u2019ve eaten. Better get the sowing started before the weather turns again.",
+      "instructions": [
+       "persona-inga",
+       "role-farmer-speech",
+       "temp-inquisitive-speech",
+       "weather-speech-rain"
+      ]
+     },
+     {
+      "speaker": "Mads",
+      "text": "I'll eat quick and meet you at the fields. We need to get the grain in before the rain comes back.",
+      "instructions": [
+       "persona-mads",
+       "role-farmer-speech",
+       "temp-gregarious-speech",
+       "weather-speech-rain"
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

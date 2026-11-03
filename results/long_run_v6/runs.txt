@@ -1,0 +1,72 @@
+20261014-143649-seed1
+# The sixth long run: the fifth's village, seed, switches and server, with the
+# time in the day given to work. Started on 2026-10-14 at 14:36 EDT on Scott's
+# go-ahead ("Stop and start sixth"), straight after the fifth was stopped in
+# year 16.
+#
+# Against the fifth long run (results/long_run_v5), four switches differ
+# (SPECIFICATION-warnings.md sections 11 and 12):
+#   - teachers_by_pupils: an elder teaches only while the school has fewer
+#     teachers than its children need, one for each 15 (Scott: a teacher can
+#     take ten to twenty). In the fifth run 79% of work time in year 7 was
+#     elders teaching four children.
+#   - elders_in_fields: elders get the adults' food work in lighter spells.
+#   - work_in_rain: only the easygoing stop work for rain, and a storm still
+#     sends everyone in. Sheltering from rain had been the most chosen adult
+#     instruction by day.
+#   - decide_again: a villager whose action ends partway through a tick takes
+#     up its next one in that tick. About 11% of waking hours had gone idle
+#     in the tick after an action.
+# In sixteen days without the model these together brought the crop to the
+# fields' capacity before the harvest and twice the harvest in by day 16.
+#
+# The build. Hearthwick ed9cf10 with BEAR 8e26162 from the WSL clone
+# /mnt/c/tmp/bear-dev-main, as the third to fifth runs.
+#
+# The model. Qwen3.8-27B on 8355 (SGLang, dgx2's build), as the fourth and
+# fifth runs. The embedder is 8360.
+#
+# From the repository in WSL:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup .venv/bin/python \
+#     -m hearthwick run --days 8000 --days-per-year 28 --seed 1 --village greater \
+#     --checkpoint-every 1 --no-designs --no-wants --no-search --no-vehicles \
+#     --no-assessing --no-looking --no-placing --no-bynames \
+#     --no-leisure --no-living-memory --no-natural-talk --no-time-off \
+#     --quick-warnings --told-memory --fading-lessons --short-warnings \
+#     --lasting-lessons --teachers-by-pupils --elders-in-fields \
+#     --work-in-rain --decide-again \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     > runs/long_run_v6.log 2>&1 < /dev/null & sleep 45
+#
+# Its first 45 seconds made 59 model calls, all answered.
+#
+# To resume after a stop, with the same PYTHONPATH:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup .venv/bin/python \
+#     -m hearthwick run --resume 20261014-143649-seed1 \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     >> runs/long_run_v6.log 2>&1 < /dev/null & sleep 45
+#
+# To stop it, send SIGINT to its pid, which saves and exits cleanly. Then tell
+# bear-dev-16, who coordinates 8355.
+#
+# Its report, read to a fixed day so it can run while the village does:
+#
+#   python experiments/long_run_report.py 20261014-143649-seed1 --to-day <N> --out results/long_run_v6
+#
+# 2026-10-16: the machine rebooted at about 02:03 EDT and the run died with
+# it, at about day 721. Its last checkpoint was from 01:46 (tick 103536, day
+# 719, year 25), with no model call failed or unanswered until then. 8355
+# came back by itself (sglang_qwen38_27b, the same configuration, a fresh
+# process, healthy from 02:08) and answered a test request. The run was
+# resumed from that checkpoint at 02:11:29 with the resume command above,
+# which cut its logs back to the checkpoint. The resume records Hearthwick
+# b383f4b, which differs from ed9cf10 only by result notes.
+#
+# 2026-10-16: the machine rebooted again at 08:25 for a Windows update, and
+# the run, slowed by then to about two in-game days in six hours, stopped at
+# its checkpoint of 06:04 (day 721). It was not resumed. Scott chose a seventh
+# run from the start instead, with the live memory index trimmed and telling
+# limited to what the listener has not had (results/long_run_v7). Its report
+# to day 719 is in this folder.

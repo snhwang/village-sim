@@ -1,0 +1,271 @@
+{
+  "meta": {
+    "runs": [
+      "20261022-070414-seed1",
+      "20261022-073709-seed2",
+      "20261022-080916-seed3",
+      "20261022-083715-seed4",
+      "20261022-090533-seed5",
+      "20261022-093732-seed6"
+    ],
+    "date": "2026-10-22",
+    "checked_against": "results/knowledge_flow.json"
+  },
+  "per_run": [
+    {
+      "run": "20261022-070414-seed1",
+      "events that spread": 46,
+      "median holders of an event": 29.5,
+      "median wordings of an event": 20.5,
+      "longest chain": 8,
+      "offers already known (%)": 84.0,
+      "new news refused (%)": 19.1,
+      "facts reclassified (%)": 58.1,
+      "reclassified toward trouble (%)": 93.4,
+      "knowledge-only decisions (%)": 22.2
+    },
+    {
+      "run": "20261022-073709-seed2",
+      "events that spread": 47,
+      "median holders of an event": 30,
+      "median wordings of an event": 22,
+      "longest chain": 11,
+      "offers already known (%)": 83.1,
+      "new news refused (%)": 18.9,
+      "facts reclassified (%)": 65.2,
+      "reclassified toward trouble (%)": 85.8,
+      "knowledge-only decisions (%)": 22.7
+    },
+    {
+      "run": "20261022-080916-seed3",
+      "events that spread": 41,
+      "median holders of an event": 28,
+      "median wordings of an event": 19,
+      "longest chain": 8,
+      "offers already known (%)": 75.9,
+      "new news refused (%)": 22.1,
+      "facts reclassified (%)": 47.1,
+      "reclassified toward trouble (%)": 80.1,
+      "knowledge-only decisions (%)": 15.3
+    },
+    {
+      "run": "20261022-083715-seed4",
+      "events that spread": 35,
+      "median holders of an event": 30,
+      "median wordings of an event": 20,
+      "longest chain": 8,
+      "offers already known (%)": 80.7,
+      "new news refused (%)": 22.0,
+      "facts reclassified (%)": 54.3,
+      "reclassified toward trouble (%)": 81.4,
+      "knowledge-only decisions (%)": 14.5
+    },
+    {
+      "run": "20261022-090533-seed5",
+      "events that spread": 48,
+      "median holders of an event": 24.0,
+      "median wordings of an event": 17.0,
+      "longest chain": 7,
+      "offers already known (%)": 80.0,
+      "new news refused (%)": 18.9,
+      "facts reclassified (%)": 47.9,
+      "reclassified toward trouble (%)": 80.4,
+      "knowledge-only decisions (%)": 21.8
+    },
+    {
+      "run": "20261022-093732-seed6",
+      "events that spread": 52,
+      "median holders of an event": 29.0,
+      "median wordings of an event": 21.0,
+      "longest chain": 8,
+      "offers already known (%)": 83.5,
+      "new news refused (%)": 22.8,
+      "facts reclassified (%)": 59.5,
+      "reclassified toward trouble (%)": 87.8,
+      "knowledge-only decisions (%)": 26.5
+    }
+  ],
+  "spread": {
+    "events that spread": {
+      "mean": 44.8,
+      "sd": 6.0,
+      "min": 35,
+      "max": 52
+    },
+    "median holders of an event": {
+      "mean": 28.4,
+      "sd": 2.3,
+      "min": 24.0,
+      "max": 30
+    },
+    "median wordings of an event": {
+      "mean": 19.9,
+      "sd": 1.7,
+      "min": 17.0,
+      "max": 22
+    },
+    "longest chain": {
+      "mean": 8.3,
+      "sd": 1.4,
+      "min": 7,
+      "max": 11
+    },
+    "offers already known (%)": {
+      "mean": 81.2,
+      "sd": 3.1,
+      "min": 75.9,
+      "max": 84.0
+    },
+    "new news refused (%)": {
+      "mean": 20.6,
+      "sd": 1.8,
+      "min": 18.9,
+      "max": 22.8
+    },
+    "facts reclassified (%)": {
+      "mean": 55.4,
+      "sd": 7.0,
+      "min": 47.1,
+      "max": 65.2
+    },
+    "reclassified toward trouble (%)": {
+      "mean": 84.8,
+      "sd": 5.2,
+      "min": 80.1,
+      "max": 93.4
+    },
+    "knowledge-only decisions (%)": {
+      "mean": 20.5,
+      "sd": 4.7,
+      "min": 14.5,
+      "max": 26.5
+    }
+  },
+  "action_intervals": {
+    "runs": [
+      "20261022-070414-seed1",
+      "20261022-073709-seed2",
+      "20261022-080916-seed3",
+      "20261022-083715-seed4",
+      "20261022-090533-seed5",
+      "20261022-093732-seed6"
+    ],
+    "rows": [
+      {
+        "what": "whole temperament",
+        "changed": 196,
+        "compared": 2400,
+        "pct": 8.2,
+        "wilson95": [
+          7.1,
+          9.3
+        ]
+      },
+      {
+        "what": "sociability",
+        "changed": 52,
+        "compared": 2400,
+        "pct": 2.2,
+        "wilson95": [
+          1.7,
+          2.8
+        ]
+      },
+      {
+        "what": "caution",
+        "changed": 167,
+        "compared": 2400,
+        "pct": 7.0,
+        "wilson95": [
+          6.0,
+          8.0
+        ]
+      },
+      {
+        "what": "curiosity",
+        "changed": 29,
+        "compared": 2400,
+        "pct": 1.2,
+        "wilson95": [
+          0.8,
+          1.7
+        ]
+      },
+      {
+        "what": "trust",
+        "changed": 59,
+        "compared": 2400,
+        "pct": 2.5,
+        "wilson95": [
+          1.9,
+          3.2
+        ]
+      },
+      {
+        "what": "diligence",
+        "changed": 187,
+        "compared": 2400,
+        "pct": 7.8,
+        "wilson95": [
+          6.8,
+          8.9
+        ]
+      },
+      {
+        "what": "candor",
+        "changed": 33,
+        "compared": 2400,
+        "pct": 1.4,
+        "wilson95": [
+          1.0,
+          1.9
+        ]
+      }
+    ]
+  },
+  "restored": {
+    "decisions": 172064,
+    "chose_restored": 0,
+    "over_knowledge": 0,
+    "by_instruction": {},
+    "pct": 0.0,
+    "per_run": [
+      {
+        "run": "20261022-070414-seed1",
+        "decisions": 28922,
+        "chose_restored": 0,
+        "over_knowledge": 0
+      },
+      {
+        "run": "20261022-073709-seed2",
+        "decisions": 28464,
+        "chose_restored": 0,
+        "over_knowledge": 0
+      },
+      {
+        "run": "20261022-080916-seed3",
+        "decisions": 27381,
+        "chose_restored": 0,
+        "over_knowledge": 0
+      },
+      {
+        "run": "20261022-083715-seed4",
+        "decisions": 27468,
+        "chose_restored": 0,
+        "over_knowledge": 0
+      },
+      {
+        "run": "20261022-090533-seed5",
+        "decisions": 28774,
+        "chose_restored": 0,
+        "over_knowledge": 0
+      },
+      {
+        "run": "20261022-093732-seed6",
+        "decisions": 31055,
+        "chose_restored": 0,
+        "over_knowledge": 0
+      }
+    ]
+  }
+}

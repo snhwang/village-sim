@@ -1,0 +1,94 @@
+# A trial of far_danger_dated (SPECIFICATION-warnings.md section 14) on the
+# Radiology AI Lab machine (rtx-lab), while the paper's batches finish on the
+# home machine. Scott, 2026-10-23, on the known defect of section 13: the
+# fix goes on main behind a switch, and rtx-lab runs the next version.
+#
+# The build. Hearthwick main at the commit that adds far_danger_dated (or
+# later, as long as hearthwick/ and data/ are unchanged since), with BEAR
+# 1ceebc7, the BEAR of the paper-v4 runs, so the comparison below differs only
+# in the switch and the machine. Not bear-dev main, which has moved on.
+# The model is the lab machine's own 8355 (Qwen3.8-27B NVFP4 on the same
+# pinned SGLang image as at home) and its embedder on 8360.
+#
+# Three ten-year runs, seeds 1 to 3, as the paper-v4 long runs, since the
+# defect showed over years. From WSL on the lab machine, with Hearthwick
+# cloned at ~/hearthwick-evolving-village (adjust the paths to the clone):
+#
+#   git clone <bear-dev clone> /mnt/c/tmp/bear-1ceebc7
+#   git -C /mnt/c/tmp/bear-1ceebc7 checkout --detach 1ceebc7
+#   cd ~/hearthwick-evolving-village && git pull --rebase
+#   export PYTHONPATH=/mnt/c/tmp/bear-1ceebc7
+#   export PY=$PWD/.venv/bin/python
+#   export RUN_LOG=~/hearthwick-runlogs/dated_trial/RUN_LOG.md
+#   export LOGGED="bash $PWD/experiments/logged.sh"
+#   export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
+#   export LLM_ARGS="--llm-url http://localhost:8355/v1 --model Qwen3.8-27B"
+#   $PY -c 'from hearthwick.events import code_versions; print(code_versions())'
+#   for seed in 1 2 3; do
+#     setsid nohup $LOGGED $PY -m hearthwick run --profile illustrative \
+#         --threshold 0.15 --days 280 --seed $seed --village greater \
+#         --checkpoint-every 1 $LLM_ARGS \
+#         > runs/dated_trial_seed$seed.log 2>&1 < /dev/null &
+#   done
+#
+# The run log lives outside the clone: logged.sh appends to it before each
+# command starts, so a tracked log in the clone would mark the runs -dirty.
+# code_versions must name the far_danger_dated commit or later and BEAR
+# 1ceebc7, neither -dirty.
+#
+# The checks, for each run:
+#
+#   $LOGGED $PY experiments/unanswered.py runs/<id>/meta.json
+#   $LOGGED $PY experiments/health_check.py <id> --log runs/dated_trial_seed<N>.log \
+#       --out results/dated_trial/health_seed<N>
+#   $LOGGED $PY experiments/warning_ages.py <id> --out results/dated_trial/ages_seed<N>
+#   $LOGGED $PY experiments/long_run_report.py <id> --to-day 280 \
+#       --out results/dated_trial/report_seed<N>
+#
+# It passes when no call went unanswered, the health check flags nothing,
+# and the events coming-pass-the-word passes on are no longer weeks old.
+# Against the paper-v4 long runs (results/long_runs_v4/ and
+# experiments/warning_ages.py on 20261023-012700-seed1 to -seed3):
+#
+#   | | paper-v4 | this trial |
+#   | events over a week old in coming-pass-the-word | 15.7 to 21.6% | |
+#   | over four weeks | 6.2 to 12.1% | |
+#   | listener-days over 3 in ten years | 24, 6 and 2 | |
+#
+# warning_ages.py dates an event by its first root, so a tale a storyteller
+# brought again, renewed and rightly fresh, still counts by its first
+# telling: the share over a week old falls but need not reach zero. Exact
+# numbers differ between machines, so only these measures are compared, never
+# the runs line for line.
+
+# As run on rtx-lab, 2026-10-24 00:32 EDT (Scott's go-ahead given in the rtx-lab session):
+#   Hearthwick clone  /mnt/c/Users/shwang1/Documents/Work/hearthwick-evolving-village at 54146f5
+#   BEAR              /mnt/c/Users/shwang1/Documents/Work/bear-1ceebc7, detached at 1ceebc7
+#                     (under Work, not /mnt/c/tmp: on this machine all repos live in Work)
+#   RUN_LOG           ~/hearthwick-runlogs/dated_trial/RUN_LOG.md (outside the clone)
+#   code (meta.json)  {'hearthwick': '54146f5', 'bear': '1ceebc7', 'bear_version': '0.2.0'}, neither -dirty
+#   run ids           20261024-003205-seed1, 20261024-003205-seed2, 20261024-003205-seed3
+
+# Results on rtx-lab, 2026-10-24 (checks run after all three finished; outputs in
+# results/dated_trial/{health,ages,report}_seed<N>/):
+#
+#   run (finished, wall)                    day 280 alive  speech_errors  unanswered.py  health_check
+#   20261024-003205-seed1 (10.2 h)          58             0              exit 0, clean  0 of 14 flagged
+#   20261024-003205-seed2 (10.0 h)          55             0              exit 0, clean  0 of 14 flagged
+#   20261024-003205-seed3 (9.1 h)           47             0              exit 0, clean  0 of 14 flagged
+#   No Traceback or "Simulation step failed" in any runs/dated_trial_seed<N>.log.
+#
+#   | | paper-v4 | this trial (seeds 1, 2, 3) |
+#   | events over a week old in coming-pass-the-word | 15.7 to 21.6% | 2.0, 0.0 and 0.6% |
+#   | over four weeks | 6.2 to 12.1% | 1.9, 0.0 and 0.5% |
+#   | listener-days over 3 in ten years | 24, 6 and 2 | 0, 0 and 0 |
+#
+#   coming-pass-the-word facts: 22558, 23382 and 12038; held over 7 days 0.7, 0.0 and 0.3%.
+#   For reference (warning_ages.py, seeds 1, 2, 3), event over 7 / over 28 days old:
+#     knows-warn-about-well    50.0/27.3, 30.2/12.0, 39.3/16.4%
+#     knows-warn-about-road    61.5/21.3, 33.1/5.1,  66.2/43.6%
+#     knows-warn-about-blight  55.5/29.0, 38.4/13.4, 25.6/16.0%
+#   with held over 7 days <= 2.2% for every warn kind.
+#
+# It passes on all three criteria: no call went unanswered, the health check flags nothing,
+# and the events coming-pass-the-word passes on are no longer weeks old.

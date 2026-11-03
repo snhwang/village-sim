@@ -1,0 +1,49 @@
+# Courtship (hearthwick/courtship.py). Two unpartnered adults, a man and a
+# woman, grow fond of each other by talking and by time spent near each other.
+# Nothing here says who is attractive. What a villager sees is its own
+# situation:
+#   marriageable        it may court: a free adult, or an elder too with the
+#                       wider fertile window (SPECIFICATION.md section 2.9j)
+#   courting            it has a sweetheart, someone it is fond enough of
+#   sweetheart_near     the sweetheart is near and awake
+#   fond_enough         the two are fond enough of each other to marry
+#   proposed_to         someone has asked to marry it, and the question stands
+#   prefers_another     it is fonder of someone else than of who asked
+#   hardly_knows_asker  their fondness is still new
+# What an instruction states as true is a hard gate (SPECIFICATION section 3,
+# rule 1). Without that, the "not ready" answer was open to someone who had
+# been fond of the asker for days.
+# Handlers refuse what cannot be done: a proposal before the two are fond
+# enough, or while a question already stands, and an answer when nobody asked.
+# The one who is asked decides.
+
+instructions:
+  - id: family-seek-sweetheart
+    type: directive
+    priority: 58
+    content: There is someone you have grown fond of. Go and find them, and spend a while talking. [!talk(target=sweetheart, topic=how the day has gone)]
+    scope: {required_tags: [marriageable, daytime, courting], tags: [time_evening, temp_gregarious, wants_company]}
+
+  - id: family-propose
+    type: directive
+    priority: 72
+    content: The one you have grown fond of is here with you, and has been fond of you for a while now. Ask them to marry you. [!propose]
+    scope: {required_tags: [marriageable, daytime, courting, sweetheart_near, fond_enough], tags: [time_evening, temp_bold, temp_gregarious]}
+
+  - id: family-accept-proposal
+    type: directive
+    priority: 82
+    content: You have been asked to marry, by someone you are fond of. Say yes. [!accept_proposal]
+    scope: {required_tags: [marriageable, daytime, proposed_to], tags: [temp_trusting, temp_gregarious]}
+
+  - id: family-decline-prefer-another
+    type: directive
+    priority: 84
+    content: You have been asked to marry, but it is someone else you are fond of. Say no, kindly. [!decline_proposal]
+    scope: {required_tags: [marriageable, daytime, proposed_to, prefers_another]}
+
+  - id: family-decline-not-ready
+    type: directive
+    priority: 76
+    content: You have been asked to marry, and you are not sure. You do not know them well enough yet. Say no for now. [!decline_proposal]
+    scope: {required_tags: [marriageable, daytime, proposed_to, hardly_knows_asker], tags: [temp_suspicious, temp_reserved, temp_wary]}

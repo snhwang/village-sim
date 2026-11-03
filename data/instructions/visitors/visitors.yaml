@@ -1,0 +1,52 @@
+# Visitors: people from outside who come up the east road, stay a couple of
+# days, and go (hearthwick/visitors.py). So far a traveling storyteller.
+# A visitor carries the tag `visitor`, and `leaving` once its stay is over.
+# A villager with a visitor nearby carries `near_stranger`, and can name it as
+# the talk target `stranger`, which resolves only to a visitor with news the
+# villager lacks. `listener` is the nearest villager who lacks some of yours.
+
+instructions:
+  # --- the storyteller ---
+  - id: visitor-tell-the-news
+    type: directive
+    priority: 68
+    content: You are a stranger here, with tales from the road and news from other villages. Tell them to someone who has not heard them. [!talk(target=listener, topic=news from the road)]
+    scope: {required_tags: [visitor, daytime, near_someone]}
+
+  - id: visitor-find-listeners-market
+    type: directive
+    priority: 60
+    content: Go where the villagers gather and see who will stop to listen. The market is the place in the morning. [!go(to=market)]
+    scope: {required_tags: [visitor, daytime], tags: [time_morning, time_midday, alone]}
+
+  - id: visitor-find-listeners-well
+    type: directive
+    priority: 58
+    content: Nobody is listening here. Try the well, where people stop to talk while they wait their turn. [!go(to=well)]
+    scope: {required_tags: [visitor, daytime], tags: [time_afternoon, alone]}
+
+  - id: visitor-leave
+    type: protocol
+    priority: 95
+    content: Your stay is over and the road is waiting. Take the east road out of the village. [!go(to=east_road)] [!depart]
+    scope: {required_tags: [visitor, leaving, daytime]}
+
+  - id: visitor-speech
+    type: directive
+    priority: 55
+    content: You are a traveling storyteller, a stranger here. You tell the news of the roads as a tale, and you want to hear what this village has to tell in return, to carry on to the next.
+    scope: {required_tags: [visitor, talking]}
+
+  # --- the village, meeting a stranger ---
+  - id: villager-hear-the-stranger
+    type: directive
+    priority: 64
+    content: A stranger is in the village, a storyteller from the road. Go and hear what news they bring. [!talk(target=stranger, topic=news from the road)]
+    scope: {required_tags: [daytime, near_stranger], tags: [temp_inquisitive, temp_gregarious, temp_trusting]}
+
+  - id: villager-wary-of-the-stranger
+    type: directive
+    priority: 62
+    content: A stranger with a great deal to say. You would sooner hear it from someone you know. Keep to your own door. [!go(to=home)]
+    scope: {required_tags: [daytime, near_stranger, temp_suspicious]}
+    metadata: {gene_category: trust}

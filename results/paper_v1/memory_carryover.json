@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "runs": [
+      "20260927-190041-seed1",
+      "20260927-191014-seed2",
+      "20260927-192146-seed3",
+      "20260927-193347-seed4",
+      "20260927-194732-seed5",
+      "20260927-195852-seed6"
+    ],
+    "date": "2026-09-27"
+  },
+  "pairs": 598,
+  "kind": [
+    {
+      "listeners": "all listeners",
+      "teller_said_trouble": true,
+      "n": 475,
+      "count": 453,
+      "pct": 95.4
+    },
+    {
+      "listeners": "all listeners",
+      "teller_said_trouble": false,
+      "n": 123,
+      "count": 32,
+      "pct": 26.0
+    },
+    {
+      "listeners": "wary listeners",
+      "teller_said_trouble": true,
+      "n": 218,
+      "count": 211,
+      "pct": 96.8
+    },
+    {
+      "listeners": "wary listeners",
+      "teller_said_trouble": false,
+      "n": 62,
+      "count": 21,
+      "pct": 33.9
+    },
+    {
+      "listeners": "bold listeners",
+      "teller_said_trouble": true,
+      "n": 257,
+      "count": 242,
+      "pct": 94.2
+    },
+    {
+      "listeners": "bold listeners",
+      "teller_said_trouble": false,
+      "n": 61,
+      "count": 11,
+      "pct": 18.0
+    }
+  ],
+  "hedging": [
+    {
+      "listeners": "all listeners",
+      "teller_hedged": true,
+      "n": 250,
+      "count": 213,
+      "pct": 85.2
+    },
+    {
+      "listeners": "all listeners",
+      "teller_hedged": false,
+      "n": 348,
+      "count": 193,
+      "pct": 55.5
+    },
+    {
+      "listeners": "suspicious listeners",
+      "teller_hedged": true,
+      "n": 127,
+      "count": 113,
+      "pct": 89.0
+    },
+    {
+      "listeners": "suspicious listeners",
+      "teller_hedged": false,
+      "n": 161,
+      "count": 101,
+      "pct": 62.7
+    },
+    {
+      "listeners": "trusting listeners",
+      "teller_hedged": true,
+      "n": 123,
+      "count": 100,
+      "pct": 81.3
+    },
+    {
+      "listeners": "trusting listeners",
+      "teller_hedged": false,
+      "n": 187,
+      "count": 92,
+      "pct": 49.2
+    }
+  ]
+}

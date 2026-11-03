@@ -1,0 +1,161 @@
+# What knowing something makes a villager do, and how each of them filters what
+# they hear. The action instructions are gated on the affordance tags a stored
+# fact adds to its holder's context (hearthwick/knowledge.py), so they are
+# unreachable until the villager actually knows the thing.
+
+instructions:
+  # --- acting on what you know ---
+  - id: knows-avoid-sick-well
+    type: protocol
+    priority: 78
+    content: You know the water at the well has turned. Keep away from it and draw from somewhere else. [!avoid(place=well)]
+    scope: {required_tags: [daytime, knows_sickness_well]}
+
+  - id: knows-avoid-raided-road
+    type: protocol
+    priority: 76
+    content: You know raiders have been on the east road. There is no call to go out that way. [!avoid(place=east_road)]
+    scope: {required_tags: [daytime, knows_hazard_east_road]}
+
+  - id: knows-warn-about-well
+    type: directive
+    priority: 70
+    content: Someone nearby may not have heard about the well. Tell them before they drink from it. [!warn(target=nearby, topic=the water at the well has turned)]
+    scope: {required_tags: [daytime, knows_sickness_well, near_someone]}
+
+  - id: knows-warn-about-road
+    type: directive
+    priority: 68
+    content: Warn whoever is nearby about the raiders on the east road. [!warn(target=nearby, topic=raiders on the east road)]
+    scope: {required_tags: [daytime, knows_hazard_east_road, near_someone]}
+
+  - id: knows-healer-tends-the-sick
+    type: directive
+    priority: 74
+    content: You know the water is making people ill. Go from house to house and see who has been taken bad. [!go(to=random_home)] [!rest(ticks=4)]
+    scope: {required_tags: [role_healer, daytime, knows_sickness_well]}
+
+  - id: knows-guard-investigates
+    type: directive
+    priority: 74
+    content: You know raiders came to the road. Go and see the place for yourself, whatever anyone says about it. [!go(to=watchpost)] [!rest(ticks=6)]
+    scope: {required_tags: [role_guard, daytime, knows_hazard_east_road]}
+
+  # Knowledge the expanded world can produce. Without these the new events are
+  # things villagers can hear about and never act on, and the claim that
+  # knowledge becomes behaviour would hold only for the well.
+
+  - id: knows-avoid-blighted-field
+    type: directive
+    priority: 71
+    content: >-
+      You know the blight is in the crop at the fields. There is nothing to be
+      done there today and whatever you carry away spreads it.
+      [!avoid(place=fields)]
+    scope: {required_tags: [daytime, knows_sickness_fields]}
+
+  # Fighting it instead (section 2.9j): the bold, the diligent and the farmers
+  # lean this way, the wary keep away as above. Refused once the blight is gone.
+  - id: knows-fight-blight
+    type: directive
+    priority: 71
+    content: >-
+      You know the blight is in the crop at the fields. If enough hands cut
+      the rot out, the rest of the crop can be saved. Go and help.
+      [!fight_blight(ticks=12)]
+    scope: {required_tags: [daytime, knows_sickness_fields], tags: [temp_bold, temp_diligent, role_farmer]}
+    metadata: {switch: blight_fighting}
+
+  - id: knows-warn-about-blight
+    type: directive
+    priority: 69
+    content: >-
+      Someone should be told the crop is going. Find whoever is nearest and say
+      so. [!warn(target=nearby, topic=the blight in the fields)]
+    scope: {required_tags: [daytime, knows_sickness_fields], tags: [near_someone]}
+
+  - id: knows-crafter-checks-the-grain
+    type: directive
+    priority: 67
+    content: >-
+      You know the grain at the mill has gone over. Go and see how much of it
+      is lost before anyone bakes with it. [!go(to=mill)] [!work(site=mill, ticks=6)]
+    scope: {required_tags: [role_crafter, daytime, knows_sickness_mill]}
+
+  # --- the lens: how each villager filters what it hears ---
+  - id: absorb-suspicious
+    type: directive
+    priority: 60
+    content: You do not take a story on trust. Keep it only if the teller could have seen it themselves, and say plainly that it is only what you were told.
+    scope: {required_tags: [temp_suspicious, absorbing]}
+    metadata: {gene_category: trust}
+
+  - id: absorb-trusting
+    type: directive
+    priority: 60
+    content: You believe what neighbors tell you, and repeat it as settled fact.
+    scope: {required_tags: [temp_trusting, absorbing]}
+    metadata: {gene_category: trust, dominance: 2.0}
+
+  - id: absorb-embellishing
+    type: directive
+    priority: 58
+    content: >-
+      You keep the shape of what you heard but improve it: a detail sharper, a number larger, the danger closer than it was.
+    scope: {required_tags: [temp_embellishing, absorbing]}
+    metadata: {gene_category: candor}
+
+  - id: absorb-plainspoken
+    type: directive
+    priority: 58
+    content: You keep what you heard stripped to the plain fact, without the trimmings the teller added.
+    scope: {required_tags: [temp_plainspoken, absorbing]}
+    metadata: {gene_category: candor, dominance: 2.0}
+
+  - id: absorb-inquisitive
+    type: directive
+    priority: 55
+    content: >-
+      You keep the parts you could check later: where it happened, when, and who says so.
+    scope: {required_tags: [temp_inquisitive, absorbing]}
+    metadata: {gene_category: curiosity, dominance: 2.0}
+
+  - id: absorb-wary
+    type: directive
+    priority: 55
+    content: You keep anything that bears on safety, and let the rest go.
+    scope: {required_tags: [temp_wary, absorbing]}
+    metadata: {gene_category: caution, dominance: 2.0}
+
+  - id: absorb-role-healer
+    type: directive
+    priority: 62
+    content: >-
+      What you keep is what bears on health: who is ill, what they drank or ate, where the sickness came from.
+    scope: {required_tags: [role_healer, absorbing]}
+
+  - id: absorb-role-guard
+    type: directive
+    priority: 62
+    content: What you keep is who was where, when, and whether anyone could have seen it themselves.
+    scope: {required_tags: [role_guard, absorbing]}
+
+  - id: absorb-role-merchant
+    type: directive
+    priority: 62
+    content: >-
+      What you keep is what bears on trade: prices, roads, who is buying, what is scarce.
+    scope: {required_tags: [role_merchant, absorbing]}
+
+  - id: absorb-role-farmer
+    type: directive
+    priority: 62
+    content: >-
+      What you keep is what bears on the land: weather, water, the state of the fields and the beasts.
+    scope: {required_tags: [role_farmer, absorbing]}
+
+  - id: absorb-role-storyteller
+    type: directive
+    priority: 62
+    content: What you keep is what will tell well later, and you remember it in the shape of a tale.
+    scope: {required_tags: [role_storyteller, absorbing]}

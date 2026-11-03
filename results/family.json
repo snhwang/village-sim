@@ -1,0 +1,584 @@
+[
+  {
+    "run": "20261022-070414-seed1",
+    "births": [
+      {
+        "day": 1,
+        "child": "maja",
+        "mother": "mabel",
+        "father": "edek",
+        "home": "home_13",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "wary",
+          "curiosity": "settled",
+          "trust": "suspicious",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 3,
+        "child": "inga",
+        "mother": "rosa",
+        "father": "osric",
+        "home": "home_3",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        }
+      },
+      {
+        "day": 25,
+        "child": "frode",
+        "mother": "ada",
+        "father": "wynn",
+        "home": "home_5",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "diligent",
+          "candor": "embellishing"
+        }
+      }
+    ],
+    "decision_chosen": 154,
+    "tries": 99,
+    "conceived": 3,
+    "decision_refused": 443,
+    "start": {
+      "adult": 17,
+      "child": 4,
+      "apprentice": 4,
+      "elder": 5
+    },
+    "end": {
+      "adult": 21,
+      "child": 2,
+      "elder": 5,
+      "apprentice": 2,
+      "infant": 3
+    }
+  },
+  {
+    "run": "20261022-073709-seed2",
+    "births": [
+      {
+        "day": 5,
+        "child": "ivar",
+        "mother": "thea",
+        "father": "hal",
+        "home": "home_10",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "settled",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 6,
+        "child": "mads",
+        "mother": "ada",
+        "father": "wynn",
+        "home": "home_5",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "diligent",
+          "candor": "embellishing"
+        }
+      },
+      {
+        "day": 17,
+        "child": "nils",
+        "mother": "rosa",
+        "father": "osric",
+        "home": "home_3",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        }
+      },
+      {
+        "day": 20,
+        "child": "cilla",
+        "mother": "mabel",
+        "father": "edek",
+        "home": "home_13",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "bold",
+          "curiosity": "settled",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        }
+      }
+    ],
+    "decision_chosen": 63,
+    "tries": 41,
+    "conceived": 4,
+    "decision_refused": 493,
+    "start": {
+      "adult": 17,
+      "child": 4,
+      "apprentice": 4,
+      "elder": 5
+    },
+    "end": {
+      "adult": 21,
+      "child": 2,
+      "elder": 5,
+      "apprentice": 2,
+      "infant": 4
+    }
+  },
+  {
+    "run": "20261022-080916-seed3",
+    "births": [
+      {
+        "day": 0,
+        "child": "ivar",
+        "mother": "rosa",
+        "father": "osric",
+        "home": "home_3",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        }
+      },
+      {
+        "day": 2,
+        "child": "frode",
+        "mother": "mabel",
+        "father": "edek",
+        "home": "home_13",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 15,
+        "child": "kell",
+        "mother": "sena",
+        "father": "gorm",
+        "home": "home_8",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 18,
+        "child": "elin",
+        "mother": "edda",
+        "father": "tobin",
+        "home": "home_1",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "wary",
+          "curiosity": "settled",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 20,
+        "child": "runa",
+        "mother": "katrin",
+        "father": "fen",
+        "home": "home_9",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "diligent",
+          "candor": "embellishing"
+        }
+      },
+      {
+        "day": 28,
+        "child": "aldo",
+        "mother": "thea",
+        "father": "hal",
+        "home": "home_10",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "settled",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        }
+      }
+    ],
+    "decision_chosen": 78,
+    "tries": 35,
+    "conceived": 6,
+    "decision_refused": 815,
+    "start": {
+      "adult": 17,
+      "child": 4,
+      "apprentice": 4,
+      "elder": 5
+    },
+    "end": {
+      "adult": 21,
+      "child": 2,
+      "elder": 5,
+      "apprentice": 2,
+      "infant": 6
+    }
+  },
+  {
+    "run": "20261022-083715-seed4",
+    "births": [
+      {
+        "day": 0,
+        "child": "odd",
+        "mother": "edda",
+        "father": "tobin",
+        "home": "home_1",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 5,
+        "child": "lorne",
+        "mother": "ada",
+        "father": "wynn",
+        "home": "home_5",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "embellishing"
+        }
+      },
+      {
+        "day": 14,
+        "child": "frode",
+        "mother": "thea",
+        "father": "hal",
+        "home": "home_10",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 24,
+        "child": "eilif",
+        "mother": "sena",
+        "father": "gorm",
+        "home": "home_8",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 28,
+        "child": "aldo",
+        "mother": "katrin",
+        "father": "fen",
+        "home": "home_9",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        }
+      },
+      {
+        "day": 30,
+        "child": "bertil",
+        "mother": "rosa",
+        "father": "osric",
+        "home": "home_3",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        }
+      },
+      {
+        "day": 34,
+        "child": "jory",
+        "mother": "ada",
+        "father": "wynn",
+        "home": "home_5",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        }
+      }
+    ],
+    "decision_chosen": 198,
+    "tries": 103,
+    "conceived": 7,
+    "decision_refused": 457,
+    "start": {
+      "adult": 17,
+      "child": 4,
+      "apprentice": 4,
+      "elder": 5
+    },
+    "end": {
+      "adult": 21,
+      "child": 2,
+      "elder": 5,
+      "apprentice": 2,
+      "infant": 7
+    }
+  },
+  {
+    "run": "20261022-090533-seed5",
+    "births": [
+      {
+        "day": 1,
+        "child": "elin",
+        "mother": "mabel",
+        "father": "edek",
+        "home": "home_13",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 6,
+        "child": "inga",
+        "mother": "edda",
+        "father": "tobin",
+        "home": "home_1",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "wary",
+          "curiosity": "settled",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 17,
+        "child": "per",
+        "mother": "thea",
+        "father": "hal",
+        "home": "home_10",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 25,
+        "child": "frode",
+        "mother": "katrin",
+        "father": "fen",
+        "home": "home_9",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        }
+      },
+      {
+        "day": 26,
+        "child": "hedda",
+        "mother": "rosa",
+        "father": "osric",
+        "home": "home_3",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "diligent",
+          "candor": "embellishing"
+        }
+      }
+    ],
+    "decision_chosen": 127,
+    "tries": 78,
+    "conceived": 5,
+    "decision_refused": 652,
+    "start": {
+      "adult": 17,
+      "child": 4,
+      "apprentice": 4,
+      "elder": 5
+    },
+    "end": {
+      "adult": 20,
+      "child": 2,
+      "apprentice": 4,
+      "elder": 5,
+      "infant": 5
+    }
+  },
+  {
+    "run": "20261022-093732-seed6",
+    "births": [
+      {
+        "day": 1,
+        "child": "col",
+        "mother": "rosa",
+        "father": "osric",
+        "home": "home_3",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        }
+      },
+      {
+        "day": 6,
+        "child": "kell",
+        "mother": "ada",
+        "father": "wynn",
+        "home": "home_5",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "embellishing"
+        }
+      },
+      {
+        "day": 18,
+        "child": "frida",
+        "mother": "edda",
+        "father": "tobin",
+        "home": "home_1",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "wary",
+          "curiosity": "settled",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 26,
+        "child": "frode",
+        "mother": "mabel",
+        "father": "edek",
+        "home": "home_13",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 34,
+        "child": "dagny",
+        "mother": "ada",
+        "father": "wynn",
+        "home": "home_5",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "embellishing"
+        }
+      }
+    ],
+    "decision_chosen": 99,
+    "tries": 54,
+    "conceived": 5,
+    "decision_refused": 761,
+    "start": {
+      "adult": 17,
+      "child": 4,
+      "apprentice": 4,
+      "elder": 5
+    },
+    "end": {
+      "adult": 20,
+      "child": 2,
+      "apprentice": 4,
+      "elder": 5,
+      "infant": 5
+    }
+  }
+]

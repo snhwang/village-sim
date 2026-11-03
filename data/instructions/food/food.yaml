@@ -1,0 +1,74 @@
+# Food. The village eats from one granary, and the crop in its fields is grown
+# by tending in spring and summer and brought in by hand in autumn
+# (hearthwick/food.py). Nothing makes anyone do this. Villagers see the food
+# situation as tags, and these instructions are how they answer it:
+#   harvest_ripe  autumn, with crop still standing
+#   crop_behind   spring or summer, with the crop below where it should be
+#   food_low      the granary will not last until the next harvest is in
+#   hungry        the granary is empty (comes with food_low)
+#   fields_small  even a full crop would not feed the village for a year
+
+instructions:
+  # --- the harvest ---
+  - id: food-farmer-harvest
+    type: directive
+    priority: 74
+    content: The crop is ripe. This is what the whole year was for. Get out to the fields and bring it in before the frost does. [!work(site=fields, ticks=18)]
+    scope: {required_tags: [role_farmer, daytime, harvest_ripe]}
+
+  - id: food-harvest-hands
+    type: directive
+    priority: 63
+    content: The harvest is ripe and will not wait for the farmers alone. Every pair of hands brings more of it in. Go and help in the fields. [!work(site=fields, ticks=12)]
+    scope: {required_tags: [stage_adult, daytime, harvest_ripe], tags: [food_low, fields_small]}
+
+  - id: food-harvest-hungry
+    type: directive
+    priority: 71
+    content: The granary will not last the year and the crop is still standing. Whatever else needs doing can wait. Go to the fields and bring the harvest in. [!work(site=fields, ticks=18)]
+    scope: {required_tags: [stage_adult, daytime, harvest_ripe, food_low]}
+
+  - id: food-apprentice-harvest
+    type: directive
+    priority: 64
+    content: At harvest everyone lends a hand, apprentices too. Go and help bring the crop in. [!work(site=fields, ticks=12)]
+    scope: {required_tags: [stage_apprentice, daytime, harvest_ripe]}
+
+  - id: food-child-glean
+    type: directive
+    priority: 56
+    content: At harvest time the children follow the reapers and gather what they leave behind. Go and glean in the fields. [!work(site=fields, ticks=6)]
+    scope: {required_tags: [stage_child, daytime, harvest_ripe]}
+
+  # --- the growing season ---
+  - id: food-farmer-tend
+    type: directive
+    priority: 68
+    content: The crop is behind where it should be by now. Weed it, water it, keep the birds off. Get out to the fields. [!work(site=fields, ticks=18)]
+    scope: {required_tags: [role_farmer, daytime, crop_behind]}
+
+  - id: food-help-tend
+    type: directive
+    priority: 61
+    content: The crop is behind and the farmers cannot tend it all. Give the fields a few hours of your day. [!work(site=fields, ticks=12)]
+    scope: {required_tags: [stage_adult, daytime, crop_behind], tags: [food_low, fields_small]}
+
+  - id: food-farmer-blight
+    type: directive
+    priority: 72
+    content: You know the blight is in the crop. Keeping away will not save it. Go and cut out what it has touched before it takes the rest. [!work(site=fields, ticks=12)]
+    scope: {required_tags: [role_farmer, daytime, knows_sickness_fields]}
+
+  # --- more ground ---
+  - id: food-clear-ground
+    type: directive
+    priority: 67
+    content: The fields as they are cannot feed the village through a year. Winter is the time to clear new ground at their edge, so there is more to plant in spring. [!clear(place=fields, ticks=18)]
+    scope: {required_tags: [stage_adult, daytime, season_winter, fields_small]}
+
+  # --- what people talk about ---
+  - id: food-talk
+    type: directive
+    priority: 50
+    content: Food is short, and it is on everyone's mind. It comes into what you say, whether you mean it to or not.
+    scope: {required_tags: [talking, food_low]}

@@ -1,0 +1,563 @@
+[
+ {
+  "villager": "ada",
+  "name": "Ada",
+  "stage": "adult",
+  "role": "healer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a loom to weave our own cloth",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "garrick",
+  "drawn": "Simple Loom Frame",
+  "goes": "mill",
+  "does": "holds the threads for weaving at the mill",
+  "looked": "",
+  "mended_pictured": false,
+  "size": [
+   3.0,
+   2.0,
+   1.5
+  ],
+  "accepted": false,
+  "reasons": [
+   "swing needs two values, from and to, and a \"period\" in seconds",
+   "swing needs two values, from and to, and a \"period\" in seconds",
+   "swing needs two values, from and to, and a \"period\" in seconds"
+  ],
+  "parts": 4,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\"design\": \"Simple Loom Frame\", \"footprint\": [4,3], \"ground\": \"timber\", \"parts\": [{\"id\": \"frame\", \"shape\": \"box\", \"size\": [3,2,0.2], \"at\": [1.5,1,0], \"material\": \"dark_timber\"}, {\"id\": \"warp_beam\", \"shape\": \"box\", \"size\": [0.2,1.5,1.5], \"at\": [1.5,1,0], \"material\": \"timber\", \"parent\": \"frame\"}, {\"id\": \"reed_beam\", \"shape\": \"box\", \"size\": [0.2,1.5,1.5], \"at\": [1.5,1,0], \"material\": \"timber\", \"parent\": \"frame\"}, {\"id\": \"beater_beam\", \"shape\": \"box\", \"size\": [0.2,1.5,1.5], \"at\": [1.5,1,0], \"material\": \"timber\", \"parent\": \"frame\"}], \"joints\": [{\"part\": \"warp_beam\", \"kind\": \"hinge\", \"axis\": \"z\", \"pivot\": [1.5,1,0]}, {\"part\": \"reed_beam\", \"kind\": \"hinge\", \"axis\": \"z\", \"pivot\": [1.5,1,0]}, {\"part\": \"beater_beam\", \"kind\": \"hinge\", \"axis\": \"z\", \"pivot\": [1.5,1,0]}], \"movements\": [{\"joint\": \"warp_beam\", \"swing\": [0,1,1,1,1,10], \"period\": 3, \"when\": \"worked\"}, {\"joint\": \"reed_beam\", \"swing\": [0,1,1,1,1,10], \"period\": 3, \"when\": \"worked\"}, {\"joint\": \"beater_beam\", \"swing\": [0,1,1,1,1,10], \"period\": 3, \"when\": \"worked\"}], \"claims\": [\"store\"], \"goes\": \"mill\", \"does\": \"holds the threads for weaving at the mill\"}\n```"
+ },
+ {
+  "villager": "corin",
+  "name": "Corin",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "given",
+  "kind": "make",
+  "want": "a windlass to haul the millstones",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "Windlass for Millstones",
+  "goes": "mill",
+  "does": "hauls millstones",
+  "looked": "",
+  "mended_pictured": true,
+  "size": [
+   1.6,
+   1.8,
+   0.8
+  ],
+  "accepted": false,
+  "reasons": [
+   "windlass_drum can spin at most 120 turns a minute"
+  ],
+  "parts": 4,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\n  \"design\": \"Windlass for Millstones\",\n  \"footprint\": [\n    3,\n    3\n  ],\n  \"ground\": \"stone\",\n  \"parts\": [\n    {\n      \"id\": \"frame\",\n      \"shape\": \"box\",\n      \"size\": [\n        1.5,\n        1.0,\n        0.5\n      ],\n      \"at\": [\n        0,\n        0.5,\n        0\n      ],\n      \"material\": \"dark_timber\"\n    },\n    {\n      \"id\": \"windlass_drum\",\n      \"shape\": \"cylinder\",\n      \"size\": [\n        0.3,\n        1.5\n      ],\n      \"at\": [\n        0,\n        1.25,\n        0\n      ],\n      \"rotation\": [\n        0,\n        0,\n        90\n      ],\n      \"material\": \"timber\",\n      \"parent\": \"frame\"\n    },\n    {\n      \"id\": \"windlass_beam\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.2,\n        1.5,\n        0.5\n      ],\n      \"at\": [\n        0,\n        0.5,\n        0.25\n      ],\n      \"material\": \"dark_timber\",\n      \"parent\": \"frame\"\n    },\n    {\n      \"id\": \"crank\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.2,\n        0.5,\n        0.3\n      ],\n      \"at\": [\n        0.75,\n        0.75,\n        0.25\n      ],\n      \"material\": \"dark_timber\",\n      \"parent\": \"windlass_beam\"\n    }\n  ],\n  \"joints\": [\n    {\n      \"part\": \"windlass_drum\",\n      \"kind\": \"hinge\",\n      \"axis\": \"x\"\n    }\n  ],\n  \"movements\": [\n    {\n      \"joint\": \"windlass_drum\",\n      \"spin\": \"hinge\",\n      \"when\": \"occupied\"\n    }\n  ],\n  \"claims\": [\n    \"carry\"\n  ],\n  \"goes\": \"mill\",\n  \"does\": \"hauls millstones\"\n}\n```"
+ },
+ {
+  "villager": "dunn",
+  "name": "Dunn",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a strong wheel to stop the ice",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "wynn",
+  "drawn": "Ice Stopping Wheel",
+  "goes": "mill",
+  "does": "carries ice",
+  "looked": "",
+  "mended_pictured": false,
+  "size": [
+   1.0,
+   1.0,
+   0.8
+  ],
+  "accepted": false,
+  "reasons": [
+   "a movement is on wheel, which has no joint"
+  ],
+  "parts": 5,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\n  \"design\": \"Ice Stopping Wheel\",\n  \"footprint\": [\n    3,\n    3\n  ],\n  \"ground\": \"stone\",\n  \"parts\": [\n    {\n      \"id\": \"wheel\",\n      \"shape\": \"wheel\",\n      \"size\": [\n        0.4,\n        0.2\n      ],\n      \"at\": [\n        0,\n        1.0,\n        0\n      ],\n      \"material\": \"iron\"\n    },\n    {\n      \"id\": \"axle\",\n      \"shape\": \"cylinder\",\n      \"size\": [\n        0.1,\n        0.4\n      ],\n      \"at\": [\n        0,\n        1.0,\n        0\n      ],\n      \"material\": \"iron\",\n      \"parent\": \"wheel\"\n    },\n    {\n      \"id\": \"frame\",\n      \"shape\": \"box\",\n      \"size\": [\n        1.0,\n        0.2,\n        0.5\n      ],\n      \"at\": [\n        0,\n        1.0,\n        0\n      ],\n      \"material\": \"dark_timber\",\n      \"parent\": \"wheel\"\n    },\n    {\n      \"id\": \"support_post_left\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.2,\n        1.0,\n        0.2\n      ],\n      \"at\": [\n        -0.4,\n        1.0,\n        0\n      ],\n      \"material\": \"timber\",\n      \"parent\": \"frame\"\n    },\n    {\n      \"id\": \"support_post_right\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.2,\n        1.0,\n        0.2\n      ],\n      \"at\": [\n        0.4,\n        1.0,\n        0\n      ],\n      \"material\": \"timber\",\n      \"parent\": \"frame\"\n    }\n  ],\n  \"joints\": [\n    {\n      \"part\": \"axle\",\n      \"kind\": \"hinge\",\n      \"axis\": \"z\",\n      \"pivot\": [\n        0,\n        0.2,\n        0\n      ]\n    }\n  ],\n  \"movements\": [\n    {\n      \"joint\": \"wheel\",\n      \"spin\": \"hinge\",\n      \"when\": \"occupied\"\n    }\n  ],\n  \"claims\": [\n    \"carry\"\n  ],\n  \"goes\": \"mill\",\n  \"does\": \"carries ice\"\n}\n```"
+ },
+ {
+  "villager": "edda",
+  "name": "Edda",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a wedge to hold the cogs",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "dunn",
+  "drawn": "Cog Holder Wedge",
+  "goes": "mill",
+  "does": "holds the cogs in place",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   1.5,
+   1.5,
+   0.6
+  ],
+  "accepted": false,
+  "reasons": [
+   "the wedge_wedge would strike the wedge_base as it moved",
+   "it would not store: it roofs too little ground"
+  ],
+  "parts": 2,
+  "moves": [],
+  "claims": {
+   "store": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "wedge_wedge"
+  ],
+  "struck": {
+   "wedge_wedge": [
+    "wedge_base"
+   ]
+  },
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\n  \"design\": \"Cog Holder Wedge\",\n  \"footprint\": [\n    3,\n    3\n  ],\n  \"ground\": \"timber\",\n  \"parts\": [\n    {\n      \"id\": \"wedge_base\",\n      \"shape\": \"box\",\n      \"size\": [\n        1.5,\n        1.5,\n        0.5\n      ],\n      \"at\": [\n        0,\n        0.25,\n        0\n      ],\n      \"material\": \"dark_timber\"\n    },\n    {\n      \"id\": \"wedge_wedge\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.5,\n        0.5,\n        0.2\n      ],\n      \"at\": [\n        0,\n        0.5,\n        0.25\n      ],\n      \"material\": \"dark_timber\",\n      \"parent\": \"wedge_base\"\n    }\n  ],\n  \"joints\": [\n    {\n      \"part\": \"wedge_wedge\",\n      \"kind\": \"hinge\",\n      \"axis\": \"x\",\n      \"pivot\": [\n        0,\n        0.25,\n        0\n      ]\n    }\n  ],\n  \"movements\": [\n    {\n      \"joint\": \"wedge_wedge\",\n      \"spin\": 30,\n      \"when\": \"worked\"\n    }\n  ],\n  \"claims\": [\n    \"store\"\n  ],\n  \"goes\": \"mill\",\n  \"does\": \"holds the cogs in place\",\n  \"by\": \"wynn\",\n  \"purpose\": \"want\"\n}\n```"
+ },
+ {
+  "villager": "edek",
+  "name": "Edek",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a pump to pull the floodwater out",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "edda",
+  "drawn": "Floodwater Pump",
+  "goes": "mill",
+  "does": "pull floodwater out",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   2.0,
+   1.5,
+   1.0
+  ],
+  "accepted": false,
+  "reasons": [
+   "the wheel_left would strike the frame and support_left as it moved",
+   "the wheel_right would strike the frame and support_right and tubing and water_pipe as it moved",
+   "it would not pump: nothing in it turns against a load"
+  ],
+  "parts": 8,
+  "moves": [],
+  "claims": {
+   "pump": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "wheel_left",
+   "wheel_right"
+  ],
+  "struck": {
+   "wheel_left": [
+    "frame",
+    "support_left"
+   ],
+   "wheel_right": [
+    "frame",
+    "support_right",
+    "tubing",
+    "water_pipe"
+   ]
+  },
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\n  \"design\": \"Floodwater Pump\",\n  \"footprint\": [\n    3,\n    2\n  ],\n  \"ground\": \"stone\",\n  \"parts\": [\n    {\n      \"id\": \"frame\",\n      \"shape\": \"box\",\n      \"size\": [\n        2,\n        1,\n        1\n      ],\n      \"at\": [\n        0,\n        0.5,\n        0\n      ],\n      \"material\": \"timber\"\n    },\n    {\n      \"id\": \"tubing\",\n      \"shape\": \"cylinder\",\n      \"size\": [\n        0.2,\n        0.3\n      ],\n      \"at\": [\n        0.5,\n        0.5,\n        0\n      ],\n      \"material\": \"dark_timber\"\n    },\n    {\n      \"id\": \"wheel_left\",\n      \"shape\": \"wheel\",\n      \"size\": [\n        0.25,\n        0.15\n      ],\n      \"at\": [\n        -0.4,\n        0.5,\n        0\n      ],\n      \"material\": \"timber\"\n    },\n    {\n      \"id\": \"wheel_right\",\n      \"shape\": \"wheel\",\n      \"size\": [\n        0.25,\n        0.15\n      ],\n      \"at\": [\n        0.4,\n        0.5,\n        0\n      ],\n      \"material\": \"timber\"\n    },\n    {\n      \"id\": \"pump_wheel\",\n      \"shape\": \"cylinder\",\n      \"size\": [\n        0.15,\n        0.5\n      ],\n      \"at\": [\n        0,\n        0.75,\n        0\n      ],\n      \"material\": \"iron\",\n      \"rotation\": [\n        0,\n        0,\n        90\n      ]\n    },\n    {\n      \"id\": \"water_pipe\",\n      \"shape\": \"cylinder\",\n      \"size\": [\n        0.15,\n        1.5\n      ],\n      \"at\": [\n        0.25,\n        0.5,\n        0\n      ],\n      \"material\": \"dark_timber\"\n    },\n    {\n      \"id\": \"support_left\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.1,\n        1,\n        0.1\n      ],\n      \"at\": [\n        -0.5,\n        0.5,\n        0\n      ],\n      \"material\": \"timber\"\n    },\n    {\n      \"id\": \"support_right\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.1,\n        1,\n        0.1\n      ],\n      \"at\": [\n        0.5,\n        0.5,\n        0\n      ],\n      \"material\": \"timber\"\n    }\n  ],\n  \"joints\": [\n    {\n      \"part\": \"wheel_left\",\n      \"kind\": \"hinge\",\n      \"axis\": \"x\",\n      \"pivot\": [\n        0,\n        0,\n        0\n      ]\n    },\n    {\n      \"part\": \"wheel_right\",\n      \"kind\": \"hinge\",\n      \"axis\": \"x\",\n      \"pivot\": [\n        0,\n        0,\n        0\n      ]\n    }\n  ],\n  \"movements\": [\n    {\n      \"joint\": \"wheel_left\",\n      \"spin\": 120,\n      \"when\": \"worked\"\n    },\n    {\n      \"joint\": \"wheel_right\",\n      \"spin\": 120,\n      \"when\": \"worked\"\n    }\n  ],\n  \"claims\": [\n    \"pump\"\n  ],\n  \"goes\": \"mill\",\n  \"does\": \"pull floodwater out\"\n}\n```"
+ },
+ {
+  "villager": "fen",
+  "name": "Fen",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a sturdy wheel to keep the mill turning",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "garrick",
+  "drawn": "Sturdy Wheel",
+  "goes": "mill",
+  "does": "keeps the mill turning",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   0.4,
+   0.8,
+   0.8
+  ],
+  "accepted": false,
+  "reasons": [
+   "it would not carry: nothing turns to move it"
+  ],
+  "parts": 1,
+  "moves": [],
+  "claims": {
+   "carry": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\"design\": \"Sturdy Wheel\", \"footprint\": [3, 3], \"ground\": \"timber\", \"parts\": [{\"id\": \"wheel\", \"shape\": \"wheel\", \"size\": [0.4, 0.4], \"at\": [1.5, 1.5, 0], \"material\": \"dark_timber\"}], \"joints\": [{\"part\": \"wheel\", \"kind\": \"hinge\", \"axis\": \"x\"}], \"movements\": [{\"joint\": \"wheel\", \"spin\": 120, \"when\": \"occupied\"}], \"claims\": [\"carry\"], \"goes\": \"mill\", \"does\": \"keeps the mill turning\", \"by\": \"edda\", \"purpose\": \"want\"}\n```"
+ },
+ {
+  "villager": "freya",
+  "name": "Freya",
+  "stage": "elder",
+  "role": "farmer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a lever to lift the heavy stones",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "Stone Lever",
+  "goes": "home",
+  "does": "lifts heavy stones",
+  "looked": "",
+  "mended_pictured": false,
+  "size": [
+   0.4,
+   1.0,
+   0.2
+  ],
+  "accepted": false,
+  "reasons": [
+   "swing needs two values, from and to, and a \"period\" in seconds"
+  ],
+  "parts": 3,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\n  \"design\": \"Stone Lever\",\n  \"footprint\": [\n    3,\n    3\n  ],\n  \"ground\": \"stone\",\n  \"parts\": [\n    {\n      \"id\": \"beam\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.4,\n        1.0,\n        0.2\n      ],\n      \"at\": [\n        0,\n        0.5,\n        0\n      ],\n      \"material\": \"timber\"\n    },\n    {\n      \"id\": \"fulcrum\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.2,\n        0.2,\n        0.2\n      ],\n      \"at\": [\n        0,\n        0.5,\n        0\n      ],\n      \"material\": \"dark_timber\"\n    },\n    {\n      \"id\": \"lever_arm\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.3,\n        1.0,\n        0.2\n      ],\n      \"at\": [\n        0,\n        0.5,\n        0\n      ],\n      \"material\": \"timber\",\n      \"parent\": \"beam\"\n    }\n  ],\n  \"joints\": [\n    {\n      \"part\": \"lever_arm\",\n      \"kind\": \"hinge\",\n      \"axis\": \"x\",\n      \"pivot\": [\n        0.1,\n        0,\n        0\n      ]\n    }\n  ],\n  \"movements\": [\n    {\n      \"joint\": \"lever_arm\",\n      \"swing\": [\n        0,\n        0.5,\n        4\n      ],\n      \"period\": 4,\n      \"when\": \"worked\"\n    }\n  ],\n  \"claims\": [\n    \"lift\"\n  ],\n  \"goes\": \"home\",\n  \"does\": \"lifts heavy stones\"\n}\n```"
+ },
+ {
+  "villager": "garrick",
+  "name": "Garrick",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a forge to mend the plows",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "wynn",
+  "drawn": "Iron Plough Forge",
+  "goes": "forge",
+  "does": "holds iron for shaping metal",
+  "looked": "",
+  "mended_pictured": false,
+  "size": [
+   2.0,
+   1.5,
+   2.0
+  ],
+  "accepted": false,
+  "reasons": [
+   "swing needs two values, from and to, and a \"period\" in seconds"
+  ],
+  "parts": 4,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\"design\": \"Iron Plough Forge\", \"footprint\": [4, 3], \"ground\": \"stone\", \"parts\": [{\"id\": \"base\", \"shape\": \"box\", \"size\": [2, 1, 2], \"at\": [0, 0.5, 0], \"material\": \"stone\"}, {\"id\": \"frame\", \"shape\": \"box\", \"size\": [1.5, 0.5, 0.2], \"at\": [0, 1.0, 0], \"material\": \"dark_timber\", \"parent\": \"base\"}, {\"id\": \"anvil\", \"shape\": \"box\", \"size\": [0.5, 0.5, 0.5], \"at\": [0.5, 1.25, 0], \"material\": \"iron\", \"parent\": \"frame\"}, {\"id\": \"hammer_rest\", \"shape\": \"box\", \"size\": [0.3, 0.2, 0.3], \"at\": [0.3, 1.25, 0], \"material\": \"dark_timber\", \"parent\": \"frame\"}], \"joints\": [{\"part\": \"anvil\", \"kind\": \"hinge\", \"axis\": \"z\", \"pivot\": [0.25, 0, 0]}], \"movements\": [{\"joint\": \"anvil\", \"swing\": [0, 1, 4], \"when\": \"worked\"}], \"claims\": [\"store\"], \"goes\": \"forge\", \"does\": \"holds iron for shaping metal\", \"by\": \"gorm\", \"purpose\": \"want\"}\n```"
+ },
+ {
+  "villager": "gisla",
+  "name": "Gisla",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "given",
+  "kind": "make",
+  "want": "a sturdy hook to lift the millstone",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "dunn",
+  "drawn": "Millstone Lift Hook",
+  "goes": "mill",
+  "does": "lifts the millstone by gorm",
+  "looked": "",
+  "mended_pictured": false,
+  "size": [
+   0.5,
+   1.0,
+   0.2
+  ],
+  "accepted": false,
+  "reasons": [
+   "swing needs two values, from and to, and a \"period\" in seconds"
+  ],
+  "parts": 3,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\n  \"design\": \"Millstone Lift Hook\",\n  \"footprint\": [\n    3,\n    3\n  ],\n  \"ground\": \"stone\",\n  \"parts\": [\n    {\n      \"id\": \"hook_base\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.5,\n        0.5,\n        0.2\n      ],\n      \"at\": [\n        0,\n        0.25,\n        0\n      ],\n      \"material\": \"iron\"\n    },\n    {\n      \"id\": \"lifting_arm\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.3,\n        1.0,\n        0.1\n      ],\n      \"at\": [\n        0,\n        0.5,\n        0\n      ],\n      \"material\": \"iron\",\n      \"parent\": \"hook_base\"\n    },\n    {\n      \"id\": \"lever_pivot\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.1,\n        0.1,\n        0.1\n      ],\n      \"at\": [\n        0,\n        0.75,\n        0\n      ],\n      \"material\": \"iron\",\n      \"parent\": \"lifting_arm\"\n    }\n  ],\n  \"joints\": [\n    {\n      \"part\": \"lifting_arm\",\n      \"kind\": \"hinge\",\n      \"axis\": \"y\",\n      \"pivot\": [\n        0,\n        0.5,\n        0\n      ]\n    }\n  ],\n  \"movements\": [\n    {\n      \"joint\": \"lifting_arm\",\n      \"swing\": [\n        0,\n        1,\n        4\n      ],\n      \"when\": \"worked\"\n    }\n  ],\n  \"claims\": [\n    \"lift\"\n  ],\n  \"goes\": \"mill\",\n  \"does\": \"lifts the millstone by gorm\"\n}\n```"
+ },
+ {
+  "villager": "gorm",
+  "name": "Gorm",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a finer sieve to catch the grit",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "edda",
+  "drawn": "Finer Sieve",
+  "goes": "mill",
+  "does": "catches grit for grinding",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   2.6,
+   2.0,
+   0.2
+  ],
+  "accepted": false,
+  "reasons": [
+   "the sieve_mesh would strike the sieve_base and sieve_frame and the ground as it moved",
+   "it would not store: it roofs too little ground"
+  ],
+  "parts": 3,
+  "moves": [],
+  "claims": {
+   "store": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "sieve_mesh"
+  ],
+  "struck": {
+   "sieve_mesh": [
+    "sieve_base",
+    "sieve_frame",
+    "the ground"
+   ]
+  },
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\"design\": \"Finer Sieve\", \"footprint\": [3, 3], \"ground\": \"stone\", \"parts\": [{\"id\": \"sieve_frame\", \"shape\": \"box\", \"size\": [2.5, 2, 0.2], \"at\": [0, 1, 0], \"material\": \"iron\"}, {\"id\": \"sieve_mesh\", \"shape\": \"box\", \"size\": [2.4, 1.9, 0.2], \"at\": [0, 1, 0], \"material\": \"iron\"}, {\"id\": \"sieve_base\", \"shape\": \"box\", \"size\": [2.6, 0.1, 0.2], \"at\": [0, 0.05, 0], \"material\": \"iron\"}], \"joints\": [{\"part\": \"sieve_mesh\", \"kind\": \"hinge\", \"axis\": \"z\", \"pivot\": [0, 1, 0]}], \"movements\": [{\"joint\": \"sieve_mesh\", \"open\": 90, \"seconds\": 1.0, \"when\": \"worked\"}], \"claims\": [\"store\"], \"goes\": \"mill\", \"does\": \"catches grit for grinding\", \"by\": \"dunn\", \"purpose\": \"want\"}\n```"
+ },
+ {
+  "villager": "ada",
+  "name": "Ada",
+  "stage": "adult",
+  "role": "healer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a loom to weave the storm",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "garrick",
+  "drawn": "Storm Loom",
+  "goes": "mill",
+  "does": "weaves the storm",
+  "looked": "",
+  "mended_pictured": false,
+  "size": [
+   1.6,
+   2.0,
+   1.0
+  ],
+  "accepted": false,
+  "reasons": [
+   "swing needs two values, from and to, and a \"period\" in seconds",
+   "swing needs two values, from and to, and a \"period\" in seconds",
+   "swing needs two values, from and to, and a \"period\" in seconds"
+  ],
+  "parts": 7,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\n  \"design\": \"Storm Loom\",\n  \"footprint\": [\n    4,\n    4\n  ],\n  \"ground\": \"timber\",\n  \"parts\": [\n    {\n      \"id\": \"loom_frame\",\n      \"shape\": \"box\",\n      \"size\": [\n        1.5,\n        1.5,\n        0.5\n      ],\n      \"at\": [\n        0,\n        0.75,\n        0\n      ],\n      \"material\": \"dark_timber\"\n    },\n    {\n      \"id\": \"warp_beam\",\n      \"shape\": \"cylinder\",\n      \"size\": [\n        0.5,\n        0.2,\n        1.5\n      ],\n      \"at\": [\n        0,\n        1.25,\n        0\n      ],\n      \"material\": \"timber\"\n    },\n    {\n      \"id\": \"weft_beam\",\n      \"shape\": \"cylinder\",\n      \"size\": [\n        0.5,\n        0.2,\n        1.5\n      ],\n      \"at\": [\n        0,\n        1.25,\n        0\n      ],\n      \"material\": \"timber\"\n    },\n    {\n      \"id\": \"beater_beam\",\n      \"shape\": \"cylinder\",\n      \"size\": [\n        0.5,\n        0.2,\n        1.5\n      ],\n      \"at\": [\n        0,\n        1.25,\n        0\n      ],\n      \"material\": \"timber\"\n    },\n    {\n      \"id\": \"warp_guide_left\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.1,\n        1.5,\n        0.5\n      ],\n      \"at\": [\n        -0.75,\n        1.25,\n        0\n      ],\n      \"material\": \"timber\"\n    },\n    {\n      \"id\": \"warp_guide_right\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.1,\n        1.5,\n        0.5\n      ],\n      \"at\": [\n        0.75,\n        1.25,\n        0\n      ],\n      \"material\": \"timber\"\n    },\n    {\n      \"id\": \"shed_guide\",\n      \"shape\": \"box\",\n      \"size\": [\n        0.2,\n        1.5,\n        0.5\n      ],\n      \"at\": [\n        0,\n        0.75,\n        0\n      ],\n      \"material\": \"dark_timber\"\n    }\n  ],\n  \"joints\": [\n    {\n      \"part\": \"warp_guide_left\",\n      \"kind\": \"hinge\",\n      \"axis\": \"z\",\n      \"pivot\": [\n        -0.35,\n        0,\n        0\n      ]\n    },\n    {\n      \"part\": \"warp_guide_right\",\n      \"kind\": \"hinge\",\n      \"axis\": \"z\",\n      \"pivot\": [\n        0.35,\n        0,\n        0\n      ]\n    },\n    {\n      \"part\": \"shed_guide\",\n      \"kind\": \"hinge\",\n      \"axis\": \"z\",\n      \"pivot\": [\n        0,\n        0,\n        0\n      ]\n    }\n  ],\n  \"movements\": [\n    {\n      \"joint\": \"warp_guide_left\",\n      \"swing\": [\n        0,\n        1,\n        4\n      ],\n      \"when\": \"storm\"\n    },\n    {\n      \"joint\": \"warp_guide_right\",\n      \"swing\": [\n        0,\n        1,\n        4\n      ],\n      \"when\": \"storm\"\n    },\n    {\n      \"joint\": \"shed_guide\",\n      \"swing\": [\n        0,\n        1,\n        4\n      ],\n      \"when\": \"storm\"\n    }\n  ],\n  \"claims\": [\n    \"carry\"\n  ],\n  \"goes\": \"mill\",\n  \"does\": \"weaves the storm\"\n}\n```"
+ },
+ {
+  "villager": "corin",
+  "name": "Corin",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "given",
+  "kind": "make",
+  "want": "a wheel to hold the stones still",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "Stone Stone Wheel",
+  "goes": "mill",
+  "does": "holds stones still",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   0.5,
+   1.0,
+   1.0
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 2,
+  "moves": [
+   "spin wheel"
+  ],
+  "claims": {
+   "carry": true
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": true,
+  "cost": 0.5,
+  "design": {
+   "design": "Stone Stone Wheel",
+   "footprint": [
+    3,
+    3
+   ],
+   "ground": "stone",
+   "parts": [
+    {
+     "id": "wheel",
+     "shape": "wheel",
+     "size": [
+      0.5,
+      0.5
+     ],
+     "at": [
+      1.5,
+      1.5,
+      0
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "axle",
+     "shape": "box",
+     "size": [
+      0.1,
+      0.1,
+      0.3
+     ],
+     "at": [
+      1.5,
+      1.5,
+      0
+     ],
+     "material": "iron"
+    }
+   ],
+   "joints": [
+    {
+     "part": "wheel",
+     "kind": "hinge",
+     "axis": "x"
+    }
+   ],
+   "movements": [
+    {
+     "joint": "wheel",
+     "spin": 120,
+     "when": "occupied"
+    }
+   ],
+   "claims": [
+    "carry"
+   ],
+   "goes": "mill",
+   "does": "holds stones still",
+   "by": "gorm",
+   "purpose": "want"
+  },
+  "drawing": null
+ }
+]

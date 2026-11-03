@@ -1,0 +1,67 @@
+20261009-193240-seed1
+# The second long run: the greater village, seed 1, with the switches of the
+# first (results/long_run), on the build with this week's fixes, and with
+# 28-day years instead of 8. Started 2026-10-09 at 19:32 on Scott's request, to
+# run for a couple of days and be stopped by hand.
+#
+# The build. Hearthwick 43a219e, whose simulation code is the paper's freeze
+# paper-v2.2 (dae4771), with BEAR 5334e1e from the WSL clone, which has the
+# threshold fix. Against the first long run (548f388 and 1a3aff8, BEAR f9b509c):
+#   - BEAR no longer restores instructions the threshold set aside
+#   - instructions of switched-off mechanics are not loaded (163 authored
+#     instructions, 124 with an action marker)
+#   - consolidation shows the model marker signatures, offers only switched-on
+#     markers, and refuses a lesson with a switched-off one
+#   - 28 days a year, with the per-day rates scaled to the year's length
+# The mechanics added since the first run began (afar news, bynames, leisure,
+# living memory, natural talk, fading news, time off) are all off, as that run
+# never had them. A first start on 2026-10-09 left them on, since the command
+# line turns them on by default. It was stopped at tick 4 and deleted.
+#
+# The model is the first run's: Qwen3.8-27B on a DGX Spark through the fleet
+# gateway, on the same lane (results/long_run/runs.txt). The Spark's agent
+# confirmed on 2026-10-09 that the reboot was on the Windows side only: the
+# server had run for 6 days without a restart, with the settings the first run
+# recorded, so both runs used the same server. The embedder is 8360.
+# It serves one request at a time and batches only within a request, so this
+# run does not change the vectors of the paper's runs that share it.
+#
+# From the repository in WSL. The gateway's key is THEMINDFOLD_API_KEY in .env,
+# read by --llm-key-env and never put on the command line. setsid keeps the run
+# alive once the starting shell exits, and the sleep gives it time to detach.
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-hearthwick-paper setsid nohup .venv/bin/python \
+#     -m hearthwick run --days 8000 --days-per-year 28 --seed 1 --village greater \
+#     --checkpoint-every 1 --no-designs --no-wants --no-search --no-vehicles \
+#     --no-assessing --no-looking --no-placing --no-afar-news --no-bynames \
+#     --no-leisure --no-living-memory --no-natural-talk --no-news-fades \
+#     --no-time-off --llm-url http://192.168.1.176:9010/v1 \
+#     --model Qwen3.8-27B-Spark-unsloth --llm-key-env THEMINDFOLD_API_KEY \
+#     > runs/long_run_v2.log 2>&1 < /dev/null & sleep 45
+#
+# To resume after a stop, with the same PYTHONPATH and connection settings:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-hearthwick-paper setsid nohup .venv/bin/python \
+#     -m hearthwick run --resume 20261009-193240-seed1 \
+#     --llm-url http://192.168.1.176:9010/v1 --model Qwen3.8-27B-Spark-unsloth \
+#     --llm-key-env THEMINDFOLD_API_KEY >> runs/long_run_v2.log 2>&1 < /dev/null & sleep 45
+#
+# To stop it, send SIGINT to its pid, which saves and exits cleanly. Then tell
+# the Spark's agent, so it can release the model lane.
+#
+# Its report, read to a fixed day so it can run while the village does:
+#
+#   python experiments/long_run_report.py 20261009-193240-seed1 --to-day <N> --out results/long_run_v2
+#
+# History.
+#   Stopped by SIGINT on 2026-10-12 at 05:21, at tick 51374 (day 357, year 12),
+#   to start the third long run (results/long_run_v3). Its final report reads it
+#   to day 336, twelve full years:
+#
+#     python experiments/long_run_report.py 20261009-193240-seed1 --to-day 336 \
+#       --out results/long_run_v2
+#
+#   The village stalled at about 50. Warnings grew from 25% of decisions in
+#   year 0 to 45.5% in year 11 and lessons to 22.4%, while work at the fields
+#   fell from 4.0% to 1.0%. The granary was empty at every year's end from year
+#   7 (SPECIFICATION-warnings.md section 8).

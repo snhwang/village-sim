@@ -1,0 +1,23 @@
+[
+  {
+    "run": "20261024-005651-seed1",
+    "village": "town300",
+    "villagers": 300,
+    "days": 10.0,
+    "hearthwick": "0313244",
+    "speech_model": "Qwen3.8-27B",
+    "seconds": 4662,
+    "resumed": 0,
+    "speech_calls": 11480,
+    "speech_failures": 5,
+    "embedding_calls": 138314,
+    "embedding_cache_hits": 294672,
+    "decisions": 69474,
+    "conversations": 2850,
+    "events_that_spread": 21,
+    "median_holders": 116,
+    "median_share_pct": 38.3,
+    "median_wordings": 70,
+    "deepest_chain": 13
+  }
+]

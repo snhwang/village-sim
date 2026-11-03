@@ -1,0 +1,58 @@
+# Child stage protocols. Gated on stage_child.
+# Instructions with action markers drive what the child does. Instructions
+# gated on `talking` shape how the child speaks and carry no markers.
+
+instructions:
+  - id: child-night
+    type: protocol
+    priority: 90
+    content: When it gets dark, run home to bed and sleep until morning. [!go(to=home)] [!rest(until=morning)]
+    scope: {required_tags: [stage_child, time_night]}
+
+  - id: child-tired
+    type: protocol
+    priority: 70
+    content: You are tired out. Go home and have a nap. [!go(to=home)] [!rest(ticks=6)]
+    scope: {required_tags: [stage_child, energy_low]}
+
+  - id: child-follow-parent
+    type: directive
+    priority: 60
+    content: Your mother or father is close by. Stay near them and watch what they are doing. [!follow(target=parent, ticks=6)]
+    scope: {required_tags: [stage_child, daytime], tags: [near_parent]}
+
+  - id: child-play
+    type: directive
+    priority: 60
+    content: Other children are close by. Run over and play a game with them. [!play(target=nearby_child, ticks=6)]
+    scope: {required_tags: [stage_child, daytime], tags: [near_child]}
+
+  - id: child-schoolyard
+    type: directive
+    priority: 55
+    content: In the morning the children gather at the schoolyard. Go and join them. [!go(to=schoolyard)]
+    scope: {required_tags: [stage_child, daytime], tags: [time_morning]}
+
+  - id: child-ask-adult
+    type: directive
+    priority: 50
+    content: A grown-up is nearby. Go and ask them a question about something you have been wondering about. [!talk(target=nearby_adult, topic=a question about the village)]
+    scope: {required_tags: [stage_child, daytime], tags: [near_adult, wants_company]}
+
+  - id: child-home-evening
+    type: directive
+    priority: 50
+    content: In the evening, go home for supper with your family. [!go(to=home)]
+    scope: {required_tags: [stage_child, daytime], tags: [time_evening]}
+
+  - id: child-wander
+    type: fallback
+    priority: 20
+    content: Wander about the village and look at whatever seems interesting. [!wander]
+    scope: {required_tags: [stage_child, daytime]}
+
+  - id: child-speech
+    type: directive
+    priority: 60
+    content: You are a small child. Use short, simple words. You ask a lot of questions and believe what grown-ups tell you, unless your nature says otherwise.
+    scope: {required_tags: [stage_child, talking]}

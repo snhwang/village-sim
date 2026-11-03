@@ -1,0 +1,1177 @@
+{
+  "date": "2026-09-28",
+  "conditions": {
+    "0.0": {
+      "runs": [
+        "20260927-235640-seed1",
+        "20260927-235949-seed2",
+        "20260928-000153-seed3"
+      ],
+      "children": 12,
+      "learned": 12,
+      "learned_by_channel": {
+        "watched": 10,
+        "school": 2
+      },
+      "median_day_learned": 1,
+      "children_after_learning": {
+        "decisions": 584,
+        "sheltered": 163,
+        "pct": 27.9
+      },
+      "by_day": [
+        {
+          "day": 1,
+          "children_strength": 58.0,
+          "children": {
+            "decisions": 120,
+            "sheltered": 13,
+            "pct": 10.8
+          },
+          "adults": {
+            "decisions": 1090,
+            "sheltered": 435,
+            "pct": 39.9
+          }
+        },
+        {
+          "day": 4,
+          "children_strength": 58.0,
+          "children": {
+            "decisions": 144,
+            "sheltered": 43,
+            "pct": 29.9
+          },
+          "adults": {
+            "decisions": 812,
+            "sheltered": 197,
+            "pct": 24.3
+          }
+        },
+        {
+          "day": 7,
+          "children_strength": 58.0,
+          "children": {
+            "decisions": 158,
+            "sheltered": 58,
+            "pct": 36.7
+          },
+          "adults": {
+            "decisions": 944,
+            "sheltered": 264,
+            "pct": 28.0
+          }
+        },
+        {
+          "day": 9,
+          "children_strength": 58.0,
+          "children": {
+            "decisions": 174,
+            "sheltered": 49,
+            "pct": 28.2
+          },
+          "adults": {
+            "decisions": 960,
+            "sheltered": 228,
+            "pct": 23.8
+          }
+        }
+      ],
+      "reinforced": {},
+      "children_priority": []
+    },
+    "0.1": {
+      "runs": [
+        "20260928-000521-seed1",
+        "20260928-000712-seed2",
+        "20260928-000912-seed3"
+      ],
+      "children": 12,
+      "learned": 12,
+      "learned_by_channel": {
+        "watched": 10,
+        "school": 2
+      },
+      "median_day_learned": 1,
+      "children_after_learning": {
+        "decisions": 636,
+        "sheltered": 243,
+        "pct": 38.2
+      },
+      "by_day": [
+        {
+          "day": 1,
+          "children_strength": 59.0,
+          "children": {
+            "decisions": 133,
+            "sheltered": 12,
+            "pct": 9.0
+          },
+          "adults": {
+            "decisions": 1056,
+            "sheltered": 484,
+            "pct": 45.8
+          }
+        },
+        {
+          "day": 4,
+          "children_strength": 60.8,
+          "children": {
+            "decisions": 151,
+            "sheltered": 44,
+            "pct": 29.1
+          },
+          "adults": {
+            "decisions": 787,
+            "sheltered": 248,
+            "pct": 31.5
+          }
+        },
+        {
+          "day": 7,
+          "children_strength": 61.7,
+          "children": {
+            "decisions": 186,
+            "sheltered": 90,
+            "pct": 48.4
+          },
+          "adults": {
+            "decisions": 941,
+            "sheltered": 303,
+            "pct": 32.2
+          }
+        },
+        {
+          "day": 9,
+          "children_strength": 62.5,
+          "children": {
+            "decisions": 178,
+            "sheltered": 97,
+            "pct": 54.5
+          },
+          "adults": {
+            "decisions": 989,
+            "sheltered": 262,
+            "pct": 26.5
+          }
+        }
+      ],
+      "reinforced": {
+        "used": 79,
+        "watched": 251,
+        "school": 50,
+        "told": 25
+      },
+      "children_priority": [
+        63,
+        63,
+        63,
+        63,
+        63,
+        62,
+        62,
+        63,
+        63,
+        61,
+        61,
+        63
+      ]
+    },
+    "0.3": {
+      "runs": [
+        "20260928-001053-seed1",
+        "20260928-001248-seed2",
+        "20260928-001454-seed3"
+      ],
+      "children": 12,
+      "learned": 12,
+      "learned_by_channel": {
+        "watched": 10,
+        "school": 2
+      },
+      "median_day_learned": 1,
+      "children_after_learning": {
+        "decisions": 620,
+        "sheltered": 263,
+        "pct": 42.4
+      },
+      "by_day": [
+        {
+          "day": 1,
+          "children_strength": 60.0,
+          "children": {
+            "decisions": 134,
+            "sheltered": 16,
+            "pct": 11.9
+          },
+          "adults": {
+            "decisions": 1073,
+            "sheltered": 520,
+            "pct": 48.5
+          }
+        },
+        {
+          "day": 4,
+          "children_strength": 63.8,
+          "children": {
+            "decisions": 135,
+            "sheltered": 45,
+            "pct": 33.3
+          },
+          "adults": {
+            "decisions": 836,
+            "sheltered": 269,
+            "pct": 32.2
+          }
+        },
+        {
+          "day": 7,
+          "children_strength": 64.8,
+          "children": {
+            "decisions": 166,
+            "sheltered": 95,
+            "pct": 57.2
+          },
+          "adults": {
+            "decisions": 963,
+            "sheltered": 358,
+            "pct": 37.2
+          }
+        },
+        {
+          "day": 9,
+          "children_strength": 65.5,
+          "children": {
+            "decisions": 197,
+            "sheltered": 107,
+            "pct": 54.3
+          },
+          "adults": {
+            "decisions": 992,
+            "sheltered": 356,
+            "pct": 35.9
+          }
+        }
+      ],
+      "reinforced": {
+        "used": 77,
+        "watched": 247,
+        "school": 49,
+        "told": 33
+      },
+      "children_priority": [
+        66,
+        65,
+        65,
+        66,
+        66,
+        65,
+        66,
+        66,
+        66,
+        64,
+        65,
+        66
+      ]
+    }
+  },
+  "per_run": [
+    {
+      "run": "20260927-235640-seed1",
+      "reinforcement": 0.0,
+      "practices": true,
+      "children": [
+        "bryn",
+        "hilde28",
+        "ilsa",
+        "nell"
+      ],
+      "acquired": {
+        "ilsa": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "gorm"
+        },
+        "hilde28": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "mabel"
+        },
+        "nell": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "peder"
+        },
+        "bryn": {
+          "tick": 148,
+          "day": 1,
+          "channel": "school",
+          "teacher": "hilde"
+        }
+      },
+      "exposures": {
+        "school": 5,
+        "watched": 3
+      },
+      "reinforced": {},
+      "children_priority": {},
+      "rain": {
+        "adults:1": [
+          348,
+          181
+        ],
+        "adults:4": [
+          256,
+          64
+        ],
+        "adults:7": [
+          328,
+          83
+        ],
+        "adults:9": [
+          330,
+          62
+        ],
+        "children:1": [
+          39,
+          6
+        ],
+        "children:4": [
+          46,
+          12
+        ],
+        "children:7": [
+          55,
+          22
+        ],
+        "children:9": [
+          40,
+          7
+        ]
+      },
+      "children_strength_by_day": {
+        "1": 58.0,
+        "2": 58.0,
+        "3": 58.0,
+        "4": 58.0,
+        "5": 58.0,
+        "6": 58.0,
+        "7": 58.0,
+        "8": 58.0,
+        "9": 58.0,
+        "10": 58.0
+      },
+      "children_after_learning": [
+        176,
+        47
+      ]
+    },
+    {
+      "run": "20260927-235949-seed2",
+      "reinforcement": 0.0,
+      "practices": true,
+      "children": [
+        "bryn",
+        "hilde28",
+        "ilsa",
+        "nell"
+      ],
+      "acquired": {
+        "hilde28": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "edek"
+        },
+        "nell": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "garrick"
+        },
+        "bryn": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "osric"
+        },
+        "ilsa": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "sten"
+        }
+      },
+      "exposures": {
+        "school": 4,
+        "watched": 4
+      },
+      "reinforced": {},
+      "children_priority": {},
+      "rain": {
+        "adults:1": [
+          422,
+          132
+        ],
+        "adults:4": [
+          301,
+          57
+        ],
+        "adults:7": [
+          348,
+          87
+        ],
+        "adults:9": [
+          349,
+          83
+        ],
+        "children:1": [
+          45,
+          3
+        ],
+        "children:4": [
+          49,
+          8
+        ],
+        "children:7": [
+          63,
+          24
+        ],
+        "children:9": [
+          62,
+          12
+        ]
+      },
+      "children_strength_by_day": {
+        "1": 58.0,
+        "2": 58.0,
+        "3": 58.0,
+        "4": 58.0,
+        "5": 58.0,
+        "6": 58.0,
+        "7": 58.0,
+        "8": 58.0,
+        "9": 58.0,
+        "10": 58.0
+      },
+      "children_after_learning": [
+        215,
+        47
+      ]
+    },
+    {
+      "run": "20260928-000153-seed3",
+      "reinforcement": 0.0,
+      "practices": true,
+      "children": [
+        "bryn",
+        "hilde28",
+        "ilsa",
+        "nell"
+      ],
+      "acquired": {
+        "ilsa": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "gorm"
+        },
+        "hilde28": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "mabel"
+        },
+        "nell": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "orla"
+        },
+        "bryn": {
+          "tick": 148,
+          "day": 1,
+          "channel": "school",
+          "teacher": "freya"
+        }
+      },
+      "exposures": {
+        "school": 5,
+        "watched": 3
+      },
+      "reinforced": {},
+      "children_priority": {},
+      "rain": {
+        "adults:1": [
+          320,
+          122
+        ],
+        "adults:4": [
+          255,
+          76
+        ],
+        "adults:7": [
+          268,
+          94
+        ],
+        "adults:9": [
+          281,
+          83
+        ],
+        "children:1": [
+          36,
+          4
+        ],
+        "children:4": [
+          49,
+          23
+        ],
+        "children:7": [
+          40,
+          12
+        ],
+        "children:9": [
+          72,
+          30
+        ]
+      },
+      "children_strength_by_day": {
+        "1": 58.0,
+        "2": 58.0,
+        "3": 58.0,
+        "4": 58.0,
+        "5": 58.0,
+        "6": 58.0,
+        "7": 58.0,
+        "8": 58.0,
+        "9": 58.0,
+        "10": 58.0
+      },
+      "children_after_learning": [
+        193,
+        69
+      ]
+    },
+    {
+      "run": "20260928-000521-seed1",
+      "reinforcement": 0.1,
+      "practices": true,
+      "children": [
+        "bryn",
+        "hilde28",
+        "ilsa",
+        "nell"
+      ],
+      "acquired": {
+        "ilsa": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "gorm"
+        },
+        "hilde28": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "mabel"
+        },
+        "nell": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "peder"
+        },
+        "bryn": {
+          "tick": 148,
+          "day": 1,
+          "channel": "school",
+          "teacher": "hilde"
+        }
+      },
+      "exposures": {
+        "school": 5,
+        "watched": 3
+      },
+      "reinforced": {
+        "used": 24,
+        "watched": 83,
+        "school": 21,
+        "told": 10
+      },
+      "children_priority": {
+        "bryn": 63,
+        "hilde28": 63,
+        "ilsa": 63,
+        "nell": 63
+      },
+      "rain": {
+        "adults:1": [
+          361,
+          199
+        ],
+        "adults:4": [
+          260,
+          85
+        ],
+        "adults:7": [
+          342,
+          107
+        ],
+        "adults:9": [
+          366,
+          94
+        ],
+        "children:1": [
+          37,
+          0
+        ],
+        "children:4": [
+          46,
+          11
+        ],
+        "children:7": [
+          72,
+          36
+        ],
+        "children:9": [
+          50,
+          24
+        ]
+      },
+      "children_strength_by_day": {
+        "1": 59.0,
+        "2": 60.0,
+        "3": 60.0,
+        "4": 61.0,
+        "5": 61.0,
+        "6": 62.0,
+        "7": 62.0,
+        "8": 62.5,
+        "9": 63.0,
+        "10": 63.0
+      },
+      "children_after_learning": [
+        201,
+        71
+      ]
+    },
+    {
+      "run": "20260928-000712-seed2",
+      "reinforcement": 0.1,
+      "practices": true,
+      "children": [
+        "bryn",
+        "hilde28",
+        "ilsa",
+        "nell"
+      ],
+      "acquired": {
+        "hilde28": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "edek"
+        },
+        "nell": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "garrick"
+        },
+        "bryn": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "osric"
+        },
+        "ilsa": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "sten"
+        }
+      },
+      "exposures": {
+        "school": 4,
+        "watched": 4
+      },
+      "reinforced": {
+        "used": 26,
+        "watched": 85,
+        "told": 9,
+        "school": 15
+      },
+      "children_priority": {
+        "bryn": 63,
+        "hilde28": 62,
+        "ilsa": 62,
+        "nell": 63
+      },
+      "rain": {
+        "adults:1": [
+          378,
+          160
+        ],
+        "adults:4": [
+          299,
+          95
+        ],
+        "adults:7": [
+          346,
+          107
+        ],
+        "adults:9": [
+          343,
+          81
+        ],
+        "children:1": [
+          57,
+          10
+        ],
+        "children:4": [
+          65,
+          20
+        ],
+        "children:7": [
+          63,
+          28
+        ],
+        "children:9": [
+          66,
+          38
+        ]
+      },
+      "children_strength_by_day": {
+        "1": 59.0,
+        "2": 60.0,
+        "3": 60.0,
+        "4": 61.0,
+        "5": 61.0,
+        "6": 61.5,
+        "7": 61.5,
+        "8": 62.0,
+        "9": 62.5,
+        "10": 62.5
+      },
+      "children_after_learning": [
+        247,
+        96
+      ]
+    },
+    {
+      "run": "20260928-000912-seed3",
+      "reinforcement": 0.1,
+      "practices": true,
+      "children": [
+        "bryn",
+        "hilde28",
+        "ilsa",
+        "nell"
+      ],
+      "acquired": {
+        "ilsa": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "gorm"
+        },
+        "hilde28": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "mabel"
+        },
+        "nell": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "orla"
+        },
+        "bryn": {
+          "tick": 148,
+          "day": 1,
+          "channel": "school",
+          "teacher": "freya"
+        }
+      },
+      "exposures": {
+        "school": 5,
+        "watched": 3
+      },
+      "reinforced": {
+        "used": 29,
+        "watched": 83,
+        "told": 6,
+        "school": 14
+      },
+      "children_priority": {
+        "bryn": 63,
+        "hilde28": 61,
+        "ilsa": 61,
+        "nell": 63
+      },
+      "rain": {
+        "adults:1": [
+          317,
+          125
+        ],
+        "adults:4": [
+          228,
+          68
+        ],
+        "adults:7": [
+          253,
+          89
+        ],
+        "adults:9": [
+          280,
+          87
+        ],
+        "children:1": [
+          39,
+          2
+        ],
+        "children:4": [
+          40,
+          13
+        ],
+        "children:7": [
+          51,
+          26
+        ],
+        "children:9": [
+          62,
+          35
+        ]
+      },
+      "children_strength_by_day": {
+        "1": 59.0,
+        "2": 60.0,
+        "3": 60.0,
+        "4": 60.5,
+        "5": 60.5,
+        "6": 61.0,
+        "7": 61.5,
+        "8": 62.0,
+        "9": 62.0,
+        "10": 62.0
+      },
+      "children_after_learning": [
+        188,
+        76
+      ]
+    },
+    {
+      "run": "20260928-001053-seed1",
+      "reinforcement": 0.3,
+      "practices": true,
+      "children": [
+        "bryn",
+        "hilde28",
+        "ilsa",
+        "nell"
+      ],
+      "acquired": {
+        "ilsa": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "gorm"
+        },
+        "nell": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "hal"
+        },
+        "hilde28": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "mabel"
+        },
+        "bryn": {
+          "tick": 148,
+          "day": 1,
+          "channel": "school",
+          "teacher": "hilde"
+        }
+      },
+      "exposures": {
+        "school": 5,
+        "watched": 3
+      },
+      "reinforced": {
+        "used": 22,
+        "watched": 77,
+        "school": 18,
+        "told": 19
+      },
+      "children_priority": {
+        "bryn": 66,
+        "hilde28": 65,
+        "ilsa": 65,
+        "nell": 66
+      },
+      "rain": {
+        "adults:1": [
+          357,
+          214
+        ],
+        "adults:4": [
+          283,
+          94
+        ],
+        "adults:7": [
+          344,
+          128
+        ],
+        "adults:9": [
+          369,
+          120
+        ],
+        "children:1": [
+          34,
+          0
+        ],
+        "children:4": [
+          49,
+          16
+        ],
+        "children:7": [
+          53,
+          26
+        ],
+        "children:9": [
+          73,
+          44
+        ]
+      },
+      "children_strength_by_day": {
+        "1": 60.0,
+        "2": 62.0,
+        "3": 63.0,
+        "4": 64.0,
+        "5": 65.0,
+        "6": 65.0,
+        "7": 65.0,
+        "8": 65.5,
+        "9": 65.5,
+        "10": 65.5
+      },
+      "children_after_learning": [
+        205,
+        86
+      ]
+    },
+    {
+      "run": "20260928-001248-seed2",
+      "reinforcement": 0.3,
+      "practices": true,
+      "children": [
+        "bryn",
+        "hilde28",
+        "ilsa",
+        "nell"
+      ],
+      "acquired": {
+        "hilde28": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "edek"
+        },
+        "nell": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "garrick"
+        },
+        "bryn": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "osric"
+        },
+        "ilsa": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "sten"
+        }
+      },
+      "exposures": {
+        "school": 4,
+        "watched": 4
+      },
+      "reinforced": {
+        "used": 28,
+        "watched": 81,
+        "told": 10,
+        "school": 19
+      },
+      "children_priority": {
+        "bryn": 66,
+        "hilde28": 65,
+        "ilsa": 66,
+        "nell": 66
+      },
+      "rain": {
+        "adults:1": [
+          393,
+          159
+        ],
+        "adults:4": [
+          311,
+          96
+        ],
+        "adults:7": [
+          335,
+          98
+        ],
+        "adults:9": [
+          322,
+          109
+        ],
+        "children:1": [
+          63,
+          11
+        ],
+        "children:4": [
+          46,
+          10
+        ],
+        "children:7": [
+          63,
+          36
+        ],
+        "children:9": [
+          67,
+          31
+        ]
+      },
+      "children_strength_by_day": {
+        "1": 60.0,
+        "2": 62.0,
+        "3": 63.0,
+        "4": 64.0,
+        "5": 65.0,
+        "6": 65.0,
+        "7": 65.0,
+        "8": 65.5,
+        "9": 65.75,
+        "10": 65.75
+      },
+      "children_after_learning": [
+        235,
+        88
+      ]
+    },
+    {
+      "run": "20260928-001454-seed3",
+      "reinforcement": 0.3,
+      "practices": true,
+      "children": [
+        "bryn",
+        "hilde28",
+        "ilsa",
+        "nell"
+      ],
+      "acquired": {
+        "ilsa": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "gorm"
+        },
+        "hilde28": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "mabel"
+        },
+        "nell": {
+          "tick": 144,
+          "day": 1,
+          "channel": "watched",
+          "teacher": "orla"
+        },
+        "bryn": {
+          "tick": 148,
+          "day": 1,
+          "channel": "school",
+          "teacher": "freya"
+        }
+      },
+      "exposures": {
+        "school": 5,
+        "watched": 3
+      },
+      "reinforced": {
+        "used": 27,
+        "watched": 89,
+        "told": 4,
+        "school": 12
+      },
+      "children_priority": {
+        "bryn": 66,
+        "hilde28": 64,
+        "ilsa": 65,
+        "nell": 66
+      },
+      "rain": {
+        "adults:1": [
+          323,
+          147
+        ],
+        "adults:4": [
+          242,
+          79
+        ],
+        "adults:7": [
+          284,
+          132
+        ],
+        "adults:9": [
+          301,
+          127
+        ],
+        "children:1": [
+          37,
+          5
+        ],
+        "children:4": [
+          40,
+          19
+        ],
+        "children:7": [
+          50,
+          33
+        ],
+        "children:9": [
+          57,
+          32
+        ]
+      },
+      "children_strength_by_day": {
+        "1": 60.0,
+        "2": 61.5,
+        "3": 62.0,
+        "4": 63.25,
+        "5": 63.75,
+        "6": 63.75,
+        "7": 64.25,
+        "8": 64.75,
+        "9": 65.25,
+        "10": 65.25
+      },
+      "children_after_learning": [
+        180,
+        89
+      ]
+    }
+  ]
+}

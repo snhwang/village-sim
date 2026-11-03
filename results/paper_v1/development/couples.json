@@ -1,0 +1,85 @@
+[
+  {
+    "run": "20260928-170529-seed1",
+    "proposals": [
+      {
+        "day": 13,
+        "t": 1895,
+        "asker": "gisla",
+        "asked": "dunn",
+        "affinity": 11.63,
+        "answer": "yes",
+        "home": "home_2",
+        "waited": true
+      },
+      {
+        "day": 19,
+        "t": 2824,
+        "asker": "sten",
+        "asked": "maren",
+        "affinity": 17.97,
+        "answer": "yes",
+        "home": "home_12",
+        "waited": false
+      }
+    ],
+    "marriages": 2,
+    "sites_started": [
+      {
+        "day": 13,
+        "by": "wynn"
+      }
+    ],
+    "houses": [
+      {
+        "day": 14,
+        "place": "home_14",
+        "couple": [
+          "dunn",
+          "gisla"
+        ]
+      }
+    ],
+    "building_at_last_dawn": {
+      "day": 14,
+      "timber": 6.0,
+      "progress": 144.0,
+      "waiting": [
+        [
+          "dunn",
+          "gisla"
+        ]
+      ]
+    },
+    "fondest_at_last_dawn": {
+      "day": 39,
+      "pair": [
+        "garrick",
+        "orla",
+        4.21
+      ]
+    },
+    "propose_rank_with_sweetheart_near": {
+      "1": 4,
+      "2": 2,
+      "3": 18,
+      "4": 8,
+      "5": 5,
+      "6": 2,
+      "7": 2,
+      "not retrieved": 16
+    },
+    "chosen": {
+      "family-propose": 2,
+      "family-seek-sweetheart": 11,
+      "family-accept-proposal": 2,
+      "crafter-fell-timber": 4,
+      "crafter-start-house": 8,
+      "crafter-build-house": 5
+    },
+    "refused": {
+      "family-seek-sweetheart": 12,
+      "family-propose": 6
+    }
+  }
+]

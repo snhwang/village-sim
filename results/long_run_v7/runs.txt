@@ -1,0 +1,73 @@
+20261016-121341-seed1
+# The seventh long run: the sixth's village, seed, switches and server, from
+# the start again, with what no question needs leaving the live memory index
+# and telling only what the listener has not had. Started on 2026-10-16 at
+# 12:13 EDT on Scott's go-ahead ("It's different parameters. I would start
+# over."). The sixth had stopped at day 721 in the reboot of 08:25.
+#
+# Against the sixth long run (results/long_run_v6), three switches differ
+# (SPECIFICATION-memory.md sections 7 and 8):
+#   - forget_the_dead: once a day the dead's own memories leave the live
+#     index. By day 719 of the sixth they were 18% of it.
+#   - forget_faded: once a day a memory below a twentieth of its strength
+#     leaves the live index, and comes back if lived again. Restored at day
+#     721 with both, the sixth's index fell from 64,654 memories to 17,459 and
+#     a daytime tick from 1.0 s to 0.5 s without the model.
+#   - novel_telling: a talk whose topic names a place the speaker holds news
+#     of goes only to someone who has not had that news from the speaker. In
+#     the fifth run a lesson to mention one birth was chosen 3,132 times.
+# The thread limits are new too. The sixth spread every memory lookup over
+# all 28 of WSL's threads, about eight cores busy for nothing.
+#
+# The build. Hearthwick bd59973 with BEAR 8e26162 from the WSL clone
+# /mnt/c/tmp/bear-dev-main, as the third to sixth runs.
+#
+# The model. Qwen3.8-27B on 8355 (SGLang, dgx2's build), as the fourth to
+# sixth runs, its container healthy since the reboot. The embedder is 8360.
+#
+# From the repository in WSL:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup env OMP_NUM_THREADS=1 \
+#     OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python \
+#     -m hearthwick run --days 8000 --days-per-year 28 --seed 1 --village greater \
+#     --checkpoint-every 1 --no-designs --no-wants --no-search --no-vehicles \
+#     --no-assessing --no-looking --no-placing --no-bynames \
+#     --no-leisure --no-living-memory --no-natural-talk --no-time-off \
+#     --quick-warnings --told-memory --fading-lessons --short-warnings \
+#     --lasting-lessons --teachers-by-pupils --elders-in-fields \
+#     --work-in-rain --decide-again --forget-the-dead --forget-faded \
+#     --novel-telling \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     > runs/long_run_v7.log 2>&1 < /dev/null &
+#
+# Its first 50 seconds made 94 model calls, all answered, at about 4% of one
+# core, and its environment carried the three thread limits.
+#
+# To resume after a stop, with the same environment:
+#
+#   PYTHONPATH=/mnt/c/tmp/bear-dev-main setsid nohup env OMP_NUM_THREADS=1 \
+#     OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python \
+#     -m hearthwick run --resume 20261016-121341-seed1 \
+#     --llm-url http://localhost:8355/v1 --model Qwen3.8-27B \
+#     >> runs/long_run_v7.log 2>&1 < /dev/null &
+#
+# To stop it, send SIGINT to its pid, which saves and exits cleanly.
+#
+# Its report, read to a fixed day so it can run while the village does:
+#
+#   python experiments/long_run_report.py 20261016-121341-seed1 --to-day <N> --out results/long_run_v7
+#
+# 2026-10-17: its process had grown to 13.2 GB by year 17, from BEAR's change
+# records, which nothing here drains (SPECIFICATION-memory.md section 7). It
+# was stopped with SIGINT at 03:29 at tick 71432 (day 496) and resumed at
+# 03:32 on cd744ad, which lets them go each day, with the same command as
+# above. It then held at about 1.0 GB. The resume made no other change.
+#
+# It was stopped for good with SIGINT at 03:52:36 on Scott's say-so, at tick
+# 72488 (day 503, year 17), to give 8355 to three trial runs of
+# --profile illustrative, which has everything this run had plus news that
+# ends, false alarms, routine memories that fade and the same talk at most
+# once a day. No model call went unanswered. Its record's speech_calls covers
+# only the last resume, since cd744ad predates keeping the counts in the
+# checkpoint. Its report to day 476 is in this folder, and its health check
+# to day 496 found the faults section 10 of SPECIFICATION-memory.md fixes.

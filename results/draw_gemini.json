@@ -1,0 +1,1375 @@
+[
+ {
+  "villager": "ada",
+  "name": "Ada",
+  "stage": "adult",
+  "role": "healer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a loom to weave our own cloth",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "garrick",
+  "drawn": "sturdy timber loom",
+  "goes": "home",
+  "does": "Ada asked for a loom to weave cloth. She got the plans from a peddler\u2014makes you wonder what else he was selling and who really sent him here, doesn't it? We've always bought our cloth, but I asked her all about the patterns she plans to weave. I built the frame so thick a runaway cart wouldn't dent it, and checked every joint twice just to be safe. No rush to finish it, though, we'll take it easy.",
+  "looked": "",
+  "mended_pictured": false,
+  "size": [
+   0.84,
+   0.62,
+   0.68
+  ],
+  "accepted": false,
+  "reasons": [
+   "slide needs two values and a period",
+   "swing needs two values and a period"
+  ],
+  "parts": 19,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\n  \"design\": \"sturdy timber loom\",\n  \"footprint\": [2, 2],\n  \"ground\": \"timber\",\n  \"goes\": \"home\",\n  \"does\": \"Ada asked for a loom to weave cloth. She got the plans from a peddler\u2014makes you wonder what else he was selling and who really sent him here, doesn't it? We've always bought our cloth, but I asked her all about the patterns she plans to weave. I built the frame so thick a runaway cart wouldn't dent it, and checked every joint twice just to be safe. No rush to finish it, though, we'll take it easy.\",\n  \"parts\": [\n    {\"id\": \"left_post_front\", \"shape\": \"box\", \"size\": [0.04, 0.6, 0.04], \"at\": [-0.4, 0.3, 0.3], \"material\": \"dark_timber\"},\n    {\"id\": \"right_post_front\", \"shape\": \"box\", \"size\": [0.04, 0.6, 0.04], \"at\": [0.4, 0.3, 0.3], \"material\": \"dark_timber\"},\n    {\"id\": \"left_post_back\", \"shape\": \"box\", \"size\": [0.04, 0.6, 0.04], \"at\": [-0.4, 0.3, -0.3], \"material\": \"dark_timber\"},\n    {\"id\": \"right_post_back\", \"shape\": \"box\", \"size\": [0.04, 0.6, 0.04], \"at\": [0.4, 0.3, -0.3], \"material\": \"dark_timber\"},\n    {\"id\": \"base_left\", \"shape\": \"box\", \"size\": [0.04, 0.04, 0.64], \"at\": [-0.4, 0.02, 0], \"material\": \"timber\"},\n    {\"id\": \"base_right\", \"shape\": \"box\", \"size\": [0.04, 0.04, 0.64], \"at\": [0.4, 0.02, 0], \"material\": \"timber\"},\n    {\"id\": \"top_left\", \"shape\": \"box\", \"size\": [0.04, 0.04, 0.64], \"at\": [-0.4, 0.6, 0], \"material\": \"timber\"},\n    {\"id\": \"top_right\", \"shape\": \"box\", \"size\": [0.04, 0.04, 0.64], \"at\": [0.4, 0.6, 0], \"material\": \"timber\"},\n    {\"id\": \"cross_back\", \"shape\": \"box\", \"size\": [0.76, 0.04, 0.04], \"at\": [0, 0.1, -0.3], \"material\": \"timber\"},\n    {\"id\": \"cross_front\", \"shape\": \"box\", \"size\": [0.76, 0.04, 0.04], \"at\": [0, 0.1, 0.3], \"material\": \"timber\"},\n    {\"id\": \"beater_pivot_bar\", \"shape\": \"box\", \"size\": [0.76, 0.04, 0.04], \"at\": [0, 0.6, 0.05], \"material\": \"dark_timber\"},\n    {\"id\": \"warp_beam\", \"shape\": \"cylinder\", \"size\": [0.04, 0.76], \"at\": [0, 0.25, -0.3], \"rotation\": [0, 0, 90], \"material\": \"timber\"},\n    {\"id\": \"cloth_beam\", \"shape\": \"cylinder\", \"size\": [0.04, 0.76], \"at\": [0, 0.25, 0.3], \"rotation\": [0, 0, 90], \"material\": \"timber\"},\n    {\"id\": \"harness_guide_left\", \"shape\": \"box\", \"size\": [0.04, 0.54, 0.04], \"at\": [-0.38, 0.31, -0.05], \"material\": \"timber\"},\n    {\"id\": \"harness_guide_right\", \"shape\": \"box\", \"size\": [0.04, 0.54, 0.04], \"at\": [0.38, 0.31, -0.05], \"material\": \"timber\"},\n    {\"id\": \"harness\", \"shape\": \"box\", \"size\": [0.72, 0.4, 0.02], \"at\": [0, 0.31, -0.05], \"material\": \"dark_timber\"},\n    {\"id\": \"beater\", \"shape\": \"box\", \"size\": [0.76, 0.54, 0.02], \"at\": [0, 0.31, 0.05], \"material\": \"dark_timber\"},\n    {\"id\": \"warp_threads\", \"shape\": \"box\", \"size\": [0.6, 0.01, 0.25], \"at\": [0, 0.25, -0.175], \"material\": \"sailcloth\"},\n    {\"id\": \"woven_cloth\", \"shape\": \"box\", \"size\": [0.6, 0.01, 0.25], \"at\": [0, 0.25, 0.175], \"material\": \"cloth\"}\n  ],\n  \"joints\": [\n    {\"part\": \"harness\", \"kind\": \"slider\", \"axis\": \"y\"},\n    {\"part\": \"beater\", \"kind\": \"hinge\", \"axis\": \"x\", \"pivot\": [0, 0.27, 0]}\n  ],\n  \"movements\": [\n    {\"joint\": \"harness\", \"slide\": [-0.05, 0.05], \"seconds\": 2, \"when\": \"worked\"},\n    {\"joint\": \"beater\", \"swing\": [-15, 0], \"seconds\": 2, \"when\": \"worked\"}\n  ],\n  \"claims\": []\n}"
+ },
+ {
+  "villager": "corin",
+  "name": "Corin",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "given",
+  "kind": "make",
+  "want": "a windlass to haul the millstones",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "millstone windlass",
+  "goes": "mill",
+  "does": "Lifts the millstones. Corin wants it, so I drew it. Why does he need a new one? The bench found the bar struck the top beam and drum, and the slide needed two values and seconds. I heard them. I set the slide to one unit and gave it four seconds. I lowered the bar so it stops below the drum. No ropes to break now, just a stout frame. If a stone falls, it falls. Worriers make too much of a squeaking timber. We have time.",
+  "looked": "",
+  "mended_pictured": true,
+  "size": [
+   2.15,
+   2.25,
+   2.0
+  ],
+  "accepted": false,
+  "reasons": [
+   "slide needs two values and a period"
+  ],
+  "parts": 12,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\"design\":\"millstone windlass\",\"footprint\":[3,3],\"ground\":\"timber\",\"parts\":[\n{\"id\":\"base_l\",\"shape\":\"box\",\"size\":[0.2,0.2,2.0],\"at\":[-0.8,0.1,0],\"material\":\"timber\"},\n{\"id\":\"base_r\",\"shape\":\"box\",\"size\":[0.2,0.2,2.0],\"at\":[0.8,0.1,0],\"material\":\"timber\"},\n{\"id\":\"base_b\",\"shape\":\"box\",\"size\":[1.8,0.2,0.2],\"at\":[0,0.1,-0.9],\"material\":\"timber\"},\n{\"id\":\"post_l\",\"shape\":\"box\",\"size\":[0.15,2.0,0.15],\"at\":[-0.8,1.1,0],\"material\":\"timber\"},\n{\"id\":\"post_r\",\"shape\":\"box\",\"size\":[0.15,2.0,0.15],\"at\":[0.8,1.1,0],\"material\":\"timber\"},\n{\"id\":\"beam_top\",\"shape\":\"box\",\"size\":[1.8,0.15,0.15],\"at\":[0,2.175,0],\"material\":\"dark_timber\"},\n{\"id\":\"brace_l\",\"shape\":\"box\",\"size\":[0.1,0.8,0.1],\"at\":[-0.8,0.45,-0.35],\"rotation\":[45,0,0],\"material\":\"timber\"},\n{\"id\":\"brace_r\",\"shape\":\"box\",\"size\":[0.1,0.8,0.1],\"at\":[0.8,0.45,-0.35],\"rotation\":[45,0,0],\"material\":\"timber\"},\n{\"id\":\"drum\",\"shape\":\"cylinder\",\"size\":[0.12,1.9],\"at\":[0,1.6,0],\"rotation\":[0,0,90],\"material\":\"timber\"},\n{\"id\":\"crank_arm\",\"shape\":\"box\",\"size\":[0.04,0.04,0.3],\"at\":[-1.0,1.6,0.15],\"material\":\"iron\",\"parent\":\"drum\"},\n{\"id\":\"crank_handle\",\"shape\":\"box\",\"size\":[0.2,0.04,0.04],\"at\":[-1.1,1.6,0.3],\"material\":\"dark_timber\",\"parent\":\"drum\"},\n{\"id\":\"lift_bar\",\"shape\":\"box\",\"size\":[1.45,0.15,0.3],\"at\":[0,0.3,0],\"material\":\"dark_timber\"}\n],\"joints\":[\n{\"part\":\"drum\",\"kind\":\"hinge\",\"axis\":\"x\"},\n{\"part\":\"lift_bar\",\"kind\":\"slider\",\"axis\":\"y\"}\n],\"movements\":[\n{\"joint\":\"drum\",\"spin\":20,\"when\":\"worked\"},\n{\"joint\":\"lift_bar\",\"slide\":[0,1.0],\"seconds\":4,\"when\":\"worked\"}\n],\"claims\":[\"lift\"],\"goes\":\"mill\",\"does\":\"Lifts the millstones. Corin wants it, so I drew it. Why does he need a new one? The bench found the bar struck the top beam and drum, and the slide needed two values and seconds. I heard them. I set the slide to one unit and gave it four seconds. I lowered the bar so it stops below the drum. No ropes to break now, just a stout frame. If a stone falls, it falls. Worriers make too much of a squeaking timber. We have time.\"}\n```"
+ },
+ {
+  "villager": "dunn",
+  "name": "Dunn",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a strong wheel to stop the ice",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "wynn",
+  "drawn": "Massive Ice Wheel",
+  "goes": "mill",
+  "does": "Dunn says the ice is coming. A river freezing in summer? I've never seen it, but I take him at his word. He means well. The old wheel was useless, sat inside the posts and seized tight as a rusted bolt. Shoddy, idle work. I rebuilt it properly. The axle rests heavy on the posts now, bound under massive iron caps that could crush a boulder. It grinds true against the iron. Keep your hands clear of the caps when it turns, or it'll take your fingers. There's no hurry, but the work is done.",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   2.8,
+   2.12,
+   1.85
+  ],
+  "accepted": false,
+  "reasons": [
+   "it would not stand: the cap_left and cap_right would tip over"
+  ],
+  "parts": 11,
+  "moves": [],
+  "claims": {},
+  "stands": false,
+  "fell": [
+   "cap_left",
+   "cap_right"
+  ],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\"design\": \"Massive Ice Wheel\", \"footprint\": [3, 4], \"ground\": \"gravel\", \"parts\": [{\"id\": \"post_left\", \"shape\": \"box\", \"size\": [0.4, 1.05, 0.4], \"at\": [-1.2, 0.525, 0], \"material\": \"stone\"}, {\"id\": \"post_right\", \"shape\": \"box\", \"size\": [0.4, 1.05, 0.4], \"at\": [1.2, 0.525, 0], \"material\": \"stone\"}, {\"id\": \"axle\", \"shape\": \"cylinder\", \"size\": [0.15, 2.8], \"at\": [0, 1.2, 0], \"rotation\": [0, 0, 90], \"material\": \"dark_timber\"}, {\"id\": \"disc_left\", \"shape\": \"cylinder\", \"size\": [0.9, 0.1], \"at\": [-0.45, 1.2, 0], \"rotation\": [0, 0, 90], \"sides\": 16, \"parent\": \"axle\", \"material\": \"timber\"}, {\"id\": \"disc_right\", \"shape\": \"cylinder\", \"size\": [0.9, 0.1], \"at\": [0.45, 1.2, 0], \"rotation\": [0, 0, 90], \"sides\": 16, \"parent\": \"axle\", \"material\": \"timber\"}, {\"id\": \"rim_left\", \"shape\": \"cylinder\", \"size\": [0.9, 0.12], \"at\": [-0.45, 1.2, 0], \"rotation\": [0, 0, 90], \"sides\": 16, \"open\": true, \"parent\": \"axle\", \"material\": \"iron\"}, {\"id\": \"rim_right\", \"shape\": \"cylinder\", \"size\": [0.9, 0.12], \"at\": [0.45, 1.2, 0], \"rotation\": [0, 0, 90], \"sides\": 16, \"open\": true, \"parent\": \"axle\", \"material\": \"iron\"}, {\"id\": \"paddle\", \"shape\": \"box\", \"size\": [0.8, 0.4, 0.05], \"at\": [0, 1.9, 0], \"parent\": \"axle\", \"repeat\": 12, \"material\": \"timber\"}, {\"id\": \"breaker\", \"shape\": \"box\", \"size\": [0.9, 0.05, 0.05], \"at\": [0, 2.1, 0], \"parent\": \"axle\", \"repeat\": 12, \"material\": \"iron\"}, {\"id\": \"cap_left\", \"shape\": \"box\", \"size\": [0.4, 0.1, 0.4], \"at\": [-1.2, 1.4, 0], \"material\": \"iron\"}, {\"id\": \"cap_right\", \"shape\": \"box\", \"size\": [0.4, 0.1, 0.4], \"at\": [1.2, 1.4, 0], \"material\": \"iron\"}], \"joints\": [{\"part\": \"axle\", \"kind\": \"hinge\", \"axis\": \"x\"}, {\"part\": \"cap_left\", \"kind\": \"hinge\", \"axis\": \"z\", \"pivot\": [-0.2, 0, 0]}, {\"part\": \"cap_right\", \"kind\": \"hinge\", \"axis\": \"z\", \"pivot\": [0.2, 0, 0]}], \"movements\": [{\"joint\": \"axle\", \"spin\": 15, \"when\": \"always\"}], \"claims\": [\"grind\"], \"goes\": \"mill\", \"does\": \"Dunn says the ice is coming. A river freezing in summer? I've never seen it, but I take him at his word. He means well. The old wheel was useless, sat inside the posts and seized tight as a rusted bolt. Shoddy, idle work. I rebuilt it properly. The axle rests heavy on the posts now, bound under massive iron caps that could crush a boulder. It grinds true against the iron. Keep your hands clear of the caps when it turns, or it'll take your fingers. There's no hurry, but the work is done.\"}\n```"
+ },
+ {
+  "villager": "edda",
+  "name": "Edda",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a wedge to hold the cogs",
+  "reply": "",
+  "assessed": null,
+  "attempts": 1,
+  "crafter": "gorm",
+  "drawn": "cog wedge",
+  "goes": "mill",
+  "does": "Edda wants a wedge to hold the cogs, so I made it. It is just a wedge.",
+  "looked": "right",
+  "mended_pictured": false,
+  "size": [
+   0.04,
+   0.04,
+   0.12
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 1,
+  "moves": [],
+  "claims": {},
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": 0.5,
+  "design": {
+   "design": "cog wedge",
+   "footprint": [
+    1,
+    1
+   ],
+   "ground": "timber",
+   "parts": [
+    {
+     "id": "wedge",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.02,
+      0.12
+     ],
+     "at": [
+      0,
+      0.01,
+      0
+     ],
+     "rotation": [
+      8,
+      0,
+      0
+     ],
+     "material": "dark_timber"
+    }
+   ],
+   "claims": [],
+   "goes": "mill",
+   "does": "Edda wants a wedge to hold the cogs, so I made it. It is just a wedge.",
+   "by": "gorm",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "edek",
+  "name": "Edek",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a pump to pull the floodwater out",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "edda",
+  "drawn": "floodwater scoop wheel",
+  "goes": "fields",
+  "does": "Pulls the worst of the floodwater out before it drowns the crops, if the timber holds. It'll throw a river's worth of water a day.",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   1.9,
+   1.88,
+   1.8
+  ],
+  "accepted": false,
+  "reasons": [
+   "it would not pump: nothing in it turns against a load"
+  ],
+  "parts": 10,
+  "moves": [],
+  "claims": {
+   "pump": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "Those caps were just sitting loose on top of the spinning axle. No wonder they tipped right over! You can't just rest timber on something that turns and expect it to stay; the movement will throw it right off. I took them off and ran the iron axle straight through the posts instead, the way we build the wheels at the mill. It'll hold fast now. \n\nAre the fields very bad? How did Edek find out the water was rising so fast? I trust he knows what he's doing, but you have to be careful with floodwater\u2014it'll wash away a weak footing before you even notice. Tell him to watch the banks. We should get this built quickly. There's no time to stand about when there's a river's worth of water to move, so I went ahead and fixed the drawing for him without waiting to be asked. Tobin and Gisla can help me cut the timber if we need it. How are you faring in all this wet?\n\n```json\n{\"design\":\"floodwater scoop wheel\",\"footprint\":[3,3],\"ground\":\"gravel\",\"claims\":[\"pump\"],\"goes\":\"fields\",\"does\":\"Pulls the worst of the floodwater out before it drowns the crops, if the timber holds. It'll throw a river's worth of water a day.\",\"parts\":[{\"id\":\"base_west\",\"shape\":\"box\",\"size\":[0.4,0.2,0.8],\"at\":[-0.5,0.1,0],\"material\":\"stone\"},{\"id\":\"base_east\",\"shape\":\"box\",\"size\":[0.4,0.2,0.8],\"at\":[0.5,0.1,0],\"material\":\"stone\"},{\"id\":\"post_west\",\"shape\":\"box\",\"size\":[0.15,1.0,0.15],\"at\":[-0.5,0.6,0],\"material\":\"dark_timber\"},{\"id\":\"post_east\",\"shape\":\"box\",\"size\":[0.15,1.0,0.15],\"at\":[0.5,0.6,0],\"material\":\"dark_timber\"},{\"id\":\"axle\",\"shape\":\"cylinder\",\"size\":[0.08,1.8],\"at\":[0,0.98,0],\"rotation\":[0,0,90],\"material\":\"iron\"},{\"id\":\"wheel_core\",\"shape\":\"cylinder\",\"size\":[0.4,0.2],\"at\":[0,0.98,0],\"rotation\":[0,0,90],\"parent\":\"axle\",\"material\":\"timber\"},{\"id\":\"paddle\",\"shape\":\"box\",\"size\":[0.2,0.3,0.05],\"at\":[0,1.43,0],\"parent\":\"axle\",\"repeat\":8,\"material\":\"timber\"},{\"id\":\"sail_hub\",\"shape\":\"cylinder\",\"size\":[0.12,0.2],\"at\":[-0.9,0.98,0],\"rotation\":[0,0,90],\"parent\":\"axle\",\"material\":\"iron\"},{\"id\":\"sail_arm\",\"shape\":\"box\",\"size\":[0.05,0.9,0.05],\"at\":[-0.9,1.43,0],\"parent\":\"axle\",\"repeat\":4,\"material\":\"timber\"},{\"id\":\"sail_cloth\",\"shape\":\"box\",\"size\":[0.02,0.8,0.3],\"at\":[-0.9,1.43,0.15],\"rotation\":[0,15,0],\"parent\":\"axle\",\"repeat\":4,\"material\":\"sailcloth\"}],\"joints\":[{\"part\":\"axle\",\"kind\":\"hinge\",\"axis\":\"x\"}],\"movements\":[{\"joint\":\"axle\",\"spin\":30,\"when\":\"always\"}]}\n```"
+ },
+ {
+  "villager": "fen",
+  "name": "Fen",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a sturdy wheel to keep the mill turning",
+  "reply": "",
+  "assessed": null,
+  "attempts": 1,
+  "crafter": "dunn",
+  "drawn": "great mill wheel",
+  "goes": "mill",
+  "does": "Grinds our grain. Fen says the old wheel was rotting, but who's been filling his head with that? I built this one from dark timber, twice as thick and sturdy as a mountain. It'll outlast a flood.",
+  "looked": "mended",
+  "mended_pictured": false,
+  "size": [
+   3.0,
+   2.69,
+   2.28
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 7,
+  "moves": [
+   "spin axle"
+  ],
+  "claims": {
+   "grind": true
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": true,
+  "cost": 0.5,
+  "design": {
+   "design": "great mill wheel",
+   "footprint": [
+    3,
+    3
+   ],
+   "ground": "gravel",
+   "parts": [
+    {
+     "id": "support_l",
+     "shape": "box",
+     "size": [
+      0.3,
+      1.38,
+      0.5
+     ],
+     "at": [
+      -1.0,
+      0.69,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "support_r",
+     "shape": "box",
+     "size": [
+      0.3,
+      1.38,
+      0.5
+     ],
+     "at": [
+      1.0,
+      0.69,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "axle",
+     "shape": "cylinder",
+     "size": [
+      0.12,
+      2.5
+     ],
+     "at": [
+      0,
+      1.5,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "spoke_l",
+     "shape": "box",
+     "size": [
+      0.06,
+      2.1,
+      0.06
+     ],
+     "at": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "material": "timber",
+     "parent": "axle",
+     "repeat": 10,
+     "rotation": [
+      0.0,
+      0.0,
+      -90.0
+     ]
+    },
+    {
+     "id": "spoke_r",
+     "shape": "box",
+     "size": [
+      0.06,
+      2.1,
+      0.06
+     ],
+     "at": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "material": "timber",
+     "parent": "axle",
+     "repeat": 10,
+     "rotation": [
+      0.0,
+      0.0,
+      -90.0
+     ]
+    },
+    {
+     "id": "paddle",
+     "shape": "box",
+     "size": [
+      0.5,
+      0.28,
+      0.04
+     ],
+     "at": [
+      1.05,
+      0.0,
+      0.0
+     ],
+     "material": "timber",
+     "parent": "axle",
+     "repeat": 10,
+     "rotation": [
+      0.0,
+      0.0,
+      -90.0
+     ]
+    },
+    {
+     "id": "water_flow",
+     "shape": "box",
+     "size": [
+      3.0,
+      0.25,
+      1.5
+     ],
+     "at": [
+      0,
+      0.125,
+      0
+     ],
+     "material": "water"
+    }
+   ],
+   "joints": [
+    {
+     "part": "axle",
+     "kind": "hinge",
+     "axis": "y"
+    }
+   ],
+   "movements": [
+    {
+     "joint": "axle",
+     "spin": 15,
+     "when": "always"
+    }
+   ],
+   "claims": [
+    "grind"
+   ],
+   "goes": "mill",
+   "does": "Grinds our grain. Fen says the old wheel was rotting, but who's been filling his head with that? I built this one from dark timber, twice as thick and sturdy as a mountain. It'll outlast a flood.",
+   "by": "dunn",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "freya",
+  "name": "Freya",
+  "stage": "elder",
+  "role": "farmer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a lever to lift the heavy stones",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "quarry stone lever",
+  "goes": "quarry",
+  "does": "Freya asked for a lever for the quarry stones. I don't know why she's not using the ramps, but I take her at her word. The old drawing was broken, the joint didn't lift the load. I fixed it. Built a stout timber beam on an iron axle, with a basket at the end. Folks worry about the beam snapping. It's thick enough, and if a stone falls, just step back. No need to rush the work.",
+  "looked": "mended",
+  "mended_pictured": true,
+  "size": [
+   4.0,
+   1.72,
+   1.0
+  ],
+  "accepted": false,
+  "reasons": [
+   "it would not stand: the basket_base would tip over"
+  ],
+  "parts": 11,
+  "moves": [],
+  "claims": {},
+  "stands": false,
+  "fell": [
+   "basket_base"
+  ],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"quarry stone lever\",\"footprint\":[5,2],\"ground\":\"gravel\",\"parts\":[\n{\"id\":\"base_pad\",\"shape\":\"box\",\"size\":[4.0,0.1,1.0],\"at\":[0,0.05,0],\"material\":\"stone\"},\n{\"id\":\"post_front\",\"shape\":\"box\",\"size\":[0.2,1.4,0.2],\"at\":[0,0.7,0.25],\"material\":\"timber\"},\n{\"id\":\"post_back\",\"shape\":\"box\",\"size\":[0.2,1.4,0.2],\"at\":[0,0.7,-0.25],\"material\":\"timber\"},\n{\"id\":\"axle\",\"shape\":\"cylinder\",\"size\":[0.05,0.7],\"at\":[0,1.3,0],\"rotation\":[90,0,0],\"material\":\"iron\"},\n{\"id\":\"basket_base\",\"shape\":\"box\",\"size\":[0.8,0.1,0.8],\"at\":[1.6,1.3,0],\"material\":\"timber\"},\n{\"id\":\"lever_beam\",\"shape\":\"box\",\"size\":[4.0,0.15,0.15],\"at\":[0,1.3,0],\"parent\":\"basket_base\",\"material\":\"dark_timber\"},\n{\"id\":\"pull_grip\",\"shape\":\"cylinder\",\"size\":[0.03,0.6],\"at\":[-1.9,1.3,0],\"rotation\":[90,0,0],\"parent\":\"basket_base\",\"material\":\"dark_timber\"},\n{\"id\":\"basket_back\",\"shape\":\"box\",\"size\":[0.05,0.4,0.8],\"at\":[1.225,1.55,0],\"parent\":\"basket_base\",\"material\":\"timber\"},\n{\"id\":\"basket_front\",\"shape\":\"box\",\"size\":[0.05,0.4,0.8],\"at\":[1.975,1.55,0],\"parent\":\"basket_base\",\"material\":\"timber\"},\n{\"id\":\"basket_side1\",\"shape\":\"box\",\"size\":[0.7,0.4,0.05],\"at\":[1.6,1.55,0.375],\"parent\":\"basket_base\",\"material\":\"timber\"},\n{\"id\":\"basket_side2\",\"shape\":\"box\",\"size\":[0.7,0.4,0.05],\"at\":[1.6,1.55,-0.375],\"parent\":\"basket_base\",\"material\":\"timber\"}\n],\"joints\":[\n{\"part\":\"basket_base\",\"kind\":\"hinge\",\"axis\":\"z\",\"pivot\":[-1.6,0,0]}\n],\"movements\":[\n{\"joint\":\"basket_base\",\"open\":25,\"seconds\":2.5,\"when\":\"worked\"}\n],\"claims\":[\"lift\"],\"goes\":\"quarry\",\"does\":\"Freya asked for a lever for the quarry stones. I don't know why she's not using the ramps, but I take her at her word. The old drawing was broken, the joint didn't lift the load. I fixed it. Built a stout timber beam on an iron axle, with a basket at the end. Folks worry about the beam snapping. It's thick enough, and if a stone falls, just step back. No need to rush the work.\"}"
+ },
+ {
+  "villager": "garrick",
+  "name": "Garrick",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a forge to mend the plows",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "wynn",
+  "drawn": "village forge",
+  "goes": "forge",
+  "does": "A sturdy forge to mend plows. I fixed the bellows swing. They breathe like a waking dragon now, blowing sparks clear over the inn's roof. Mind you don't catch your sleeves on the anvil horn.",
+  "looked": "",
+  "mended_pictured": false,
+  "size": [
+   3.54,
+   3.3,
+   3.54
+  ],
+  "accepted": false,
+  "reasons": [
+   "swing needs two values and a period"
+  ],
+  "parts": 16,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\n\"design\": \"village forge\",\n\"footprint\": [4, 4],\n\"ground\": \"flagstone\",\n\"parts\": [\n{\"id\": \"post_nw\", \"shape\": \"box\", \"size\": [0.15, 2.0, 0.15], \"at\": [-1.5, 1.0, -1.5], \"material\": \"timber\"},\n{\"id\": \"post_ne\", \"shape\": \"box\", \"size\": [0.15, 2.0, 0.15], \"at\": [1.5, 1.0, -1.5], \"material\": \"timber\"},\n{\"id\": \"post_sw\", \"shape\": \"box\", \"size\": [0.15, 2.0, 0.15], \"at\": [-1.5, 1.0, 1.5], \"material\": \"timber\"},\n{\"id\": \"post_se\", \"shape\": \"box\", \"size\": [0.15, 2.0, 0.15], \"at\": [1.5, 1.0, 1.5], \"material\": \"timber\"},\n{\"id\": \"roof\", \"shape\": \"cone\", \"size\": [2.5, 1.2], \"sides\": 4, \"at\": [0, 2.6, 0], \"rotation\": [0, 45, 0], \"material\": \"shingle\"},\n{\"id\": \"hearth_base\", \"shape\": \"box\", \"size\": [1.4, 0.8, 1.0], \"at\": [0, 0.4, -1.0], \"material\": \"stone\"},\n{\"id\": \"chimney\", \"shape\": \"box\", \"size\": [0.5, 2.5, 0.5], \"at\": [0, 2.05, -1.25], \"material\": \"stone\"},\n{\"id\": \"fire_pit\", \"shape\": \"box\", \"size\": [0.8, 0.05, 0.6], \"at\": [0, 0.82, -0.9], \"material\": \"iron\"},\n{\"id\": \"anvil_block\", \"shape\": \"cylinder\", \"size\": [0.25, 0.5], \"at\": [0, 0.25, 0.5], \"material\": \"dark_timber\"},\n{\"id\": \"anvil\", \"shape\": \"box\", \"size\": [0.35, 0.2, 0.15], \"at\": [0, 0.6, 0.5], \"material\": \"iron\"},\n{\"id\": \"anvil_horn\", \"shape\": \"cone\", \"size\": [0.08, 0.2], \"at\": [-0.25, 0.6, 0.5], \"rotation\": [0, 0, 90], \"material\": \"iron\"},\n{\"id\": \"bellows_base\", \"shape\": \"box\", \"size\": [0.4, 0.6, 0.6], \"at\": [-0.9, 0.3, -1.0], \"material\": \"timber\"},\n{\"id\": \"bellows_cloth\", \"shape\": \"box\", \"size\": [0.35, 0.2, 0.55], \"at\": [-0.9, 0.7, -1.0], \"material\": \"cloth\"},\n{\"id\": \"bellows_top\", \"shape\": \"box\", \"size\": [0.4, 0.05, 0.6], \"at\": [-0.9, 0.825, -1.0], \"material\": \"timber\"},\n{\"id\": \"quenching_trough\", \"shape\": \"box\", \"size\": [0.6, 0.4, 0.4], \"at\": [1.0, 0.2, 0.5], \"material\": \"stone\"},\n{\"id\": \"trough_water\", \"shape\": \"box\", \"size\": [0.5, 0.05, 0.3], \"at\": [1.0, 0.38, 0.5], \"material\": \"water\"}\n],\n\"joints\": [\n{\"part\": \"bellows_top\", \"kind\": \"hinge\", \"axis\": \"x\", \"pivot\": [0, 0, -0.3]}\n],\n\"movements\": [\n{\"joint\": \"bellows_top\", \"swing\": [0, 15], \"seconds\": 1.5, \"when\": \"worked\"}\n],\n\"claims\": [\"shelter\"],\n\"goes\": \"forge\",\n\"does\": \"A sturdy forge to mend plows. I fixed the bellows swing. They breathe like a waking dragon now, blowing sparks clear over the inn's roof. Mind you don't catch your sleeves on the anvil horn.\"\n}"
+ },
+ {
+  "villager": "gisla",
+  "name": "Gisla",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "given",
+  "kind": "make",
+  "want": "a sturdy hook to lift the millstone",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "dunn",
+  "drawn": "sturdy millstone crane",
+  "goes": "mill",
+  "does": "lifts the heavy millstone for dressing, built stout enough to hoist a whole wagon",
+  "looked": "",
+  "mended_pictured": true,
+  "size": [
+   1.7,
+   2.1,
+   0.55
+  ],
+  "accepted": false,
+  "reasons": [
+   "slide needs two values and a period"
+  ],
+  "parts": 12,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\n\"design\": \"sturdy millstone crane\",\n\"footprint\": [2, 2],\n\"ground\": \"flagstone\",\n\"parts\": [\n{\"id\": \"post_left\", \"shape\": \"box\", \"size\": [0.15, 2.0, 0.15], \"at\": [-0.7, 1.0, 0], \"material\": \"timber\"},\n{\"id\": \"post_right\", \"shape\": \"box\", \"size\": [0.15, 2.0, 0.15], \"at\": [0.7, 1.0, 0], \"material\": \"timber\"},\n{\"id\": \"beam\", \"shape\": \"box\", \"size\": [1.7, 0.2, 0.2], \"at\": [0, 2.0, 0], \"material\": \"dark_timber\"},\n{\"id\": \"rod\", \"shape\": \"cylinder\", \"size\": [0.04, 1.8], \"at\": [0, 1.1, 0], \"material\": \"iron\"},\n{\"id\": \"hoist_block\", \"shape\": \"cylinder\", \"size\": [0.07, 0.2], \"open\": true, \"at\": [0, 0.8, 0], \"material\": \"iron\"},\n{\"id\": \"hook_arm\", \"shape\": \"box\", \"size\": [0.2, 0.06, 0.06], \"at\": [0.1, 0.8, 0], \"material\": \"iron\", \"parent\": \"hoist_block\"},\n{\"id\": \"hook_drop\", \"shape\": \"cylinder\", \"size\": [0.02, 0.4], \"at\": [0.18, 0.57, 0], \"material\": \"iron\", \"parent\": \"hoist_block\"},\n{\"id\": \"hook_base\", \"shape\": \"box\", \"size\": [0.1, 0.04, 0.04], \"at\": [0.13, 0.37, 0], \"material\": \"iron\", \"parent\": \"hoist_block\"},\n{\"id\": \"hook_tip\", \"shape\": \"box\", \"size\": [0.04, 0.1, 0.04], \"at\": [0.10, 0.44, 0], \"material\": \"iron\", \"parent\": \"hoist_block\"},\n{\"id\": \"crank_axle\", \"shape\": \"cylinder\", \"size\": [0.04, 0.3], \"at\": [-0.7, 1.0, 0.15], \"rotation\": [90, 0, 0], \"material\": \"iron\"},\n{\"id\": \"crank_arm\", \"shape\": \"box\", \"size\": [0.04, 0.24, 0.04], \"at\": [-0.7, 1.1, 0.3], \"material\": \"iron\"},\n{\"id\": \"crank_handle\", \"shape\": \"cylinder\", \"size\": [0.02, 0.15], \"at\": [-0.7, 1.2, 0.375], \"rotation\": [90, 0, 0], \"material\": \"timber\"}\n],\n\"joints\": [\n{\"part\": \"hoist_block\", \"kind\": \"slider\", \"axis\": \"y\"}\n],\n\"movements\": [\n{\"joint\": \"hoist_block\", \"slide\": [0.0, 0.7], \"seconds\": 5, \"when\": \"worked\"}\n],\n\"claims\": [\"lift\"],\n\"goes\": \"mill\",\n\"does\": \"lifts the heavy millstone for dressing, built stout enough to hoist a whole wagon\"\n}"
+ },
+ {
+  "villager": "gorm",
+  "name": "Gorm",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a finer sieve to catch the grit",
+  "reply": "",
+  "assessed": null,
+  "attempts": 2,
+  "crafter": "dunn",
+  "drawn": "fine grit sieve",
+  "goes": "mill",
+  "does": "Gorm asked for a finer sieve, which makes me wonder who told him my milling leaves grit in the first place. I mended the slide and wove this cloth tight enough to catch the dust off a moth's wing, so it'll sift a mountain of grain. Take your time working it, but keep your fingers clear or that frame will pinch them clean off.",
+  "looked": "right",
+  "mended_pictured": false,
+  "size": [
+   0.88,
+   0.84,
+   0.45
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 19,
+  "moves": [
+   "slide sieve_base"
+  ],
+  "claims": {},
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": 0.5,
+  "design": {
+   "design": "fine grit sieve",
+   "footprint": [
+    2,
+    2
+   ],
+   "ground": "flagstone",
+   "parts": [
+    {
+     "id": "leg_nw",
+     "shape": "box",
+     "size": [
+      0.05,
+      0.7,
+      0.05
+     ],
+     "at": [
+      -0.4,
+      0.35,
+      -0.2
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "leg_ne",
+     "shape": "box",
+     "size": [
+      0.05,
+      0.7,
+      0.05
+     ],
+     "at": [
+      0.4,
+      0.35,
+      -0.2
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "leg_sw",
+     "shape": "box",
+     "size": [
+      0.05,
+      0.7,
+      0.05
+     ],
+     "at": [
+      -0.4,
+      0.35,
+      0.2
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "leg_se",
+     "shape": "box",
+     "size": [
+      0.05,
+      0.7,
+      0.05
+     ],
+     "at": [
+      0.4,
+      0.35,
+      0.2
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "rail_n",
+     "shape": "box",
+     "size": [
+      0.85,
+      0.05,
+      0.05
+     ],
+     "at": [
+      0,
+      0.7,
+      -0.2
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "rail_s",
+     "shape": "box",
+     "size": [
+      0.85,
+      0.05,
+      0.05
+     ],
+     "at": [
+      0,
+      0.7,
+      0.2
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "cross_w",
+     "shape": "box",
+     "size": [
+      0.05,
+      0.05,
+      0.45
+     ],
+     "at": [
+      -0.4,
+      0.7,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "cross_e",
+     "shape": "box",
+     "size": [
+      0.05,
+      0.05,
+      0.45
+     ],
+     "at": [
+      0.4,
+      0.7,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "bin_base",
+     "shape": "box",
+     "size": [
+      0.6,
+      0.02,
+      0.3
+     ],
+     "at": [
+      0,
+      0.01,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "bin_n",
+     "shape": "box",
+     "size": [
+      0.6,
+      0.3,
+      0.02
+     ],
+     "at": [
+      0,
+      0.16,
+      -0.14
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "bin_s",
+     "shape": "box",
+     "size": [
+      0.6,
+      0.3,
+      0.02
+     ],
+     "at": [
+      0,
+      0.16,
+      0.14
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "bin_w",
+     "shape": "box",
+     "size": [
+      0.02,
+      0.3,
+      0.3
+     ],
+     "at": [
+      -0.29,
+      0.16,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "bin_e",
+     "shape": "box",
+     "size": [
+      0.02,
+      0.3,
+      0.3
+     ],
+     "at": [
+      0.29,
+      0.16,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "sieve_base",
+     "shape": "box",
+     "size": [
+      0.5,
+      0.02,
+      0.45
+     ],
+     "at": [
+      0,
+      0.735,
+      0
+     ],
+     "material": "cloth"
+    },
+    {
+     "id": "sieve_wall_n",
+     "shape": "box",
+     "size": [
+      0.5,
+      0.1,
+      0.02
+     ],
+     "at": [
+      0.0,
+      0.06,
+      -0.215
+     ],
+     "parent": "sieve_base",
+     "material": "timber"
+    },
+    {
+     "id": "sieve_wall_s",
+     "shape": "box",
+     "size": [
+      0.5,
+      0.1,
+      0.02
+     ],
+     "at": [
+      0.0,
+      0.06,
+      0.215
+     ],
+     "parent": "sieve_base",
+     "material": "timber"
+    },
+    {
+     "id": "sieve_wall_w",
+     "shape": "box",
+     "size": [
+      0.02,
+      0.1,
+      0.45
+     ],
+     "at": [
+      -0.24,
+      0.06,
+      0.0
+     ],
+     "parent": "sieve_base",
+     "material": "timber"
+    },
+    {
+     "id": "sieve_wall_e",
+     "shape": "box",
+     "size": [
+      0.02,
+      0.1,
+      0.45
+     ],
+     "at": [
+      0.24,
+      0.06,
+      0.0
+     ],
+     "parent": "sieve_base",
+     "material": "timber"
+    },
+    {
+     "id": "handle",
+     "shape": "cylinder",
+     "size": [
+      0.02,
+      0.2
+     ],
+     "at": [
+      0.35,
+      0.06,
+      0.0
+     ],
+     "rotation": [
+      0.0,
+      0.0,
+      90.0
+     ],
+     "parent": "sieve_base",
+     "material": "iron"
+    }
+   ],
+   "joints": [
+    {
+     "part": "sieve_base",
+     "kind": "slider",
+     "axis": "x"
+    }
+   ],
+   "movements": [
+    {
+     "joint": "sieve_base",
+     "slide": [
+      -0.15,
+      0.15
+     ],
+     "period": 0.5,
+     "when": "worked"
+    }
+   ],
+   "claims": [],
+   "goes": "mill",
+   "does": "Gorm asked for a finer sieve, which makes me wonder who told him my milling leaves grit in the first place. I mended the slide and wove this cloth tight enough to catch the dust off a moth's wing, so it'll sift a mountain of grain. Take your time working it, but keep your fingers clear or that frame will pinch them clean off.",
+   "by": "dunn",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "ada",
+  "name": "Ada",
+  "stage": "adult",
+  "role": "healer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a loom to weave the storm",
+  "reply": "",
+  "assessed": null,
+  "attempts": 2,
+  "crafter": "edda",
+  "drawn": "storm-catcher loom",
+  "goes": "home",
+  "does": "Ada reckons this loom will weave the storm itself. I asked her who told her such a tall tale, but I built the frame stout as a barn anyway so the gale won't take it, and rigged the sails to drive the heddles. Keeps her busy, at least.",
+  "looked": "mended",
+  "mended_pictured": false,
+  "size": [
+   3.0,
+   4.0,
+   3.01
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 19,
+  "moves": [
+   "spin storm_wheel_axle",
+   "slide heddle_frame_1",
+   "slide heddle_frame_2"
+  ],
+  "claims": {
+   "pump": true
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": true,
+  "cost": 0.5,
+  "design": {
+   "design": "storm-catcher loom",
+   "footprint": [
+    3,
+    3
+   ],
+   "ground": "stone",
+   "parts": [
+    {
+     "id": "base_pad",
+     "shape": "box",
+     "size": [
+      2.8,
+      0.1,
+      2.8
+     ],
+     "at": [
+      0,
+      0.05,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "post_fl",
+     "shape": "box",
+     "size": [
+      0.15,
+      2.0,
+      0.15
+     ],
+     "at": [
+      -1.2,
+      1.05,
+      1.2
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "post_fr",
+     "shape": "box",
+     "size": [
+      0.15,
+      2.0,
+      0.15
+     ],
+     "at": [
+      1.2,
+      1.05,
+      1.2
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "post_bl",
+     "shape": "box",
+     "size": [
+      0.15,
+      2.0,
+      0.15
+     ],
+     "at": [
+      -1.2,
+      1.05,
+      -1.2
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "post_br",
+     "shape": "box",
+     "size": [
+      0.15,
+      2.0,
+      0.15
+     ],
+     "at": [
+      1.2,
+      1.05,
+      -1.2
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "beam_left",
+     "shape": "box",
+     "size": [
+      0.15,
+      0.15,
+      2.55
+     ],
+     "at": [
+      -1.2,
+      2.125,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "beam_right",
+     "shape": "box",
+     "size": [
+      0.15,
+      0.15,
+      2.55
+     ],
+     "at": [
+      1.2,
+      2.125,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "beam_top",
+     "shape": "box",
+     "size": [
+      2.55,
+      0.15,
+      0.15
+     ],
+     "at": [
+      0,
+      2.125,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "guide_l",
+     "shape": "box",
+     "size": [
+      0.15,
+      2.42,
+      0.6
+     ],
+     "at": [
+      -1.2,
+      1.21,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "guide_r",
+     "shape": "box",
+     "size": [
+      0.15,
+      2.42,
+      0.6
+     ],
+     "at": [
+      1.2,
+      1.21,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "warp_beam",
+     "shape": "cylinder",
+     "size": [
+      0.1,
+      2.4
+     ],
+     "at": [
+      0,
+      0.8,
+      -1.2
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "cloth_beam",
+     "shape": "cylinder",
+     "size": [
+      0.12,
+      2.4
+     ],
+     "at": [
+      0,
+      0.8,
+      1.2
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "warp_threads",
+     "shape": "box",
+     "size": [
+      2.0,
+      0.02,
+      0.9
+     ],
+     "at": [
+      0,
+      0.8,
+      -0.75
+     ],
+     "material": "cloth"
+    },
+    {
+     "id": "woven_storm",
+     "shape": "box",
+     "size": [
+      2.0,
+      0.02,
+      0.9
+     ],
+     "at": [
+      0,
+      0.8,
+      0.75
+     ],
+     "material": "sailcloth"
+    },
+    {
+     "id": "heddle_frame_1",
+     "shape": "box",
+     "size": [
+      2.25,
+      0.8,
+      0.05
+     ],
+     "at": [
+      0,
+      0.8,
+      -0.2
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "heddle_frame_2",
+     "shape": "box",
+     "size": [
+      2.25,
+      0.8,
+      0.05
+     ],
+     "at": [
+      0,
+      0.8,
+      0.2
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "storm_wheel_axle",
+     "shape": "cylinder",
+     "size": [
+      0.08,
+      3.0
+     ],
+     "at": [
+      0,
+      2.5,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "storm_sail_arm",
+     "shape": "box",
+     "size": [
+      0.05,
+      1.5,
+      0.05
+     ],
+     "at": [
+      0.75,
+      1.4,
+      0.0
+     ],
+     "parent": "storm_wheel_axle",
+     "repeat": 4,
+     "material": "timber",
+     "rotation": [
+      0.0,
+      0.0,
+      -90.0
+     ]
+    },
+    {
+     "id": "storm_sail_cloth",
+     "shape": "box",
+     "size": [
+      0.02,
+      1.4,
+      0.6
+     ],
+     "at": [
+      0.75,
+      1.4,
+      -0.3
+     ],
+     "rotation": [
+      0.0,
+      -15.0,
+      -90.0
+     ],
+     "parent": "storm_wheel_axle",
+     "repeat": 4,
+     "material": "sailcloth"
+    }
+   ],
+   "joints": [
+    {
+     "part": "storm_wheel_axle",
+     "kind": "hinge",
+     "axis": "y"
+    },
+    {
+     "part": "heddle_frame_1",
+     "kind": "slider",
+     "axis": "y"
+    },
+    {
+     "part": "heddle_frame_2",
+     "kind": "slider",
+     "axis": "y"
+    }
+   ],
+   "movements": [
+    {
+     "joint": "storm_wheel_axle",
+     "spin": 40,
+     "when": "storm"
+    },
+    {
+     "joint": "heddle_frame_1",
+     "slide": [
+      0.2,
+      -0.2
+     ],
+     "period": 1.5,
+     "when": "storm"
+    },
+    {
+     "joint": "heddle_frame_2",
+     "slide": [
+      -0.2,
+      0.2
+     ],
+     "period": 1.5,
+     "when": "storm"
+    }
+   ],
+   "claims": [
+    "pump"
+   ],
+   "goes": "home",
+   "does": "Ada reckons this loom will weave the storm itself. I asked her who told her such a tall tale, but I built the frame stout as a barn anyway so the gale won't take it, and rigged the sails to drive the heddles. Keeps her busy, at least.",
+   "by": "edda",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "corin",
+  "name": "Corin",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "given",
+  "kind": "make",
+  "want": "a wheel to hold the stones still",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "brake wheel",
+  "goes": "mill",
+  "does": "Corin wants the stones held still. I built this heavy brake wheel and iron band to grip the axle tight. It works, plain and simple.",
+  "looked": "mended",
+  "mended_pictured": false,
+  "size": [
+   2.2,
+   2.12,
+   1.64
+  ],
+  "accepted": false,
+  "reasons": [
+   "the axle would strike the brake_beam as it moved",
+   "the brake_beam would strike the axle and brake_wheel and post_r as it moved",
+   "it would not grind: nothing in it turns against a load"
+  ],
+  "parts": 7,
+  "moves": [],
+  "claims": {
+   "grind": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "axle",
+   "brake_beam"
+  ],
+  "struck": {
+   "axle": [
+    "brake_beam"
+   ],
+   "brake_beam": [
+    "axle",
+    "brake_wheel",
+    "post_r"
+   ]
+  },
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\n  \"design\": \"brake wheel\",\n  \"footprint\": [3, 3],\n  \"ground\": \"timber\",\n  \"parts\": [\n    {\"id\": \"post_l\", \"shape\": \"box\", \"size\": [0.2, 2.0, 0.2], \"at\": [-0.9, 1.0, 0], \"material\": \"timber\"},\n    {\"id\": \"post_r\", \"shape\": \"box\", \"size\": [0.2, 2.0, 0.2], \"at\": [0.9, 1.0, 0], \"material\": \"timber\"},\n    {\"id\": \"axle\", \"shape\": \"cylinder\", \"size\": [0.12, 2.0], \"at\": [0, 1.2, 0], \"rotation\": [0, 0, 90], \"material\": \"dark_timber\"},\n    {\"id\": \"brake_wheel\", \"shape\": \"wheel\", \"size\": [0.8, 0.3], \"at\": [0, 1.2, 0], \"parent\": \"axle\", \"material\": \"timber\"},\n    {\"id\": \"brake_band\", \"shape\": \"cylinder\", \"size\": [0.82, 0.82, 0.35], \"open\": true, \"at\": [0, 1.2, 0], \"rotation\": [0, 0, 90], \"material\": \"iron\"},\n    {\"id\": \"brake_beam\", \"shape\": \"box\", \"size\": [2.0, 0.15, 0.15], \"at\": [0, 2.05, 0], \"material\": \"dark_timber\"},\n    {\"id\": \"lever\", \"shape\": \"box\", \"size\": [0.1, 1.0, 0.1], \"at\": [0.9, 1.5, 0], \"parent\": \"brake_beam\", \"material\": \"timber\"}\n  ],\n  \"joints\": [\n    {\"part\": \"axle\", \"kind\": \"hinge\", \"axis\": \"x\"},\n    {\"part\": \"brake_beam\", \"kind\": \"hinge\", \"axis\": \"z\", \"pivot\": [-0.9, 0, 0]}\n  ],\n  \"movements\": [\n    {\"joint\": \"axle\", \"spin\": 20, \"when\": \"worked\"},\n    {\"joint\": \"brake_beam\", \"swing\": [0, -5], \"period\": 1.5, \"when\": \"occupied\"}\n  ],\n  \"claims\": [\"grind\"],\n  \"goes\": \"mill\",\n  \"does\": \"Corin wants the stones held still. I built this heavy brake wheel and iron band to grip the axle tight. It works, plain and simple.\"\n}"
+ }
+]

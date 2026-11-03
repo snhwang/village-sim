@@ -1,0 +1,98 @@
+[
+  {
+    "run": "20260928-170529-seed1",
+    "births": [
+      {
+        "day": 0,
+        "child": "maja",
+        "mother": "rosa",
+        "father": "osric",
+        "home": "home_3",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "embellishing"
+        }
+      },
+      {
+        "day": 1,
+        "child": "inga",
+        "mother": "thea",
+        "father": "hal",
+        "home": "home_10",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 1,
+        "child": "frode",
+        "mother": "mabel",
+        "father": "edek",
+        "home": "home_13",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "diligent",
+          "candor": "embellishing"
+        }
+      },
+      {
+        "day": 4,
+        "child": "jory",
+        "mother": "edda",
+        "father": "tobin",
+        "home": "home_1",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        }
+      },
+      {
+        "day": 37,
+        "child": "dagny",
+        "mother": "mabel",
+        "father": "edek",
+        "home": "home_13",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "easygoing",
+          "candor": "plainspoken"
+        }
+      }
+    ],
+    "decision_chosen": 34,
+    "tries": 17,
+    "conceived": 5,
+    "decision_refused": 490,
+    "start": {
+      "adult": 17,
+      "child": 4,
+      "apprentice": 4,
+      "elder": 5
+    },
+    "end": {
+      "adult": 24,
+      "apprentice": 6,
+      "elder": 5,
+      "infant": 1
+    }
+  }
+]

@@ -1,0 +1,63 @@
+# Elder stage protocols. Gated on stage_elder.
+# Elders work lightly, rest more, and seek out children to pass on stories.
+
+instructions:
+  - id: elder-night
+    type: protocol
+    priority: 90
+    content: When night falls, go home to bed. [!go(to=home)] [!rest(until=morning)]
+    scope: {required_tags: [stage_elder, time_night]}
+
+  - id: elder-tired
+    type: protocol
+    priority: 75
+    content: Your old bones ache. Go home and sit by the fire for a while. [!go(to=home)] [!rest(ticks=8)]
+    scope: {required_tags: [stage_elder, energy_low]}
+
+  - id: elder-morning-shrine
+    type: directive
+    priority: 55
+    content: In the morning, walk to the shrine and sit quietly for a while. [!go(to=shrine)] [!rest(ticks=4)]
+    scope: {required_tags: [stage_elder, daytime], tags: [time_morning]}
+
+  - id: elder-morning-work
+    type: directive
+    priority: 55
+    content: In the morning, attend to your old work, as much as your strength allows. [!work(site=own, ticks=8)]
+    scope: {required_tags: [stage_elder, daytime], tags: [time_morning]}
+
+  - id: elder-tell-children
+    type: directive
+    priority: 60
+    content: A child is nearby. Call them over and tell them something from the old days that they ought to know. [!talk(target=nearby_child, topic=a story from the old days)]
+    scope: {required_tags: [stage_elder, daytime], tags: [near_child, wants_company]}
+
+  - id: elder-afternoon-work
+    type: directive
+    priority: 50
+    content: In the afternoon, do a little light work at your old workplace. [!work(site=own, ticks=6)]
+    scope: {required_tags: [stage_elder, daytime], tags: [time_afternoon]}
+
+  - id: elder-evening-inn
+    type: directive
+    priority: 50
+    content: In the evening, go to the inn and take your usual seat by the fire. [!go(to=inn)] [!rest(ticks=4)]
+    scope: {required_tags: [stage_elder, daytime], tags: [time_evening]}
+
+  - id: elder-chat
+    type: directive
+    priority: 45
+    content: Someone is nearby. Talk with them about how things used to be. [!talk(target=nearby, topic=how things used to be)]
+    scope: {required_tags: [stage_elder, daytime], tags: [near_someone, wants_company]}
+
+  - id: elder-wander
+    type: fallback
+    priority: 20
+    content: Take a slow walk around the village. [!wander]
+    scope: {required_tags: [stage_elder, daytime]}
+
+  - id: elder-speech
+    type: directive
+    priority: 60
+    content: You are an elder. You have seen a great deal and like to compare the present with the past. You speak slowly and with authority.
+    scope: {required_tags: [stage_elder, talking]}

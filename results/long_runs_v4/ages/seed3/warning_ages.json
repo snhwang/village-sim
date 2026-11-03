@@ -1,0 +1,36 @@
+{
+  "run": "20261023-012700-seed3",
+  "read_to_day": null,
+  "percent_of_facts_by_instruction": {
+    "coming-pass-the-word": {
+      "facts": 17378,
+      "event over 7 days old": 15.7,
+      "event over 28 days old": 6.2,
+      "held over 7 days": 0.5
+    },
+    "knows-warn-about-well": {
+      "facts": 6780,
+      "event over 7 days old": 36.3,
+      "event over 28 days old": 23.3,
+      "held over 7 days": 1.7
+    },
+    "knows-warn-about-road": {
+      "facts": 5593,
+      "event over 7 days old": 50.2,
+      "event over 28 days old": 32.9,
+      "held over 7 days": 0.1
+    },
+    "knows-warn-about-blight": {
+      "facts": 2974,
+      "event over 7 days old": 35.9,
+      "event over 28 days old": 18.6,
+      "held over 7 days": 0.1
+    },
+    "learned lessons": {
+      "facts": 33,
+      "event over 7 days old": 100.0,
+      "event over 28 days old": 100.0,
+      "held over 7 days": 100.0
+    }
+  }
+}

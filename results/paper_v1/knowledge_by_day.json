@@ -1,0 +1,105 @@
+{
+  "runs": [
+    "20260927-190041-seed1",
+    "20260927-191014-seed2",
+    "20260927-192146-seed3",
+    "20260927-193347-seed4",
+    "20260927-194732-seed5",
+    "20260927-195852-seed6"
+  ],
+  "by_day": [
+    {
+      "day": 1,
+      "share_pct": 5.9,
+      "knowledge_only": 147,
+      "decisions": 2496
+    },
+    {
+      "day": 2,
+      "share_pct": 13.0,
+      "knowledge_only": 246,
+      "decisions": 1890
+    },
+    {
+      "day": 3,
+      "share_pct": 14.7,
+      "knowledge_only": 266,
+      "decisions": 1811
+    },
+    {
+      "day": 4,
+      "share_pct": 13.2,
+      "knowledge_only": 251,
+      "decisions": 1906
+    },
+    {
+      "day": 5,
+      "share_pct": 21.7,
+      "knowledge_only": 411,
+      "decisions": 1892
+    },
+    {
+      "day": 6,
+      "share_pct": 18.5,
+      "knowledge_only": 381,
+      "decisions": 2057
+    },
+    {
+      "day": 7,
+      "share_pct": 24.9,
+      "knowledge_only": 566,
+      "decisions": 2275
+    },
+    {
+      "day": 8,
+      "share_pct": 27.8,
+      "knowledge_only": 604,
+      "decisions": 2175
+    },
+    {
+      "day": 9,
+      "share_pct": 28.6,
+      "knowledge_only": 676,
+      "decisions": 2365
+    }
+  ],
+  "by_run": [
+    {
+      "run": "20260927-190041-seed1",
+      "days_1_3_pct": 4.4,
+      "days_7_9_pct": 20.6,
+      "rose": true
+    },
+    {
+      "run": "20260927-191014-seed2",
+      "days_1_3_pct": 11.8,
+      "days_7_9_pct": 29.2,
+      "rose": true
+    },
+    {
+      "run": "20260927-192146-seed3",
+      "days_1_3_pct": 6.1,
+      "days_7_9_pct": 21.3,
+      "rose": true
+    },
+    {
+      "run": "20260927-193347-seed4",
+      "days_1_3_pct": 16.5,
+      "days_7_9_pct": 41.5,
+      "rose": true
+    },
+    {
+      "run": "20260927-194732-seed5",
+      "days_1_3_pct": 12.8,
+      "days_7_9_pct": 35.2,
+      "rose": true
+    },
+    {
+      "run": "20260927-195852-seed6",
+      "days_1_3_pct": 12.0,
+      "days_7_9_pct": 11.5,
+      "rose": false
+    }
+  ],
+  "runs_that_rose": 5
+}

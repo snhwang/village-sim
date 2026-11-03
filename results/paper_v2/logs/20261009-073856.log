@@ -1,0 +1,53 @@
+Failed to parse evolved YAML: mapping values are not allowed here
+  in "<unicode string>", line 5, column 88:
+     ... 286 is at the schoolyard. Nearby: Lorne145, a elder, Dag117, a e ... 
+                                         ^
+Failed to parse evolved YAML: mapping values are not allowed here
+  in "<unicode string>", line 5, column 86:
+     ... r283 is at the watchpost. Nearby: Elin243, a adult, Hedda258, a  ... 
+                                         ^
+Failed to parse evolved YAML: mapping values are not allowed here
+  in "<unicode string>", line 5, column 84:
+     ... unne176 is at the shrine. Nearby: Elin116, a adult, Per218, a in ... 
+                                         ^
+Failed to parse evolved YAML: mapping values are not allowed here
+  in "<unicode string>", line 5, column 87:
+     ... 139 is at the schoolyard. Nearby: Frode47, a elder, Eilif (fathe ... 
+                                         ^
+bare names {'accepted': 22, 'refused': 56}
+Failed to parse evolved YAML: mapping values are not allowed here
+  in "<unicode string>", line 5, column 80:
+     ... p. Kell73 is at the well. Nearby: Dag48, a adult, Kell112, a inf ... 
+                                         ^
+Failed to parse evolved YAML: mapping values are not allowed here
+  in "<unicode string>", line 5, column 83:
+     ... Gunne36 is at the fields. Nearby: Gerd105, a adult, Odd39, a eld ... 
+                                         ^
+Failed to parse evolved YAML: mapping values are not allowed here
+  in "<unicode string>", line 5, column 86:
+     ... s62 is at the schoolyard. Nearby: Alda78, a child, Alda80, a chi ... 
+                                         ^
+Failed to parse evolved YAML: mapping values are not allowed here
+  in "<unicode string>", line 5, column 87:
+     ... e177 is at the watchpost. Nearby: Alda58, a adult, Brit123, a ad ... 
+                                         ^
+signatures {'accepted': 78}
+# Marker signatures in consolidation
+
+30 consolidations of run `20261003-093714-seed1`, replayed with the paper profile's 18 markers, by Qwen3.8-27B, on 2026-10-09.
+
+| Shown as | Accepted | Refused | Failed calls |
+|---|---|---|---|
+| bare names | 22 | 56 | 0 |
+| signatures | 78 | 0 | 0 |
+
+Why bare names were refused:
+
+- 18 x [!avoid] was given ['site'], which it does not read (it reads ['place', 'ticks'])
+- 11 x [!warn] has no target, so it cannot act
+- 4 x [!avoid] was given ['target'], which it does not read (it reads ['place', 'ticks'])
+- 3 x [!warn] names 'neighbors', who is not anyone in this village
+- 3 x [!rest] was given ['site'], which it does not read (it reads ['ticks', 'until'])
+- 3 x [!avoid] has no place, so it cannot act
+- 2 x [!warn] names 'village', who is not anyone in this village
+- 2 x [!go] was given ['site'], which it does not read (it reads ['to'])

@@ -1,0 +1,1238 @@
+[
+ {
+  "villager": "ada",
+  "name": "Ada",
+  "stage": "adult",
+  "role": "healer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a loom to weave our own cloth",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "garrick",
+  "drawn": "Hearthwick Loom",
+  "goes": "home",
+  "does": "Weaves thread into cloth for our homes.",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   2.4,
+   0.95,
+   1.85
+  ],
+  "accepted": false,
+  "reasons": [
+   "it would not stand: the beater would tip over"
+  ],
+  "parts": 11,
+  "moves": [],
+  "claims": {},
+  "stands": false,
+  "fell": [
+   "beater"
+  ],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"Hearthwick Loom\",\"footprint\":[3,2],\"ground\":\"flagstone\",\"parts\":[{\"id\":\"frame_bottom\",\"shape\":\"box\",\"size\":[2.4,0.08,1.6],\"at\":[0,0.04,0],\"material\":\"timber\"},{\"id\":\"post_l\",\"shape\":\"box\",\"size\":[0.12,0.8,0.12],\"at\":[-1.14,0.44,0],\"material\":\"timber\"},{\"id\":\"post_r\",\"shape\":\"box\",\"size\":[0.12,0.8,0.12],\"at\":[1.14,0.44,0],\"material\":\"timber\"},{\"id\":\"top_beam\",\"shape\":\"box\",\"size\":[2.4,0.1,0.12],\"at\":[0,0.9,0],\"material\":\"timber\"},{\"id\":\"warp\",\"shape\":\"box\",\"size\":[2.0,0.01,1.2],\"at\":[0,0.5,0],\"material\":\"cloth\"},{\"id\":\"shaft\",\"shape\":\"cylinder\",\"size\":[0.04,2.2],\"at\":[0,0.5,0],\"rotation\":[0,0,90],\"material\":\"timber\"},{\"id\":\"peg_l\",\"shape\":\"cylinder\",\"size\":[0.03,0.1],\"at\":[-0.6,0.5,0],\"rotation\":[0,0,90],\"material\":\"iron\"},{\"id\":\"peg_r\",\"shape\":\"cylinder\",\"size\":[0.03,0.1],\"at\":[0.6,0.5,0],\"rotation\":[0,0,90],\"material\":\"iron\"},{\"id\":\"harness\",\"shape\":\"box\",\"size\":[0.08,0.08,1.2],\"at\":[0,0.5,0],\"parent\":\"shaft\",\"material\":\"dark_timber\"},{\"id\":\"beater\",\"shape\":\"box\",\"size\":[2.0,0.06,0.15],\"at\":[0,0.5,0.7],\"material\":\"timber\"},{\"id\":\"handle\",\"shape\":\"box\",\"size\":[0.05,0.05,0.3],\"at\":[0,0.5,0.9],\"parent\":\"beater\",\"material\":\"dark_timber\"}],\"joints\":[{\"part\":\"shaft\",\"kind\":\"hinge\",\"axis\":\"x\"},{\"part\":\"beater\",\"kind\":\"hinge\",\"axis\":\"x\",\"pivot\":[0,0,0.625]}],\"movements\":[{\"joint\":\"shaft\",\"swing\":[10,0],\"period\":3.0,\"when\":\"worked\"},{\"joint\":\"beater\",\"swing\":[10,0],\"period\":3.0,\"when\":\"worked\"}],\"claims\":[],\"goes\":\"home\",\"does\":\"Weaves thread into cloth for our homes.\",\"by\":\"edda\",\"purpose\":\"want\"}"
+ },
+ {
+  "villager": "corin",
+  "name": "Corin",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "given",
+  "kind": "make",
+  "want": "a windlass to haul the millstones",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "Millstone Windlass",
+  "goes": "mill",
+  "does": "hauls heavy millstones into place",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   2.0,
+   1.6,
+   2.0
+  ],
+  "accepted": false,
+  "reasons": [
+   "it would not lift: nothing in it raises a load"
+  ],
+  "parts": 8,
+  "moves": [],
+  "claims": {
+   "lift": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\"design\":\"Millstone Windlass\",\"footprint\":[3,3],\"ground\":\"flagstone\",\"parts\":[{\"id\":\"base\",\"shape\":\"box\",\"size\":[2.0,0.1,2.0],\"at\":[0,0.05,0],\"material\":\"stone\"},{\"id\":\"post_west\",\"shape\":\"box\",\"size\":[0.1,1.2,0.1],\"at\":[-0.8,0.7,0],\"material\":\"timber\"},{\"id\":\"post_east\",\"shape\":\"box\",\"size\":[0.1,1.2,0.1],\"at\":[0.8,0.7,0],\"material\":\"timber\"},{\"id\":\"crossbar\",\"shape\":\"box\",\"size\":[1.7,0.1,0.1],\"at\":[0,1.3,0],\"material\":\"dark_timber\"},{\"id\":\"axle\",\"shape\":\"cylinder\",\"size\":[0.04,2.0],\"at\":[0,1.3,0],\"rotation\":[0,0,90],\"material\":\"iron\"},{\"id\":\"drum\",\"shape\":\"cylinder\",\"size\":[0.3,0.4],\"at\":[0,1.3,0],\"rotation\":[0,0,90],\"parent\":\"axle\",\"material\":\"dark_timber\"},{\"id\":\"handle\",\"shape\":\"box\",\"size\":[0.05,0.05,0.6],\"at\":[0.3,1.3,0.4],\"parent\":\"axle\",\"rotation\":[0,0,90],\"material\":\"timber\"},{\"id\":\"hook\",\"shape\":\"box\",\"size\":[0.1,0.1,0.1],\"at\":[0,0.1,0.3],\"material\":\"iron\"}],\"joints\":[{\"part\":\"axle\",\"kind\":\"hinge\",\"axis\":\"x\"},{\"part\":\"hook\",\"kind\":\"slider\",\"axis\":\"y\"}],\"movements\":[{\"joint\":\"axle\",\"spin\":30,\"when\":\"worked\"},{\"joint\":\"hook\",\"slide\":[0,0.6],\"period\":4,\"when\":\"worked\"}],\"claims\":[\"lift\"],\"goes\":\"mill\",\"does\":\"hauls heavy millstones into place\",\"by\":\"garrick\",\"purpose\":\"want\"}\n```"
+ },
+ {
+  "villager": "dunn",
+  "name": "Dunn",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a strong wheel to stop the ice",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "wynn",
+  "drawn": "Ice-Breaker Wheel",
+  "goes": "mill",
+  "does": "smashes the ice so the mill water keeps flowing",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   3.5,
+   1.8,
+   3.2
+  ],
+  "accepted": false,
+  "reasons": [
+   "the axle would strike the base and post_east and post_west and the ground as it moved",
+   "it would not grind: nothing in it turns against a load"
+  ],
+  "parts": 10,
+  "moves": [],
+  "claims": {
+   "grind": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "axle"
+  ],
+  "struck": {
+   "axle": [
+    "base",
+    "post_east",
+    "post_west",
+    "the ground"
+   ]
+  },
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "```json\n{\n \"design\": \"Ice-Breaker Wheel\",\n \"footprint\": [4, 2],\n \"ground\": \"flagstone\",\n \"parts\": [\n  {\"id\": \"base\", \"shape\": \"box\", \"size\": [3.5, 0.3, 2.0], \"at\": [0, 0.15, 0], \"material\": \"stone\"},\n  {\"id\": \"post_west\", \"shape\": \"box\", \"size\": [0.2, 0.8, 0.2], \"at\": [-0.8, 0.7, 0], \"material\": \"dark_timber\"},\n  {\"id\": \"post_east\", \"shape\": \"box\", \"size\": [0.2, 0.8, 0.2], \"at\": [0.8, 0.7, 0], \"material\": \"dark_timber\"},\n  {\"id\": \"axle\", \"shape\": \"cylinder\", \"size\": [0.08, 1.8], \"at\": [0, 0.7, 0], \"rotation\": [0, 0, 90], \"material\": \"iron\"},\n  {\"id\": \"hub\", \"shape\": \"cylinder\", \"size\": [0.15, 0.3], \"at\": [0, 0.7, 0], \"rotation\": [0, 0, 90], \"material\": \"dark_timber\", \"parent\": \"axle\"},\n  {\"id\": \"spoke1\", \"shape\": \"box\", \"size\": [0.1, 0.1, 1.6], \"at\": [0, 0.7, 0.8], \"parent\": \"axle\", \"material\": \"timber\"},\n  {\"id\": \"spoke2\", \"shape\": \"box\", \"size\": [0.1, 0.1, 1.6], \"at\": [0, 0.7, -0.8], \"parent\": \"axle\", \"material\": \"timber\"},\n  {\"id\": \"rim\", \"shape\": \"cylinder\", \"size\": [0.9, 0.15], \"at\": [0, 0.7, 0], \"rotation\": [0, 0, 90], \"sides\": 12, \"open\": true, \"material\": \"dark_timber\", \"parent\": \"axle\"},\n  {\"id\": \"blade1\", \"shape\": \"box\", \"size\": [0.2, 0.3, 0.05], \"at\": [0.9, 0.7, 0.05], \"parent\": \"axle\", \"material\": \"iron\"},\n  {\"id\": \"blade2\", \"shape\": \"box\", \"size\": [0.2, 0.3, 0.05], \"at\": [-0.9, 0.7, 0.05], \"parent\": \"axle\", \"material\": \"iron\"}\n ],\n \"joints\": [\n  {\"part\": \"axle\", \"kind\": \"hinge\", \"axis\": \"x\"}\n ],\n \"movements\": [\n  {\"joint\": \"axle\", \"spin\": 60, \"when\": \"storm\"}\n ],\n \"claims\": [\"grind\"],\n \"goes\": \"mill\",\n \"does\": \"smashes the ice so the mill water keeps flowing\",\n \"by\": \"gorm\",\n \"purpose\": \"want\"\n}\n```"
+ },
+ {
+  "villager": "edda",
+  "name": "Edda",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a wedge to hold the cogs",
+  "reply": "",
+  "assessed": null,
+  "attempts": 1,
+  "crafter": "gorm",
+  "drawn": "Cogs Wedge",
+  "goes": "mill",
+  "does": "holds the cogs in the line",
+  "looked": "mended",
+  "mended_pictured": false,
+  "size": [
+   1.0,
+   0.65,
+   1.0
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 5,
+  "moves": [],
+  "claims": {},
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": 0.5,
+  "design": {
+   "design": "Cogs Wedge",
+   "footprint": [
+    2,
+    2
+   ],
+   "ground": "timber",
+   "parts": [
+    {
+     "id": "base",
+     "shape": "box",
+     "size": [
+      1.0,
+      0.05,
+      1.0
+     ],
+     "at": [
+      0,
+      0.025,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "block",
+     "shape": "box",
+     "size": [
+      0.4,
+      0.6,
+      0.4
+     ],
+     "at": [
+      0,
+      0.35,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "wedge",
+     "shape": "box",
+     "size": [
+      0.3,
+      0.5,
+      0.1
+     ],
+     "at": [
+      0,
+      0.35,
+      0.25
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "cog_a",
+     "shape": "wheel",
+     "size": [
+      0.2,
+      0.15
+     ],
+     "at": [
+      -0.3,
+      0.35,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "cog_b",
+     "shape": "wheel",
+     "size": [
+      0.2,
+      0.15
+     ],
+     "at": [
+      0.3,
+      0.35,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "iron"
+    }
+   ],
+   "joints": [],
+   "movements": [],
+   "claims": [],
+   "goes": "mill",
+   "does": "holds the cogs in the line",
+   "by": "gorm",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "edek",
+  "name": "Edek",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a pump to pull the floodwater out",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "edda",
+  "drawn": "field flood pump",
+  "goes": "fields",
+  "does": "pulls floodwater from the low fields",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   6.0,
+   2.9,
+   6.0
+  ],
+  "accepted": false,
+  "reasons": [
+   "the shaft would strike the base and outlet and post_1 and post_2 and post_3 and post_4 as it moved",
+   "it would not pump: nothing in it turns against a load"
+  ],
+  "parts": 23,
+  "moves": [],
+  "claims": {
+   "pump": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "shaft"
+  ],
+  "struck": {
+   "shaft": [
+    "base",
+    "outlet",
+    "post_1",
+    "post_2",
+    "post_3",
+    "post_4"
+   ]
+  },
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"field flood pump\",\"footprint\":[4,4],\"ground\":\"flagstone\",\"parts\":[{\"id\":\"base\",\"shape\":\"box\",\"size\":[3.5,0.2,3.5],\"at\":[0,0.1,0],\"material\":\"stone\"},{\"id\":\"casing\",\"shape\":\"cylinder\",\"size\":[0.6,1.5,0.6],\"sides\":12,\"open\":true,\"at\":[0,0.95,0],\"material\":\"timber\"},{\"id\":\"impeller\",\"shape\":\"cylinder\",\"size\":[0.4,0.05,0.4],\"sides\":12,\"at\":[0,0.35,0],\"material\":\"dark_timber\",\"parent\":\"shaft\"},{\"id\":\"blade_1\",\"shape\":\"box\",\"size\":[0.15,0.5,0.1],\"at\":[0.2,0.35,0],\"rotation\":[0,0,20],\"material\":\"dark_timber\",\"parent\":\"shaft\"},{\"id\":\"blade_2\",\"shape\":\"box\",\"size\":[0.15,0.5,0.1],\"at\":[-0.2,0.35,0],\"rotation\":[0,0,-20],\"material\":\"dark_timber\",\"parent\":\"shaft\"},{\"id\":\"blade_3\",\"shape\":\"box\",\"size\":[0.15,0.5,0.1],\"at\":[0.1,0.35,0.17],\"rotation\":[0,0,20],\"material\":\"dark_timber\",\"parent\":\"shaft\"},{\"id\":\"blade_4\",\"shape\":\"box\",\"size\":[0.15,0.5,0.1],\"at\":[-0.1,0.35,-0.17],\"rotation\":[0,0,-20],\"material\":\"dark_timber\",\"parent\":\"shaft\"},{\"id\":\"blade_5\",\"shape\":\"box\",\"size\":[0.15,0.5,0.1],\"at\":[0.1,0.35,-0.17],\"rotation\":[0,0,20],\"material\":\"dark_timber\",\"parent\":\"shaft\"},{\"id\":\"blade_6\",\"shape\":\"box\",\"size\":[0.15,0.5,0.1],\"at\":[-0.1,0.35,0.17],\"rotation\":[0,0,-20],\"material\":\"dark_timber\",\"parent\":\"shaft\"},{\"id\":\"shaft\",\"shape\":\"cylinder\",\"size\":[0.03,2.5,0.03],\"at\":[0,1.45,0],\"material\":\"iron\"},{\"id\":\"gear_ring\",\"shape\":\"cylinder\",\"size\":[0.2,0.1,0.2],\"sides\":8,\"at\":[0,2.2,0],\"material\":\"iron\",\"parent\":\"shaft\"},{\"id\":\"gear_teeth\",\"shape\":\"box\",\"size\":[0.05,0.15,0.05],\"at\":[0.2,2.2,0],\"parent\":\"shaft\",\"material\":\"iron\"},{\"id\":\"post_1\",\"shape\":\"box\",\"size\":[0.15,2.5,0.15],\"at\":[-1.5,1.25,-1.5],\"material\":\"timber\"},{\"id\":\"post_2\",\"shape\":\"box\",\"size\":[0.15,2.5,0.15],\"at\":[1.5,1.25,-1.5],\"material\":\"timber\"},{\"id\":\"post_3\",\"shape\":\"box\",\"size\":[0.15,2.5,0.15],\"at\":[-1.5,1.25,1.5],\"material\":\"timber\"},{\"id\":\"post_4\",\"shape\":\"box\",\"size\":[0.15,2.5,0.15],\"at\":[1.5,1.25,1.5],\"material\":\"timber\"},{\"id\":\"beam_1\",\"shape\":\"box\",\"size\":[0.15,0.15,3.0],\"at\":[0,2.5,-1.5],\"material\":\"timber\"},{\"id\":\"beam_2\",\"shape\":\"box\",\"size\":[0.15,0.15,3.0],\"at\":[0,2.5,1.5],\"material\":\"timber\"},{\"id\":\"beam_3\",\"shape\":\"box\",\"size\":[3.0,0.15,0.15],\"at\":[-1.5,2.5,0],\"material\":\"timber\"},{\"id\":\"beam_4\",\"shape\":\"box\",\"size\":[3.0,0.15,0.15],\"at\":[1.5,2.5,0],\"material\":\"timber\"},{\"id\":\"roof\",\"shape\":\"box\",\"size\":[3.2,0.1,3.2],\"at\":[0,2.65,0],\"material\":\"shingle\"},{\"id\":\"outlet\",\"shape\":\"cylinder\",\"size\":[0.15,0.5,0.15],\"at\":[1.2,1.2,0],\"rotation\":[0,0,90],\"material\":\"iron\"},{\"id\":\"inlet\",\"shape\":\"cylinder\",\"size\":[0.15,0.5,0.15],\"at\":[-1.2,0.3,0],\"rotation\":[0,0,90],\"material\":\"iron\"}],\"joints\":[{\"part\":\"shaft\",\"kind\":\"hinge\",\"axis\":\"y\"}],\"movements\":[{\"joint\":\"shaft\",\"spin\":60,\"when\":\"worked\"}],\"claims\":[\"pump\"],\"goes\":\"fields\",\"does\":\"pulls floodwater from the low fields\",\"by\":\"dunn\",\"purpose\":\"want\"}"
+ },
+ {
+  "villager": "fen",
+  "name": "Fen",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a sturdy wheel to keep the mill turning",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "garrick",
+  "drawn": "Mill Wheel",
+  "goes": "mill",
+  "does": "keeps the mill turning",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   3.0,
+   2.9,
+   3.0
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 11,
+  "moves": [
+   "spin axle",
+   "spin grind_stone"
+  ],
+  "claims": {
+   "grind": true
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": true,
+  "cost": 0.9,
+  "design": {
+   "design": "Mill Wheel",
+   "footprint": [
+    4,
+    4
+   ],
+   "ground": "stone",
+   "parts": [
+    {
+     "id": "base",
+     "shape": "box",
+     "size": [
+      3.0,
+      0.5,
+      3.0
+     ],
+     "at": [
+      0,
+      0.25,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "post_w",
+     "shape": "box",
+     "size": [
+      0.3,
+      1.4,
+      0.3
+     ],
+     "at": [
+      -1.0,
+      1.2,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "post_e",
+     "shape": "box",
+     "size": [
+      0.3,
+      1.4,
+      0.3
+     ],
+     "at": [
+      1.0,
+      1.2,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "axle",
+     "shape": "cylinder",
+     "size": [
+      0.1,
+      2.2
+     ],
+     "at": [
+      0,
+      1.9,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "wheel",
+     "shape": "wheel",
+     "size": [
+      1.0,
+      0.3
+     ],
+     "at": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "parent": "axle",
+     "material": "timber",
+     "rotation": [
+      0.0,
+      0.0,
+      -90.0
+     ]
+    },
+    {
+     "id": "blade_n",
+     "shape": "box",
+     "size": [
+      0.05,
+      0.8,
+      0.4
+     ],
+     "at": [
+      0.0,
+      0.4,
+      0.0
+     ],
+     "parent": "wheel",
+     "material": "timber"
+    },
+    {
+     "id": "blade_s",
+     "shape": "box",
+     "size": [
+      0.05,
+      0.8,
+      0.4
+     ],
+     "at": [
+      0.0,
+      -0.4,
+      0.0
+     ],
+     "parent": "wheel",
+     "material": "timber"
+    },
+    {
+     "id": "blade_e",
+     "shape": "box",
+     "size": [
+      0.05,
+      0.8,
+      0.4
+     ],
+     "at": [
+      0.4,
+      0.0,
+      0.0
+     ],
+     "parent": "wheel",
+     "material": "timber"
+    },
+    {
+     "id": "blade_w",
+     "shape": "box",
+     "size": [
+      0.05,
+      0.8,
+      0.4
+     ],
+     "at": [
+      -0.4,
+      0.0,
+      0.0
+     ],
+     "parent": "wheel",
+     "material": "timber"
+    },
+    {
+     "id": "gear",
+     "shape": "cylinder",
+     "size": [
+      0.2,
+      0.15
+     ],
+     "at": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "parent": "axle",
+     "material": "dark_timber",
+     "rotation": [
+      0.0,
+      0.0,
+      -90.0
+     ]
+    },
+    {
+     "id": "grind_stone",
+     "shape": "cylinder",
+     "size": [
+      0.5,
+      0.3
+     ],
+     "at": [
+      0,
+      0.65,
+      0
+     ],
+     "material": "stone"
+    }
+   ],
+   "joints": [
+    {
+     "part": "axle",
+     "kind": "hinge",
+     "axis": "y"
+    },
+    {
+     "part": "grind_stone",
+     "kind": "hinge",
+     "axis": "y"
+    }
+   ],
+   "movements": [
+    {
+     "joint": "axle",
+     "spin": 30,
+     "when": "always"
+    },
+    {
+     "joint": "grind_stone",
+     "spin": 15,
+     "when": "always"
+    }
+   ],
+   "claims": [
+    "grind"
+   ],
+   "goes": "mill",
+   "does": "keeps the mill turning",
+   "by": "garrick",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "freya",
+  "name": "Freya",
+  "stage": "elder",
+  "role": "farmer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a lever to lift the heavy stones",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "stone lifter",
+  "goes": "quarry",
+  "does": "lifts heavy stones from the pit",
+  "looked": "mended",
+  "mended_pictured": true,
+  "size": [
+   4.1,
+   1.9,
+   1.6
+  ],
+  "accepted": false,
+  "reasons": [
+   "it would not stand: the beam would tip over"
+  ],
+  "parts": 6,
+  "moves": [],
+  "claims": {},
+  "stands": false,
+  "fell": [
+   "beam"
+  ],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"stone lifter\",\"footprint\":[4,2],\"ground\":\"gravel\",\"parts\":[{\"id\":\"frame\",\"shape\":\"box\",\"size\":[3.6,0.1,1.6],\"at\":[0,0.05,0],\"material\":\"timber\"},{\"id\":\"pivot_post\",\"shape\":\"box\",\"size\":[0.2,0.8,0.2],\"at\":[-1.4,0.4,0],\"material\":\"stone\"},{\"id\":\"beam\",\"shape\":\"box\",\"size\":[4.0,0.12,0.12],\"at\":[0,0.8,0],\"material\":\"timber\"},{\"id\":\"counterweight\",\"shape\":\"box\",\"size\":[0.6,0.6,0.6],\"at\":[-1.6,0.8,0],\"parent\":\"beam\",\"material\":\"stone\"},{\"id\":\"platform\",\"shape\":\"box\",\"size\":[1.0,0.05,1.0],\"at\":[1.6,0.8,0],\"parent\":\"beam\",\"material\":\"timber\"},{\"id\":\"strut\",\"shape\":\"box\",\"size\":[0.1,1.0,0.1],\"at\":[-1.4,1.0,0],\"parent\":\"beam\",\"material\":\"timber\"}],\"joints\":[{\"part\":\"beam\",\"kind\":\"hinge\",\"axis\":\"z\",\"pivot\":[-1.4,0.8,0]}],\"movements\":[{\"joint\":\"beam\",\"swing\":[10,0],\"period\":4,\"when\":\"worked\"}],\"claims\":[\"lift\"],\"goes\":\"quarry\",\"does\":\"lifts heavy stones from the pit\",\"by\":\"garrick\",\"purpose\":\"want\"}"
+ },
+ {
+  "villager": "garrick",
+  "name": "Garrick",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a forge to mend the plows",
+  "reply": "",
+  "assessed": null,
+  "attempts": 1,
+  "crafter": "garrick",
+  "drawn": "Plow Mender's Forge",
+  "goes": "forge",
+  "does": "mends the plows and heats iron for the village",
+  "looked": "right",
+  "mended_pictured": false,
+  "size": [
+   3.2,
+   1.75,
+   2.2
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 14,
+  "moves": [
+   "slide bellows_frame"
+  ],
+  "claims": {},
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "bellows_frame"
+  ],
+  "struck": {
+   "bellows_frame": [
+    "workbench"
+   ]
+  },
+  "works": false,
+  "cost": 0.51,
+  "design": {
+   "design": "Plow Mender's Forge",
+   "footprint": [
+    3,
+    2
+   ],
+   "ground": "stone",
+   "parts": [
+    {
+     "id": "floor",
+     "shape": "box",
+     "size": [
+      3,
+      0.1,
+      2
+     ],
+     "at": [
+      0,
+      0.05,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "wall_back",
+     "shape": "box",
+     "size": [
+      3,
+      1.2,
+      0.1
+     ],
+     "at": [
+      0,
+      0.7,
+      -0.95
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "wall_left",
+     "shape": "box",
+     "size": [
+      0.1,
+      1.2,
+      1.8
+     ],
+     "at": [
+      -1.45,
+      0.7,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "wall_right",
+     "shape": "box",
+     "size": [
+      0.1,
+      1.2,
+      1.8
+     ],
+     "at": [
+      1.45,
+      0.7,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "roof",
+     "shape": "box",
+     "size": [
+      3.2,
+      0.1,
+      2.2
+     ],
+     "at": [
+      0,
+      1.35,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "hearth_base",
+     "shape": "box",
+     "size": [
+      0.8,
+      0.6,
+      0.8
+     ],
+     "at": [
+      0,
+      0.4,
+      -0.6
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "chimney",
+     "shape": "cylinder",
+     "size": [
+      0.15,
+      1.5
+     ],
+     "at": [
+      0,
+      1.0,
+      -0.6
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "anvil_stand",
+     "shape": "box",
+     "size": [
+      0.4,
+      0.8,
+      0.4
+     ],
+     "at": [
+      0.8,
+      0.5,
+      0.5
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "anvil",
+     "shape": "box",
+     "size": [
+      0.5,
+      0.1,
+      0.2
+     ],
+     "at": [
+      0.8,
+      0.95,
+      0.5
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "bellows_frame",
+     "shape": "box",
+     "size": [
+      0.5,
+      0.4,
+      0.3
+     ],
+     "at": [
+      -0.8,
+      0.5,
+      0.5
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "bellows_leather",
+     "shape": "box",
+     "size": [
+      0.4,
+      0.3,
+      0.2
+     ],
+     "at": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "parent": "bellows_frame",
+     "material": "cloth"
+    },
+    {
+     "id": "bellows_handle",
+     "shape": "box",
+     "size": [
+      0.05,
+      0.05,
+      0.3
+     ],
+     "at": [
+      0.0,
+      0.0,
+      0.15
+     ],
+     "parent": "bellows_frame",
+     "material": "timber"
+    },
+    {
+     "id": "workbench",
+     "shape": "box",
+     "size": [
+      1.5,
+      0.8,
+      0.5
+     ],
+     "at": [
+      -0.5,
+      0.5,
+      0.8
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "tool_rack",
+     "shape": "box",
+     "size": [
+      1.0,
+      0.8,
+      0.05
+     ],
+     "at": [
+      0,
+      0.9,
+      -0.85
+     ],
+     "material": "timber"
+    }
+   ],
+   "joints": [
+    {
+     "part": "bellows_frame",
+     "kind": "slider",
+     "axis": "z",
+     "pivot": [
+      0.0,
+      0.0,
+      -0.15
+     ]
+    }
+   ],
+   "movements": [
+    {
+     "joint": "bellows_frame",
+     "slide": [
+      0.2,
+      0.2
+     ],
+     "period": 2,
+     "when": "worked"
+    }
+   ],
+   "claims": [],
+   "goes": "forge",
+   "does": "mends the plows and heats iron for the village",
+   "by": "garrick",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "gisla",
+  "name": "Gisla",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "given",
+  "kind": "make",
+  "want": "a sturdy hook to lift the millstone",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "dunn",
+  "drawn": "Millstone Hoist",
+  "goes": "mill",
+  "does": "lifts the millstone for repair",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   1.6,
+   1.65,
+   1.6
+  ],
+  "accepted": false,
+  "reasons": [
+   "the hook would strike the rope as it moved",
+   "it would not lift: nothing in it raises a load"
+  ],
+  "parts": 8,
+  "moves": [],
+  "claims": {
+   "lift": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "hook"
+  ],
+  "struck": {
+   "hook": [
+    "rope"
+   ]
+  },
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"Millstone Hoist\",\"footprint\":[2,2],\"ground\":\"flagstone\",\"parts\":[{\"id\":\"base\",\"shape\":\"box\",\"size\":[1.6,0.1,1.6],\"at\":[0,0.05,0],\"material\":\"stone\"},{\"id\":\"post_w\",\"shape\":\"box\",\"size\":[0.1,1.4,0.1],\"at\":[-0.7,0.8,0],\"material\":\"dark_timber\"},{\"id\":\"post_e\",\"shape\":\"box\",\"size\":[0.1,1.4,0.1],\"at\":[0.7,0.8,0],\"material\":\"dark_timber\"},{\"id\":\"beam\",\"shape\":\"box\",\"size\":[1.6,0.12,0.12],\"at\":[0,1.5,0],\"material\":\"dark_timber\"},{\"id\":\"axle\",\"shape\":\"cylinder\",\"size\":[0.06,1.4],\"at\":[0,1.5,0],\"rotation\":[0,0,90],\"material\":\"iron\"},{\"id\":\"drum\",\"shape\":\"cylinder\",\"size\":[0.15,0.3],\"at\":[0,1.5,0],\"rotation\":[0,0,90],\"parent\":\"axle\",\"material\":\"timber\"},{\"id\":\"rope\",\"shape\":\"cylinder\",\"size\":[0.02,1.0],\"at\":[0.3,1.0,0],\"material\":\"cloth\"},{\"id\":\"hook\",\"shape\":\"box\",\"size\":[0.08,0.15,0.08],\"at\":[0.3,0.5,0],\"material\":\"iron\"}],\"joints\":[{\"part\":\"axle\",\"kind\":\"hinge\",\"axis\":\"x\"},{\"part\":\"hook\",\"kind\":\"slider\",\"axis\":\"y\"}],\"movements\":[{\"joint\":\"axle\",\"spin\":30,\"when\":\"worked\"},{\"joint\":\"hook\",\"slide\":[0,0.5],\"period\":4,\"when\":\"worked\"}],\"claims\":[\"lift\"],\"goes\":\"mill\",\"does\":\"lifts the millstone for repair\",\"by\":\"wynn\",\"purpose\":\"want\"}"
+ },
+ {
+  "villager": "gorm",
+  "name": "Gorm",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a finer sieve to catch the grit",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "edda",
+  "drawn": "Grit Catcher",
+  "goes": "mill",
+  "does": "catches the grit before the flour",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   1.2,
+   1.55,
+   1.2
+  ],
+  "accepted": false,
+  "reasons": [
+   "it would not grind: nothing in it turns against a load"
+  ],
+  "parts": 8,
+  "moves": [],
+  "claims": {
+   "grind": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"Grit Catcher\",\"footprint\":[2,2],\"ground\":\"stone\",\"parts\":[{\"id\":\"frame_bottom\",\"shape\":\"box\",\"size\":[1.2,0.1,1.2],\"at\":[0,0.05,0],\"material\":\"timber\"},{\"id\":\"post_n\",\"shape\":\"box\",\"size\":[0.1,0.9,0.1],\"at\":[0,0.5,-0.5],\"material\":\"timber\"},{\"id\":\"post_s\",\"shape\":\"box\",\"size\":[0.1,0.9,0.1],\"at\":[0,0.5,0.5],\"material\":\"timber\"},{\"id\":\"post_e\",\"shape\":\"box\",\"size\":[0.1,0.9,0.1],\"at\":[0.5,0.5,0],\"material\":\"timber\"},{\"id\":\"post_w\",\"shape\":\"box\",\"size\":[0.1,0.9,0.1],\"at\":[-0.5,0.5,0],\"material\":\"timber\"},{\"id\":\"frame_top\",\"shape\":\"box\",\"size\":[1.2,0.1,1.2],\"at\":[0,0.95,0],\"material\":\"timber\"},{\"id\":\"sieve\",\"shape\":\"cylinder\",\"size\":[0.4,0.02],\"sides\":20,\"open\":true,\"at\":[0,0.96,0],\"material\":\"iron\"},{\"id\":\"handle\",\"shape\":\"cylinder\",\"size\":[0.02,0.6],\"at\":[0,1.25,0],\"material\":\"dark_timber\"}],\"claims\":[\"grind\"],\"goes\":\"mill\",\"does\":\"catches the grit before the flour\",\"by\":\"dunn\",\"purpose\":\"want\"}"
+ },
+ {
+  "villager": "ada",
+  "name": "Ada",
+  "stage": "adult",
+  "role": "healer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a loom to weave the storm",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "garrick",
+  "drawn": "Storm Weave Loom",
+  "goes": "mill",
+  "does": "tangles the wind into cloth",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   2.5,
+   1.4,
+   2.5
+  ],
+  "accepted": false,
+  "reasons": [
+   "the pulley would strike the shaft and warp and weft as it moved",
+   "it would not grind: nothing in it turns against a load"
+  ],
+  "parts": 14,
+  "moves": [],
+  "claims": {
+   "grind": false
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "pulley"
+  ],
+  "struck": {
+   "pulley": [
+    "shaft",
+    "warp",
+    "weft"
+   ]
+  },
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"Storm Weave Loom\",\"footprint\":[3,3],\"ground\":\"flagstone\",\"parts\":[{\"id\":\"base\",\"shape\":\"box\",\"size\":[2.5,0.1,2.5],\"at\":[0,0.05,0],\"material\":\"stone\"},{\"id\":\"post_w\",\"shape\":\"box\",\"size\":[0.1,1.2,0.1],\"at\":[-1.0,0.65,-1.0],\"material\":\"timber\"},{\"id\":\"post_e\",\"shape\":\"box\",\"size\":[0.1,1.2,0.1],\"at\":[1.0,0.65,-1.0],\"material\":\"timber\"},{\"id\":\"post_nw\",\"shape\":\"box\",\"size\":[0.1,1.2,0.1],\"at\":[-1.0,0.65,1.0],\"material\":\"timber\"},{\"id\":\"post_ne\",\"shape\":\"box\",\"size\":[0.1,1.2,0.1],\"at\":[1.0,0.65,1.0],\"material\":\"timber\"},{\"id\":\"beam_top_w\",\"shape\":\"box\",\"size\":[0.1,0.1,2.2],\"at\":[-1.0,1.25,0],\"material\":\"timber\"},{\"id\":\"beam_top_e\",\"shape\":\"box\",\"size\":[0.1,0.1,2.2],\"at\":[1.0,1.25,0],\"material\":\"timber\"},{\"id\":\"beam_back\",\"shape\":\"box\",\"size\":[2.2,0.1,0.1],\"at\":[0,1.25,-1.0],\"material\":\"timber\"},{\"id\":\"beam_front\",\"shape\":\"box\",\"size\":[2.2,0.1,0.1],\"at\":[0,1.25,1.0],\"material\":\"timber\"},{\"id\":\"shaft\",\"shape\":\"cylinder\",\"size\":[0.05,2.4],\"at\":[0,1.25,0],\"rotation\":[0,0,90],\"material\":\"timber\"},{\"id\":\"warp\",\"shape\":\"box\",\"size\":[1.9,0.05,1.8],\"at\":[0,1.225,0],\"material\":\"cloth\"},{\"id\":\"weft\",\"shape\":\"box\",\"size\":[1.9,0.05,1.8],\"at\":[0,1.225,0.06],\"material\":\"sailcloth\"},{\"id\":\"pulley\",\"shape\":\"wheel\",\"size\":[0.15,0.05],\"at\":[0,1.25,0],\"rotation\":[90,0,0],\"material\":\"iron\"},{\"id\":\"crank\",\"shape\":\"box\",\"size\":[0.04,0.04,0.2],\"at\":[0.15,1.25,0],\"parent\":\"pulley\",\"material\":\"dark_timber\"}],\"joints\":[{\"part\":\"pulley\",\"kind\":\"hinge\",\"axis\":\"z\"}],\"movements\":[{\"joint\":\"pulley\",\"spin\":30,\"when\":\"storm\"}],\"claims\":[\"grind\"],\"goes\":\"mill\",\"does\":\"tangles the wind into cloth\",\"by\":\"edda\",\"purpose\":\"want\"}"
+ },
+ {
+  "villager": "corin",
+  "name": "Corin",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "given",
+  "kind": "make",
+  "want": "a wheel to hold the stones still",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "millstone hold",
+  "goes": "mill",
+  "does": "holds the millstones steady so they do not slip while grinding",
+  "looked": "mended",
+  "mended_pictured": true,
+  "size": [
+   1.2,
+   0.69,
+   1.2
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 6,
+  "moves": [
+   "spin wheel",
+   "spin axle"
+  ],
+  "claims": {
+   "grind": true
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [
+   "wheel"
+  ],
+  "struck": {
+   "wheel": [
+    "base",
+    "collar"
+   ]
+  },
+  "works": true,
+  "cost": 0.5,
+  "design": {
+   "design": "millstone hold",
+   "footprint": [
+    3,
+    3
+   ],
+   "ground": "stone",
+   "parts": [
+    {
+     "id": "base",
+     "shape": "cylinder",
+     "size": [
+      0.6,
+      0.2,
+      0.6
+     ],
+     "sides": 12,
+     "at": [
+      0,
+      0.1,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "collar",
+     "shape": "cylinder",
+     "size": [
+      0.45,
+      0.1,
+      0.45
+     ],
+     "sides": 12,
+     "at": [
+      0,
+      0.25,
+      0
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "wheel",
+     "shape": "wheel",
+     "size": [
+      0.35,
+      0.08
+     ],
+     "at": [
+      0,
+      0.45,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "axle",
+     "shape": "cylinder",
+     "size": [
+      0.04,
+      0.5
+     ],
+     "at": [
+      0,
+      0.45,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "post_w",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.25,
+      0.08
+     ],
+     "at": [
+      -0.4,
+      0.35,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "post_e",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.25,
+      0.08
+     ],
+     "at": [
+      0.4,
+      0.35,
+      0
+     ],
+     "material": "timber"
+    }
+   ],
+   "joints": [
+    {
+     "part": "wheel",
+     "kind": "hinge",
+     "axis": "y"
+    },
+    {
+     "part": "axle",
+     "kind": "hinge",
+     "axis": "y"
+    }
+   ],
+   "movements": [
+    {
+     "joint": "wheel",
+     "spin": 20,
+     "when": "worked"
+    },
+    {
+     "joint": "axle",
+     "spin": 20,
+     "when": "worked"
+    }
+   ],
+   "claims": [
+    "grind"
+   ],
+   "goes": "mill",
+   "does": "holds the millstones steady so they do not slip while grinding",
+   "by": "gorm",
+   "purpose": "want"
+  },
+  "drawing": null
+ }
+]

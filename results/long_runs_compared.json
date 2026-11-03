@@ -1,0 +1,1165 @@
+[
+  {
+    "label": "second",
+    "run": "20261009-193240-seed1",
+    "change": "28-day years, the paper's switches of the time",
+    "read_to_day": 335,
+    "full_years": 12,
+    "village": {
+      "start": 30,
+      "end": 51,
+      "born": 24,
+      "died": 3,
+      "married": 6,
+      "fewest": 30,
+      "founders_alive": 27,
+      "generations": {
+        "1": 24
+      }
+    },
+    "years": [
+      {
+        "year": 0,
+        "people": 30,
+        "born": 5,
+        "granary": 673.8,
+        "empty_days": 0,
+        "crop": 858,
+        "warn": 0.248,
+        "lesson": 0.069,
+        "field": 0.04
+      },
+      {
+        "year": 1,
+        "people": 35,
+        "born": 1,
+        "granary": 652.2,
+        "empty_days": 0,
+        "crop": 835,
+        "warn": 0.313,
+        "lesson": 0.072,
+        "field": 0.03
+      },
+      {
+        "year": 2,
+        "people": 36,
+        "born": 2,
+        "granary": 598.2,
+        "empty_days": 0,
+        "crop": 856,
+        "warn": 0.396,
+        "lesson": 0.067,
+        "field": 0.021
+      },
+      {
+        "year": 3,
+        "people": 38,
+        "born": 4,
+        "granary": 509.3,
+        "empty_days": 0,
+        "crop": 861,
+        "warn": 0.366,
+        "lesson": 0.058,
+        "field": 0.02
+      },
+      {
+        "year": 4,
+        "people": 42,
+        "born": 2,
+        "granary": 346.6,
+        "empty_days": 1,
+        "crop": 833,
+        "warn": 0.373,
+        "lesson": 0.055,
+        "field": 0.019
+      },
+      {
+        "year": 5,
+        "people": 44,
+        "born": 3,
+        "granary": 369.7,
+        "empty_days": 6,
+        "crop": 888,
+        "warn": 0.382,
+        "lesson": 0.081,
+        "field": 0.02
+      },
+      {
+        "year": 6,
+        "people": 47,
+        "born": 3,
+        "granary": 259.8,
+        "empty_days": 6,
+        "crop": 797,
+        "warn": 0.378,
+        "lesson": 0.087,
+        "field": 0.019
+      },
+      {
+        "year": 7,
+        "people": 49,
+        "born": 1,
+        "granary": 0.0,
+        "empty_days": 11,
+        "crop": 490,
+        "warn": 0.388,
+        "lesson": 0.102,
+        "field": 0.013
+      },
+      {
+        "year": 8,
+        "people": 49,
+        "born": 0,
+        "granary": 0.0,
+        "empty_days": 17,
+        "crop": 513,
+        "warn": 0.384,
+        "lesson": 0.133,
+        "field": 0.012
+      },
+      {
+        "year": 9,
+        "people": 49,
+        "born": 0,
+        "granary": 0.0,
+        "empty_days": 21,
+        "crop": 369,
+        "warn": 0.442,
+        "lesson": 0.179,
+        "field": 0.011
+      },
+      {
+        "year": 10,
+        "people": 49,
+        "born": 1,
+        "granary": 0.0,
+        "empty_days": 17,
+        "crop": 537,
+        "warn": 0.451,
+        "lesson": 0.202,
+        "field": 0.011
+      },
+      {
+        "year": 11,
+        "people": 49,
+        "born": 2,
+        "granary": 0.0,
+        "empty_days": 19,
+        "crop": 458,
+        "warn": 0.455,
+        "lesson": 0.224,
+        "field": 0.01
+      }
+    ]
+  },
+  {
+    "label": "third",
+    "run": "20261012-053443-seed1",
+    "change": "quick warnings, told memory, memories as BEAR items, fading lessons",
+    "read_to_day": 374,
+    "full_years": 13,
+    "village": {
+      "start": 30,
+      "end": 62,
+      "born": 36,
+      "died": 4,
+      "married": 10,
+      "fewest": 30,
+      "founders_alive": 26,
+      "generations": {
+        "1": 36
+      }
+    },
+    "years": [
+      {
+        "year": 0,
+        "people": 30,
+        "born": 3,
+        "granary": 855.8,
+        "empty_days": 0,
+        "crop": 1040,
+        "warn": 0.211,
+        "lesson": 0.005,
+        "field": 0.053
+      },
+      {
+        "year": 1,
+        "people": 33,
+        "born": 5,
+        "granary": 1043.0,
+        "empty_days": 0,
+        "crop": 1040,
+        "warn": 0.184,
+        "lesson": 0.008,
+        "field": 0.045
+      },
+      {
+        "year": 2,
+        "people": 38,
+        "born": 2,
+        "granary": 1025.0,
+        "empty_days": 0,
+        "crop": 910,
+        "warn": 0.308,
+        "lesson": 0.02,
+        "field": 0.02
+      },
+      {
+        "year": 3,
+        "people": 40,
+        "born": 5,
+        "granary": 860.4,
+        "empty_days": 0,
+        "crop": 817,
+        "warn": 0.25,
+        "lesson": 0.023,
+        "field": 0.021
+      },
+      {
+        "year": 4,
+        "people": 45,
+        "born": 3,
+        "granary": 450.6,
+        "empty_days": 0,
+        "crop": 707,
+        "warn": 0.33,
+        "lesson": 0.029,
+        "field": 0.018
+      },
+      {
+        "year": 5,
+        "people": 48,
+        "born": 4,
+        "granary": 372.9,
+        "empty_days": 4,
+        "crop": 924,
+        "warn": 0.335,
+        "lesson": 0.034,
+        "field": 0.018
+      },
+      {
+        "year": 6,
+        "people": 52,
+        "born": 4,
+        "granary": 522.3,
+        "empty_days": 7,
+        "crop": 1102,
+        "warn": 0.378,
+        "lesson": 0.034,
+        "field": 0.019
+      },
+      {
+        "year": 7,
+        "people": 55,
+        "born": 3,
+        "granary": 526.0,
+        "empty_days": 4,
+        "crop": 1149,
+        "warn": 0.338,
+        "lesson": 0.041,
+        "field": 0.018
+      },
+      {
+        "year": 8,
+        "people": 57,
+        "born": 0,
+        "granary": 214.7,
+        "empty_days": 5,
+        "crop": 873,
+        "warn": 0.362,
+        "lesson": 0.049,
+        "field": 0.016
+      },
+      {
+        "year": 9,
+        "people": 57,
+        "born": 4,
+        "granary": 239.2,
+        "empty_days": 11,
+        "crop": 936,
+        "warn": 0.377,
+        "lesson": 0.055,
+        "field": 0.012
+      },
+      {
+        "year": 10,
+        "people": 61,
+        "born": 1,
+        "granary": 140.3,
+        "empty_days": 11,
+        "crop": 856,
+        "warn": 0.391,
+        "lesson": 0.074,
+        "field": 0.012
+      },
+      {
+        "year": 11,
+        "people": 61,
+        "born": 1,
+        "granary": 249.6,
+        "empty_days": 13,
+        "crop": 1000,
+        "warn": 0.347,
+        "lesson": 0.098,
+        "field": 0.013
+      },
+      {
+        "year": 12,
+        "people": 62,
+        "born": 1,
+        "granary": 244.6,
+        "empty_days": 11,
+        "crop": 1006,
+        "warn": 0.369,
+        "lesson": 0.079,
+        "field": 0.016
+      },
+      {
+        "year": 13,
+        "people": 62,
+        "born": 0,
+        "granary": 0.0,
+        "empty_days": 7,
+        "crop": 1051,
+        "warn": 0.371,
+        "lesson": 0.08,
+        "field": 0.015
+      }
+    ]
+  },
+  {
+    "label": "fourth",
+    "run": "20261013-171655-seed1",
+    "change": "warnings last days, far-off news warns only of what can come here",
+    "read_to_day": 223,
+    "full_years": 8,
+    "village": {
+      "start": 30,
+      "end": 57,
+      "born": 29,
+      "died": 2,
+      "married": 8,
+      "fewest": 30,
+      "founders_alive": 28,
+      "generations": {
+        "1": 29
+      }
+    },
+    "years": [
+      {
+        "year": 0,
+        "people": 30,
+        "born": 4,
+        "granary": 850.0,
+        "empty_days": 0,
+        "crop": 1040,
+        "warn": 0.202,
+        "lesson": 0.001,
+        "field": 0.046
+      },
+      {
+        "year": 1,
+        "people": 34,
+        "born": 4,
+        "granary": 840.5,
+        "empty_days": 0,
+        "crop": 851,
+        "warn": 0.174,
+        "lesson": 0.003,
+        "field": 0.029
+      },
+      {
+        "year": 2,
+        "people": 38,
+        "born": 4,
+        "granary": 735.8,
+        "empty_days": 0,
+        "crop": 843,
+        "warn": 0.213,
+        "lesson": 0.009,
+        "field": 0.022
+      },
+      {
+        "year": 3,
+        "people": 42,
+        "born": 4,
+        "granary": 637.0,
+        "empty_days": 0,
+        "crop": 886,
+        "warn": 0.2,
+        "lesson": 0.011,
+        "field": 0.027
+      },
+      {
+        "year": 4,
+        "people": 46,
+        "born": 1,
+        "granary": 403.6,
+        "empty_days": 0,
+        "crop": 850,
+        "warn": 0.209,
+        "lesson": 0.008,
+        "field": 0.026
+      },
+      {
+        "year": 5,
+        "people": 47,
+        "born": 6,
+        "granary": 422.1,
+        "empty_days": 5,
+        "crop": 983,
+        "warn": 0.299,
+        "lesson": 0.021,
+        "field": 0.021
+      },
+      {
+        "year": 6,
+        "people": 53,
+        "born": 4,
+        "granary": 346.0,
+        "empty_days": 6,
+        "crop": 1007,
+        "warn": 0.233,
+        "lesson": 0.037,
+        "field": 0.027
+      },
+      {
+        "year": 7,
+        "people": 56,
+        "born": 2,
+        "granary": 491.5,
+        "empty_days": 8,
+        "crop": 1124,
+        "warn": 0.26,
+        "lesson": 0.043,
+        "field": 0.026
+      }
+    ]
+  },
+  {
+    "label": "fifth",
+    "run": "20261013-213929-seed1",
+    "change": "lessons last years",
+    "read_to_day": 471,
+    "full_years": 16,
+    "village": {
+      "start": 30,
+      "end": 70,
+      "born": 44,
+      "died": 4,
+      "married": 17,
+      "fewest": 30,
+      "founders_alive": 26,
+      "generations": {
+        "1": 43,
+        "2": 1
+      }
+    },
+    "years": [
+      {
+        "year": 0,
+        "people": 30,
+        "born": 6,
+        "granary": 857.5,
+        "empty_days": 0,
+        "crop": 1040,
+        "warn": 0.231,
+        "lesson": 0.002,
+        "field": 0.049
+      },
+      {
+        "year": 1,
+        "people": 36,
+        "born": 0,
+        "granary": 832.4,
+        "empty_days": 0,
+        "crop": 832,
+        "warn": 0.213,
+        "lesson": 0.004,
+        "field": 0.025
+      },
+      {
+        "year": 2,
+        "people": 36,
+        "born": 4,
+        "granary": 737.0,
+        "empty_days": 0,
+        "crop": 824,
+        "warn": 0.24,
+        "lesson": 0.009,
+        "field": 0.023
+      },
+      {
+        "year": 3,
+        "people": 40,
+        "born": 3,
+        "granary": 614.6,
+        "empty_days": 0,
+        "crop": 844,
+        "warn": 0.238,
+        "lesson": 0.049,
+        "field": 0.024
+      },
+      {
+        "year": 4,
+        "people": 43,
+        "born": 1,
+        "granary": 395.5,
+        "empty_days": 0,
+        "crop": 807,
+        "warn": 0.284,
+        "lesson": 0.06,
+        "field": 0.02
+      },
+      {
+        "year": 5,
+        "people": 44,
+        "born": 5,
+        "granary": 382.6,
+        "empty_days": 5,
+        "crop": 914,
+        "warn": 0.174,
+        "lesson": 0.061,
+        "field": 0.022
+      },
+      {
+        "year": 6,
+        "people": 49,
+        "born": 3,
+        "granary": 587.0,
+        "empty_days": 6,
+        "crop": 1144,
+        "warn": 0.277,
+        "lesson": 0.103,
+        "field": 0.026
+      },
+      {
+        "year": 7,
+        "people": 51,
+        "born": 3,
+        "granary": 215.6,
+        "empty_days": 2,
+        "crop": 802,
+        "warn": 0.329,
+        "lesson": 0.117,
+        "field": 0.016
+      },
+      {
+        "year": 8,
+        "people": 53,
+        "born": 0,
+        "granary": 0.0,
+        "empty_days": 14,
+        "crop": 501,
+        "warn": 0.339,
+        "lesson": 0.171,
+        "field": 0.011
+      },
+      {
+        "year": 9,
+        "people": 53,
+        "born": 5,
+        "granary": 221.4,
+        "empty_days": 15,
+        "crop": 876,
+        "warn": 0.269,
+        "lesson": 0.167,
+        "field": 0.018
+      },
+      {
+        "year": 10,
+        "people": 58,
+        "born": 1,
+        "granary": 139.8,
+        "empty_days": 11,
+        "crop": 815,
+        "warn": 0.309,
+        "lesson": 0.175,
+        "field": 0.016
+      },
+      {
+        "year": 11,
+        "people": 58,
+        "born": 2,
+        "granary": 428.2,
+        "empty_days": 13,
+        "crop": 1135,
+        "warn": 0.256,
+        "lesson": 0.169,
+        "field": 0.022
+      },
+      {
+        "year": 12,
+        "people": 60,
+        "born": 1,
+        "granary": 294.5,
+        "empty_days": 8,
+        "crop": 1013,
+        "warn": 0.328,
+        "lesson": 0.188,
+        "field": 0.017
+      },
+      {
+        "year": 13,
+        "people": 60,
+        "born": 1,
+        "granary": 172.6,
+        "empty_days": 10,
+        "crop": 990,
+        "warn": 0.297,
+        "lesson": 0.179,
+        "field": 0.019
+      },
+      {
+        "year": 14,
+        "people": 61,
+        "born": 3,
+        "granary": 351.5,
+        "empty_days": 13,
+        "crop": 1124,
+        "warn": 0.288,
+        "lesson": 0.173,
+        "field": 0.021
+      },
+      {
+        "year": 15,
+        "people": 64,
+        "born": 3,
+        "granary": 645.3,
+        "empty_days": 10,
+        "crop": 1442,
+        "warn": 0.201,
+        "lesson": 0.184,
+        "field": 0.025
+      },
+      {
+        "year": 16,
+        "people": 67,
+        "born": 3,
+        "granary": 641.7,
+        "empty_days": 5,
+        "crop": 1211,
+        "warn": 0.305,
+        "lesson": 0.16,
+        "field": 0.019
+      }
+    ]
+  },
+  {
+    "label": "sixth",
+    "run": "20261014-143649-seed1",
+    "change": "teachers by pupils, elders in the fields, work in rain, choose again",
+    "read_to_day": 718,
+    "full_years": 25,
+    "village": {
+      "start": 30,
+      "end": 102,
+      "born": 84,
+      "died": 12,
+      "married": 26,
+      "fewest": 30,
+      "founders_alive": 18,
+      "generations": {
+        "1": 54,
+        "2": 30
+      }
+    },
+    "years": [
+      {
+        "year": 0,
+        "people": 30,
+        "born": 5,
+        "granary": 827.3,
+        "empty_days": 0,
+        "crop": 1017,
+        "warn": 0.281,
+        "lesson": 0.011,
+        "field": 0.04
+      },
+      {
+        "year": 1,
+        "people": 35,
+        "born": 2,
+        "granary": 821.7,
+        "empty_days": 0,
+        "crop": 861,
+        "warn": 0.226,
+        "lesson": 0.014,
+        "field": 0.025
+      },
+      {
+        "year": 2,
+        "people": 37,
+        "born": 5,
+        "granary": 920.2,
+        "empty_days": 0,
+        "crop": 1040,
+        "warn": 0.245,
+        "lesson": 0.018,
+        "field": 0.027
+      },
+      {
+        "year": 3,
+        "people": 42,
+        "born": 4,
+        "granary": 798.9,
+        "empty_days": 0,
+        "crop": 867,
+        "warn": 0.247,
+        "lesson": 0.027,
+        "field": 0.026
+      },
+      {
+        "year": 4,
+        "people": 46,
+        "born": 2,
+        "granary": 756.4,
+        "empty_days": 0,
+        "crop": 1040,
+        "warn": 0.301,
+        "lesson": 0.031,
+        "field": 0.025
+      },
+      {
+        "year": 5,
+        "people": 48,
+        "born": 6,
+        "granary": 601.4,
+        "empty_days": 0,
+        "crop": 1028,
+        "warn": 0.316,
+        "lesson": 0.058,
+        "field": 0.024
+      },
+      {
+        "year": 6,
+        "people": 54,
+        "born": 3,
+        "granary": 585.1,
+        "empty_days": 2,
+        "crop": 1184,
+        "warn": 0.309,
+        "lesson": 0.066,
+        "field": 0.026
+      },
+      {
+        "year": 7,
+        "people": 56,
+        "born": 4,
+        "granary": 323.4,
+        "empty_days": 3,
+        "crop": 1026,
+        "warn": 0.325,
+        "lesson": 0.063,
+        "field": 0.019
+      },
+      {
+        "year": 8,
+        "people": 59,
+        "born": 0,
+        "granary": 828.9,
+        "empty_days": 9,
+        "crop": 1494,
+        "warn": 0.274,
+        "lesson": 0.069,
+        "field": 0.027
+      },
+      {
+        "year": 9,
+        "people": 59,
+        "born": 4,
+        "granary": 807.2,
+        "empty_days": 0,
+        "crop": 1476,
+        "warn": 0.277,
+        "lesson": 0.064,
+        "field": 0.027
+      },
+      {
+        "year": 10,
+        "people": 63,
+        "born": 1,
+        "granary": 758.9,
+        "empty_days": 1,
+        "crop": 1498,
+        "warn": 0.448,
+        "lesson": 0.058,
+        "field": 0.019
+      },
+      {
+        "year": 11,
+        "people": 63,
+        "born": 3,
+        "granary": 722.0,
+        "empty_days": 2,
+        "crop": 1502,
+        "warn": 0.254,
+        "lesson": 0.088,
+        "field": 0.025
+      },
+      {
+        "year": 12,
+        "people": 66,
+        "born": 1,
+        "granary": 664.6,
+        "empty_days": 4,
+        "crop": 1459,
+        "warn": 0.166,
+        "lesson": 0.082,
+        "field": 0.028
+      },
+      {
+        "year": 13,
+        "people": 66,
+        "born": 2,
+        "granary": 627.1,
+        "empty_days": 5,
+        "crop": 1447,
+        "warn": 0.287,
+        "lesson": 0.082,
+        "field": 0.024
+      },
+      {
+        "year": 14,
+        "people": 68,
+        "born": 3,
+        "granary": 715.0,
+        "empty_days": 6,
+        "crop": 1562,
+        "warn": 0.316,
+        "lesson": 0.088,
+        "field": 0.026
+      },
+      {
+        "year": 15,
+        "people": 71,
+        "born": 3,
+        "granary": 792.2,
+        "empty_days": 5,
+        "crop": 1668,
+        "warn": 0.312,
+        "lesson": 0.069,
+        "field": 0.022
+      },
+      {
+        "year": 16,
+        "people": 74,
+        "born": 5,
+        "granary": 845.6,
+        "empty_days": 4,
+        "crop": 1759,
+        "warn": 0.309,
+        "lesson": 0.073,
+        "field": 0.026
+      },
+      {
+        "year": 17,
+        "people": 79,
+        "born": 3,
+        "granary": 869.3,
+        "empty_days": 4,
+        "crop": 1812,
+        "warn": 0.352,
+        "lesson": 0.071,
+        "field": 0.02
+      },
+      {
+        "year": 18,
+        "people": 82,
+        "born": 3,
+        "granary": 867.1,
+        "empty_days": 4,
+        "crop": 1840,
+        "warn": 0.27,
+        "lesson": 0.072,
+        "field": 0.025
+      },
+      {
+        "year": 19,
+        "people": 84,
+        "born": 3,
+        "granary": 1067.2,
+        "empty_days": 4,
+        "crop": 2061,
+        "warn": 0.224,
+        "lesson": 0.07,
+        "field": 0.025
+      },
+      {
+        "year": 20,
+        "people": 85,
+        "born": 1,
+        "granary": 1023.9,
+        "empty_days": 2,
+        "crop": 2054,
+        "warn": 0.274,
+        "lesson": 0.07,
+        "field": 0.022
+      },
+      {
+        "year": 21,
+        "people": 86,
+        "born": 2,
+        "granary": 1043.5,
+        "empty_days": 3,
+        "crop": 2104,
+        "warn": 0.219,
+        "lesson": 0.08,
+        "field": 0.026
+      },
+      {
+        "year": 22,
+        "people": 87,
+        "born": 3,
+        "granary": 1087.5,
+        "empty_days": 3,
+        "crop": 2170,
+        "warn": 0.194,
+        "lesson": 0.084,
+        "field": 0.029
+      },
+      {
+        "year": 23,
+        "people": 89,
+        "born": 4,
+        "granary": 1111.0,
+        "empty_days": 2,
+        "crop": 2227,
+        "warn": 0.243,
+        "lesson": 0.08,
+        "field": 0.025
+      },
+      {
+        "year": 24,
+        "people": 93,
+        "born": 9,
+        "granary": 1127.4,
+        "empty_days": 3,
+        "crop": 2253,
+        "warn": 0.162,
+        "lesson": 0.079,
+        "field": 0.027
+      },
+      {
+        "year": 25,
+        "people": 99,
+        "born": 3,
+        "granary": 1913.8,
+        "empty_days": 3,
+        "crop": 2263,
+        "warn": 0.224,
+        "lesson": 0.065,
+        "field": 0.025
+      }
+    ]
+  },
+  {
+    "label": "seventh",
+    "run": "20261016-121341-seed1",
+    "change": "the dead and the long faded leave the live index, telling only what is new",
+    "read_to_day": 475,
+    "full_years": 17,
+    "village": {
+      "start": 30,
+      "end": 87,
+      "born": 61,
+      "died": 4,
+      "married": 16,
+      "fewest": 30,
+      "founders_alive": 26,
+      "generations": {
+        "1": 52,
+        "2": 9
+      }
+    },
+    "years": [
+      {
+        "year": 0,
+        "people": 30,
+        "born": 3,
+        "granary": 856.5,
+        "empty_days": 0,
+        "crop": 1040,
+        "warn": 0.231,
+        "lesson": 0.004,
+        "field": 0.046
+      },
+      {
+        "year": 1,
+        "people": 33,
+        "born": 4,
+        "granary": 866.5,
+        "empty_days": 0,
+        "crop": 865,
+        "warn": 0.283,
+        "lesson": 0.005,
+        "field": 0.021
+      },
+      {
+        "year": 2,
+        "people": 37,
+        "born": 3,
+        "granary": 979.7,
+        "empty_days": 0,
+        "crop": 1036,
+        "warn": 0.244,
+        "lesson": 0.008,
+        "field": 0.029
+      },
+      {
+        "year": 3,
+        "people": 40,
+        "born": 5,
+        "granary": 839.2,
+        "empty_days": 0,
+        "crop": 841,
+        "warn": 0.249,
+        "lesson": 0.013,
+        "field": 0.024
+      },
+      {
+        "year": 4,
+        "people": 45,
+        "born": 5,
+        "granary": 638.7,
+        "empty_days": 0,
+        "crop": 869,
+        "warn": 0.31,
+        "lesson": 0.009,
+        "field": 0.02
+      },
+      {
+        "year": 5,
+        "people": 50,
+        "born": 7,
+        "granary": 523.6,
+        "empty_days": 0,
+        "crop": 1061,
+        "warn": 0.237,
+        "lesson": 0.015,
+        "field": 0.025
+      },
+      {
+        "year": 6,
+        "people": 57,
+        "born": 3,
+        "granary": 639.7,
+        "empty_days": 4,
+        "crop": 1244,
+        "warn": 0.229,
+        "lesson": 0.016,
+        "field": 0.029
+      },
+      {
+        "year": 7,
+        "people": 59,
+        "born": 2,
+        "granary": 561.5,
+        "empty_days": 2,
+        "crop": 1209,
+        "warn": 0.209,
+        "lesson": 0.03,
+        "field": 0.024
+      },
+      {
+        "year": 8,
+        "people": 60,
+        "born": 0,
+        "granary": 642.9,
+        "empty_days": 5,
+        "crop": 1339,
+        "warn": 0.35,
+        "lesson": 0.031,
+        "field": 0.021
+      },
+      {
+        "year": 9,
+        "people": 60,
+        "born": 2,
+        "granary": 813.0,
+        "empty_days": 4,
+        "crop": 1557,
+        "warn": 0.298,
+        "lesson": 0.037,
+        "field": 0.025
+      },
+      {
+        "year": 10,
+        "people": 62,
+        "born": 1,
+        "granary": 816.9,
+        "empty_days": 1,
+        "crop": 1575,
+        "warn": 0.19,
+        "lesson": 0.048,
+        "field": 0.028
+      },
+      {
+        "year": 11,
+        "people": 62,
+        "born": 2,
+        "granary": 823.6,
+        "empty_days": 2,
+        "crop": 1609,
+        "warn": 0.235,
+        "lesson": 0.047,
+        "field": 0.031
+      },
+      {
+        "year": 12,
+        "people": 64,
+        "born": 1,
+        "granary": 944.1,
+        "empty_days": 2,
+        "crop": 1735,
+        "warn": 0.231,
+        "lesson": 0.042,
+        "field": 0.031
+      },
+      {
+        "year": 13,
+        "people": 64,
+        "born": 3,
+        "granary": 1158.3,
+        "empty_days": 0,
+        "crop": 1929,
+        "warn": 0.171,
+        "lesson": 0.052,
+        "field": 0.033
+      },
+      {
+        "year": 14,
+        "people": 67,
+        "born": 4,
+        "granary": 1368.2,
+        "empty_days": 0,
+        "crop": 1983,
+        "warn": 0.146,
+        "lesson": 0.077,
+        "field": 0.035
+      },
+      {
+        "year": 15,
+        "people": 71,
+        "born": 8,
+        "granary": 1861.2,
+        "empty_days": 0,
+        "crop": 2333,
+        "warn": 0.237,
+        "lesson": 0.081,
+        "field": 0.031
+      },
+      {
+        "year": 16,
+        "people": 79,
+        "born": 8,
+        "granary": 2212.8,
+        "empty_days": 0,
+        "crop": 2296,
+        "warn": 0.241,
+        "lesson": 0.059,
+        "field": 0.028
+      }
+    ]
+  }
+]

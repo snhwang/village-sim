@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "date": "2026-10-11",
+    "seed": 1,
+    "days": 28,
+    "days_per_year": 28,
+    "profile": "paper",
+    "code": {
+      "hearthwick": "f2568aa",
+      "bear": "5334e1e",
+      "bear_version": "0.2.0"
+    }
+  },
+  "arms": [
+    {
+      "told_memory": false,
+      "ticks": 4032,
+      "decisions": 12903,
+      "facts_offered": 2732,
+      "outcomes": {
+        "unchanged": 223,
+        "duplicate": 2509
+      },
+      "already_held": 0.918,
+      "warnings": 467,
+      "warning_pairs": 144,
+      "warned_by": {
+        "knows-warn-about-blight": 271,
+        "knows-warn-about-well": 196
+      }
+    },
+    {
+      "told_memory": true,
+      "ticks": 4032,
+      "decisions": 13505,
+      "facts_offered": 5784,
+      "outcomes": {
+        "unchanged": 485,
+        "duplicate": 5299
+      },
+      "already_held": 0.916,
+      "warnings": 2373,
+      "warning_pairs": 689,
+      "warned_by": {
+        "knows-warn-about-blight": 1534,
+        "knows-warn-about-well": 430,
+        "knows-warn-about-road": 409
+      }
+    }
+  ]
+}

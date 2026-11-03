@@ -1,0 +1,36 @@
+# Time off and vacations are left out of this edition (README), and this
+# folder is never loaded into the corpus (hearthwick/corpus.py, SWITCHED_DIRS:
+# time_off). What stays here are the instructions that belong to a temperament
+# gene, as the paper's runs had them. The gene library reads every such
+# instruction wherever it lives (hearthwick/genome.py), and the order in which
+# alleles first appear there, and the instructions that carry each one, decide
+# the genes a visitor draws and a child is bred with.
+
+instructions:
+  - id: timeoff-easygoing-rest
+    type: directive
+    priority: 48
+    content: You have days of rest saved and nothing pressing needs you. Take a few days off. [!vacation(days=3)]
+    scope: {required_tags: [vacation_due, daytime, temp_easygoing], tags: [at_home, time_evening]}
+    metadata: {gene_category: diligence, dominance: 2.0}
+
+  - id: timeoff-easygoing-family
+    type: directive
+    priority: 50
+    content: You have days of rest saved. Take a few days off with your family, all of you at home together. [!vacation(days=3, with=family)]
+    scope: {required_tags: [vacation_due, with_family, daytime, temp_easygoing], tags: [at_home, near_partner]}
+    metadata: {gene_category: diligence, dominance: 2.0}
+
+  - id: timeoff-diligent-piled-up
+    type: directive
+    priority: 46
+    content: Your days of rest have piled up, and even you can be spared for a while. Take them with your family. [!vacation(days=5, with=family)]
+    scope: {required_tags: [vacation_piled, daytime, temp_diligent], tags: [at_home, with_family]}
+    metadata: {gene_category: diligence}
+
+  - id: timeoff-inquisitive-travel
+    type: directive
+    priority: 48
+    content: You have days of rest saved and have always wondered what lies down the east road. Spend them travelling and see the market towns for yourself. [!vacation(days=4, travel=yes)]
+    scope: {required_tags: [vacation_due, daytime, temp_inquisitive], tags: [with_family, temp_bold]}
+    metadata: {gene_category: curiosity, dominance: 2.0}

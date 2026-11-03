@@ -1,0 +1,16 @@
+# The quarry, where stone is cut and ore is dug (data/goods.yaml): stepped
+# blocks of cut stone and a timber hoist over them.
+design: quarry
+by: the founders
+default_for: quarry
+footprint: [3, 3]
+ground: gravel
+parts:
+  - {id: face, shape: box, size: [2.6, 0.9, 1.0], at: [0, 0.45, -0.9], material: stone}
+  - {id: step, shape: box, size: [2.0, 0.5, 0.8], at: [0.2, 0.25, 0.0], material: pale_stone}
+  - {id: block_a, shape: box, size: [0.5, 0.35, 0.4], at: [-0.9, 0.175, 0.8], material: stone}
+  - {id: block_b, shape: box, size: [0.4, 0.3, 0.4], at: [-0.3, 0.15, 0.9], material: pale_stone}
+  - {id: post_w, shape: box, size: [0.1, 1.6, 0.1], at: [0.9, 0.8, 0.8], material: timber}
+  - {id: post_e, shape: box, size: [0.1, 1.6, 0.1], at: [1.2, 0.8, 0.8], material: timber}
+  - {id: beam, shape: box, size: [0.4, 0.1, 0.12], at: [1.05, 1.65, 0.8], material: dark_timber}
+claims: [store]

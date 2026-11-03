@@ -1,0 +1,4158 @@
+[
+ {
+  "villager": "ada",
+  "name": "Ada",
+  "stage": "adult",
+  "role": "healer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a loom to weave our own cloth",
+  "reply": "",
+  "assessed": null,
+  "attempts": 1,
+  "crafter": "dunn",
+  "drawn": "Ada's home loom",
+  "goes": "home",
+  "does": "weaves wool and flax into household cloth",
+  "looked": "mended",
+  "mended_pictured": false,
+  "size": [
+   1.52,
+   0.86,
+   1.6
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 39,
+  "moves": [],
+  "claims": {},
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": 0.5,
+  "design": {
+   "design": "Ada's home loom",
+   "footprint": [
+    2,
+    2
+   ],
+   "ground": "flagstone",
+   "parts": [
+    {
+     "id": "front_left_post",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.8,
+      0.08
+     ],
+     "material": "timber",
+     "at": [
+      -0.7,
+      0.4,
+      0.55
+     ]
+    },
+    {
+     "id": "front_right_post",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.8,
+      0.08
+     ],
+     "material": "timber",
+     "at": [
+      0.7,
+      0.4,
+      0.55
+     ]
+    },
+    {
+     "id": "back_left_post",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.8,
+      0.08
+     ],
+     "material": "timber",
+     "at": [
+      -0.7,
+      0.4,
+      -0.55
+     ]
+    },
+    {
+     "id": "back_right_post",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.8,
+      0.08
+     ],
+     "material": "timber",
+     "at": [
+      0.7,
+      0.4,
+      -0.55
+     ]
+    },
+    {
+     "id": "front_top_rail",
+     "shape": "box",
+     "size": [
+      1.52,
+      0.07,
+      0.08
+     ],
+     "material": "timber",
+     "at": [
+      0,
+      0.82,
+      0.55
+     ]
+    },
+    {
+     "id": "front_bottom_rail",
+     "shape": "box",
+     "size": [
+      1.52,
+      0.07,
+      0.08
+     ],
+     "material": "timber",
+     "at": [
+      0,
+      0.12,
+      0.55
+     ]
+    },
+    {
+     "id": "back_top_rail",
+     "shape": "box",
+     "size": [
+      1.52,
+      0.07,
+      0.08
+     ],
+     "material": "timber",
+     "at": [
+      0,
+      0.82,
+      -0.55
+     ]
+    },
+    {
+     "id": "back_bottom_rail",
+     "shape": "box",
+     "size": [
+      1.52,
+      0.07,
+      0.08
+     ],
+     "material": "timber",
+     "at": [
+      0,
+      0.12,
+      -0.55
+     ]
+    },
+    {
+     "id": "left_top_side_rail",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.07,
+      1.18
+     ],
+     "material": "timber",
+     "at": [
+      -0.7,
+      0.82,
+      0
+     ]
+    },
+    {
+     "id": "right_top_side_rail",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.07,
+      1.18
+     ],
+     "material": "timber",
+     "at": [
+      0.7,
+      0.82,
+      0
+     ]
+    },
+    {
+     "id": "left_low_side_rail",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.07,
+      1.18
+     ],
+     "material": "timber",
+     "at": [
+      -0.7,
+      0.12,
+      0
+     ]
+    },
+    {
+     "id": "right_low_side_rail",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.07,
+      1.18
+     ],
+     "material": "timber",
+     "at": [
+      0.7,
+      0.12,
+      0
+     ]
+    },
+    {
+     "id": "warp_beam",
+     "shape": "cylinder",
+     "size": [
+      0.055,
+      1.38
+     ],
+     "material": "dark_timber",
+     "at": [
+      0,
+      0.62,
+      -0.55
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "sides": 16
+    },
+    {
+     "id": "cloth_beam",
+     "shape": "cylinder",
+     "size": [
+      0.055,
+      1.38
+     ],
+     "material": "dark_timber",
+     "at": [
+      0,
+      0.58,
+      0.55
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "sides": 16
+    },
+    {
+     "id": "warp_thread_1",
+     "shape": "box",
+     "size": [
+      0.018,
+      0.012,
+      1.1
+     ],
+     "material": "cloth",
+     "at": [
+      -0.36,
+      0.655,
+      0
+     ],
+     "rotation": [
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "id": "warp_thread_2",
+     "shape": "box",
+     "size": [
+      0.018,
+      0.012,
+      1.1
+     ],
+     "material": "cloth",
+     "at": [
+      -0.24,
+      0.655,
+      0
+     ],
+     "rotation": [
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "id": "warp_thread_3",
+     "shape": "box",
+     "size": [
+      0.018,
+      0.012,
+      1.1
+     ],
+     "material": "cloth",
+     "at": [
+      -0.12,
+      0.655,
+      0
+     ],
+     "rotation": [
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "id": "warp_thread_4",
+     "shape": "box",
+     "size": [
+      0.018,
+      0.012,
+      1.1
+     ],
+     "material": "cloth",
+     "at": [
+      0,
+      0.655,
+      0
+     ],
+     "rotation": [
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "id": "warp_thread_5",
+     "shape": "box",
+     "size": [
+      0.018,
+      0.012,
+      1.1
+     ],
+     "material": "cloth",
+     "at": [
+      0.12,
+      0.655,
+      0
+     ],
+     "rotation": [
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "id": "warp_thread_6",
+     "shape": "box",
+     "size": [
+      0.018,
+      0.012,
+      1.1
+     ],
+     "material": "cloth",
+     "at": [
+      0.24,
+      0.655,
+      0
+     ],
+     "rotation": [
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "id": "warp_thread_7",
+     "shape": "box",
+     "size": [
+      0.018,
+      0.012,
+      1.1
+     ],
+     "material": "cloth",
+     "at": [
+      0.36,
+      0.655,
+      0
+     ],
+     "rotation": [
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "id": "finished_cloth",
+     "shape": "box",
+     "size": [
+      0.9,
+      0.22,
+      0.012
+     ],
+     "material": "cloth",
+     "at": [
+      0,
+      0.47,
+      0.61
+     ]
+    },
+    {
+     "id": "heddle_hanger_left",
+     "shape": "box",
+     "size": [
+      0.018,
+      0.13,
+      0.018
+     ],
+     "material": "cloth",
+     "at": [
+      -0.48,
+      0.775,
+      0
+     ]
+    },
+    {
+     "id": "heddle_hanger_right",
+     "shape": "box",
+     "size": [
+      0.018,
+      0.13,
+      0.018
+     ],
+     "material": "cloth",
+     "at": [
+      0.48,
+      0.775,
+      0
+     ]
+    },
+    {
+     "id": "heddle_top",
+     "shape": "box",
+     "size": [
+      0.9,
+      0.035,
+      0.035
+     ],
+     "material": "timber",
+     "at": [
+      0,
+      0.7,
+      0
+     ]
+    },
+    {
+     "id": "heddle_bottom",
+     "shape": "box",
+     "size": [
+      0.9,
+      0.035,
+      0.035
+     ],
+     "material": "timber",
+     "at": [
+      0,
+      0.52,
+      0
+     ]
+    },
+    {
+     "id": "heddle_left",
+     "shape": "box",
+     "size": [
+      0.035,
+      0.215,
+      0.035
+     ],
+     "material": "timber",
+     "at": [
+      -0.45,
+      0.61,
+      0
+     ]
+    },
+    {
+     "id": "heddle_right",
+     "shape": "box",
+     "size": [
+      0.035,
+      0.215,
+      0.035
+     ],
+     "material": "timber",
+     "at": [
+      0.45,
+      0.61,
+      0
+     ]
+    },
+    {
+     "id": "heddle_cord_1",
+     "shape": "box",
+     "size": [
+      0.01,
+      0.18,
+      0.01
+     ],
+     "material": "cloth",
+     "at": [
+      -0.3,
+      0.61,
+      0
+     ]
+    },
+    {
+     "id": "heddle_cord_2",
+     "shape": "box",
+     "size": [
+      0.01,
+      0.18,
+      0.01
+     ],
+     "material": "cloth",
+     "at": [
+      -0.15,
+      0.61,
+      0
+     ]
+    },
+    {
+     "id": "heddle_cord_3",
+     "shape": "box",
+     "size": [
+      0.01,
+      0.18,
+      0.01
+     ],
+     "material": "cloth",
+     "at": [
+      0,
+      0.61,
+      0
+     ]
+    },
+    {
+     "id": "heddle_cord_4",
+     "shape": "box",
+     "size": [
+      0.01,
+      0.18,
+      0.01
+     ],
+     "material": "cloth",
+     "at": [
+      0.15,
+      0.61,
+      0
+     ]
+    },
+    {
+     "id": "heddle_cord_5",
+     "shape": "box",
+     "size": [
+      0.01,
+      0.18,
+      0.01
+     ],
+     "material": "cloth",
+     "at": [
+      0.3,
+      0.61,
+      0
+     ]
+    },
+    {
+     "id": "beater_left_upright",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.68,
+      0.04
+     ],
+     "material": "timber",
+     "at": [
+      -0.52,
+      0.34,
+      0.25
+     ]
+    },
+    {
+     "id": "beater_right_upright",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.68,
+      0.04
+     ],
+     "material": "timber",
+     "at": [
+      0.52,
+      0.34,
+      0.25
+     ]
+    },
+    {
+     "id": "reed_bar",
+     "shape": "box",
+     "size": [
+      1.08,
+      0.05,
+      0.035
+     ],
+     "material": "timber",
+     "at": [
+      0,
+      0.6,
+      0.25
+     ]
+    },
+    {
+     "id": "left_treadle",
+     "shape": "box",
+     "size": [
+      0.2,
+      0.05,
+      0.42
+     ],
+     "material": "dark_timber",
+     "at": [
+      -0.18,
+      0.025,
+      0.78
+     ]
+    },
+    {
+     "id": "right_treadle",
+     "shape": "box",
+     "size": [
+      0.2,
+      0.05,
+      0.42
+     ],
+     "material": "dark_timber",
+     "at": [
+      0.18,
+      0.025,
+      0.78
+     ]
+    },
+    {
+     "id": "shuttle",
+     "shape": "box",
+     "size": [
+      0.26,
+      0.05,
+      0.08
+     ],
+     "material": "dark_timber",
+     "at": [
+      0,
+      0.675,
+      0.32
+     ]
+    }
+   ],
+   "claims": [],
+   "goes": "home",
+   "does": "weaves wool and flax into household cloth",
+   "by": "dunn",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "corin",
+  "name": "Corin",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "given",
+  "kind": "make",
+  "want": "a windlass to haul the millstones",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "millstone windlass",
+  "goes": "mill",
+  "does": "hauls millstones up for setting and mending",
+  "looked": "",
+  "mended_pictured": true,
+  "size": [
+   1.2,
+   1.53,
+   0.74
+  ],
+  "accepted": false,
+  "reasons": [
+   "slide needs two values and a period"
+  ],
+  "parts": 24,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"millstone windlass\",\"footprint\":[2,2],\"ground\":\"flagstone\",\"parts\":[\n{\"id\":\"left_foot\",\"shape\":\"box\",\"size\":[0.24,0.1,0.7],\"material\":\"stone\",\"at\":[-0.48,0.05,0]},\n{\"id\":\"right_foot\",\"shape\":\"box\",\"size\":[0.24,0.1,0.7],\"material\":\"stone\",\"at\":[0.48,0.05,0]},\n{\"id\":\"front_left_post\",\"shape\":\"box\",\"size\":[0.09,1.5,0.09],\"material\":\"timber\",\"at\":[-0.48,0.75,-0.32]},\n{\"id\":\"back_left_post\",\"shape\":\"box\",\"size\":[0.09,1.5,0.09],\"material\":\"timber\",\"at\":[-0.48,0.75,0.32]},\n{\"id\":\"front_right_post\",\"shape\":\"box\",\"size\":[0.09,1.5,0.09],\"material\":\"timber\",\"at\":[0.48,0.75,-0.32]},\n{\"id\":\"back_right_post\",\"shape\":\"box\",\"size\":[0.09,1.5,0.09],\"material\":\"timber\",\"at\":[0.48,0.75,0.32]},\n{\"id\":\"left_bearing_prop\",\"shape\":\"box\",\"size\":[0.12,1.16,0.72],\"material\":\"timber\",\"at\":[-0.48,0.58,0]},\n{\"id\":\"right_bearing_prop\",\"shape\":\"box\",\"size\":[0.12,1.16,0.72],\"material\":\"timber\",\"at\":[0.48,0.58,0]},\n{\"id\":\"top_front_beam\",\"shape\":\"box\",\"size\":[1.1,0.1,0.1],\"material\":\"dark_timber\",\"at\":[0,1.48,-0.32]},\n{\"id\":\"top_back_beam\",\"shape\":\"box\",\"size\":[1.1,0.1,0.1],\"material\":\"dark_timber\",\"at\":[0,1.48,0.32]},\n{\"id\":\"left_side_beam\",\"shape\":\"box\",\"size\":[0.1,0.1,0.72],\"material\":\"dark_timber\",\"at\":[-0.48,1.48,0]},\n{\"id\":\"right_side_beam\",\"shape\":\"box\",\"size\":[0.1,0.1,0.72],\"material\":\"dark_timber\",\"at\":[0.48,1.48,0]},\n{\"id\":\"left_guide\",\"shape\":\"box\",\"size\":[0.08,1.12,0.08],\"material\":\"timber\",\"at\":[-0.35,0.78,0]},\n{\"id\":\"right_guide\",\"shape\":\"box\",\"size\":[0.08,1.12,0.08],\"material\":\"timber\",\"at\":[0.35,0.78,0]},\n{\"id\":\"drum\",\"shape\":\"cylinder\",\"size\":[0.12,0.86],\"material\":\"dark_timber\",\"at\":[0,1.26,0],\"rotation\":[0,0,90],\"sides\":16},\n{\"id\":\"left_bearing\",\"shape\":\"box\",\"size\":[0.1,0.18,0.72],\"material\":\"iron\",\"at\":[-0.48,1.25,0]},\n{\"id\":\"right_bearing\",\"shape\":\"box\",\"size\":[0.1,0.18,0.72],\"material\":\"iron\",\"at\":[0.48,1.25,0]},\n{\"id\":\"rope_coil\",\"shape\":\"wheel\",\"size\":[0.18,0.16],\"material\":\"cloth\",\"at\":[0,1.26,0],\"rotation\":[0,0,0],\"parent\":\"drum\",\"sides\":16},\n{\"id\":\"crank_arm\",\"shape\":\"box\",\"size\":[0.04,0.04,0.34],\"material\":\"dark_timber\",\"at\":[-0.58,1.26,0.17],\"rotation\":[0,0,90],\"parent\":\"drum\"},\n{\"id\":\"crank_handle\",\"shape\":\"cylinder\",\"size\":[0.025,0.22],\"material\":\"timber\",\"at\":[-0.58,1.09,0.17],\"rotation\":[90,0,0],\"parent\":\"drum\",\"sides\":12},\n{\"id\":\"lifting_bar\",\"shape\":\"box\",\"size\":[0.62,0.08,0.08],\"material\":\"iron\",\"at\":[0,0.5,0]},\n{\"id\":\"left_sling\",\"shape\":\"cylinder\",\"size\":[0.014,0.26],\"material\":\"cloth\",\"at\":[-0.18,0.39,0],\"parent\":\"lifting_bar\",\"sides\":8},\n{\"id\":\"right_sling\",\"shape\":\"cylinder\",\"size\":[0.014,0.26],\"material\":\"cloth\",\"at\":[0.18,0.39,0],\"parent\":\"lifting_bar\",\"sides\":8},\n{\"id\":\"bottom_sling_bar\",\"shape\":\"box\",\"size\":[0.46,0.035,0.06],\"material\":\"iron\",\"at\":[0,0.27,0],\"parent\":\"lifting_bar\"}\n],\"joints\":[{\"part\":\"drum\",\"kind\":\"hinge\",\"axis\":\"x\"},{\"part\":\"lifting_bar\",\"kind\":\"slider\",\"axis\":\"y\"}],\"movements\":[{\"joint\":\"drum\",\"spin\":18,\"when\":\"worked\"},{\"joint\":\"lifting_bar\",\"slide\":[0,0.56],\"seconds\":8,\"when\":\"worked\"}],\"claims\":[\"lift\"],\"goes\":\"mill\",\"does\":\"hauls millstones up for setting and mending\"}"
+ },
+ {
+  "villager": "dunn",
+  "name": "Dunn",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a strong wheel to stop the ice",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "wynn",
+  "drawn": "ice-stop stone grinder",
+  "goes": "mill",
+  "does": "grinds meal while the iron-bitted wheel breaks ice away from the race",
+  "looked": "mended",
+  "mended_pictured": true,
+  "size": [
+   2.54,
+   2.02,
+   2.77
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 16,
+  "moves": [
+   "spin axle",
+   "spin runner_stone"
+  ],
+  "claims": {
+   "grind": true
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": true,
+  "cost": 0.5,
+  "design": {
+   "design": "ice-stop stone grinder",
+   "footprint": [
+    3,
+    3
+   ],
+   "ground": "flagstone",
+   "parts": [
+    {
+     "id": "foot_west",
+     "shape": "box",
+     "size": [
+      0.45,
+      0.2,
+      0.45
+     ],
+     "at": [
+      -0.88,
+      0.1,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "foot_east",
+     "shape": "box",
+     "size": [
+      0.45,
+      0.2,
+      0.45
+     ],
+     "at": [
+      0.88,
+      0.1,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "post_west",
+     "shape": "box",
+     "size": [
+      0.18,
+      0.9,
+      0.18
+     ],
+     "at": [
+      -0.88,
+      0.55,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "post_east",
+     "shape": "box",
+     "size": [
+      0.18,
+      0.9,
+      0.18
+     ],
+     "at": [
+      0.88,
+      0.55,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "saddle_west",
+     "shape": "box",
+     "size": [
+      0.32,
+      0.08,
+      0.32
+     ],
+     "at": [
+      -0.88,
+      1.04,
+      0
+     ],
+     "material": "pale_stone"
+    },
+    {
+     "id": "saddle_east",
+     "shape": "box",
+     "size": [
+      0.32,
+      0.08,
+      0.32
+     ],
+     "at": [
+      0.88,
+      1.04,
+      0
+     ],
+     "material": "pale_stone"
+    },
+    {
+     "id": "axle",
+     "shape": "cylinder",
+     "size": [
+      0.055,
+      2.05
+     ],
+     "at": [
+      0,
+      1.135,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "sides": 24,
+     "material": "dark_timber"
+    },
+    {
+     "id": "wheel_body",
+     "shape": "wheel",
+     "size": [
+      0.68,
+      0.18
+     ],
+     "at": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "parent": "axle",
+     "material": "timber",
+     "rotation": [
+      0.0,
+      0.0,
+      -90.0
+     ]
+    },
+    {
+     "id": "ice_paddle",
+     "shape": "box",
+     "size": [
+      0.95,
+      0.1,
+      0.16
+     ],
+     "at": [
+      0.0,
+      0.0,
+      0.76
+     ],
+     "parent": "axle",
+     "repeat": 8,
+     "material": "dark_timber",
+     "rotation": [
+      0.0,
+      0.0,
+      -90.0
+     ]
+    },
+    {
+     "id": "iron_biter",
+     "shape": "box",
+     "size": [
+      0.98,
+      0.04,
+      0.04
+     ],
+     "at": [
+      0.0,
+      0.0,
+      0.86
+     ],
+     "parent": "axle",
+     "repeat": 8,
+     "material": "iron",
+     "rotation": [
+      0.0,
+      0.0,
+      -90.0
+     ]
+    },
+    {
+     "id": "ice_splitter_left",
+     "shape": "box",
+     "size": [
+      0.12,
+      0.18,
+      1.0
+     ],
+     "at": [
+      -0.34,
+      0.09,
+      0.95
+     ],
+     "rotation": [
+      0,
+      22,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "ice_splitter_right",
+     "shape": "box",
+     "size": [
+      0.12,
+      0.18,
+      1.0
+     ],
+     "at": [
+      0.34,
+      0.09,
+      0.95
+     ],
+     "rotation": [
+      0,
+      -22,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "tail_sill",
+     "shape": "box",
+     "size": [
+      1.6,
+      0.12,
+      0.12
+     ],
+     "at": [
+      0,
+      0.06,
+      -0.65
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "mill_bedstone",
+     "shape": "cylinder",
+     "size": [
+      0.38,
+      0.26
+     ],
+     "at": [
+      1.05,
+      0.17,
+      -0.95
+     ],
+     "sides": 24,
+     "material": "pale_stone"
+    },
+    {
+     "id": "runner_stone",
+     "shape": "cylinder",
+     "size": [
+      0.34,
+      0.18
+     ],
+     "at": [
+      1.05,
+      0.39,
+      -0.95
+     ],
+     "sides": 24,
+     "material": "stone"
+    },
+    {
+     "id": "stone_eye",
+     "shape": "cylinder",
+     "size": [
+      0.055,
+      0.12
+     ],
+     "at": [
+      0.0,
+      0.12,
+      0.0
+     ],
+     "parent": "runner_stone",
+     "sides": 16,
+     "material": "iron"
+    }
+   ],
+   "joints": [
+    {
+     "part": "axle",
+     "kind": "hinge",
+     "axis": "y"
+    },
+    {
+     "part": "runner_stone",
+     "kind": "hinge",
+     "axis": "y"
+    }
+   ],
+   "movements": [
+    {
+     "joint": "axle",
+     "spin": 14,
+     "when": "worked"
+    },
+    {
+     "joint": "runner_stone",
+     "spin": 28,
+     "when": "worked"
+    }
+   ],
+   "claims": [
+    "grind"
+   ],
+   "goes": "mill",
+   "does": "grinds meal while the iron-bitted wheel breaks ice away from the race",
+   "by": "wynn",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "edda",
+  "name": "Edda",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a wedge to hold the cogs",
+  "reply": "",
+  "assessed": null,
+  "attempts": 1,
+  "crafter": "gorm",
+  "drawn": "cog-holding wedge",
+  "goes": "mill",
+  "does": "wedges between the mill cogs to hold them still while Edda works",
+  "looked": "right",
+  "mended_pictured": false,
+  "size": [
+   0.6,
+   0.17,
+   0.18
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 5,
+  "moves": [],
+  "claims": {},
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": 0.5,
+  "design": {
+   "design": "cog-holding wedge",
+   "footprint": [
+    1,
+    1
+   ],
+   "ground": "flagstone",
+   "parts": [
+    {
+     "id": "nose",
+     "shape": "box",
+     "size": [
+      0.16,
+      0.04,
+      0.18
+     ],
+     "at": [
+      -0.18,
+      0.02,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "middle",
+     "shape": "box",
+     "size": [
+      0.18,
+      0.08,
+      0.18
+     ],
+     "at": [
+      0,
+      0.04,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "heel",
+     "shape": "box",
+     "size": [
+      0.16,
+      0.13,
+      0.18
+     ],
+     "at": [
+      0.18,
+      0.065,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "iron_bite",
+     "shape": "box",
+     "size": [
+      0.2,
+      0.025,
+      0.16
+     ],
+     "at": [
+      0.12,
+      0.145,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      -10
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "pull_hole_lip",
+     "shape": "cylinder",
+     "size": [
+      0.055,
+      0.025
+     ],
+     "at": [
+      0.28,
+      0.08,
+      0
+     ],
+     "rotation": [
+      90,
+      0,
+      0
+     ],
+     "sides": 16,
+     "open": true,
+     "material": "iron"
+    }
+   ],
+   "claims": [],
+   "goes": "mill",
+   "does": "wedges between the mill cogs to hold them still while Edda works",
+   "by": "gorm",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "edek",
+  "name": "Edek",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a pump to pull the floodwater out",
+  "reply": "",
+  "assessed": null,
+  "attempts": 1,
+  "crafter": "wynn",
+  "drawn": "Edek's flood pump",
+  "goes": "fields",
+  "does": "pulls floodwater from the rows to the ditch",
+  "looked": "mended",
+  "mended_pictured": false,
+  "size": [
+   1.9,
+   1.38,
+   2.05
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 16,
+  "moves": [
+   "spin axle"
+  ],
+  "claims": {
+   "pump": true
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": true,
+  "cost": 0.5,
+  "design": {
+   "design": "Edek's flood pump",
+   "footprint": [
+    3,
+    2
+   ],
+   "ground": "gravel",
+   "parts": [
+    {
+     "id": "skid_left",
+     "shape": "box",
+     "size": [
+      0.12,
+      0.12,
+      1.6
+     ],
+     "at": [
+      -0.7,
+      0.06,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "skid_right",
+     "shape": "box",
+     "size": [
+      0.12,
+      0.12,
+      1.6
+     ],
+     "at": [
+      0.7,
+      0.06,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "tie_front",
+     "shape": "box",
+     "size": [
+      1.55,
+      0.1,
+      0.1
+     ],
+     "at": [
+      0,
+      0.16,
+      0.65
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "tie_back",
+     "shape": "box",
+     "size": [
+      1.55,
+      0.1,
+      0.1
+     ],
+     "at": [
+      0,
+      0.16,
+      -0.65
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "post_left",
+     "shape": "box",
+     "size": [
+      0.12,
+      1.2,
+      0.12
+     ],
+     "at": [
+      -0.58,
+      0.66,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "post_right",
+     "shape": "box",
+     "size": [
+      0.12,
+      1.2,
+      0.12
+     ],
+     "at": [
+      0.58,
+      0.66,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "bearing_left",
+     "shape": "box",
+     "size": [
+      0.18,
+      0.08,
+      0.18
+     ],
+     "at": [
+      -0.42,
+      0.755,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "bearing_right",
+     "shape": "box",
+     "size": [
+      0.18,
+      0.08,
+      0.18
+     ],
+     "at": [
+      0.42,
+      0.755,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "top_beam",
+     "shape": "box",
+     "size": [
+      1.35,
+      0.12,
+      0.16
+     ],
+     "at": [
+      0,
+      1.32,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "axle",
+     "shape": "cylinder",
+     "size": [
+      0.045,
+      1.04
+     ],
+     "at": [
+      0,
+      0.84,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "flywheel",
+     "shape": "wheel",
+     "size": [
+      0.42,
+      0.1
+     ],
+     "at": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "parent": "axle",
+     "material": "dark_timber",
+     "rotation": [
+      0.0,
+      0.0,
+      -90.0
+     ]
+    },
+    {
+     "id": "pump_barrel",
+     "shape": "cylinder",
+     "size": [
+      0.16,
+      0.72
+     ],
+     "sides": 16,
+     "open": true,
+     "at": [
+      0.95,
+      0.38,
+      -0.35
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "iron_cap",
+     "shape": "cylinder",
+     "size": [
+      0.17,
+      0.06
+     ],
+     "sides": 16,
+     "at": [
+      0.95,
+      0.77,
+      -0.35
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "outlet_trough",
+     "shape": "box",
+     "size": [
+      0.14,
+      0.08,
+      0.9
+     ],
+     "at": [
+      0.95,
+      0.66,
+      0.2
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "outlet_post",
+     "shape": "box",
+     "size": [
+      0.06,
+      0.6,
+      0.06
+     ],
+     "at": [
+      0.95,
+      0.32,
+      0.55
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "intake_pipe",
+     "shape": "cylinder",
+     "size": [
+      0.05,
+      0.8
+     ],
+     "sides": 12,
+     "at": [
+      0.95,
+      0.18,
+      -0.85
+     ],
+     "rotation": [
+      90,
+      0,
+      0
+     ],
+     "material": "iron"
+    }
+   ],
+   "joints": [
+    {
+     "part": "axle",
+     "kind": "hinge",
+     "axis": "y"
+    }
+   ],
+   "movements": [
+    {
+     "joint": "axle",
+     "spin": 45,
+     "when": "worked"
+    }
+   ],
+   "claims": [
+    "pump"
+   ],
+   "goes": "fields",
+   "does": "pulls floodwater from the rows to the ditch",
+   "by": "wynn",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "fen",
+  "name": "Fen",
+  "stage": "adult",
+  "role": "farmer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a sturdy wheel to keep the mill turning",
+  "reply": "",
+  "assessed": null,
+  "attempts": 2,
+  "crafter": "edda",
+  "drawn": "Fen's load-taking mill wheel",
+  "goes": "mill",
+  "does": "keeps Fen's millstones turning steady against the meal load",
+  "looked": "mended",
+  "mended_pictured": true,
+  "size": [
+   2.2,
+   1.98,
+   1.38
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 21,
+  "moves": [
+   "spin main_axle",
+   "spin runner_stone"
+  ],
+  "claims": {
+   "grind": true
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": true,
+  "cost": 0.5,
+  "design": {
+   "design": "Fen's load-taking mill wheel",
+   "footprint": [
+    3,
+    2
+   ],
+   "ground": "flagstone",
+   "parts": [
+    {
+     "id": "left_footing",
+     "shape": "box",
+     "size": [
+      0.35,
+      0.18,
+      0.8
+     ],
+     "at": [
+      -0.65,
+      0.09,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "right_footing",
+     "shape": "box",
+     "size": [
+      0.35,
+      0.18,
+      0.8
+     ],
+     "at": [
+      0.65,
+      0.09,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "left_post",
+     "shape": "box",
+     "size": [
+      0.16,
+      1.8,
+      0.16
+     ],
+     "at": [
+      -0.65,
+      1.08,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "right_post",
+     "shape": "box",
+     "size": [
+      0.16,
+      1.8,
+      0.16
+     ],
+     "at": [
+      0.65,
+      1.08,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "top_tie",
+     "shape": "box",
+     "size": [
+      1.6,
+      0.12,
+      0.18
+     ],
+     "at": [
+      0,
+      1.84,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "left_bearing",
+     "shape": "box",
+     "size": [
+      0.24,
+      0.12,
+      0.24
+     ],
+     "at": [
+      -0.65,
+      0.87,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "right_bearing",
+     "shape": "box",
+     "size": [
+      0.24,
+      0.12,
+      0.24
+     ],
+     "at": [
+      0.65,
+      0.87,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "main_axle",
+     "shape": "cylinder",
+     "size": [
+      0.07,
+      1.65
+     ],
+     "at": [
+      0,
+      1,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "timber",
+     "sides": 16
+    },
+    {
+     "id": "drive_wheel",
+     "shape": "wheel",
+     "size": [
+      0.6,
+      0.2
+     ],
+     "at": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "parent": "main_axle",
+     "material": "dark_timber",
+     "rotation": [
+      0.0,
+      0.0,
+      -90.0
+     ]
+    },
+    {
+     "id": "hub",
+     "shape": "cylinder",
+     "size": [
+      0.16,
+      0.28
+     ],
+     "at": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rotation": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "parent": "main_axle",
+     "material": "dark_timber",
+     "sides": 16
+    },
+    {
+     "id": "spoke",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.48,
+      0.05
+     ],
+     "at": [
+      0.26,
+      0.0,
+      0.0
+     ],
+     "parent": "main_axle",
+     "repeat": 8,
+     "material": "timber",
+     "rotation": [
+      0.0,
+      0.0,
+      -90.0
+     ]
+    },
+    {
+     "id": "rim_paddle",
+     "shape": "box",
+     "size": [
+      0.16,
+      0.1,
+      0.32
+     ],
+     "at": [
+      0.64,
+      0.0,
+      0.0
+     ],
+     "parent": "main_axle",
+     "repeat": 12,
+     "material": "timber",
+     "rotation": [
+      0.0,
+      0.0,
+      -90.0
+     ]
+    },
+    {
+     "id": "millstone_pedestal",
+     "shape": "box",
+     "size": [
+      0.55,
+      0.55,
+      0.55
+     ],
+     "at": [
+      1.1,
+      0.275,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "bedstone",
+     "shape": "cylinder",
+     "size": [
+      0.28,
+      0.12
+     ],
+     "at": [
+      1.1,
+      0.61,
+      0
+     ],
+     "material": "pale_stone",
+     "sides": 24
+    },
+    {
+     "id": "runner_stone",
+     "shape": "cylinder",
+     "size": [
+      0.27,
+      0.14
+     ],
+     "at": [
+      1.1,
+      0.74,
+      0
+     ],
+     "material": "stone",
+     "sides": 24
+    },
+    {
+     "id": "meal_trough",
+     "shape": "box",
+     "size": [
+      0.55,
+      0.12,
+      0.25
+     ],
+     "at": [
+      1.1,
+      0.06,
+      0.4
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "hopper_leg_nw",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.62,
+      0.04
+     ],
+     "at": [
+      0.92,
+      0.88,
+      -0.24
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "hopper_leg_ne",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.62,
+      0.04
+     ],
+     "at": [
+      1.28,
+      0.88,
+      -0.24
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "hopper_leg_sw",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.62,
+      0.04
+     ],
+     "at": [
+      0.92,
+      0.88,
+      0.24
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "hopper_leg_se",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.62,
+      0.04
+     ],
+     "at": [
+      1.28,
+      0.88,
+      0.24
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "grain_hopper",
+     "shape": "box",
+     "size": [
+      0.45,
+      0.22,
+      0.45
+     ],
+     "at": [
+      1.1,
+      1.16,
+      0
+     ],
+     "material": "timber"
+    }
+   ],
+   "joints": [
+    {
+     "part": "main_axle",
+     "kind": "hinge",
+     "axis": "y"
+    },
+    {
+     "part": "runner_stone",
+     "kind": "hinge",
+     "axis": "y"
+    }
+   ],
+   "movements": [
+    {
+     "joint": "main_axle",
+     "spin": 36,
+     "when": "worked"
+    },
+    {
+     "joint": "runner_stone",
+     "spin": 30,
+     "when": "worked"
+    }
+   ],
+   "claims": [
+    "grind"
+   ],
+   "goes": "mill",
+   "does": "keeps Fen's millstones turning steady against the meal load",
+   "by": "edda",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "freya",
+  "name": "Freya",
+  "stage": "elder",
+  "role": "farmer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a lever to lift the heavy stones",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "gorm",
+  "drawn": "Freya's lever jack",
+  "goes": "quarry",
+  "does": "lifts Freya's heavy stones at the quarry",
+  "looked": "",
+  "mended_pictured": true,
+  "size": [
+   2.4,
+   1.4,
+   0.6
+  ],
+  "accepted": false,
+  "reasons": [
+   "slide needs two values and a period"
+  ],
+  "parts": 14,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"Freya's lever jack\",\"footprint\":[4,2],\"ground\":\"gravel\",\"parts\":[\n{\"id\":\"base_slab\",\"shape\":\"box\",\"size\":[1.0,0.08,0.6],\"at\":[-0.45,0.04,0],\"material\":\"stone\"},\n{\"id\":\"fulcrum_pier\",\"shape\":\"box\",\"size\":[0.24,0.48,0.3],\"at\":[-0.45,0.32,0],\"material\":\"stone\"},\n{\"id\":\"fulcrum_roller\",\"shape\":\"cylinder\",\"size\":[0.09,0.38],\"sides\":16,\"at\":[-0.45,0.65,0],\"rotation\":[90,0,0],\"material\":\"pale_stone\"},\n{\"id\":\"cheek_north\",\"shape\":\"box\",\"size\":[0.06,1.05,0.06],\"at\":[-0.45,0.525,0.23],\"material\":\"timber\"},\n{\"id\":\"cheek_south\",\"shape\":\"box\",\"size\":[0.06,1.05,0.06],\"at\":[-0.45,0.525,-0.23],\"material\":\"timber\"},\n{\"id\":\"lever_beam\",\"shape\":\"box\",\"size\":[2.2,0.08,0.12],\"at\":[0.35,0.735,0],\"material\":\"dark_timber\"},\n{\"id\":\"hand_grip\",\"shape\":\"cylinder\",\"size\":[0.035,0.48],\"sides\":12,\"at\":[-0.82,0.735,0],\"rotation\":[90,0,0],\"parent\":\"lever_beam\",\"material\":\"timber\"},\n{\"id\":\"guide_north\",\"shape\":\"box\",\"size\":[0.08,1.35,0.08],\"at\":[0.98,0.675,0.22],\"material\":\"timber\"},\n{\"id\":\"guide_south\",\"shape\":\"box\",\"size\":[0.08,1.35,0.08],\"at\":[0.98,0.675,-0.22],\"material\":\"timber\"},\n{\"id\":\"guide_cap\",\"shape\":\"box\",\"size\":[0.6,0.08,0.52],\"at\":[0.98,1.36,0],\"material\":\"timber\"},\n{\"id\":\"stone_pan\",\"shape\":\"box\",\"size\":[0.52,0.1,0.36],\"at\":[0.98,0.38,0],\"material\":\"iron\"},\n{\"id\":\"lifting_toe\",\"shape\":\"box\",\"size\":[0.05,0.2,0.36],\"at\":[1.25,0.48,0],\"parent\":\"stone_pan\",\"material\":\"iron\"},\n{\"id\":\"back_lip\",\"shape\":\"box\",\"size\":[0.05,0.2,0.36],\"at\":[0.71,0.48,0],\"parent\":\"stone_pan\",\"material\":\"iron\"},\n{\"id\":\"stone_load\",\"shape\":\"box\",\"size\":[0.28,0.18,0.24],\"at\":[0.98,0.52,0],\"material\":\"stone\"}\n],\"joints\":[{\"part\":\"lever_beam\",\"kind\":\"hinge\",\"axis\":\"z\",\"pivot\":[-0.8,-0.045,0]},{\"part\":\"stone_pan\",\"kind\":\"slider\",\"axis\":\"y\"}],\"movements\":[{\"joint\":\"lever_beam\",\"open\":45,\"seconds\":3,\"when\":\"worked\"},{\"joint\":\"stone_pan\",\"slide\":[0,0.65],\"seconds\":3,\"when\":\"worked\"}],\"claims\":[\"lift\"],\"goes\":\"quarry\",\"does\":\"lifts Freya's heavy stones at the quarry\"}"
+ },
+ {
+  "villager": "garrick",
+  "name": "Garrick",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a forge to mend the plows",
+  "reply": "",
+  "assessed": null,
+  "attempts": 2,
+  "crafter": "gorm",
+  "drawn": "Garrick's plow forge",
+  "goes": "forge",
+  "does": "heats and hammers plowshares back into shape under a dry roof",
+  "looked": "right",
+  "mended_pictured": true,
+  "size": [
+   4.8,
+   1.8,
+   3.6
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 32,
+  "moves": [],
+  "claims": {
+   "shelter": true,
+   "store": true
+  },
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": 0.56,
+  "design": {
+   "design": "Garrick's plow forge",
+   "footprint": [
+    5,
+    4
+   ],
+   "ground": "flagstone",
+   "parts": [
+    {
+     "id": "floor",
+     "shape": "box",
+     "size": [
+      4.8,
+      0.04,
+      3.6
+     ],
+     "at": [
+      0,
+      0.02,
+      0
+     ],
+     "material": "flagstone"
+    },
+    {
+     "id": "post_front_left",
+     "shape": "box",
+     "size": [
+      0.12,
+      1.2,
+      0.12
+     ],
+     "at": [
+      -2.15,
+      0.6,
+      1.45
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "post_front_right",
+     "shape": "box",
+     "size": [
+      0.12,
+      1.2,
+      0.12
+     ],
+     "at": [
+      2.15,
+      0.6,
+      1.45
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "post_back_left",
+     "shape": "box",
+     "size": [
+      0.12,
+      1.2,
+      0.12
+     ],
+     "at": [
+      -2.15,
+      0.6,
+      -1.45
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "post_back_right",
+     "shape": "box",
+     "size": [
+      0.12,
+      1.2,
+      0.12
+     ],
+     "at": [
+      2.15,
+      0.6,
+      -1.45
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "beam_front",
+     "shape": "box",
+     "size": [
+      4.5,
+      0.12,
+      0.12
+     ],
+     "at": [
+      0,
+      1.24,
+      1.45
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "beam_back",
+     "shape": "box",
+     "size": [
+      4.5,
+      0.12,
+      0.12
+     ],
+     "at": [
+      0,
+      1.24,
+      -1.45
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "beam_left",
+     "shape": "box",
+     "size": [
+      0.12,
+      0.12,
+      3.0
+     ],
+     "at": [
+      -2.15,
+      1.24,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "beam_right",
+     "shape": "box",
+     "size": [
+      0.12,
+      0.12,
+      3.0
+     ],
+     "at": [
+      2.15,
+      1.24,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "roof_left",
+     "shape": "box",
+     "size": [
+      0.7,
+      0.08,
+      3.2
+     ],
+     "at": [
+      -2.05,
+      1.34,
+      0
+     ],
+     "material": "shingle"
+    },
+    {
+     "id": "roof_right",
+     "shape": "box",
+     "size": [
+      3.3,
+      0.08,
+      3.2
+     ],
+     "at": [
+      0.75,
+      1.34,
+      0
+     ],
+     "material": "shingle"
+    },
+    {
+     "id": "roof_front_patch",
+     "shape": "box",
+     "size": [
+      0.8,
+      0.08,
+      2.3
+     ],
+     "at": [
+      -1.3,
+      1.34,
+      0.45
+     ],
+     "material": "shingle"
+    },
+    {
+     "id": "back_wall",
+     "shape": "box",
+     "size": [
+      4.4,
+      0.75,
+      0.12
+     ],
+     "at": [
+      0,
+      0.375,
+      -1.65
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "left_wind_wall",
+     "shape": "box",
+     "size": [
+      0.12,
+      0.65,
+      1.1
+     ],
+     "at": [
+      -2.25,
+      0.325,
+      -0.8
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "hearth_base",
+     "shape": "box",
+     "size": [
+      1.25,
+      0.35,
+      0.85
+     ],
+     "at": [
+      -1.25,
+      0.175,
+      -1.05
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "firebed",
+     "shape": "box",
+     "size": [
+      0.95,
+      0.08,
+      0.55
+     ],
+     "at": [
+      -1.25,
+      0.39,
+      -1.05
+     ],
+     "material": "pale_stone"
+    },
+    {
+     "id": "glow_coals",
+     "shape": "cylinder",
+     "size": [
+      0.22,
+      0.04
+     ],
+     "sides": 12,
+     "at": [
+      -1.25,
+      0.45,
+      -1.05
+     ],
+     "material": "glass"
+    },
+    {
+     "id": "chimney",
+     "shape": "cylinder",
+     "size": [
+      0.3,
+      1.8
+     ],
+     "sides": 12,
+     "open": true,
+     "at": [
+      -1.3,
+      0.9,
+      -1.25
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "anvil_stump",
+     "shape": "box",
+     "size": [
+      0.34,
+      0.45,
+      0.34
+     ],
+     "at": [
+      0.55,
+      0.225,
+      -0.35
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "anvil_body",
+     "shape": "box",
+     "size": [
+      0.5,
+      0.18,
+      0.22
+     ],
+     "at": [
+      0.55,
+      0.54,
+      -0.35
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "anvil_horn",
+     "shape": "cone",
+     "size": [
+      0.11,
+      0.34
+     ],
+     "at": [
+      0.97,
+      0.54,
+      -0.35
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "quench_tub",
+     "shape": "cylinder",
+     "size": [
+      0.28,
+      0.3
+     ],
+     "sides": 12,
+     "open": true,
+     "at": [
+      1.35,
+      0.15,
+      -0.2
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "quench_water",
+     "shape": "cylinder",
+     "size": [
+      0.24,
+      0.02
+     ],
+     "sides": 12,
+     "at": [
+      1.35,
+      0.29,
+      -0.2
+     ],
+     "material": "water"
+    },
+    {
+     "id": "work_bench_top",
+     "shape": "box",
+     "size": [
+      1.25,
+      0.1,
+      0.5
+     ],
+     "at": [
+      0.8,
+      0.48,
+      0.85
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "bench_leg_1",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.45,
+      0.08
+     ],
+     "at": [
+      0.25,
+      0.225,
+      0.65
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "bench_leg_2",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.45,
+      0.08
+     ],
+     "at": [
+      1.35,
+      0.225,
+      0.65
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "bench_leg_3",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.45,
+      0.08
+     ],
+     "at": [
+      0.25,
+      0.225,
+      1.05
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "bench_leg_4",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.45,
+      0.08
+     ],
+     "at": [
+      1.35,
+      0.225,
+      1.05
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "tool_rack",
+     "shape": "box",
+     "size": [
+      1.4,
+      0.08,
+      0.08
+     ],
+     "at": [
+      0.95,
+      0.72,
+      -1.55
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "peg_1",
+     "shape": "cylinder",
+     "size": [
+      0.025,
+      0.32
+     ],
+     "sides": 8,
+     "at": [
+      0.45,
+      0.72,
+      -1.43
+     ],
+     "rotation": [
+      90,
+      0,
+      0
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "peg_2",
+     "shape": "cylinder",
+     "size": [
+      0.025,
+      0.32
+     ],
+     "sides": 8,
+     "at": [
+      0.95,
+      0.72,
+      -1.43
+     ],
+     "rotation": [
+      90,
+      0,
+      0
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "peg_3",
+     "shape": "cylinder",
+     "size": [
+      0.025,
+      0.32
+     ],
+     "sides": 8,
+     "at": [
+      1.45,
+      0.72,
+      -1.43
+     ],
+     "rotation": [
+      90,
+      0,
+      0
+     ],
+     "material": "iron"
+    }
+   ],
+   "claims": [
+    "shelter",
+    "store"
+   ],
+   "goes": "forge",
+   "does": "heats and hammers plowshares back into shape under a dry roof",
+   "by": "gorm",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "gisla",
+  "name": "Gisla",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "given",
+  "kind": "make",
+  "want": "a sturdy hook to lift the millstone",
+  "reply": "",
+  "assessed": null,
+  "attempts": 3,
+  "crafter": "dunn",
+  "drawn": "Gisla's braced stone hook",
+  "goes": "mill",
+  "does": "lifts the millstone for dressing",
+  "looked": "",
+  "mended_pictured": true,
+  "size": [
+   1.52,
+   1.62,
+   1.14
+  ],
+  "accepted": false,
+  "reasons": [
+   "slide needs two values and a period"
+  ],
+  "parts": 22,
+  "moves": [],
+  "claims": {},
+  "stands": null,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": null,
+  "design": null,
+  "drawing": "{\"design\":\"Gisla's braced stone hook\",\"footprint\":[2,2],\"ground\":\"flagstone\",\"parts\":[\n{\"id\":\"post_nw\",\"shape\":\"box\",\"size\":[0.14,1.6,0.14],\"at\":[-0.6,0.8,-0.5],\"material\":\"timber\"},\n{\"id\":\"post_ne\",\"shape\":\"box\",\"size\":[0.14,1.6,0.14],\"at\":[0.6,0.8,-0.5],\"material\":\"timber\"},\n{\"id\":\"post_sw\",\"shape\":\"box\",\"size\":[0.14,1.6,0.14],\"at\":[-0.6,0.8,0.5],\"material\":\"timber\"},\n{\"id\":\"post_se\",\"shape\":\"box\",\"size\":[0.14,1.6,0.14],\"at\":[0.6,0.8,0.5],\"material\":\"timber\"},\n{\"id\":\"front_beam\",\"shape\":\"box\",\"size\":[1.45,0.14,0.14],\"at\":[0,1.54,0.5],\"material\":\"dark_timber\"},\n{\"id\":\"back_beam\",\"shape\":\"box\",\"size\":[1.45,0.14,0.14],\"at\":[0,1.54,-0.5],\"material\":\"dark_timber\"},\n{\"id\":\"left_side_beam\",\"shape\":\"box\",\"size\":[0.14,0.14,1.14],\"at\":[-0.6,1.46,0],\"material\":\"dark_timber\"},\n{\"id\":\"right_side_beam\",\"shape\":\"box\",\"size\":[0.14,0.14,1.14],\"at\":[0.6,1.46,0],\"material\":\"dark_timber\"},\n{\"id\":\"top_cross_plate\",\"shape\":\"box\",\"size\":[1.25,0.08,1.02],\"at\":[0,1.58,0],\"material\":\"iron\"},\n{\"id\":\"lower_socket_plate\",\"shape\":\"box\",\"size\":[0.42,0.08,0.42],\"at\":[0,0.04,0],\"material\":\"iron\"},\n{\"id\":\"guide_rail\",\"shape\":\"cylinder\",\"size\":[0.04,1.48],\"at\":[0,0.78,0],\"material\":\"iron\",\"sides\":16},\n{\"id\":\"rail_top_collar\",\"shape\":\"cylinder\",\"size\":[0.09,0.08],\"at\":[0,1.48,0],\"material\":\"iron\",\"sides\":16,\"open\":true},\n{\"id\":\"rail_foot_collar\",\"shape\":\"cylinder\",\"size\":[0.1,0.08],\"at\":[0,0.12,0],\"material\":\"iron\",\"sides\":16,\"open\":true},\n{\"id\":\"brace_front_left\",\"shape\":\"box\",\"size\":[0.08,1.25,0.08],\"at\":[-0.45,0.83,0.5],\"rotation\":[0,0,-26],\"material\":\"dark_timber\"},\n{\"id\":\"brace_front_right\",\"shape\":\"box\",\"size\":[0.08,1.25,0.08],\"at\":[0.45,0.83,0.5],\"rotation\":[0,0,26],\"material\":\"dark_timber\"},\n{\"id\":\"brace_back_left\",\"shape\":\"box\",\"size\":[0.08,1.25,0.08],\"at\":[-0.45,0.83,-0.5],\"rotation\":[0,0,-26],\"material\":\"dark_timber\"},\n{\"id\":\"brace_back_right\",\"shape\":\"box\",\"size\":[0.08,1.25,0.08],\"at\":[0.45,0.83,-0.5],\"rotation\":[0,0,26],\"material\":\"dark_timber\"},\n{\"id\":\"lift_sleeve\",\"shape\":\"cylinder\",\"size\":[0.075,0.18],\"at\":[0,0.72,0],\"material\":\"iron\",\"sides\":16,\"open\":true},\n{\"id\":\"hook_shank\",\"shape\":\"cylinder\",\"size\":[0.025,0.34],\"at\":[0,0.49,0],\"material\":\"iron\",\"sides\":12,\"parent\":\"lift_sleeve\"},\n{\"id\":\"hook_throat\",\"shape\":\"cylinder\",\"size\":[0.025,0.24],\"at\":[0,0.35,0.1],\"rotation\":[90,0,0],\"material\":\"iron\",\"sides\":12,\"parent\":\"lift_sleeve\"},\n{\"id\":\"hook_beak\",\"shape\":\"cylinder\",\"size\":[0.025,0.18],\"at\":[0,0.42,0.21],\"material\":\"iron\",\"sides\":12,\"parent\":\"lift_sleeve\"},\n{\"id\":\"hook_point\",\"shape\":\"cone\",\"size\":[0.04,0.1],\"at\":[0,0.52,0.21],\"material\":\"iron\",\"sides\":12,\"parent\":\"lift_sleeve\"}\n],\"joints\":[{\"part\":\"lift_sleeve\",\"kind\":\"slider\",\"axis\":\"y\"}],\"movements\":[{\"joint\":\"lift_sleeve\",\"slide\":[0,0.65],\"seconds\":4,\"when\":\"worked\"}],\"claims\":[\"lift\"],\"goes\":\"mill\",\"does\":\"lifts the millstone for dressing\"}"
+ },
+ {
+  "villager": "gorm",
+  "name": "Gorm",
+  "stage": "adult",
+  "role": "crafter",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a finer sieve to catch the grit",
+  "reply": "",
+  "assessed": null,
+  "attempts": 2,
+  "crafter": "dunn",
+  "drawn": "Gorm's fine grit sieve",
+  "goes": "mill",
+  "does": "shakes fine cloth and iron wire to sift flour, leaving grit behind",
+  "looked": "mended",
+  "mended_pictured": false,
+  "size": [
+   1.22,
+   1.22,
+   0.74
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 38,
+  "moves": [
+   "slide carriage"
+  ],
+  "claims": {},
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": 0.5,
+  "design": {
+   "design": "Gorm's fine grit sieve",
+   "footprint": [
+    2,
+    1
+   ],
+   "ground": "flagstone",
+   "parts": [
+    {
+     "id": "post_front_left",
+     "shape": "box",
+     "size": [
+      0.06,
+      1.2,
+      0.06
+     ],
+     "at": [
+      -0.58,
+      0.6,
+      0.34
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "post_front_right",
+     "shape": "box",
+     "size": [
+      0.06,
+      1.2,
+      0.06
+     ],
+     "at": [
+      0.58,
+      0.6,
+      0.34
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "post_back_left",
+     "shape": "box",
+     "size": [
+      0.06,
+      1.2,
+      0.06
+     ],
+     "at": [
+      -0.58,
+      0.6,
+      -0.34
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "post_back_right",
+     "shape": "box",
+     "size": [
+      0.06,
+      1.2,
+      0.06
+     ],
+     "at": [
+      0.58,
+      0.6,
+      -0.34
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "front_cross",
+     "shape": "box",
+     "size": [
+      1.22,
+      0.05,
+      0.05
+     ],
+     "at": [
+      0,
+      0.64,
+      0.34
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "back_cross",
+     "shape": "box",
+     "size": [
+      1.22,
+      0.05,
+      0.05
+     ],
+     "at": [
+      0,
+      0.64,
+      -0.34
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "guide_bed",
+     "shape": "box",
+     "size": [
+      1.1,
+      0.035,
+      0.72
+     ],
+     "at": [
+      0,
+      0.6825,
+      0
+     ],
+     "material": "pale_stone"
+    },
+    {
+     "id": "carriage",
+     "shape": "box",
+     "size": [
+      0.9,
+      0.04,
+      0.08
+     ],
+     "at": [
+      0,
+      0.72,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "fine_cloth",
+     "shape": "box",
+     "size": [
+      0.86,
+      0.01,
+      0.42
+     ],
+     "at": [
+      0.0,
+      0.04,
+      0.0
+     ],
+     "parent": "carriage",
+     "material": "cloth"
+    },
+    {
+     "id": "tray_front",
+     "shape": "box",
+     "size": [
+      0.94,
+      0.06,
+      0.05
+     ],
+     "at": [
+      0.0,
+      0.07,
+      0.25
+     ],
+     "parent": "carriage",
+     "material": "dark_timber"
+    },
+    {
+     "id": "tray_back",
+     "shape": "box",
+     "size": [
+      0.94,
+      0.06,
+      0.05
+     ],
+     "at": [
+      0.0,
+      0.07,
+      -0.25
+     ],
+     "parent": "carriage",
+     "material": "dark_timber"
+    },
+    {
+     "id": "tray_left",
+     "shape": "box",
+     "size": [
+      0.05,
+      0.06,
+      0.5
+     ],
+     "at": [
+      -0.47,
+      0.07,
+      0.0
+     ],
+     "parent": "carriage",
+     "material": "dark_timber"
+    },
+    {
+     "id": "tray_right",
+     "shape": "box",
+     "size": [
+      0.05,
+      0.06,
+      0.5
+     ],
+     "at": [
+      0.47,
+      0.07,
+      0.0
+     ],
+     "parent": "carriage",
+     "material": "dark_timber"
+    },
+    {
+     "id": "catch_pan",
+     "shape": "box",
+     "size": [
+      1.02,
+      0.04,
+      0.54
+     ],
+     "at": [
+      0,
+      0.5,
+      0
+     ],
+     "material": "pale_stone"
+    },
+    {
+     "id": "pan_leg_front_left",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.48,
+      0.04
+     ],
+     "at": [
+      -0.42,
+      0.24,
+      0.2
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "pan_leg_front_right",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.48,
+      0.04
+     ],
+     "at": [
+      0.42,
+      0.24,
+      0.2
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "pan_leg_back_left",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.48,
+      0.04
+     ],
+     "at": [
+      -0.42,
+      0.24,
+      -0.2
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "pan_leg_back_right",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.48,
+      0.04
+     ],
+     "at": [
+      0.42,
+      0.24,
+      -0.2
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "hopper_front",
+     "shape": "box",
+     "size": [
+      0.9,
+      0.32,
+      0.04
+     ],
+     "at": [
+      0,
+      1.03,
+      0.21
+     ],
+     "rotation": [
+      -15,
+      0,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "hopper_back",
+     "shape": "box",
+     "size": [
+      0.9,
+      0.32,
+      0.04
+     ],
+     "at": [
+      0,
+      1.03,
+      -0.21
+     ],
+     "rotation": [
+      15,
+      0,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "hopper_left",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.32,
+      0.5
+     ],
+     "at": [
+      -0.45,
+      1.03,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      15
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "hopper_right",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.32,
+      0.5
+     ],
+     "at": [
+      0.45,
+      1.03,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      -15
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "top_front",
+     "shape": "box",
+     "size": [
+      1.22,
+      0.05,
+      0.1
+     ],
+     "at": [
+      0,
+      1.2,
+      0.32
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "top_back",
+     "shape": "box",
+     "size": [
+      1.22,
+      0.05,
+      0.1
+     ],
+     "at": [
+      0,
+      1.2,
+      -0.32
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "top_left",
+     "shape": "box",
+     "size": [
+      0.06,
+      0.05,
+      0.64
+     ],
+     "at": [
+      -0.58,
+      1.2,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "top_right",
+     "shape": "box",
+     "size": [
+      0.06,
+      0.05,
+      0.64
+     ],
+     "at": [
+      0.58,
+      1.2,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "wire_x_1",
+     "shape": "box",
+     "size": [
+      0.82,
+      0.008,
+      0.006
+     ],
+     "at": [
+      0.0,
+      0.048,
+      -0.18
+     ],
+     "parent": "carriage",
+     "material": "iron"
+    },
+    {
+     "id": "wire_x_2",
+     "shape": "box",
+     "size": [
+      0.82,
+      0.008,
+      0.006
+     ],
+     "at": [
+      0.0,
+      0.048,
+      -0.12
+     ],
+     "parent": "carriage",
+     "material": "iron"
+    },
+    {
+     "id": "wire_x_3",
+     "shape": "box",
+     "size": [
+      0.82,
+      0.008,
+      0.006
+     ],
+     "at": [
+      0.0,
+      0.048,
+      -0.06
+     ],
+     "parent": "carriage",
+     "material": "iron"
+    },
+    {
+     "id": "wire_x_4",
+     "shape": "box",
+     "size": [
+      0.82,
+      0.008,
+      0.006
+     ],
+     "at": [
+      0.0,
+      0.048,
+      0.0
+     ],
+     "parent": "carriage",
+     "material": "iron"
+    },
+    {
+     "id": "wire_x_5",
+     "shape": "box",
+     "size": [
+      0.82,
+      0.008,
+      0.006
+     ],
+     "at": [
+      0.0,
+      0.048,
+      0.06
+     ],
+     "parent": "carriage",
+     "material": "iron"
+    },
+    {
+     "id": "wire_x_6",
+     "shape": "box",
+     "size": [
+      0.82,
+      0.008,
+      0.006
+     ],
+     "at": [
+      0.0,
+      0.048,
+      0.12
+     ],
+     "parent": "carriage",
+     "material": "iron"
+    },
+    {
+     "id": "wire_x_7",
+     "shape": "box",
+     "size": [
+      0.82,
+      0.008,
+      0.006
+     ],
+     "at": [
+      0.0,
+      0.048,
+      0.18
+     ],
+     "parent": "carriage",
+     "material": "iron"
+    },
+    {
+     "id": "wire_z_1",
+     "shape": "box",
+     "size": [
+      0.006,
+      0.008,
+      0.38
+     ],
+     "at": [
+      -0.32,
+      0.052,
+      0.0
+     ],
+     "parent": "carriage",
+     "material": "iron"
+    },
+    {
+     "id": "wire_z_2",
+     "shape": "box",
+     "size": [
+      0.006,
+      0.008,
+      0.38
+     ],
+     "at": [
+      -0.16,
+      0.052,
+      0.0
+     ],
+     "parent": "carriage",
+     "material": "iron"
+    },
+    {
+     "id": "wire_z_3",
+     "shape": "box",
+     "size": [
+      0.006,
+      0.008,
+      0.38
+     ],
+     "at": [
+      0.0,
+      0.052,
+      0.0
+     ],
+     "parent": "carriage",
+     "material": "iron"
+    },
+    {
+     "id": "wire_z_4",
+     "shape": "box",
+     "size": [
+      0.006,
+      0.008,
+      0.38
+     ],
+     "at": [
+      0.16,
+      0.052,
+      0.0
+     ],
+     "parent": "carriage",
+     "material": "iron"
+    },
+    {
+     "id": "wire_z_5",
+     "shape": "box",
+     "size": [
+      0.006,
+      0.008,
+      0.38
+     ],
+     "at": [
+      0.32,
+      0.052,
+      0.0
+     ],
+     "parent": "carriage",
+     "material": "iron"
+    }
+   ],
+   "joints": [
+    {
+     "part": "carriage",
+     "kind": "slider",
+     "axis": "x"
+    }
+   ],
+   "movements": [
+    {
+     "joint": "carriage",
+     "slide": [
+      -0.08,
+      0.08
+     ],
+     "period": 0.6,
+     "when": "worked"
+    }
+   ],
+   "claims": [],
+   "goes": "mill",
+   "does": "shakes fine cloth and iron wire to sift flour, leaving grit behind",
+   "by": "dunn",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "ada",
+  "name": "Ada",
+  "stage": "adult",
+  "role": "healer",
+  "instruction": "given",
+  "kind": "make",
+  "want": "a loom to weave the storm",
+  "reply": "",
+  "assessed": null,
+  "attempts": 1,
+  "crafter": "dunn",
+  "drawn": "Ada's storm loom",
+  "goes": "home",
+  "does": "weaves storm-pattern cloth for Ada, with glass lightning caught in the threads",
+  "looked": "mended",
+  "mended_pictured": false,
+  "size": [
+   1.52,
+   1.5,
+   1.7
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 38,
+  "moves": [],
+  "claims": {},
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": 0.5,
+  "design": {
+   "design": "Ada's storm loom",
+   "footprint": [
+    3,
+    2
+   ],
+   "ground": "flagstone",
+   "parts": [
+    {
+     "id": "left_skid",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.08,
+      1.6
+     ],
+     "at": [
+      -0.72,
+      0.04,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "right_skid",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.08,
+      1.6
+     ],
+     "at": [
+      0.72,
+      0.04,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "front_left_leg",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.7,
+      0.08
+     ],
+     "at": [
+      -0.65,
+      0.35,
+      -0.58
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "front_right_leg",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.7,
+      0.08
+     ],
+     "at": [
+      0.65,
+      0.35,
+      -0.58
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "back_left_leg",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.7,
+      0.08
+     ],
+     "at": [
+      -0.65,
+      0.35,
+      0.58
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "back_right_leg",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.7,
+      0.08
+     ],
+     "at": [
+      0.65,
+      0.35,
+      0.58
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "left_top_rail",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.08,
+      1.25
+     ],
+     "at": [
+      -0.65,
+      0.72,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "right_top_rail",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.08,
+      1.25
+     ],
+     "at": [
+      0.65,
+      0.72,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "front_breast_beam",
+     "shape": "box",
+     "size": [
+      1.4,
+      0.08,
+      0.08
+     ],
+     "at": [
+      0,
+      0.72,
+      -0.58
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "back_warp_beam",
+     "shape": "box",
+     "size": [
+      1.4,
+      0.08,
+      0.08
+     ],
+     "at": [
+      0,
+      0.72,
+      0.58
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "lower_front_bar",
+     "shape": "box",
+     "size": [
+      1.35,
+      0.06,
+      0.06
+     ],
+     "at": [
+      0,
+      0.32,
+      -0.58
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "lower_back_bar",
+     "shape": "box",
+     "size": [
+      1.35,
+      0.06,
+      0.06
+     ],
+     "at": [
+      0,
+      0.32,
+      0.58
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "cloth_roller",
+     "shape": "cylinder",
+     "size": [
+      0.08,
+      1.25
+     ],
+     "at": [
+      0,
+      0.53,
+      -0.48
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "dark_timber",
+     "sides": 16
+    },
+    {
+     "id": "warp_roller",
+     "shape": "cylinder",
+     "size": [
+      0.08,
+      1.25
+     ],
+     "at": [
+      0,
+      0.53,
+      0.48
+     ],
+     "rotation": [
+      0,
+      0,
+      90
+     ],
+     "material": "dark_timber",
+     "sides": 16
+    },
+    {
+     "id": "heddle_left",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.55,
+      0.04
+     ],
+     "at": [
+      -0.35,
+      0.68,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "heddle_right",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.55,
+      0.04
+     ],
+     "at": [
+      0.35,
+      0.68,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "heddle_top",
+     "shape": "box",
+     "size": [
+      0.78,
+      0.04,
+      0.04
+     ],
+     "at": [
+      0,
+      0.93,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "heddle_bottom",
+     "shape": "box",
+     "size": [
+      0.78,
+      0.04,
+      0.04
+     ],
+     "at": [
+      0,
+      0.43,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "beater_rail",
+     "shape": "box",
+     "size": [
+      1.35,
+      0.05,
+      0.05
+     ],
+     "at": [
+      0,
+      0.85,
+      -0.12
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "beater_hanger_left",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.16,
+      0.04
+     ],
+     "at": [
+      -0.65,
+      0.795,
+      -0.12
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "beater_hanger_right",
+     "shape": "box",
+     "size": [
+      0.04,
+      0.16,
+      0.04
+     ],
+     "at": [
+      0.65,
+      0.795,
+      -0.12
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "left_treadle",
+     "shape": "box",
+     "size": [
+      0.18,
+      0.04,
+      0.75
+     ],
+     "at": [
+      -0.18,
+      0.02,
+      -0.02
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "right_treadle",
+     "shape": "box",
+     "size": [
+      0.18,
+      0.04,
+      0.75
+     ],
+     "at": [
+      0.18,
+      0.02,
+      -0.02
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "woven_storm_panel",
+     "shape": "box",
+     "size": [
+      1.05,
+      0.02,
+      0.9
+     ],
+     "at": [
+      0,
+      0.61,
+      0
+     ],
+     "material": "sailcloth"
+    },
+    {
+     "id": "warp_thread_1",
+     "shape": "box",
+     "size": [
+      0.012,
+      0.012,
+      0.95
+     ],
+     "at": [
+      -0.42,
+      0.625,
+      0
+     ],
+     "material": "cloth"
+    },
+    {
+     "id": "warp_thread_2",
+     "shape": "box",
+     "size": [
+      0.012,
+      0.012,
+      0.95
+     ],
+     "at": [
+      -0.28,
+      0.625,
+      0
+     ],
+     "material": "cloth"
+    },
+    {
+     "id": "warp_thread_3",
+     "shape": "box",
+     "size": [
+      0.012,
+      0.012,
+      0.95
+     ],
+     "at": [
+      -0.14,
+      0.625,
+      0
+     ],
+     "material": "cloth"
+    },
+    {
+     "id": "warp_thread_4",
+     "shape": "box",
+     "size": [
+      0.012,
+      0.012,
+      0.95
+     ],
+     "at": [
+      0,
+      0.625,
+      0
+     ],
+     "material": "cloth"
+    },
+    {
+     "id": "warp_thread_5",
+     "shape": "box",
+     "size": [
+      0.012,
+      0.012,
+      0.95
+     ],
+     "at": [
+      0.14,
+      0.625,
+      0
+     ],
+     "material": "cloth"
+    },
+    {
+     "id": "warp_thread_6",
+     "shape": "box",
+     "size": [
+      0.012,
+      0.012,
+      0.95
+     ],
+     "at": [
+      0.28,
+      0.625,
+      0
+     ],
+     "material": "cloth"
+    },
+    {
+     "id": "warp_thread_7",
+     "shape": "box",
+     "size": [
+      0.012,
+      0.012,
+      0.95
+     ],
+     "at": [
+      0.42,
+      0.625,
+      0
+     ],
+     "material": "cloth"
+    },
+    {
+     "id": "shuttle_boat",
+     "shape": "box",
+     "size": [
+      0.22,
+      0.04,
+      0.08
+     ],
+     "at": [
+      0.33,
+      0.65,
+      -0.06
+     ],
+     "rotation": [
+      0,
+      18,
+      0
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "lightning_thread_a",
+     "shape": "box",
+     "size": [
+      0.025,
+      0.02,
+      0.42
+     ],
+     "at": [
+      -0.18,
+      0.625,
+      -0.08
+     ],
+     "rotation": [
+      0,
+      32,
+      0
+     ],
+     "material": "glass"
+    },
+    {
+     "id": "lightning_thread_b",
+     "shape": "box",
+     "size": [
+      0.025,
+      0.02,
+      0.34
+     ],
+     "at": [
+      0.12,
+      0.625,
+      0.08
+     ],
+     "rotation": [
+      0,
+      -38,
+      0
+     ],
+     "material": "glass"
+    },
+    {
+     "id": "lightning_thread_c",
+     "shape": "box",
+     "size": [
+      0.02,
+      0.02,
+      0.28
+     ],
+     "at": [
+      0.31,
+      0.625,
+      -0.18
+     ],
+     "rotation": [
+      0,
+      24,
+      0
+     ],
+     "material": "glass"
+    },
+    {
+     "id": "storm_mast",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.7,
+      0.08
+     ],
+     "at": [
+      0,
+      1.05,
+      0.62
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "storm_wheel",
+     "shape": "wheel",
+     "size": [
+      0.28,
+      0.04
+     ],
+     "at": [
+      0,
+      1.22,
+      0.62
+     ],
+     "material": "sailcloth",
+     "sides": 16
+    },
+    {
+     "id": "top_cloud_bar",
+     "shape": "box",
+     "size": [
+      1.0,
+      0.06,
+      0.06
+     ],
+     "at": [
+      0,
+      1.38,
+      0.62
+     ],
+     "material": "dark_timber"
+    }
+   ],
+   "claims": [],
+   "goes": "home",
+   "does": "weaves storm-pattern cloth for Ada, with glass lightning caught in the threads",
+   "by": "dunn",
+   "purpose": "want"
+  },
+  "drawing": null
+ },
+ {
+  "villager": "corin",
+  "name": "Corin",
+  "stage": "apprentice",
+  "role": null,
+  "instruction": "given",
+  "kind": "make",
+  "want": "a wheel to hold the stones still",
+  "reply": "",
+  "assessed": null,
+  "attempts": 1,
+  "crafter": "edda",
+  "drawn": "stone-still locking wheel",
+  "goes": "mill",
+  "does": "locks the runner stone still while Corin dresses or clears the stones",
+  "looked": "right",
+  "mended_pictured": false,
+  "size": [
+   1.75,
+   0.8,
+   1.36
+  ],
+  "accepted": true,
+  "reasons": [],
+  "parts": 11,
+  "moves": [],
+  "claims": {},
+  "stands": true,
+  "fell": [],
+  "jammed": [],
+  "struck": {},
+  "works": false,
+  "cost": 0.5,
+  "design": {
+   "design": "stone-still locking wheel",
+   "footprint": [
+    3,
+    3
+   ],
+   "ground": "flagstone",
+   "parts": [
+    {
+     "id": "bed_stone",
+     "shape": "cylinder",
+     "size": [
+      0.68,
+      0.16
+     ],
+     "sides": 24,
+     "at": [
+      0,
+      0.08,
+      0
+     ],
+     "material": "stone"
+    },
+    {
+     "id": "runner_stone",
+     "shape": "cylinder",
+     "size": [
+      0.64,
+      0.14
+     ],
+     "sides": 24,
+     "at": [
+      0,
+      0.24,
+      0
+     ],
+     "material": "pale_stone"
+    },
+    {
+     "id": "upright_spindle",
+     "shape": "cylinder",
+     "size": [
+      0.04,
+      0.7
+     ],
+     "sides": 12,
+     "at": [
+      0.0,
+      0.18,
+      0.0
+     ],
+     "material": "iron",
+     "parent": "runner_stone"
+    },
+    {
+     "id": "locking_wheel",
+     "shape": "wheel",
+     "size": [
+      0.48,
+      0.08
+     ],
+     "at": [
+      0.0,
+      0.31,
+      0.0
+     ],
+     "rotation": [
+      0.0,
+      0.0,
+      90.0
+     ],
+     "material": "dark_timber",
+     "parent": "runner_stone"
+    },
+    {
+     "id": "wheel_tooth",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.06,
+      0.16
+     ],
+     "at": [
+      0.5,
+      0.31,
+      0.0
+     ],
+     "material": "iron",
+     "parent": "runner_stone",
+     "repeat": 12
+    },
+    {
+     "id": "right_post_front",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.8,
+      0.08
+     ],
+     "at": [
+      0.82,
+      0.4,
+      -0.36
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "right_post_back",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.8,
+      0.08
+     ],
+     "at": [
+      0.82,
+      0.4,
+      0.36
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "pawl_crossbar",
+     "shape": "box",
+     "size": [
+      0.1,
+      0.08,
+      0.85
+     ],
+     "at": [
+      0.82,
+      0.72,
+      0
+     ],
+     "material": "timber"
+    },
+    {
+     "id": "iron_pawl",
+     "shape": "box",
+     "size": [
+      0.28,
+      0.07,
+      0.08
+     ],
+     "at": [
+      0.64,
+      0.55,
+      0
+     ],
+     "material": "iron"
+    },
+    {
+     "id": "pawl_handle",
+     "shape": "box",
+     "size": [
+      0.08,
+      0.5,
+      0.08
+     ],
+     "at": [
+      0.86,
+      0.5,
+      0
+     ],
+     "rotation": [
+      0,
+      0,
+      12
+     ],
+     "material": "dark_timber"
+    },
+    {
+     "id": "left_stop_block",
+     "shape": "box",
+     "size": [
+      0.16,
+      0.18,
+      0.22
+     ],
+     "at": [
+      -0.72,
+      0.09,
+      0
+     ],
+     "material": "stone"
+    }
+   ],
+   "joints": [
+    {
+     "part": "runner_stone",
+     "kind": "hinge",
+     "axis": "y"
+    }
+   ],
+   "claims": [],
+   "goes": "mill",
+   "does": "locks the runner stone still while Corin dresses or clears the stones",
+   "by": "edda",
+   "purpose": "want"
+  },
+  "drawing": null
+ }
+]

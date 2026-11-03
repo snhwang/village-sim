@@ -1,0 +1,668 @@
+=== 1. runs of the greater village (--days 40 --days-per-year 28 --profile illustrative --threshold 0.15 --llm-url http://localhost:8355/v1 --model Qwen3.8-27B) ===
+run 20261022-070414-seed1: finished tick 5760 of 5760 in 2074.6s -> /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/runs/20261022-070414-seed1
+run 20261022-073709-seed2: finished tick 5760 of 5760 in 2026.6s -> /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/runs/20261022-073709-seed2
+run 20261022-080916-seed3: finished tick 5760 of 5760 in 1768.2s -> /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/runs/20261022-080916-seed3
+run 20261022-083715-seed4: finished tick 5760 of 5760 in 1786.4s -> /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/runs/20261022-083715-seed4
+run 20261022-090533-seed5: finished tick 5760 of 5760 in 2023.2s -> /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/runs/20261022-090533-seed5
+run 20261022-093732-seed6: finished tick 5760 of 5760 in 2237.0s -> /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/runs/20261022-093732-seed6
+runs: 20261022-070414-seed1 20261022-073709-seed2 20261022-080916-seed3 20261022-083715-seed4 20261022-090533-seed5 20261022-093732-seed6
+=== 2. knowledge flow (sections 5 and 6, Figure 1) ===
+  offers                 39047  (81.8% already known, 20.6% of the rest refused)
+  knowledge-only actions 35542 of 172064 (20.66%)
+  reclassified          3658/6548 (55.9%), 85.5% of those toward trouble
+
+  drift by telling:
+    hop 0:  median -0.0000  (n=910)
+    hop 1:  median 0.2007  (n=1822)
+    hop 2:  median 0.2953  (n=1489)
+    hop 3:  median 0.3413  (n=1033)
+    hop 4:  median 0.3730  (n=622)
+    hop 5:  median 0.4031  (n=361)
+    hop 6:  median 0.4353  (n=206)
+    hop 7:  median 0.4175  (n=73)
+    hop 8:  median 0.4006  (n=19)
+    hop 9:  median 0.3970  (n=6)
+    hop 10:  median 0.4109  (n=4)
+    hop 11:  median 0.4007  (n=3)
+  wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/results/figures/fig6_drift.png
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/results/knowledge_flow.json and .md
+=== 3. world balance (sections 4 and 7) ===
+
+repertoire
+  events                      {'weather': 192, 'traveler': 55, 'sicken': 73, 'visitor': 23, 'harvest': 6, 'festival': 14, 'raid': 4}
+  most common event           52.3%
+  most common, weather aside  41.7% of 175
+  distinct sequences          6 of 6 seeds
+  instructions chosen         18/18  (retrieved 18)
+  quiet days                  65/234
+
+vocabulary
+  distinct sentences          62
+  effective sentences         15.63
+  effective (seed, event)     234.82
+  reframed (seed, event)      289 of 6969 reframings, effective 208.06
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/results/world_balance.json and .md
+=== 4. memory carryover (section 5) ===
+5638 told facts with the teller's version stored
+
+kind: listener files it as trouble
+  all listeners          teller said trouble     ->  92.2%  (n=3403)
+  all listeners          teller said not trouble ->  29.6%  (n=2235)
+  wary listeners         teller said trouble     ->  94.2%  (n=1657)
+  wary listeners         teller said not trouble ->  34.8%  (n=1071)
+  bold listeners         teller said trouble     ->  90.2%  (n=1746)
+  bold listeners         teller said not trouble ->  24.7%  (n=1164)
+
+hedging: listener's version is hedged
+  all listeners          teller hedged     ->  82.2%  (n=3693)
+  all listeners          teller not hedged ->  56.2%  (n=1945)
+  suspicious listeners   teller hedged     ->  87.6%  (n=1820)
+  suspicious listeners   teller not hedged ->  63.4%  (n=966)
+  trusting listeners     teller hedged     ->  77.0%  (n=1873)
+  trusting listeners     teller not hedged ->  49.2%  (n=979)
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/results/memory_carryover.json and .md
+=== 5. figures (Figures 2 and 3) ===
+figures from 20261022-070414-seed1
+  fig1_provenance.png: 31 holders, 8 hops, following Osric, Thea
+  fig2_spread.png: 4 events tracked
+  fig3_usage.png: 22 instructions shown, 10 unlocked by knowledge
+  memories.md: 31 villagers
+=== 6. action counterfactual (section 7), every run, a random donor per decision ===
+  whole temperament      196/2400    8.2% of decisions would have changed
+  sociability             52/2400    2.2% of decisions would have changed
+  caution                167/2400    7.0% of decisions would have changed
+  curiosity               29/2400    1.2% of decisions would have changed
+  trust                   59/2400    2.5% of decisions would have changed
+  diligence              187/2400    7.8% of decisions would have changed
+  candor                  33/2400    1.4% of decisions would have changed
+  wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/results/figures/fig4_counterfactual.png
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/results/counterfactual.json and .md
+=== 7. absorption counterfactual (section 7) ===
+
+  same prompt (floor)          2/382    0.5% flipped | lens moved   0.0% | flipped when it moved      -
+  whole temperament           27/382    7.1% flipped | lens moved  94.0% | flipped when it moved   7.5%  p=0.0000  *
+  sociability (no lens)       13/380    3.4% flipped | lens moved   0.0% | flipped when it moved      -  p=0.0033  *
+  caution                     34/383    8.9% flipped | lens moved  97.4% | flipped when it moved   9.1%  p=0.0000  *
+  curiosity                   15/380    3.9% flipped | lens moved  97.9% | flipped when it moved   4.0%  p=0.0010  *
+  trust                       30/383    7.8% flipped | lens moved  97.1% | flipped when it moved   8.1%  p=0.0000  *
+  diligence (no lens)         13/381    3.4% flipped | lens moved   0.0% | flipped when it moved      -  p=0.0034  *
+  candor                      34/376    9.0% flipped | lens moved  98.4% | flipped when it moved   9.2%  p=0.0000  *
+  wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/results/figures/fig5_lens.png
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/results/diffusion_counterfactual.json and .md
+=== 8. rewording (section 7) ===
+same prompt             305      0.0   0.0207       23.3          
+whole temperament       298   0.0976   0.1101       77.2    0.0000 *
+sociability             294   0.0065   0.0547       52.0          
+caution                 293   0.0296    0.073       59.4    0.0343 *
+curiosity               297   0.1202   0.1316       86.9    0.0000 *
+trust                   293   0.1292   0.1417       89.1    0.0000 *
+diligence               297   0.0156   0.0523       57.6          
+candor                  286   0.1457   0.1542       94.4    0.0000 *
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/results/lens_divergence.json and .md
+=== 9. two-step counterfactual (section 7) ===
+3081 chains, replayed through Qwen3.8-27B at temperature 0
+
+3081 chains from 239 events, 160.27 effective
+floors: decoder 7.0%, inert tag 14.8%
+  same prompt        C's memory changed   7.0% (201/2856), kind 4.0%, B's lens moved 0.0%, p=None, rewording 0.0 p=None
+  whole temperament  C's memory changed  22.1% (626/2835), kind 11.0%, B's lens moved 86.2%, p=0.0, rewording 0.117 p=0.0
+  sociability        C's memory changed  14.0% (393/2801), kind 7.9%, B's lens moved 0.0%, p=None, rewording 0.053 p=None
+  caution            C's memory changed  19.2% (528/2757), kind 10.0%, B's lens moved 98.7%, p=0.0, rewording 0.09 p=0.0
+  curiosity          C's memory changed  21.2% (578/2721), kind 12.2%, B's lens moved 98.3%, p=0.0, rewording 0.143 p=0.0
+  trust              C's memory changed  23.6% (652/2761), kind 12.8%, B's lens moved 98.3%, p=0.0, rewording 0.159 p=0.0
+  diligence          C's memory changed  15.6% (435/2789), kind 9.1%, B's lens moved 0.0%, p=None, rewording 0.074 p=None
+  candor             C's memory changed  28.6% (788/2752), kind 14.8%, B's lens moved 98.4%, p=0.0, rewording 0.156 p=0.0
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/results/two_step_counterfactual.json and .md
+=== 10. retrieval ablation (section 8) ===
+Selection 'char_freya' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_thea' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_rosa' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_osric' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+Selection 'char_edek' matches no indexed instruction: no tag, scope tag or required tag declares it, so this query can only return nothing.
+  65.1% similarity, 46 instructions, 30/30 asleep
+
+wrote /mnt/c/Users/Scott/Documents/Work/hearthwick-paper-v4-analysis/results/retrieval_ablation.json and .md
+=== 11. food, storytellers, school and trades (spec 2.4a, 2.7a, 2.8b) ===
+## 20261022-070414-seed1
+- harvest on day 21: 965.28 brought in, 123% of a year's need, called good
+- fields grew 0 time(s)
+- hungry days: none
+- food instructions chosen: {'food-harvest-hands': 89, 'food-farmer-tend': 63, 'food-farmer-harvest': 62, 'food-farmer-blight': 48, 'food-help-tend': 33, 'food-apprentice-harvest': 32, 'food-child-glean': 11, 'food-harvest-hungry': 6}
+## 20261022-073709-seed2
+- harvest on day 21: 840.06 brought in, 107% of a year's need, called good
+- fields grew 0 time(s)
+- hungry days: none
+- food instructions chosen: {'food-farmer-blight': 149, 'food-farmer-tend': 135, 'food-help-tend': 109, 'food-harvest-hands': 53, 'food-farmer-harvest': 53, 'food-apprentice-harvest': 43, 'food-harvest-hungry': 6}
+## 20261022-080916-seed3
+- harvest on day 21: 858.0 brought in, 108% of a year's need, called good
+- fields grew 0 time(s)
+- hungry days: none
+- food instructions chosen: {'food-farmer-blight': 163, 'food-farmer-tend': 110, 'food-help-tend': 94, 'food-farmer-harvest': 57, 'food-harvest-hands': 53, 'food-apprentice-harvest': 32, 'food-harvest-hungry': 4}
+## 20261022-083715-seed4
+- harvest on day 21: 853.32 brought in, 108% of a year's need, called good
+- fields grew 0 time(s)
+- hungry days: none
+## 20261022-090533-seed5
+- harvest on day 21: 869.39 brought in, 111% of a year's need, called good
+- fields grew 0 time(s)
+- hungry days: none
+- food instructions chosen: {'food-farmer-tend': 117, 'food-help-tend': 89, 'food-farmer-harvest': 60, 'food-farmer-blight': 58, 'food-apprentice-harvest': 44, 'food-harvest-hands': 44, 'food-harvest-hungry': 2}
+## 20261022-093732-seed6
+- harvest on day 21: 851.88 brought in, 109% of a year's need, called good
+- fields grew 0 time(s)
+- hungry days: none
+- food instructions chosen: {'food-farmer-tend': 124, 'food-help-tend': 82, 'food-harvest-hands': 66, 'food-farmer-harvest': 52, 'food-apprentice-harvest': 32, 'food-farmer-blight': 30, 'food-harvest-hungry': 6}
+## 20261022-070414-seed1
+**Rowena** came on day 22 and left day 24. 48 conversations with 27 of 33 villagers. It took away 11 pieces of this village's news.
+**Tamsin** came on day 13 and left day 15. 38 conversations with 26 of 33 villagers. It took away 10 pieces of this village's news.
+**Wystan** came on day 4 and left day 6. 66 conversations with 27 of 33 villagers. It took away 6 pieces of this village's news.
+## 20261022-073709-seed2
+**Brannoc** came on day 37 and left day 39. 56 conversations with 28 of 34 villagers. It took away 18 pieces of this village's news.
+**Cadell** came on day 25 and left day 27. 52 conversations with 28 of 34 villagers. It took away 12 pieces of this village's news.
+**Doran** came on day 31 and left day 33. 52 conversations with 28 of 34 villagers. It took away 16 pieces of this village's news.
+**Elspeth** came on day 10 and left day 12. 50 conversations with 29 of 34 villagers. It took away 10 pieces of this village's news.
+**Rowena** came on day 1 and left day 3. 41 conversations with 24 of 34 villagers. It took away 2 pieces of this village's news.
+**Tamsin** came on day 19 and left day 21. 45 conversations with 27 of 34 villagers. It took away 12 pieces of this village's news.
+## 20261022-080916-seed3
+**Rowena** came on day 25 and left day 27. 58 conversations with 30 of 36 villagers. It took away 13 pieces of this village's news.
+**Tamsin** came on day 16 and left day 18. 47 conversations with 29 of 36 villagers. It took away 12 pieces of this village's news.
+## 20261022-083715-seed4
+**Elspeth** came on day 34 and left day 36. 56 conversations with 33 of 37 villagers. It took away 12 pieces of this village's news.
+**Isolde** came on day 16 and left day 18. 48 conversations with 25 of 37 villagers. It took away 10 pieces of this village's news.
+## 20261022-090533-seed5
+**Doran** came on day 38 and left still here at the end. 35 conversations with 25 of 35 villagers. It holds 13 pieces of this village's news.
+**Elspeth** came on day 16 and left day 18. 29 conversations with 19 of 35 villagers. It took away 8 pieces of this village's news.
+**Rowena** came on day 28 and left day 30. 54 conversations with 28 of 35 villagers. It took away 10 pieces of this village's news.
+**Wystan** came on day 1 and left day 3. 65 conversations with 27 of 35 villagers. It took away 3 pieces of this village's news.
+## 20261022-093732-seed6
+**Brannoc** came on day 16 and left day 18. 63 conversations with 28 of 35 villagers. It took away 14 pieces of this village's news.
+**Cadell** came on day 31 and left day 33. 61 conversations with 31 of 35 villagers. It took away 16 pieces of this village's news.
+**Doran** came on day 22 and left day 24. 59 conversations with 28 of 35 villagers. It took away 10 pieces of this village's news.
+**Elspeth** came on day 7 and left day 9. 40 conversations with 26 of 35 villagers. It took away 7 pieces of this village's news.
+**Maudie** came on day 37 and left still here at the end. 33 conversations with 24 of 35 villagers. It holds 14 pieces of this village's news.
+**Tamsin** came on day 1 and left day 3. 62 conversations with 30 of 35 villagers. It took away 3 pieces of this village's news.
+## 20261022-070414-seed1
+- hilde28 graduated on day 3
+- ilsa graduated on day 5
+- gisla qualified as a crafter on day 29, under edda
+- orla qualified as a storyteller on day 29, under rosa
+- peder qualified as a guard on day 29, under lise
+- corin qualified as a healer on day 31, under ada
+## 20261022-073709-seed2
+- hilde28 graduated on day 3
+- ilsa graduated on day 3
+- corin qualified as a healer on day 29, under ada
+- gisla qualified as a crafter on day 29, under edda
+- peder qualified as a guard on day 29, under lise
+- orla qualified as a storyteller on day 30, under rosa
+## 20261022-080916-seed3
+- hilde28 graduated on day 3
+- ilsa graduated on day 3
+- gisla qualified as a crafter on day 29, under edda
+- orla qualified as a storyteller on day 29, under rosa
+- peder qualified as a guard on day 29, under lise
+- corin qualified as a healer on day 30, under ada
+## 20261022-083715-seed4
+- hilde28 graduated on day 4
+- ilsa graduated on day 7
+- gisla qualified as a crafter on day 29, under edda
+- orla qualified as a storyteller on day 29, under rosa
+- peder qualified as a guard on day 29, under lise
+- corin qualified as a healer on day 40, under ada
+## 20261022-090533-seed5
+- hilde28 graduated on day 2
+- ilsa graduated on day 3
+- gisla qualified as a crafter on day 29, under edda
+- peder qualified as a guard on day 29, under lise
+## 20261022-093732-seed6
+- hilde28 graduated on day 2
+- ilsa graduated on day 3
+- peder qualified as a guard on day 29, under lise
+- gisla qualified as a crafter on day 30, under edda
+=== 11a. knowledge by day, couples and families (sections 5.3 and 5.7) ===
+| 20261022-093732-seed6 | days 1 to 3: 11.9% | days 37 to 39: 31.3% | yes |
+
+It rose in 6 of 6 runs.
+
+| crafter-fell-timber | 0 | 0 |
+| crafter-start-house | 0 | 0 |
+| crafter-build-house | 0 | 0 |
+
+| 18 | frida | edda | tobin | home_1 | plainspoken, wary, settled, diligent, gregarious, trusting |
+| 26 | frode | mabel | edek | home_13 | plainspoken, wary, inquisitive, easygoing, reserved, suspicious |
+| 34 | dagny | ada | wynn | home_5 | embellishing, wary, inquisitive, diligent, reserved, trusting |
+
+=== 12. spread across the runs, and choices the threshold restored (sections 3 and 5) ===
+| measure | mean | SD | min | max |
+|---|---|---|---|---|
+| events that spread | 44.8 | 6.0 | 35 | 52 |
+| median holders of an event | 28.4 | 2.3 | 24 | 30 |
+| median wordings of an event | 19.9 | 1.7 | 17 | 22 |
+| longest chain | 8.3 | 1.4 | 7 | 11 |
+| offers already known (%) | 81.2 | 3.1 | 75.9 | 84 |
+| new news refused (%) | 20.6 | 1.8 | 18.9 | 22.8 |
+| facts reclassified (%) | 55.4 | 7.0 | 47.1 | 65.2 |
+| reclassified toward trouble (%) | 84.8 | 5.2 | 80.1 | 93.4 |
+| knowledge-only decisions (%) | 20.5 | 4.7 | 14.5 | 26.5 |
+=== 13. check the paper against these results ===
+paper: paper-hearthwick-ACMGames
+run:   20261022-070414-seed1
+
+  found    corpus: authored                   167 authored
+  found    corpus: with action markers        128 carry an action marker
+  found    corpus: coming                     1 coming danger
+  found    corpus: culture                    2 school
+  found    corpus: elderwork                  3 elders' work
+  found    corpus: family                     6 family
+  found    corpus: food                       10 food
+  found    corpus: knowledge                  21 knowledge
+  found    corpus: market                     3 market
+  found    corpus: roles                      10 role
+  found    corpus: stages                     51 life-stage
+  found    corpus: temperament                20 temperament
+  found    corpus: trades                     15 trade
+  found    corpus: visitors                   7 visitor
+  found    corpus: world                      18 world
+  MISSING  cost: speech calls                 3,209
+  MISSING  cost: embedding calls              50,894
+  MISSING  cost: embedding cache hits         138,229
+  MISSING  flow: events that spread           269
+  MISSING  flow: median holders               29
+  found    flow: median wordings              20
+  found    flow: longest chain                11
+  MISSING  flow: offers                       39,047
+  MISSING  flow: already known                81.8%
+  MISSING  flow: refused of what was new      20.6%
+  MISSING  flow: duplicates                   31,948 duplicates
+  MISSING  flow: caught by root               31,699
+  MISSING  flow: caught by vector             vector similarity caught 249
+  MISSING  flow: knowledge-only decisions     35,542
+  MISSING  flow: decisions                    172,064
+  MISSING  flow: knowledge-only share         20.7%
+  found    flow: sickness reach               a median of 31 villagers
+  MISSING  flow: traveler reach               traveler's news 13.5
+  MISSING  flow: tale reach                   storyteller's tale 29
+  MISSING  flow: farmers cut out the blight   576 times
+  MISSING  flow: drift at hop 1               0.201
+  MISSING  flow: drift at hop 5               0.403
+  MISSING  flow: drift at hop 9               0.397
+  MISSING  flow: drift at hop 10              0.411
+  MISSING  flow: drift at hop 11              0.401
+  MISSING  flow: facts from a witnessed event 6,548
+  MISSING  flow: reclassified                 3,658
+  MISSING  flow: reclassified pct             55.9%
+  MISSING  flow: toward trouble               85.5%
+  MISSING  action: whole temperament          196/2400
+  found    action: whole temperament pct      8.2%
+  found    action: caution                    7.0%
+  MISSING  action: candor floor               1.4%
+  MISSING  lens: decoder floor                0.5%
+  MISSING  lens: inert-tag floor              3.4%
+  MISSING  lens: candor                       9.0%
+  found    lens: trust                        7.8%
+  found    lens: curiosity                    3.9%
+  found    lens: whole temperament            7.1%
+  found    lens: caution                      8.9%
+  MISSING  lens: keeping, candor against the inert floor p = 0.000
+  found    lens: keeping, trust against the inert floor p = 0.001
+  MISSING  lens: keeping, caution against the inert floor p = 0.000
+  MISSING  lens: keeping, curiosity against the inert floor p = 0.382
+  found    lens: keeping, curiosity against the decoder floor p = 0.001
+  MISSING  rewording: candor                  0.146
+  MISSING  rewording: trust                   0.129
+  MISSING  rewording: curiosity               0.120
+  MISSING  rewording: whole temperament       0.098
+  found    rewording: caution                 0.030
+  MISSING  ablation: soft tags at t=0.15      78.3%
+  MISSING  ablation: soft tags on BM25        89.1%
+  MISSING  ablation: used at t=0.40           46/128
+  MISSING  ablation: BM25 talking at 9am      27 of 30
+  MISSING  balance: reframings                6,969 reframings
+  MISSING  balance: events reframed           289 events
+  MISSING  balance: effective reframed        208.06
+  MISSING  carryover: teller said trouble     92.2%
+  MISSING  carryover: teller did not          29.6%
+  MISSING  two-step: chains                   3,081 chains
+  MISSING  two-step: inert floor              (14.8%)
+  MISSING  two-step: decoder floor            (7.0%)
+  MISSING  two-step: events                   239 events
+  MISSING  two-step: effective events         an effective sample of 160.27
+  MISSING  two-step: candor                   in 28.6% of chains
+  found    two-step: candor p                 p < 0.0001
+  MISSING  spread: events that spread         44.8 (6.0) & 35--52
+  MISSING  spread: median holders of an event 28.4 (2.3) & 24--30
+  MISSING  spread: median wordings of an event 19.9 (1.7) & 17--22
+  MISSING  spread: longest chain              8.3 (1.4) & 7--11
+  MISSING  spread: offers already known (%)   81.2 (3.1) & 75.9--84.0
+  MISSING  spread: new news refused (%)       20.6 (1.8) & 18.9--22.8
+  MISSING  spread: facts reclassified (%)     55.4 (7.0) & 47.1--65.2
+  MISSING  spread: reclassified toward trouble (%) 84.8 (5.2) & 80.1--93.4
+  MISSING  spread: knowledge-only decisions (%) 20.5 (4.7) & 14.5--26.5
+  MISSING  spread: events per run             between 35 and 52 events
+  MISSING  spread: median reach per run       between 24 and 30 villagers
+  MISSING  spread: refusals per run           from 18.9% to 22.8%
+  MISSING  spread: knowledge-only per run     from 14.5% to 26.5%
+  MISSING  spread: toward danger in every run at least 80.1% of changes
+  MISSING  spread: Wilson interval, whole temperament 7.1--9.3%
+  MISSING  spread: Wilson interval, candor    1.0--1.9%
+  found    visitors: seeds with a storyteller in all six seeds
+  found    trades: graduated                  twelve children graduated
+  MISSING  trades: merchants                  zero of them as merchants
+  MISSING  trades: qualified                  twenty apprentices qualified
+  MISSING  by day: first day                  3.4%
+  MISSING  by day: last day                   24.8%
+  MISSING  by day: runs that rose             in six of the six runs
+  MISSING  scale: wall clock                  76 minutes
+  MISSING  scale: model calls                 10,876 model calls
+  MISSING  scale: embedding calls             74,948
+  MISSING  scale: median holders              225 of its 300
+  MISSING  scale: median wordings             126.5 wordings
+  found    scale: longest chain               10 tellings
+  MISSING  development: Maja graduated        graduated on day 33
+  MISSING  development: Maja's master         Katrin, an elder
+  MISSING  development: Maja's fondness       (20.6)
+  MISSING  development: under a parent        None of the eight graduates
+  MISSING  development: proposal              Gisla qualified as a crafter at midnight on day 13
+  MISSING  development: proposal fondness     (11.6)
+  MISSING  development: plot laid out by      Wynn laid out
+  MISSING  development: house day             finished on the morning of day 14
+  MISSING  development: births by family      Rosa and Osric, Thea and Hal, and Edda and Tobin each had a child, and Mabel and Edek had two
+  MISSING  development: refused to have a child Of 524 requests to have one, the handler refused 490
+
+  word count 10048, references included (ACM Games research article: up to 12,000 including references)
+
+89 value(s) not found verbatim - check the wording, or the numbers have moved:
+    cost: speech calls: 3,209
+    cost: embedding calls: 50,894
+    cost: embedding cache hits: 138,229
+    flow: events that spread: 269
+    flow: median holders: 29
+    flow: offers: 39,047
+    flow: already known: 81.8%
+    flow: refused of what was new: 20.6%
+    flow: duplicates: 31,948 duplicates
+    flow: caught by root: 31,699
+    flow: caught by vector: vector similarity caught 249
+    flow: knowledge-only decisions: 35,542
+    flow: decisions: 172,064
+    flow: knowledge-only share: 20.7%
+    flow: traveler reach: traveler's news 13.5
+    flow: tale reach: storyteller's tale 29
+    flow: farmers cut out the blight: 576 times
+    flow: drift at hop 1: 0.201
+    flow: drift at hop 5: 0.403
+    flow: drift at hop 9: 0.397
+    flow: drift at hop 10: 0.411
+    flow: drift at hop 11: 0.401
+    flow: facts from a witnessed event: 6,548
+    flow: reclassified: 3,658
+    flow: reclassified pct: 55.9%
+    flow: toward trouble: 85.5%
+    action: whole temperament: 196/2400
+    action: candor floor: 1.4%
+    lens: decoder floor: 0.5%
+    lens: inert-tag floor: 3.4%
+    lens: candor: 9.0%
+    lens: keeping, candor against the inert floor: p = 0.000
+    lens: keeping, caution against the inert floor: p = 0.000
+    lens: keeping, curiosity against the inert floor: p = 0.382
+    rewording: candor: 0.146
+    rewording: trust: 0.129
+    rewording: curiosity: 0.120
+    rewording: whole temperament: 0.098
+    ablation: soft tags at t=0.15: 78.3%
+    ablation: soft tags on BM25: 89.1%
+    ablation: used at t=0.40: 46/128
+    ablation: BM25 talking at 9am: 27 of 30
+    balance: reframings: 6,969 reframings
+    balance: events reframed: 289 events
+    balance: effective reframed: 208.06
+    carryover: teller said trouble: 92.2%
+    carryover: teller did not: 29.6%
+    two-step: chains: 3,081 chains
+    two-step: inert floor: (14.8%)
+    two-step: decoder floor: (7.0%)
+    two-step: events: 239 events
+    two-step: effective events: an effective sample of 160.27
+    two-step: candor: in 28.6% of chains
+    spread: events that spread: 44.8 (6.0) & 35--52
+    spread: median holders of an event: 28.4 (2.3) & 24--30
+    spread: median wordings of an event: 19.9 (1.7) & 17--22
+    spread: longest chain: 8.3 (1.4) & 7--11
+    spread: offers already known (%): 81.2 (3.1) & 75.9--84.0
+    spread: new news refused (%): 20.6 (1.8) & 18.9--22.8
+    spread: facts reclassified (%): 55.4 (7.0) & 47.1--65.2
+    spread: reclassified toward trouble (%): 84.8 (5.2) & 80.1--93.4
+    spread: knowledge-only decisions (%): 20.5 (4.7) & 14.5--26.5
+    spread: events per run: between 35 and 52 events
+    spread: median reach per run: between 24 and 30 villagers
+    spread: refusals per run: from 18.9% to 22.8%
+    spread: knowledge-only per run: from 14.5% to 26.5%
+    spread: toward danger in every run: at least 80.1% of changes
+    spread: Wilson interval, whole temperament: 7.1--9.3%
+    spread: Wilson interval, candor: 1.0--1.9%
+    trades: merchants: zero of them as merchants
+    trades: qualified: twenty apprentices qualified
+    by day: first day: 3.4%
+    by day: last day: 24.8%
+    by day: runs that rose: in six of the six runs
+    scale: wall clock: 76 minutes
+    scale: model calls: 10,876 model calls
+    scale: embedding calls: 74,948
+    scale: median holders: 225 of its 300
+    scale: median wordings: 126.5 wordings
+    development: Maja graduated: graduated on day 33
+    development: Maja's master: Katrin, an elder
+    development: Maja's fondness: (20.6)
+    development: under a parent: None of the eight graduates
+    development: proposal: Gisla qualified as a crafter at midnight on day 13
+    development: proposal fondness: (11.6)
+    development: plot laid out by: Wynn laid out
+    development: house day: finished on the morning of day 14
+    development: births by family: Rosa and Osric, Thea and Hal, and Edda and Tobin each had a child, and Mabel and Edek had two
+    development: refused to have a child: Of 524 requests to have one, the handler refused 490
+paper: hearthwick_case_study_long.md
+run:   20261022-070414-seed1
+
+  MISSING  corpus: authored                   167 authored
+  MISSING  corpus: with action markers        128 carry an action marker
+  MISSING  corpus: coming                     1 coming danger
+  found    corpus: culture                    2 school
+  MISSING  corpus: elderwork                  3 elders' work
+  MISSING  corpus: family                     6 family
+  found    corpus: food                       10 food
+  MISSING  corpus: knowledge                  21 knowledge
+  MISSING  corpus: market                     3 market
+  found    corpus: roles                      10 role
+  MISSING  corpus: stages                     51 life-stage
+  found    corpus: temperament                20 temperament
+  MISSING  corpus: trades                     15 trade
+  found    corpus: visitors                   7 visitor
+  found    corpus: world                      18 world
+  MISSING  cost: speech calls                 3,209
+  MISSING  cost: embedding calls              50,894
+  MISSING  cost: embedding cache hits         138,229
+  found    flow: events that spread           269
+  found    flow: median holders               29
+  found    flow: median wordings              20
+  found    flow: longest chain                11
+  MISSING  flow: offers                       39,047
+  MISSING  flow: already known                81.8%
+  MISSING  flow: refused of what was new      20.6%
+  MISSING  flow: duplicates                   31,948 duplicates
+  MISSING  flow: caught by root               31,699
+  MISSING  flow: caught by vector             vector similarity caught 249
+  MISSING  flow: knowledge-only decisions     35,542
+  MISSING  flow: decisions                    172,064
+  MISSING  flow: knowledge-only share         20.7%
+  MISSING  flow: sickness reach               a median of 31 villagers
+  MISSING  flow: traveler reach               traveler's news 13.5
+  MISSING  flow: tale reach                   storyteller's tale 29
+  MISSING  flow: farmers cut out the blight   576 times
+  MISSING  flow: drift at hop 1               0.201
+  MISSING  flow: drift at hop 2               0.295
+  MISSING  flow: drift at hop 3               0.341
+  MISSING  flow: drift at hop 4               0.373
+  MISSING  flow: drift at hop 5               0.403
+  MISSING  flow: drift at hop 6               0.435
+  MISSING  flow: drift at hop 7               0.417
+  MISSING  flow: drift at hop 8               0.401
+  MISSING  flow: drift at hop 9               0.397
+  MISSING  flow: drift at hop 10              0.411
+  MISSING  flow: drift at hop 11              0.401
+  MISSING  flow: facts from a witnessed event 6,548
+  MISSING  flow: reclassified                 3,658
+  MISSING  flow: reclassified pct             55.9%
+  MISSING  flow: toward trouble               85.5%
+  MISSING  action: whole temperament          196/2400
+  MISSING  action: whole temperament pct      8.2%
+  MISSING  action: caution                    7.0%
+  MISSING  action: candor floor               1.4%
+  MISSING  lens: decoder floor                0.5%
+  found    lens: inert-tag floor              3.4%
+  MISSING  lens: candor                       9.0%
+  MISSING  lens: trust                        7.8%
+  MISSING  lens: curiosity                    3.9%
+  MISSING  lens: whole temperament            7.1%
+  MISSING  lens: caution                      8.9%
+  MISSING  lens: keeping, candor against the inert floor p = 0.000
+  MISSING  lens: keeping, trust against the inert floor p = 0.001
+  MISSING  lens: keeping, caution against the inert floor p = 0.000
+  MISSING  lens: keeping, curiosity against the inert floor p = 0.382
+  MISSING  lens: keeping, curiosity against the decoder floor p = 0.001
+  MISSING  rewording: candor                  0.146
+  MISSING  rewording: trust                   0.129
+  MISSING  rewording: curiosity               0.120
+  MISSING  rewording: whole temperament       0.098
+  MISSING  rewording: caution                 0.030
+  MISSING  ablation: soft tags at t=0.15      78.3%
+  MISSING  ablation: soft tags on BM25        89.1%
+  MISSING  ablation: used at t=0.40           46/128
+  MISSING  ablation: BM25 talking at 9am      27 of 30
+  MISSING  balance: reframings                6,969 reframings
+  MISSING  balance: events reframed           289 events
+  MISSING  balance: effective reframed        208.06
+  MISSING  carryover: teller said trouble     92.2%
+  MISSING  carryover: teller did not          29.6%
+  MISSING  two-step: chains                   3,081 chains
+  MISSING  two-step: inert floor              (14.8%)
+  MISSING  two-step: decoder floor            (7.0%)
+  MISSING  two-step: events                   239 events
+  MISSING  two-step: effective events         an effective sample of 160.27
+  MISSING  two-step: candor                   in 28.6% of chains
+  found    two-step: candor p                 p < 0.0001
+  MISSING  visitors: seeds with a storyteller in all six seeds
+  found    trades: graduated                  twelve children graduated
+  MISSING  trades: merchants                  zero of them as merchants
+  MISSING  trades: qualified                  twenty apprentices qualified
+  found    by day: first day                  3.4%
+  MISSING  by day: last day                   24.8%
+  MISSING  by day: runs that rose             in six of the six runs
+  found    scale: wall clock                  76 minutes
+  found    scale: model calls                 10,876 model calls
+  found    scale: embedding calls             74,948
+  found    scale: median holders              225 of its 300
+  found    scale: median wordings             126.5 wordings
+  found    scale: longest chain               10 tellings
+  found    development: Maja graduated        graduated on day 33
+  found    development: Maja's master         Katrin, an elder
+  found    development: Maja's fondness       (20.6)
+  found    development: under a parent        None of the eight graduates
+  found    development: proposal              Gisla qualified as a crafter at midnight on day 13
+  found    development: proposal fondness     (11.6)
+  found    development: plot laid out by      Wynn laid out
+  found    development: house day             finished on the morning of day 14
+  found    development: births by family      Rosa and Osric, Thea and Hal, and Edda and Tobin each had a child, and Mabel and Edek had two
+  found    development: refused to have a child Of 524 requests to have one, the handler refused 490
+
+  word count 7189, references and markdown symbols included (ACM Games research article: up to 12,000 including references)
+
+80 value(s) not found verbatim - check the wording, or the numbers have moved:
+    corpus: authored: 167 authored
+    corpus: with action markers: 128 carry an action marker
+    corpus: coming: 1 coming danger
+    corpus: elderwork: 3 elders' work
+    corpus: family: 6 family
+    corpus: knowledge: 21 knowledge
+    corpus: market: 3 market
+    corpus: stages: 51 life-stage
+    corpus: trades: 15 trade
+    cost: speech calls: 3,209
+    cost: embedding calls: 50,894
+    cost: embedding cache hits: 138,229
+    flow: offers: 39,047
+    flow: already known: 81.8%
+    flow: refused of what was new: 20.6%
+    flow: duplicates: 31,948 duplicates
+    flow: caught by root: 31,699
+    flow: caught by vector: vector similarity caught 249
+    flow: knowledge-only decisions: 35,542
+    flow: decisions: 172,064
+    flow: knowledge-only share: 20.7%
+    flow: sickness reach: a median of 31 villagers
+    flow: traveler reach: traveler's news 13.5
+    flow: tale reach: storyteller's tale 29
+    flow: farmers cut out the blight: 576 times
+    flow: drift at hop 1: 0.201
+    flow: drift at hop 2: 0.295
+    flow: drift at hop 3: 0.341
+    flow: drift at hop 4: 0.373
+    flow: drift at hop 5: 0.403
+    flow: drift at hop 6: 0.435
+    flow: drift at hop 7: 0.417
+    flow: drift at hop 8: 0.401
+    flow: drift at hop 9: 0.397
+    flow: drift at hop 10: 0.411
+    flow: drift at hop 11: 0.401
+    flow: facts from a witnessed event: 6,548
+    flow: reclassified: 3,658
+    flow: reclassified pct: 55.9%
+    flow: toward trouble: 85.5%
+    action: whole temperament: 196/2400
+    action: whole temperament pct: 8.2%
+    action: caution: 7.0%
+    action: candor floor: 1.4%
+    lens: decoder floor: 0.5%
+    lens: candor: 9.0%
+    lens: trust: 7.8%
+    lens: curiosity: 3.9%
+    lens: whole temperament: 7.1%
+    lens: caution: 8.9%
+    lens: keeping, candor against the inert floor: p = 0.000
+    lens: keeping, trust against the inert floor: p = 0.001
+    lens: keeping, caution against the inert floor: p = 0.000
+    lens: keeping, curiosity against the inert floor: p = 0.382
+    lens: keeping, curiosity against the decoder floor: p = 0.001
+    rewording: candor: 0.146
+    rewording: trust: 0.129
+    rewording: curiosity: 0.120
+    rewording: whole temperament: 0.098
+    rewording: caution: 0.030
+    ablation: soft tags at t=0.15: 78.3%
+    ablation: soft tags on BM25: 89.1%
+    ablation: used at t=0.40: 46/128
+    ablation: BM25 talking at 9am: 27 of 30
+    balance: reframings: 6,969 reframings
+    balance: events reframed: 289 events
+    balance: effective reframed: 208.06
+    carryover: teller said trouble: 92.2%
+    carryover: teller did not: 29.6%
+    two-step: chains: 3,081 chains
+    two-step: inert floor: (14.8%)
+    two-step: decoder floor: (7.0%)
+    two-step: events: 239 events
+    two-step: effective events: an effective sample of 160.27
+    two-step: candor: in 28.6% of chains
+    visitors: seeds with a storyteller: in all six seeds
+    trades: merchants: zero of them as merchants
+    trades: qualified: twenty apprentices qualified
+    by day: last day: 24.8%
+    by day: runs that rose: in six of the six runs
+=== done ===

@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "date": "2026-10-11",
+    "seed": 1,
+    "days": 56,
+    "days_per_year": 28,
+    "profile": "paper",
+    "code": {
+      "hearthwick": "f2568aa-dirty",
+      "bear": "5334e1e",
+      "bear_version": "0.2.0"
+    }
+  },
+  "arms": {
+    "as before": {
+      "switches": {},
+      "by_year": [
+        {
+          "year": 0,
+          "decisions": 12903,
+          "warn": 0.036,
+          "lesson": 0.0,
+          "field work": 0.063,
+          "worked fields": 7.8,
+          "need": 29.6,
+          "largest crop": 672,
+          "granary": 489.3,
+          "born": 3
+        },
+        {
+          "year": 1,
+          "decisions": 13806,
+          "warn": 0.158,
+          "lesson": 0.0,
+          "field work": 0.042,
+          "worked fields": 7.1,
+          "need": 29.9,
+          "largest crop": 817,
+          "granary": 470.4,
+          "born": 0
+        }
+      ],
+      "events": {
+        "warned": 0,
+        "conversation_start": 2356,
+        "diffusion": 9099,
+        "born": 3
+      }
+    },
+    "quick warnings": {
+      "switches": {
+        "quick_warnings": true
+      },
+      "by_year": [
+        {
+          "year": 0,
+          "decisions": 13254,
+          "warn": 0.051,
+          "lesson": 0.0,
+          "field work": 0.067,
+          "worked fields": 8.3,
+          "need": 29.6,
+          "largest crop": 693,
+          "granary": 510.2,
+          "born": 3
+        },
+        {
+          "year": 1,
+          "decisions": 15671,
+          "warn": 0.194,
+          "lesson": 0.0,
+          "field work": 0.046,
+          "worked fields": 6.8,
+          "need": 29.9,
+          "largest crop": 834,
+          "granary": 508.8,
+          "born": 0
+        }
+      ],
+      "events": {
+        "warned": 3328,
+        "conversation_start": 868,
+        "diffusion": 9803,
+        "born": 3
+      }
+    },
+    "quick warnings and told memory": {
+      "switches": {
+        "quick_warnings": true,
+        "told_memory": true
+      },
+      "by_year": [
+        {
+          "year": 0,
+          "decisions": 13404,
+          "warn": 0.081,
+          "lesson": 0.0,
+          "field work": 0.056,
+          "worked fields": 7.5,
+          "need": 29.5,
+          "largest crop": 586,
+          "granary": 404.2,
+          "born": 3
+        },
+        {
+          "year": 1,
+          "decisions": 13320,
+          "warn": 0.069,
+          "lesson": 0.0,
+          "field work": 0.059,
+          "worked fields": 6.8,
+          "need": 30.2,
+          "largest crop": 755,
+          "granary": 359.7,
+          "born": 1
+        }
+      ],
+      "events": {
+        "warned": 1775,
+        "conversation_start": 1195,
+        "diffusion": 6088,
+        "born": 4
+      }
+    }
+  }
+}

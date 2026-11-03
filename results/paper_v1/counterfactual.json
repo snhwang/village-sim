@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "run": "20260927-190041-seed1",
+    "village": "greater",
+    "villagers": 30,
+    "decisions_replayed": 400,
+    "date": "2026-09-27"
+  },
+  "rows": [
+    {
+      "what": "whole temperament",
+      "changed": 56,
+      "compared": 400,
+      "pct": 14.0
+    },
+    {
+      "what": "sociability",
+      "changed": 24,
+      "compared": 400,
+      "pct": 6.0
+    },
+    {
+      "what": "caution",
+      "changed": 38,
+      "compared": 400,
+      "pct": 9.5
+    },
+    {
+      "what": "curiosity",
+      "changed": 29,
+      "compared": 400,
+      "pct": 7.2
+    },
+    {
+      "what": "trust",
+      "changed": 27,
+      "compared": 400,
+      "pct": 6.8
+    },
+    {
+      "what": "diligence",
+      "changed": 26,
+      "compared": 400,
+      "pct": 6.5
+    },
+    {
+      "what": "candor",
+      "changed": 11,
+      "compared": 400,
+      "pct": 2.8
+    }
+  ],
+  "examples": [
+    {
+      "situation": [
+        "at_fields",
+        "at_work",
+        "near_adult",
+        "near_crowd",
+        "near_partner",
+        "near_someone",
+        "time_midday"
+      ],
+      "actor": "Mabel",
+      "chose": "knows-warn-about-blight",
+      "donor": "Ada",
+      "would_have": "adult-evening-home"
+    },
+    {
+      "situation": [
+        "at_shrine",
+        "time_afternoon"
+      ],
+      "actor": "Corin",
+      "chose": "temp-bold-roam",
+      "donor": "Ada",
+      "would_have": "apprentice-midday"
+    },
+    {
+      "situation": [
+        "at_inn",
+        "near_adult",
+        "near_crowd",
+        "near_someone",
+        "time_afternoon"
+      ],
+      "actor": "Dunn",
+      "chose": "weather-wait-out-rain",
+      "donor": "Ada",
+      "would_have": "adult-evening-home"
+    },
+    {
+      "situation": [
+        "at_forest_edge",
+        "time_afternoon"
+      ],
+      "actor": "Sena",
+      "chose": "temp-bold-roam",
+      "donor": "Ada",
+      "would_have": "weather-wait-out-rain"
+    },
+    {
+      "situation": [
+        "at_fields",
+        "near_adult",
+        "near_someone",
+        "time_midday"
+      ],
+      "actor": "Hilde28",
+      "chose": "knows-avoid-blighted-field",
+      "donor": "Ada",
+      "would_have": "knows-warn-about-blight"
+    },
+    {
+      "situation": [
+        "at_home",
+        "at_home_1",
+        "near_adult",
+        "near_crowd",
+        "near_partner",
+        "near_someone",
+        "time_morning"
+      ],
+      "actor": "Edda",
+      "chose": "temp-gregarious-seek-company",
+      "donor": "Ada",
+      "would_have": "temp-wary-home-before-dark"
+    },
+    {
+      "situation": [
+        "at_well",
+        "near_adult",
+        "near_child",
+        "near_crowd",
+        "near_someone",
+        "time_morning"
+      ],
+      "actor": "Orla",
+      "chose": "knows-warn-about-well",
+      "donor": "Ada",
+      "would_have": "temp-diligent-back-to-work"
+    },
+    {
+      "situation": [
+        "at_well",
+        "near_adult",
+        "near_child",
+        "near_crowd",
+        "near_someone",
+        "time_evening"
+      ],
+      "actor": "Nell",
+      "chose": "temp-easygoing-break",
+      "donor": "Ada",
+      "would_have": "child-ask-adult"
+    }
+  ],
+  "placebo": "candor"
+}

@@ -1,0 +1,17 @@
+# The clay pit, where clay is dug (data/goods.yaml): a low bank round wet
+# clay, with a drying rack for tiles.
+design: clay pit
+by: the founders
+default_for: clay_pit
+footprint: [3, 3]
+ground: yard
+parts:
+  - {id: clay, shape: box, size: [2.0, 0.05, 1.6], at: [0, 0.025, -0.2], material: roof_tile}
+  - {id: bank_n, shape: box, size: [2.4, 0.25, 0.2], at: [0, 0.125, -1.1], material: plaster}
+  - {id: bank_w, shape: box, size: [0.2, 0.25, 1.8], at: [-1.1, 0.125, -0.2], material: plaster}
+  - {id: bank_e, shape: box, size: [0.2, 0.25, 1.8], at: [1.1, 0.125, -0.2], material: plaster}
+  - {id: rack_leg_w, shape: box, size: [0.08, 0.7, 0.08], at: [-0.6, 0.35, 1.0], material: timber}
+  - {id: rack_leg_e, shape: box, size: [0.08, 0.7, 0.08], at: [0.6, 0.35, 1.0], material: timber}
+  - {id: rack, shape: box, size: [1.3, 0.06, 0.4], at: [0, 0.73, 1.0], material: timber}
+  - {id: tiles, shape: box, size: [1.0, 0.08, 0.3], at: [0, 0.8, 1.0], material: roof_tile}
+claims: []

@@ -1,0 +1,175 @@
+{
+  "run": "20261017-043130-seed2",
+  "read_to_day": 56,
+  "checks": [
+    {
+      "check": "model calls never answered",
+      "flag": false,
+      "figures": {
+        "speech_errors": 0,
+        "from": "record"
+      }
+    },
+    {
+      "check": "the run without the embedder it asked for",
+      "flag": false,
+      "figures": {
+        "asked": "service",
+        "used": "service"
+      }
+    },
+    {
+      "check": "servers that stopped answering, waited out",
+      "flag": false,
+      "figures": {
+        "model": {
+          "outages": "not recorded",
+          "seconds": "not recorded"
+        },
+        "embedder": {
+          "outages": "not recorded",
+          "seconds": "not recorded"
+        }
+      }
+    },
+    {
+      "check": "the granary empty for long",
+      "flag": false,
+      "figures": {
+        "longest empty streak by year": {
+          "0": 0,
+          "1": 0
+        },
+        "empty days by year": {
+          "0": 0,
+          "1": 0
+        }
+      }
+    },
+    {
+      "check": "news told to someone who had it",
+      "flag": false,
+      "figures": {
+        "share of tellings by year": {
+          "0": 0.846,
+          "1": 0.885
+        }
+      }
+    },
+    {
+      "check": "the same talk again and again",
+      "flag": false,
+      "figures": {
+        "most repeated talk a year": {
+          "0": 13,
+          "1": 13
+        },
+        "which": {
+          "0": [
+            "merrick",
+            "nell",
+            "a story from the old days"
+          ],
+          "1": [
+            "freya",
+            "bryn",
+            "a story from the old days"
+          ]
+        }
+      }
+    },
+    {
+      "check": "decisions with a refused action",
+      "flag": false,
+      "figures": {
+        "share by year": {
+          "0": 0.548,
+          "1": 0.53
+        }
+      }
+    },
+    {
+      "check": "a one-shot lesson acted on again and again in a day",
+      "flag": true,
+      "figures": {
+        "most times in a day, by year": {
+          "0": 2,
+          "1": 59
+        },
+        "which (villager, lesson, day)": {
+          "0": [
+            "ilsa",
+            "learned-ilsa-01",
+            18
+          ],
+          "1": [
+            "fen",
+            "learned-fen-3",
+            39
+          ]
+        },
+        "villager-days over 12, by year": {
+          "0": 0,
+          "1": 14
+        },
+        "one-shot lessons written": 15
+      }
+    },
+    {
+      "check": "the live memory index growing without end",
+      "flag": false,
+      "figures": {
+        "live index at a year's last trim": {
+          "0": 1311,
+          "1": 1887
+        },
+        "per villager": {
+          "0": 43.7,
+          "1": 53.9
+        }
+      }
+    },
+    {
+      "check": "grown villagers standing idle",
+      "flag": false,
+      "figures": {
+        "idle share of waking frames by year": {
+          "0": 0.05,
+          "1": 0.051
+        }
+      }
+    },
+    {
+      "check": "grown villagers stuck in one place and activity",
+      "flag": false,
+      "figures": {
+        "still for 48+ waking ticks, by year": {},
+        "first cases": []
+      }
+    },
+    {
+      "check": "years without a birth",
+      "flag": false,
+      "figures": {
+        "births by year": {
+          "0": 4,
+          "1": 3
+        },
+        "longest run of years without": 0,
+        "people at a year's start": {
+          "0": 30,
+          "1": 35
+        }
+      }
+    },
+    {
+      "check": "deaths before old age",
+      "flag": false,
+      "figures": {
+        "deaths": 0,
+        "young": []
+      }
+    }
+  ],
+  "flags": 1
+}

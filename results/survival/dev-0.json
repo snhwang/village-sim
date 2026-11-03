@@ -1,0 +1,81 @@
+{
+ "variant": "dev",
+ "seed": 0,
+ "years": 5,
+ "done": true,
+ "days_per_year": 8,
+ "rows": [
+  {
+   "year": 0,
+   "people": 30,
+   "young": 8,
+   "couples": 6,
+   "born": 0,
+   "died": 0,
+   "granary": 196.0,
+   "low_days": 0,
+   "fields": 99,
+   "seconds": 0
+  },
+  {
+   "year": 1,
+   "people": 36,
+   "young": 14,
+   "couples": 7,
+   "born": 6,
+   "died": 0,
+   "granary": 154.5,
+   "low_days": 3,
+   "fields": 99,
+   "seconds": 320
+  },
+  {
+   "year": 2,
+   "people": 37,
+   "young": 14,
+   "couples": 8,
+   "born": 1,
+   "died": 0,
+   "granary": 202.7,
+   "low_days": 4,
+   "fields": 99,
+   "seconds": 669
+  },
+  {
+   "year": 3,
+   "people": 38,
+   "young": 12,
+   "couples": 8,
+   "born": 1,
+   "died": 0,
+   "granary": 174.4,
+   "low_days": 3,
+   "fields": 99,
+   "seconds": 1029
+  },
+  {
+   "year": 4,
+   "people": 40,
+   "young": 13,
+   "couples": 8,
+   "born": 2,
+   "died": 0,
+   "granary": 0.0,
+   "low_days": 7,
+   "fields": 99,
+   "seconds": 1270
+  },
+  {
+   "year": 5,
+   "people": 40,
+   "young": 12,
+   "couples": 9,
+   "born": 0,
+   "died": 0,
+   "granary": 0.0,
+   "low_days": 7,
+   "fields": 121,
+   "seconds": 1542
+  }
+ ]
+}

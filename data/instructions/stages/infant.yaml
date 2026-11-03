@@ -1,0 +1,28 @@
+# Infant stage protocols. Gated on stage_infant. An infant is born in the
+# village (hearthwick/family.py), stays home or with a parent, never goes to
+# school or talks news, and becomes a child at two.
+
+instructions:
+  - id: infant-night
+    type: protocol
+    priority: 90
+    content: Night has fallen. A baby sleeps at home until morning. [!go(to=home)] [!rest(until=morning)]
+    scope: {required_tags: [stage_infant, time_night]}
+
+  - id: infant-tired
+    type: protocol
+    priority: 70
+    content: The baby is worn out. Home to sleep. [!go(to=home)] [!rest(ticks=8)]
+    scope: {required_tags: [stage_infant, energy_low]}
+
+  - id: infant-with-parent
+    type: directive
+    priority: 66
+    content: A baby stays close to its mother or father and goes where they go. [!follow(target=parent, ticks=12)]
+    scope: {required_tags: [stage_infant, daytime, near_parent]}
+
+  - id: infant-home
+    type: directive
+    priority: 60
+    content: A baby's day is spent at home, sleeping and being fed. [!go(to=home)] [!rest(ticks=12)]
+    scope: {required_tags: [stage_infant, daytime]}

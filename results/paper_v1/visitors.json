@@ -1,0 +1,158 @@
+[
+  {
+    "run": "20260927-190041-seed1",
+    "residents": 30,
+    "storytellers": [],
+    "villager_choices": {}
+  },
+  {
+    "run": "20260927-191014-seed2",
+    "residents": 30,
+    "storytellers": [],
+    "villager_choices": {}
+  },
+  {
+    "run": "20260927-192146-seed3",
+    "residents": 30,
+    "storytellers": [
+      {
+        "visitor": "tamsin",
+        "name": "Tamsin",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "suspicious",
+          "diligence": "diligent",
+          "candor": "embellishing"
+        },
+        "arrived": 189,
+        "left": 507,
+        "carried": [
+          {
+            "root": "tale:east_road:189-0",
+            "text": "On the road here I heard that there is to be a fair beyond the forest.",
+            "villagers_holding": 23,
+            "longest_chain": 4
+          },
+          {
+            "root": "tale:east_road:189-1",
+            "text": "On the road here I heard that the miller at Ashby found a hoard of old coins in his wall.",
+            "villagers_holding": 10,
+            "longest_chain": 1
+          },
+          {
+            "root": "tale:east_road:189-2",
+            "text": "On the road here I heard that the lord's men are counting heads for a new tax.",
+            "villagers_holding": 30,
+            "longest_chain": 5
+          }
+        ],
+        "conversations": 32,
+        "villagers_talked_with": 14,
+        "village_news_held": 2
+      }
+    ],
+    "villager_choices": {
+      "villager-hear-the-stranger": 48
+    }
+  },
+  {
+    "run": "20260927-193347-seed4",
+    "residents": 30,
+    "storytellers": [
+      {
+        "visitor": "isolde",
+        "name": "Isolde",
+        "temperament": {
+          "sociability": "reserved",
+          "caution": "bold",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "easygoing",
+          "candor": "embellishing"
+        },
+        "arrived": 188,
+        "left": 493,
+        "carried": [
+          {
+            "root": "tale:east_road:188-0",
+            "text": "On the road here I heard that wolves have been seen at the edge of the high pastures.",
+            "villagers_holding": 30,
+            "longest_chain": 6
+          },
+          {
+            "root": "tale:east_road:188-1",
+            "text": "On the road here I heard that the miller at Ashby found a hoard of old coins in his wall.",
+            "villagers_holding": 11,
+            "longest_chain": 2
+          },
+          {
+            "root": "tale:east_road:188-2",
+            "text": "On the road here I heard that a sickness is going round two valleys over.",
+            "villagers_holding": 25,
+            "longest_chain": 6
+          }
+        ],
+        "conversations": 29,
+        "villagers_talked_with": 10,
+        "village_news_held": 1
+      }
+    ],
+    "villager_choices": {
+      "villager-hear-the-stranger": 34
+    }
+  },
+  {
+    "run": "20260927-194732-seed5",
+    "residents": 30,
+    "storytellers": [
+      {
+        "visitor": "wystan",
+        "name": "Wystan",
+        "temperament": {
+          "sociability": "gregarious",
+          "caution": "wary",
+          "curiosity": "inquisitive",
+          "trust": "trusting",
+          "diligence": "diligent",
+          "candor": "plainspoken"
+        },
+        "arrived": 1351,
+        "left": null,
+        "carried": [
+          {
+            "root": "tale:east_road:1351-0",
+            "text": "On the road here I heard that grain is dear in the market towns this year.",
+            "villagers_holding": 6,
+            "longest_chain": 1
+          },
+          {
+            "root": "tale:east_road:1351-1",
+            "text": "On the road here I heard that the low road is washed out at the ford.",
+            "villagers_holding": 6,
+            "longest_chain": 1
+          },
+          {
+            "root": "tale:east_road:1351-2",
+            "text": "On the road here I heard that there has been fighting beyond the forest.",
+            "villagers_holding": 3,
+            "longest_chain": 1
+          }
+        ],
+        "conversations": 10,
+        "villagers_talked_with": 6,
+        "village_news_held": 5
+      }
+    ],
+    "villager_choices": {
+      "villager-hear-the-stranger": 11
+    }
+  },
+  {
+    "run": "20260927-195852-seed6",
+    "residents": 30,
+    "storytellers": [],
+    "villager_choices": {}
+  }
+]

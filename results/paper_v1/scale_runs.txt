@@ -1,0 +1,20 @@
+20260928-081531-seed1
+# The 300-villager run reported in the case study's section 9. Ten in-game
+# days, seed 1, with speech, run on 2026-09-28 from 08:15 to 09:31.
+#
+# Build: Hearthwick 19611f5, the paper's build, checked out as a worktree in
+# ../hearthwick-paper-build. Its meta.json records no Hearthwick commit,
+# because that worktree was made by git for Windows and its .git file names a
+# Windows path, which git in WSL, where the run ran, cannot follow. The
+# worktree's HEAD was 19611f5 with no tracked changes when checked after the
+# run. The only untracked file was the generated village.
+#
+# Village: experiments/make_village.py --villagers 300 --name town300 at
+# 19611f5, with its default seed of 7.
+#
+# BEAR: bear-dev 9c76dcd. meta.json says 9c76dcd-dirty because the build's
+# check counts untracked files, and bear-dev holds another project's untracked
+# example files. No tracked file was modified when checked after the run.
+#
+# The generated village is committed in data/villages/town300. Its files are
+# byte for byte those in the worktree the run used, checked on 2026-09-29.

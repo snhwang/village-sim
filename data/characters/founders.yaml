@@ -1,0 +1,170 @@
+# The founding villagers. Ages are in-game years (8 in-game days per year).
+# Stage thresholds and lifespans are described in DESIGN.md §6 and §7.
+#
+# genotype: two copies of every gene (data/loci.yaml), each an allele in
+# data/instructions/temperament/<locus>.yaml. temperament is what the two
+# express under BEAR's dominance, and loading checks that it is. The
+# copies follow experiments/make_village.py's rule, genotypes(), drawn with
+# random.Random("genes-small"). That rule made Lise and Pip settled, since
+# both their parents are.
+
+founders:
+  - id: bram
+    name: Bram
+    sex: male
+    age: 31
+    stage: elder
+    role: storyteller
+    home: home_bram
+    parents: []
+    partner: null
+    genotype: {sociability: [gregarious, reserved], caution: [wary, bold], curiosity: [inquisitive, settled], trust: [suspicious, suspicious], diligence: [easygoing, diligent], candor: [embellishing, embellishing]}
+    temperament: {sociability: gregarious, caution: wary, curiosity: inquisitive, trust: suspicious, diligence: easygoing, candor: embellishing}
+    persona: >-
+      Bram is the oldest man in Hearthwick, a widower with a white beard and a
+      bad knee. He has told the story of the great flood so many times that no
+      two versions agree. He loves an audience and distrusts anyone from beyond
+      the east road. His daughter is Rosa.
+
+  - id: hilde
+    name: Hilde
+    sex: female
+    age: 26
+    stage: elder
+    role: healer
+    home: home_hilde
+    parents: []
+    partner: null
+    genotype: {sociability: [reserved, reserved], caution: [wary, bold], curiosity: [inquisitive, settled], trust: [trusting, suspicious], diligence: [diligent, diligent], candor: [plainspoken, embellishing]}
+    temperament: {sociability: reserved, caution: wary, curiosity: inquisitive, trust: trusting, diligence: diligent, candor: plainspoken}
+    persona: >-
+      Hilde keeps the shrine and tends the sick. She is quiet, exact and hard to
+      rattle, and she writes down every remedy that works. She is Garrick's
+      mother and has taken Lise on as her apprentice.
+
+  - id: garrick
+    name: Garrick
+    sex: male
+    age: 19
+    stage: adult
+    role: guard
+    home: home_garrick
+    parents: [hilde]
+    partner: null
+    genotype: {sociability: [reserved, reserved], caution: [bold, bold], curiosity: [settled, settled], trust: [suspicious, suspicious], diligence: [diligent, diligent], candor: [plainspoken, embellishing]}
+    temperament: {sociability: reserved, caution: bold, curiosity: settled, trust: suspicious, diligence: diligent, candor: plainspoken}
+    persona: >-
+      Garrick watches the bridge and the east road. He is broad, blunt and
+      suspicious of anything he has not seen with his own eyes. He is Hilde's
+      son and has never married.
+
+  - id: wynn
+    name: Wynn
+    sex: male
+    age: 14
+    stage: adult
+    role: merchant
+    home: home_wynn
+    parents: []
+    partner: ada
+    genotype: {sociability: [gregarious, reserved], caution: [bold, bold], curiosity: [inquisitive, settled], trust: [trusting, suspicious], diligence: [easygoing, diligent], candor: [embellishing, embellishing]}
+    temperament: {sociability: gregarious, caution: bold, curiosity: inquisitive, trust: trusting, diligence: easygoing, candor: embellishing}
+    persona: >-
+      Wynn runs the market stall and meets every cart that comes up the east
+      road. He knows everyone's business and improves every story he passes
+      along. He is married to Ada and dotes on their daughter Nell.
+
+  - id: ada
+    name: Ada
+    sex: female
+    age: 13
+    stage: adult
+    role: farmer
+    home: home_wynn
+    parents: []
+    partner: wynn
+    genotype: {sociability: [reserved, reserved], caution: [wary, bold], curiosity: [settled, settled], trust: [trusting, suspicious], diligence: [diligent, diligent], candor: [plainspoken, plainspoken]}
+    temperament: {sociability: reserved, caution: wary, curiosity: settled, trust: trusting, diligence: diligent, candor: plainspoken}
+    persona: >-
+      Ada works the fields beside Rosa and worries about the weather more than
+      anyone. She is steady and practical and wishes her husband Wynn would
+      exaggerate less. Their daughter is Nell.
+
+  - id: rosa
+    name: Rosa
+    sex: female
+    age: 16
+    stage: adult
+    role: farmer
+    home: home_rosa
+    parents: [bram]
+    partner: tobin
+    genotype: {sociability: [gregarious, gregarious], caution: [wary, bold], curiosity: [settled, settled], trust: [suspicious, trusting], diligence: [diligent, diligent], candor: [embellishing, plainspoken]}
+    temperament: {sociability: gregarious, caution: wary, curiosity: settled, trust: trusting, diligence: diligent, candor: plainspoken}
+    persona: >-
+      Rosa is the best farmer in the village and its unofficial organizer of
+      harvest festivals. She is warm and sensible and keeps a close eye on her
+      children Lise and Pip. Her father is Bram and her husband is Tobin.
+
+  - id: tobin
+    name: Tobin
+    sex: male
+    age: 17
+    stage: adult
+    role: crafter
+    home: home_rosa
+    parents: []
+    partner: rosa
+    genotype: {sociability: [reserved, reserved], caution: [bold, bold], curiosity: [settled, settled], trust: [suspicious, suspicious], diligence: [easygoing, diligent], candor: [plainspoken, embellishing]}
+    temperament: {sociability: reserved, caution: bold, curiosity: settled, trust: suspicious, diligence: easygoing, candor: plainspoken}
+    persona: >-
+      Tobin runs the mill by the stream and mends whatever breaks. He is a man
+      of few words who takes offense easily and believes people talk about him
+      behind his back. He is married to Rosa.
+
+  - id: lise
+    name: Lise
+    sex: female
+    age: 6
+    stage: apprentice
+    role: null
+    home: home_rosa
+    mentor: hilde
+    parents: [rosa, tobin]
+    partner: null
+    genotype: {sociability: [gregarious, reserved], caution: [bold, bold], curiosity: [settled, settled], trust: [trusting, suspicious], diligence: [diligent, diligent], candor: [embellishing, embellishing]}
+    temperament: {sociability: gregarious, caution: bold, curiosity: settled, trust: trusting, diligence: diligent, candor: embellishing}
+    persona: >-
+      Lise is Rosa and Tobin's eldest, apprenticed to Hilde at the shrine. She
+      is quick, eager and full of half-understood remedies she repeats to
+      anyone who will listen.
+
+  - id: pip
+    name: Pip
+    sex: male
+    age: 3
+    stage: child
+    role: null
+    home: home_rosa
+    parents: [rosa, tobin]
+    partner: null
+    genotype: {sociability: [gregarious, reserved], caution: [bold, bold], curiosity: [settled, settled], trust: [trusting, suspicious], diligence: [diligent, easygoing], candor: [embellishing, embellishing]}
+    temperament: {sociability: gregarious, caution: bold, curiosity: settled, trust: trusting, diligence: easygoing, candor: embellishing}
+    persona: >-
+      Pip is Rosa and Tobin's youngest, a small boy who follows his grandfather
+      Bram everywhere and believes every one of his stories.
+
+  - id: nell
+    name: Nell
+    sex: female
+    age: 4
+    stage: child
+    role: null
+    home: home_wynn
+    parents: [wynn, ada]
+    partner: null
+    genotype: {sociability: [reserved, reserved], caution: [bold, wary], curiosity: [inquisitive, settled], trust: [suspicious, suspicious], diligence: [diligent, diligent], candor: [embellishing, plainspoken]}
+    temperament: {sociability: reserved, caution: wary, curiosity: inquisitive, trust: suspicious, diligence: diligent, candor: plainspoken}
+    persona: >-
+      Nell is Wynn and Ada's daughter, a watchful girl who asks hard questions
+      and does not believe things just because an adult said them.
