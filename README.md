@@ -14,7 +14,9 @@ The village it simulates is called Hearthwick, and so is the code's package
 (`python -m hearthwick`).
 
 This is the code of the paper "Non-player characters that learn, grow up, and
-pass it on" (ACM Games: Research and Practice, under review).
+pass it on: NPCs as independent entities" (ACM Games: Research and Practice,
+under review, preprint at https://doi.org/10.5281/zenodo.24238881). The logs
+of every run it reports are at https://doi.org/10.5281/zenodo.24239007.
 [RUNNING_EXPERIMENTS.md](RUNNING_EXPERIMENTS.md) gives every command that made
 its results, `results/` holds what the paper quotes, and
 [results/paper_v4/SERVING.md](results/paper_v4/SERVING.md) records what served
@@ -231,7 +233,7 @@ A new set of runs will not give identical numbers. The runs sample speech at
 temperature 0.8, and the model server is not bitwise deterministic, so expect
 the same findings with nearby values. `paper/check_numbers.py` checks every
 number the paper quotes against the run logs, which are the paper's data
-archive. It needs the logs in `runs/`, the results in `results/`, and the
+archive (https://doi.org/10.5281/zenodo.24239007). It needs the logs in `runs/`, the results in `results/`, and the
 paper's LaTeX beside this repository.
 
 ```bash
